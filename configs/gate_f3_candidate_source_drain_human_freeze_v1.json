@@ -1,0 +1,144 @@
+{
+  "action_source": {
+    "allowed_inputs": [
+      "current_terminal_phases",
+      "current_active_dynamic_bindings",
+      "current_reservations",
+      "release_ownership",
+      "current_gate_c_terminal_pair_windows",
+      "current_absolute_time",
+      "current_window_end",
+      "plane_gap",
+      "frozen_setup_parameters",
+      "frozen_regime_safety_metadata"
+    ],
+    "forbidden_inputs": [
+      "controller_identity",
+      "V_v2",
+      "B4_J_H",
+      "queue_or_utilization_for_source_ranking",
+      "future_realized_traffic",
+      "current_or_final_performance_result",
+      "final_J",
+      "post_hoc_ranking_label"
+    ],
+    "name": "DETERMINISTIC_ONE_FOR_ONE_PHYSICAL_REPLACEMENT_V1",
+    "one_action_maximum_old_bindings_affected": 1,
+    "shared_by": [
+      "B1",
+      "B2",
+      "B3",
+      "B4"
+    ]
+  },
+  "canonical_sha256": "ba527d3bc2c4ebca742ec21b8c390d512931d56d9c9ba68ed4eb22a7f47a7f39",
+  "deduplication": {
+    "distinct_when_same_target_different_old_binding": true,
+    "exact_duplicates_collapse": true,
+    "identity_fields": [
+      "decision_time_s",
+      "canonical_state_sha256",
+      "canonical_old_binding",
+      "canonical_new_terminal_pair",
+      "canonical_release_after"
+    ],
+    "proposal_id": "F3SRC- + first 24 hex characters of SHA-256(canonical JSON identity)"
+  },
+  "drain_decision": {
+    "arrival_horizon_s": 240.0,
+    "cadence_s": 2.0,
+    "continue_during_drain": true,
+    "decision_at_240_if_unfinished": true,
+    "decision_at_600": false,
+    "drain_limit_absolute_s": 600.0,
+    "early_complete_between_epochs": "TERMINATE_IMMEDIATELY_AFTER_PHYSICAL_SERVICE_SETTLEMENT",
+    "lambda_at_240": 0.0,
+    "possible_epochs_for_t0_zero": "0,2,...,598 subject to early completion",
+    "rationale": "J includes drain; stopping control at arrival cutoff would add an unregistered post-arrival policy."
+  },
+  "final_proposer": {
+    "component": "FrozenTerminalPairProposer",
+    "final_top_k": 16,
+    "modified": false,
+    "quota": {
+      "BBM_REQUIRED": 8,
+      "MBB_STRUCTURALLY_FEASIBLE": 8
+    },
+    "spillover_and_final_ranking": "UNCHANGED"
+  },
+  "gate": "F3-0.1",
+  "immutable_overlay": true,
+  "materialization": {
+    "BBM_RAW": {
+      "classification": "new pair reuses at least one old endpoint; every other endpoint is idle/unreserved; no second old binding touched",
+      "old_physical_binding": "b_old",
+      "release_after": []
+    },
+    "MBB_RAW": {
+      "classification": "both new endpoints idle/unreserved; no current binding touched; old binding eligible for delayed release; no parallel satellite pair",
+      "old_physical_binding": "b_old",
+      "release_after": [
+        "b_old"
+      ]
+    },
+    "new_all_pairs_geometry_search": false,
+    "raw_cap_rationale": "32 = 4 * frozen downstream structural quota 8; result-blind engineering budget",
+    "raw_caps": {
+      "BBM_RAW": 32,
+      "MBB_RAW": 32,
+      "total": 64
+    },
+    "raw_order_per_stratum": [
+      "current_terminal_pair_remaining_lifetime_descending",
+      "plane_gap_ascending",
+      "canonical_old_physical_binding_ascending",
+      "canonical_new_terminal_pair_ascending"
+    ],
+    "target_source": "existing frozen Gate C terminal-pair interval catalog windows containing current t"
+  },
+  "old_binding_eligibility": [
+    "physical_dynamic_link_exists",
+    "ACTIVE_not_DRAINING",
+    "no_release_after_owner",
+    "no_incompatible_endpoint_reservation",
+    "not_invalid_or_expired_at_right_continuous_state"
+  ],
+  "parent": {
+    "execution_manifest_canonical_sha256": "0222d30e69ec9f565e1d55d5e74391934d63d7357cc7f1d652532f6a30ac945a",
+    "f3_canonical_sha256": "118d3a61175b08b6ba53f4d92504b52ab879659682799d26c1965baf7bb600a6",
+    "historical_blocker": "GATE_F3_P1_EXECUTION_BLOCKED_BY_CANDIDATE_SOURCE_NOT_FROZEN",
+    "historical_p1_runs_executed": "0/12"
+  },
+  "parent_file_hashes": {
+    "configs/gate_f3_execution_manifest_v1.json": "f6aba631fa7f133f4cb95d63ec5f809b4345f1ad3676401de3df286697a558f9",
+    "configs/gate_f3_experiment_human_freeze_v1.json": "655a2210206d502320695f325e0b488547971e99e0e6e75a9b2a0552523032c0",
+    "configs/gate_f3_p1_status.json": "164bd07f8d80319b07029944db86b0cb70a4dacfef8227225d6b7ac2d6ea3ed3",
+    "docs/GATE_F3_P1_RESULT_CN.md": "09a966f158a10849490661d6f7e03540e726e17f5abf197602e8e6a435a5af38",
+    "outputs/gate_f3_p1_20260925T050259_813979Z/report.json": "2125233b4cf2256cd8587febb148c0d880dbbaca596d259519a4aa18f2bdace6"
+  },
+  "rejection_codes": {
+    "exact_noop": "NO_OP_CURRENT_BINDING",
+    "multi_old_binding": "MULTI_OLD_BINDING_CONFLICT",
+    "parallel_satellite_pair": "PARALLEL_SATELLITE_PAIR_CONFLICT",
+    "reserved_terminal": "RESERVED_TERMINAL_CONFLICT"
+  },
+  "schema": "gate_f3_candidate_source_drain_human_freeze_v1",
+  "scope": {
+    "F3_performance_started": false,
+    "P1_execution_authorized": false,
+    "P1_runs_executed": "0/12",
+    "P2_started": false,
+    "RL_started": false,
+    "controller_performance_run_authorized": false
+  },
+  "setup_parameters": {
+    "acquisition_s": 1.0,
+    "ready_offset_s": 2.0,
+    "retarget_a_s": 1.0,
+    "retarget_b_s": 1.0,
+    "source_file": "configs/hardware_gate_c_simplified_v1.json",
+    "source_file_sha256": "66ca6881b739aad87ccd850a89f0dcddb9bb35684f48fcdee2e0aece33fadd19",
+    "source_key": "audit_setup_fixture",
+    "status": "synthetic_sensitivity_only_not_hardware_calibrated"
+  }
+}

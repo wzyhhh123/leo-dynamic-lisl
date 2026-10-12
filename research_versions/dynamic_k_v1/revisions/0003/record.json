@@ -1,0 +1,133 @@
+{
+  "N1_implemented_or_accepted": false,
+  "algorithm_selection": null,
+  "authorization": {
+    "actor": "human_user",
+    "effective_revision_id": "0003",
+    "number_resolution": "0002 is already sealed for authorized root results duplicate plot cleanup; append 0003 without rewriting or renumbering history.",
+    "request": "继续 dynamic_k_v1，申请执行 N0c 科学合同语义补充。明确可接纳业务的活动动态 K、单列 DRAINING/SETUP、统一 [0,T] 实际状态计费、结果 schema 预留、N1a/N1b 边界；所有未决科学数值保持 null，不改历史 Gate 或生产代码，不运行仿真/训练/主实验。完成版本验证和中文报告后停止等待审核。",
+    "requested_revision_id": "0002",
+    "scope": "N0c_STATIC_SCIENTIFIC_CONTRACT_SUPPLEMENT_ONLY",
+    "source": "current_conversation_user_request"
+  },
+  "bindings": {
+    "baseline_seal": {
+      "byte_count": 656,
+      "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+      "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+    },
+    "configuration": {
+      "byte_count": 5563,
+      "path": "research_versions/dynamic_k_v1/configs/research_v1_DRAFT.json",
+      "sha256": "71ab1ddfb38cbd9d2804c01a67c131a2e937fc2290293170922d0ef60b7c5742"
+    },
+    "contract": {
+      "byte_count": 8127,
+      "path": "research_versions/dynamic_k_v1/contracts/research_contract_v1_DRAFT_CN.md",
+      "sha256": "2dc51c9f844ef28f6a2dede0e1ce253c89bbf2fdd4bb845c57e18907af0a52f5"
+    },
+    "result_schema_draft": {
+      "byte_count": 14160,
+      "path": "research_versions/dynamic_k_v1/schemas/research_result_v1_DRAFT.schema.json",
+      "sha256": "76f950872c9045a993ec44fae92aedf9daea3db82e5b1c087ffdf740d53d40d1"
+    },
+    "result_template_draft": {
+      "byte_count": 2274,
+      "path": "research_versions/dynamic_k_v1/schemas/research_result_v1_DRAFT.template.json",
+      "sha256": "35fbdc47934dd351e54ee1df14152c69c695569a8470b6e74d82b7cd4ee6ecba"
+    },
+    "static_validation": {
+      "byte_count": 4406,
+      "path": "research_versions/dynamic_k_v1/acceptance/0003/static_validation_report.json",
+      "sha256": "91bc16e8126ccb0614206d0b7fd468571339851b6eb72bf64124b56c93071596"
+    }
+  },
+  "changes": {
+    "added": [
+      {
+        "byte_count": 3866,
+        "path": "research_versions/dynamic_k_v1/acceptance/0003/RESULT_CN.md",
+        "sha256": "742cdd03c093a4f8495ea896626ddc5dccb13b371f12591d7d884b845bfa826b"
+      },
+      {
+        "byte_count": 3525,
+        "path": "research_versions/dynamic_k_v1/acceptance/0003/before/configuration_before.json",
+        "sha256": "b8b86d1abc3db1765ee23123bfafaa99c419731cb046984458baa962980e8102"
+      },
+      {
+        "byte_count": 4042,
+        "path": "research_versions/dynamic_k_v1/acceptance/0003/before/contract_before.md",
+        "sha256": "7aca0acd0e28164898582ebfa1e12e83e1b84d5a7e8372c5dbc7309987da8bcc"
+      },
+      {
+        "byte_count": 8996,
+        "path": "research_versions/dynamic_k_v1/acceptance/0003/check_n0c_static.py",
+        "sha256": "1b785bd23d7f5cbe778a6663b1443c5a267668a63a117316e7258e7b59a7a1d3"
+      },
+      {
+        "byte_count": 3513,
+        "path": "research_versions/dynamic_k_v1/acceptance/0003/preseal_change_audit.json",
+        "sha256": "7045b000f113d5aacbe93a0f25160fdb6c0808b78d59abd8107bf183fdcf736a"
+      },
+      {
+        "byte_count": 4406,
+        "path": "research_versions/dynamic_k_v1/acceptance/0003/static_validation_report.json",
+        "sha256": "91bc16e8126ccb0614206d0b7fd468571339851b6eb72bf64124b56c93071596"
+      },
+      {
+        "byte_count": 14160,
+        "path": "research_versions/dynamic_k_v1/schemas/research_result_v1_DRAFT.schema.json",
+        "sha256": "76f950872c9045a993ec44fae92aedf9daea3db82e5b1c087ffdf740d53d40d1"
+      },
+      {
+        "byte_count": 2274,
+        "path": "research_versions/dynamic_k_v1/schemas/research_result_v1_DRAFT.template.json",
+        "sha256": "35fbdc47934dd351e54ee1df14152c69c695569a8470b6e74d82b7cd4ee6ecba"
+      }
+    ],
+    "deleted": [],
+    "modified": [
+      {
+        "after": {
+          "byte_count": 5563,
+          "sha256": "71ab1ddfb38cbd9d2804c01a67c131a2e937fc2290293170922d0ef60b7c5742"
+        },
+        "before": {
+          "byte_count": 3525,
+          "sha256": "b8b86d1abc3db1765ee23123bfafaa99c419731cb046984458baa962980e8102"
+        },
+        "path": "research_versions/dynamic_k_v1/configs/research_v1_DRAFT.json"
+      },
+      {
+        "after": {
+          "byte_count": 8127,
+          "sha256": "2dc51c9f844ef28f6a2dede0e1ce253c89bbf2fdd4bb845c57e18907af0a52f5"
+        },
+        "before": {
+          "byte_count": 4042,
+          "sha256": "7aca0acd0e28164898582ebfa1e12e83e1b84d5a7e8372c5dbc7309987da8bcc"
+        },
+        "path": "research_versions/dynamic_k_v1/contracts/research_contract_v1_DRAFT_CN.md"
+      }
+    ]
+  },
+  "contract_and_configuration_status": "DRAFT_NOT_FROZEN",
+  "created_asia_shanghai": "2026-10-10T12:03:17.076821+08:00",
+  "created_utc": "2026-10-10T04:03:17.076821+00:00",
+  "legacy_gate_assets_modified": false,
+  "parent_record": {
+    "byte_count": 16033,
+    "path": "research_versions/dynamic_k_v1/revisions/0002/record.json",
+    "sha256": "7462107253e5d0c259176ab45f2475a1d5e8d5997f41419ab4e235be1cebe9ab"
+  },
+  "production_code_modified": false,
+  "reason": "用户授权 N0c 科学合同语义补充；仅更新新版本草案并新增结果 schema 与静态验收证据，保留所有历史 Gate 资产和生产实现。",
+  "revision_id": "0003",
+  "schema": "dynamic_k_revision_record_v1",
+  "scientific_gate_acceptance_claimed": false,
+  "scientific_parameters_status": "UNRESOLVED_NULL",
+  "self_record_hash_excluded": true,
+  "semantic_stage": "N0c",
+  "simulations_or_training_executed": false,
+  "version_id": "dynamic_k_v1"
+}

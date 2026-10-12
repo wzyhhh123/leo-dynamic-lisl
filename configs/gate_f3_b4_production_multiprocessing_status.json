@@ -1,0 +1,45 @@
+{
+  "status": "B4_PRODUCTION_MULTIPROCESSING_INTEGRATION_PASS",
+  "checkpoint_alignment": "PASS",
+  "multi_epoch_exact_equivalence": "PASS",
+  "epochs_s": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "full_regression": {
+    "pass": true,
+    "count": 318,
+    "report": "outputs/b4_final_compatibility_20261003T221327_994529Z/multi_epoch/full_acceptance_regression.txt",
+    "report_sha256": "a508b69d3d1066b48f438b28e7fd9183c6ab1068116f604963eaeeb0cc8a23af"
+  },
+  "focused": {
+    "pass": true,
+    "count": 56,
+    "report": "outputs/b4_final_compatibility_20261003T221327_994529Z/multi_epoch/focused_acceptance_tests.txt",
+    "report_sha256": "4b375152132768810326fca471ce0ecc7907d970c15b33615dfa92d22f02dbd5"
+  },
+  "registered_runtime_seal_tests": {
+    "pass": true,
+    "count": 4,
+    "report": "outputs/b4_final_compatibility_20261003T221327_994529Z/multi_epoch/registered_runtime_seal_tests.txt",
+    "report_sha256": "099efc983552e0dad6424f98be885d4786a66819ab69c9a23b080ea8f0b3a934"
+  },
+  "final_p1_preflight_pass": true,
+  "previous_FAIL_attempt_preserved": true,
+  "paused_attempt_preserved": true,
+  "production_worker_count": 8,
+  "serial_reference_retained": true,
+  "pool_created_once": true,
+  "worker_shutdown_clean": true,
+  "production_observe_speedup": 5.256559279354554,
+  "overlay": "configs/gate_f3_b4_production_multiprocessing_overlay_v1.json",
+  "overlay_canonical_sha256": "65b5fbc35eed1c07b77e017412454e27225180a78fb3a1eb1c6f6cb8497c233a",
+  "registration_canonical_sha256": "b8e06933258f231d6e952cb8410a5e30180580eb78bc23a5b2edb1e1664947ca",
+  "registered_P1_executed": false,
+  "P2_started": false,
+  "RL_started": false
+}

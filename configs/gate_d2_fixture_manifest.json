@@ -1,0 +1,20 @@
+{
+  "schema": "gate_d2_scripted_fixture_manifest_v1",
+  "selection_rule": "correctness coverage only; no action selected by J or delay outcome",
+  "units": {"rate": "bit/s", "work": "bit", "time": "s"},
+  "small_fixtures": [
+    {"id": "D2-A", "name": "BBM forced outage", "traffic": "f0 A->D, 8 Gbit/s on [0,12)", "transition": "at 1 s replace occupied B.D1-C.D1 with B.D1-D.D1; 2 s retarget", "analytical_expected": {"outage_duration_s": 2.0, "backlog_added_bits": 16000000000.0, "peak_backlog_bits": 16000000000.0, "clearance_time_s": 8.0}},
+    {"id": "D2-B", "name": "genuine MBB", "traffic": "same scale as D2-A", "transition": "idle A.D2-D.D2 LINK_UP then release B.D1-C.D1", "expected": "no forced zero-service interval"},
+    {"id": "D2-C", "name": "false MBB rejection", "transition": "idle second terminals but no bilateral FoR window", "expected_rejection": "FOR_FAIL_BILATERAL"},
+    {"id": "D2-D", "name": "DRAINING active/admit split", "transition": "old synthetic TX completes at 1.5 s; DRAINING starts at 1 s", "expected": "old edge remains active but is removed from admit; network in-flight work survives"},
+    {"id": "D2-E", "name": "temporary partition and unaffected flow", "expected": "affected flow waits; E->F continues; recovery drains backlog"},
+    {"id": "D2-F", "name": "alternate-path reroute", "expected_routes": ["A-C-D", "A-B-D", "A-E-D"], "shared_edge": "B->D with third_party flow"},
+    {"id": "D2-G", "name": "natural expiry", "expected": "LINK_EXPIRE uses the same graph/routing semantics as scripted removal"},
+    {"id": "D2-H", "name": "same-state HOLD/SWITCH clone", "use": "state-clone sanity only; no performance claim"}
+  ],
+  "pilot_160": [
+    {"id": "bridge_temporary_partition", "action": "at 1 s replace X1_11.D1-X2_11.D2 by X1_11.D1-X2_12.D2", "gate_c_window_source": "frozen terminal_pair_intervals.jsonl", "policy": "BOUNDED_OUTAGE(2 s)", "selection": "fixed bridge coverage"},
+    {"id": "connected_mbb_reroute", "action": "at 1 s establish X1_1.D2-X2_1.D1, then release X1_11.D1-X2_11.D2", "gate_c_window_source": "frozen terminal_pair_intervals.jsonl", "policy": "STRICT_CONNECTED", "selection": "fixed spare-terminal MBB coverage"}
+  ],
+  "forbidden_selection": ["best J", "worst J", "traffic-aware candidate ranking", "controller search"]
+}

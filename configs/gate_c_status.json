@@ -1,0 +1,13 @@
+{
+  "gate_c_core_transition_framework": "PASS",
+  "hardware_calibration": "PENDING",
+  "full_gate_c_status": "CORE_PASS_HARDWARE_PENDING",
+  "evidence": "outputs/gate_c_20260921T092620_617747Z",
+  "tests_run": 21,
+  "repeated_runs": 2,
+  "deterministic_replay_exact": true,
+  "z_ref_selected": null,
+  "t_max_frozen": false,
+  "gate_d_started": false
+}
+

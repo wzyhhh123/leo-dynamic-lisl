@@ -1,0 +1,108 @@
+{
+  "schema": "gate_k0_v1_2_batch_audit_proposal",
+  "status": "DRAFT_NOT_FROZEN",
+  "frozen": false,
+  "implementation_authorized": false,
+  "parent": "configs/gate_k0_contract_v1_1_DRAFT.json",
+  "parent_draft_sha256": "34f98bcff5deddd323e831c5e7353255d434b7401d08cb651084e9b7130e35a7",
+  "parent_frozen": false,
+  "existing_thresholds_changed": false,
+  "K_star_selected": false,
+  "finding": "16 legal singleton REPLACE is not a certificate of four mutually compatible joint replacements.",
+  "retain": {
+    "times": [
+      0,
+      30,
+      60,
+      90,
+      120,
+      150,
+      180,
+      210,
+      240,
+      270,
+      300,
+      330,
+      360,
+      390,
+      420,
+      450,
+      480,
+      510,
+      540,
+      570
+    ],
+    "candidate_K": [
+      4,
+      8,
+      16,
+      24,
+      32,
+      40,
+      48,
+      64,
+      80,
+      96,
+      120,
+      160
+    ],
+    "occupancy_band": [
+      0.15,
+      0.5
+    ],
+    "draft_18_over_20_conditions": "untouched pending approval",
+    "lifetime": "L_usable_within_horizon, right-censor flag, actual readiness",
+    "K4_ROLE": "VERY_SPARSE_HISTORICAL_REFERENCE"
+  },
+  "proposed_metrics": [
+    {
+      "name": "M_resource(t,K)",
+      "meaning": "Maximum resource-independent subset of uncapped physically legal singleton inventory, with old/new footprint and parallel-pair conflicts; exact conflict-graph independent-set solver, not matching.",
+      "role": "DIAGNOSTIC"
+    },
+    {
+      "name": "M_joint(t,K)",
+      "meaning": "Maximum cardinality among resource-independent batches additionally passing whole Gate B/C/time-line safety; report exact/certified-bound status. Pairwise compatibility alone is insufficient.",
+      "role": "DIAGNOSTIC"
+    },
+    {
+      "name": "exists_safe_size_2_3_4",
+      "meaning": "Separate certified booleans with witnesses or exact infeasibility. Exhaustion of bounded search => UNKNOWN, never FALSE.",
+      "role": "DIAGNOSTIC_AND_POSSIBLE_FUTURE_GATE"
+    },
+    {
+      "name": "mode_composition",
+      "meaning": "For each feasible size: all BBM/all MBB/mixed composition witnesses/counts if exact; whole transition safety and completion bounds.",
+      "role": "DIAGNOSTIC"
+    },
+    {
+      "name": "conflict_reasons",
+      "meaning": "Repeated old, old/new terminal footprint, existing reservation/owner, parallel pair, physical-window and joint connectivity conflict.",
+      "role": "DIAGNOSTIC"
+    },
+    {
+      "name": "operational_cap_loss",
+      "meaning": "Compare full structural witnesses with proposed capped runtime pool coverage; no traffic or economic score.",
+      "role": "DIAGNOSTIC"
+    }
+  ],
+  "possible_new_hard_gate": {
+    "proposal": "exists_safe_size4 over a human-preregistered minimum fraction of20 samples",
+    "fraction": null,
+    "numerator": null,
+    "denominator": 20,
+    "status": "REQUIRES_HUMAN_FREEZE_NOT_APPLIED",
+    "recommendation": "First record diagnostics; m<=4 permission does not require m=4 always. Do not automatically change K-selection.",
+    "bias": "Could push K upward, penalize terminal/lifetime bottlenecks, prefer spare-terminal MBB structures and exclude useful networks controllable with m1-3. Initial static snapshots also do not prove runtime reservation availability."
+  },
+  "solver_boundary": "No maximum matching, independent-set solving, Z_K building, uncapped replacement enumeration or structural mode scan executed in this design gate.",
+  "implementation_dependency": "Define/approve batch physical/safety predicate before K0-v1.2 audit; implement validator correctness before selecting K*. Use same predicate in K0 and F3-v2, not economic controller evaluator.",
+  "audit_performance_firewall": [
+    "no traffic rates",
+    "no Q/I/D outcomes",
+    "no J",
+    "no delivery",
+    "no controller actions/results"
+  ],
+  "draft_canonical_sha256": "9c0003940bfe09b472343638e6bbf37d07f373e988c5d3fbe2b9eb2fe8a328a4"
+}

@@ -1,0 +1,21 @@
+{
+  "baseline_id": "legacy_baseline_20261010T030541_607456Z",
+  "files": {
+    "exclusions.json": {
+      "byte_count": 52335,
+      "sha256": "b258af00a7076ae7b159fbff88a08b563e73de76338c9f3944ab7d7ef6ffae11"
+    },
+    "files.json": {
+      "byte_count": 1213466,
+      "sha256": "c13cb86e15693670f67bd6997337ace03c462d48eb9588f133b8ae03dbcfa267"
+    },
+    "record.json": {
+      "byte_count": 3083417,
+      "sha256": "577be8a2fc9fd36896362230710027e21441b63a887f264235cfd2dd64f450cd"
+    }
+  },
+  "requires_external_version_record_hash_anchor": true,
+  "schema": "dynamic_k_baseline_seal_v1",
+  "seal_self_hash_excluded": true,
+  "status": "SEALED"
+}

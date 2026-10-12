@@ -1,0 +1,2553 @@
+{
+  "schema": "f3_v2_october_paper_experiment_matrix",
+  "status": "DRAFT_NOT_FROZEN",
+  "frozen": false,
+  "created_date_local": "2026-10-08",
+  "timezone": "Asia/Shanghai",
+  "implementation_authorized_by_this_plan": false,
+  "formal_performance_authorized": false,
+  "target_evidence_date": "2026-10-31",
+  "MARL_PPO_in_scope": false,
+  "parent_artifact_sha256": {
+    "docs/GATE_F3_V2_JOINT_RECONFIGURATION_DESIGN_CN.md": "0b9daf08cc2d8b84b3c672ee79a4d64a23fd48b36d3ba9b6b7b68cd6671a6714",
+    "docs/GATE_F3_V2_BASELINE_REDESIGN_CN.md": "37d7701e13729e2e3df56d5641e2481ec9a15ba9141b69a914a92000aeb9fd90",
+    "configs/gate_f3_v2_joint_action_contract_DRAFT.json": "66f25876803e0d4a0bb911824d2b6fa164108080062d4e45d17bbf0b0a542eb5",
+    "configs/gate_f3_v2_baseline_registry_DRAFT.json": "91d9db9cdd46b6fde0612cc83fe3b1a029d35f19214e7cf7fda3223d3de20020",
+    "configs/gate_f3_v2_execution_contract_DRAFT.json": "8c52ffa808d2b310c32a7626ec4d60eb4a07cfcd7a7e7cf1d6f41b683808cf9b",
+    "configs/gate_k0_contract_v1_1_DRAFT.json": "34f98bcff5deddd323e831c5e7353255d434b7401d08cb651084e9b7130e35a7",
+    "configs/gate_k0_v1_2_batch_audit_proposal_DRAFT.json": "bb4ee1c6deff3c0b728449af9994536ba036cabf27ae3bf886cffe84fb2e869e",
+    "outputs/gate_f3_v2_design_20261008T112538_143340Z/implementation_and_test_plan.json": "00937e84b66062e9234c7d1aac9edf3f69ffa269e3d891c2d8eba9623712b6fc",
+    "outputs/gate_f3_v2_design_20261008T112538_143340Z/joint_candidate_search_plan.json": "a96c3789887c6a2c1753e0c3521b376054da49bc6bec2362a3ca322db9153a1f",
+    "configs/gate_f3_traffic_stable_v1.json": "739fde56405bf2b3f4d1f244d765ba46995792411bf91473c74a9f7bdd17223b",
+    "configs/gate_f3_traffic_hotspot_migration_v1.json": "7d041ea8a0118502b4a4930862634a859670fe8ff3cc0666bbb4c66a4eedcd8f",
+    "configs/gate_d0_od_manifest_16.json": "b8e46dd988e4f5136eeb5b8adea4272ad93b3fafc5ed7fc4fb537eff167173de",
+    "configs/z_moderate_v1.json": "a28f54be05c5dbae07d0654b507209dad499ff853f9558cdd7da50f28d56c0d9"
+  },
+  "target_run_count": 42,
+  "controller_counts": {
+    "B3-v2": 13,
+    "B4-v2": 13,
+    "B0-v2": 5,
+    "B1-v2": 5,
+    "B2-v2": 6
+  },
+  "block_counts": {
+    "CORE": 12,
+    "STABLE": 4,
+    "SPARSE": 8,
+    "FACTORIAL": 6,
+    "HOLD": 6,
+    "ROUTER": 6
+  },
+  "primary_contrast": "B4-v2_minus_B3-v2; complete pairs only",
+  "new_K_star_selected": false,
+  "K_star": null,
+  "preregistration_state": "DRAFT_ONLY_NOT_AN_EXECUTABLE_FROZEN_MANIFEST",
+  "common_contract": {
+    "scale": 160,
+    "commodities": 16,
+    "OD_manifest": "configs/gate_d0_od_manifest_16.json",
+    "arrival_horizon_s": [
+      0,
+      240
+    ],
+    "drain_limit_s": 600,
+    "decision_at_600": false,
+    "COMPLETE_threshold_bits": 0.01,
+    "D2_early_return_bits": 1.0,
+    "alpha_star_bit_s": 26666666666.666664,
+    "rho_normalization": "existing D0 reference, never recalibrate by K/controller/router",
+    "setup": "unchanged Gate C base hardware and real state-dependent Gate B/C transitions, no setup sweep in this matrix",
+    "physical_inputs": "existing160-star SGP4/WGS72/TEME plus Gate C0-600 windows; preserve natural expiry/censor",
+    "safety_proposal": "STRICT_CONNECTED for both K_STAR and K4; same policy, requires freeze and feasibility verification",
+    "initial_link_age_proposal_s": 0,
+    "current_rate_forecast": "B4 persistence only, no realized future traffic",
+    "late_horizon_proposal": "min(10,600-t); fixed nominal10, boundary clipping only; approval required",
+    "shared_search": "structure-only common pool on same root; no J-based selection/tuning; no across-epoch pool cache",
+    "fairness": "paired controllers may evolve different states; same pool construction contract/budgets, not identical pool after divergent live states",
+    "deterministic": true,
+    "seed_policy": "fixed immutable traces, no new stochastic seeds/replicates",
+    "statistical_scope": "single deterministic trace family; paired descriptive effects, no independent-replicate CI/p-value claim"
+  },
+  "runs": [
+    {
+      "run_id": "OCT26-CORE-01",
+      "execution_order": 1,
+      "block": "CORE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B3-v2",
+      "rho": 0.5,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "三负载主对比及STATIC/Ignore-Setup对照",
+      "research_question_ids": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q6",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B3:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-CORE-02",
+      "execution_order": 2,
+      "block": "CORE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B4-v2",
+      "rho": 0.5,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "三负载主对比及STATIC/Ignore-Setup对照",
+      "research_question_ids": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q6",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 33,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B4:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-CORE-03",
+      "execution_order": 3,
+      "block": "CORE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B0-v2",
+      "rho": 0.5,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "三负载主对比及STATIC/Ignore-Setup对照",
+      "research_question_ids": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q6",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B0:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-CORE-04",
+      "execution_order": 4,
+      "block": "CORE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B1-v2",
+      "rho": 0.5,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "三负载主对比及STATIC/Ignore-Setup对照",
+      "research_question_ids": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q6",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B1:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-CORE-05",
+      "execution_order": 5,
+      "block": "CORE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B3-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "三负载主对比及STATIC/Ignore-Setup对照",
+      "research_question_ids": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q6",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B3:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-CORE-06",
+      "execution_order": 6,
+      "block": "CORE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B4-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "三负载主对比及STATIC/Ignore-Setup对照",
+      "research_question_ids": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q6",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 33,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B4:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-CORE-07",
+      "execution_order": 7,
+      "block": "CORE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B0-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "三负载主对比及STATIC/Ignore-Setup对照",
+      "research_question_ids": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q6",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B0:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-CORE-08",
+      "execution_order": 8,
+      "block": "CORE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B1-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "三负载主对比及STATIC/Ignore-Setup对照",
+      "research_question_ids": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q6",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B1:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-CORE-09",
+      "execution_order": 9,
+      "block": "CORE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B3-v2",
+      "rho": 1.0,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "三负载主对比及STATIC/Ignore-Setup对照",
+      "research_question_ids": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q6",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B3:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-CORE-10",
+      "execution_order": 10,
+      "block": "CORE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B4-v2",
+      "rho": 1.0,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "三负载主对比及STATIC/Ignore-Setup对照",
+      "research_question_ids": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q6",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 33,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B4:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-CORE-11",
+      "execution_order": 11,
+      "block": "CORE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B0-v2",
+      "rho": 1.0,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "三负载主对比及STATIC/Ignore-Setup对照",
+      "research_question_ids": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q6",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B0:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-CORE-12",
+      "execution_order": 12,
+      "block": "CORE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B1-v2",
+      "rho": 1.0,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "三负载主对比及STATIC/Ignore-Setup对照",
+      "research_question_ids": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q6",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B1:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-STABLE-01",
+      "execution_order": 13,
+      "block": "STABLE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B3-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "STABLE",
+      "traffic_asset": "configs/gate_f3_traffic_stable_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "同平均负载下稳定业务vs热点迁移",
+      "research_question_ids": [
+        "Q7",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B3:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-STABLE-02",
+      "execution_order": 14,
+      "block": "STABLE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B4-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "STABLE",
+      "traffic_asset": "configs/gate_f3_traffic_stable_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "同平均负载下稳定业务vs热点迁移",
+      "research_question_ids": [
+        "Q7",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 33,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B4:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-STABLE-03",
+      "execution_order": 15,
+      "block": "STABLE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B0-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "STABLE",
+      "traffic_asset": "configs/gate_f3_traffic_stable_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "同平均负载下稳定业务vs热点迁移",
+      "research_question_ids": [
+        "Q7",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B0:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-STABLE-04",
+      "execution_order": 16,
+      "block": "STABLE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B1-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "STABLE",
+      "traffic_asset": "configs/gate_f3_traffic_stable_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "同平均负载下稳定业务vs热点迁移",
+      "research_question_ids": [
+        "Q7",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B1:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-SPARSE-01",
+      "execution_order": 17,
+      "block": "SPARSE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B3-v2",
+      "rho": 0.5,
+      "topology_regime": "K4_HISTORICAL_REFERENCE",
+      "nominal_K": 4,
+      "topology_artifact": "configs/z_moderate_v1.json",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "固定K* vs历史稀疏K=4结构敏感性",
+      "research_question_ids": [
+        "Q4",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B3:K4_HISTORICAL_REFERENCE:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-SPARSE-02",
+      "execution_order": 18,
+      "block": "SPARSE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B4-v2",
+      "rho": 0.5,
+      "topology_regime": "K4_HISTORICAL_REFERENCE",
+      "nominal_K": 4,
+      "topology_artifact": "configs/z_moderate_v1.json",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "固定K* vs历史稀疏K=4结构敏感性",
+      "research_question_ids": [
+        "Q4",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 33,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B4:K4_HISTORICAL_REFERENCE:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-SPARSE-03",
+      "execution_order": 19,
+      "block": "SPARSE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B3-v2",
+      "rho": 0.8,
+      "topology_regime": "K4_HISTORICAL_REFERENCE",
+      "nominal_K": 4,
+      "topology_artifact": "configs/z_moderate_v1.json",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "固定K* vs历史稀疏K=4结构敏感性",
+      "research_question_ids": [
+        "Q4",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B3:K4_HISTORICAL_REFERENCE:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-SPARSE-04",
+      "execution_order": 20,
+      "block": "SPARSE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B4-v2",
+      "rho": 0.8,
+      "topology_regime": "K4_HISTORICAL_REFERENCE",
+      "nominal_K": 4,
+      "topology_artifact": "configs/z_moderate_v1.json",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "固定K* vs历史稀疏K=4结构敏感性",
+      "research_question_ids": [
+        "Q4",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 33,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B4:K4_HISTORICAL_REFERENCE:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-SPARSE-05",
+      "execution_order": 21,
+      "block": "SPARSE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B3-v2",
+      "rho": 1.0,
+      "topology_regime": "K4_HISTORICAL_REFERENCE",
+      "nominal_K": 4,
+      "topology_artifact": "configs/z_moderate_v1.json",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "固定K* vs历史稀疏K=4结构敏感性",
+      "research_question_ids": [
+        "Q4",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B3:K4_HISTORICAL_REFERENCE:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-SPARSE-06",
+      "execution_order": 22,
+      "block": "SPARSE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B4-v2",
+      "rho": 1.0,
+      "topology_regime": "K4_HISTORICAL_REFERENCE",
+      "nominal_K": 4,
+      "topology_artifact": "configs/z_moderate_v1.json",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "固定K* vs历史稀疏K=4结构敏感性",
+      "research_question_ids": [
+        "Q4",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 33,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B4:K4_HISTORICAL_REFERENCE:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-SPARSE-07",
+      "execution_order": 23,
+      "block": "SPARSE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B0-v2",
+      "rho": 0.8,
+      "topology_regime": "K4_HISTORICAL_REFERENCE",
+      "nominal_K": 4,
+      "topology_artifact": "configs/z_moderate_v1.json",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "K=4锚点的STATIC/Ignore-Setup上下文",
+      "research_question_ids": [
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B0:K4_HISTORICAL_REFERENCE:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-SPARSE-08",
+      "execution_order": 24,
+      "block": "SPARSE",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B1-v2",
+      "rho": 0.8,
+      "topology_regime": "K4_HISTORICAL_REFERENCE",
+      "nominal_K": 4,
+      "topology_artifact": "configs/z_moderate_v1.json",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "K=4锚点的STATIC/Ignore-Setup上下文",
+      "research_question_ids": [
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B1:K4_HISTORICAL_REFERENCE:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-FACTORIAL-01",
+      "execution_order": 25,
+      "block": "FACTORIAL",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B3-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 2,
+      "max_batch_replace": 1,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "2x2 cadence/batch消融；(5,4)复用CORE rho=.8",
+      "research_question_ids": [
+        "Q5",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 300,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 16,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B3:K_STAR:2:1:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-FACTORIAL-02",
+      "execution_order": 26,
+      "block": "FACTORIAL",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B4-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 2,
+      "max_batch_replace": 1,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "2x2 cadence/batch消融；(5,4)复用CORE rho=.8",
+      "research_question_ids": [
+        "Q5",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 300,
+        "maximum_rollout_evaluations_per_epoch": 17,
+        "max_non_hold_pool_proposed": 16,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B4:K_STAR:2:1:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-FACTORIAL-03",
+      "execution_order": 27,
+      "block": "FACTORIAL",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B3-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 2,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "2x2 cadence/batch消融；(5,4)复用CORE rho=.8",
+      "research_question_ids": [
+        "Q5",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 300,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B3:K_STAR:2:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-FACTORIAL-04",
+      "execution_order": 28,
+      "block": "FACTORIAL",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B4-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 2,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "2x2 cadence/batch消融；(5,4)复用CORE rho=.8",
+      "research_question_ids": [
+        "Q5",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 300,
+        "maximum_rollout_evaluations_per_epoch": 33,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B4:K_STAR:2:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-FACTORIAL-05",
+      "execution_order": 29,
+      "block": "FACTORIAL",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B3-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 1,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "2x2 cadence/batch消融；(5,4)复用CORE rho=.8",
+      "research_question_ids": [
+        "Q5",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 16,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B3:K_STAR:5:1:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-FACTORIAL-06",
+      "execution_order": 30,
+      "block": "FACTORIAL",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B4-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 1,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "2x2 cadence/batch消融；(5,4)复用CORE rho=.8",
+      "research_question_ids": [
+        "Q5",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 17,
+        "max_non_hold_pool_proposed": 16,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B4:K_STAR:5:1:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-HOLD-01",
+      "execution_order": 31,
+      "block": "HOLD",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B2-v2",
+      "rho": 0.5,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": 4,
+      "hysteresis_threshold": 0,
+      "scientific_role": "B1基础上最小逐链hold H4/H8对照，禁止择优只报一种",
+      "research_question_ids": [
+        "Q8"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B2:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-HOLD-02",
+      "execution_order": 32,
+      "block": "HOLD",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B2-v2",
+      "rho": 0.5,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": 8,
+      "hysteresis_threshold": 0,
+      "scientific_role": "B1基础上最小逐链hold H4/H8对照，禁止择优只报一种",
+      "research_question_ids": [
+        "Q8"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B2:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-HOLD-03",
+      "execution_order": 33,
+      "block": "HOLD",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B2-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": 4,
+      "hysteresis_threshold": 0,
+      "scientific_role": "B1基础上最小逐链hold H4/H8对照，禁止择优只报一种",
+      "research_question_ids": [
+        "Q8"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B2:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-HOLD-04",
+      "execution_order": 34,
+      "block": "HOLD",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B2-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": 8,
+      "hysteresis_threshold": 0,
+      "scientific_role": "B1基础上最小逐链hold H4/H8对照，禁止择优只报一种",
+      "research_question_ids": [
+        "Q8"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B2:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-HOLD-05",
+      "execution_order": 35,
+      "block": "HOLD",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B2-v2",
+      "rho": 1.0,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": 4,
+      "hysteresis_threshold": 0,
+      "scientific_role": "B1基础上最小逐链hold H4/H8对照，禁止择优只报一种",
+      "research_question_ids": [
+        "Q8"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B2:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-HOLD-06",
+      "execution_order": 36,
+      "block": "HOLD",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B2-v2",
+      "rho": 1.0,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": 8,
+      "hysteresis_threshold": 0,
+      "scientific_role": "B1基础上最小逐链hold H4/H8对照，禁止择优只报一种",
+      "research_question_ids": [
+        "Q8"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B2:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-ROUTER-01",
+      "execution_order": 37,
+      "block": "ROUTER",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B3-v2",
+      "rho": 0.5,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "CURRENT_STATE_LOAD_AWARE",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "same scenario/traffic/parameters仅替换common router",
+      "research_question_ids": [
+        "Q9",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B3:K_STAR:5:4:CURRENT_STATE_LOAD_AWARE",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-ROUTER-02",
+      "execution_order": 38,
+      "block": "ROUTER",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B4-v2",
+      "rho": 0.5,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "CURRENT_STATE_LOAD_AWARE",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "same scenario/traffic/parameters仅替换common router",
+      "research_question_ids": [
+        "Q9",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 33,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B4:K_STAR:5:4:CURRENT_STATE_LOAD_AWARE",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-ROUTER-03",
+      "execution_order": 39,
+      "block": "ROUTER",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B3-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "CURRENT_STATE_LOAD_AWARE",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "same scenario/traffic/parameters仅替换common router",
+      "research_question_ids": [
+        "Q9",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B3:K_STAR:5:4:CURRENT_STATE_LOAD_AWARE",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-ROUTER-04",
+      "execution_order": 40,
+      "block": "ROUTER",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B4-v2",
+      "rho": 0.8,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "CURRENT_STATE_LOAD_AWARE",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "same scenario/traffic/parameters仅替换common router",
+      "research_question_ids": [
+        "Q9",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 33,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B4:K_STAR:5:4:CURRENT_STATE_LOAD_AWARE",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-ROUTER-05",
+      "execution_order": 41,
+      "block": "ROUTER",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B3-v2",
+      "rho": 1.0,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "CURRENT_STATE_LOAD_AWARE",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "same scenario/traffic/parameters仅替换common router",
+      "research_question_ids": [
+        "Q9",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 0,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B3:K_STAR:5:4:CURRENT_STATE_LOAD_AWARE",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    },
+    {
+      "run_id": "OCT26-ROUTER-06",
+      "execution_order": 42,
+      "block": "ROUTER",
+      "status": "PLANNED_NOT_AUTHORIZED",
+      "scale": 160,
+      "controller": "B4-v2",
+      "rho": 1.0,
+      "topology_regime": "K_STAR",
+      "nominal_K": null,
+      "topology_artifact": "PENDING_K1_K_STAR_ARTIFACT",
+      "router": "CURRENT_STATE_LOAD_AWARE",
+      "traffic": "HOTSPOT_MIGRATION",
+      "traffic_asset": "configs/gate_f3_traffic_hotspot_migration_v1.json",
+      "decision_cadence_s": 5,
+      "max_batch_replace": 4,
+      "rollout_horizon_nominal_s": 10,
+      "minimum_hold_s": null,
+      "hysteresis_threshold": null,
+      "scientific_role": "same scenario/traffic/parameters仅替换common router",
+      "research_question_ids": [
+        "Q9",
+        "Q10"
+      ],
+      "runtime_budget": {
+        "status": "PENDING_RESULT_BLIND_MEASUREMENT",
+        "maximum_scheduled_epochs": 120,
+        "maximum_rollout_evaluations_per_epoch": 33,
+        "max_non_hold_pool_proposed": 32,
+        "estimated_wall_clock_s": null,
+        "approved_operational_timeout_s": null,
+        "calibration_key": "B4:K_STAR:5:4:CURRENT_STATE_LOAD_AWARE",
+        "formula": "fixed episode overhead + epoch_count * measured conservative per-epoch cost + non-epoch service/evidence overhead"
+      },
+      "requires": [
+        "scientific_contract_freeze",
+        "K0_K1_or_exact_K4_binding",
+        "new_v2_acceptance",
+        "runtime_budget_filled",
+        "final_manifest_hash",
+        "human_formal_run_authorization"
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "contrast_id": "PRIMARY_CONTROLLER-01",
+      "kind": "PRIMARY_CONTROLLER",
+      "left_run_id": "OCT26-CORE-02",
+      "right_run_id": "OCT26-CORE-01",
+      "changed_axis": "controller",
+      "role": "同动作权限、pool规则与common fast layer的B4-B3",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "PRIMARY_CONTROLLER-02",
+      "kind": "PRIMARY_CONTROLLER",
+      "left_run_id": "OCT26-CORE-06",
+      "right_run_id": "OCT26-CORE-05",
+      "changed_axis": "controller",
+      "role": "同动作权限、pool规则与common fast layer的B4-B3",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "PRIMARY_CONTROLLER-03",
+      "kind": "PRIMARY_CONTROLLER",
+      "left_run_id": "OCT26-CORE-10",
+      "right_run_id": "OCT26-CORE-09",
+      "changed_axis": "controller",
+      "role": "同动作权限、pool规则与common fast layer的B4-B3",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "PRIMARY_CONTROLLER-04",
+      "kind": "PRIMARY_CONTROLLER",
+      "left_run_id": "OCT26-STABLE-02",
+      "right_run_id": "OCT26-STABLE-01",
+      "changed_axis": "controller",
+      "role": "同动作权限、pool规则与common fast layer的B4-B3",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "PRIMARY_CONTROLLER-05",
+      "kind": "PRIMARY_CONTROLLER",
+      "left_run_id": "OCT26-SPARSE-02",
+      "right_run_id": "OCT26-SPARSE-01",
+      "changed_axis": "controller",
+      "role": "同动作权限、pool规则与common fast layer的B4-B3",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "PRIMARY_CONTROLLER-06",
+      "kind": "PRIMARY_CONTROLLER",
+      "left_run_id": "OCT26-SPARSE-04",
+      "right_run_id": "OCT26-SPARSE-03",
+      "changed_axis": "controller",
+      "role": "同动作权限、pool规则与common fast layer的B4-B3",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "PRIMARY_CONTROLLER-07",
+      "kind": "PRIMARY_CONTROLLER",
+      "left_run_id": "OCT26-SPARSE-06",
+      "right_run_id": "OCT26-SPARSE-05",
+      "changed_axis": "controller",
+      "role": "同动作权限、pool规则与common fast layer的B4-B3",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "PRIMARY_CONTROLLER-08",
+      "kind": "PRIMARY_CONTROLLER",
+      "left_run_id": "OCT26-FACTORIAL-02",
+      "right_run_id": "OCT26-FACTORIAL-01",
+      "changed_axis": "controller",
+      "role": "同动作权限、pool规则与common fast layer的B4-B3",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "PRIMARY_CONTROLLER-09",
+      "kind": "PRIMARY_CONTROLLER",
+      "left_run_id": "OCT26-FACTORIAL-04",
+      "right_run_id": "OCT26-FACTORIAL-03",
+      "changed_axis": "controller",
+      "role": "同动作权限、pool规则与common fast layer的B4-B3",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "PRIMARY_CONTROLLER-10",
+      "kind": "PRIMARY_CONTROLLER",
+      "left_run_id": "OCT26-FACTORIAL-06",
+      "right_run_id": "OCT26-FACTORIAL-05",
+      "changed_axis": "controller",
+      "role": "同动作权限、pool规则与common fast layer的B4-B3",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "PRIMARY_CONTROLLER-11",
+      "kind": "PRIMARY_CONTROLLER",
+      "left_run_id": "OCT26-ROUTER-02",
+      "right_run_id": "OCT26-ROUTER-01",
+      "changed_axis": "controller",
+      "role": "同动作权限、pool规则与common fast layer的B4-B3",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "PRIMARY_CONTROLLER-12",
+      "kind": "PRIMARY_CONTROLLER",
+      "left_run_id": "OCT26-ROUTER-04",
+      "right_run_id": "OCT26-ROUTER-03",
+      "changed_axis": "controller",
+      "role": "同动作权限、pool规则与common fast layer的B4-B3",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "PRIMARY_CONTROLLER-13",
+      "kind": "PRIMARY_CONTROLLER",
+      "left_run_id": "OCT26-ROUTER-06",
+      "right_run_id": "OCT26-ROUTER-05",
+      "changed_axis": "controller",
+      "role": "同动作权限、pool规则与common fast layer的B4-B3",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "BASELINE-01",
+      "kind": "BASELINE",
+      "left_run_id": "OCT26-CORE-02",
+      "right_run_id": "OCT26-CORE-04",
+      "changed_axis": "controller",
+      "role": "预注册secondary对照，无global ranking",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "BASELINE-02",
+      "kind": "BASELINE",
+      "left_run_id": "OCT26-CORE-01",
+      "right_run_id": "OCT26-CORE-04",
+      "changed_axis": "controller",
+      "role": "预注册secondary对照，无global ranking",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "BASELINE-03",
+      "kind": "BASELINE",
+      "left_run_id": "OCT26-CORE-04",
+      "right_run_id": "OCT26-CORE-03",
+      "changed_axis": "controller",
+      "role": "预注册secondary对照，无global ranking",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "BASELINE-04",
+      "kind": "BASELINE",
+      "left_run_id": "OCT26-CORE-06",
+      "right_run_id": "OCT26-CORE-08",
+      "changed_axis": "controller",
+      "role": "预注册secondary对照，无global ranking",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "BASELINE-05",
+      "kind": "BASELINE",
+      "left_run_id": "OCT26-CORE-05",
+      "right_run_id": "OCT26-CORE-08",
+      "changed_axis": "controller",
+      "role": "预注册secondary对照，无global ranking",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "BASELINE-06",
+      "kind": "BASELINE",
+      "left_run_id": "OCT26-CORE-08",
+      "right_run_id": "OCT26-CORE-07",
+      "changed_axis": "controller",
+      "role": "预注册secondary对照，无global ranking",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "BASELINE-07",
+      "kind": "BASELINE",
+      "left_run_id": "OCT26-CORE-10",
+      "right_run_id": "OCT26-CORE-12",
+      "changed_axis": "controller",
+      "role": "预注册secondary对照，无global ranking",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "BASELINE-08",
+      "kind": "BASELINE",
+      "left_run_id": "OCT26-CORE-09",
+      "right_run_id": "OCT26-CORE-12",
+      "changed_axis": "controller",
+      "role": "预注册secondary对照，无global ranking",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "BASELINE-09",
+      "kind": "BASELINE",
+      "left_run_id": "OCT26-CORE-12",
+      "right_run_id": "OCT26-CORE-11",
+      "changed_axis": "controller",
+      "role": "预注册secondary对照，无global ranking",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "BASELINE-10",
+      "kind": "BASELINE",
+      "left_run_id": "OCT26-STABLE-02",
+      "right_run_id": "OCT26-STABLE-04",
+      "changed_axis": "controller",
+      "role": "预注册secondary对照，无global ranking",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "BASELINE-11",
+      "kind": "BASELINE",
+      "left_run_id": "OCT26-STABLE-01",
+      "right_run_id": "OCT26-STABLE-04",
+      "changed_axis": "controller",
+      "role": "预注册secondary对照，无global ranking",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "BASELINE-12",
+      "kind": "BASELINE",
+      "left_run_id": "OCT26-STABLE-04",
+      "right_run_id": "OCT26-STABLE-03",
+      "changed_axis": "controller",
+      "role": "预注册secondary对照，无global ranking",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "TRAFFIC-01",
+      "kind": "TRAFFIC",
+      "left_run_id": "OCT26-STABLE-01",
+      "right_run_id": "OCT26-CORE-05",
+      "changed_axis": "traffic",
+      "role": "same rho/normalizer；不将stable优势外推到迁移",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "TRAFFIC-02",
+      "kind": "TRAFFIC",
+      "left_run_id": "OCT26-STABLE-02",
+      "right_run_id": "OCT26-CORE-06",
+      "changed_axis": "traffic",
+      "role": "same rho/normalizer；不将stable优势外推到迁移",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "TRAFFIC-03",
+      "kind": "TRAFFIC",
+      "left_run_id": "OCT26-STABLE-03",
+      "right_run_id": "OCT26-CORE-07",
+      "changed_axis": "traffic",
+      "role": "same rho/normalizer；不将stable优势外推到迁移",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "TRAFFIC-04",
+      "kind": "TRAFFIC",
+      "left_run_id": "OCT26-STABLE-04",
+      "right_run_id": "OCT26-CORE-08",
+      "changed_axis": "traffic",
+      "role": "same rho/normalizer；不将stable优势外推到迁移",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "K_SENSITIVITY-01",
+      "kind": "K_SENSITIVITY",
+      "left_run_id": "OCT26-SPARSE-01",
+      "right_run_id": "OCT26-CORE-01",
+      "changed_axis": "initial_topology_K",
+      "role": "仅初始固定K/绑定改变，保持同安全政策；不据此挑最佳K",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "K_SENSITIVITY-02",
+      "kind": "K_SENSITIVITY",
+      "left_run_id": "OCT26-SPARSE-02",
+      "right_run_id": "OCT26-CORE-02",
+      "changed_axis": "initial_topology_K",
+      "role": "仅初始固定K/绑定改变，保持同安全政策；不据此挑最佳K",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "K_SENSITIVITY-03",
+      "kind": "K_SENSITIVITY",
+      "left_run_id": "OCT26-SPARSE-03",
+      "right_run_id": "OCT26-CORE-05",
+      "changed_axis": "initial_topology_K",
+      "role": "仅初始固定K/绑定改变，保持同安全政策；不据此挑最佳K",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "K_SENSITIVITY-04",
+      "kind": "K_SENSITIVITY",
+      "left_run_id": "OCT26-SPARSE-04",
+      "right_run_id": "OCT26-CORE-06",
+      "changed_axis": "initial_topology_K",
+      "role": "仅初始固定K/绑定改变，保持同安全政策；不据此挑最佳K",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "K_SENSITIVITY-05",
+      "kind": "K_SENSITIVITY",
+      "left_run_id": "OCT26-SPARSE-05",
+      "right_run_id": "OCT26-CORE-09",
+      "changed_axis": "initial_topology_K",
+      "role": "仅初始固定K/绑定改变，保持同安全政策；不据此挑最佳K",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "K_SENSITIVITY-06",
+      "kind": "K_SENSITIVITY",
+      "left_run_id": "OCT26-SPARSE-06",
+      "right_run_id": "OCT26-CORE-10",
+      "changed_axis": "initial_topology_K",
+      "role": "仅初始固定K/绑定改变，保持同安全政策；不据此挑最佳K",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "K_SENSITIVITY-07",
+      "kind": "K_SENSITIVITY",
+      "left_run_id": "OCT26-SPARSE-07",
+      "right_run_id": "OCT26-CORE-07",
+      "changed_axis": "initial_topology_K",
+      "role": "仅初始固定K/绑定改变，保持同安全政策；不据此挑最佳K",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "K_SENSITIVITY-08",
+      "kind": "K_SENSITIVITY",
+      "left_run_id": "OCT26-SPARSE-08",
+      "right_run_id": "OCT26-CORE-08",
+      "changed_axis": "initial_topology_K",
+      "role": "仅初始固定K/绑定改变，保持同安全政策；不据此挑最佳K",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "CADENCE_BATCH-01",
+      "kind": "CADENCE_BATCH",
+      "left_run_id": "OCT26-FACTORIAL-01",
+      "right_run_id": "OCT26-CORE-05",
+      "changed_axis": "cadence_and_or_batch",
+      "role": "锚点之外3配置；另报告完整2x2因素效应",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "CADENCE_BATCH-02",
+      "kind": "CADENCE_BATCH",
+      "left_run_id": "OCT26-FACTORIAL-02",
+      "right_run_id": "OCT26-CORE-06",
+      "changed_axis": "cadence_and_or_batch",
+      "role": "锚点之外3配置；另报告完整2x2因素效应",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "CADENCE_BATCH-03",
+      "kind": "CADENCE_BATCH",
+      "left_run_id": "OCT26-FACTORIAL-03",
+      "right_run_id": "OCT26-CORE-05",
+      "changed_axis": "cadence_and_or_batch",
+      "role": "锚点之外3配置；另报告完整2x2因素效应",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "CADENCE_BATCH-04",
+      "kind": "CADENCE_BATCH",
+      "left_run_id": "OCT26-FACTORIAL-04",
+      "right_run_id": "OCT26-CORE-06",
+      "changed_axis": "cadence_and_or_batch",
+      "role": "锚点之外3配置；另报告完整2x2因素效应",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "CADENCE_BATCH-05",
+      "kind": "CADENCE_BATCH",
+      "left_run_id": "OCT26-FACTORIAL-05",
+      "right_run_id": "OCT26-CORE-05",
+      "changed_axis": "cadence_and_or_batch",
+      "role": "锚点之外3配置；另报告完整2x2因素效应",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "CADENCE_BATCH-06",
+      "kind": "CADENCE_BATCH",
+      "left_run_id": "OCT26-FACTORIAL-06",
+      "right_run_id": "OCT26-CORE-06",
+      "changed_axis": "cadence_and_or_batch",
+      "role": "锚点之外3配置；另报告完整2x2因素效应",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "MINIMUM_HOLD-01",
+      "kind": "MINIMUM_HOLD",
+      "left_run_id": "OCT26-HOLD-01",
+      "right_run_id": "OCT26-CORE-04",
+      "changed_axis": "minimum_hold",
+      "role": "同一B1基础；H4/H8均保留",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "MINIMUM_HOLD-02",
+      "kind": "MINIMUM_HOLD",
+      "left_run_id": "OCT26-HOLD-02",
+      "right_run_id": "OCT26-CORE-04",
+      "changed_axis": "minimum_hold",
+      "role": "同一B1基础；H4/H8均保留",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "MINIMUM_HOLD-03",
+      "kind": "MINIMUM_HOLD",
+      "left_run_id": "OCT26-HOLD-03",
+      "right_run_id": "OCT26-CORE-08",
+      "changed_axis": "minimum_hold",
+      "role": "同一B1基础；H4/H8均保留",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "MINIMUM_HOLD-04",
+      "kind": "MINIMUM_HOLD",
+      "left_run_id": "OCT26-HOLD-04",
+      "right_run_id": "OCT26-CORE-08",
+      "changed_axis": "minimum_hold",
+      "role": "同一B1基础；H4/H8均保留",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "MINIMUM_HOLD-05",
+      "kind": "MINIMUM_HOLD",
+      "left_run_id": "OCT26-HOLD-05",
+      "right_run_id": "OCT26-CORE-12",
+      "changed_axis": "minimum_hold",
+      "role": "同一B1基础；H4/H8均保留",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "MINIMUM_HOLD-06",
+      "kind": "MINIMUM_HOLD",
+      "left_run_id": "OCT26-HOLD-06",
+      "right_run_id": "OCT26-CORE-12",
+      "changed_axis": "minimum_hold",
+      "role": "同一B1基础；H4/H8均保留",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "ROUTER_ROBUSTNESS-01",
+      "kind": "ROUTER_ROBUSTNESS",
+      "left_run_id": "OCT26-ROUTER-01",
+      "right_run_id": "OCT26-CORE-01",
+      "changed_axis": "common_router",
+      "role": "跨router只作结论敏感性，不混合排名",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "ROUTER_ROBUSTNESS-02",
+      "kind": "ROUTER_ROBUSTNESS",
+      "left_run_id": "OCT26-ROUTER-02",
+      "right_run_id": "OCT26-CORE-02",
+      "changed_axis": "common_router",
+      "role": "跨router只作结论敏感性，不混合排名",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "ROUTER_ROBUSTNESS-03",
+      "kind": "ROUTER_ROBUSTNESS",
+      "left_run_id": "OCT26-ROUTER-03",
+      "right_run_id": "OCT26-CORE-05",
+      "changed_axis": "common_router",
+      "role": "跨router只作结论敏感性，不混合排名",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "ROUTER_ROBUSTNESS-04",
+      "kind": "ROUTER_ROBUSTNESS",
+      "left_run_id": "OCT26-ROUTER-04",
+      "right_run_id": "OCT26-CORE-06",
+      "changed_axis": "common_router",
+      "role": "跨router只作结论敏感性，不混合排名",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "ROUTER_ROBUSTNESS-05",
+      "kind": "ROUTER_ROBUSTNESS",
+      "left_run_id": "OCT26-ROUTER-05",
+      "right_run_id": "OCT26-CORE-09",
+      "changed_axis": "common_router",
+      "role": "跨router只作结论敏感性，不混合排名",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    },
+    {
+      "contrast_id": "ROUTER_ROBUSTNESS-06",
+      "kind": "ROUTER_ROBUSTNESS",
+      "left_run_id": "OCT26-ROUTER-06",
+      "right_run_id": "OCT26-CORE-10",
+      "changed_axis": "common_router",
+      "role": "跨router只作结论敏感性，不混合排名",
+      "full_J_rule": "both COMPLETE only; otherwise censor/residual/delivery/completion evidence, no truncated-J ranking"
+    }
+  ],
+  "factorial_anchor_reuse": {
+    "cadence_batch": [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        4
+      ]
+    ],
+    "anchor_5s_batch4": {
+      "B3": "OCT26-CORE-05",
+      "B4": "OCT26-CORE-06"
+    }
+  },
+  "registered_opening_figure_proposal": {
+    "rho": 0.8,
+    "run_ids": {
+      "B0": "OCT26-CORE-07",
+      "B1": "OCT26-CORE-08",
+      "B3": "OCT26-CORE-05",
+      "B4": "OCT26-CORE-06"
+    },
+    "series": [
+      "N(t)",
+      "Q(t)",
+      "I(t)",
+      "REPLACE batch/per-link",
+      "Gate B BBM/MBB transitions"
+    ],
+    "phase_boundaries_s": [
+      60,
+      120,
+      180,
+      240
+    ],
+    "no_post_result_case_replacement": true
+  },
+  "mechanism_and_search_analysis": {
+    "source": "same42 raw evidence plus separate tiny engineering oracle, no additional formal runs",
+    "metrics": [
+      "BBM/MBB by binding and batch, mixed batches",
+      "transition outage vs post-expiry no-route separately",
+      "focus/third-party backlog",
+      "candidate raw/prune/reject/pool coverage counts",
+      "beam omissions by cardinality on tiny exact oracle",
+      "controller wall/RSS/workers/evaluation counts"
+    ],
+    "limits": "Main-scale missing optimum cannot be inferred from capped pool; report budget/certificates, tiny recall does not prove160-star optimality",
+    "no_causal_overclaim": "Runtime/mechanism correlations are not new paired setup-ablation evidence; router/cadence/batch effects reported separately"
+  },
+  "execution_stop_policy": "scientific/execution invariant failure: persist all evidence then STOP; do not silently retry/drop. CENSORED is retained valid scientific outcome",
+  "finalization_before_formal_run": [
+    "human freeze all science/search parameters",
+    "result-blind K0/K1 select and bind K* artifacts",
+    "all v2 gates PASS and scientific source hashes recorded",
+    "fill measured per-run costs/limits",
+    "emit new frozen executable manifest with all42 IDs and this draft parent hash",
+    "obtain separate human performance authorization"
+  ],
+  "plan_revision": "OCTOBER_FULL_NON_MARL_COMPLETION_REVIEW_3",
+  "revision_utc": "20261008T164358_252159Z",
+  "prior_plan_sha256": "178e96a0d462cc600f14e7ab17ec6a862f0ca985e480b2bc3381da6cbef62c2c",
+  "prior_plan_preserved_at": "outputs/f3_v2_october_completion_plan_20261008T164358_252159Z/prior_plan_bytes",
+  "current_engineering_snapshot": {
+    "scope": "READ_ONLY_EXISTING_EVIDENCE; no tests/benchmarks rerun by planning task",
+    "evidence": {
+      "structural_cost": {
+        "path": "outputs/f3_v2_predeclared_cost_summary_20261008T155819_547812Z/report.json",
+        "sha256": "e9dc8ca4eae5beeed3d133772660697b5087255e719af5008b806eda1fb9ac60"
+      },
+      "natural_source": {
+        "path": "outputs/f3_v2_natural_source_coverage_20261008T162145_156464Z/report.json",
+        "sha256": "2c88ad3e0235383eef203d4f4a02187d673f824ac835633e64482b1d42506e03"
+      },
+      "physical_clone": {
+        "path": "outputs/f3_v2_natural_physical_trial_20261008T163118_750402Z/report.json",
+        "sha256": "46cc374466a56c4337d30aba8798927c9dfda98b97ad3f76165b5ab6e2fab882"
+      },
+      "historical_natural_rollout": {
+        "path": "outputs/f3_v2_natural_prefix_20261008T142126_443971Z/report.json",
+        "sha256": "e054f292ec151031946250dec66b41075251ffec16a73198ef6c7cc29514204f"
+      },
+      "historical_regression": {
+        "path": "outputs/f3_v2_engineering_check_20261008T155127_587459Z/report.json",
+        "sha256": "c54b07f5cb806d99d969bf64187a5f5551f2ad20dd2c73c7826e40dfb5b925e6"
+      }
+    },
+    "historical_focused_tests": 110,
+    "historical_full_tests": 439,
+    "current_code_differs_from_test_seal": [
+      "src/dynamic_lisl/f3_v2/batch_executor.py",
+      "src/dynamic_lisl/f3_v2/joint_proposer.py"
+    ],
+    "new_code_not_in_test_seal": [
+      "src/dynamic_lisl/f3_v2/physical_trial.py",
+      "src/dynamic_lisl/f3_v2/source_diagnostics.py"
+    ],
+    "current_full_stack_acceptance": "PENDING_CURRENT_CODE_REGRESSION_AND_APPROVED_PRODUCTION_CONFIG",
+    "historical_natural_scope": "K4, restricted 9-branch fixture, six 2s epochs; not K*/5s/full production pool",
+    "current_natural_B4_stack_acceptance": "NOT_ESTABLISHED_BY_THIS_PLANNING_TASK",
+    "K_star_selected": false,
+    "formal_K0_K1_complete": false,
+    "B4_v2_engineering_PASS": false,
+    "formal_preflight_READY": false
+  },
+  "execution_policy": {
+    "core_priority": "CORE12 first, original proposed order retained; complete matched B4/B3 contrasts first",
+    "registered_runs_may_be_removed_without_approval": false,
+    "pre_run_change_policy": "only human-approved new manifest before any performance result; preserve this42-run draft",
+    "post_result_selection": "FORBIDDEN",
+    "global_controller_ranking": "FORBIDDEN"
+  },
+  "reviewed_date_local": "2026-10-09",
+  "research_question_registry": {
+    "Q1": "B4-v2 vs B3-v2核心比较",
+    "Q2": "B1-v2忽略setup",
+    "Q3": "B0无主动重构",
+    "Q4": "K* vs K4结构敏感性",
+    "Q5": "2/5s × batch1/4消融",
+    "Q6": "三种负载",
+    "Q7": "稳定业务/热点迁移",
+    "Q8": "B2 minimum-hold",
+    "Q9": "common-router鲁棒性",
+    "Q10": "计算费用/候选遗漏/BBM-MBB机制"
+  },
+  "runtime_readiness": {
+    "status": "PENDING_APPROVED_POOL_POLICY_AND_MEASURED_BUDGET",
+    "candidate_source_output_caps_do_not_bound_screening": true,
+    "natural_K4_t0_singleton_only_pool_observed": true,
+    "each_run_provisional_resource_ceiling_table": "configs/F3_V2_RUNTIME_BUDGET_PLAN.json#run_planning_budgets",
+    "estimated_cost_fields_remain_null": true,
+    "run_ids_order_config_unchanged": true
+  },
+  "draft_canonical_sha256": "99961f72a8812f6b846dd7545c454ade76cc07c94875e5f603afaddc91d5ae60"
+}

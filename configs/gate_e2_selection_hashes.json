@@ -1,0 +1,11 @@
+{
+  "files": {
+    "configs/gate_e2_candidate_inventory.json": "9e89c0c13ca1321346071293743fd136b29a368b8fd7397994ed0c18ca9483a2",
+    "configs/gate_e2_selected_scenarios.json": "701d274e2ffd424af2891db7d2d5f73a9135e918e5ffcd297b33315da05ddd8e",
+    "src/dynamic_lisl/gate_e2_enumeration.py": "9eeb66e546544d526fc86aec765e4eb45cb8112d28fbdd55d5777a9a10647b32",
+    "tests/test_gate_e2_enumeration.py": "490c48be085f6dc98f659b73e5dc0d6a085008c9fe50da4c40b3f1cf67ca6181",
+    "tools/prepare_gate_e2_enumeration.py": "1b016447c4918a4ffed5134fed8da331a045a043edc51e5654204b981a7b6898"
+  },
+  "frozen_before_any_paired_branch_execution": true,
+  "schema": "gate_e2_selection_hashes_v1"
+}

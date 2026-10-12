@@ -1,0 +1,15 @@
+{
+  "F3_performance_started": false,
+  "Gate_F3_Candidate_Source_Drain_Human_Freeze_v1": "PASS",
+  "P1_execution_readiness": "READY",
+  "P1_registered_runs_executed": "0/12",
+  "P2_started": false,
+  "RL_started": false,
+  "candidate_source_contract": "FROZEN",
+  "candidate_source_deterministic_replay": "PASS",
+  "drain_decision_policy": "FROZEN",
+  "evidence": "outputs/gate_f3_candidate_source_drain_freeze_20260925T054914_757868Z",
+  "overlay_canonical_sha256": "ba527d3bc2c4ebca742ec21b8c390d512931d56d9c9ba68ed4eb22a7f47a7f39",
+  "production_candidate_source": "PASS",
+  "schema": "gate_f3_candidate_source_drain_status_v1"
+}

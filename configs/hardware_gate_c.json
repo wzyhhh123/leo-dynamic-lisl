@@ -1,0 +1,16 @@
+{
+  "hardware_calibration": "PENDING",
+  "diagnostic_geometry_cutoff_km": 5000,
+  "diagnostic_cutoff_is_hardware_range": false,
+  "parameters": [
+    {"parameter": "hardware_max_lisl_range", "value": null, "unit": "km", "source": "unresolved", "status": "unresolved", "notes": "Independent from 5000 km diagnostic geometry cutoff"},
+    {"parameter": "terminal_mounting_body_frame", "value": null, "unit": "frame", "source": "unresolved", "status": "unresolved", "notes": "D1/D2 mounting not frozen"},
+    {"parameter": "field_of_view", "value": null, "unit": "deg", "source": "unresolved", "status": "unresolved", "notes": "Gate C hook exists"},
+    {"parameter": "slew_rate", "value": null, "unit": "deg/s", "source": "unresolved", "status": "unresolved", "notes": "Gate C hook exists"},
+    {"parameter": "slew_acceleration", "value": null, "unit": "deg/s^2", "source": "unresolved", "status": "unresolved", "notes": "Gate C hook exists"},
+    {"parameter": "tracking_angular_rate", "value": null, "unit": "deg/s", "source": "unresolved", "status": "unresolved", "notes": "Gate C hook exists"},
+    {"parameter": "tracking_angular_acceleration", "value": null, "unit": "deg/s^2", "source": "unresolved", "status": "unresolved", "notes": "Gate C hook exists"},
+    {"parameter": "acquisition_time", "value": null, "unit": "s", "source": "unresolved", "status": "unresolved", "notes": "Synthetic fixtures only in Gate C tests"},
+    {"parameter": "pointing_keep_out", "value": null, "unit": "deg", "source": "unresolved", "status": "unresolved", "notes": "Optional contract field"}
+  ]
+}

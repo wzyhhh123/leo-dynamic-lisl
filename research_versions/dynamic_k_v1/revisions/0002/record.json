@@ -1,0 +1,403 @@
+{
+  "authorization": {
+    "actor": "human_user",
+    "request": "能不能帮我删掉一些之前不太重要的输出文件？",
+    "scope_reply": "也包括仓库根目录的 results 旧输出",
+    "selected_method": "REMOVE_UNTRACKED_EXACT_DUPLICATE_PNG_ONLY_KEEP_IDENTICAL_COPIES_AND_RAW_RESULTS"
+  },
+  "bindings": {
+    "baseline_seal": {
+      "byte_count": 656,
+      "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+      "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+    },
+    "configuration": {
+      "byte_count": 3525,
+      "path": "research_versions/dynamic_k_v1/configs/research_v1_DRAFT.json",
+      "sha256": "b8b86d1abc3db1765ee23123bfafaa99c419731cb046984458baa962980e8102"
+    },
+    "contract": {
+      "byte_count": 4042,
+      "path": "research_versions/dynamic_k_v1/contracts/research_contract_v1_DRAFT_CN.md",
+      "sha256": "7aca0acd0e28164898582ebfa1e12e83e1b84d5a7e8372c5dbc7309987da8bcc"
+    }
+  },
+  "changes": {
+    "added": [
+      {
+        "byte_count": 18214,
+        "path": "research_versions/dynamic_k_v1/cleanup/duplicate_plots_20261010T034009_941313Z/plan.json",
+        "sha256": "f1d1bf508f7883c832e151ad26fb9c1e8faa37163de9d4157afacda0aff9bd4f"
+      },
+      {
+        "byte_count": 16628,
+        "path": "research_versions/dynamic_k_v1/cleanup/duplicate_plots_20261010T034009_941313Z/execution_report.json",
+        "sha256": "3f0d6e707bb26a0b9b4e53127f8c87f791d8f921c0bb064dd5eb6d220a879b68"
+      },
+      {
+        "byte_count": 1742,
+        "path": "research_versions/dynamic_k_v1/cleanup/duplicate_plots_20261010T034009_941313Z/RESULT_CN.md",
+        "sha256": "1185b6506382af78258c955321c812a83c48d7711ba4e8725b478e31895d4cd3"
+      },
+      {
+        "byte_count": 919,
+        "path": "research_versions/dynamic_k_v1/cleanup/duplicate_plots_20261010T034009_941313Z/seal.json",
+        "sha256": "aee68086e7dd0a714bf6b946e49dd893f02620242921b9987e2e1fbcc0bd5b45"
+      }
+    ],
+    "deleted": [],
+    "modified": []
+  },
+  "created_asia_shanghai": "2026-10-10T11:42:38.537273+08:00",
+  "created_utc": "2026-10-10T03:42:38.537273+00:00",
+  "external_cleanup_seal": {
+    "byte_count": 919,
+    "path": "research_versions/dynamic_k_v1/cleanup/duplicate_plots_20261010T034009_941313Z/seal.json",
+    "sha256": "aee68086e7dd0a714bf6b946e49dd893f02620242921b9987e2e1fbcc0bd5b45"
+  },
+  "gate_acceptance_claimed": false,
+  "parent_record": {
+    "byte_count": 5149,
+    "path": "research_versions/dynamic_k_v1/revisions/0001/record.json",
+    "sha256": "fdcfe6019967a442167e00206a11d957f92ec474491b4995411548bc6db11ea6"
+  },
+  "production_code_modified": false,
+  "reason": "根据用户后续清理授权，移除原动态项目基线范围外、未纳入 Git 且保留相同副本的旧 results PNG；追加清理证据，不修改 N0 基线或生产实现。",
+  "repository_external_changes": {
+    "added": [],
+    "deleted": [
+      {
+        "before": {
+          "byte_count": 117486,
+          "sha256": "4b649621e31944cb316de88c1376738ba09954c4263ef204f5d0bfd86b498357"
+        },
+        "path": "results/run_20260327_180406/main_path_queue_heatmap.png",
+        "retained_identical_copy": {
+          "byte_count": 117486,
+          "path": "results/run_20260327_174932/main_path_queue_heatmap.png",
+          "sha256": "4b649621e31944cb316de88c1376738ba09954c4263ef204f5d0bfd86b498357"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 88376,
+          "sha256": "263e3192eee0dfe19e1e63ed5ffb9b9990c26225d21a6064da775be049efcfef"
+        },
+        "path": "results/run_20260327_180406/performance_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 88376,
+          "path": "results/run_20260327_174932/performance_summary.png",
+          "sha256": "263e3192eee0dfe19e1e63ed5ffb9b9990c26225d21a6064da775be049efcfef"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 50286,
+          "sha256": "3b394f1fcded1367e605335e2c000bca3f71457499fdf55bc7f1665e89a9b365"
+        },
+        "path": "results/run_20260327_180406/phase_delay_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 50286,
+          "path": "results/run_20260327_174932/phase_delay_summary.png",
+          "sha256": "3b394f1fcded1367e605335e2c000bca3f71457499fdf55bc7f1665e89a9b365"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 43783,
+          "sha256": "a924b0d902339ab677ff78e7a3ae8ead4295e49046171e324b5ae55364ed9c11"
+        },
+        "path": "results/run_20260327_180406/priority_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 43783,
+          "path": "results/run_20260327_174932/priority_summary.png",
+          "sha256": "a924b0d902339ab677ff78e7a3ae8ead4295e49046171e324b5ae55364ed9c11"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 43492,
+          "sha256": "bacac3e5b0f945f61e71ef6212902c8c40c269a5cd5bdee4b74eb7ca4ae5a66d"
+        },
+        "path": "results/run_20260327_180406/queue_dynamics.png",
+        "retained_identical_copy": {
+          "byte_count": 43492,
+          "path": "results/run_20260327_174932/queue_dynamics.png",
+          "sha256": "bacac3e5b0f945f61e71ef6212902c8c40c269a5cd5bdee4b74eb7ca4ae5a66d"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 82975,
+          "sha256": "0a4fe7611ddbf12a64656b6dc818df290b4e34f2b224c7946897caff4761ef52"
+        },
+        "path": "results/run_20260327_180406/reachability.png",
+        "retained_identical_copy": {
+          "byte_count": 82975,
+          "path": "results/run_20260327_174932/reachability.png",
+          "sha256": "0a4fe7611ddbf12a64656b6dc818df290b4e34f2b224c7946897caff4761ef52"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 102643,
+          "sha256": "1280ae272118556001342581f6b9f974e90262c975bb73a295d9a097f6dc068e"
+        },
+        "path": "results/run_20260327_180406/slot_metrics.png",
+        "retained_identical_copy": {
+          "byte_count": 102643,
+          "path": "results/run_20260327_174932/slot_metrics.png",
+          "sha256": "1280ae272118556001342581f6b9f974e90262c975bb73a295d9a097f6dc068e"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 103387,
+          "sha256": "8c76d8be15e538a9b1406f20139cd31993768c691b7886b4dd0d006b71133096"
+        },
+        "path": "results/run_20260327_180406/switching_dynamics.png",
+        "retained_identical_copy": {
+          "byte_count": 103387,
+          "path": "results/run_20260327_174932/switching_dynamics.png",
+          "sha256": "8c76d8be15e538a9b1406f20139cd31993768c691b7886b4dd0d006b71133096"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 253926,
+          "sha256": "fc7022cc734e1ffa7bdb7abd6ec708cb6c289bcf044a4c15ec3950e2ac314378"
+        },
+        "path": "results/run_20260327_180406/topology_snapshots.png",
+        "retained_identical_copy": {
+          "byte_count": 253926,
+          "path": "results/run_20260327_174932/topology_snapshots.png",
+          "sha256": "fc7022cc734e1ffa7bdb7abd6ec708cb6c289bcf044a4c15ec3950e2ac314378"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 125301,
+          "sha256": "830c577bb891f763a729b07e7e645b2d547777553dfb52ef0d9e926eb1949261"
+        },
+        "path": "results/run_20260329_223214/main_path_queue_heatmap.png",
+        "retained_identical_copy": {
+          "byte_count": 125301,
+          "path": "results/run_20260327_184233/main_path_queue_heatmap.png",
+          "sha256": "830c577bb891f763a729b07e7e645b2d547777553dfb52ef0d9e926eb1949261"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 88393,
+          "sha256": "e35e13d4c81e9a9f2f0db97b61135622b40dd080f323379ce451cd72c3c3b511"
+        },
+        "path": "results/run_20260329_223214/performance_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 88393,
+          "path": "results/run_20260327_184233/performance_summary.png",
+          "sha256": "e35e13d4c81e9a9f2f0db97b61135622b40dd080f323379ce451cd72c3c3b511"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 54309,
+          "sha256": "99df9dbd45995fe23c5387b5f6ebf024529f6be9ff134860010b43bee1cb8d4b"
+        },
+        "path": "results/run_20260329_223214/phase_delay_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 54309,
+          "path": "results/run_20260327_184233/phase_delay_summary.png",
+          "sha256": "99df9dbd45995fe23c5387b5f6ebf024529f6be9ff134860010b43bee1cb8d4b"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 43783,
+          "sha256": "a924b0d902339ab677ff78e7a3ae8ead4295e49046171e324b5ae55364ed9c11"
+        },
+        "path": "results/run_20260329_223214/priority_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 43783,
+          "path": "results/run_20260327_184233/priority_summary.png",
+          "sha256": "a924b0d902339ab677ff78e7a3ae8ead4295e49046171e324b5ae55364ed9c11"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 88894,
+          "sha256": "d07330fcfc4ccc170bf0112fbeb86ccdf7af09642fb6d53c8b4744c454f5bc3c"
+        },
+        "path": "results/run_20260329_223214/queue_dynamics.png",
+        "retained_identical_copy": {
+          "byte_count": 88894,
+          "path": "results/run_20260327_184233/queue_dynamics.png",
+          "sha256": "d07330fcfc4ccc170bf0112fbeb86ccdf7af09642fb6d53c8b4744c454f5bc3c"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 82975,
+          "sha256": "0a4fe7611ddbf12a64656b6dc818df290b4e34f2b224c7946897caff4761ef52"
+        },
+        "path": "results/run_20260329_223214/reachability.png",
+        "retained_identical_copy": {
+          "byte_count": 82975,
+          "path": "results/run_20260327_184233/reachability.png",
+          "sha256": "0a4fe7611ddbf12a64656b6dc818df290b4e34f2b224c7946897caff4761ef52"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 102643,
+          "sha256": "1280ae272118556001342581f6b9f974e90262c975bb73a295d9a097f6dc068e"
+        },
+        "path": "results/run_20260329_223214/slot_metrics.png",
+        "retained_identical_copy": {
+          "byte_count": 102643,
+          "path": "results/run_20260327_184233/slot_metrics.png",
+          "sha256": "1280ae272118556001342581f6b9f974e90262c975bb73a295d9a097f6dc068e"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 103387,
+          "sha256": "8c76d8be15e538a9b1406f20139cd31993768c691b7886b4dd0d006b71133096"
+        },
+        "path": "results/run_20260329_223214/switching_dynamics.png",
+        "retained_identical_copy": {
+          "byte_count": 103387,
+          "path": "results/run_20260327_184233/switching_dynamics.png",
+          "sha256": "8c76d8be15e538a9b1406f20139cd31993768c691b7886b4dd0d006b71133096"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 253926,
+          "sha256": "fc7022cc734e1ffa7bdb7abd6ec708cb6c289bcf044a4c15ec3950e2ac314378"
+        },
+        "path": "results/run_20260329_223214/topology_snapshots.png",
+        "retained_identical_copy": {
+          "byte_count": 253926,
+          "path": "results/run_20260327_184233/topology_snapshots.png",
+          "sha256": "fc7022cc734e1ffa7bdb7abd6ec708cb6c289bcf044a4c15ec3950e2ac314378"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 125301,
+          "sha256": "830c577bb891f763a729b07e7e645b2d547777553dfb52ef0d9e926eb1949261"
+        },
+        "path": "results/run_20260329_230541/main_path_queue_heatmap.png",
+        "retained_identical_copy": {
+          "byte_count": 125301,
+          "path": "results/run_20260327_182615/main_path_queue_heatmap.png",
+          "sha256": "830c577bb891f763a729b07e7e645b2d547777553dfb52ef0d9e926eb1949261"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 88376,
+          "sha256": "263e3192eee0dfe19e1e63ed5ffb9b9990c26225d21a6064da775be049efcfef"
+        },
+        "path": "results/run_20260329_230541/performance_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 88376,
+          "path": "results/run_20260327_182615/performance_summary.png",
+          "sha256": "263e3192eee0dfe19e1e63ed5ffb9b9990c26225d21a6064da775be049efcfef"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 50286,
+          "sha256": "3b394f1fcded1367e605335e2c000bca3f71457499fdf55bc7f1665e89a9b365"
+        },
+        "path": "results/run_20260329_230541/phase_delay_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 50286,
+          "path": "results/run_20260327_182615/phase_delay_summary.png",
+          "sha256": "3b394f1fcded1367e605335e2c000bca3f71457499fdf55bc7f1665e89a9b365"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 43783,
+          "sha256": "a924b0d902339ab677ff78e7a3ae8ead4295e49046171e324b5ae55364ed9c11"
+        },
+        "path": "results/run_20260329_230541/priority_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 43783,
+          "path": "results/run_20260327_182615/priority_summary.png",
+          "sha256": "a924b0d902339ab677ff78e7a3ae8ead4295e49046171e324b5ae55364ed9c11"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 89483,
+          "sha256": "5c4eb3a1c552ea166c430fff8c142c7723cdb89b5e46aa845058d8b86d63c7b9"
+        },
+        "path": "results/run_20260329_230541/queue_dynamics.png",
+        "retained_identical_copy": {
+          "byte_count": 89483,
+          "path": "results/run_20260327_182615/queue_dynamics.png",
+          "sha256": "5c4eb3a1c552ea166c430fff8c142c7723cdb89b5e46aa845058d8b86d63c7b9"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 82975,
+          "sha256": "0a4fe7611ddbf12a64656b6dc818df290b4e34f2b224c7946897caff4761ef52"
+        },
+        "path": "results/run_20260329_230541/reachability.png",
+        "retained_identical_copy": {
+          "byte_count": 82975,
+          "path": "results/run_20260327_182615/reachability.png",
+          "sha256": "0a4fe7611ddbf12a64656b6dc818df290b4e34f2b224c7946897caff4761ef52"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 102643,
+          "sha256": "1280ae272118556001342581f6b9f974e90262c975bb73a295d9a097f6dc068e"
+        },
+        "path": "results/run_20260329_230541/slot_metrics.png",
+        "retained_identical_copy": {
+          "byte_count": 102643,
+          "path": "results/run_20260327_182615/slot_metrics.png",
+          "sha256": "1280ae272118556001342581f6b9f974e90262c975bb73a295d9a097f6dc068e"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 103387,
+          "sha256": "8c76d8be15e538a9b1406f20139cd31993768c691b7886b4dd0d006b71133096"
+        },
+        "path": "results/run_20260329_230541/switching_dynamics.png",
+        "retained_identical_copy": {
+          "byte_count": 103387,
+          "path": "results/run_20260327_182615/switching_dynamics.png",
+          "sha256": "8c76d8be15e538a9b1406f20139cd31993768c691b7886b4dd0d006b71133096"
+        }
+      },
+      {
+        "before": {
+          "byte_count": 253926,
+          "sha256": "fc7022cc734e1ffa7bdb7abd6ec708cb6c289bcf044a4c15ec3950e2ac314378"
+        },
+        "path": "results/run_20260329_230541/topology_snapshots.png",
+        "retained_identical_copy": {
+          "byte_count": 253926,
+          "path": "results/run_20260327_182615/topology_snapshots.png",
+          "sha256": "fc7022cc734e1ffa7bdb7abd6ec708cb6c289bcf044a4c15ec3950e2ac314378"
+        }
+      }
+    ],
+    "modified": [],
+    "repository_root": "D:\\Document\\leo_routing_attitude",
+    "scope": "GIT_ROOT_OUTSIDE_DYNAMIC_PROJECT_BASELINE"
+  },
+  "revision_id": "0002",
+  "schema": "dynamic_k_revision_record_v1",
+  "scientific_experiments_executed": false,
+  "self_record_hash_excluded": true,
+  "version_id": "dynamic_k_v1"
+}

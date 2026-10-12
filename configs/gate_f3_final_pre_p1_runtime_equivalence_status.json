@@ -1,0 +1,62 @@
+{
+  "P1_preflight": {
+    "failed_checks": [],
+    "pass": true
+  },
+  "P1_reauthorization_readiness": "READY_FOR_HUMAN_AUTHORIZATION",
+  "P2_started": false,
+  "RL_started": false,
+  "all_epoch_equivalence": true,
+  "artifact_sha256": {
+    "checker": "31fc12efdce947b7a7f10528529c5c18c1a7a218994600031e7432daeabf1c34",
+    "documentation": "4db2c3232b2f9b0e5b7fc3e9bdba816bcf21100fe8fe9f7cd78bc7e3aa1bb751",
+    "epoch_equivalence.json": "198191f8dea1765edd7e71896f0db31ab7e105b137eae29d858ec212c6c88cca",
+    "report.json": "b94bd177e94f5e860b6b848e8c8bb7a101bcade107552a9b546efb9e642afaa7",
+    "runtime_summary.json": "ee2b0cad36de69dc3cc6d114e87aa5e329f77e58ae8267333ab0661ef218f799"
+  },
+  "canonical_state_chain_all_equal": true,
+  "cprofile_enabled": false,
+  "decision_epoch_count": 6,
+  "decision_epochs_s": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "final_pre_P1_runtime_equivalence": "PASS",
+  "focused_runtime_regressions": {
+    "pass": true,
+    "tests_passed": 15
+  },
+  "frozen_canonical_hashes": {
+    "F3": "118d3a61175b08b6ba53f4d92504b52ab879659682799d26c1965baf7bb600a6",
+    "F3_0_1_overlay": "ba527d3bc2c4ebca742ec21b8c390d512931d56d9c9ba68ed4eb22a7f47a7f39",
+    "execution_manifest": "0222d30e69ec9f565e1d55d5e74391934d63d7357cc7f1d652532f6a30ac945a",
+    "runtime_phase1": "605220d3437a1580da9f87b68d71fbe607d9646c75a16e715281bed39bae73f4",
+    "runtime_phase2a": "ec6d9696a5dffcaa89dd21b2fdc7f7dabfd99b844915c1ae027439a585ea55f5",
+    "runtime_phase2b1": "1c0c4aaf5512b490a37661701074ca59daaefda45cd537f162470b9eb0799707",
+    "runtime_phase2b2": "fdc24c670a1c48562f9314e2ddb329aebc68e8a82ac14798e5271a0410a44862"
+  },
+  "frozen_manifests_unchanged": true,
+  "full_repository_regression": {
+    "pass": true,
+    "tests_passed": 277
+  },
+  "historical_blocked_evidence_unchanged": true,
+  "natural_state_evolution_verified": true,
+  "output_directory": "outputs/gate_f3_final_pre_p1_runtime_equivalence_20260925T154049_934409Z",
+  "phase2b3_started": false,
+  "registered_P1_executed": false,
+  "runtime_evidence": {
+    "production_optimized_max_epoch_wall_s": 16.74968150000001,
+    "production_optimized_mean_epoch_wall_s": 15.634415633333333,
+    "production_optimized_total_wall_clock_s": 131.9916933,
+    "reference_to_production_speedup": 2.2479814614212543,
+    "reference_total_wall_clock_s": 296.7148796
+  },
+  "runtime_optimization_status": "STOPPED_AFTER_PHASE2B2",
+  "schema": "gate_f3_final_pre_p1_runtime_equivalence_status_v1",
+  "sim_end_s": 10
+}

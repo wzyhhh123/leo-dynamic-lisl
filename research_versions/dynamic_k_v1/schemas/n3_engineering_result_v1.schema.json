@@ -1,0 +1,891 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "N4_implemented": {
+      "const": false
+    },
+    "bindings": {
+      "type": "object"
+    },
+    "controller": {
+      "enum": [
+        "STATIC_HOLD",
+        "REACTIVE_DYNAMIC_K"
+      ]
+    },
+    "decision_audit": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "fixture_identity": {
+      "type": "object"
+    },
+    "formal_experiments_executed": {
+      "const": false
+    },
+    "metrics": {
+      "type": "object"
+    },
+    "n2_result": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "K_admit": {
+          "maximum": 320,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "K_draining": {
+          "maximum": 320,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "N3_implemented": {
+          "const": false
+        },
+        "action_receipts": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "bindings": {
+          "additionalProperties": false,
+          "properties": {
+            "anchors": {
+              "additionalProperties": {
+                "additionalProperties": false,
+                "properties": {
+                  "byte_count": {
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "path": {
+                    "type": "string"
+                  },
+                  "sha256": {
+                    "pattern": "^[0-9a-f]{64}$",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "path",
+                  "byte_count",
+                  "sha256"
+                ],
+                "type": "object"
+              },
+              "type": "object"
+            },
+            "candidate_revision_id": {
+              "const": "0006"
+            },
+            "implementation_manifest": {
+              "additionalProperties": false,
+              "properties": {
+                "byte_count": {
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                "path": {
+                  "type": "string"
+                },
+                "sha256": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "path",
+                "byte_count",
+                "sha256"
+              ],
+              "type": "object"
+            },
+            "scope": {
+              "const": "ENGINEERING_TEST_ONLY"
+            }
+          },
+          "required": [
+            "scope",
+            "candidate_revision_id",
+            "implementation_manifest",
+            "anchors"
+          ],
+          "type": "object"
+        },
+        "dynamic_K_time_series": {
+          "items": {
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "dynamic_terminal_states": {
+          "items": {
+            "type": "object"
+          },
+          "maxItems": 320,
+          "minItems": 320,
+          "type": "array"
+        },
+        "formal_experiments_executed": {
+          "const": false
+        },
+        "n1b_result": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "N2_implemented": {
+              "const": false
+            },
+            "age_accounting": {
+              "additionalProperties": false,
+              "properties": {
+                "closure_audit": {
+                  "type": "array"
+                },
+                "delivered_age_absolute_error_bound_bit_s": {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "delivered_bit_age_integral_bit_s": {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "delivered_bits": {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "exact_rational": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "M_D_bit_s": {
+                      "type": "string"
+                    },
+                    "delivered_bits": {
+                      "type": "string"
+                    },
+                    "remaining_bit_age_integral_bit_s": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "delivered_bits",
+                    "M_D_bit_s",
+                    "remaining_bit_age_integral_bit_s"
+                  ],
+                  "type": "object"
+                },
+                "mean_delivered_fluid_delay_s": {
+                  "anyOf": [
+                    {
+                      "minimum": 0,
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "metric_status": {
+                  "enum": [
+                    "IEEE_RECONCILIATION_BOUNDED_NOT_ANALYTIC_EXACT",
+                    "EXACT_RATIONAL_ENCODED_TRACE_WITH_FLOAT_OUTPUT_ROUNDING"
+                  ]
+                },
+                "remaining_bit_age_integral_bit_s": {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "roundoff_audit": {
+                  "type": "array"
+                },
+                "roundoff_mass_envelope_bits": {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "temporal_correction_age_bound_bit_s": {
+                  "minimum": 0,
+                  "type": "number"
+                }
+              },
+              "required": [
+                "delivered_bits",
+                "delivered_bit_age_integral_bit_s",
+                "mean_delivered_fluid_delay_s",
+                "remaining_bit_age_integral_bit_s",
+                "exact_rational",
+                "metric_status",
+                "roundoff_mass_envelope_bits",
+                "temporal_correction_age_bound_bit_s",
+                "delivered_age_absolute_error_bound_bit_s",
+                "closure_audit",
+                "roundoff_audit"
+              ],
+              "type": "object"
+            },
+            "bindings": {
+              "additionalProperties": false,
+              "properties": {
+                "anchors": {
+                  "additionalProperties": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "byte_count": {
+                        "minimum": 0,
+                        "type": "integer"
+                      },
+                      "path": {
+                        "type": "string"
+                      },
+                      "sha256": {
+                        "pattern": "^[0-9a-f]{64}$",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "path",
+                      "byte_count",
+                      "sha256"
+                    ],
+                    "type": "object"
+                  },
+                  "type": "object"
+                },
+                "candidate_revision_id": {
+                  "const": "0005"
+                },
+                "implementation_manifest": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "byte_count": {
+                      "minimum": 0,
+                      "type": "integer"
+                    },
+                    "path": {
+                      "type": "string"
+                    },
+                    "sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "path",
+                    "byte_count",
+                    "sha256"
+                  ],
+                  "type": "object"
+                },
+                "scope": {
+                  "const": "ENGINEERING_TEST_ONLY"
+                }
+              },
+              "required": [
+                "scope",
+                "candidate_revision_id",
+                "implementation_manifest",
+                "anchors"
+              ],
+              "type": "object"
+            },
+            "delivered_bit_age_integral_bit_s": {
+              "minimum": 0,
+              "type": "number"
+            },
+            "delivered_bits": {
+              "minimum": 0,
+              "type": "number"
+            },
+            "fifo": {
+              "const": "NODE_LOCAL_PER_COMMODITY_FIFO"
+            },
+            "mean_delay_absolute_error_bound_s": {
+              "anyOf": [
+                {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "mean_delivered_fluid_delay_s": {
+              "anyOf": [
+                {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "n1a_result": {
+              "$schema": "https://json-schema.org/draft/2020-12/schema",
+              "additionalProperties": false,
+              "properties": {
+                "DeltaE_LCT_J": {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "E_LCT_J": {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "J_T_bit_s": {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "K_time_series": {
+                  "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "K_active_admissible": {
+                        "maximum": 160,
+                        "minimum": 0,
+                        "type": "integer"
+                      },
+                      "K_draining": {
+                        "maximum": 160,
+                        "minimum": 0,
+                        "type": "integer"
+                      },
+                      "acquiring_terminal_count": {
+                        "maximum": 320,
+                        "minimum": 0,
+                        "type": "integer"
+                      },
+                      "retargeting_terminal_count": {
+                        "maximum": 320,
+                        "minimum": 0,
+                        "type": "integer"
+                      },
+                      "setup_connection_count": {
+                        "maximum": 160,
+                        "minimum": 0,
+                        "type": "integer"
+                      },
+                      "setup_reserved_terminal_count": {
+                        "maximum": 320,
+                        "minimum": 0,
+                        "type": "integer"
+                      },
+                      "setup_terminal_count": {
+                        "maximum": 320,
+                        "minimum": 0,
+                        "type": "integer"
+                      },
+                      "t_s": {
+                        "minimum": 0,
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "t_s",
+                      "K_active_admissible",
+                      "K_draining",
+                      "setup_connection_count",
+                      "setup_terminal_count",
+                      "retargeting_terminal_count",
+                      "acquiring_terminal_count",
+                      "setup_reserved_terminal_count"
+                    ],
+                    "type": "object"
+                  },
+                  "minItems": 1,
+                  "type": "array"
+                },
+                "N_T_bits": {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "R_del_T": {
+                  "maximum": 1,
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "T_s": {
+                  "exclusiveMinimum": 0,
+                  "type": "number"
+                },
+                "all_offered_business_delivered": {
+                  "type": "boolean"
+                },
+                "bindings": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "baseline_seal": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "byte_count": {
+                          "minimum": 0,
+                          "type": "integer"
+                        },
+                        "path": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "sha256": {
+                          "pattern": "^[0-9a-f]{64}$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "path",
+                        "byte_count",
+                        "sha256"
+                      ],
+                      "type": "object"
+                    },
+                    "candidate_revision_id": {
+                      "const": "0004"
+                    },
+                    "implementation_manifest": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "byte_count": {
+                          "minimum": 0,
+                          "type": "integer"
+                        },
+                        "path": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "sha256": {
+                          "pattern": "^[0-9a-f]{64}$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "path",
+                        "byte_count",
+                        "sha256"
+                      ],
+                      "type": "object"
+                    },
+                    "parent_revision": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "byte_count": {
+                          "minimum": 0,
+                          "type": "integer"
+                        },
+                        "path": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "sha256": {
+                          "pattern": "^[0-9a-f]{64}$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "path",
+                        "byte_count",
+                        "sha256"
+                      ],
+                      "type": "object"
+                    },
+                    "scope": {
+                      "const": "ENGINEERING_TEST_ONLY"
+                    },
+                    "version_origin": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "byte_count": {
+                          "minimum": 0,
+                          "type": "integer"
+                        },
+                        "path": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "sha256": {
+                          "pattern": "^[0-9a-f]{64}$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "path",
+                        "byte_count",
+                        "sha256"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "candidate_revision_id",
+                    "scope",
+                    "implementation_manifest",
+                    "version_origin",
+                    "parent_revision",
+                    "baseline_seal"
+                  ],
+                  "type": "object"
+                },
+                "delivered_bit_age_integral_bit_s": {
+                  "type": "null"
+                },
+                "delivered_bits": {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "delivered_fluid_age_implemented": {
+                  "const": false
+                },
+                "dynamic_terminal_count": {
+                  "const": 320
+                },
+                "evaluation_completed_normally": {
+                  "type": "boolean"
+                },
+                "five_execution_state_dwell_s": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "ACQUIRING": {
+                      "minimum": 0,
+                      "type": "number"
+                    },
+                    "ACTIVE": {
+                      "minimum": 0,
+                      "type": "number"
+                    },
+                    "DRAINING": {
+                      "minimum": 0,
+                      "type": "number"
+                    },
+                    "IDLE": {
+                      "minimum": 0,
+                      "type": "number"
+                    },
+                    "RETARGETING": {
+                      "minimum": 0,
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "IDLE",
+                    "RETARGETING",
+                    "ACQUIRING",
+                    "ACTIVE",
+                    "DRAINING"
+                  ],
+                  "type": "object"
+                },
+                "four_energy_state_dwell_s": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "ACQUIRING": {
+                      "minimum": 0,
+                      "type": "number"
+                    },
+                    "ACTIVE": {
+                      "minimum": 0,
+                      "type": "number"
+                    },
+                    "IDLE": {
+                      "minimum": 0,
+                      "type": "number"
+                    },
+                    "RETARGETING": {
+                      "minimum": 0,
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "IDLE",
+                    "RETARGETING",
+                    "ACQUIRING",
+                    "ACTIVE"
+                  ],
+                  "type": "object"
+                },
+                "in_flight_bits": {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "initial_state_sha256": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "injection_end_s": {
+                  "exclusiveMinimum": 0,
+                  "type": "number"
+                },
+                "input_trace_sha256": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "mean_delivered_fluid_delay_s": {
+                  "type": "null"
+                },
+                "offered_bits": {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "per_terminal_execution_dwell_s": {
+                  "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "dwell_s": {
+                        "additionalProperties": false,
+                        "properties": {
+                          "ACQUIRING": {
+                            "minimum": 0,
+                            "type": "number"
+                          },
+                          "ACTIVE": {
+                            "minimum": 0,
+                            "type": "number"
+                          },
+                          "DRAINING": {
+                            "minimum": 0,
+                            "type": "number"
+                          },
+                          "IDLE": {
+                            "minimum": 0,
+                            "type": "number"
+                          },
+                          "RETARGETING": {
+                            "minimum": 0,
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "IDLE",
+                          "RETARGETING",
+                          "ACQUIRING",
+                          "ACTIVE",
+                          "DRAINING"
+                        ],
+                        "type": "object"
+                      },
+                      "terminal_id": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "maxItems": 2,
+                        "minItems": 2,
+                        "type": "array"
+                      }
+                    },
+                    "required": [
+                      "terminal_id",
+                      "dwell_s"
+                    ],
+                    "type": "object"
+                  },
+                  "maxItems": 320,
+                  "minItems": 320,
+                  "type": "array"
+                },
+                "queued_bits": {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "schema": {
+                  "const": "dynamic_k_n1a_engineering_result_v1"
+                },
+                "scientific_gate_pass": {
+                  "const": false
+                },
+                "scope": {
+                  "const": "ENGINEERING_TEST_ONLY"
+                },
+                "simulated_until_s": {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "standby_baseline_energy_J": {
+                  "minimum": 0,
+                  "type": "number"
+                },
+                "terminal_accounting_covers_0_T": {
+                  "type": "boolean"
+                },
+                "termination_reason": {
+                  "enum": [
+                    "REACHED_T",
+                    "ENGINEERING_CHECKPOINT"
+                  ]
+                },
+                "tolerances": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "business_bits": {
+                      "minimum": 0,
+                      "type": "number"
+                    },
+                    "energy_J": {
+                      "minimum": 0,
+                      "type": "number"
+                    },
+                    "time_s": {
+                      "minimum": 0,
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "time_s",
+                    "energy_J",
+                    "business_bits"
+                  ],
+                  "type": "object"
+                }
+              },
+              "required": [
+                "schema",
+                "scope",
+                "scientific_gate_pass",
+                "dynamic_terminal_count",
+                "bindings",
+                "input_trace_sha256",
+                "initial_state_sha256",
+                "tolerances",
+                "T_s",
+                "injection_end_s",
+                "simulated_until_s",
+                "termination_reason",
+                "four_energy_state_dwell_s",
+                "five_execution_state_dwell_s",
+                "per_terminal_execution_dwell_s",
+                "K_time_series",
+                "delivered_bit_age_integral_bit_s",
+                "mean_delivered_fluid_delay_s",
+                "delivered_fluid_age_implemented",
+                "R_del_T",
+                "E_LCT_J",
+                "DeltaE_LCT_J",
+                "standby_baseline_energy_J",
+                "offered_bits",
+                "delivered_bits",
+                "N_T_bits",
+                "queued_bits",
+                "in_flight_bits",
+                "J_T_bit_s",
+                "evaluation_completed_normally",
+                "terminal_accounting_covers_0_T",
+                "all_offered_business_delivered"
+              ],
+              "title": "N1a engineering measurements only; numeric cross-checks also mandatory",
+              "type": "object"
+            },
+            "schema": {
+              "const": "dynamic_k_n1b_engineering_result_v1"
+            },
+            "scientific_gate_pass": {
+              "const": false
+            },
+            "scope": {
+              "const": "ENGINEERING_TEST_ONLY"
+            }
+          },
+          "required": [
+            "schema",
+            "scope",
+            "fifo",
+            "scientific_gate_pass",
+            "N2_implemented",
+            "bindings",
+            "delivered_bits",
+            "delivered_bit_age_integral_bit_s",
+            "mean_delivered_fluid_delay_s",
+            "mean_delay_absolute_error_bound_s",
+            "n1a_result",
+            "age_accounting"
+          ],
+          "type": "object"
+        },
+        "physical_input_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "release_audit": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "reserved_terminal_count": {
+          "maximum": 320,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "schema": {
+          "const": "dynamic_k_n2_engineering_result_v1"
+        },
+        "scientific_gate_pass": {
+          "const": false
+        },
+        "scope": {
+          "const": "ENGINEERING_TEST_ONLY"
+        },
+        "setup_terminal_count": {
+          "maximum": 320,
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "schema",
+        "scope",
+        "bindings",
+        "physical_input_sha256",
+        "n1b_result",
+        "K_admit",
+        "K_draining",
+        "setup_terminal_count",
+        "reserved_terminal_count",
+        "dynamic_terminal_states",
+        "dynamic_K_time_series",
+        "action_receipts",
+        "release_audit",
+        "scientific_gate_pass",
+        "formal_experiments_executed",
+        "N3_implemented"
+      ],
+      "type": "object"
+    },
+    "non_HOLD_accepted_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "schema": {
+      "const": "dynamic_k_n3_engineering_result_v1"
+    },
+    "scientific_gate_pass": {
+      "const": false
+    },
+    "scope": {
+      "const": "ENGINEERING_TEST_ONLY"
+    },
+    "terminal_events_after_last_epoch": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema",
+    "scope",
+    "bindings",
+    "controller",
+    "fixture_identity",
+    "decision_audit",
+    "terminal_events_after_last_epoch",
+    "n2_result",
+    "metrics",
+    "non_HOLD_accepted_count",
+    "scientific_gate_pass",
+    "formal_experiments_executed",
+    "N4_implemented"
+  ],
+  "type": "object"
+}

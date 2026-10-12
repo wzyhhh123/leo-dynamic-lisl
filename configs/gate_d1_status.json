@@ -1,0 +1,7 @@
+{
+  "gate_d0": "PASS",
+  "gate_d1": "PASS",
+  "statement": "Gate D1 fixed-topology network-service kernel = PASS",
+  "evidence": "outputs\\gate_d1_20260922T150801_050624Z",
+  "gate_d2_started": false
+}

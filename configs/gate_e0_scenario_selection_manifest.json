@@ -1,0 +1,42 @@
+{
+  "schema": "gate_e0_scenario_selection_manifest_v1",
+  "version": 1,
+  "status": "FROZEN_BEFORE_E1_E2",
+  "selection_scope": "structural metadata available before branch execution",
+  "scenario_classes": [
+    "E-A_BBM_NO_ROUTE",
+    "E-B_BBM_CONNECTED_REROUTE",
+    "E-C_GENUINE_MBB",
+    "E-D_SHARED_CONGESTION_EXTERNALITY"
+  ],
+  "kappa2_bins": [
+    {"name": "low", "lower_exclusive": 0.0, "upper_inclusive": 0.1},
+    {"name": "medium", "lower_exclusive": 0.1, "upper_inclusive": 0.35},
+    {"name": "high", "lower_exclusive": 0.35, "upper_inclusive": 0.7},
+    {"name": "very_high", "lower_exclusive": 0.7, "upper_exclusive": 1.0}
+  ],
+  "quota_per_class_per_kappa2_bin": 1,
+  "eligibility": [
+    "Gate C legal",
+    "0 < kappa2 < 1",
+    "declared scenario class",
+    "complete structural key"
+  ],
+  "lexicographic_order": ["t0_s", "old_edge", "new_edge", "terminal_ids", "scenario_id"],
+  "required_candidate_fields": [
+    "scenario_id", "scenario_class", "t0_s", "old_edge", "new_edge",
+    "terminal_ids", "gate_c_legal", "kappa2"
+  ],
+  "allowed_optional_structural_fields": [
+    "transition_type", "connected_during_transition", "remaining_lifetime_s",
+    "terminal_occupancy", "hop_difference", "path_difference",
+    "shared_edges", "has_third_party_od", "focus_commodities"
+  ],
+  "forbidden_result_fields": [
+    "j_hold", "j_switch", "j_real", "j_ideal", "delta_j",
+    "relative_effect", "mean_delay", "delivery_ratio", "reversal",
+    "performance_score"
+  ],
+  "empty_stratum_status": "NO_ELIGIBLE_CASE",
+  "result_fields_read": []
+}

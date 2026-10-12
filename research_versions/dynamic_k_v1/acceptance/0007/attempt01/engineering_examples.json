@@ -1,0 +1,30 @@
+{
+  "bindings": {
+    "anchors": {
+      "baseline_seal": {
+        "byte_count": 656,
+        "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+        "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+      },
+      "parent_revision": {
+        "byte_count": 9504,
+        "path": "research_versions/dynamic_k_v1/revisions/0006/record.json",
+        "sha256": "417e46baf6d3d7c8846af61131952739275c9b22bd1d468cc28e649b3c82dd18"
+      },
+      "version_origin": {
+        "byte_count": 1555,
+        "path": "research_versions/dynamic_k_v1/version_record.json",
+        "sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+      }
+    },
+    "candidate_revision_id": "0007",
+    "implementation_manifest": {
+      "byte_count": 23127,
+      "path": "research_versions/dynamic_k_v1/acceptance/0007/implementation_manifest.json",
+      "sha256": "c9535dfc85506bd5ed300a40de44cc34b532b903b29d925681758c162fee4eaf"
+    },
+    "scope": "ENGINEERING_TEST_ONLY"
+  },
+  "examples": {},
+  "scope": "ENGINEERING_TEST_ONLY"
+}

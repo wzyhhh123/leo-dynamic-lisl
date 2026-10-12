@@ -1,0 +1,26 @@
+{
+  "baseline_seal": {
+    "byte_count": 656,
+    "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+    "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+  },
+  "completed_asia_shanghai": "2026-10-10T11:18:28.211827+08:00",
+  "completed_utc": "2026-10-10T03:18:28.211827+00:00",
+  "excluded_file_count": 202,
+  "gate_acceptance_claimed": false,
+  "gitignore_used": false,
+  "legacy_differences": {
+    "added": [],
+    "deleted": [],
+    "modified": [],
+    "possible_renames": []
+  },
+  "legacy_file_count": 5810,
+  "legacy_total_bytes": 15219456380,
+  "raw_byte_sha256": true,
+  "research_version_namespace_omitted_from_legacy_comparison": "research_versions/dynamic_k_v1",
+  "schema": "dynamic_k_n0_legacy_integrity_report_v1",
+  "scientific_experiments_executed": false,
+  "started_utc": "2026-10-10T03:16:54.873482+00:00",
+  "status": "PASS"
+}

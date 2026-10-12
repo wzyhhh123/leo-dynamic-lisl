@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-10-10T03:42:38.537273+00:00",
+  "files": [
+    {
+      "byte_count": 18214,
+      "path": "research_versions/dynamic_k_v1/cleanup/duplicate_plots_20261010T034009_941313Z/plan.json",
+      "sha256": "f1d1bf508f7883c832e151ad26fb9c1e8faa37163de9d4157afacda0aff9bd4f"
+    },
+    {
+      "byte_count": 16628,
+      "path": "research_versions/dynamic_k_v1/cleanup/duplicate_plots_20261010T034009_941313Z/execution_report.json",
+      "sha256": "3f0d6e707bb26a0b9b4e53127f8c87f791d8f921c0bb064dd5eb6d220a879b68"
+    },
+    {
+      "byte_count": 1742,
+      "path": "research_versions/dynamic_k_v1/cleanup/duplicate_plots_20261010T034009_941313Z/RESULT_CN.md",
+      "sha256": "1185b6506382af78258c955321c812a83c48d7711ba4e8725b478e31895d4cd3"
+    }
+  ],
+  "revision_external_hash_required": true,
+  "schema": "dynamic_k_external_cleanup_seal_v1",
+  "self_hash_excluded": true,
+  "status": "SEALED"
+}

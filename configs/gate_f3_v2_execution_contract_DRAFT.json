@@ -1,0 +1,98 @@
+{
+  "schema": "gate_f3_v2_execution_contract",
+  "status": "DRAFT_NOT_FROZEN",
+  "frozen": false,
+  "implementation_authorized": false,
+  "gate": "F3-v2-0",
+  "proposed_decision_cadence_s": 5,
+  "proposed_rollout_horizon_s": 10,
+  "proposed_max_batch_replace": 4,
+  "epochs": {
+    "start_s": 0,
+    "step_s": 5,
+    "last_possible_decision_s": 595,
+    "end_exclusive_s": 600,
+    "maximum_scheduled_epochs": 120,
+    "event_extra_decision": false
+  },
+  "microstep_order": [
+    "settle committed propagation arrivals/rate events",
+    "settle due Gate B events in existing priority/sequence order",
+    "use right-continuous external rate and refresh current graph/routes/service under old kernel",
+    "DECISION_ROOT checkpoint",
+    "shared single + joint proposal/validation",
+    "controller observes/evaluates clones only",
+    "POST_OBSERVE checkpoint",
+    "validate selected exact batch from unchanged root",
+    "atomic Gate B multi-command commit, including due zero-time events",
+    "one graph/routes/service refresh after batch group",
+    "POST_DECISION checkpoint"
+  ],
+  "same_timestamp_tie": {
+    "terminal": "original (time,priority,sequence); expiry0/TX_DONE1/LINK_DOWN2/retarget3/LINK_READY4",
+    "new_commands": "canonical batch member order assigns deterministic reservations and event sequence",
+    "observation": "right-continuous after prior physical/propagation events; no transient graph between commands of one atomic batch",
+    "economic": "HOLD exact tie first; canonical joint proposal order otherwise"
+  },
+  "traffic": {
+    "immutable_external_trace": true,
+    "arrival_s": [
+      0,
+      240
+    ],
+    "at_and_after_240_rate": 0,
+    "phase_boundaries": [
+      60,
+      120,
+      180,
+      240
+    ],
+    "normalization": "inherit D0 reference alpha_star/rho, no renormalization on K* or controller topology",
+    "scale": 160
+  },
+  "drain": {
+    "max_s": 600,
+    "COMPLETE_threshold_bits": 0.01,
+    "D2_internal_early_return_bits": 1.0,
+    "D2_return_is_COMPLETE": false,
+    "after240": "Continue real physical/service drain, controller only at240,245,...,595 while unfinished>0.01; early completion ends run; no600 decision.",
+    "at600": "Settle real events at600, then COMPLETE if threshold met else CENSORED; no artificial clearing.",
+    "ranking": "Full-J contrast only if both COMPLETE; censored residual/delivery/time reported, no truncated-J ranking"
+  },
+  "horizon": {
+    "nominal_s": 10,
+    "effective_formula": "H_eff=min(10,600-t)",
+    "last_epoch_example": {
+      "t": 595,
+      "effective_horizon_s": 5,
+      "end_s": 600
+    },
+    "cutoff_rule_status": "REQUIRES_HUMAN_FREEZE; new v2 boundary rule, not inherited v1 equivalence",
+    "same_for_all_batch_branches": true,
+    "physics_asset_extension": false,
+    "setup_completion": "Actual ready<own window_end (<=600); required transition safety completion must be covered, otherwise horizon-limited rejection.",
+    "forecast": "lambda_hat(t+s)=lambda(t), 0<=s<=H_eff; no actual next traffic phase read.",
+    "cross240": "Retain simple persistence forecast even across a future arrival cutoff before t=240; at240 current observed lambda=0. Real trace always has zero input after240.",
+    "post_horizon_drain": false,
+    "terminal_penalty": false,
+    "later_natural_expiry_after_transition_complete": "Not batch invalidity; real rollout/service sees consequences, reported separately."
+  },
+  "network_state_updates": "LINK_UP/DOWN/EXPIRE and service/propagation events occur at true timestamps, never delayed to5s controller epochs.",
+  "geometry_refresh": "Inherit E2/P1 physical-event-driven route/delay refresh convention; changing controller cadence does not add periodic geometry refresh.",
+  "common_router": {
+    "primary": "DeterministicShortestPropagationDelayRouter",
+    "robustness": "DeterministicLoadAwareRouter (current-state-only implementation)",
+    "same_scenario_and_parameters_only_router_replaced": true
+  },
+  "objective": "J=sum_f integral (A_f-D_f) dt = sum_f integral (Q_f+I_f)dt; no switch/setup/outage hand penalty",
+  "future_policy": {
+    "B1_B2_B3": "current Q/I/current lambda/service/routes plus deterministic Gate C metadata; no forecast/actual future traffic",
+    "B4": "same physics plus root-local current-rate-persistence forecast; no future controller actions or actual future realization"
+  },
+  "fairness": "same K*/initial states/geometry/trace/rho/capacity/scheduler/router/cadence/raw singles/joint pool/batch safety/drain and tolerances; branch identity per epoch and entire initial state across runs",
+  "K_star": null,
+  "experiment_grid_status": "REQUIRES_SEPARATE_HUMAN_FREEZE",
+  "formal_performance_runs_authorized": false,
+  "provisional_policy": "No global controller ranking; core contrast B4-v2 vs B3-v2, router-matched replay.",
+  "draft_canonical_sha256": "9cba53a9cf140adb915bfe0517b74bd838e49133ec158ef5d5650d8b27bc63f7"
+}

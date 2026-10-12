@@ -1,0 +1,108 @@
+{
+  "schema": "gate_f0_baseline_registry_v1",
+  "status": "DEFINITIONS_FROZEN_IMPLEMENTATIONS_NOT_STARTED",
+  "primary_objective": "network_wide_unfinished_work_J",
+  "shared_execution_rule": "Every executable action passes the same Gate C legality, scenario safety policy and Gate B executor; safety rejects without repairing or substituting.",
+  "baselines": [
+    {
+      "id": "B0",
+      "name": "STATIC_HOLD",
+      "core": true,
+      "action_behavior": "Return HOLD at every common decision epoch.",
+      "intentional_reconfiguration": false,
+      "natural_expiry_and_physical_failure_still_apply": true,
+      "geometry_frozen_artificially": false,
+      "information_class": "CURRENT_STATE_ONLY",
+      "implemented": false
+    },
+    {
+      "id": "B1",
+      "name": "IGNORE_SETUP_DYNAMIC",
+      "core": true,
+      "action_behavior": "Choose HOLD or a Gate-C-legal terminal-level target by evaluating instantaneous target-topology value with setup assumed zero; execute the chosen legal action with real Gate B/C setup.",
+      "decision_setup_s": 0,
+      "execution_uses_real_setup": true,
+      "safety_may_substitute_economically_better_candidate": false,
+      "information_class": "CURRENT_STATE_ONLY",
+      "implemented": false
+    },
+    {
+      "id": "B2",
+      "name": "HYSTERESIS_MINIMUM_HOLD",
+      "core": true,
+      "action_behavior": "Apply a human-frozen minimum-hold duration and/or improvement threshold to the B1 or registered simple benefit signal.",
+      "minimum_hold_grid_s": null,
+      "improvement_threshold_grid": null,
+      "values_selected_from_performance_results": false,
+      "information_class": "CURRENT_STATE_ONLY",
+      "implemented": false
+    },
+    {
+      "id": "B3",
+      "name": "SETUP_AWARE_GREEDY",
+      "core": true,
+      "action_behavior": "Make a one-step HOLD/SWITCH decision from current topology benefit, real setup, usable lifetime and current queue/load without multi-step rollout.",
+      "multi_step_rollout": false,
+      "information_class": "CURRENT_STATE_ONLY",
+      "implemented": false
+    },
+    {
+      "id": "B4",
+      "name": "PROPOSED_ROLLOUT_MPC_PLACEHOLDER",
+      "core": true,
+      "action_behavior": "Generate terminal-pair proposals, filter conflicts/resources, run the real Gate B/C plus G_admit, common router, service and Q/I/D over a shared forecast horizon, then compare HOLD with candidate SWITCH actions by forecast-horizon network-wide J.",
+      "artificial_topology_score_instead_of_network_rollout_forbidden": true,
+      "rollout_horizon_s": null,
+      "candidate_top_k": null,
+      "forecast_source": null,
+      "information_class": "SHORT_HORIZON_FORECAST",
+      "implemented": false
+    },
+    {
+      "id": "B5",
+      "name": "SMALL_EXACT_ORACLE",
+      "core": true,
+      "action_behavior": "Exhaustively enumerate legal terminal-level actions and evaluate them over the registered short horizon on tiny fixtures only.",
+      "main_160_240_720_comparison_allowed": false,
+      "purpose": "Validate greedy or rollout approximation quality.",
+      "information_class": "ORACLE_SMALL_FIXTURE_ONLY",
+      "implemented": false
+    }
+  ],
+  "optional_sanity_baselines": [
+    {
+      "id": "S0",
+      "name": "SEEDED_RANDOM_LEGAL_ACTION",
+      "core": false,
+      "required": false,
+      "seed_policy": null,
+      "implemented": false
+    }
+  ],
+  "required_rl_baseline": false,
+  "rl_status": "NOT_REGISTERED_AS_REQUIRED",
+  "rl_reconsideration_conditions": [
+    "rollout computational cost is demonstrably excessive",
+    "registered short horizons demonstrably miss essential long-horizon dependence",
+    "non-learning controllers show a documented structural limitation"
+  ],
+  "parameter_freeze_status": {
+    "B2_minimum_hold_grid_s": "REQUIRES_HUMAN_FREEZE",
+    "B2_improvement_threshold_grid": "REQUIRES_HUMAN_FREEZE",
+    "B4_rollout_horizon_s": "REQUIRES_HUMAN_FREEZE",
+    "B4_candidate_top_k": "REQUIRES_HUMAN_FREEZE",
+    "B4_forecast_source": "REQUIRES_HUMAN_FREEZE",
+    "optional_random_seed_policy": "REQUIRES_HUMAN_FREEZE_IF_ENABLED"
+  },
+  "common_router_crossing": {
+    "primary": "DeterministicShortestPropagationDelayRouter",
+    "robustness": "DeterministicCurrentStateLoadAwareRouter",
+    "same_controller_points_required": true,
+    "direct_cross_router_controller_comparison_forbidden": true
+  },
+  "no_implementation_evidence": {
+    "baseline_controllers_created_in_f0": false,
+    "proposed_controller_created_in_f0": false,
+    "performance_runs_in_f0": false
+  }
+}

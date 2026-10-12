@@ -1,0 +1,8 @@
+{
+  "pre_e2_absolute_time_regression": "PASS",
+  "formal_status": "PRE_E2_ABSOLUTE_TIME_REGRESSION_PASS",
+  "stop_condition": false,
+  "evidence": "outputs/pre_e2_absolute_time_20260923T051334_210599Z",
+  "gate_e2_started": false,
+  "gate_f_started": false
+}

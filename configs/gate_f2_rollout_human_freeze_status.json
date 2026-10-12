@@ -1,0 +1,14 @@
+{
+  "B4_implementation_readiness": "READY",
+  "B4_implemented": false,
+  "B4_rollout_contract": "FROZEN",
+  "F2_started": false,
+  "F3_started": false,
+  "RL_started": false,
+  "canonical_sha256": "ca82a1e49f6bdbe56a4c9f2fb79299eac0174844e0bdc6608ea3cb4f12f90b2a",
+  "controller_performance_run": false,
+  "evidence": "outputs/gate_f2_rollout_human_freeze_20260925T031740_835531Z",
+  "gate_f2_rollout_human_freeze_v1": "PASS",
+  "schema": "gate_f2_rollout_human_freeze_status_v1",
+  "statement": "Gate F2 Rollout Human Freeze v1 = PASS"
+}

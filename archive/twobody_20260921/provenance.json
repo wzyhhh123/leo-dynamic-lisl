@@ -1,0 +1,48 @@
+{
+  "operation": "copy_only; document relative links adjusted",
+  "production_implementation": false,
+  "files": [
+    {
+      "source": "D:\\Document\\leo_routing_attitude\\docs\\dynamic_lisl_v0_2\\LEO_dynamic_LISL_experiment_plan_v0.2.md",
+      "target": "docs/LEO_dynamic_LISL_experiment_plan_v0.2.md",
+      "source_sha256": "23c619879bae0c48ebbf29a2befbdfb67650c6cf2b5276d3406d497f18e8267f",
+      "copied_sha256": "23c619879bae0c48ebbf29a2befbdfb67650c6cf2b5276d3406d497f18e8267f",
+      "final_sha256": "23c619879bae0c48ebbf29a2befbdfb67650c6cf2b5276d3406d497f18e8267f"
+    },
+    {
+      "source": "D:\\Document\\leo_routing_attitude\\docs\\dynamic_lisl_v0_2\\GATE_A_REPAIR_PLAN_v0.2.md",
+      "target": "docs/GATE_A_REPAIR_PLAN_v0.2.md",
+      "source_sha256": "195e352c34f63cdc80ccd01d0f4265d4886ddff59836bd27a8ee9ebb2b189d3f",
+      "copied_sha256": "195e352c34f63cdc80ccd01d0f4265d4886ddff59836bd27a8ee9ebb2b189d3f",
+      "final_sha256": "305bf837a978c0f7bf9db7236f69bcf5e786fe21a37fdf581b2a00506c98c5cf"
+    },
+    {
+      "source": "D:\\Document\\leo_routing_attitude\\.tmp\\design_review_v01_20260918\\DESIGN_REVIEW_CN.md",
+      "target": "docs/reviews/DESIGN_REVIEW_CN.md",
+      "source_sha256": "ac1834b29fcc00a9cd6687fe3993c4b7537047bf7bb0645c46ab70ed81ebb4ee",
+      "copied_sha256": "ac1834b29fcc00a9cd6687fe3993c4b7537047bf7bb0645c46ab70ed81ebb4ee",
+      "final_sha256": "ac1834b29fcc00a9cd6687fe3993c4b7537047bf7bb0645c46ab70ed81ebb4ee"
+    },
+    {
+      "source": "D:\\Document\\leo_routing_attitude\\.tmp\\design_review_v01_20260918\\gate_A_preflight.json",
+      "target": "docs/reviews/gate_A_preflight.json",
+      "source_sha256": "977d66a3dd4c6b42bcdc639a4b4eb90a6848a135d405fee2e62d82119ac1f79d",
+      "copied_sha256": "977d66a3dd4c6b42bcdc639a4b4eb90a6848a135d405fee2e62d82119ac1f79d",
+      "final_sha256": "977d66a3dd4c6b42bcdc639a4b4eb90a6848a135d405fee2e62d82119ac1f79d"
+    },
+    {
+      "source": "C:\\Users\\11656\\Downloads\\LEO_dynamic_LISL_experiment_plan_v0.1.md",
+      "target": "docs/reference/LEO_dynamic_LISL_experiment_plan_v0.1.md",
+      "source_sha256": "e7feccb59111646e28a6cd7be8722f72e7b811d6c4f4f27ede6aaf9dcf51ce2e",
+      "copied_sha256": "e7feccb59111646e28a6cd7be8722f72e7b811d6c4f4f27ede6aaf9dcf51ce2e",
+      "final_sha256": "e7feccb59111646e28a6cd7be8722f72e7b811d6c4f4f27ede6aaf9dcf51ce2e"
+    },
+    {
+      "source": "C:\\Users\\11656\\Downloads\\generate_scenario_X720.py",
+      "target": "gate_a/reference/generate_scenario_X720.py",
+      "source_sha256": "3891f4725912902796ba7cd658254784ddb7fe2d101873759ce07a708849659e",
+      "copied_sha256": "3891f4725912902796ba7cd658254784ddb7fe2d101873759ce07a708849659e",
+      "final_sha256": "3891f4725912902796ba7cd658254784ddb7fe2d101873759ce07a708849659e"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Gate_F3_runtime_telemetry_profile_support": "PASS",
+  "P2_started": false,
+  "RL_started": false,
+  "evidence": "outputs/gate_f3_runtime_telemetry_profile_support_20260925T111910_927537Z",
+  "focused_tests": "4 tests PASS",
+  "full_regression": "261 tests PASS",
+  "historical_abort_record_sha256": "fc8a919a6bcd6e85e79db3f044eb7a5d5c90d700d4c5cd38d1543ded925f2ab8",
+  "historical_attempt_unchanged": true,
+  "long_profile_executed": false,
+  "passive_progress_equivalence": "PASS",
+  "profile_classification": "ENGINEERING_PROFILE_ONLY",
+  "registered_P1_runs_executed_in_task": 0,
+  "schema": "gate_f3_runtime_telemetry_profile_support_status_v1",
+  "scientific_semantics_unchanged": true
+}

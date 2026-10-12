@@ -1,0 +1,235 @@
+{
+  "created_result_blind": true,
+  "families": [
+    {
+      "L_remain_s": 120.0,
+      "T_demand_s": 20.0,
+      "drain_limit_s": 80.0,
+      "family_id": "E1C_E-A_BBM_NO_ROUTE_shortest_propagation_delay",
+      "fixed_fields": [
+        "S0",
+        "target",
+        "rho",
+        "T_demand_s",
+        "L_remain_s",
+        "traffic_trace",
+        "router_id"
+      ],
+      "only_varied_field": "tau_setup_s",
+      "rho": 0.8,
+      "router_id": "shortest_propagation_delay",
+      "setup_grid_s": [
+        0.0,
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0,
+        16.0
+      ],
+      "template_id": "E-A_BBM_NO_ROUTE"
+    },
+    {
+      "L_remain_s": 120.0,
+      "T_demand_s": 20.0,
+      "drain_limit_s": 80.0,
+      "family_id": "E1C_E-A_BBM_NO_ROUTE_current_load_aware",
+      "fixed_fields": [
+        "S0",
+        "target",
+        "rho",
+        "T_demand_s",
+        "L_remain_s",
+        "traffic_trace",
+        "router_id"
+      ],
+      "only_varied_field": "tau_setup_s",
+      "rho": 0.8,
+      "router_id": "current_load_aware",
+      "setup_grid_s": [
+        0.0,
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0,
+        16.0
+      ],
+      "template_id": "E-A_BBM_NO_ROUTE"
+    },
+    {
+      "L_remain_s": 120.0,
+      "T_demand_s": 20.0,
+      "drain_limit_s": 80.0,
+      "family_id": "E1C_E-B_BBM_CONNECTED_REROUTE_shortest_propagation_delay",
+      "fixed_fields": [
+        "S0",
+        "target",
+        "rho",
+        "T_demand_s",
+        "L_remain_s",
+        "traffic_trace",
+        "router_id"
+      ],
+      "only_varied_field": "tau_setup_s",
+      "rho": 0.8,
+      "router_id": "shortest_propagation_delay",
+      "setup_grid_s": [
+        0.0,
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0,
+        16.0
+      ],
+      "template_id": "E-B_BBM_CONNECTED_REROUTE"
+    },
+    {
+      "L_remain_s": 120.0,
+      "T_demand_s": 20.0,
+      "drain_limit_s": 80.0,
+      "family_id": "E1C_E-B_BBM_CONNECTED_REROUTE_current_load_aware",
+      "fixed_fields": [
+        "S0",
+        "target",
+        "rho",
+        "T_demand_s",
+        "L_remain_s",
+        "traffic_trace",
+        "router_id"
+      ],
+      "only_varied_field": "tau_setup_s",
+      "rho": 0.8,
+      "router_id": "current_load_aware",
+      "setup_grid_s": [
+        0.0,
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0,
+        16.0
+      ],
+      "template_id": "E-B_BBM_CONNECTED_REROUTE"
+    },
+    {
+      "L_remain_s": 120.0,
+      "T_demand_s": 20.0,
+      "drain_limit_s": 80.0,
+      "family_id": "E1C_E-C_GENUINE_MBB_shortest_propagation_delay",
+      "fixed_fields": [
+        "S0",
+        "target",
+        "rho",
+        "T_demand_s",
+        "L_remain_s",
+        "traffic_trace",
+        "router_id"
+      ],
+      "only_varied_field": "tau_setup_s",
+      "rho": 0.8,
+      "router_id": "shortest_propagation_delay",
+      "setup_grid_s": [
+        0.0,
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0,
+        16.0
+      ],
+      "template_id": "E-C_GENUINE_MBB"
+    },
+    {
+      "L_remain_s": 120.0,
+      "T_demand_s": 20.0,
+      "drain_limit_s": 80.0,
+      "family_id": "E1C_E-C_GENUINE_MBB_current_load_aware",
+      "fixed_fields": [
+        "S0",
+        "target",
+        "rho",
+        "T_demand_s",
+        "L_remain_s",
+        "traffic_trace",
+        "router_id"
+      ],
+      "only_varied_field": "tau_setup_s",
+      "rho": 0.8,
+      "router_id": "current_load_aware",
+      "setup_grid_s": [
+        0.0,
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0,
+        16.0
+      ],
+      "template_id": "E-C_GENUINE_MBB"
+    },
+    {
+      "L_remain_s": 120.0,
+      "T_demand_s": 20.0,
+      "drain_limit_s": 80.0,
+      "family_id": "E1C_E-D_SHARED_CONGESTION_EXTERNALITY_shortest_propagation_delay",
+      "fixed_fields": [
+        "S0",
+        "target",
+        "rho",
+        "T_demand_s",
+        "L_remain_s",
+        "traffic_trace",
+        "router_id"
+      ],
+      "only_varied_field": "tau_setup_s",
+      "rho": 0.8,
+      "router_id": "shortest_propagation_delay",
+      "setup_grid_s": [
+        0.0,
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0,
+        16.0
+      ],
+      "template_id": "E-D_SHARED_CONGESTION_EXTERNALITY"
+    },
+    {
+      "L_remain_s": 120.0,
+      "T_demand_s": 20.0,
+      "drain_limit_s": 80.0,
+      "family_id": "E1C_E-D_SHARED_CONGESTION_EXTERNALITY_current_load_aware",
+      "fixed_fields": [
+        "S0",
+        "target",
+        "rho",
+        "T_demand_s",
+        "L_remain_s",
+        "traffic_trace",
+        "router_id"
+      ],
+      "only_varied_field": "tau_setup_s",
+      "rho": 0.8,
+      "router_id": "current_load_aware",
+      "setup_grid_s": [
+        0.0,
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0,
+        16.0
+      ],
+      "template_id": "E-D_SHARED_CONGESTION_EXTERNALITY"
+    }
+  ],
+  "monotonicity_assumed": false,
+  "range_expansion_allowed": false,
+  "refinement_tolerance_s": 0.01,
+  "schema": "gate_e1_break_even_manifest_v1",
+  "status": "FROZEN_BEFORE_E1_SCIENTIFIC_RUN",
+  "version": 1
+}

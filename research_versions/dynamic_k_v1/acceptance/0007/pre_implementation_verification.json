@@ -1,0 +1,18 @@
+{
+  "baseline_file_count": 5810,
+  "excluded_file_count": 202,
+  "expected_revision_sha256": "417e46baf6d3d7c8846af61131952739275c9b22bd1d468cc28e649b3c82dd18",
+  "expected_version_sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691",
+  "revision_id": "0006",
+  "scientific_gate_pass": false,
+  "scope": "N0_FILE_INTEGRITY_AND_VERSION_BINDINGS_ONLY",
+  "source": "actual complete version_control verify output before creation of any N3 files in this authorized turn",
+  "status": "PASS",
+  "undeclared_changes": {
+    "added": [],
+    "deleted": [],
+    "modified": [],
+    "possible_renames": []
+  },
+  "verified_file_count": 5906
+}

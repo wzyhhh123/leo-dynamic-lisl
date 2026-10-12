@@ -1,0 +1,941 @@
+{
+  "schema": "f3_v2_october_runtime_budget_plan",
+  "status": "DRAFT_NOT_FROZEN",
+  "frozen": false,
+  "created_date_local": "2026-10-08",
+  "timezone": "Asia/Shanghai",
+  "implementation_authorized_by_this_plan": false,
+  "formal_performance_authorized": false,
+  "target_evidence_date": "2026-10-31",
+  "MARL_PPO_in_scope": false,
+  "hardware_read_only_snapshot": {
+    "captured_utc": "2026-10-08T12:33:00.620719+00:00",
+    "CPU_model": "Intel Core Ultra 9 275HX (prior read-only CIM inventory)",
+    "physical_cores": 24,
+    "logical_cpus": 24,
+    "process_affinity_cpu_count": 24,
+    "memory_total_GiB": 31.43492889404297,
+    "memory_available_GiB": 10.240859985351562,
+    "python_executable": "D:\\Program_Files\\anaconda3\\envs\\pytorch\\python.exe",
+    "python_version": "3.9.21",
+    "sampling": "one read-only inventory, no continuous monitor or active run profiling"
+  },
+  "new_v2_cost_status": "PARTIAL_ENGINEERING_MEASUREMENTS; FINAL_K_STAR_PRODUCTION_EPISODE_UNMEASURED",
+  "historical_timing_use": "old single-REPLACE/8-worker timings are context only, never certify new K/batch-v2 cost or equivalence",
+  "resource_proposals": {
+    "status": "REQUIRES_HUMAN_FREEZE_AND_MEASUREMENT",
+    "production_workers": 8,
+    "B4_concurrent_episodes": 1,
+    "default_other_episode_concurrency": 1,
+    "available_machine_hours_per_day": 20,
+    "formal_days": 6,
+    "reserve_fraction": 0.2,
+    "allocated_machine_hours": 120,
+    "net_compute_hours_after_reserve": 96,
+    "B4_planning_allocation_hours": 72,
+    "other_controller_allocation_hours": 24,
+    "RAM_fraction_of_launch_available_max": 0.75,
+    "memory_admission_formula": "parent peak RSS + 8*worker peak RSS + shared/transport/pool overhead <=0.75*available RAM measured at launch",
+    "thread_policy": "audit BLAS/OpenMP oversubscription; worker single-thread environment is proposal only, must record/validate exact equivalence before freeze",
+    "parallel_admission": "24 reported cores do not authorize 3 B4 episodes; RSS, heterogeneous cores, contention and liveness measured first",
+    "wall_timeout_s": null,
+    "timeout_semantics": "operational failure with complete persistence; never CENSORED, never select incomplete/first-finished branch"
+  },
+  "shared_search_budget_proposal": {
+    "status": "REQUIRES_HUMAN_FREEZE; COMPUTE/STRUCTURAL_BASIS_ONLY",
+    "raw_BBM_cap": 32,
+    "raw_MBB_cap": 32,
+    "raw_total_cap": 64,
+    "single_proposal_cap": 16,
+    "single_strata_slots": {
+      "BBM": 8,
+      "MBB": 8
+    },
+    "beam_width": 4,
+    "max_non_hold_batch_candidates": 32,
+    "structural_expansion_cap": 184,
+    "joint_validation_cap": 184,
+    "maximum_rollout_evaluations_including_HOLD": 33,
+    "derivation": "P=16,W=4,m=4: 16+4*(15+14+13)=184 joint expansions; outputs<=28<=M32; rollout cap33. Raw64 is an OUTPUT cap only: source screening count is NOT64 and currently unbounded by these caps.",
+    "batch1_rule": "same capped16 singleton universe, no joint expansion; HOLD+up to16 branches; quotas unchanged",
+    "structural_acceptance": "fixture suite includes certified legal size2/3/4 and BBM/MBB/mixed actions, reports pool recall/omissions by size; no unearned main-scale optimality guarantee",
+    "diagnostic_budget_adjustment": "only result-blind resource/structural evidence before final freeze; human-approved revision required; never final-J tuning",
+    "runtime_scouting_budget": null,
+    "runtime_physical_evaluation_cap": null,
+    "diversity_policy": "REQUIRES_HUMAN_FREEZE: old-binding and terminal-footprint coverage + structural size seeds",
+    "budget_numbers_preserved_not_approved": true,
+    "production_readiness": "BLOCKED_BY_CP_POOL_AND_CP_SOURCE_COST"
+  },
+  "measurement_plan": [
+    {
+      "id": "RT_K",
+      "due": "2026-10-11",
+      "scope": "Gate K0 exact matching/topology builder cost-only after structural contract authorization",
+      "fixture_rule": "predeclare t=0/270/570 and candidateK=24/48/80 for preliminary cost; full K0 still follows approved original candidate list and20 snapshots",
+      "measure": [
+        "wall time",
+        "candidate graph size",
+        "solver certificate",
+        "memory",
+        "builder phases"
+      ],
+      "cost_s": null,
+      "dependency": "human K0 authorization + solver/builder availability",
+      "if_unavailable": "NOT_MEASURED + critical-path blocker byOct11, no fabricated cost",
+      "status": "PREDECLARED_THREE_POINTS_MEASURED_FULL_K0_PENDING",
+      "measured_evidence": {
+        "path": "outputs/f3_v2_predeclared_cost_summary_20261008T155819_547812Z/report.json",
+        "sha256": "e9dc8ca4eae5beeed3d133772660697b5087255e719af5008b806eda1fb9ac60"
+      }
+    },
+    {
+      "id": "RT_BATCH",
+      "due": "2026-10-16",
+      "scope": "newK source and full-batch safety validation",
+      "fixture_rule": "approved K* plus K4; predeclared20 structural snapshots; no controller performance",
+      "measure": [
+        "source wall",
+        "singleton count",
+        "resource-independent pool",
+        "full batch validation count/wall",
+        "available batch-size distribution"
+      ],
+      "cost_s": null,
+      "dependency": "shared validator PASS and approved K0/K1",
+      "status": "K4_T0_SOURCE_MEASURED_FINAL_K_STAR_AND_PHASES_PENDING",
+      "measured_evidence": {
+        "path": "outputs/f3_v2_natural_source_coverage_20261008T162145_156464Z/report.json",
+        "sha256": "2c88ad3e0235383eef203d4f4a02187d673f824ac835633e64482b1d42506e03"
+      }
+    },
+    {
+      "id": "RT_B4",
+      "due": "2026-10-22",
+      "scope": "one real joint B4 rollout and serial/8-worker epoch/short prefix engineering equivalence",
+      "fixture_rule": "register current-state cost fixtures at0/120/240/480/595 andrho .5/.8/1 before timing; synthetic timeline fixtures if late live states not yet available must be labelled nonrepresentative",
+      "measure": [
+        "branch wall by cardinality",
+        "cold/warm pool wall",
+        "serialization/clone",
+        "serial/8-worker exact and speed",
+        "parent/worker peak RSS",
+        "epoch components"
+      ],
+      "cost_s": null,
+      "dependency": "new B4-v2 implementation, K* and acceptance fixtures",
+      "information_boundary": "do not compare controller J/delay/delivery for selecting fixtures or budgets; exact equality checks allowed",
+      "status": "HISTORICAL_RESTRICTED_K4_PREFIX_ONLY_FINAL_PRODUCTION_PENDING",
+      "measured_evidence": {
+        "path": "outputs/f3_v2_natural_prefix_20261008T142126_443971Z/report.json",
+        "sha256": "e054f292ec151031946250dec66b41075251ffec16a73198ef6c7cc29514204f"
+      }
+    },
+    {
+      "id": "RT_EPISODE",
+      "due": "2026-10-23",
+      "scope": "conservative full episode and42-run extrapolation",
+      "measure": [
+        "phase/epoch conservative costs",
+        "service between epochs",
+        "IO/figure/seal overhead",
+        "available machine hours"
+      ],
+      "estimated_total_s": null,
+      "dependency": "RT_K/RT_BATCH/RT_B4 measured",
+      "status": "PENDING_COST_MEASUREMENTS"
+    }
+  ],
+  "matrix_cost_model": {
+    "B4_runs": 13,
+    "other_runs": 29,
+    "B4_max_decision_epochs": 1920,
+    "other_max_decision_epochs": 3840,
+    "maximum_epoch_counts": "B4:2*300+11*120=1920; others:2*300+27*120=3840. Early completion never assumed for conservative planning.",
+    "upper_bound_B4_epoch_mean_s_if_zero_overhead": 135.0,
+    "upper_bound_other_epoch_mean_s_if_zero_overhead": 22.5,
+    "interpretation": "135s/B4 epoch and22.5s/other epoch are planning ceilings, not measured predictions; subtract fixed/service/IO overhead before admission",
+    "formula": "sum_runs[frozen measured fixed costs + max_epoch_count*conservative observed epoch cost + extra service/IO costs]",
+    "estimated_matrix_wall_s": null,
+    "ready_to_launch": false
+  },
+  "early_risk_rules": [
+    "Oct11: no K0/K1 approval, missing solver cost or engineering capacity gap => immediate blocker report",
+    "Oct16: K*/batch validator not PASS or structure lacks desired independent batches => immediate redesign request, no cherry-picked K",
+    "Oct20-22: measured total exceeds available96h net budget or RSS admission fails => notify immediately, not last week",
+    "Oct23: any exact/regression/preflight fail => prohibit Oct24 start and publish projected slip",
+    "formal invariant failure => preserve failure and stop; dates never relax semantics/tolerance"
+  ],
+  "prohibited_measurement_use": [
+    "rank controllers by J",
+    "select better traffic/K/rho",
+    "tune beam to achieved J",
+    "replace inconvenient fixtures",
+    "run registered experiment without authorization"
+  ],
+  "plan_revision": "OCTOBER_FULL_NON_MARL_COMPLETION_REVIEW_3",
+  "revision_utc": "20261008T164358_252159Z",
+  "prior_plan_sha256": "ac96ce2d6c7979db13c622c91322b60757ece093d77c1c351dc0b20fe9f0e8ec",
+  "prior_plan_preserved_at": "outputs/f3_v2_october_completion_plan_20261008T164358_252159Z/prior_plan_bytes",
+  "current_engineering_snapshot": {
+    "scope": "READ_ONLY_EXISTING_EVIDENCE; no tests/benchmarks rerun by planning task",
+    "evidence": {
+      "structural_cost": {
+        "path": "outputs/f3_v2_predeclared_cost_summary_20261008T155819_547812Z/report.json",
+        "sha256": "e9dc8ca4eae5beeed3d133772660697b5087255e719af5008b806eda1fb9ac60"
+      },
+      "natural_source": {
+        "path": "outputs/f3_v2_natural_source_coverage_20261008T162145_156464Z/report.json",
+        "sha256": "2c88ad3e0235383eef203d4f4a02187d673f824ac835633e64482b1d42506e03"
+      },
+      "physical_clone": {
+        "path": "outputs/f3_v2_natural_physical_trial_20261008T163118_750402Z/report.json",
+        "sha256": "46cc374466a56c4337d30aba8798927c9dfda98b97ad3f76165b5ab6e2fab882"
+      },
+      "historical_natural_rollout": {
+        "path": "outputs/f3_v2_natural_prefix_20261008T142126_443971Z/report.json",
+        "sha256": "e054f292ec151031946250dec66b41075251ffec16a73198ef6c7cc29514204f"
+      },
+      "historical_regression": {
+        "path": "outputs/f3_v2_engineering_check_20261008T155127_587459Z/report.json",
+        "sha256": "c54b07f5cb806d99d969bf64187a5f5551f2ad20dd2c73c7826e40dfb5b925e6"
+      }
+    },
+    "historical_focused_tests": 110,
+    "historical_full_tests": 439,
+    "current_code_differs_from_test_seal": [
+      "src/dynamic_lisl/f3_v2/batch_executor.py",
+      "src/dynamic_lisl/f3_v2/joint_proposer.py"
+    ],
+    "new_code_not_in_test_seal": [
+      "src/dynamic_lisl/f3_v2/physical_trial.py",
+      "src/dynamic_lisl/f3_v2/source_diagnostics.py"
+    ],
+    "current_full_stack_acceptance": "PENDING_CURRENT_CODE_REGRESSION_AND_APPROVED_PRODUCTION_CONFIG",
+    "historical_natural_scope": "K4, restricted 9-branch fixture, six 2s epochs; not K*/5s/full production pool",
+    "current_natural_B4_stack_acceptance": "NOT_ESTABLISHED_BY_THIS_PLANNING_TASK",
+    "K_star_selected": false,
+    "formal_K0_K1_complete": false,
+    "B4_v2_engineering_PASS": false,
+    "formal_preflight_READY": false
+  },
+  "cost_evidence_policy": {
+    "synthetic_test_wall_is_not_natural_epoch_cost": true,
+    "prior_5_74x_or_6_06x_not_v2_batch_cost": true,
+    "measured_natural_batch_cost_s": null,
+    "forecast_source": "predeclared states, structural counts and measured component wall/RSS only",
+    "estimate_range": "record conservative lower/upper scenario; no early drain assumed; no extrapolation from one cheap epoch alone",
+    "first_cost_gate": "2026-10-11; missing measurement reported as blocker, not zero",
+    "final_admission": "by2026-10-23: sum per-run conservative upper estimates plus operational reserve <= confirmed available hours",
+    "formal_budget_timeout": "must be approved after measurement; timeout is execution failure, not scientific censor",
+    "partial_components_available": true
+  },
+  "critical_path_blockers": [
+    {
+      "id": "CP_FREEZE",
+      "status": "OPEN",
+      "due": "2026-10-11",
+      "reason": "科学合同、K0/K1、候选搜索政策、矩阵及资源需要集中审批。",
+      "earliest_affected_milestone": "M16",
+      "slip_model": "审批晚于Oct11后，按剩余依赖与资源重新排期，不能假定可追回。"
+    },
+    {
+      "id": "CP_POOL",
+      "status": "OBSERVED_STRUCTURAL_BLOCKER",
+      "due": "2026-10-11",
+      "reason": "真实K4/t0存在安全四链动作，但64 raw到16 singleton全部替换同一old，最终池仅size1。",
+      "evidence": {
+        "path": "outputs/f3_v2_natural_source_coverage_20261008T162145_156464Z/report.json",
+        "sha256": "2c88ad3e0235383eef203d4f4a02187d673f824ac835633e64482b1d42506e03"
+      },
+      "response": "审批result-blind old-binding/terminal-footprint覆盖与按size结构种子的具体规则；全控制器共用。未自动改变候选空间。"
+    },
+    {
+      "id": "CP_SOURCE_COST",
+      "status": "OBSERVED_RUNTIME_BLOCKER",
+      "due": "2026-10-11",
+      "reason": "raw output cap64不限制此前7980次物理验证；K4/t0 source实测455.0807451s。",
+      "evidence": {
+        "path": "outputs/f3_v2_natural_source_coverage_20261008T162145_156464Z/report.json",
+        "sha256": "2c88ad3e0235383eef203d4f4a02187d673f824ac835633e64482b1d42506e03"
+      },
+      "response": "与CP_POOL一并审批runtime scouting/physical-evaluation budget；保留uncapped K0结构审计独立性。"
+    },
+    {
+      "id": "CP_K",
+      "status": "PARTIAL_CERTIFICATES_ONLY",
+      "due": "2026-10-16",
+      "reason": "三点matching/解析exact证书已有；全部获批K×20 snapshots、K*选择及K1初态尚未完成。",
+      "evidence": {
+        "path": "outputs/f3_v2_predeclared_cost_summary_20261008T155819_547812Z/report.json",
+        "sha256": "e9dc8ca4eae5beeed3d133772660697b5087255e719af5008b806eda1fb9ac60"
+      },
+      "response": "按原K列表/lex合同逐点审计，UNKNOWN不是无合格K或最优证书；不得按J选K。"
+    },
+    {
+      "id": "CP_CURRENT_ACCEPTANCE",
+      "status": "OPEN",
+      "due": "2026-10-23",
+      "reason": "旧9-branch/K4/2s自然等价不能验收当前clone与最终K*/5s/完整pool/8worker。",
+      "response": "最终新版本tiny oracle、自然多epoch exact、当前源码全回归及P1-v2 preflight。"
+    },
+    {
+      "id": "CP_EPISODE_BUDGET",
+      "status": "OPEN",
+      "due": "2026-10-22",
+      "reason": "完整42项逐run保守费用与可用机器时段仍未测齐；不能保证Oct31。",
+      "response": "成本准入不过即提前提交预计延期与非核心减项/资源提案，禁止放松正确性。"
+    }
+  ],
+  "reviewed_date_local": "2026-10-09",
+  "measured_engineering_cost_evidence": {
+    "structural_points": [
+      {
+        "t0_s": 0.0,
+        "K": 24,
+        "inventory_count": 1996,
+        "inventory_wall_s": 59.24093499999999,
+        "matching_wall_s": 0.7099672000000012,
+        "analytic_certificate_wall_s": 0.017650299999999675,
+        "reference_builder_status": "UNKNOWN",
+        "analytic_certificate_status": "EXACT",
+        "independent_verification": "PASS",
+        "probe_path": "outputs/f3_v2_structural_cost_probe_20261008T152937_945871Z",
+        "verification_path": "outputs/f3_v2_certificate_verification_20261008T154931_292950Z"
+      },
+      {
+        "t0_s": 270.0,
+        "K": 48,
+        "inventory_count": 1988,
+        "inventory_wall_s": 50.6643788,
+        "matching_wall_s": 0.5120416999999975,
+        "analytic_certificate_wall_s": 0.015547900000001391,
+        "reference_builder_status": "UNKNOWN",
+        "analytic_certificate_status": "EXACT",
+        "independent_verification": "PASS",
+        "probe_path": "outputs/f3_v2_structural_cost_probe_20261008T155517_075334Z",
+        "verification_path": "outputs/f3_v2_certificate_verification_20261008T155622_805783Z"
+      },
+      {
+        "t0_s": 570.0,
+        "K": 80,
+        "inventory_count": 1988,
+        "inventory_wall_s": 48.324422,
+        "matching_wall_s": 0.45969610000000216,
+        "analytic_certificate_wall_s": 0.019519500000001244,
+        "reference_builder_status": "UNKNOWN",
+        "analytic_certificate_status": "EXACT",
+        "independent_verification": "PASS",
+        "probe_path": "outputs/f3_v2_structural_cost_probe_20261008T155623_744449Z",
+        "verification_path": "outputs/f3_v2_certificate_verification_20261008T155730_461256Z"
+      }
+    ],
+    "natural_source_K4_t0": {
+      "evidence": {
+        "path": "outputs/f3_v2_natural_source_coverage_20261008T162145_156464Z/report.json",
+        "sha256": "2c88ad3e0235383eef203d4f4a02187d673f824ac835633e64482b1d42506e03"
+      },
+      "source_wall_s": 455.0807451,
+      "source_evaluations_completed": 7980,
+      "uncapped_accepted_count": 7596,
+      "raw_member_count": 64,
+      "final_pool_max_batch_size": 1,
+      "proposer_wall_s": 7.683084400000041,
+      "not_representative_of_K_star_or_episode_mean": true,
+      "source_wall_includes_passive_recording": true
+    },
+    "physical_clone_pool_equivalence": {
+      "evidence": {
+        "path": "outputs/f3_v2_natural_physical_trial_20261008T163118_750402Z/report.json",
+        "sha256": "46cc374466a56c4337d30aba8798927c9dfda98b97ad3f76165b5ab6e2fab882"
+      },
+      "legacy_proposer_wall_s": 15.7596309,
+      "optimized_proposer_wall_s": 7.264378000000001,
+      "scope": "64 raw, 16 singleton pool and size4 physical witness; not full B4/episode"
+    },
+    "historical_natural_rollout": {
+      "evidence": {
+        "path": "outputs/f3_v2_natural_prefix_20261008T142126_443971Z/report.json",
+        "sha256": "e054f292ec151031946250dec66b41075251ffec16a73198ef6c7cc29514204f"
+      },
+      "branch_count": 9,
+      "epochs": 6,
+      "serial_observe_total_s": 1189.8182048999997,
+      "parallel_observe_total_s": 351.7684561000001,
+      "scope": "K4, restricted 9-branch fixture, six 2s epochs; not K*/5s/full production pool",
+      "use_as_final_budget_or_current_acceptance": false
+    }
+  },
+  "run_planning_budgets": [
+    {
+      "run_id": "OCT26-CORE-01",
+      "execution_order": 1,
+      "calibration_key": "B3:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-CORE-02",
+      "execution_order": 2,
+      "calibration_key": "B4:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 135.0,
+      "provisional_zero_overhead_run_resource_ceiling_s": 16200.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-CORE-03",
+      "execution_order": 3,
+      "calibration_key": "B0:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": "no source/proposer/rollout required; scheduled epochs are bookkeeping ceilings"
+    },
+    {
+      "run_id": "OCT26-CORE-04",
+      "execution_order": 4,
+      "calibration_key": "B1:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-CORE-05",
+      "execution_order": 5,
+      "calibration_key": "B3:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-CORE-06",
+      "execution_order": 6,
+      "calibration_key": "B4:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 135.0,
+      "provisional_zero_overhead_run_resource_ceiling_s": 16200.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-CORE-07",
+      "execution_order": 7,
+      "calibration_key": "B0:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": "no source/proposer/rollout required; scheduled epochs are bookkeeping ceilings"
+    },
+    {
+      "run_id": "OCT26-CORE-08",
+      "execution_order": 8,
+      "calibration_key": "B1:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-CORE-09",
+      "execution_order": 9,
+      "calibration_key": "B3:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-CORE-10",
+      "execution_order": 10,
+      "calibration_key": "B4:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 135.0,
+      "provisional_zero_overhead_run_resource_ceiling_s": 16200.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-CORE-11",
+      "execution_order": 11,
+      "calibration_key": "B0:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": "no source/proposer/rollout required; scheduled epochs are bookkeeping ceilings"
+    },
+    {
+      "run_id": "OCT26-CORE-12",
+      "execution_order": 12,
+      "calibration_key": "B1:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-STABLE-01",
+      "execution_order": 13,
+      "calibration_key": "B3:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-STABLE-02",
+      "execution_order": 14,
+      "calibration_key": "B4:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 135.0,
+      "provisional_zero_overhead_run_resource_ceiling_s": 16200.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-STABLE-03",
+      "execution_order": 15,
+      "calibration_key": "B0:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": "no source/proposer/rollout required; scheduled epochs are bookkeeping ceilings"
+    },
+    {
+      "run_id": "OCT26-STABLE-04",
+      "execution_order": 16,
+      "calibration_key": "B1:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-SPARSE-01",
+      "execution_order": 17,
+      "calibration_key": "B3:K4_HISTORICAL_REFERENCE:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-SPARSE-02",
+      "execution_order": 18,
+      "calibration_key": "B4:K4_HISTORICAL_REFERENCE:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 135.0,
+      "provisional_zero_overhead_run_resource_ceiling_s": 16200.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-SPARSE-03",
+      "execution_order": 19,
+      "calibration_key": "B3:K4_HISTORICAL_REFERENCE:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-SPARSE-04",
+      "execution_order": 20,
+      "calibration_key": "B4:K4_HISTORICAL_REFERENCE:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 135.0,
+      "provisional_zero_overhead_run_resource_ceiling_s": 16200.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-SPARSE-05",
+      "execution_order": 21,
+      "calibration_key": "B3:K4_HISTORICAL_REFERENCE:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-SPARSE-06",
+      "execution_order": 22,
+      "calibration_key": "B4:K4_HISTORICAL_REFERENCE:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 135.0,
+      "provisional_zero_overhead_run_resource_ceiling_s": 16200.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-SPARSE-07",
+      "execution_order": 23,
+      "calibration_key": "B0:K4_HISTORICAL_REFERENCE:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": "no source/proposer/rollout required; scheduled epochs are bookkeeping ceilings"
+    },
+    {
+      "run_id": "OCT26-SPARSE-08",
+      "execution_order": 24,
+      "calibration_key": "B1:K4_HISTORICAL_REFERENCE:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-FACTORIAL-01",
+      "execution_order": 25,
+      "calibration_key": "B3:K_STAR:2:1:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 300,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 6750.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-FACTORIAL-02",
+      "execution_order": 26,
+      "calibration_key": "B4:K_STAR:2:1:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 300,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 135.0,
+      "provisional_zero_overhead_run_resource_ceiling_s": 40500.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-FACTORIAL-03",
+      "execution_order": 27,
+      "calibration_key": "B3:K_STAR:2:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 300,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 6750.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-FACTORIAL-04",
+      "execution_order": 28,
+      "calibration_key": "B4:K_STAR:2:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 300,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 135.0,
+      "provisional_zero_overhead_run_resource_ceiling_s": 40500.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-FACTORIAL-05",
+      "execution_order": 29,
+      "calibration_key": "B3:K_STAR:5:1:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-FACTORIAL-06",
+      "execution_order": 30,
+      "calibration_key": "B4:K_STAR:5:1:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 135.0,
+      "provisional_zero_overhead_run_resource_ceiling_s": 16200.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-HOLD-01",
+      "execution_order": 31,
+      "calibration_key": "B2:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-HOLD-02",
+      "execution_order": 32,
+      "calibration_key": "B2:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-HOLD-03",
+      "execution_order": 33,
+      "calibration_key": "B2:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-HOLD-04",
+      "execution_order": 34,
+      "calibration_key": "B2:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-HOLD-05",
+      "execution_order": 35,
+      "calibration_key": "B2:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-HOLD-06",
+      "execution_order": 36,
+      "calibration_key": "B2:K_STAR:5:4:SHORTEST_PROPAGATION_DELAY",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-ROUTER-01",
+      "execution_order": 37,
+      "calibration_key": "B3:K_STAR:5:4:CURRENT_STATE_LOAD_AWARE",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-ROUTER-02",
+      "execution_order": 38,
+      "calibration_key": "B4:K_STAR:5:4:CURRENT_STATE_LOAD_AWARE",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 135.0,
+      "provisional_zero_overhead_run_resource_ceiling_s": 16200.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-ROUTER-03",
+      "execution_order": 39,
+      "calibration_key": "B3:K_STAR:5:4:CURRENT_STATE_LOAD_AWARE",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-ROUTER-04",
+      "execution_order": 40,
+      "calibration_key": "B4:K_STAR:5:4:CURRENT_STATE_LOAD_AWARE",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 135.0,
+      "provisional_zero_overhead_run_resource_ceiling_s": 16200.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-ROUTER-05",
+      "execution_order": 41,
+      "calibration_key": "B3:K_STAR:5:4:CURRENT_STATE_LOAD_AWARE",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 22.5,
+      "provisional_zero_overhead_run_resource_ceiling_s": 2700.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    },
+    {
+      "run_id": "OCT26-ROUTER-06",
+      "execution_order": 42,
+      "calibration_key": "B4:K_STAR:5:4:CURRENT_STATE_LOAD_AWARE",
+      "maximum_scheduled_epochs": 120,
+      "provisional_zero_overhead_epoch_resource_ceiling_s": 135.0,
+      "provisional_zero_overhead_run_resource_ceiling_s": 16200.0,
+      "estimated_wall_clock_s": null,
+      "approved_operational_timeout_s": null,
+      "status": "RESOURCE_ALLOCATION_DRAFT_NOT_COST_PREDICTION",
+      "overhead_must_be_subtracted_before_admission": true,
+      "B0_note": null
+    }
+  ],
+  "block_resource_allocation_hours": {
+    "CORE": 20.25,
+    "STABLE": 6.75,
+    "SPARSE": 17.25,
+    "FACTORIAL": 31.5,
+    "HOLD": 4.5,
+    "ROUTER": 15.75
+  },
+  "risk_sensitivity_not_prediction": {
+    "assumption": "ONLY IF every candidate-evaluating epoch repeated the observed K4/t0 source cost; not an episode estimate",
+    "candidate_evaluating_epoch_ceiling": 5160,
+    "source_only_hypothetical_hours": 652.2824013100001,
+    "rollout_service_IO_extra_not_included": true,
+    "reported_to_demonstrate_budget_risk_not_to_select_parameters": true
+  },
+  "conservative_estimate_protocol": {
+    "per_run": "measured fixed overhead + max scheduled epochs * phase-specific conservative component cost + real service/IO/shutdown cost",
+    "avoid_double_count": "use exclusive component walls; include source/proposer once, merge/HOLD rollout once, not each worker cumulative CPU as wall",
+    "phase_inputs": "predeclare root-state fixtures/time/traffic stages before timing; equal-J checks allowed, no economic ranking",
+    "missing_representative_phase": "UNKNOWN; do not assume cheaper epoch or early drain",
+    "serial_parallel": "same branches and state, cold and persistent-warm timings separately; exact gate precedes cost adoption",
+    "admission": "all42 per-run estimates and approved timeouts filled; total conservative wall <=confirmed available hours minus reserve; RAM/process liveness pass",
+    "if_over_budget": "publish critical path/date range and resource or scope proposal before formal runs; no auto pruning/correctness change"
+  },
+  "draft_canonical_sha256": "72045d7033afc6bd18b73e759be7c9f45c4f27eba0833889c4d6aa417bc23fdb"
+}

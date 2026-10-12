@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gate_d0_metrics_schema_v1",
+  "type": "object",
+  "required": [
+    "mean_bit_delay_s", "delivered_bits", "delivery_ratio",
+    "residual_backlog_bits", "mean_queue_bits", "max_queue_bits",
+    "link_utilization", "traffic_weighted_hop_count", "route_change_count",
+    "active_dynamic_link_count", "switch_count", "BBM_count", "MBB_count",
+    "outage_duration", "partition_node_time", "runtime"
+  ],
+  "properties": {
+    "mean_bit_delay_s": {"type": ["number", "null"]},
+    "delivered_bits": {"type": "number", "minimum": 0},
+    "delivery_ratio": {"type": "number", "minimum": 0, "maximum": 1.000000000001},
+    "residual_backlog_bits": {"type": "number", "minimum": 0},
+    "mean_queue_bits": {"type": "number", "minimum": 0},
+    "max_queue_bits": {"type": "number", "minimum": 0},
+    "link_utilization": {"type": "object"},
+    "traffic_weighted_hop_count": {"type": ["number", "null"]},
+    "route_change_count": {"type": "integer", "minimum": 0},
+    "active_dynamic_link_count": {"type": "integer", "minimum": 0},
+    "switch_count": {"type": "integer", "minimum": 0},
+    "BBM_count": {"type": "integer", "minimum": 0},
+    "MBB_count": {"type": "integer", "minimum": 0},
+    "outage_duration": {"type": "number", "minimum": 0},
+    "partition_node_time": {"type": "number", "minimum": 0},
+    "runtime": {"type": "number", "minimum": 0}
+  }
+}

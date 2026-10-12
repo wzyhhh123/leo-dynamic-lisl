@@ -1,0 +1,85 @@
+{
+  "schema": "gate_f3_v2_joint_action_contract",
+  "status": "DRAFT_NOT_FROZEN",
+  "frozen": false,
+  "implementation_authorized": false,
+  "gate": "F3-v2-0",
+  "decision_cadence_s": {
+    "proposed": 5.0,
+    "approval": "REQUIRES_HUMAN_FREEZE"
+  },
+  "max_batch_replace": {
+    "proposed": 4,
+    "approval": "REQUIRES_HUMAN_FREEZE"
+  },
+  "K_star": null,
+  "K_star_status": "NOT_SELECTED",
+  "action_schema": {
+    "HOLD": {
+      "members": []
+    },
+    "BATCH_REPLACE": {
+      "fields": [
+        "decision_time_s",
+        "absolute_time_frame_id",
+        "decision_root_sha256",
+        "joint_proposal_set_sha256",
+        "batch_id",
+        "ordered_member_ids",
+        "members"
+      ],
+      "member_fields": [
+        "member_id",
+        "old_physical_binding",
+        "new_terminal_pair"
+      ],
+      "transition_mode_controller_supplied": false,
+      "member_canonical_order": "same shared singleton proposal index; members strictly increasing",
+      "batch_canonical_order": "cardinality then tuple of shared singleton indices; HOLD first",
+      "identity": "schema+absolute time/frame+root hash+canonical exact old/new terminal pairs; no runtime completion order"
+    }
+  },
+  "safety_rules": [
+    "0<=m<=min(4,K_star); HOLD iff m=0; no ADD/DROP; old bindings exact and distinct",
+    "each old link active, not draining, not release-owned; target terminals known D1/D2",
+    "for each r, footprint=endpoints(old_r) UNION endpoints(new_r)",
+    "distinct replacements have disjoint footprints (satellites may share distinct D1/D2)",
+    "new/current/pending satellite pairs cannot create forbidden parallel bindings",
+    "all target endpoints unreserved; no old release lock or same old claimed twice",
+    "MBB target both genuinely IDLE at DECISION_ROOT; release_after names only own old binding",
+    "BBM target occupied endpoints belong only to own old binding; Gate B performs actual drain/free/setup",
+    "no cross-action terminal reuse, release chains, cyclic exchange or instantaneous freed-port assumption",
+    "one immutable decision root; each Gate C window current, actual ready strictly before observed end with original epsilon",
+    "validate full commands by Gate B trial.submit in canonical member order; all invariants required",
+    "dry-run full batch with existing pending events; apply original regime safety on whole graph evolution",
+    "safety coverage through new setup and all selected old release/drain completion, bounded by600",
+    "if required physical continuation cannot be certified within asset, reject with horizon-limited reason, never infer natural expiry at600",
+    "live commit is one submit(commands); validation failures reject entire batch, no partial repair/substitution",
+    "unexpected commit mismatch is execution failure: preserve evidence and STOP; no replay or clamp",
+    "after commit visibility abort remains per reservation; other independent reservations continue; no retroactive rollback of physical time"
+  ],
+  "interfaces": [
+    "validate_batch(root,members)->PASS/FAIL+exact reason+commands+per-member readiness+joint profile",
+    "commit_batch(live,validated_plan)->atomic accepted/rejected batch result+member map",
+    "schedule_batch(engine,ScriptedBatchProposal)->one due-action entry, not m independent singleton entries"
+  ],
+  "validation_pure": true,
+  "reservation_atomicity": "Bilateral and entire command transaction",
+  "transaction_failure": "Validation or trial failure leaves live terminal/Q/I/D/event/counters unchanged; audit-only rejection record allowed.",
+  "future_abort_semantics": "Atomic admission does not guarantee all future links survive; actual later expiry abort is independent physical evolution.",
+  "target_budget_semantics": "One-for-one intended topology budget K_star. Active counts may be below K during BBM/expiry and above K during genuine MBB. Natural expiry does not trigger ADD or fake auto-restoration.",
+  "strict_constant_active_K_claim": false,
+  "regime_safety": {
+    "Z_MODERATE": "inherit actual STRICT_CONNECTED active/admit profile behavior",
+    "Z_SPARSE_REFERENCE": "inherit BOUNDED_OUTAGE Tmax=2s",
+    "Z_K_STAR": "propose inherit moderate STRICT_CONNECTED; REQUIRES_HUMAN_FREEZE"
+  },
+  "newly_added_connectivity_constraint": false,
+  "new_semantic_restrictions": [
+    "resource-independent footprints",
+    "batch atomicity at network adapter",
+    "joint safety rather than singleton safety equivalence"
+  ],
+  "observed_gate_B_capability": "Multi-reservation concurrent lifecycles and atomic list submit exist; shared network batch adapter not implemented.",
+  "draft_canonical_sha256": "92e4f417b3eba83553922fab71e0e8ebb7fc35b562439f51ec35a581b691dbaa"
+}

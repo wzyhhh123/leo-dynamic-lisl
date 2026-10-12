@@ -1,0 +1,48 @@
+{
+  "command": [
+    "D:\\Program_Files\\anaconda3\\envs\\pytorch\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\tests",
+    "-v"
+  ],
+  "completed_asia_shanghai": "2026-10-10T11:16:22.353960+08:00",
+  "completed_utc": "2026-10-10T03:16:22.353960+00:00",
+  "cwd": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2",
+  "gate_acceptance_claimed": false,
+  "production_imports": false,
+  "raw_outputs": [
+    {
+      "byte_count": 0,
+      "path": "research_versions/dynamic_k_v1/acceptance/0001/tests_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "byte_count": 2209,
+      "path": "research_versions/dynamic_k_v1/acceptance/0001/tests_stderr.txt",
+      "sha256": "5995ab652d5ad30509e6273dec3a0e37aaf396795b8871d83a189ae4a0f49e61"
+    }
+  ],
+  "returncode": 0,
+  "schema": "dynamic_k_n0_control_test_report_v1",
+  "scientific_experiments_executed": false,
+  "scope": "ISOLATED_N0_INTEGRITY_CONTROLS_ONLY",
+  "started_utc": "2026-10-10T03:15:54.797624+00:00",
+  "status": "PASS",
+  "tested_files": [
+    {
+      "byte_count": 21595,
+      "path": "research_versions/dynamic_k_v1/tools/version_control.py",
+      "sha256": "c740401a75c2b43063957db3ef9dc4575098f3f7bb4bfadfd3f16d40739e04b5"
+    },
+    {
+      "byte_count": 14855,
+      "path": "research_versions/dynamic_k_v1/tests/test_version_control.py",
+      "sha256": "7db0eaec25a2c1bdfc1f9bcd39f279814875014b3fbdcc79fe3ed117b4dd96fb"
+    }
+  ],
+  "tests_run": 22
+}

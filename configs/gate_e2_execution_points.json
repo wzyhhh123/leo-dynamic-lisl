@@ -1,0 +1,1304 @@
+{
+  "branches": [
+    "HOLD",
+    "IDEAL_SWITCH",
+    "REAL_SWITCH"
+  ],
+  "candidate_reselection": false,
+  "canonical_sha256": "4e7b0fabe13810ba77e5bd42c7efe60df42a69e4ee98724fdc1abca8f37418af",
+  "created_result_blind": true,
+  "logical_paired_points": 80,
+  "logical_points": [
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-89eb1b676c1e5dbc|rho=0.2|router=shortest_propagation",
+      "physical_execution_key": "2680318e38d81a4c0f8d00224c0dbd2900da1af73c6f47f156b686a5f03cc4c3",
+      "rho": 0.2,
+      "router": "shortest_propagation",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-89eb1b676c1e5dbc",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-89eb1b676c1e5dbc|rho=0.2|router=current_state_load_aware",
+      "physical_execution_key": "b05b23018df9817ca49a592c9bad1cde9bb576ae5db7e9492c0c6bc735954733",
+      "rho": 0.2,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-89eb1b676c1e5dbc",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-89eb1b676c1e5dbc|rho=0.5|router=shortest_propagation",
+      "physical_execution_key": "b175953f2ec078df3e1f16e477cef0e80db376abbd71f70a802001098fe4a0a7",
+      "rho": 0.5,
+      "router": "shortest_propagation",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-89eb1b676c1e5dbc",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-89eb1b676c1e5dbc|rho=0.5|router=current_state_load_aware",
+      "physical_execution_key": "29200335102216d330df125b5f563227a912ba7285a1125e30fc12d2da2207dc",
+      "rho": 0.5,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-89eb1b676c1e5dbc",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-89eb1b676c1e5dbc|rho=0.8|router=shortest_propagation",
+      "physical_execution_key": "24e8e33ef91fbeec0c8d2f4428cd57f1286194208fd7d15d08db24744bc18d91",
+      "rho": 0.8,
+      "router": "shortest_propagation",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-89eb1b676c1e5dbc",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-89eb1b676c1e5dbc|rho=0.8|router=current_state_load_aware",
+      "physical_execution_key": "d3b53005278697e5599c1bdfeef18e16b6b166648e2372f29286c2be1c15074f",
+      "rho": 0.8,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-89eb1b676c1e5dbc",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-89eb1b676c1e5dbc|rho=1|router=shortest_propagation",
+      "physical_execution_key": "79829c4e5358d1ed58a203059f6c23eb0ff5b683fc10d5b2f106cd3704b983b9",
+      "rho": 1.0,
+      "router": "shortest_propagation",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-89eb1b676c1e5dbc",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-89eb1b676c1e5dbc|rho=1|router=current_state_load_aware",
+      "physical_execution_key": "8a5b094bd5e1defa9aacd102a0267edb235dbf387995c068cb498bc29f684ba8",
+      "rho": 1.0,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-89eb1b676c1e5dbc",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-89eb1b676c1e5dbc|rho=1.2|router=shortest_propagation",
+      "physical_execution_key": "e474c526df6946837ac517c6f4526314dc20b96448aaf95dadcc0bb51d456361",
+      "rho": 1.2,
+      "router": "shortest_propagation",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-89eb1b676c1e5dbc",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-89eb1b676c1e5dbc|rho=1.2|router=current_state_load_aware",
+      "physical_execution_key": "d31ebae77f982a8aa13bb36cd2e91cd577f3873ae33c3eebdb753c46d80861dc",
+      "rho": 1.2,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-89eb1b676c1e5dbc",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-685cd1172cf55e1a|rho=0.2|router=shortest_propagation",
+      "physical_execution_key": "4d91b928a5d6fb5b868112d529fcbb0e50cd4d6ed563740d5662cf1cd71f69a8",
+      "rho": 0.2,
+      "router": "shortest_propagation",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-685cd1172cf55e1a",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-685cd1172cf55e1a|rho=0.2|router=current_state_load_aware",
+      "physical_execution_key": "3fe559f85011d59b452f121bac47383ad09c48a36b36e86c1c242609355b9b32",
+      "rho": 0.2,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-685cd1172cf55e1a",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-685cd1172cf55e1a|rho=0.5|router=shortest_propagation",
+      "physical_execution_key": "142c7cbeba09160d14edd1a17449ebc349fc9a4f9be048a22c51e9b55b8a03ef",
+      "rho": 0.5,
+      "router": "shortest_propagation",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-685cd1172cf55e1a",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-685cd1172cf55e1a|rho=0.5|router=current_state_load_aware",
+      "physical_execution_key": "81de3b28214064ae1ee4a74117d7fe41b29829b07fe9303a9deb868902a48cb2",
+      "rho": 0.5,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-685cd1172cf55e1a",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-685cd1172cf55e1a|rho=0.8|router=shortest_propagation",
+      "physical_execution_key": "ec63776dfd9857d4cbe1dbb35f0777aa636069ea2b841b3759f06aad7597b395",
+      "rho": 0.8,
+      "router": "shortest_propagation",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-685cd1172cf55e1a",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-685cd1172cf55e1a|rho=0.8|router=current_state_load_aware",
+      "physical_execution_key": "fc96c96a74e6b28a235029c4f6bba946b1f5211676d287fecdacb5d8e90232f5",
+      "rho": 0.8,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-685cd1172cf55e1a",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-685cd1172cf55e1a|rho=1|router=shortest_propagation",
+      "physical_execution_key": "5b54ba51ef49eb47026192d0d34d90c3d3120be4cccde0913b2b29c663ac3828",
+      "rho": 1.0,
+      "router": "shortest_propagation",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-685cd1172cf55e1a",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-685cd1172cf55e1a|rho=1|router=current_state_load_aware",
+      "physical_execution_key": "7faa9abbbb485bca00dd7d3060e541366f02fefeac3423d5ca5ad82337fc986c",
+      "rho": 1.0,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-685cd1172cf55e1a",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-685cd1172cf55e1a|rho=1.2|router=shortest_propagation",
+      "physical_execution_key": "93dfbae7df9d020a40abf443697184350e25bb496385308abb84d2eac12acfe5",
+      "rho": 1.2,
+      "router": "shortest_propagation",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-685cd1172cf55e1a",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-685cd1172cf55e1a|rho=1.2|router=current_state_load_aware",
+      "physical_execution_key": "e9eabbbab9e47e37540e7b96db4dc24c7d9c3a26b210f31041ff207b6bfe41f5",
+      "rho": 1.2,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "scenario_id": "E2-685cd1172cf55e1a",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-c256965527b22f33|rho=0.2|router=shortest_propagation",
+      "physical_execution_key": "4b51bf6bc7fe1d9b9d7094ea77f59327ce89bab204f52cca6f7813bcc7d85f4f",
+      "rho": 0.2,
+      "router": "shortest_propagation",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-c256965527b22f33",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-c256965527b22f33|rho=0.2|router=current_state_load_aware",
+      "physical_execution_key": "5c90f3ee232b38f96b126596738657855737eb5704435f79d82b6bf6d3c8f07e",
+      "rho": 0.2,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-c256965527b22f33",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-c256965527b22f33|rho=0.5|router=shortest_propagation",
+      "physical_execution_key": "2d583f27dccbda768c1f64461438a3ce06c24489fe8fba6f3baaa76d8a8f440f",
+      "rho": 0.5,
+      "router": "shortest_propagation",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-c256965527b22f33",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-c256965527b22f33|rho=0.5|router=current_state_load_aware",
+      "physical_execution_key": "23ecbab7ce897d9ed2ad3e422ea3f16991e4fa773fbf2c3a582e022e5945f611",
+      "rho": 0.5,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-c256965527b22f33",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-c256965527b22f33|rho=0.8|router=shortest_propagation",
+      "physical_execution_key": "427681321da30f0366f6d91085d0c58899866926fc79ef3b5b7be4a94cd89517",
+      "rho": 0.8,
+      "router": "shortest_propagation",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-c256965527b22f33",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-c256965527b22f33|rho=0.8|router=current_state_load_aware",
+      "physical_execution_key": "c12b14e4977517ea92eeaff542922409aa41695e195693938ccbd222390518e6",
+      "rho": 0.8,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-c256965527b22f33",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-c256965527b22f33|rho=1|router=shortest_propagation",
+      "physical_execution_key": "a5dc673295913e4dcee2141b62f2441908d8d55547bbb72d82b27ae1d01bd8ef",
+      "rho": 1.0,
+      "router": "shortest_propagation",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-c256965527b22f33",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-c256965527b22f33|rho=1|router=current_state_load_aware",
+      "physical_execution_key": "3c44b842fb3a03281a02ba6eb227b3d37b56cd68c6e0ed68a89b5e8700fc3d92",
+      "rho": 1.0,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-c256965527b22f33",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-c256965527b22f33|rho=1.2|router=shortest_propagation",
+      "physical_execution_key": "b3af336f4eb2fce0b08a64dcd9490c685a4fbd60ebc4506ca7942bb7c146e8af",
+      "rho": 1.2,
+      "router": "shortest_propagation",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-c256965527b22f33",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-c256965527b22f33|rho=1.2|router=current_state_load_aware",
+      "physical_execution_key": "e810b1aaa9dfddc584dfabd43fcdea810bc1de7f53320093746d0a02bd386d12",
+      "rho": 1.2,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-c256965527b22f33",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-4732b69e5d14435c|rho=0.2|router=shortest_propagation",
+      "physical_execution_key": "da83ee39b76f687e178aa07e6e0e5287f615730e97d8395707ff04e193597e46",
+      "rho": 0.2,
+      "router": "shortest_propagation",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-4732b69e5d14435c",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-4732b69e5d14435c|rho=0.2|router=current_state_load_aware",
+      "physical_execution_key": "0fe995f2c19d4e6c2609d4167f36ef4438182bdbde4080789566988cb7467c89",
+      "rho": 0.2,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-4732b69e5d14435c",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-4732b69e5d14435c|rho=0.5|router=shortest_propagation",
+      "physical_execution_key": "126a05d7ccd0a403fa7e7f3ce589f36178b1d85312845807a89835f823cc88e3",
+      "rho": 0.5,
+      "router": "shortest_propagation",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-4732b69e5d14435c",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-4732b69e5d14435c|rho=0.5|router=current_state_load_aware",
+      "physical_execution_key": "d9ff07fdbfb31190dbe803a617477e4eee90089f05469fa3b1f9deb6f657ab92",
+      "rho": 0.5,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-4732b69e5d14435c",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-4732b69e5d14435c|rho=0.8|router=shortest_propagation",
+      "physical_execution_key": "e1b3cfb5d97545039e6d2013bd91d107b3aaacc0d11177e6b221611bf620096e",
+      "rho": 0.8,
+      "router": "shortest_propagation",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-4732b69e5d14435c",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-4732b69e5d14435c|rho=0.8|router=current_state_load_aware",
+      "physical_execution_key": "6b488067c445a65609cb9308a004bb3a6f9e09853c9929cdf4a637c0d2d121d5",
+      "rho": 0.8,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-4732b69e5d14435c",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-4732b69e5d14435c|rho=1|router=shortest_propagation",
+      "physical_execution_key": "a96fa0088edca2680f1d81d8354000d7d25e0791b864de3ce74cd5bdc09a7c26",
+      "rho": 1.0,
+      "router": "shortest_propagation",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-4732b69e5d14435c",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-4732b69e5d14435c|rho=1|router=current_state_load_aware",
+      "physical_execution_key": "7b30098a4d8e4d3f7b71cb9f2884c1b0087b6bd242394bd684bf94bba7ddace2",
+      "rho": 1.0,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-4732b69e5d14435c",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-4732b69e5d14435c|rho=1.2|router=shortest_propagation",
+      "physical_execution_key": "84f9b695c313d22240df560ca6bf9168b4bad4b20558e772a630d9f8ba47c5df",
+      "rho": 1.2,
+      "router": "shortest_propagation",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-4732b69e5d14435c",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-4732b69e5d14435c|rho=1.2|router=current_state_load_aware",
+      "physical_execution_key": "731b078d735220d6a5794911e5188f76cb7c0cad42231eff90fac500d6b10be1",
+      "rho": 1.2,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-4732b69e5d14435c",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-95d7a2779152a07d|rho=0.2|router=shortest_propagation",
+      "physical_execution_key": "79cc07c5e07547a88bd354fbfdd52f0bababb7c3b5d8f333f21914b316d1a0aa",
+      "rho": 0.2,
+      "router": "shortest_propagation",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-95d7a2779152a07d",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-95d7a2779152a07d|rho=0.2|router=current_state_load_aware",
+      "physical_execution_key": "366f5072abb14d79ea9c6d666a13da51a7eb0cbf111de8b55452bb4e1e19434a",
+      "rho": 0.2,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-95d7a2779152a07d",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-95d7a2779152a07d|rho=0.5|router=shortest_propagation",
+      "physical_execution_key": "73bff0eb93f72de9dfefe45ca2d800e9bd155792e563519ddf97cc026ff6ef8e",
+      "rho": 0.5,
+      "router": "shortest_propagation",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-95d7a2779152a07d",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-95d7a2779152a07d|rho=0.5|router=current_state_load_aware",
+      "physical_execution_key": "009952e04afe8d65a5a82938d98004a454f79be23802c9dcf8374d56b6b18dd7",
+      "rho": 0.5,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-95d7a2779152a07d",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-95d7a2779152a07d|rho=0.8|router=shortest_propagation",
+      "physical_execution_key": "c7154d878a89af40f1b0dbd841b06187e6de0044ddf7edf6d3722032104fd843",
+      "rho": 0.8,
+      "router": "shortest_propagation",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-95d7a2779152a07d",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-95d7a2779152a07d|rho=0.8|router=current_state_load_aware",
+      "physical_execution_key": "9179d69b9ab1f5832885f20ef1d938c80678ab484252463bbae89c020f169ff5",
+      "rho": 0.8,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-95d7a2779152a07d",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-95d7a2779152a07d|rho=1|router=shortest_propagation",
+      "physical_execution_key": "69eb53bb4f16add6e63e2534fdf272ba101cd87f216b3260dcdf10341f054154",
+      "rho": 1.0,
+      "router": "shortest_propagation",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-95d7a2779152a07d",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-95d7a2779152a07d|rho=1|router=current_state_load_aware",
+      "physical_execution_key": "7b492ab4472d9f19ef7ddedb9f412a52366d4bfc3b776bbe50fa42f50d57d54f",
+      "rho": 1.0,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-95d7a2779152a07d",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-95d7a2779152a07d|rho=1.2|router=shortest_propagation",
+      "physical_execution_key": "fd96314eeddcb37721f8894be5511811c336871d0cfe5fed2617f26526e72917",
+      "rho": 1.2,
+      "router": "shortest_propagation",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-95d7a2779152a07d",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-95d7a2779152a07d|rho=1.2|router=current_state_load_aware",
+      "physical_execution_key": "6d381cd1d361723068977f942a898b3c0cfaf6962c0fdf40aca142aae7234e23",
+      "rho": 1.2,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "scenario_id": "E2-95d7a2779152a07d",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-690df9e96258d16b|rho=0.2|router=shortest_propagation",
+      "physical_execution_key": "4b51bf6bc7fe1d9b9d7094ea77f59327ce89bab204f52cca6f7813bcc7d85f4f",
+      "rho": 0.2,
+      "router": "shortest_propagation",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-690df9e96258d16b",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-690df9e96258d16b|rho=0.2|router=current_state_load_aware",
+      "physical_execution_key": "5c90f3ee232b38f96b126596738657855737eb5704435f79d82b6bf6d3c8f07e",
+      "rho": 0.2,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-690df9e96258d16b",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-690df9e96258d16b|rho=0.5|router=shortest_propagation",
+      "physical_execution_key": "2d583f27dccbda768c1f64461438a3ce06c24489fe8fba6f3baaa76d8a8f440f",
+      "rho": 0.5,
+      "router": "shortest_propagation",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-690df9e96258d16b",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-690df9e96258d16b|rho=0.5|router=current_state_load_aware",
+      "physical_execution_key": "23ecbab7ce897d9ed2ad3e422ea3f16991e4fa773fbf2c3a582e022e5945f611",
+      "rho": 0.5,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-690df9e96258d16b",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-690df9e96258d16b|rho=0.8|router=shortest_propagation",
+      "physical_execution_key": "427681321da30f0366f6d91085d0c58899866926fc79ef3b5b7be4a94cd89517",
+      "rho": 0.8,
+      "router": "shortest_propagation",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-690df9e96258d16b",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-690df9e96258d16b|rho=0.8|router=current_state_load_aware",
+      "physical_execution_key": "c12b14e4977517ea92eeaff542922409aa41695e195693938ccbd222390518e6",
+      "rho": 0.8,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-690df9e96258d16b",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-690df9e96258d16b|rho=1|router=shortest_propagation",
+      "physical_execution_key": "a5dc673295913e4dcee2141b62f2441908d8d55547bbb72d82b27ae1d01bd8ef",
+      "rho": 1.0,
+      "router": "shortest_propagation",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-690df9e96258d16b",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-690df9e96258d16b|rho=1|router=current_state_load_aware",
+      "physical_execution_key": "3c44b842fb3a03281a02ba6eb227b3d37b56cd68c6e0ed68a89b5e8700fc3d92",
+      "rho": 1.0,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-690df9e96258d16b",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-690df9e96258d16b|rho=1.2|router=shortest_propagation",
+      "physical_execution_key": "b3af336f4eb2fce0b08a64dcd9490c685a4fbd60ebc4506ca7942bb7c146e8af",
+      "rho": 1.2,
+      "router": "shortest_propagation",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-690df9e96258d16b",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "low",
+      "logical_point_id": "E2-690df9e96258d16b|rho=1.2|router=current_state_load_aware",
+      "physical_execution_key": "e810b1aaa9dfddc584dfabd43fcdea810bc1de7f53320093746d0a02bd386d12",
+      "rho": 1.2,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-690df9e96258d16b",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-b74951a5d44d4ac9|rho=0.2|router=shortest_propagation",
+      "physical_execution_key": "da83ee39b76f687e178aa07e6e0e5287f615730e97d8395707ff04e193597e46",
+      "rho": 0.2,
+      "router": "shortest_propagation",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-b74951a5d44d4ac9",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-b74951a5d44d4ac9|rho=0.2|router=current_state_load_aware",
+      "physical_execution_key": "0fe995f2c19d4e6c2609d4167f36ef4438182bdbde4080789566988cb7467c89",
+      "rho": 0.2,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-b74951a5d44d4ac9",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-b74951a5d44d4ac9|rho=0.5|router=shortest_propagation",
+      "physical_execution_key": "126a05d7ccd0a403fa7e7f3ce589f36178b1d85312845807a89835f823cc88e3",
+      "rho": 0.5,
+      "router": "shortest_propagation",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-b74951a5d44d4ac9",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-b74951a5d44d4ac9|rho=0.5|router=current_state_load_aware",
+      "physical_execution_key": "d9ff07fdbfb31190dbe803a617477e4eee90089f05469fa3b1f9deb6f657ab92",
+      "rho": 0.5,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-b74951a5d44d4ac9",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-b74951a5d44d4ac9|rho=0.8|router=shortest_propagation",
+      "physical_execution_key": "e1b3cfb5d97545039e6d2013bd91d107b3aaacc0d11177e6b221611bf620096e",
+      "rho": 0.8,
+      "router": "shortest_propagation",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-b74951a5d44d4ac9",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-b74951a5d44d4ac9|rho=0.8|router=current_state_load_aware",
+      "physical_execution_key": "6b488067c445a65609cb9308a004bb3a6f9e09853c9929cdf4a637c0d2d121d5",
+      "rho": 0.8,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-b74951a5d44d4ac9",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-b74951a5d44d4ac9|rho=1|router=shortest_propagation",
+      "physical_execution_key": "a96fa0088edca2680f1d81d8354000d7d25e0791b864de3ce74cd5bdc09a7c26",
+      "rho": 1.0,
+      "router": "shortest_propagation",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-b74951a5d44d4ac9",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-b74951a5d44d4ac9|rho=1|router=current_state_load_aware",
+      "physical_execution_key": "7b30098a4d8e4d3f7b71cb9f2884c1b0087b6bd242394bd684bf94bba7ddace2",
+      "rho": 1.0,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-b74951a5d44d4ac9",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-b74951a5d44d4ac9|rho=1.2|router=shortest_propagation",
+      "physical_execution_key": "84f9b695c313d22240df560ca6bf9168b4bad4b20558e772a630d9f8ba47c5df",
+      "rho": 1.2,
+      "router": "shortest_propagation",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-b74951a5d44d4ac9",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "medium",
+      "logical_point_id": "E2-b74951a5d44d4ac9|rho=1.2|router=current_state_load_aware",
+      "physical_execution_key": "731b078d735220d6a5794911e5188f76cb7c0cad42231eff90fac500d6b10be1",
+      "rho": 1.2,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-b74951a5d44d4ac9",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-a502d6e73f8dea03|rho=0.2|router=shortest_propagation",
+      "physical_execution_key": "79cc07c5e07547a88bd354fbfdd52f0bababb7c3b5d8f333f21914b316d1a0aa",
+      "rho": 0.2,
+      "router": "shortest_propagation",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-a502d6e73f8dea03",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-a502d6e73f8dea03|rho=0.2|router=current_state_load_aware",
+      "physical_execution_key": "366f5072abb14d79ea9c6d666a13da51a7eb0cbf111de8b55452bb4e1e19434a",
+      "rho": 0.2,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-a502d6e73f8dea03",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-a502d6e73f8dea03|rho=0.5|router=shortest_propagation",
+      "physical_execution_key": "73bff0eb93f72de9dfefe45ca2d800e9bd155792e563519ddf97cc026ff6ef8e",
+      "rho": 0.5,
+      "router": "shortest_propagation",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-a502d6e73f8dea03",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-a502d6e73f8dea03|rho=0.5|router=current_state_load_aware",
+      "physical_execution_key": "009952e04afe8d65a5a82938d98004a454f79be23802c9dcf8374d56b6b18dd7",
+      "rho": 0.5,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-a502d6e73f8dea03",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-a502d6e73f8dea03|rho=0.8|router=shortest_propagation",
+      "physical_execution_key": "c7154d878a89af40f1b0dbd841b06187e6de0044ddf7edf6d3722032104fd843",
+      "rho": 0.8,
+      "router": "shortest_propagation",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-a502d6e73f8dea03",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-a502d6e73f8dea03|rho=0.8|router=current_state_load_aware",
+      "physical_execution_key": "9179d69b9ab1f5832885f20ef1d938c80678ab484252463bbae89c020f169ff5",
+      "rho": 0.8,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-a502d6e73f8dea03",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-a502d6e73f8dea03|rho=1|router=shortest_propagation",
+      "physical_execution_key": "69eb53bb4f16add6e63e2534fdf272ba101cd87f216b3260dcdf10341f054154",
+      "rho": 1.0,
+      "router": "shortest_propagation",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-a502d6e73f8dea03",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-a502d6e73f8dea03|rho=1|router=current_state_load_aware",
+      "physical_execution_key": "7b492ab4472d9f19ef7ddedb9f412a52366d4bfc3b776bbe50fa42f50d57d54f",
+      "rho": 1.0,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-a502d6e73f8dea03",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-a502d6e73f8dea03|rho=1.2|router=shortest_propagation",
+      "physical_execution_key": "fd96314eeddcb37721f8894be5511811c336871d0cfe5fed2617f26526e72917",
+      "rho": 1.2,
+      "router": "shortest_propagation",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-a502d6e73f8dea03",
+      "setup_s": 2.0
+    },
+    {
+      "kappa2_bin": "high",
+      "logical_point_id": "E2-a502d6e73f8dea03|rho=1.2|router=current_state_load_aware",
+      "physical_execution_key": "6d381cd1d361723068977f942a898b3c0cfaf6962c0fdf40aca142aae7234e23",
+      "rho": 1.2,
+      "router": "current_state_load_aware",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "scenario_id": "E2-a502d6e73f8dea03",
+      "setup_s": 2.0
+    }
+  ],
+  "logical_selected_entries": 8,
+  "natural_kappa2_setup_s": 2.0,
+  "no_eligible_strata": [
+    {
+      "eligible_count": 87,
+      "kappa2_bin": "low",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "selected_ids": [
+        "E2-89eb1b676c1e5dbc"
+      ],
+      "status": "SELECTED"
+    },
+    {
+      "eligible_count": 5,
+      "kappa2_bin": "medium",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "selected_ids": [
+        "E2-685cd1172cf55e1a"
+      ],
+      "status": "SELECTED"
+    },
+    {
+      "eligible_count": 0,
+      "kappa2_bin": "high",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "selected_ids": [],
+      "status": "NO_ELIGIBLE_CASE"
+    },
+    {
+      "eligible_count": 0,
+      "kappa2_bin": "very_high",
+      "scenario_class": "E-A_BBM_NO_ROUTE",
+      "selected_ids": [],
+      "status": "NO_ELIGIBLE_CASE"
+    },
+    {
+      "eligible_count": 0,
+      "kappa2_bin": "low",
+      "scenario_class": "E-B_BBM_CONNECTED_REROUTE",
+      "selected_ids": [],
+      "status": "NO_ELIGIBLE_CASE"
+    },
+    {
+      "eligible_count": 0,
+      "kappa2_bin": "medium",
+      "scenario_class": "E-B_BBM_CONNECTED_REROUTE",
+      "selected_ids": [],
+      "status": "NO_ELIGIBLE_CASE"
+    },
+    {
+      "eligible_count": 0,
+      "kappa2_bin": "high",
+      "scenario_class": "E-B_BBM_CONNECTED_REROUTE",
+      "selected_ids": [],
+      "status": "NO_ELIGIBLE_CASE"
+    },
+    {
+      "eligible_count": 0,
+      "kappa2_bin": "very_high",
+      "scenario_class": "E-B_BBM_CONNECTED_REROUTE",
+      "selected_ids": [],
+      "status": "NO_ELIGIBLE_CASE"
+    },
+    {
+      "eligible_count": 4183,
+      "kappa2_bin": "low",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "selected_ids": [
+        "E2-c256965527b22f33"
+      ],
+      "status": "SELECTED"
+    },
+    {
+      "eligible_count": 88,
+      "kappa2_bin": "medium",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "selected_ids": [
+        "E2-4732b69e5d14435c"
+      ],
+      "status": "SELECTED"
+    },
+    {
+      "eligible_count": 4,
+      "kappa2_bin": "high",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "selected_ids": [
+        "E2-95d7a2779152a07d"
+      ],
+      "status": "SELECTED"
+    },
+    {
+      "eligible_count": 0,
+      "kappa2_bin": "very_high",
+      "scenario_class": "E-C_GENUINE_MBB",
+      "selected_ids": [],
+      "status": "NO_ELIGIBLE_CASE"
+    },
+    {
+      "eligible_count": 4108,
+      "kappa2_bin": "low",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "selected_ids": [
+        "E2-690df9e96258d16b"
+      ],
+      "status": "SELECTED"
+    },
+    {
+      "eligible_count": 87,
+      "kappa2_bin": "medium",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "selected_ids": [
+        "E2-b74951a5d44d4ac9"
+      ],
+      "status": "SELECTED"
+    },
+    {
+      "eligible_count": 4,
+      "kappa2_bin": "high",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "selected_ids": [
+        "E2-a502d6e73f8dea03"
+      ],
+      "status": "SELECTED"
+    },
+    {
+      "eligible_count": 0,
+      "kappa2_bin": "very_high",
+      "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+      "selected_ids": [],
+      "status": "NO_ELIGIBLE_CASE"
+    }
+  ],
+  "paired_branches_executed_before_freeze": false,
+  "physical_reuse_groups": [
+    {
+      "logical_point_ids": [
+        "E2-95d7a2779152a07d|rho=0.5|router=current_state_load_aware",
+        "E2-a502d6e73f8dea03|rho=0.5|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "009952e04afe8d65a5a82938d98004a454f79be23802c9dcf8374d56b6b18dd7"
+    },
+    {
+      "logical_point_ids": [
+        "E2-4732b69e5d14435c|rho=0.2|router=current_state_load_aware",
+        "E2-b74951a5d44d4ac9|rho=0.2|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "0fe995f2c19d4e6c2609d4167f36ef4438182bdbde4080789566988cb7467c89"
+    },
+    {
+      "logical_point_ids": [
+        "E2-4732b69e5d14435c|rho=0.5|router=shortest_propagation",
+        "E2-b74951a5d44d4ac9|rho=0.5|router=shortest_propagation"
+      ],
+      "physical_execution_key": "126a05d7ccd0a403fa7e7f3ce589f36178b1d85312845807a89835f823cc88e3"
+    },
+    {
+      "logical_point_ids": [
+        "E2-685cd1172cf55e1a|rho=0.5|router=shortest_propagation"
+      ],
+      "physical_execution_key": "142c7cbeba09160d14edd1a17449ebc349fc9a4f9be048a22c51e9b55b8a03ef"
+    },
+    {
+      "logical_point_ids": [
+        "E2-c256965527b22f33|rho=0.5|router=current_state_load_aware",
+        "E2-690df9e96258d16b|rho=0.5|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "23ecbab7ce897d9ed2ad3e422ea3f16991e4fa773fbf2c3a582e022e5945f611"
+    },
+    {
+      "logical_point_ids": [
+        "E2-89eb1b676c1e5dbc|rho=0.8|router=shortest_propagation"
+      ],
+      "physical_execution_key": "24e8e33ef91fbeec0c8d2f4428cd57f1286194208fd7d15d08db24744bc18d91"
+    },
+    {
+      "logical_point_ids": [
+        "E2-89eb1b676c1e5dbc|rho=0.2|router=shortest_propagation"
+      ],
+      "physical_execution_key": "2680318e38d81a4c0f8d00224c0dbd2900da1af73c6f47f156b686a5f03cc4c3"
+    },
+    {
+      "logical_point_ids": [
+        "E2-89eb1b676c1e5dbc|rho=0.5|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "29200335102216d330df125b5f563227a912ba7285a1125e30fc12d2da2207dc"
+    },
+    {
+      "logical_point_ids": [
+        "E2-c256965527b22f33|rho=0.5|router=shortest_propagation",
+        "E2-690df9e96258d16b|rho=0.5|router=shortest_propagation"
+      ],
+      "physical_execution_key": "2d583f27dccbda768c1f64461438a3ce06c24489fe8fba6f3baaa76d8a8f440f"
+    },
+    {
+      "logical_point_ids": [
+        "E2-95d7a2779152a07d|rho=0.2|router=current_state_load_aware",
+        "E2-a502d6e73f8dea03|rho=0.2|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "366f5072abb14d79ea9c6d666a13da51a7eb0cbf111de8b55452bb4e1e19434a"
+    },
+    {
+      "logical_point_ids": [
+        "E2-c256965527b22f33|rho=1|router=current_state_load_aware",
+        "E2-690df9e96258d16b|rho=1|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "3c44b842fb3a03281a02ba6eb227b3d37b56cd68c6e0ed68a89b5e8700fc3d92"
+    },
+    {
+      "logical_point_ids": [
+        "E2-685cd1172cf55e1a|rho=0.2|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "3fe559f85011d59b452f121bac47383ad09c48a36b36e86c1c242609355b9b32"
+    },
+    {
+      "logical_point_ids": [
+        "E2-c256965527b22f33|rho=0.8|router=shortest_propagation",
+        "E2-690df9e96258d16b|rho=0.8|router=shortest_propagation"
+      ],
+      "physical_execution_key": "427681321da30f0366f6d91085d0c58899866926fc79ef3b5b7be4a94cd89517"
+    },
+    {
+      "logical_point_ids": [
+        "E2-c256965527b22f33|rho=0.2|router=shortest_propagation",
+        "E2-690df9e96258d16b|rho=0.2|router=shortest_propagation"
+      ],
+      "physical_execution_key": "4b51bf6bc7fe1d9b9d7094ea77f59327ce89bab204f52cca6f7813bcc7d85f4f"
+    },
+    {
+      "logical_point_ids": [
+        "E2-685cd1172cf55e1a|rho=0.2|router=shortest_propagation"
+      ],
+      "physical_execution_key": "4d91b928a5d6fb5b868112d529fcbb0e50cd4d6ed563740d5662cf1cd71f69a8"
+    },
+    {
+      "logical_point_ids": [
+        "E2-685cd1172cf55e1a|rho=1|router=shortest_propagation"
+      ],
+      "physical_execution_key": "5b54ba51ef49eb47026192d0d34d90c3d3120be4cccde0913b2b29c663ac3828"
+    },
+    {
+      "logical_point_ids": [
+        "E2-c256965527b22f33|rho=0.2|router=current_state_load_aware",
+        "E2-690df9e96258d16b|rho=0.2|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "5c90f3ee232b38f96b126596738657855737eb5704435f79d82b6bf6d3c8f07e"
+    },
+    {
+      "logical_point_ids": [
+        "E2-95d7a2779152a07d|rho=1|router=shortest_propagation",
+        "E2-a502d6e73f8dea03|rho=1|router=shortest_propagation"
+      ],
+      "physical_execution_key": "69eb53bb4f16add6e63e2534fdf272ba101cd87f216b3260dcdf10341f054154"
+    },
+    {
+      "logical_point_ids": [
+        "E2-4732b69e5d14435c|rho=0.8|router=current_state_load_aware",
+        "E2-b74951a5d44d4ac9|rho=0.8|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "6b488067c445a65609cb9308a004bb3a6f9e09853c9929cdf4a637c0d2d121d5"
+    },
+    {
+      "logical_point_ids": [
+        "E2-95d7a2779152a07d|rho=1.2|router=current_state_load_aware",
+        "E2-a502d6e73f8dea03|rho=1.2|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "6d381cd1d361723068977f942a898b3c0cfaf6962c0fdf40aca142aae7234e23"
+    },
+    {
+      "logical_point_ids": [
+        "E2-4732b69e5d14435c|rho=1.2|router=current_state_load_aware",
+        "E2-b74951a5d44d4ac9|rho=1.2|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "731b078d735220d6a5794911e5188f76cb7c0cad42231eff90fac500d6b10be1"
+    },
+    {
+      "logical_point_ids": [
+        "E2-95d7a2779152a07d|rho=0.5|router=shortest_propagation",
+        "E2-a502d6e73f8dea03|rho=0.5|router=shortest_propagation"
+      ],
+      "physical_execution_key": "73bff0eb93f72de9dfefe45ca2d800e9bd155792e563519ddf97cc026ff6ef8e"
+    },
+    {
+      "logical_point_ids": [
+        "E2-89eb1b676c1e5dbc|rho=1|router=shortest_propagation"
+      ],
+      "physical_execution_key": "79829c4e5358d1ed58a203059f6c23eb0ff5b683fc10d5b2f106cd3704b983b9"
+    },
+    {
+      "logical_point_ids": [
+        "E2-95d7a2779152a07d|rho=0.2|router=shortest_propagation",
+        "E2-a502d6e73f8dea03|rho=0.2|router=shortest_propagation"
+      ],
+      "physical_execution_key": "79cc07c5e07547a88bd354fbfdd52f0bababb7c3b5d8f333f21914b316d1a0aa"
+    },
+    {
+      "logical_point_ids": [
+        "E2-4732b69e5d14435c|rho=1|router=current_state_load_aware",
+        "E2-b74951a5d44d4ac9|rho=1|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "7b30098a4d8e4d3f7b71cb9f2884c1b0087b6bd242394bd684bf94bba7ddace2"
+    },
+    {
+      "logical_point_ids": [
+        "E2-95d7a2779152a07d|rho=1|router=current_state_load_aware",
+        "E2-a502d6e73f8dea03|rho=1|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "7b492ab4472d9f19ef7ddedb9f412a52366d4bfc3b776bbe50fa42f50d57d54f"
+    },
+    {
+      "logical_point_ids": [
+        "E2-685cd1172cf55e1a|rho=1|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "7faa9abbbb485bca00dd7d3060e541366f02fefeac3423d5ca5ad82337fc986c"
+    },
+    {
+      "logical_point_ids": [
+        "E2-685cd1172cf55e1a|rho=0.5|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "81de3b28214064ae1ee4a74117d7fe41b29829b07fe9303a9deb868902a48cb2"
+    },
+    {
+      "logical_point_ids": [
+        "E2-4732b69e5d14435c|rho=1.2|router=shortest_propagation",
+        "E2-b74951a5d44d4ac9|rho=1.2|router=shortest_propagation"
+      ],
+      "physical_execution_key": "84f9b695c313d22240df560ca6bf9168b4bad4b20558e772a630d9f8ba47c5df"
+    },
+    {
+      "logical_point_ids": [
+        "E2-89eb1b676c1e5dbc|rho=1|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "8a5b094bd5e1defa9aacd102a0267edb235dbf387995c068cb498bc29f684ba8"
+    },
+    {
+      "logical_point_ids": [
+        "E2-95d7a2779152a07d|rho=0.8|router=current_state_load_aware",
+        "E2-a502d6e73f8dea03|rho=0.8|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "9179d69b9ab1f5832885f20ef1d938c80678ab484252463bbae89c020f169ff5"
+    },
+    {
+      "logical_point_ids": [
+        "E2-685cd1172cf55e1a|rho=1.2|router=shortest_propagation"
+      ],
+      "physical_execution_key": "93dfbae7df9d020a40abf443697184350e25bb496385308abb84d2eac12acfe5"
+    },
+    {
+      "logical_point_ids": [
+        "E2-c256965527b22f33|rho=1|router=shortest_propagation",
+        "E2-690df9e96258d16b|rho=1|router=shortest_propagation"
+      ],
+      "physical_execution_key": "a5dc673295913e4dcee2141b62f2441908d8d55547bbb72d82b27ae1d01bd8ef"
+    },
+    {
+      "logical_point_ids": [
+        "E2-4732b69e5d14435c|rho=1|router=shortest_propagation",
+        "E2-b74951a5d44d4ac9|rho=1|router=shortest_propagation"
+      ],
+      "physical_execution_key": "a96fa0088edca2680f1d81d8354000d7d25e0791b864de3ce74cd5bdc09a7c26"
+    },
+    {
+      "logical_point_ids": [
+        "E2-89eb1b676c1e5dbc|rho=0.2|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "b05b23018df9817ca49a592c9bad1cde9bb576ae5db7e9492c0c6bc735954733"
+    },
+    {
+      "logical_point_ids": [
+        "E2-89eb1b676c1e5dbc|rho=0.5|router=shortest_propagation"
+      ],
+      "physical_execution_key": "b175953f2ec078df3e1f16e477cef0e80db376abbd71f70a802001098fe4a0a7"
+    },
+    {
+      "logical_point_ids": [
+        "E2-c256965527b22f33|rho=1.2|router=shortest_propagation",
+        "E2-690df9e96258d16b|rho=1.2|router=shortest_propagation"
+      ],
+      "physical_execution_key": "b3af336f4eb2fce0b08a64dcd9490c685a4fbd60ebc4506ca7942bb7c146e8af"
+    },
+    {
+      "logical_point_ids": [
+        "E2-c256965527b22f33|rho=0.8|router=current_state_load_aware",
+        "E2-690df9e96258d16b|rho=0.8|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "c12b14e4977517ea92eeaff542922409aa41695e195693938ccbd222390518e6"
+    },
+    {
+      "logical_point_ids": [
+        "E2-95d7a2779152a07d|rho=0.8|router=shortest_propagation",
+        "E2-a502d6e73f8dea03|rho=0.8|router=shortest_propagation"
+      ],
+      "physical_execution_key": "c7154d878a89af40f1b0dbd841b06187e6de0044ddf7edf6d3722032104fd843"
+    },
+    {
+      "logical_point_ids": [
+        "E2-89eb1b676c1e5dbc|rho=1.2|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "d31ebae77f982a8aa13bb36cd2e91cd577f3873ae33c3eebdb753c46d80861dc"
+    },
+    {
+      "logical_point_ids": [
+        "E2-89eb1b676c1e5dbc|rho=0.8|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "d3b53005278697e5599c1bdfeef18e16b6b166648e2372f29286c2be1c15074f"
+    },
+    {
+      "logical_point_ids": [
+        "E2-4732b69e5d14435c|rho=0.5|router=current_state_load_aware",
+        "E2-b74951a5d44d4ac9|rho=0.5|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "d9ff07fdbfb31190dbe803a617477e4eee90089f05469fa3b1f9deb6f657ab92"
+    },
+    {
+      "logical_point_ids": [
+        "E2-4732b69e5d14435c|rho=0.2|router=shortest_propagation",
+        "E2-b74951a5d44d4ac9|rho=0.2|router=shortest_propagation"
+      ],
+      "physical_execution_key": "da83ee39b76f687e178aa07e6e0e5287f615730e97d8395707ff04e193597e46"
+    },
+    {
+      "logical_point_ids": [
+        "E2-4732b69e5d14435c|rho=0.8|router=shortest_propagation",
+        "E2-b74951a5d44d4ac9|rho=0.8|router=shortest_propagation"
+      ],
+      "physical_execution_key": "e1b3cfb5d97545039e6d2013bd91d107b3aaacc0d11177e6b221611bf620096e"
+    },
+    {
+      "logical_point_ids": [
+        "E2-89eb1b676c1e5dbc|rho=1.2|router=shortest_propagation"
+      ],
+      "physical_execution_key": "e474c526df6946837ac517c6f4526314dc20b96448aaf95dadcc0bb51d456361"
+    },
+    {
+      "logical_point_ids": [
+        "E2-c256965527b22f33|rho=1.2|router=current_state_load_aware",
+        "E2-690df9e96258d16b|rho=1.2|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "e810b1aaa9dfddc584dfabd43fcdea810bc1de7f53320093746d0a02bd386d12"
+    },
+    {
+      "logical_point_ids": [
+        "E2-685cd1172cf55e1a|rho=1.2|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "e9eabbbab9e47e37540e7b96db4dc24c7d9c3a26b210f31041ff207b6bfe41f5"
+    },
+    {
+      "logical_point_ids": [
+        "E2-685cd1172cf55e1a|rho=0.8|router=shortest_propagation"
+      ],
+      "physical_execution_key": "ec63776dfd9857d4cbe1dbb35f0777aa636069ea2b841b3759f06aad7597b395"
+    },
+    {
+      "logical_point_ids": [
+        "E2-685cd1172cf55e1a|rho=0.8|router=current_state_load_aware"
+      ],
+      "physical_execution_key": "fc96c96a74e6b28a235029c4f6bba946b1f5211676d287fecdacb5d8e90232f5"
+    },
+    {
+      "logical_point_ids": [
+        "E2-95d7a2779152a07d|rho=1.2|router=shortest_propagation",
+        "E2-a502d6e73f8dea03|rho=1.2|router=shortest_propagation"
+      ],
+      "physical_execution_key": "fd96314eeddcb37721f8894be5511811c336871d0cfe5fed2617f26526e72917"
+    }
+  ],
+  "rho": [
+    0.2,
+    0.5,
+    0.8,
+    1.0,
+    1.2
+  ],
+  "routers": [
+    "shortest_propagation",
+    "current_state_load_aware"
+  ],
+  "schema": "gate_e2_execution_points_v1",
+  "selected_manifest": "configs/gate_e2_selected_scenarios.json",
+  "selected_manifest_sha256": "701d274e2ffd424af2891db7d2d5f73a9135e918e5ffcd297b33315da05ddd8e",
+  "setup_s": [
+    2.0
+  ],
+  "setup_semantics": {
+    "acquisition_s": 1.0,
+    "commercial_hardware_measurement": false,
+    "model": "Gate C simplified nominal audit fixture",
+    "parallel_endpoint_retarget_s": 1.0,
+    "total_ready_delay_s": 2.0
+  },
+  "status": "FROZEN_BEFORE_PAIRED_BRANCH_EXECUTION",
+  "unique_physical_execution_points": 50
+}

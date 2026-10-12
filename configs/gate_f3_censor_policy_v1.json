@@ -1,0 +1,55 @@
+{
+  "CENSORED": "unfinished work remains at 600 s",
+  "COMPLETE": "unfinished work <= frozen D0 zero threshold by or before 600 s",
+  "absolute_drain_limit_s": 600.0,
+  "aggregate_policy": [
+    "complete_count",
+    "completion_rate",
+    "censored_count",
+    "censored_residual_backlog_distribution",
+    "delivery_ratio_distribution"
+  ],
+  "arrival_horizon_s": 240.0,
+  "canonical_sha256": "b3c013bd65ff86c3f9c246ee72e64fda06ca9996dedf7d7e417702607334d1c0",
+  "censor_scalar_penalty": false,
+  "censored_minimum_metrics": [
+    "censor_status",
+    "residual_backlog_bits",
+    "delivery_ratio",
+    "delivered_bits",
+    "total_arrived_bits",
+    "queue_diagnostics",
+    "outage_diagnostics",
+    "runtime"
+  ],
+  "complete_metrics": [
+    "J_bit_s",
+    "mean_bit_delay_s",
+    "all_frozen_secondary_metrics"
+  ],
+  "paired_policy": {
+    "both_complete": [
+      "Delta_J",
+      "relative_J_difference",
+      "Delta_mean_bit_delay",
+      "paired_descriptive_comparison"
+    ],
+    "either_censored_forbidden": [
+      "J_ranking",
+      "relative_J_improvement",
+      "truncated_mean_delay_ranking",
+      "scalar_mixed_censor_score"
+    ],
+    "either_censored_report": [
+      "status_pair",
+      "residual_backlog_bits_pair",
+      "delivery_ratio_pair",
+      "completion_time_if_applicable"
+    ]
+  },
+  "residual_work_dropped": false,
+  "schema": "gate_f3_censor_policy_v1",
+  "virtual_drain_penalty": false,
+  "zero_threshold_bits": 0.01,
+  "zero_threshold_source": "configs/gate_d0_traffic_contract.json#state_tolerance_bits"
+}

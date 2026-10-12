@@ -1,0 +1,19 @@
+{
+  "status": "ACCEPTED_FOR_GATE_B",
+  "authorization": "Explicit user acceptance in current task",
+  "scope": "current satellite-only research",
+  "relative_walker_geometry": "ACCEPTED",
+  "sgp4_propagation": "ACCEPTED",
+  "candidate_visibility_consistency": "ACCEPTED",
+  "absolute_teme_orientation": "DOCUMENTED_COMMON_MODE_OFFSET_NON_BLOCKING",
+  "cutoff_5000km": "DIAGNOSTIC_ONLY",
+  "historical_audits_modified": false,
+  "tle_refitted": false,
+  "asset_hashes": {
+    "outputs/geometry_20260921T053240_016088Z/summary.json": "c8123aba3eb5c4a1e44154accd85a9995d67eae36652ecef366335775b183ee1",
+    "outputs/visibility_20260921T055451_308214Z/gate_a.json": "5f8fb6991f724124c4ec5a0380cf820d3a6449daaef2ff82eb1c7aec8937d001",
+    "outputs/visibility_20260921T055451_308214Z/hashes.json": "7e152f073a48cb7078510f09e51d726083483fc078a8a3116e0b075a7e220aab",
+    "outputs/common_mode_audit_20260921T061043_579554Z/audit.json": "dc1faa1567fc2a49ac4353a234aa157bbd7ea034bd85552890ff646ef23a1374",
+    "data/raw/sgp4_x720/constellation.tle": "6ffcbc0d57c54e54fc274acb518e1436eaf4d70df56570b862ba42fe32345050"
+  }
+}

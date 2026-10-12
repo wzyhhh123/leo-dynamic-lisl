@@ -1,0 +1,151 @@
+{
+  "N1_implemented_or_accepted": false,
+  "checked_assets": [
+    {
+      "byte_count": 8996,
+      "path": "research_versions/dynamic_k_v1/acceptance/0003/check_n0c_static.py",
+      "sha256": "1b785bd23d7f5cbe778a6663b1443c5a267668a63a117316e7258e7b59a7a1d3"
+    },
+    {
+      "byte_count": 5563,
+      "path": "research_versions/dynamic_k_v1/configs/research_v1_DRAFT.json",
+      "sha256": "71ab1ddfb38cbd9d2804c01a67c131a2e937fc2290293170922d0ef60b7c5742"
+    },
+    {
+      "byte_count": 8127,
+      "path": "research_versions/dynamic_k_v1/contracts/research_contract_v1_DRAFT_CN.md",
+      "sha256": "2dc51c9f844ef28f6a2dede0e1ce253c89bbf2fdd4bb845c57e18907af0a52f5"
+    },
+    {
+      "byte_count": 14160,
+      "path": "research_versions/dynamic_k_v1/schemas/research_result_v1_DRAFT.schema.json",
+      "sha256": "76f950872c9045a993ec44fae92aedf9daea3db82e5b1c087ffdf740d53d40d1"
+    },
+    {
+      "byte_count": 2274,
+      "path": "research_versions/dynamic_k_v1/schemas/research_result_v1_DRAFT.template.json",
+      "sha256": "35fbdc47934dd351e54ee1df14152c69c695569a8470b6e74d82b7cd4ee6ecba"
+    }
+  ],
+  "checks": [
+    {
+      "name": "draft_2020_12_schema_well_formed",
+      "status": "PASS"
+    },
+    {
+      "name": "unexecuted_template_validates",
+      "status": "PASS"
+    },
+    {
+      "name": "all_seven_scientific_numbers_remain_null",
+      "status": "PASS"
+    },
+    {
+      "name": "all_control_numbers_and_unselected_algorithm_preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "no_formal_run_or_production_integration_authorized",
+      "status": "PASS"
+    },
+    {
+      "name": "unchanged_science_and_original_power_values",
+      "status": "PASS"
+    },
+    {
+      "name": "main_K_requires_real_ACTIVE_new_business_admission",
+      "status": "PASS"
+    },
+    {
+      "name": "DRAINING_and_SETUP_separate_from_main_K",
+      "status": "PASS"
+    },
+    {
+      "name": "actual_initial_state_billed_without_synthetic_setup",
+      "status": "PASS"
+    },
+    {
+      "name": "DRAINING_power_and_duration_mapping_not_double_counted",
+      "status": "PASS"
+    },
+    {
+      "name": "N1a_and_N1b_are_future_separate_scopes",
+      "status": "PASS"
+    },
+    {
+      "name": "additional_unresolved_numeric_tolerances_are_null",
+      "status": "PASS"
+    },
+    {
+      "name": "schema_and_template_paths_exist",
+      "status": "PASS"
+    },
+    {
+      "name": "result_template_not_an_experiment",
+      "status": "PASS"
+    },
+    {
+      "name": "no_fabricated_K_or_energy_or_delivery_measurements",
+      "status": "PASS"
+    },
+    {
+      "name": "four_energy_and_five_execution_states_reserved",
+      "status": "PASS"
+    },
+    {
+      "name": "K_and_SETUP_time_series_fields_reserved",
+      "status": "PASS"
+    },
+    {
+      "name": "completion_flags_structurally_independent_first_direction",
+      "status": "PASS"
+    },
+    {
+      "name": "completion_flags_structurally_independent_second_direction",
+      "status": "PASS"
+    },
+    {
+      "name": "schema_rejects_DRAINING_in_main_K",
+      "status": "PASS"
+    },
+    {
+      "name": "schema_rejects_pre_T0_energy_in_window",
+      "status": "PASS"
+    },
+    {
+      "name": "schema_requires_distinct_delivery_completion_field",
+      "status": "PASS"
+    },
+    {
+      "name": "schema_rejects_fifth_energy_state",
+      "status": "PASS"
+    },
+    {
+      "name": "schema_rejects_nonnumeric_energy",
+      "status": "PASS"
+    },
+    {
+      "name": "contract_contains_all_requested_scope_boundaries",
+      "status": "PASS"
+    }
+  ],
+  "checks_count": 25,
+  "command": [
+    "D:\\Program_Files\\anaconda3\\envs\\pytorch\\python.exe",
+    "-B",
+    "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0003\\check_n0c_static.py"
+  ],
+  "completed_asia_shanghai": "2026-10-10T11:58:32.653816+08:00",
+  "completed_utc": "2026-10-10T03:58:32.653816+00:00",
+  "jsonschema_version": "4.23.0",
+  "negative_and_boolean_independence_cases": "IN_MEMORY_STRUCTURAL_FIXTURES_NOT_SIMULATED_RESULTS",
+  "production_imports": false,
+  "returncode": 0,
+  "schema": "dynamic_k_n0c_static_validation_report_v1",
+  "scientific_gate_acceptance_claimed": false,
+  "scope": "N0c_DOCUMENT_SEMANTICS_AND_SCHEMA_ONLY",
+  "simulations_or_training_executed": false,
+  "started_utc": "2026-10-10T03:58:30.901772+00:00",
+  "status": "PASS",
+  "stderr": ""
+}

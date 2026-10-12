@@ -1,0 +1,5872 @@
+{
+  "paired_scenarios": {
+    "paired_K0_ADD_delivery_idle_DROP": {
+      "REACTIVE_DYNAMIC_K": {
+        "actions": [
+          {
+            "action": {
+              "a": [
+                "S000",
+                "D1"
+              ],
+              "b": [
+                "S001",
+                "D1"
+              ],
+              "kind": "ADD",
+              "setup": {
+                "acquisition_s": 0.5,
+                "retarget_a_s": 0.5,
+                "retarget_b_s": 0.5
+              }
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "a": [
+                  "S000",
+                  "D1"
+                ],
+                "b": [
+                  "S001",
+                  "D1"
+                ],
+                "kind": "ADD",
+                "setup": {
+                  "acquisition_s": 0.5,
+                  "retarget_a_s": 0.5,
+                  "retarget_b_s": 0.5
+                }
+              },
+              "action_id": 1,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "fa9a162dd7834423e44f5edad3addfcfbbeff028fe60a52f5c38d2588182d2ab",
+              "before_terminal_sha256": "8dca0107198b9a8d1614921b4d09228613b017bfefea3a48de0d5825e57cfb1d",
+              "geometry": {
+                "accepted": true,
+                "geometry": {
+                  "end_semantics": "terminal_pair_for_expiry",
+                  "ready_time": 1.0,
+                  "remaining_lifetime_s": 100.0,
+                  "usable_lifetime_s": 99.0,
+                  "window": {
+                    "distance_km": null,
+                    "end_s": 100.0,
+                    "left_censored": false,
+                    "parent_end_s": null,
+                    "parent_start_s": null,
+                    "plane_gap": null,
+                    "right_censored": false,
+                    "sat_a": "S000",
+                    "sat_b": "S001",
+                    "start_s": 0.0,
+                    "terminal_a": "D1",
+                    "terminal_b": "D1"
+                  }
+                },
+                "geometry_scope": "ENGINEERING_SYNTHETIC_PRE_FILTERED_WINDOWS",
+                "hardware_calibration": "PARAMETRIC",
+                "live_geometry": {
+                  "accepted": true,
+                  "reason": null
+                },
+                "ready_geometry": {
+                  "accepted": true,
+                  "reason": null
+                },
+                "reason": null
+              },
+              "mode": "ADD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": "R1",
+              "terminal_log_start": 0,
+              "time_s": 0.0
+            },
+            "reason": "CURRENT_UNREACHABLE_DEMAND_BECOMES_REACHABLE",
+            "time_s": 0.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 2,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "020e1514dfc598ae5a30f4429ebf12995d33dab46bb1e23dbc52a461b94c4fba",
+              "before_terminal_sha256": "020e1514dfc598ae5a30f4429ebf12995d33dab46bb1e23dbc52a461b94c4fba",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 7,
+              "time_s": 0.5
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 0.5
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 3,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "519ded1f31797c9a2ea910c36fc0ec5701382e6243343f52072540a7eef51867",
+              "before_terminal_sha256": "519ded1f31797c9a2ea910c36fc0ec5701382e6243343f52072540a7eef51867",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 8,
+              "time_s": 1.0
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 1.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 4,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "4d1b75f5c6ec0489302b04da47e2515c549e48ee2f8f1633790b2c8ca9262405",
+              "before_terminal_sha256": "4d1b75f5c6ec0489302b04da47e2515c549e48ee2f8f1633790b2c8ca9262405",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 8,
+              "time_s": 2.0
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 2.0
+          },
+          {
+            "action": {
+              "kind": "DROP",
+              "old": {
+                "endpoints": [
+                  [
+                    "S000",
+                    "D1"
+                  ],
+                  [
+                    "S001",
+                    "D1"
+                  ]
+                ],
+                "link_id": "L1"
+              }
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "DROP",
+                "old": {
+                  "endpoints": [
+                    [
+                      "S000",
+                      "D1"
+                    ],
+                    [
+                      "S001",
+                      "D1"
+                    ]
+                  ],
+                  "link_id": "L1"
+                }
+              },
+              "action_id": 5,
+              "actual_immediate_release_ids": [
+                "L1"
+              ],
+              "after_terminal_sha256": "f4a5b439c52da541048cb402e3fc9840a4d678f4a92c927e13e464b3e8bdbaa6",
+              "before_terminal_sha256": "a57abe478807f85fec0841ad2db328398f9542146787ce498636f6db48017e62",
+              "geometry": null,
+              "mode": "DROP",
+              "reason": null,
+              "requested_release_refs": [
+                {
+                  "endpoints": [
+                    [
+                      "S000",
+                      "D1"
+                    ],
+                    [
+                      "S001",
+                      "D1"
+                    ]
+                  ],
+                  "link_id": "L1"
+                }
+              ],
+              "reservation_id": null,
+              "terminal_log_start": 8,
+              "time_s": 3.0
+            },
+            "reason": "NO_CURRENT_QUEUE_IN_FLIGHT_OR_INJECTION",
+            "time_s": 3.0
+          }
+        ],
+        "fixture_identity": {
+          "TEST_ONLY_epochs_s": [
+            0.0,
+            0.5,
+            1.0,
+            2.0,
+            3.0
+          ],
+          "TEST_ONLY_retention_budgets": null,
+          "TEST_ONLY_setup": {
+            "acquisition_s": 0.5,
+            "retarget_a_s": 0.5,
+            "retarget_b_s": 0.5
+          },
+          "T_s": 4.0,
+          "capacity_bit_s": 20.0,
+          "fixed_edges": [],
+          "geometry_sha256": "303b0f5011d80381caf7910b630c6c4c3d9086872eaa8ecec8ff354c77cfb73e",
+          "initial_state_sha256": "15d7ecea6535ada94f59c54e991a58e2ac8ad118731172134c1b01157ca7bb39",
+          "nodes": [
+            "S000",
+            "S001",
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S010",
+            "S011",
+            "S012",
+            "S013",
+            "S014",
+            "S015",
+            "S016",
+            "S017",
+            "S018",
+            "S019",
+            "S020",
+            "S021",
+            "S022",
+            "S023",
+            "S024",
+            "S025",
+            "S026",
+            "S027",
+            "S028",
+            "S029",
+            "S030",
+            "S031",
+            "S032",
+            "S033",
+            "S034",
+            "S035",
+            "S036",
+            "S037",
+            "S038",
+            "S039",
+            "S040",
+            "S041",
+            "S042",
+            "S043",
+            "S044",
+            "S045",
+            "S046",
+            "S047",
+            "S048",
+            "S049",
+            "S050",
+            "S051",
+            "S052",
+            "S053",
+            "S054",
+            "S055",
+            "S056",
+            "S057",
+            "S058",
+            "S059",
+            "S060",
+            "S061",
+            "S062",
+            "S063",
+            "S064",
+            "S065",
+            "S066",
+            "S067",
+            "S068",
+            "S069",
+            "S070",
+            "S071",
+            "S072",
+            "S073",
+            "S074",
+            "S075",
+            "S076",
+            "S077",
+            "S078",
+            "S079",
+            "S080",
+            "S081",
+            "S082",
+            "S083",
+            "S084",
+            "S085",
+            "S086",
+            "S087",
+            "S088",
+            "S089",
+            "S090",
+            "S091",
+            "S092",
+            "S093",
+            "S094",
+            "S095",
+            "S096",
+            "S097",
+            "S098",
+            "S099",
+            "S100",
+            "S101",
+            "S102",
+            "S103",
+            "S104",
+            "S105",
+            "S106",
+            "S107",
+            "S108",
+            "S109",
+            "S110",
+            "S111",
+            "S112",
+            "S113",
+            "S114",
+            "S115",
+            "S116",
+            "S117",
+            "S118",
+            "S119",
+            "S120",
+            "S121",
+            "S122",
+            "S123",
+            "S124",
+            "S125",
+            "S126",
+            "S127",
+            "S128",
+            "S129",
+            "S130",
+            "S131",
+            "S132",
+            "S133",
+            "S134",
+            "S135",
+            "S136",
+            "S137",
+            "S138",
+            "S139",
+            "S140",
+            "S141",
+            "S142",
+            "S143",
+            "S144",
+            "S145",
+            "S146",
+            "S147",
+            "S148",
+            "S149",
+            "S150",
+            "S151",
+            "S152",
+            "S153",
+            "S154",
+            "S155",
+            "S156",
+            "S157",
+            "S158",
+            "S159"
+          ],
+          "service_kernel": "ObservedD2Engine",
+          "traffic_trace_sha256": "26a331362f852d3fdd9a9c96f9e0e28a93a4d2f654c389890ba35eaed54b548e"
+        },
+        "metrics": {
+          "DeltaE_LCT_J": 230.0,
+          "E_LCT_J": 6630.0,
+          "J_T_bit_s": 17.5,
+          "K_time_series": [
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 2,
+              "setup_connection_count": 1,
+              "setup_reserved_terminal_count": 2,
+              "setup_terminal_count": 2,
+              "t_s": 0.0
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 2,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 1,
+              "setup_reserved_terminal_count": 2,
+              "setup_terminal_count": 2,
+              "t_s": 0.5
+            },
+            {
+              "K_active_admissible": 1,
+              "K_admit": 1,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 1.0
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 3.0
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 4.0
+            }
+          ],
+          "N_T_bits": 0.0,
+          "R_del_T": 1.0,
+          "all_offered_business_delivered": true,
+          "delivered_bit_age_integral_bit_s": 17.5,
+          "delivered_bits": 10.0,
+          "evaluation_completed_normally": true,
+          "in_flight_bits": 0.0,
+          "mean_delay_absolute_error_bound_s": 2.886579864025408e-16,
+          "mean_delivered_fluid_delay_s": 1.75,
+          "offered_bits": 10.0,
+          "queued_bits": 0.0
+        },
+        "non_HOLD_accepted_count": 2,
+        "release_audit": [
+          {
+            "action_id": 5,
+            "draining_times_s": [
+              3.0
+            ],
+            "link_down": [
+              {
+                "reason": "LINK_DOWN",
+                "time_s": 3.0
+              }
+            ],
+            "reference": {
+              "endpoints": [
+                [
+                  "S000",
+                  "D1"
+                ],
+                [
+                  "S001",
+                  "D1"
+                ]
+              ],
+              "link_id": "L1"
+            },
+            "status": "COMPLETE"
+          }
+        ]
+      },
+      "STATIC_HOLD": {
+        "actions": [
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 1,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "8dca0107198b9a8d1614921b4d09228613b017bfefea3a48de0d5825e57cfb1d",
+              "before_terminal_sha256": "8dca0107198b9a8d1614921b4d09228613b017bfefea3a48de0d5825e57cfb1d",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 0,
+              "time_s": 0.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 0.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 2,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "957480d9ea9f634852318e6d75071b110c4588e6ca0ebf0a9e5b08e6cec2090b",
+              "before_terminal_sha256": "957480d9ea9f634852318e6d75071b110c4588e6ca0ebf0a9e5b08e6cec2090b",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 0,
+              "time_s": 0.5
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 0.5
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 3,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "5e19b185c904d4e9bc9aa4aecf52e8f15ac0c9abd0707e39a88ae8c4ab597a99",
+              "before_terminal_sha256": "5e19b185c904d4e9bc9aa4aecf52e8f15ac0c9abd0707e39a88ae8c4ab597a99",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 0,
+              "time_s": 1.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 1.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 4,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "f4aa63acd3b2c4df53583b3f9aef4885bb4282375eb1337c7d92621991dd8483",
+              "before_terminal_sha256": "f4aa63acd3b2c4df53583b3f9aef4885bb4282375eb1337c7d92621991dd8483",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 0,
+              "time_s": 2.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 2.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 5,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "d436663a434cccf3308fbf86ab92b9cdb90a27db60f78b6e13322591c8c1f7f0",
+              "before_terminal_sha256": "d436663a434cccf3308fbf86ab92b9cdb90a27db60f78b6e13322591c8c1f7f0",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 0,
+              "time_s": 3.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 3.0
+          }
+        ],
+        "fixture_identity": {
+          "TEST_ONLY_epochs_s": [
+            0.0,
+            0.5,
+            1.0,
+            2.0,
+            3.0
+          ],
+          "TEST_ONLY_retention_budgets": null,
+          "TEST_ONLY_setup": {
+            "acquisition_s": 0.5,
+            "retarget_a_s": 0.5,
+            "retarget_b_s": 0.5
+          },
+          "T_s": 4.0,
+          "capacity_bit_s": 20.0,
+          "fixed_edges": [],
+          "geometry_sha256": "303b0f5011d80381caf7910b630c6c4c3d9086872eaa8ecec8ff354c77cfb73e",
+          "initial_state_sha256": "15d7ecea6535ada94f59c54e991a58e2ac8ad118731172134c1b01157ca7bb39",
+          "nodes": [
+            "S000",
+            "S001",
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S010",
+            "S011",
+            "S012",
+            "S013",
+            "S014",
+            "S015",
+            "S016",
+            "S017",
+            "S018",
+            "S019",
+            "S020",
+            "S021",
+            "S022",
+            "S023",
+            "S024",
+            "S025",
+            "S026",
+            "S027",
+            "S028",
+            "S029",
+            "S030",
+            "S031",
+            "S032",
+            "S033",
+            "S034",
+            "S035",
+            "S036",
+            "S037",
+            "S038",
+            "S039",
+            "S040",
+            "S041",
+            "S042",
+            "S043",
+            "S044",
+            "S045",
+            "S046",
+            "S047",
+            "S048",
+            "S049",
+            "S050",
+            "S051",
+            "S052",
+            "S053",
+            "S054",
+            "S055",
+            "S056",
+            "S057",
+            "S058",
+            "S059",
+            "S060",
+            "S061",
+            "S062",
+            "S063",
+            "S064",
+            "S065",
+            "S066",
+            "S067",
+            "S068",
+            "S069",
+            "S070",
+            "S071",
+            "S072",
+            "S073",
+            "S074",
+            "S075",
+            "S076",
+            "S077",
+            "S078",
+            "S079",
+            "S080",
+            "S081",
+            "S082",
+            "S083",
+            "S084",
+            "S085",
+            "S086",
+            "S087",
+            "S088",
+            "S089",
+            "S090",
+            "S091",
+            "S092",
+            "S093",
+            "S094",
+            "S095",
+            "S096",
+            "S097",
+            "S098",
+            "S099",
+            "S100",
+            "S101",
+            "S102",
+            "S103",
+            "S104",
+            "S105",
+            "S106",
+            "S107",
+            "S108",
+            "S109",
+            "S110",
+            "S111",
+            "S112",
+            "S113",
+            "S114",
+            "S115",
+            "S116",
+            "S117",
+            "S118",
+            "S119",
+            "S120",
+            "S121",
+            "S122",
+            "S123",
+            "S124",
+            "S125",
+            "S126",
+            "S127",
+            "S128",
+            "S129",
+            "S130",
+            "S131",
+            "S132",
+            "S133",
+            "S134",
+            "S135",
+            "S136",
+            "S137",
+            "S138",
+            "S139",
+            "S140",
+            "S141",
+            "S142",
+            "S143",
+            "S144",
+            "S145",
+            "S146",
+            "S147",
+            "S148",
+            "S149",
+            "S150",
+            "S151",
+            "S152",
+            "S153",
+            "S154",
+            "S155",
+            "S156",
+            "S157",
+            "S158",
+            "S159"
+          ],
+          "service_kernel": "ObservedD2Engine",
+          "traffic_trace_sha256": "26a331362f852d3fdd9a9c96f9e0e28a93a4d2f654c389890ba35eaed54b548e"
+        },
+        "metrics": {
+          "DeltaE_LCT_J": 0.0,
+          "E_LCT_J": 6400.0,
+          "J_T_bit_s": 35.0,
+          "K_time_series": [
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 0.0
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 4.0
+            }
+          ],
+          "N_T_bits": 10.0,
+          "R_del_T": 0.0,
+          "all_offered_business_delivered": false,
+          "delivered_bit_age_integral_bit_s": 0.0,
+          "delivered_bits": 0.0,
+          "evaluation_completed_normally": true,
+          "in_flight_bits": 0.0,
+          "mean_delay_absolute_error_bound_s": null,
+          "mean_delivered_fluid_delay_s": null,
+          "offered_bits": 10.0,
+          "queued_bits": 10.0
+        },
+        "non_HOLD_accepted_count": 0,
+        "release_audit": []
+      }
+    },
+    "paired_REPLACE_MBB_spare_terminals": {
+      "REACTIVE_DYNAMIC_K": {
+        "actions": [
+          {
+            "action": {
+              "a": [
+                "S000",
+                "D2"
+              ],
+              "b": [
+                "S002",
+                "D2"
+              ],
+              "kind": "REPLACE",
+              "mode": "MBB",
+              "old": [
+                {
+                  "endpoints": [
+                    [
+                      "S000",
+                      "D1"
+                    ],
+                    [
+                      "S001",
+                      "D1"
+                    ]
+                  ],
+                  "link_id": "L1"
+                }
+              ],
+              "setup": {
+                "acquisition_s": 0.5,
+                "retarget_a_s": 0.5,
+                "retarget_b_s": 0.5
+              }
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "a": [
+                  "S000",
+                  "D2"
+                ],
+                "b": [
+                  "S002",
+                  "D2"
+                ],
+                "kind": "REPLACE",
+                "mode": "MBB",
+                "old": [
+                  {
+                    "endpoints": [
+                      [
+                        "S000",
+                        "D1"
+                      ],
+                      [
+                        "S001",
+                        "D1"
+                      ]
+                    ],
+                    "link_id": "L1"
+                  }
+                ],
+                "setup": {
+                  "acquisition_s": 0.5,
+                  "retarget_a_s": 0.5,
+                  "retarget_b_s": 0.5
+                }
+              },
+              "action_id": 1,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "efd0a7389ee33181ae5b5f8e8e7da7f828eb29b3d1e444b5ef865ff567d3fb5c",
+              "before_terminal_sha256": "71f05023ff8a4177f30ada3411b098c10988608a6acf7db02b0feb8bc0b6f0e0",
+              "geometry": {
+                "accepted": true,
+                "geometry": {
+                  "end_semantics": "terminal_pair_for_expiry",
+                  "ready_time": 1.0,
+                  "remaining_lifetime_s": 100.0,
+                  "usable_lifetime_s": 99.0,
+                  "window": {
+                    "distance_km": null,
+                    "end_s": 100.0,
+                    "left_censored": false,
+                    "parent_end_s": null,
+                    "parent_start_s": null,
+                    "plane_gap": null,
+                    "right_censored": false,
+                    "sat_a": "S000",
+                    "sat_b": "S002",
+                    "start_s": 0.0,
+                    "terminal_a": "D2",
+                    "terminal_b": "D2"
+                  }
+                },
+                "geometry_scope": "ENGINEERING_SYNTHETIC_PRE_FILTERED_WINDOWS",
+                "hardware_calibration": "PARAMETRIC",
+                "live_geometry": {
+                  "accepted": true,
+                  "reason": null
+                },
+                "ready_geometry": {
+                  "accepted": true,
+                  "reason": null
+                },
+                "reason": null
+              },
+              "mode": "MBB",
+              "reason": null,
+              "requested_release_refs": [
+                {
+                  "endpoints": [
+                    [
+                      "S000",
+                      "D1"
+                    ],
+                    [
+                      "S001",
+                      "D1"
+                    ]
+                  ],
+                  "link_id": "L1"
+                }
+              ],
+              "reservation_id": "R2",
+              "terminal_log_start": 9,
+              "time_s": 0.0
+            },
+            "reason": "CURRENT_UNREACHABLE_DEMAND_BECOMES_REACHABLE",
+            "time_s": 0.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 2,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "9a0904051646ce2c9b26ba01e8af105c95edc0b06851010f6a8481a6d3edfbd5",
+              "before_terminal_sha256": "9a0904051646ce2c9b26ba01e8af105c95edc0b06851010f6a8481a6d3edfbd5",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 16,
+              "time_s": 0.5
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 0.5
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 3,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "f410b1cc740921022edf7a9d111708b9a7eab2ec54c6f5a72ccd8532be61b4dd",
+              "before_terminal_sha256": "f410b1cc740921022edf7a9d111708b9a7eab2ec54c6f5a72ccd8532be61b4dd",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 18,
+              "time_s": 1.0
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 1.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 4,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "880120396cdf46f8adfb6a72632775afc34af733f17e16541f95332f72629f4e",
+              "before_terminal_sha256": "880120396cdf46f8adfb6a72632775afc34af733f17e16541f95332f72629f4e",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 20,
+              "time_s": 2.0
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 2.0
+          },
+          {
+            "action": {
+              "kind": "DROP",
+              "old": {
+                "endpoints": [
+                  [
+                    "S000",
+                    "D2"
+                  ],
+                  [
+                    "S002",
+                    "D2"
+                  ]
+                ],
+                "link_id": "L2"
+              }
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "DROP",
+                "old": {
+                  "endpoints": [
+                    [
+                      "S000",
+                      "D2"
+                    ],
+                    [
+                      "S002",
+                      "D2"
+                    ]
+                  ],
+                  "link_id": "L2"
+                }
+              },
+              "action_id": 5,
+              "actual_immediate_release_ids": [
+                "L2"
+              ],
+              "after_terminal_sha256": "e19a458bf7fa00ad805c1724f09ad4688381240b44db900611e912bd88764017",
+              "before_terminal_sha256": "566f744d34ef2d2df0b0190bde75fa19cfb9d5ee64ce7d687a61df86c03961ba",
+              "geometry": null,
+              "mode": "DROP",
+              "reason": null,
+              "requested_release_refs": [
+                {
+                  "endpoints": [
+                    [
+                      "S000",
+                      "D2"
+                    ],
+                    [
+                      "S002",
+                      "D2"
+                    ]
+                  ],
+                  "link_id": "L2"
+                }
+              ],
+              "reservation_id": null,
+              "terminal_log_start": 20,
+              "time_s": 3.0
+            },
+            "reason": "NO_CURRENT_QUEUE_IN_FLIGHT_OR_INJECTION",
+            "time_s": 3.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 6,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "f42956b598c6311dc39e6c13de32f4c9feb50069a0f7866c90524bf2b972b840",
+              "before_terminal_sha256": "f42956b598c6311dc39e6c13de32f4c9feb50069a0f7866c90524bf2b972b840",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 23,
+              "time_s": 4.0
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 4.0
+          }
+        ],
+        "fixture_identity": {
+          "TEST_ONLY_epochs_s": [
+            0.0,
+            0.5,
+            1.0,
+            2.0,
+            3.0,
+            4.0
+          ],
+          "TEST_ONLY_retention_budgets": null,
+          "TEST_ONLY_setup": {
+            "acquisition_s": 0.5,
+            "retarget_a_s": 0.5,
+            "retarget_b_s": 0.5
+          },
+          "T_s": 5.0,
+          "capacity_bit_s": 20.0,
+          "fixed_edges": [],
+          "geometry_sha256": "566b1bab916add099b5db2228daf24f187ad6e68f08683828937ed3d32e93494",
+          "initial_state_sha256": "285efd17774cd5beee3a8f76cfebde80d2e40193cd0dc677cfdb6df526127473",
+          "nodes": [
+            "S000",
+            "S001",
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S010",
+            "S011",
+            "S012",
+            "S013",
+            "S014",
+            "S015",
+            "S016",
+            "S017",
+            "S018",
+            "S019",
+            "S020",
+            "S021",
+            "S022",
+            "S023",
+            "S024",
+            "S025",
+            "S026",
+            "S027",
+            "S028",
+            "S029",
+            "S030",
+            "S031",
+            "S032",
+            "S033",
+            "S034",
+            "S035",
+            "S036",
+            "S037",
+            "S038",
+            "S039",
+            "S040",
+            "S041",
+            "S042",
+            "S043",
+            "S044",
+            "S045",
+            "S046",
+            "S047",
+            "S048",
+            "S049",
+            "S050",
+            "S051",
+            "S052",
+            "S053",
+            "S054",
+            "S055",
+            "S056",
+            "S057",
+            "S058",
+            "S059",
+            "S060",
+            "S061",
+            "S062",
+            "S063",
+            "S064",
+            "S065",
+            "S066",
+            "S067",
+            "S068",
+            "S069",
+            "S070",
+            "S071",
+            "S072",
+            "S073",
+            "S074",
+            "S075",
+            "S076",
+            "S077",
+            "S078",
+            "S079",
+            "S080",
+            "S081",
+            "S082",
+            "S083",
+            "S084",
+            "S085",
+            "S086",
+            "S087",
+            "S088",
+            "S089",
+            "S090",
+            "S091",
+            "S092",
+            "S093",
+            "S094",
+            "S095",
+            "S096",
+            "S097",
+            "S098",
+            "S099",
+            "S100",
+            "S101",
+            "S102",
+            "S103",
+            "S104",
+            "S105",
+            "S106",
+            "S107",
+            "S108",
+            "S109",
+            "S110",
+            "S111",
+            "S112",
+            "S113",
+            "S114",
+            "S115",
+            "S116",
+            "S117",
+            "S118",
+            "S119",
+            "S120",
+            "S121",
+            "S122",
+            "S123",
+            "S124",
+            "S125",
+            "S126",
+            "S127",
+            "S128",
+            "S129",
+            "S130",
+            "S131",
+            "S132",
+            "S133",
+            "S134",
+            "S135",
+            "S136",
+            "S137",
+            "S138",
+            "S139",
+            "S140",
+            "S141",
+            "S142",
+            "S143",
+            "S144",
+            "S145",
+            "S146",
+            "S147",
+            "S148",
+            "S149",
+            "S150",
+            "S151",
+            "S152",
+            "S153",
+            "S154",
+            "S155",
+            "S156",
+            "S157",
+            "S158",
+            "S159"
+          ],
+          "service_kernel": "ObservedD2Engine",
+          "traffic_trace_sha256": "26a331362f852d3fdd9a9c96f9e0e28a93a4d2f654c389890ba35eaed54b548e"
+        },
+        "metrics": {
+          "DeltaE_LCT_J": 390.0,
+          "E_LCT_J": 8390.0,
+          "J_T_bit_s": 17.5,
+          "K_time_series": [
+            {
+              "K_active_admissible": 1,
+              "K_admit": 1,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 2,
+              "setup_connection_count": 1,
+              "setup_reserved_terminal_count": 2,
+              "setup_terminal_count": 2,
+              "t_s": 0.0
+            },
+            {
+              "K_active_admissible": 1,
+              "K_admit": 1,
+              "K_draining": 0,
+              "acquiring_terminal_count": 2,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 1,
+              "setup_reserved_terminal_count": 2,
+              "setup_terminal_count": 2,
+              "t_s": 0.5
+            },
+            {
+              "K_active_admissible": 1,
+              "K_admit": 1,
+              "K_draining": 1,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 1.0
+            },
+            {
+              "K_active_admissible": 1,
+              "K_admit": 1,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 2.0
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 3.0
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 5.0
+            }
+          ],
+          "N_T_bits": 0.0,
+          "R_del_T": 1.0,
+          "all_offered_business_delivered": true,
+          "delivered_bit_age_integral_bit_s": 17.5,
+          "delivered_bits": 10.0,
+          "evaluation_completed_normally": true,
+          "in_flight_bits": 0.0,
+          "mean_delay_absolute_error_bound_s": 2.886579864025408e-16,
+          "mean_delivered_fluid_delay_s": 1.75,
+          "offered_bits": 10.0,
+          "queued_bits": 0.0
+        },
+        "non_HOLD_accepted_count": 2,
+        "release_audit": [
+          {
+            "action_id": 1,
+            "draining_times_s": [
+              1.0
+            ],
+            "link_down": [
+              {
+                "reason": "LINK_DOWN",
+                "time_s": 2.0
+              }
+            ],
+            "reference": {
+              "endpoints": [
+                [
+                  "S000",
+                  "D1"
+                ],
+                [
+                  "S001",
+                  "D1"
+                ]
+              ],
+              "link_id": "L1"
+            },
+            "status": "COMPLETE"
+          },
+          {
+            "action_id": 5,
+            "draining_times_s": [
+              3.0
+            ],
+            "link_down": [
+              {
+                "reason": "LINK_DOWN",
+                "time_s": 3.0
+              }
+            ],
+            "reference": {
+              "endpoints": [
+                [
+                  "S000",
+                  "D2"
+                ],
+                [
+                  "S002",
+                  "D2"
+                ]
+              ],
+              "link_id": "L2"
+            },
+            "status": "COMPLETE"
+          }
+        ]
+      },
+      "STATIC_HOLD": {
+        "actions": [
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 1,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "71f05023ff8a4177f30ada3411b098c10988608a6acf7db02b0feb8bc0b6f0e0",
+              "before_terminal_sha256": "71f05023ff8a4177f30ada3411b098c10988608a6acf7db02b0feb8bc0b6f0e0",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 9,
+              "time_s": 0.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 0.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 2,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "6f52f3ce4703f621e8d1911340a2d1b2f3772eb7ff5045acf3d2ff79b71254e0",
+              "before_terminal_sha256": "6f52f3ce4703f621e8d1911340a2d1b2f3772eb7ff5045acf3d2ff79b71254e0",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 9,
+              "time_s": 0.5
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 0.5
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 3,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "6aba3fd6f1b62f527b16ddff79dcbb8c3cf82a0de3fef02d423e2d71e567102f",
+              "before_terminal_sha256": "6aba3fd6f1b62f527b16ddff79dcbb8c3cf82a0de3fef02d423e2d71e567102f",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 9,
+              "time_s": 1.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 1.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 4,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "87bdcf0cc52b67a09e53cd658bffe38ea923c70ac18326da10639446b6be51fe",
+              "before_terminal_sha256": "87bdcf0cc52b67a09e53cd658bffe38ea923c70ac18326da10639446b6be51fe",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 10,
+              "time_s": 2.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 2.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 5,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "332d2bdf28bb1342a342d3dcf975c38a93b1be725cf27099cc120518efbd3511",
+              "before_terminal_sha256": "332d2bdf28bb1342a342d3dcf975c38a93b1be725cf27099cc120518efbd3511",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 10,
+              "time_s": 3.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 3.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 6,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "ee9992aafd4ce1ccbf0a76da1718071e0c91f00d20177c2783195a78583857d1",
+              "before_terminal_sha256": "ee9992aafd4ce1ccbf0a76da1718071e0c91f00d20177c2783195a78583857d1",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 10,
+              "time_s": 4.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 4.0
+          }
+        ],
+        "fixture_identity": {
+          "TEST_ONLY_epochs_s": [
+            0.0,
+            0.5,
+            1.0,
+            2.0,
+            3.0,
+            4.0
+          ],
+          "TEST_ONLY_retention_budgets": null,
+          "TEST_ONLY_setup": {
+            "acquisition_s": 0.5,
+            "retarget_a_s": 0.5,
+            "retarget_b_s": 0.5
+          },
+          "T_s": 5.0,
+          "capacity_bit_s": 20.0,
+          "fixed_edges": [],
+          "geometry_sha256": "566b1bab916add099b5db2228daf24f187ad6e68f08683828937ed3d32e93494",
+          "initial_state_sha256": "285efd17774cd5beee3a8f76cfebde80d2e40193cd0dc677cfdb6df526127473",
+          "nodes": [
+            "S000",
+            "S001",
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S010",
+            "S011",
+            "S012",
+            "S013",
+            "S014",
+            "S015",
+            "S016",
+            "S017",
+            "S018",
+            "S019",
+            "S020",
+            "S021",
+            "S022",
+            "S023",
+            "S024",
+            "S025",
+            "S026",
+            "S027",
+            "S028",
+            "S029",
+            "S030",
+            "S031",
+            "S032",
+            "S033",
+            "S034",
+            "S035",
+            "S036",
+            "S037",
+            "S038",
+            "S039",
+            "S040",
+            "S041",
+            "S042",
+            "S043",
+            "S044",
+            "S045",
+            "S046",
+            "S047",
+            "S048",
+            "S049",
+            "S050",
+            "S051",
+            "S052",
+            "S053",
+            "S054",
+            "S055",
+            "S056",
+            "S057",
+            "S058",
+            "S059",
+            "S060",
+            "S061",
+            "S062",
+            "S063",
+            "S064",
+            "S065",
+            "S066",
+            "S067",
+            "S068",
+            "S069",
+            "S070",
+            "S071",
+            "S072",
+            "S073",
+            "S074",
+            "S075",
+            "S076",
+            "S077",
+            "S078",
+            "S079",
+            "S080",
+            "S081",
+            "S082",
+            "S083",
+            "S084",
+            "S085",
+            "S086",
+            "S087",
+            "S088",
+            "S089",
+            "S090",
+            "S091",
+            "S092",
+            "S093",
+            "S094",
+            "S095",
+            "S096",
+            "S097",
+            "S098",
+            "S099",
+            "S100",
+            "S101",
+            "S102",
+            "S103",
+            "S104",
+            "S105",
+            "S106",
+            "S107",
+            "S108",
+            "S109",
+            "S110",
+            "S111",
+            "S112",
+            "S113",
+            "S114",
+            "S115",
+            "S116",
+            "S117",
+            "S118",
+            "S119",
+            "S120",
+            "S121",
+            "S122",
+            "S123",
+            "S124",
+            "S125",
+            "S126",
+            "S127",
+            "S128",
+            "S129",
+            "S130",
+            "S131",
+            "S132",
+            "S133",
+            "S134",
+            "S135",
+            "S136",
+            "S137",
+            "S138",
+            "S139",
+            "S140",
+            "S141",
+            "S142",
+            "S143",
+            "S144",
+            "S145",
+            "S146",
+            "S147",
+            "S148",
+            "S149",
+            "S150",
+            "S151",
+            "S152",
+            "S153",
+            "S154",
+            "S155",
+            "S156",
+            "S157",
+            "S158",
+            "S159"
+          ],
+          "service_kernel": "ObservedD2Engine",
+          "traffic_trace_sha256": "26a331362f852d3fdd9a9c96f9e0e28a93a4d2f654c389890ba35eaed54b548e"
+        },
+        "metrics": {
+          "DeltaE_LCT_J": 400.0,
+          "E_LCT_J": 8400.0,
+          "J_T_bit_s": 45.0,
+          "K_time_series": [
+            {
+              "K_active_admissible": 1,
+              "K_admit": 1,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 0.0
+            },
+            {
+              "K_active_admissible": 1,
+              "K_admit": 1,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 2.0
+            },
+            {
+              "K_active_admissible": 1,
+              "K_admit": 1,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 5.0
+            }
+          ],
+          "N_T_bits": 10.0,
+          "R_del_T": 0.0,
+          "all_offered_business_delivered": false,
+          "delivered_bit_age_integral_bit_s": 0.0,
+          "delivered_bits": 0.0,
+          "evaluation_completed_normally": true,
+          "in_flight_bits": 0.0,
+          "mean_delay_absolute_error_bound_s": null,
+          "mean_delivered_fluid_delay_s": null,
+          "offered_bits": 10.0,
+          "queued_bits": 10.0
+        },
+        "non_HOLD_accepted_count": 0,
+        "release_audit": []
+      }
+    },
+    "paired_no_demand_DROP_draining_energy": {
+      "REACTIVE_DYNAMIC_K": {
+        "actions": [
+          {
+            "action": {
+              "kind": "DROP",
+              "old": {
+                "endpoints": [
+                  [
+                    "S000",
+                    "D1"
+                  ],
+                  [
+                    "S001",
+                    "D1"
+                  ]
+                ],
+                "link_id": "L1"
+              }
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "DROP",
+                "old": {
+                  "endpoints": [
+                    [
+                      "S000",
+                      "D1"
+                    ],
+                    [
+                      "S001",
+                      "D1"
+                    ]
+                  ],
+                  "link_id": "L1"
+                }
+              },
+              "action_id": 1,
+              "actual_immediate_release_ids": [
+                "L1"
+              ],
+              "after_terminal_sha256": "afba44cbcd863ee65a7470b22594ab82a8b03daf43a168a905aebac33f27a276",
+              "before_terminal_sha256": "71f05023ff8a4177f30ada3411b098c10988608a6acf7db02b0feb8bc0b6f0e0",
+              "geometry": null,
+              "mode": "DROP",
+              "reason": null,
+              "requested_release_refs": [
+                {
+                  "endpoints": [
+                    [
+                      "S000",
+                      "D1"
+                    ],
+                    [
+                      "S001",
+                      "D1"
+                    ]
+                  ],
+                  "link_id": "L1"
+                }
+              ],
+              "reservation_id": null,
+              "terminal_log_start": 9,
+              "time_s": 0.0
+            },
+            "reason": "NO_CURRENT_QUEUE_IN_FLIGHT_OR_INJECTION",
+            "time_s": 0.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 2,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "08a7c0b51d53e9a2c2804e9985c7e2e583463c73a5436ef31240d0185d15344b",
+              "before_terminal_sha256": "08a7c0b51d53e9a2c2804e9985c7e2e583463c73a5436ef31240d0185d15344b",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 11,
+              "time_s": 0.5
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 0.5
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 3,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "40581596dd2f353b7e8e949bdf9bd13115a2f29d41c82941d1489595683d267d",
+              "before_terminal_sha256": "40581596dd2f353b7e8e949bdf9bd13115a2f29d41c82941d1489595683d267d",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 13,
+              "time_s": 2.0
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 2.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 4,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "16f47a5a1ac6fcdaa3fdf3c5a0de5f9331112f074094bab2652a08c7ab903ed1",
+              "before_terminal_sha256": "16f47a5a1ac6fcdaa3fdf3c5a0de5f9331112f074094bab2652a08c7ab903ed1",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 13,
+              "time_s": 3.0
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 3.0
+          }
+        ],
+        "fixture_identity": {
+          "TEST_ONLY_epochs_s": [
+            0.0,
+            0.5,
+            2.0,
+            3.0
+          ],
+          "TEST_ONLY_retention_budgets": null,
+          "TEST_ONLY_setup": {
+            "acquisition_s": 0.5,
+            "retarget_a_s": 0.5,
+            "retarget_b_s": 0.5
+          },
+          "T_s": 4.0,
+          "capacity_bit_s": 20.0,
+          "fixed_edges": [],
+          "geometry_sha256": "303b0f5011d80381caf7910b630c6c4c3d9086872eaa8ecec8ff354c77cfb73e",
+          "initial_state_sha256": "d8197d3b2cc2695391948623fa53e6752b177ecbbbaa7ccb1ed5a5671f7846f8",
+          "nodes": [
+            "S000",
+            "S001",
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S010",
+            "S011",
+            "S012",
+            "S013",
+            "S014",
+            "S015",
+            "S016",
+            "S017",
+            "S018",
+            "S019",
+            "S020",
+            "S021",
+            "S022",
+            "S023",
+            "S024",
+            "S025",
+            "S026",
+            "S027",
+            "S028",
+            "S029",
+            "S030",
+            "S031",
+            "S032",
+            "S033",
+            "S034",
+            "S035",
+            "S036",
+            "S037",
+            "S038",
+            "S039",
+            "S040",
+            "S041",
+            "S042",
+            "S043",
+            "S044",
+            "S045",
+            "S046",
+            "S047",
+            "S048",
+            "S049",
+            "S050",
+            "S051",
+            "S052",
+            "S053",
+            "S054",
+            "S055",
+            "S056",
+            "S057",
+            "S058",
+            "S059",
+            "S060",
+            "S061",
+            "S062",
+            "S063",
+            "S064",
+            "S065",
+            "S066",
+            "S067",
+            "S068",
+            "S069",
+            "S070",
+            "S071",
+            "S072",
+            "S073",
+            "S074",
+            "S075",
+            "S076",
+            "S077",
+            "S078",
+            "S079",
+            "S080",
+            "S081",
+            "S082",
+            "S083",
+            "S084",
+            "S085",
+            "S086",
+            "S087",
+            "S088",
+            "S089",
+            "S090",
+            "S091",
+            "S092",
+            "S093",
+            "S094",
+            "S095",
+            "S096",
+            "S097",
+            "S098",
+            "S099",
+            "S100",
+            "S101",
+            "S102",
+            "S103",
+            "S104",
+            "S105",
+            "S106",
+            "S107",
+            "S108",
+            "S109",
+            "S110",
+            "S111",
+            "S112",
+            "S113",
+            "S114",
+            "S115",
+            "S116",
+            "S117",
+            "S118",
+            "S119",
+            "S120",
+            "S121",
+            "S122",
+            "S123",
+            "S124",
+            "S125",
+            "S126",
+            "S127",
+            "S128",
+            "S129",
+            "S130",
+            "S131",
+            "S132",
+            "S133",
+            "S134",
+            "S135",
+            "S136",
+            "S137",
+            "S138",
+            "S139",
+            "S140",
+            "S141",
+            "S142",
+            "S143",
+            "S144",
+            "S145",
+            "S146",
+            "S147",
+            "S148",
+            "S149",
+            "S150",
+            "S151",
+            "S152",
+            "S153",
+            "S154",
+            "S155",
+            "S156",
+            "S157",
+            "S158",
+            "S159"
+          ],
+          "service_kernel": "ObservedD2Engine",
+          "traffic_trace_sha256": "892ff66b621709403ece24cb9fc8fc97534a257a2d7beeebc8071102dccaa19a"
+        },
+        "metrics": {
+          "DeltaE_LCT_J": 160.0,
+          "E_LCT_J": 6560.0,
+          "J_T_bit_s": 0.0,
+          "K_time_series": [
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 1,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 0.0
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 2.0
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 4.0
+            }
+          ],
+          "N_T_bits": 0.0,
+          "R_del_T": 1.0,
+          "all_offered_business_delivered": true,
+          "delivered_bit_age_integral_bit_s": 0.0,
+          "delivered_bits": 0.0,
+          "evaluation_completed_normally": true,
+          "in_flight_bits": 0.0,
+          "mean_delay_absolute_error_bound_s": null,
+          "mean_delivered_fluid_delay_s": null,
+          "offered_bits": 0.0,
+          "queued_bits": 0.0
+        },
+        "non_HOLD_accepted_count": 1,
+        "release_audit": [
+          {
+            "action_id": 1,
+            "draining_times_s": [
+              0.0
+            ],
+            "link_down": [
+              {
+                "reason": "LINK_DOWN",
+                "time_s": 2.0
+              }
+            ],
+            "reference": {
+              "endpoints": [
+                [
+                  "S000",
+                  "D1"
+                ],
+                [
+                  "S001",
+                  "D1"
+                ]
+              ],
+              "link_id": "L1"
+            },
+            "status": "COMPLETE"
+          }
+        ]
+      },
+      "STATIC_HOLD": {
+        "actions": [
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 1,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "71f05023ff8a4177f30ada3411b098c10988608a6acf7db02b0feb8bc0b6f0e0",
+              "before_terminal_sha256": "71f05023ff8a4177f30ada3411b098c10988608a6acf7db02b0feb8bc0b6f0e0",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 9,
+              "time_s": 0.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 0.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 2,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "6f52f3ce4703f621e8d1911340a2d1b2f3772eb7ff5045acf3d2ff79b71254e0",
+              "before_terminal_sha256": "6f52f3ce4703f621e8d1911340a2d1b2f3772eb7ff5045acf3d2ff79b71254e0",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 9,
+              "time_s": 0.5
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 0.5
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 3,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "87bdcf0cc52b67a09e53cd658bffe38ea923c70ac18326da10639446b6be51fe",
+              "before_terminal_sha256": "87bdcf0cc52b67a09e53cd658bffe38ea923c70ac18326da10639446b6be51fe",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 10,
+              "time_s": 2.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 2.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 4,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "332d2bdf28bb1342a342d3dcf975c38a93b1be725cf27099cc120518efbd3511",
+              "before_terminal_sha256": "332d2bdf28bb1342a342d3dcf975c38a93b1be725cf27099cc120518efbd3511",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 10,
+              "time_s": 3.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 3.0
+          }
+        ],
+        "fixture_identity": {
+          "TEST_ONLY_epochs_s": [
+            0.0,
+            0.5,
+            2.0,
+            3.0
+          ],
+          "TEST_ONLY_retention_budgets": null,
+          "TEST_ONLY_setup": {
+            "acquisition_s": 0.5,
+            "retarget_a_s": 0.5,
+            "retarget_b_s": 0.5
+          },
+          "T_s": 4.0,
+          "capacity_bit_s": 20.0,
+          "fixed_edges": [],
+          "geometry_sha256": "303b0f5011d80381caf7910b630c6c4c3d9086872eaa8ecec8ff354c77cfb73e",
+          "initial_state_sha256": "d8197d3b2cc2695391948623fa53e6752b177ecbbbaa7ccb1ed5a5671f7846f8",
+          "nodes": [
+            "S000",
+            "S001",
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S010",
+            "S011",
+            "S012",
+            "S013",
+            "S014",
+            "S015",
+            "S016",
+            "S017",
+            "S018",
+            "S019",
+            "S020",
+            "S021",
+            "S022",
+            "S023",
+            "S024",
+            "S025",
+            "S026",
+            "S027",
+            "S028",
+            "S029",
+            "S030",
+            "S031",
+            "S032",
+            "S033",
+            "S034",
+            "S035",
+            "S036",
+            "S037",
+            "S038",
+            "S039",
+            "S040",
+            "S041",
+            "S042",
+            "S043",
+            "S044",
+            "S045",
+            "S046",
+            "S047",
+            "S048",
+            "S049",
+            "S050",
+            "S051",
+            "S052",
+            "S053",
+            "S054",
+            "S055",
+            "S056",
+            "S057",
+            "S058",
+            "S059",
+            "S060",
+            "S061",
+            "S062",
+            "S063",
+            "S064",
+            "S065",
+            "S066",
+            "S067",
+            "S068",
+            "S069",
+            "S070",
+            "S071",
+            "S072",
+            "S073",
+            "S074",
+            "S075",
+            "S076",
+            "S077",
+            "S078",
+            "S079",
+            "S080",
+            "S081",
+            "S082",
+            "S083",
+            "S084",
+            "S085",
+            "S086",
+            "S087",
+            "S088",
+            "S089",
+            "S090",
+            "S091",
+            "S092",
+            "S093",
+            "S094",
+            "S095",
+            "S096",
+            "S097",
+            "S098",
+            "S099",
+            "S100",
+            "S101",
+            "S102",
+            "S103",
+            "S104",
+            "S105",
+            "S106",
+            "S107",
+            "S108",
+            "S109",
+            "S110",
+            "S111",
+            "S112",
+            "S113",
+            "S114",
+            "S115",
+            "S116",
+            "S117",
+            "S118",
+            "S119",
+            "S120",
+            "S121",
+            "S122",
+            "S123",
+            "S124",
+            "S125",
+            "S126",
+            "S127",
+            "S128",
+            "S129",
+            "S130",
+            "S131",
+            "S132",
+            "S133",
+            "S134",
+            "S135",
+            "S136",
+            "S137",
+            "S138",
+            "S139",
+            "S140",
+            "S141",
+            "S142",
+            "S143",
+            "S144",
+            "S145",
+            "S146",
+            "S147",
+            "S148",
+            "S149",
+            "S150",
+            "S151",
+            "S152",
+            "S153",
+            "S154",
+            "S155",
+            "S156",
+            "S157",
+            "S158",
+            "S159"
+          ],
+          "service_kernel": "ObservedD2Engine",
+          "traffic_trace_sha256": "892ff66b621709403ece24cb9fc8fc97534a257a2d7beeebc8071102dccaa19a"
+        },
+        "metrics": {
+          "DeltaE_LCT_J": 320.0,
+          "E_LCT_J": 6720.0,
+          "J_T_bit_s": 0.0,
+          "K_time_series": [
+            {
+              "K_active_admissible": 1,
+              "K_admit": 1,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 0.0
+            },
+            {
+              "K_active_admissible": 1,
+              "K_admit": 1,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 2.0
+            },
+            {
+              "K_active_admissible": 1,
+              "K_admit": 1,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 4.0
+            }
+          ],
+          "N_T_bits": 0.0,
+          "R_del_T": 1.0,
+          "all_offered_business_delivered": true,
+          "delivered_bit_age_integral_bit_s": 0.0,
+          "delivered_bits": 0.0,
+          "evaluation_completed_normally": true,
+          "in_flight_bits": 0.0,
+          "mean_delay_absolute_error_bound_s": null,
+          "mean_delivered_fluid_delay_s": null,
+          "offered_bits": 0.0,
+          "queued_bits": 0.0
+        },
+        "non_HOLD_accepted_count": 0,
+        "release_audit": []
+      }
+    },
+    "paired_resource_constrained_REPLACE_BBM": {
+      "REACTIVE_DYNAMIC_K": {
+        "actions": [
+          {
+            "action": {
+              "a": [
+                "S000",
+                "D1"
+              ],
+              "b": [
+                "S002",
+                "D1"
+              ],
+              "kind": "REPLACE",
+              "mode": "BBM",
+              "old": [
+                {
+                  "endpoints": [
+                    [
+                      "S000",
+                      "D1"
+                    ],
+                    [
+                      "S001",
+                      "D1"
+                    ]
+                  ],
+                  "link_id": "L1"
+                }
+              ],
+              "setup": {
+                "acquisition_s": 0.5,
+                "retarget_a_s": 0.5,
+                "retarget_b_s": 0.5
+              }
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "a": [
+                  "S000",
+                  "D1"
+                ],
+                "b": [
+                  "S002",
+                  "D1"
+                ],
+                "kind": "REPLACE",
+                "mode": "BBM",
+                "old": [
+                  {
+                    "endpoints": [
+                      [
+                        "S000",
+                        "D1"
+                      ],
+                      [
+                        "S001",
+                        "D1"
+                      ]
+                    ],
+                    "link_id": "L1"
+                  }
+                ],
+                "setup": {
+                  "acquisition_s": 0.5,
+                  "retarget_a_s": 0.5,
+                  "retarget_b_s": 0.5
+                }
+              },
+              "action_id": 1,
+              "actual_immediate_release_ids": [
+                "L1"
+              ],
+              "after_terminal_sha256": "4983a9ea9457926b7cca00660b5c8a75b11d1217aa7045c94b8ad487f87dff03",
+              "before_terminal_sha256": "a41b5cf4810f9f97e9ef3e130081e44bf7403a3d13ea39a93972377d6a361c56",
+              "geometry": {
+                "accepted": true,
+                "geometry": {
+                  "end_semantics": "terminal_pair_for_expiry",
+                  "ready_time": 2.0,
+                  "remaining_lifetime_s": 100.0,
+                  "usable_lifetime_s": 98.0,
+                  "window": {
+                    "distance_km": null,
+                    "end_s": 100.0,
+                    "left_censored": false,
+                    "parent_end_s": null,
+                    "parent_start_s": null,
+                    "plane_gap": null,
+                    "right_censored": false,
+                    "sat_a": "S000",
+                    "sat_b": "S002",
+                    "start_s": 0.0,
+                    "terminal_a": "D1",
+                    "terminal_b": "D1"
+                  }
+                },
+                "geometry_scope": "ENGINEERING_SYNTHETIC_PRE_FILTERED_WINDOWS",
+                "hardware_calibration": "PARAMETRIC",
+                "live_geometry": {
+                  "accepted": true,
+                  "reason": null
+                },
+                "ready_geometry": {
+                  "accepted": true,
+                  "reason": null
+                },
+                "reason": null
+              },
+              "mode": "BBM",
+              "reason": null,
+              "requested_release_refs": [
+                {
+                  "endpoints": [
+                    [
+                      "S000",
+                      "D1"
+                    ],
+                    [
+                      "S001",
+                      "D1"
+                    ]
+                  ],
+                  "link_id": "L1"
+                }
+              ],
+              "reservation_id": "R2",
+              "terminal_log_start": 9,
+              "time_s": 0.0
+            },
+            "reason": "CURRENT_UNREACHABLE_DEMAND_BECOMES_REACHABLE",
+            "time_s": 0.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 2,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "3891a59a54a1178c098c690ad1d33367da3faf93356703135fd77292e5845a90",
+              "before_terminal_sha256": "3891a59a54a1178c098c690ad1d33367da3faf93356703135fd77292e5845a90",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 14,
+              "time_s": 0.5
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 0.5
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 3,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "0b94c407ae5d66e72dc1b869a470bb614ef3c5fdb5fc103a3b084d00ae87798e",
+              "before_terminal_sha256": "0b94c407ae5d66e72dc1b869a470bb614ef3c5fdb5fc103a3b084d00ae87798e",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 17,
+              "time_s": 1.0
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 1.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 4,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "4030eb15a216daf4c63332f5a05e4b1f5105a6e682b9ce37db614ac041cf352d",
+              "before_terminal_sha256": "4030eb15a216daf4c63332f5a05e4b1f5105a6e682b9ce37db614ac041cf352d",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 20,
+              "time_s": 2.0
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 2.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 5,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "c20b31efd9aab964ef87c2a1d0dc063dc8fe89939fee33d17cefb493623b4873",
+              "before_terminal_sha256": "c20b31efd9aab964ef87c2a1d0dc063dc8fe89939fee33d17cefb493623b4873",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 20,
+              "time_s": 3.0
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 3.0
+          },
+          {
+            "action": {
+              "kind": "DROP",
+              "old": {
+                "endpoints": [
+                  [
+                    "S000",
+                    "D1"
+                  ],
+                  [
+                    "S002",
+                    "D1"
+                  ]
+                ],
+                "link_id": "L2"
+              }
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "DROP",
+                "old": {
+                  "endpoints": [
+                    [
+                      "S000",
+                      "D1"
+                    ],
+                    [
+                      "S002",
+                      "D1"
+                    ]
+                  ],
+                  "link_id": "L2"
+                }
+              },
+              "action_id": 6,
+              "actual_immediate_release_ids": [
+                "L2"
+              ],
+              "after_terminal_sha256": "319006846b244a279c1fd1545027d3cf7def3150dfd5109120bb4a72b7a2a84c",
+              "before_terminal_sha256": "2136064f01955190e80e8303a53434a4f102f3677ef938cf6b3edac91c8c6220",
+              "geometry": null,
+              "mode": "DROP",
+              "reason": null,
+              "requested_release_refs": [
+                {
+                  "endpoints": [
+                    [
+                      "S000",
+                      "D1"
+                    ],
+                    [
+                      "S002",
+                      "D1"
+                    ]
+                  ],
+                  "link_id": "L2"
+                }
+              ],
+              "reservation_id": null,
+              "terminal_log_start": 20,
+              "time_s": 4.0
+            },
+            "reason": "NO_CURRENT_QUEUE_IN_FLIGHT_OR_INJECTION",
+            "time_s": 4.0
+          }
+        ],
+        "fixture_identity": {
+          "TEST_ONLY_epochs_s": [
+            0.0,
+            0.5,
+            1.0,
+            2.0,
+            3.0,
+            4.0
+          ],
+          "TEST_ONLY_retention_budgets": null,
+          "TEST_ONLY_setup": {
+            "acquisition_s": 0.5,
+            "retarget_a_s": 0.5,
+            "retarget_b_s": 0.5
+          },
+          "T_s": 5.0,
+          "capacity_bit_s": 20.0,
+          "fixed_edges": [],
+          "geometry_sha256": "be6d3c460b7fa646cd0cdec842bd499af5e98c5a1a21b1ac206b7b46c1830a2d",
+          "initial_state_sha256": "0a7d4f2f20348c5dbb5e1a2abd970002f11aed0b12867c86e3a335f2f9279564",
+          "nodes": [
+            "S000",
+            "S001",
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S010",
+            "S011",
+            "S012",
+            "S013",
+            "S014",
+            "S015",
+            "S016",
+            "S017",
+            "S018",
+            "S019",
+            "S020",
+            "S021",
+            "S022",
+            "S023",
+            "S024",
+            "S025",
+            "S026",
+            "S027",
+            "S028",
+            "S029",
+            "S030",
+            "S031",
+            "S032",
+            "S033",
+            "S034",
+            "S035",
+            "S036",
+            "S037",
+            "S038",
+            "S039",
+            "S040",
+            "S041",
+            "S042",
+            "S043",
+            "S044",
+            "S045",
+            "S046",
+            "S047",
+            "S048",
+            "S049",
+            "S050",
+            "S051",
+            "S052",
+            "S053",
+            "S054",
+            "S055",
+            "S056",
+            "S057",
+            "S058",
+            "S059",
+            "S060",
+            "S061",
+            "S062",
+            "S063",
+            "S064",
+            "S065",
+            "S066",
+            "S067",
+            "S068",
+            "S069",
+            "S070",
+            "S071",
+            "S072",
+            "S073",
+            "S074",
+            "S075",
+            "S076",
+            "S077",
+            "S078",
+            "S079",
+            "S080",
+            "S081",
+            "S082",
+            "S083",
+            "S084",
+            "S085",
+            "S086",
+            "S087",
+            "S088",
+            "S089",
+            "S090",
+            "S091",
+            "S092",
+            "S093",
+            "S094",
+            "S095",
+            "S096",
+            "S097",
+            "S098",
+            "S099",
+            "S100",
+            "S101",
+            "S102",
+            "S103",
+            "S104",
+            "S105",
+            "S106",
+            "S107",
+            "S108",
+            "S109",
+            "S110",
+            "S111",
+            "S112",
+            "S113",
+            "S114",
+            "S115",
+            "S116",
+            "S117",
+            "S118",
+            "S119",
+            "S120",
+            "S121",
+            "S122",
+            "S123",
+            "S124",
+            "S125",
+            "S126",
+            "S127",
+            "S128",
+            "S129",
+            "S130",
+            "S131",
+            "S132",
+            "S133",
+            "S134",
+            "S135",
+            "S136",
+            "S137",
+            "S138",
+            "S139",
+            "S140",
+            "S141",
+            "S142",
+            "S143",
+            "S144",
+            "S145",
+            "S146",
+            "S147",
+            "S148",
+            "S149",
+            "S150",
+            "S151",
+            "S152",
+            "S153",
+            "S154",
+            "S155",
+            "S156",
+            "S157",
+            "S158",
+            "S159"
+          ],
+          "service_kernel": "ObservedD2Engine",
+          "traffic_trace_sha256": "26a331362f852d3fdd9a9c96f9e0e28a93a4d2f654c389890ba35eaed54b548e"
+        },
+        "metrics": {
+          "DeltaE_LCT_J": 345.0,
+          "E_LCT_J": 8345.0,
+          "J_T_bit_s": 27.5,
+          "K_time_series": [
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 1,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 1,
+              "setup_connection_count": 1,
+              "setup_reserved_terminal_count": 2,
+              "setup_terminal_count": 1,
+              "t_s": 0.0
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 1,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 1,
+              "setup_connection_count": 1,
+              "setup_reserved_terminal_count": 2,
+              "setup_terminal_count": 1,
+              "t_s": 0.5
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 2,
+              "setup_connection_count": 1,
+              "setup_reserved_terminal_count": 2,
+              "setup_terminal_count": 2,
+              "t_s": 1.0
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 2,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 1,
+              "setup_reserved_terminal_count": 2,
+              "setup_terminal_count": 2,
+              "t_s": 1.5
+            },
+            {
+              "K_active_admissible": 1,
+              "K_admit": 1,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 2.0
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 4.0
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 5.0
+            }
+          ],
+          "N_T_bits": 0.0,
+          "R_del_T": 1.0,
+          "all_offered_business_delivered": true,
+          "delivered_bit_age_integral_bit_s": 27.5,
+          "delivered_bits": 10.0,
+          "evaluation_completed_normally": true,
+          "in_flight_bits": 0.0,
+          "mean_delay_absolute_error_bound_s": 3.9968028886505646e-16,
+          "mean_delivered_fluid_delay_s": 2.75,
+          "offered_bits": 10.0,
+          "queued_bits": 0.0
+        },
+        "non_HOLD_accepted_count": 2,
+        "release_audit": [
+          {
+            "action_id": 1,
+            "draining_times_s": [
+              0.0
+            ],
+            "link_down": [
+              {
+                "reason": "LINK_DOWN",
+                "time_s": 1.0
+              }
+            ],
+            "reference": {
+              "endpoints": [
+                [
+                  "S000",
+                  "D1"
+                ],
+                [
+                  "S001",
+                  "D1"
+                ]
+              ],
+              "link_id": "L1"
+            },
+            "status": "COMPLETE"
+          },
+          {
+            "action_id": 6,
+            "draining_times_s": [
+              4.0
+            ],
+            "link_down": [
+              {
+                "reason": "LINK_DOWN",
+                "time_s": 4.0
+              }
+            ],
+            "reference": {
+              "endpoints": [
+                [
+                  "S000",
+                  "D1"
+                ],
+                [
+                  "S002",
+                  "D1"
+                ]
+              ],
+              "link_id": "L2"
+            },
+            "status": "COMPLETE"
+          }
+        ]
+      },
+      "STATIC_HOLD": {
+        "actions": [
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 1,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "a41b5cf4810f9f97e9ef3e130081e44bf7403a3d13ea39a93972377d6a361c56",
+              "before_terminal_sha256": "a41b5cf4810f9f97e9ef3e130081e44bf7403a3d13ea39a93972377d6a361c56",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 9,
+              "time_s": 0.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 0.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 2,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "72620066e607d88fe5d2c826c232ae9f9b7764da62556ee513ad13ca6aefbdb4",
+              "before_terminal_sha256": "72620066e607d88fe5d2c826c232ae9f9b7764da62556ee513ad13ca6aefbdb4",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 9,
+              "time_s": 0.5
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 0.5
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 3,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "200febbe94c86035852e8c5bc6e245c16c38996402c61704fb650230d93b5368",
+              "before_terminal_sha256": "200febbe94c86035852e8c5bc6e245c16c38996402c61704fb650230d93b5368",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 10,
+              "time_s": 1.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 1.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 4,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "9b012fa6b028d8f630a1b39b1f53653ff428aaf45e8eae0097762bee63bbf1d7",
+              "before_terminal_sha256": "9b012fa6b028d8f630a1b39b1f53653ff428aaf45e8eae0097762bee63bbf1d7",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 10,
+              "time_s": 2.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 2.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 5,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "ffdce0d85912d9a64dffb10668e9c119b3dc5b2a09400f7390aa23b4802743ba",
+              "before_terminal_sha256": "ffdce0d85912d9a64dffb10668e9c119b3dc5b2a09400f7390aa23b4802743ba",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 10,
+              "time_s": 3.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 3.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 6,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "a93c9398eab7e3b6bf8240746b0efcb22998e14f01843f7625316a4b4ea46486",
+              "before_terminal_sha256": "a93c9398eab7e3b6bf8240746b0efcb22998e14f01843f7625316a4b4ea46486",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 10,
+              "time_s": 4.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 4.0
+          }
+        ],
+        "fixture_identity": {
+          "TEST_ONLY_epochs_s": [
+            0.0,
+            0.5,
+            1.0,
+            2.0,
+            3.0,
+            4.0
+          ],
+          "TEST_ONLY_retention_budgets": null,
+          "TEST_ONLY_setup": {
+            "acquisition_s": 0.5,
+            "retarget_a_s": 0.5,
+            "retarget_b_s": 0.5
+          },
+          "T_s": 5.0,
+          "capacity_bit_s": 20.0,
+          "fixed_edges": [],
+          "geometry_sha256": "be6d3c460b7fa646cd0cdec842bd499af5e98c5a1a21b1ac206b7b46c1830a2d",
+          "initial_state_sha256": "0a7d4f2f20348c5dbb5e1a2abd970002f11aed0b12867c86e3a335f2f9279564",
+          "nodes": [
+            "S000",
+            "S001",
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S010",
+            "S011",
+            "S012",
+            "S013",
+            "S014",
+            "S015",
+            "S016",
+            "S017",
+            "S018",
+            "S019",
+            "S020",
+            "S021",
+            "S022",
+            "S023",
+            "S024",
+            "S025",
+            "S026",
+            "S027",
+            "S028",
+            "S029",
+            "S030",
+            "S031",
+            "S032",
+            "S033",
+            "S034",
+            "S035",
+            "S036",
+            "S037",
+            "S038",
+            "S039",
+            "S040",
+            "S041",
+            "S042",
+            "S043",
+            "S044",
+            "S045",
+            "S046",
+            "S047",
+            "S048",
+            "S049",
+            "S050",
+            "S051",
+            "S052",
+            "S053",
+            "S054",
+            "S055",
+            "S056",
+            "S057",
+            "S058",
+            "S059",
+            "S060",
+            "S061",
+            "S062",
+            "S063",
+            "S064",
+            "S065",
+            "S066",
+            "S067",
+            "S068",
+            "S069",
+            "S070",
+            "S071",
+            "S072",
+            "S073",
+            "S074",
+            "S075",
+            "S076",
+            "S077",
+            "S078",
+            "S079",
+            "S080",
+            "S081",
+            "S082",
+            "S083",
+            "S084",
+            "S085",
+            "S086",
+            "S087",
+            "S088",
+            "S089",
+            "S090",
+            "S091",
+            "S092",
+            "S093",
+            "S094",
+            "S095",
+            "S096",
+            "S097",
+            "S098",
+            "S099",
+            "S100",
+            "S101",
+            "S102",
+            "S103",
+            "S104",
+            "S105",
+            "S106",
+            "S107",
+            "S108",
+            "S109",
+            "S110",
+            "S111",
+            "S112",
+            "S113",
+            "S114",
+            "S115",
+            "S116",
+            "S117",
+            "S118",
+            "S119",
+            "S120",
+            "S121",
+            "S122",
+            "S123",
+            "S124",
+            "S125",
+            "S126",
+            "S127",
+            "S128",
+            "S129",
+            "S130",
+            "S131",
+            "S132",
+            "S133",
+            "S134",
+            "S135",
+            "S136",
+            "S137",
+            "S138",
+            "S139",
+            "S140",
+            "S141",
+            "S142",
+            "S143",
+            "S144",
+            "S145",
+            "S146",
+            "S147",
+            "S148",
+            "S149",
+            "S150",
+            "S151",
+            "S152",
+            "S153",
+            "S154",
+            "S155",
+            "S156",
+            "S157",
+            "S158",
+            "S159"
+          ],
+          "service_kernel": "ObservedD2Engine",
+          "traffic_trace_sha256": "26a331362f852d3fdd9a9c96f9e0e28a93a4d2f654c389890ba35eaed54b548e"
+        },
+        "metrics": {
+          "DeltaE_LCT_J": 400.0,
+          "E_LCT_J": 8400.0,
+          "J_T_bit_s": 45.0,
+          "K_time_series": [
+            {
+              "K_active_admissible": 1,
+              "K_admit": 1,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 0.0
+            },
+            {
+              "K_active_admissible": 1,
+              "K_admit": 1,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 1.0
+            },
+            {
+              "K_active_admissible": 1,
+              "K_admit": 1,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 5.0
+            }
+          ],
+          "N_T_bits": 10.0,
+          "R_del_T": 0.0,
+          "all_offered_business_delivered": false,
+          "delivered_bit_age_integral_bit_s": 0.0,
+          "delivered_bits": 0.0,
+          "evaluation_completed_normally": true,
+          "in_flight_bits": 0.0,
+          "mean_delay_absolute_error_bound_s": null,
+          "mean_delivered_fluid_delay_s": null,
+          "offered_bits": 10.0,
+          "queued_bits": 10.0
+        },
+        "non_HOLD_accepted_count": 0,
+        "release_audit": []
+      }
+    },
+    "real160_natural_SGP4": {
+      "REACTIVE_DYNAMIC_K": {
+        "actions": [
+          {
+            "action": {
+              "a": [
+                "X0_1",
+                "D2"
+              ],
+              "b": [
+                "X1_1",
+                "D1"
+              ],
+              "kind": "ADD",
+              "setup": {
+                "acquisition_s": 0.2,
+                "retarget_a_s": 0.2,
+                "retarget_b_s": 0.2
+              }
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "a": [
+                  "X0_1",
+                  "D2"
+                ],
+                "b": [
+                  "X1_1",
+                  "D1"
+                ],
+                "kind": "ADD",
+                "setup": {
+                  "acquisition_s": 0.2,
+                  "retarget_a_s": 0.2,
+                  "retarget_b_s": 0.2
+                }
+              },
+              "action_id": 1,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "f31d82abb93f7e0dbe0d77686ea2f6a90f9dddd9ec91bac68f38142e983965b3",
+              "before_terminal_sha256": "5a3b04b8c4f58c63531bfcd10fe29d17aeebb36eb9be2768db8fddba1fa6d427",
+              "geometry": {
+                "accepted": true,
+                "geometry": {
+                  "end_semantics": "prediction_horizon",
+                  "ready_time": 0.4,
+                  "remaining_lifetime_s": 600.0,
+                  "usable_lifetime_s": 599.6,
+                  "window": {
+                    "distance_km": 1254.5578306583075,
+                    "end_s": 600.0,
+                    "left_censored": true,
+                    "parent_end_s": 600.0,
+                    "parent_start_s": 0.0,
+                    "plane_gap": 1,
+                    "right_censored": true,
+                    "sat_a": "X0_1",
+                    "sat_b": "X1_1",
+                    "start_s": 0.0,
+                    "terminal_a": "D2",
+                    "terminal_b": "D1"
+                  }
+                },
+                "geometry_scope": "FROZEN_SYNTHETIC_TLE_REAL_SGP4_GEOMETRY",
+                "hardware_calibration": "PARAMETRIC",
+                "live_geometry": {
+                  "accepted": true,
+                  "for_details": {
+                    "feasible": true,
+                    "local_angle_deg": 9.316558776550545,
+                    "local_boresight_teme": [
+                      -0.005570997342717726,
+                      0.9961819622834718,
+                      -0.08712325757028956
+                    ],
+                    "local_half_angle_deg": 90.0,
+                    "reason": null,
+                    "remote_angle_deg": 9.279966805736105,
+                    "remote_boresight_teme": [
+                      0.1784672100159002,
+                      -0.980041934499682,
+                      0.0875629006558238
+                    ],
+                    "remote_half_angle_deg": 90.0
+                  },
+                  "los_margin_km": 1170.8404454501742,
+                  "reason": null
+                },
+                "ready_geometry": {
+                  "accepted": true,
+                  "for_details": {
+                    "feasible": true,
+                    "local_angle_deg": 9.318172882083417,
+                    "local_boresight_teme": [
+                      -0.005570997374395156,
+                      0.9961819622650137,
+                      -0.08712325777931722
+                    ],
+                    "local_half_angle_deg": 90.0,
+                    "reason": null,
+                    "remote_angle_deg": 9.278368856686818,
+                    "remote_boresight_teme": [
+                      0.17846721002418295,
+                      -0.9800419344198277,
+                      0.0875629015327059
+                    ],
+                    "remote_half_angle_deg": 90.0
+                  },
+                  "los_margin_km": 1170.8405464443367,
+                  "reason": null
+                },
+                "reason": null
+              },
+              "mode": "ADD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": "R1",
+              "terminal_log_start": 0,
+              "time_s": 0.0
+            },
+            "reason": "CURRENT_UNREACHABLE_DEMAND_BECOMES_REACHABLE",
+            "time_s": 0.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 2,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "6c864e79a219454a4429567408666b393e54039f00f72851cfa7bf577b096fea",
+              "before_terminal_sha256": "6c864e79a219454a4429567408666b393e54039f00f72851cfa7bf577b096fea",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 7,
+              "time_s": 0.2
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 0.2
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 3,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "c24f66b3a4de730e724ad15382a19e4f14830342bb27715ac238d135e0e5781a",
+              "before_terminal_sha256": "c24f66b3a4de730e724ad15382a19e4f14830342bb27715ac238d135e0e5781a",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 8,
+              "time_s": 0.4
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 0.4
+          },
+          {
+            "action": {
+              "kind": "DROP",
+              "old": {
+                "endpoints": [
+                  [
+                    "X0_1",
+                    "D2"
+                  ],
+                  [
+                    "X1_1",
+                    "D1"
+                  ]
+                ],
+                "link_id": "L1"
+              }
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "DROP",
+                "old": {
+                  "endpoints": [
+                    [
+                      "X0_1",
+                      "D2"
+                    ],
+                    [
+                      "X1_1",
+                      "D1"
+                    ]
+                  ],
+                  "link_id": "L1"
+                }
+              },
+              "action_id": 4,
+              "actual_immediate_release_ids": [
+                "L1"
+              ],
+              "after_terminal_sha256": "2181ba0e3ef159b925b261cf06ffca2319c26a457c61d8064b8303119268128e",
+              "before_terminal_sha256": "2e9e24caba0e606a56971531d3bae546c520bbd7d4d090ba7eb7cd7f9ebd4166",
+              "geometry": null,
+              "mode": "DROP",
+              "reason": null,
+              "requested_release_refs": [
+                {
+                  "endpoints": [
+                    [
+                      "X0_1",
+                      "D2"
+                    ],
+                    [
+                      "X1_1",
+                      "D1"
+                    ]
+                  ],
+                  "link_id": "L1"
+                }
+              ],
+              "reservation_id": null,
+              "terminal_log_start": 8,
+              "time_s": 1.25
+            },
+            "reason": "NO_CURRENT_QUEUE_IN_FLIGHT_OR_INJECTION",
+            "time_s": 1.25
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 5,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "a6d9371a6353a5cce93443c262c05879cb51b7c5f97a05227393c46190119771",
+              "before_terminal_sha256": "a6d9371a6353a5cce93443c262c05879cb51b7c5f97a05227393c46190119771",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 11,
+              "time_s": 2.0
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 2.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 6,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "fb0897ced35d4152b0e60853526d7a220e681f4ff0fe6cd25a9171cdcc911376",
+              "before_terminal_sha256": "fb0897ced35d4152b0e60853526d7a220e681f4ff0fe6cd25a9171cdcc911376",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 11,
+              "time_s": 3.0
+            },
+            "reason": "NO_RETAINED_ACTION_WITH_CURRENT_REACHABILITY_BENEFIT_OR_SAFE_IDLE_DROP",
+            "time_s": 3.0
+          }
+        ],
+        "fixture_identity": {
+          "TEST_ONLY_epochs_s": [
+            0.0,
+            0.2,
+            0.4,
+            1.25,
+            2.0,
+            3.0
+          ],
+          "TEST_ONLY_retention_budgets": null,
+          "TEST_ONLY_setup": {
+            "acquisition_s": 0.2,
+            "retarget_a_s": 0.2,
+            "retarget_b_s": 0.2
+          },
+          "T_s": 4.0,
+          "capacity_bit_s": 10.0,
+          "fixed_edges": [
+            [
+              "X0_1",
+              "X0_2"
+            ],
+            [
+              "X0_1",
+              "X0_40"
+            ],
+            [
+              "X0_10",
+              "X0_11"
+            ],
+            [
+              "X0_10",
+              "X0_9"
+            ],
+            [
+              "X0_11",
+              "X0_12"
+            ],
+            [
+              "X0_12",
+              "X0_13"
+            ],
+            [
+              "X0_13",
+              "X0_14"
+            ],
+            [
+              "X0_14",
+              "X0_15"
+            ],
+            [
+              "X0_15",
+              "X0_16"
+            ],
+            [
+              "X0_16",
+              "X0_17"
+            ],
+            [
+              "X0_17",
+              "X0_18"
+            ],
+            [
+              "X0_18",
+              "X0_19"
+            ],
+            [
+              "X0_19",
+              "X0_20"
+            ],
+            [
+              "X0_2",
+              "X0_3"
+            ],
+            [
+              "X0_20",
+              "X0_21"
+            ],
+            [
+              "X0_21",
+              "X0_22"
+            ],
+            [
+              "X0_22",
+              "X0_23"
+            ],
+            [
+              "X0_23",
+              "X0_24"
+            ],
+            [
+              "X0_24",
+              "X0_25"
+            ],
+            [
+              "X0_25",
+              "X0_26"
+            ],
+            [
+              "X0_26",
+              "X0_27"
+            ],
+            [
+              "X0_27",
+              "X0_28"
+            ],
+            [
+              "X0_28",
+              "X0_29"
+            ],
+            [
+              "X0_29",
+              "X0_30"
+            ],
+            [
+              "X0_3",
+              "X0_4"
+            ],
+            [
+              "X0_30",
+              "X0_31"
+            ],
+            [
+              "X0_31",
+              "X0_32"
+            ],
+            [
+              "X0_32",
+              "X0_33"
+            ],
+            [
+              "X0_33",
+              "X0_34"
+            ],
+            [
+              "X0_34",
+              "X0_35"
+            ],
+            [
+              "X0_35",
+              "X0_36"
+            ],
+            [
+              "X0_36",
+              "X0_37"
+            ],
+            [
+              "X0_37",
+              "X0_38"
+            ],
+            [
+              "X0_38",
+              "X0_39"
+            ],
+            [
+              "X0_39",
+              "X0_40"
+            ],
+            [
+              "X0_4",
+              "X0_5"
+            ],
+            [
+              "X0_5",
+              "X0_6"
+            ],
+            [
+              "X0_6",
+              "X0_7"
+            ],
+            [
+              "X0_7",
+              "X0_8"
+            ],
+            [
+              "X0_8",
+              "X0_9"
+            ],
+            [
+              "X1_1",
+              "X1_2"
+            ],
+            [
+              "X1_1",
+              "X1_40"
+            ],
+            [
+              "X1_10",
+              "X1_11"
+            ],
+            [
+              "X1_10",
+              "X1_9"
+            ],
+            [
+              "X1_11",
+              "X1_12"
+            ],
+            [
+              "X1_12",
+              "X1_13"
+            ],
+            [
+              "X1_13",
+              "X1_14"
+            ],
+            [
+              "X1_14",
+              "X1_15"
+            ],
+            [
+              "X1_15",
+              "X1_16"
+            ],
+            [
+              "X1_16",
+              "X1_17"
+            ],
+            [
+              "X1_17",
+              "X1_18"
+            ],
+            [
+              "X1_18",
+              "X1_19"
+            ],
+            [
+              "X1_19",
+              "X1_20"
+            ],
+            [
+              "X1_2",
+              "X1_3"
+            ],
+            [
+              "X1_20",
+              "X1_21"
+            ],
+            [
+              "X1_21",
+              "X1_22"
+            ],
+            [
+              "X1_22",
+              "X1_23"
+            ],
+            [
+              "X1_23",
+              "X1_24"
+            ],
+            [
+              "X1_24",
+              "X1_25"
+            ],
+            [
+              "X1_25",
+              "X1_26"
+            ],
+            [
+              "X1_26",
+              "X1_27"
+            ],
+            [
+              "X1_27",
+              "X1_28"
+            ],
+            [
+              "X1_28",
+              "X1_29"
+            ],
+            [
+              "X1_29",
+              "X1_30"
+            ],
+            [
+              "X1_3",
+              "X1_4"
+            ],
+            [
+              "X1_30",
+              "X1_31"
+            ],
+            [
+              "X1_31",
+              "X1_32"
+            ],
+            [
+              "X1_32",
+              "X1_33"
+            ],
+            [
+              "X1_33",
+              "X1_34"
+            ],
+            [
+              "X1_34",
+              "X1_35"
+            ],
+            [
+              "X1_35",
+              "X1_36"
+            ],
+            [
+              "X1_36",
+              "X1_37"
+            ],
+            [
+              "X1_37",
+              "X1_38"
+            ],
+            [
+              "X1_38",
+              "X1_39"
+            ],
+            [
+              "X1_39",
+              "X1_40"
+            ],
+            [
+              "X1_4",
+              "X1_5"
+            ],
+            [
+              "X1_5",
+              "X1_6"
+            ],
+            [
+              "X1_6",
+              "X1_7"
+            ],
+            [
+              "X1_7",
+              "X1_8"
+            ],
+            [
+              "X1_8",
+              "X1_9"
+            ],
+            [
+              "X2_1",
+              "X2_2"
+            ],
+            [
+              "X2_1",
+              "X2_40"
+            ],
+            [
+              "X2_10",
+              "X2_11"
+            ],
+            [
+              "X2_10",
+              "X2_9"
+            ],
+            [
+              "X2_11",
+              "X2_12"
+            ],
+            [
+              "X2_12",
+              "X2_13"
+            ],
+            [
+              "X2_13",
+              "X2_14"
+            ],
+            [
+              "X2_14",
+              "X2_15"
+            ],
+            [
+              "X2_15",
+              "X2_16"
+            ],
+            [
+              "X2_16",
+              "X2_17"
+            ],
+            [
+              "X2_17",
+              "X2_18"
+            ],
+            [
+              "X2_18",
+              "X2_19"
+            ],
+            [
+              "X2_19",
+              "X2_20"
+            ],
+            [
+              "X2_2",
+              "X2_3"
+            ],
+            [
+              "X2_20",
+              "X2_21"
+            ],
+            [
+              "X2_21",
+              "X2_22"
+            ],
+            [
+              "X2_22",
+              "X2_23"
+            ],
+            [
+              "X2_23",
+              "X2_24"
+            ],
+            [
+              "X2_24",
+              "X2_25"
+            ],
+            [
+              "X2_25",
+              "X2_26"
+            ],
+            [
+              "X2_26",
+              "X2_27"
+            ],
+            [
+              "X2_27",
+              "X2_28"
+            ],
+            [
+              "X2_28",
+              "X2_29"
+            ],
+            [
+              "X2_29",
+              "X2_30"
+            ],
+            [
+              "X2_3",
+              "X2_4"
+            ],
+            [
+              "X2_30",
+              "X2_31"
+            ],
+            [
+              "X2_31",
+              "X2_32"
+            ],
+            [
+              "X2_32",
+              "X2_33"
+            ],
+            [
+              "X2_33",
+              "X2_34"
+            ],
+            [
+              "X2_34",
+              "X2_35"
+            ],
+            [
+              "X2_35",
+              "X2_36"
+            ],
+            [
+              "X2_36",
+              "X2_37"
+            ],
+            [
+              "X2_37",
+              "X2_38"
+            ],
+            [
+              "X2_38",
+              "X2_39"
+            ],
+            [
+              "X2_39",
+              "X2_40"
+            ],
+            [
+              "X2_4",
+              "X2_5"
+            ],
+            [
+              "X2_5",
+              "X2_6"
+            ],
+            [
+              "X2_6",
+              "X2_7"
+            ],
+            [
+              "X2_7",
+              "X2_8"
+            ],
+            [
+              "X2_8",
+              "X2_9"
+            ],
+            [
+              "X3_1",
+              "X3_2"
+            ],
+            [
+              "X3_1",
+              "X3_40"
+            ],
+            [
+              "X3_10",
+              "X3_11"
+            ],
+            [
+              "X3_10",
+              "X3_9"
+            ],
+            [
+              "X3_11",
+              "X3_12"
+            ],
+            [
+              "X3_12",
+              "X3_13"
+            ],
+            [
+              "X3_13",
+              "X3_14"
+            ],
+            [
+              "X3_14",
+              "X3_15"
+            ],
+            [
+              "X3_15",
+              "X3_16"
+            ],
+            [
+              "X3_16",
+              "X3_17"
+            ],
+            [
+              "X3_17",
+              "X3_18"
+            ],
+            [
+              "X3_18",
+              "X3_19"
+            ],
+            [
+              "X3_19",
+              "X3_20"
+            ],
+            [
+              "X3_2",
+              "X3_3"
+            ],
+            [
+              "X3_20",
+              "X3_21"
+            ],
+            [
+              "X3_21",
+              "X3_22"
+            ],
+            [
+              "X3_22",
+              "X3_23"
+            ],
+            [
+              "X3_23",
+              "X3_24"
+            ],
+            [
+              "X3_24",
+              "X3_25"
+            ],
+            [
+              "X3_25",
+              "X3_26"
+            ],
+            [
+              "X3_26",
+              "X3_27"
+            ],
+            [
+              "X3_27",
+              "X3_28"
+            ],
+            [
+              "X3_28",
+              "X3_29"
+            ],
+            [
+              "X3_29",
+              "X3_30"
+            ],
+            [
+              "X3_3",
+              "X3_4"
+            ],
+            [
+              "X3_30",
+              "X3_31"
+            ],
+            [
+              "X3_31",
+              "X3_32"
+            ],
+            [
+              "X3_32",
+              "X3_33"
+            ],
+            [
+              "X3_33",
+              "X3_34"
+            ],
+            [
+              "X3_34",
+              "X3_35"
+            ],
+            [
+              "X3_35",
+              "X3_36"
+            ],
+            [
+              "X3_36",
+              "X3_37"
+            ],
+            [
+              "X3_37",
+              "X3_38"
+            ],
+            [
+              "X3_38",
+              "X3_39"
+            ],
+            [
+              "X3_39",
+              "X3_40"
+            ],
+            [
+              "X3_4",
+              "X3_5"
+            ],
+            [
+              "X3_5",
+              "X3_6"
+            ],
+            [
+              "X3_6",
+              "X3_7"
+            ],
+            [
+              "X3_7",
+              "X3_8"
+            ],
+            [
+              "X3_8",
+              "X3_9"
+            ]
+          ],
+          "geometry_sha256": "bfc8ef30a9eaa0b3ed617183611bf55d6344c569351dceb325aeef627287e04a",
+          "initial_state_sha256": "55f36b8ed9fb5668b2b8d70da194da9aa36b9b4a41baf9ae63c1421db0f78216",
+          "nodes": [
+            "X0_1",
+            "X0_10",
+            "X0_11",
+            "X0_12",
+            "X0_13",
+            "X0_14",
+            "X0_15",
+            "X0_16",
+            "X0_17",
+            "X0_18",
+            "X0_19",
+            "X0_2",
+            "X0_20",
+            "X0_21",
+            "X0_22",
+            "X0_23",
+            "X0_24",
+            "X0_25",
+            "X0_26",
+            "X0_27",
+            "X0_28",
+            "X0_29",
+            "X0_3",
+            "X0_30",
+            "X0_31",
+            "X0_32",
+            "X0_33",
+            "X0_34",
+            "X0_35",
+            "X0_36",
+            "X0_37",
+            "X0_38",
+            "X0_39",
+            "X0_4",
+            "X0_40",
+            "X0_5",
+            "X0_6",
+            "X0_7",
+            "X0_8",
+            "X0_9",
+            "X1_1",
+            "X1_10",
+            "X1_11",
+            "X1_12",
+            "X1_13",
+            "X1_14",
+            "X1_15",
+            "X1_16",
+            "X1_17",
+            "X1_18",
+            "X1_19",
+            "X1_2",
+            "X1_20",
+            "X1_21",
+            "X1_22",
+            "X1_23",
+            "X1_24",
+            "X1_25",
+            "X1_26",
+            "X1_27",
+            "X1_28",
+            "X1_29",
+            "X1_3",
+            "X1_30",
+            "X1_31",
+            "X1_32",
+            "X1_33",
+            "X1_34",
+            "X1_35",
+            "X1_36",
+            "X1_37",
+            "X1_38",
+            "X1_39",
+            "X1_4",
+            "X1_40",
+            "X1_5",
+            "X1_6",
+            "X1_7",
+            "X1_8",
+            "X1_9",
+            "X2_1",
+            "X2_10",
+            "X2_11",
+            "X2_12",
+            "X2_13",
+            "X2_14",
+            "X2_15",
+            "X2_16",
+            "X2_17",
+            "X2_18",
+            "X2_19",
+            "X2_2",
+            "X2_20",
+            "X2_21",
+            "X2_22",
+            "X2_23",
+            "X2_24",
+            "X2_25",
+            "X2_26",
+            "X2_27",
+            "X2_28",
+            "X2_29",
+            "X2_3",
+            "X2_30",
+            "X2_31",
+            "X2_32",
+            "X2_33",
+            "X2_34",
+            "X2_35",
+            "X2_36",
+            "X2_37",
+            "X2_38",
+            "X2_39",
+            "X2_4",
+            "X2_40",
+            "X2_5",
+            "X2_6",
+            "X2_7",
+            "X2_8",
+            "X2_9",
+            "X3_1",
+            "X3_10",
+            "X3_11",
+            "X3_12",
+            "X3_13",
+            "X3_14",
+            "X3_15",
+            "X3_16",
+            "X3_17",
+            "X3_18",
+            "X3_19",
+            "X3_2",
+            "X3_20",
+            "X3_21",
+            "X3_22",
+            "X3_23",
+            "X3_24",
+            "X3_25",
+            "X3_26",
+            "X3_27",
+            "X3_28",
+            "X3_29",
+            "X3_3",
+            "X3_30",
+            "X3_31",
+            "X3_32",
+            "X3_33",
+            "X3_34",
+            "X3_35",
+            "X3_36",
+            "X3_37",
+            "X3_38",
+            "X3_39",
+            "X3_4",
+            "X3_40",
+            "X3_5",
+            "X3_6",
+            "X3_7",
+            "X3_8",
+            "X3_9"
+          ],
+          "service_kernel": "ObservedD2Engine",
+          "traffic_trace_sha256": "8e7b653bbdedf5270e8a302af9bcc16cd684b9216d6e55b8d1c573d3fd89bbe2"
+        },
+        "metrics": {
+          "DeltaE_LCT_J": 96.0,
+          "E_LCT_J": 6496.0,
+          "J_T_bit_s": 0.09331964311338137,
+          "K_time_series": [
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 2,
+              "setup_connection_count": 1,
+              "setup_reserved_terminal_count": 2,
+              "setup_terminal_count": 2,
+              "t_s": 0.0
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 2,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 1,
+              "setup_reserved_terminal_count": 2,
+              "setup_terminal_count": 2,
+              "t_s": 0.2
+            },
+            {
+              "K_active_admissible": 1,
+              "K_admit": 1,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 0.4
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 1.25
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 4.0
+            }
+          ],
+          "N_T_bits": 0.0,
+          "R_del_T": 1.0,
+          "all_offered_business_delivered": true,
+          "delivered_bit_age_integral_bit_s": 0.09331964311338135,
+          "delivered_bits": 1.0,
+          "evaluation_completed_normally": true,
+          "in_flight_bits": 0.0,
+          "mean_delay_absolute_error_bound_s": 1.7904567478062596e-15,
+          "mean_delivered_fluid_delay_s": 0.09331964311338135,
+          "offered_bits": 1.0,
+          "queued_bits": 0.0
+        },
+        "non_HOLD_accepted_count": 2,
+        "release_audit": [
+          {
+            "action_id": 4,
+            "draining_times_s": [
+              1.25
+            ],
+            "link_down": [
+              {
+                "reason": "LINK_DOWN",
+                "time_s": 1.25
+              }
+            ],
+            "reference": {
+              "endpoints": [
+                [
+                  "X0_1",
+                  "D2"
+                ],
+                [
+                  "X1_1",
+                  "D1"
+                ]
+              ],
+              "link_id": "L1"
+            },
+            "status": "COMPLETE"
+          }
+        ]
+      },
+      "STATIC_HOLD": {
+        "actions": [
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 1,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "5a3b04b8c4f58c63531bfcd10fe29d17aeebb36eb9be2768db8fddba1fa6d427",
+              "before_terminal_sha256": "5a3b04b8c4f58c63531bfcd10fe29d17aeebb36eb9be2768db8fddba1fa6d427",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 0,
+              "time_s": 0.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 0.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 2,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "1dd5c6fdac681f8a1c822e13311aae400b9e0bd211fafd08e703dcbac332cabe",
+              "before_terminal_sha256": "1dd5c6fdac681f8a1c822e13311aae400b9e0bd211fafd08e703dcbac332cabe",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 0,
+              "time_s": 0.2
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 0.2
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 3,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "ef646a9dbcf9d0933761ae2089ac56f6b90d99f4e6f645cce4eaa30f2751ed36",
+              "before_terminal_sha256": "ef646a9dbcf9d0933761ae2089ac56f6b90d99f4e6f645cce4eaa30f2751ed36",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 0,
+              "time_s": 0.4
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 0.4
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 4,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "fdf2421cafad21269477b57c5bfbb80b68cb9433a668c01655059fe3bf79a182",
+              "before_terminal_sha256": "fdf2421cafad21269477b57c5bfbb80b68cb9433a668c01655059fe3bf79a182",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 0,
+              "time_s": 1.25
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 1.25
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 5,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "41b2f949596e0a24406057499f04a2c84fadafe0c254e122c750a156db2a986e",
+              "before_terminal_sha256": "41b2f949596e0a24406057499f04a2c84fadafe0c254e122c750a156db2a986e",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 0,
+              "time_s": 2.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 2.0
+          },
+          {
+            "action": {
+              "kind": "HOLD"
+            },
+            "gate_receipt": {
+              "accepted": true,
+              "action": {
+                "kind": "HOLD"
+              },
+              "action_id": 6,
+              "actual_immediate_release_ids": [],
+              "after_terminal_sha256": "83c306fa701d2bd71295190ea8bd157fa03a64dfe8c18f74d10ec21b3ba9eec3",
+              "before_terminal_sha256": "83c306fa701d2bd71295190ea8bd157fa03a64dfe8c18f74d10ec21b3ba9eec3",
+              "geometry": null,
+              "mode": "HOLD",
+              "reason": null,
+              "requested_release_refs": [],
+              "reservation_id": null,
+              "terminal_log_start": 0,
+              "time_s": 3.0
+            },
+            "reason": "NO_PROACTIVE_TOPOLOGY_ACTION",
+            "time_s": 3.0
+          }
+        ],
+        "fixture_identity": {
+          "TEST_ONLY_epochs_s": [
+            0.0,
+            0.2,
+            0.4,
+            1.25,
+            2.0,
+            3.0
+          ],
+          "TEST_ONLY_retention_budgets": null,
+          "TEST_ONLY_setup": {
+            "acquisition_s": 0.2,
+            "retarget_a_s": 0.2,
+            "retarget_b_s": 0.2
+          },
+          "T_s": 4.0,
+          "capacity_bit_s": 10.0,
+          "fixed_edges": [
+            [
+              "X0_1",
+              "X0_2"
+            ],
+            [
+              "X0_1",
+              "X0_40"
+            ],
+            [
+              "X0_10",
+              "X0_11"
+            ],
+            [
+              "X0_10",
+              "X0_9"
+            ],
+            [
+              "X0_11",
+              "X0_12"
+            ],
+            [
+              "X0_12",
+              "X0_13"
+            ],
+            [
+              "X0_13",
+              "X0_14"
+            ],
+            [
+              "X0_14",
+              "X0_15"
+            ],
+            [
+              "X0_15",
+              "X0_16"
+            ],
+            [
+              "X0_16",
+              "X0_17"
+            ],
+            [
+              "X0_17",
+              "X0_18"
+            ],
+            [
+              "X0_18",
+              "X0_19"
+            ],
+            [
+              "X0_19",
+              "X0_20"
+            ],
+            [
+              "X0_2",
+              "X0_3"
+            ],
+            [
+              "X0_20",
+              "X0_21"
+            ],
+            [
+              "X0_21",
+              "X0_22"
+            ],
+            [
+              "X0_22",
+              "X0_23"
+            ],
+            [
+              "X0_23",
+              "X0_24"
+            ],
+            [
+              "X0_24",
+              "X0_25"
+            ],
+            [
+              "X0_25",
+              "X0_26"
+            ],
+            [
+              "X0_26",
+              "X0_27"
+            ],
+            [
+              "X0_27",
+              "X0_28"
+            ],
+            [
+              "X0_28",
+              "X0_29"
+            ],
+            [
+              "X0_29",
+              "X0_30"
+            ],
+            [
+              "X0_3",
+              "X0_4"
+            ],
+            [
+              "X0_30",
+              "X0_31"
+            ],
+            [
+              "X0_31",
+              "X0_32"
+            ],
+            [
+              "X0_32",
+              "X0_33"
+            ],
+            [
+              "X0_33",
+              "X0_34"
+            ],
+            [
+              "X0_34",
+              "X0_35"
+            ],
+            [
+              "X0_35",
+              "X0_36"
+            ],
+            [
+              "X0_36",
+              "X0_37"
+            ],
+            [
+              "X0_37",
+              "X0_38"
+            ],
+            [
+              "X0_38",
+              "X0_39"
+            ],
+            [
+              "X0_39",
+              "X0_40"
+            ],
+            [
+              "X0_4",
+              "X0_5"
+            ],
+            [
+              "X0_5",
+              "X0_6"
+            ],
+            [
+              "X0_6",
+              "X0_7"
+            ],
+            [
+              "X0_7",
+              "X0_8"
+            ],
+            [
+              "X0_8",
+              "X0_9"
+            ],
+            [
+              "X1_1",
+              "X1_2"
+            ],
+            [
+              "X1_1",
+              "X1_40"
+            ],
+            [
+              "X1_10",
+              "X1_11"
+            ],
+            [
+              "X1_10",
+              "X1_9"
+            ],
+            [
+              "X1_11",
+              "X1_12"
+            ],
+            [
+              "X1_12",
+              "X1_13"
+            ],
+            [
+              "X1_13",
+              "X1_14"
+            ],
+            [
+              "X1_14",
+              "X1_15"
+            ],
+            [
+              "X1_15",
+              "X1_16"
+            ],
+            [
+              "X1_16",
+              "X1_17"
+            ],
+            [
+              "X1_17",
+              "X1_18"
+            ],
+            [
+              "X1_18",
+              "X1_19"
+            ],
+            [
+              "X1_19",
+              "X1_20"
+            ],
+            [
+              "X1_2",
+              "X1_3"
+            ],
+            [
+              "X1_20",
+              "X1_21"
+            ],
+            [
+              "X1_21",
+              "X1_22"
+            ],
+            [
+              "X1_22",
+              "X1_23"
+            ],
+            [
+              "X1_23",
+              "X1_24"
+            ],
+            [
+              "X1_24",
+              "X1_25"
+            ],
+            [
+              "X1_25",
+              "X1_26"
+            ],
+            [
+              "X1_26",
+              "X1_27"
+            ],
+            [
+              "X1_27",
+              "X1_28"
+            ],
+            [
+              "X1_28",
+              "X1_29"
+            ],
+            [
+              "X1_29",
+              "X1_30"
+            ],
+            [
+              "X1_3",
+              "X1_4"
+            ],
+            [
+              "X1_30",
+              "X1_31"
+            ],
+            [
+              "X1_31",
+              "X1_32"
+            ],
+            [
+              "X1_32",
+              "X1_33"
+            ],
+            [
+              "X1_33",
+              "X1_34"
+            ],
+            [
+              "X1_34",
+              "X1_35"
+            ],
+            [
+              "X1_35",
+              "X1_36"
+            ],
+            [
+              "X1_36",
+              "X1_37"
+            ],
+            [
+              "X1_37",
+              "X1_38"
+            ],
+            [
+              "X1_38",
+              "X1_39"
+            ],
+            [
+              "X1_39",
+              "X1_40"
+            ],
+            [
+              "X1_4",
+              "X1_5"
+            ],
+            [
+              "X1_5",
+              "X1_6"
+            ],
+            [
+              "X1_6",
+              "X1_7"
+            ],
+            [
+              "X1_7",
+              "X1_8"
+            ],
+            [
+              "X1_8",
+              "X1_9"
+            ],
+            [
+              "X2_1",
+              "X2_2"
+            ],
+            [
+              "X2_1",
+              "X2_40"
+            ],
+            [
+              "X2_10",
+              "X2_11"
+            ],
+            [
+              "X2_10",
+              "X2_9"
+            ],
+            [
+              "X2_11",
+              "X2_12"
+            ],
+            [
+              "X2_12",
+              "X2_13"
+            ],
+            [
+              "X2_13",
+              "X2_14"
+            ],
+            [
+              "X2_14",
+              "X2_15"
+            ],
+            [
+              "X2_15",
+              "X2_16"
+            ],
+            [
+              "X2_16",
+              "X2_17"
+            ],
+            [
+              "X2_17",
+              "X2_18"
+            ],
+            [
+              "X2_18",
+              "X2_19"
+            ],
+            [
+              "X2_19",
+              "X2_20"
+            ],
+            [
+              "X2_2",
+              "X2_3"
+            ],
+            [
+              "X2_20",
+              "X2_21"
+            ],
+            [
+              "X2_21",
+              "X2_22"
+            ],
+            [
+              "X2_22",
+              "X2_23"
+            ],
+            [
+              "X2_23",
+              "X2_24"
+            ],
+            [
+              "X2_24",
+              "X2_25"
+            ],
+            [
+              "X2_25",
+              "X2_26"
+            ],
+            [
+              "X2_26",
+              "X2_27"
+            ],
+            [
+              "X2_27",
+              "X2_28"
+            ],
+            [
+              "X2_28",
+              "X2_29"
+            ],
+            [
+              "X2_29",
+              "X2_30"
+            ],
+            [
+              "X2_3",
+              "X2_4"
+            ],
+            [
+              "X2_30",
+              "X2_31"
+            ],
+            [
+              "X2_31",
+              "X2_32"
+            ],
+            [
+              "X2_32",
+              "X2_33"
+            ],
+            [
+              "X2_33",
+              "X2_34"
+            ],
+            [
+              "X2_34",
+              "X2_35"
+            ],
+            [
+              "X2_35",
+              "X2_36"
+            ],
+            [
+              "X2_36",
+              "X2_37"
+            ],
+            [
+              "X2_37",
+              "X2_38"
+            ],
+            [
+              "X2_38",
+              "X2_39"
+            ],
+            [
+              "X2_39",
+              "X2_40"
+            ],
+            [
+              "X2_4",
+              "X2_5"
+            ],
+            [
+              "X2_5",
+              "X2_6"
+            ],
+            [
+              "X2_6",
+              "X2_7"
+            ],
+            [
+              "X2_7",
+              "X2_8"
+            ],
+            [
+              "X2_8",
+              "X2_9"
+            ],
+            [
+              "X3_1",
+              "X3_2"
+            ],
+            [
+              "X3_1",
+              "X3_40"
+            ],
+            [
+              "X3_10",
+              "X3_11"
+            ],
+            [
+              "X3_10",
+              "X3_9"
+            ],
+            [
+              "X3_11",
+              "X3_12"
+            ],
+            [
+              "X3_12",
+              "X3_13"
+            ],
+            [
+              "X3_13",
+              "X3_14"
+            ],
+            [
+              "X3_14",
+              "X3_15"
+            ],
+            [
+              "X3_15",
+              "X3_16"
+            ],
+            [
+              "X3_16",
+              "X3_17"
+            ],
+            [
+              "X3_17",
+              "X3_18"
+            ],
+            [
+              "X3_18",
+              "X3_19"
+            ],
+            [
+              "X3_19",
+              "X3_20"
+            ],
+            [
+              "X3_2",
+              "X3_3"
+            ],
+            [
+              "X3_20",
+              "X3_21"
+            ],
+            [
+              "X3_21",
+              "X3_22"
+            ],
+            [
+              "X3_22",
+              "X3_23"
+            ],
+            [
+              "X3_23",
+              "X3_24"
+            ],
+            [
+              "X3_24",
+              "X3_25"
+            ],
+            [
+              "X3_25",
+              "X3_26"
+            ],
+            [
+              "X3_26",
+              "X3_27"
+            ],
+            [
+              "X3_27",
+              "X3_28"
+            ],
+            [
+              "X3_28",
+              "X3_29"
+            ],
+            [
+              "X3_29",
+              "X3_30"
+            ],
+            [
+              "X3_3",
+              "X3_4"
+            ],
+            [
+              "X3_30",
+              "X3_31"
+            ],
+            [
+              "X3_31",
+              "X3_32"
+            ],
+            [
+              "X3_32",
+              "X3_33"
+            ],
+            [
+              "X3_33",
+              "X3_34"
+            ],
+            [
+              "X3_34",
+              "X3_35"
+            ],
+            [
+              "X3_35",
+              "X3_36"
+            ],
+            [
+              "X3_36",
+              "X3_37"
+            ],
+            [
+              "X3_37",
+              "X3_38"
+            ],
+            [
+              "X3_38",
+              "X3_39"
+            ],
+            [
+              "X3_39",
+              "X3_40"
+            ],
+            [
+              "X3_4",
+              "X3_5"
+            ],
+            [
+              "X3_5",
+              "X3_6"
+            ],
+            [
+              "X3_6",
+              "X3_7"
+            ],
+            [
+              "X3_7",
+              "X3_8"
+            ],
+            [
+              "X3_8",
+              "X3_9"
+            ]
+          ],
+          "geometry_sha256": "bfc8ef30a9eaa0b3ed617183611bf55d6344c569351dceb325aeef627287e04a",
+          "initial_state_sha256": "55f36b8ed9fb5668b2b8d70da194da9aa36b9b4a41baf9ae63c1421db0f78216",
+          "nodes": [
+            "X0_1",
+            "X0_10",
+            "X0_11",
+            "X0_12",
+            "X0_13",
+            "X0_14",
+            "X0_15",
+            "X0_16",
+            "X0_17",
+            "X0_18",
+            "X0_19",
+            "X0_2",
+            "X0_20",
+            "X0_21",
+            "X0_22",
+            "X0_23",
+            "X0_24",
+            "X0_25",
+            "X0_26",
+            "X0_27",
+            "X0_28",
+            "X0_29",
+            "X0_3",
+            "X0_30",
+            "X0_31",
+            "X0_32",
+            "X0_33",
+            "X0_34",
+            "X0_35",
+            "X0_36",
+            "X0_37",
+            "X0_38",
+            "X0_39",
+            "X0_4",
+            "X0_40",
+            "X0_5",
+            "X0_6",
+            "X0_7",
+            "X0_8",
+            "X0_9",
+            "X1_1",
+            "X1_10",
+            "X1_11",
+            "X1_12",
+            "X1_13",
+            "X1_14",
+            "X1_15",
+            "X1_16",
+            "X1_17",
+            "X1_18",
+            "X1_19",
+            "X1_2",
+            "X1_20",
+            "X1_21",
+            "X1_22",
+            "X1_23",
+            "X1_24",
+            "X1_25",
+            "X1_26",
+            "X1_27",
+            "X1_28",
+            "X1_29",
+            "X1_3",
+            "X1_30",
+            "X1_31",
+            "X1_32",
+            "X1_33",
+            "X1_34",
+            "X1_35",
+            "X1_36",
+            "X1_37",
+            "X1_38",
+            "X1_39",
+            "X1_4",
+            "X1_40",
+            "X1_5",
+            "X1_6",
+            "X1_7",
+            "X1_8",
+            "X1_9",
+            "X2_1",
+            "X2_10",
+            "X2_11",
+            "X2_12",
+            "X2_13",
+            "X2_14",
+            "X2_15",
+            "X2_16",
+            "X2_17",
+            "X2_18",
+            "X2_19",
+            "X2_2",
+            "X2_20",
+            "X2_21",
+            "X2_22",
+            "X2_23",
+            "X2_24",
+            "X2_25",
+            "X2_26",
+            "X2_27",
+            "X2_28",
+            "X2_29",
+            "X2_3",
+            "X2_30",
+            "X2_31",
+            "X2_32",
+            "X2_33",
+            "X2_34",
+            "X2_35",
+            "X2_36",
+            "X2_37",
+            "X2_38",
+            "X2_39",
+            "X2_4",
+            "X2_40",
+            "X2_5",
+            "X2_6",
+            "X2_7",
+            "X2_8",
+            "X2_9",
+            "X3_1",
+            "X3_10",
+            "X3_11",
+            "X3_12",
+            "X3_13",
+            "X3_14",
+            "X3_15",
+            "X3_16",
+            "X3_17",
+            "X3_18",
+            "X3_19",
+            "X3_2",
+            "X3_20",
+            "X3_21",
+            "X3_22",
+            "X3_23",
+            "X3_24",
+            "X3_25",
+            "X3_26",
+            "X3_27",
+            "X3_28",
+            "X3_29",
+            "X3_3",
+            "X3_30",
+            "X3_31",
+            "X3_32",
+            "X3_33",
+            "X3_34",
+            "X3_35",
+            "X3_36",
+            "X3_37",
+            "X3_38",
+            "X3_39",
+            "X3_4",
+            "X3_40",
+            "X3_5",
+            "X3_6",
+            "X3_7",
+            "X3_8",
+            "X3_9"
+          ],
+          "service_kernel": "ObservedD2Engine",
+          "traffic_trace_sha256": "8e7b653bbdedf5270e8a302af9bcc16cd684b9216d6e55b8d1c573d3fd89bbe2"
+        },
+        "metrics": {
+          "DeltaE_LCT_J": 0.0,
+          "E_LCT_J": 6400.0,
+          "J_T_bit_s": 3.5,
+          "K_time_series": [
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 0.0
+            },
+            {
+              "K_active_admissible": 0,
+              "K_admit": 0,
+              "K_draining": 0,
+              "acquiring_terminal_count": 0,
+              "retargeting_terminal_count": 0,
+              "setup_connection_count": 0,
+              "setup_reserved_terminal_count": 0,
+              "setup_terminal_count": 0,
+              "t_s": 4.0
+            }
+          ],
+          "N_T_bits": 1.0,
+          "R_del_T": 0.0,
+          "all_offered_business_delivered": false,
+          "delivered_bit_age_integral_bit_s": 0.0,
+          "delivered_bits": 0.0,
+          "evaluation_completed_normally": true,
+          "in_flight_bits": 0.0,
+          "mean_delay_absolute_error_bound_s": null,
+          "mean_delivered_fluid_delay_s": null,
+          "offered_bits": 1.0,
+          "queued_bits": 1.0
+        },
+        "non_HOLD_accepted_count": 0,
+        "release_audit": []
+      }
+    }
+  },
+  "scientific_performance_claimed": false,
+  "scope": "ENGINEERING_TEST_ONLY"
+}

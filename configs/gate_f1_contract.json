@@ -1,0 +1,57 @@
+{
+  "candidate_structural_quota": {
+    "BBM_REQUIRED": 8,
+    "MBB_STRUCTURALLY_FEASIBLE": 8
+  },
+  "candidate_top_k": 16,
+  "canonical_sha256": "540d7155f5adac6b1a12afb4ed4271084a620ca572f62c26ba13809a92d58114",
+  "controllers": {
+    "B0": "IMPLEMENTED",
+    "B1": "INTERFACE_AND_TEST_SCAFFOLD_ONLY_SCORING_UNRESOLVED",
+    "B2": "PARAMETERIZED_LOGIC_IMPLEMENTED_F3_GRID_UNRESOLVED",
+    "B3": "INTERFACE_AND_INFORMATION_FIREWALL_ONLY_SCORING_UNRESOLVED",
+    "B4": "NOT_IMPLEMENTED",
+    "B5": "NOT_IMPLEMENTED"
+  },
+  "decision_cadence_s": 2.0,
+  "expected_overall_status": "BLOCKED_BEFORE_SCIENTIFIC_B1_B3_IMPLEMENTATION",
+  "forbidden": [
+    "B4_MPC",
+    "RL_PPO",
+    "controller_training",
+    "performance_comparison",
+    "J_based_tuning",
+    "future_realized_traffic",
+    "A_to_F0_modification"
+  ],
+  "frozen_parent_hash_record": "configs/gate_f1_frozen_parent_hashes.json",
+  "gate_type": "CORRECTNESS_INTEGRATION",
+  "next_gate_state": {
+    "gate_f2_started": false,
+    "gate_f3_started": false,
+    "rl_started": false
+  },
+  "physical_events_event_driven": true,
+  "regime_safety": {
+    "Z_MODERATE": {
+      "policy": "STRICT_CONNECTED"
+    },
+    "Z_SPARSE_REFERENCE": {
+      "max_s": 2.0,
+      "policy": "BOUNDED_TRANSITION_OUTAGE"
+    }
+  },
+  "required_outage_metrics": [
+    "transition_period_outage_s",
+    "transition_period_no_route_by_commodity_s",
+    "post_expiry_no_route_s",
+    "post_expiry_no_route_by_commodity_s"
+  ],
+  "schema": "gate_f1_contract_v1",
+  "scoring_contract": {
+    "document": "docs/GATE_F1_SCORING_AMBIGUITY_CN.md",
+    "fixture_score_injection_scientific_use_allowed": false,
+    "status": "BLOCKED_REQUIRES_HUMAN_FREEZE",
+    "uniquely_frozen": false
+  }
+}

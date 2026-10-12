@@ -1,0 +1,11 @@
+{
+  "files": {
+    "configs/gate_e0_scenario_selection_manifest.json": "dbbf1bf07b7f19000c9d14ebae63e0e1057b73ed559c12f281a2d33f59cea67d",
+    "configs/gate_e0_sweep_manifest.json": "1f2add6dcd3385deda04051fcdec5d122c1bbe9a39181f31bb8e0bdd3a43bef7",
+    "configs/gate_e2_candidate_inventory.json": "9e89c0c13ca1321346071293743fd136b29a368b8fd7397994ed0c18ca9483a2",
+    "configs/gate_e2_execution_points.json": "0b2a52a3ee17b53232b73de7c4ef614a3f38fab71f994016f058b84a5d4c0be0",
+    "configs/gate_e2_selected_scenarios.json": "701d274e2ffd424af2891db7d2d5f73a9135e918e5ffcd297b33315da05ddd8e"
+  },
+  "frozen_before_paired_branch_execution": true,
+  "schema": "gate_e2_execution_points_hashes_v1"
+}

@@ -1,0 +1,7 @@
+{
+  "gate_d2": "PASS",
+  "statement": "Gate D2 transition-aware network-service integration = PASS",
+  "evidence": "outputs\\gate_d2_20260922T162211_364524Z",
+  "gate_e_started": false,
+  "gate_f_started": false
+}

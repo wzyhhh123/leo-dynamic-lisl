@@ -1,0 +1,31 @@
+{
+  "status": "B4_ROLLOUT_KERNEL_PROFILE_PASS",
+  "lightweight_clone_seal": "PASS",
+  "hash_reuse_seal": "PASS",
+  "current_P1_preflight": "PASS",
+  "full_regression": "299/299 PASS",
+  "registered_P1_executed": false,
+  "P2_started": false,
+  "RL_started": false,
+  "historical_P1_attempts_preserved": true,
+  "new_P1_launch_authorized": false,
+  "PRIMARY_RUNTIME_BOTTLENECK": "service_event_QID",
+  "NEXT_OPTIMIZATION_CANDIDATE": "BRANCH_LEVEL_MULTIPROCESSING",
+  "next_optimization_implemented": false,
+  "evidence": "outputs\\b4_rollout_kernel_profile_20261002T041039_957649Z",
+  "artifact_manifest_sha256": "c74ea23a2d5c03cdb658de4b681b63c091cf0ff2b2a28b7e2c931643adad35d3",
+  "measurement_limits": [
+    "Exclusive categories subtract nested timed calls; inclusive stage times must not be added.",
+    "objective measures compensated accumulator calls; surrounding objective arithmetic remains in qid.",
+    "cProfile plus Python timing instrumentation adds overhead; ON shares are diagnostic, OFF gives baseline total.",
+    "finish includes equivalence snapshot capture overhead; other includes profiling dump and harness overhead.",
+    "Single epoch cannot establish clone growth with historical time; no late epoch run."
+  ],
+  "bookkeeping_source_hashes": {
+    "src/dynamic_lisl/b4_runtime_seal.py": "044906b9e6a869bbca4d6d2749f2bffc44768f5865dd943089244247dd4e48a3",
+    "tools/run_gate_f3_p1_execution.py": "54822a26fa3b0d1fe66131e88cb6ed319ee07027caeeb9dad2949d6ea0c4ee14",
+    "tools/profile_b4_rollout_kernel.py": "931c9a59f3f4cb176136513e42e1f722a3617005a1730891253fc614f70f56f6",
+    "tools/seal_b4_runtime_bookkeeping.py": "033d8547594dfeceda6ab531d9265658d0f6cf6c9ff1df35d16e711854575960",
+    "tests/test_b4_runtime_seal.py": "754d1e1451dc880caeaacbf81fbbd135c091cd853a28922af1a5f769cfe84063"
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "B4": {
+    "forecast": "CURRENT_RATE_PERSISTENCE",
+    "horizon_s": 10.0,
+    "objective": "exact_J_H",
+    "real_Gate_B_C": true,
+    "root_action_only": true,
+    "terminal_penalty": false
+  },
+  "RL_started": false,
+  "absolute_drain_limit_s": 600.0,
+  "arrival_horizon_s": 240.0,
+  "candidate_top_k": 16,
+  "canonical_sha256": "118d3a61175b08b6ba53f4d92504b52ab879659682799d26c1965baf7bb600a6",
+  "claim_boundary": {
+    "forbidden": [
+      "globally_optimal",
+      "always_best",
+      "optimal_10s_horizon",
+      "generalizes_to_720",
+      "commercial_hardware_setup",
+      "prevalence_beyond_registered_scenarios"
+    ]
+  },
+  "controllers": {
+    "B2_engineering_robustness": [
+      "B2_H4",
+      "B2_H8"
+    ],
+    "core": [
+      "B0",
+      "B1",
+      "B3",
+      "B4"
+    ]
+  },
+  "decision_cadence_s": 2.0,
+  "excluded_scales": [
+    240,
+    720
+  ],
+  "execution_order": [
+    "P1",
+    "P2",
+    "R1",
+    "R2",
+    "R3",
+    "R4"
+  ],
+  "gate": "F3-0",
+  "global_controller_ranking_forbidden": true,
+  "manifest_hashes": {
+    "B2_grid": {
+      "canonical_sha256": "a9b5cc3bacd03e32f1b059028297ab737e59d9c1b204beab4b956b28b06b374e",
+      "file_sha256": "d718705845afda5b842e26f3405849b170485e401cd444f76aee837656b63f7a",
+      "path": "configs/gate_f3_b2_grid_v1.json"
+    },
+    "censor_policy": {
+      "canonical_sha256": "b3c013bd65ff86c3f9c246ee72e64fda06ca9996dedf7d7e417702607334d1c0",
+      "file_sha256": "6d96e1b9d73eb70ff2430cb1c80f73839c7d5a93706041aed48c5af014e90162",
+      "path": "configs/gate_f3_censor_policy_v1.json"
+    },
+    "execution_manifest": {
+      "canonical_sha256": "0222d30e69ec9f565e1d55d5e74391934d63d7357cc7f1d652532f6a30ac945a",
+      "file_sha256": "f6aba631fa7f133f4cb95d63ec5f809b4345f1ad3676401de3df286697a558f9",
+      "path": "configs/gate_f3_execution_manifest_v1.json"
+    },
+    "figure_cases": {
+      "canonical_sha256": "c67f9d90cee121179cc4d0873669ccd6d39abccc9a606672bedef634748a0eb0",
+      "file_sha256": "8ab6520cee91557cebe9547c052087a5acb1c68aeb57152b0d291fdc6f80cfc6",
+      "path": "configs/gate_f3_figure_cases_v1.json"
+    },
+    "hotspot_migration_traffic": {
+      "canonical_sha256": "f900a135976f66ee508a790372af162b8475df7f12970423ac704112d3f0a0ee",
+      "file_sha256": "7d041ea8a0118502b4a4930862634a859670fe8ff3cc0666bbb4c66a4eedcd8f",
+      "path": "configs/gate_f3_traffic_hotspot_migration_v1.json"
+    },
+    "stable_traffic": {
+      "canonical_sha256": "791a9e9d231770c4ff3ed501c9b5ea54335a4067d177c7f8a75621373aa7729c",
+      "file_sha256": "739fde56405bf2b3f4d1f244d765ba46995792411bf91473c74a9f7bdd17223b",
+      "path": "configs/gate_f3_traffic_stable_v1.json"
+    },
+    "traffic_profiles": {
+      "canonical_sha256": "ce00a04bc57b7ac70717ce21b6646171f66aa1907199db1d4161541907eb5b33",
+      "file_sha256": "047528170a9be00295b7466d3a71e291de1c8dd919f32ffffc524542e57a8101",
+      "path": "configs/gate_f3_traffic_profiles_v1.json"
+    }
+  },
+  "next_authorized_block": "NONE_UNTIL_EXPLICIT_F3_1_AUTHORIZATION",
+  "normalization": {
+    "alpha_star_bit_s": 26666666666.666664,
+    "formula": "lambda_f^(rho)(t)=rho*alpha_star*g_f(t)",
+    "identifier": "GATE_D1_FROZEN_REFERENCE_MCF_ALPHA_STAR",
+    "recompute_by_phase_topology_controller_router_branch": false,
+    "source": "outputs/gate_d1_20260922T133909_838853Z/load_normalization_report.json",
+    "source_sha256": "42afc0cf72188f3c5c5c965b13609cb6a16f0e86c2763931809d9d8e62e01a1a"
+  },
+  "od_manifest": {
+    "commodity_count": 16,
+    "path": "configs/gate_d0_od_manifest_16.json",
+    "sha256": "b8e46dd988e4f5136eeb5b8adea4272ad93b3fafc5ed7fc4fb537eff167173de"
+  },
+  "paired_fairness": [
+    "traffic_hash",
+    "initial_state",
+    "geometry",
+    "topology_asset",
+    "decision_epochs",
+    "proposer",
+    "candidate_K",
+    "candidate_order",
+    "safety_policy"
+  ],
+  "paired_unit": [
+    "scale",
+    "topology_regime",
+    "router",
+    "traffic_profile",
+    "rho"
+  ],
+  "parent_hashes": {
+    "a_to_e2_registry": {
+      "configs/gate_f0_frozen_a_to_e2_hashes.json": "9c016926a99669d62afd62e25a24ebc8a41f752271a8fe95a20a3cfa9e30922e"
+    },
+    "d0_d1_inputs": {
+      "configs/gate_d0_metrics_schema.json": "88720c2f445e95a663abe208c99045e6708202786b7db10b1c9def3183e3f21e",
+      "configs/gate_d0_od_manifest_16.json": "b8e46dd988e4f5136eeb5b8adea4272ad93b3fafc5ed7fc4fb537eff167173de",
+      "configs/gate_d0_traffic_contract.json": "2abb4b1090ebc0cb89576b1159486d91d1c262a7439c013902af09cccba4a8b1",
+      "outputs/gate_d1_20260922T133909_838853Z/load_normalization_report.json": "42afc0cf72188f3c5c5c965b13609cb6a16f0e86c2763931809d9d8e62e01a1a"
+    },
+    "gate_f0": {
+      "configs/gate_f0_baseline_registry.json": "7152b90b13c9c18cecdfe969a3908ce8c78b9364e69066bddbc508c09ea9a10b",
+      "configs/gate_f0_controller_contract.json": "689212fa5f0b08f5e1e50adf952b478ffc91e3131d0d8fe6acfcd9cd27f0e68c",
+      "configs/gate_f0_human_freeze_v1.json": "37a90d3eec2f91e94c04ebe0f2867f3eca412d7284402bba6a7bd0639df7c3f7"
+    },
+    "gate_f1": {
+      "configs/gate_f1_closure_status.json": "bd2b0ce6efe3f5daf56d704461675fe563bca4918d0d6adc15e493df5b541c26",
+      "configs/gate_f1_scientific_implementation_status.json": "88b4f444bab01f63cd8f17d69ffe2e09ad44b944aa6fa9c11fe3a5f298bc2c31",
+      "configs/gate_f1_scoring_human_freeze_v2.json": "e91d23f1f4ea81c2598431bd3d0b1d684efb89df4e704f9d37025cfb425e9c69"
+    },
+    "gate_f2": {
+      "configs/gate_f2_closure_status.json": "00ee8b7f9e85f73e7465549cad17f1e188c193ba9b320d0d1e95cb35824ad971",
+      "configs/gate_f2_implementation_status.json": "e2e468e9015895a3f134407d1cf4a6e73b161a4c41203d87ff0351c381e94635",
+      "configs/gate_f2_rollout_human_freeze_v1.json": "7276c0fbfedcfc6f35fd6ee316338c7f089fcaf1c47e81d3425f42f15b3b01df",
+      "docs/GATE_F2_B4_IMPLEMENTATION_CN.md": "d4184de106a976b0819c820a846c070e7875acf89f2c2a34c0a60026dec61466",
+      "docs/GATE_F2_CLOSURE_RESULT_CN.md": "45dd2ee22cb34802a17f8f30ffa6c0280c1ebedd4ebf339fd2e0d63de066fe48",
+      "outputs/gate_f2_closure_20260925T034050_308374Z/artifact_hashes.json": "939cabb9974742f924b993de15a1c72a90ed57f80a7b6f918a9d36f9d19f10b6",
+      "outputs/gate_f2_closure_20260925T034050_308374Z/frozen_hash_report.json": "af364412645fc5467b5ef7304b47998a194e74aba6251a29e104d4b1ec00556f",
+      "outputs/gate_f2_closure_20260925T034050_308374Z/report.json": "d5301e5abb94be5c3ade87749fc9268098d13aa04c0c8356094c314ae7a00317",
+      "src/dynamic_lisl/forecast.py": "fd9c2c56a6abc789cbb1e5d2fa5e2d8dec12a3b7be9bc568d4518602dea77a27",
+      "src/dynamic_lisl/gate_f2_sanity.py": "8e6fb8b8a9e49d3780cc5ed5fe39a92be42a5000901dbecb70a0f4a0c73cb545",
+      "src/dynamic_lisl/rollout_controller.py": "5d2b3d4170be148b5cbdf6808a57b9c9cbc105df487405bcef9904c292884e81",
+      "src/dynamic_lisl/rollout_evaluator.py": "db7e6c187ff834e209a8afe8bab47ec8319fb394739f82f5162da7766bd1db8d",
+      "tests/test_gate_f2_rollout.py": "1692c767b6a4be2932897ac7c11412359c46756bb26159eb88a2277572c3e337",
+      "tools/check_gate_f2_closure.py": "a35a8ee5480d56b8031d01968edb12e0f1ad85122c993501dd5223378f727aff"
+    },
+    "topology_regimes": {
+      "configs/z_moderate_v1.json": "a28f54be05c5dbae07d0654b507209dad499ff853f9558cdd7da50f28d56c0d9",
+      "outputs/gate_c_simplified_20260922T064019_313843Z/z_ref.json": "59644ec7acc56f6a2efe098347874a6caf2eaf8540008c0bcb2a6509b37efa34"
+    }
+  },
+  "performance_started": false,
+  "planned_run_count": 60,
+  "primary_complete_metrics": [
+    "J_bit_s",
+    "mean_bit_delay_s"
+  ],
+  "primary_contrast": [
+    "B4",
+    "B3"
+  ],
+  "replicate_count": 1,
+  "result_blind": true,
+  "rho": {
+    "primary": [
+      0.5,
+      0.8,
+      1.0
+    ],
+    "robustness": [
+      0.2,
+      1.2
+    ]
+  },
+  "routers": {
+    "primary": "SHORTEST_PROPAGATION_DELAY",
+    "robustness": "LOAD_AWARE_CURRENT_STATE"
+  },
+  "scalability_study": false,
+  "scale_satellites": 160,
+  "schema": "gate_f3_experiment_human_freeze_v1",
+  "scientific_question": "Does explicit short-horizon prediction of real transition-routing-service-queue evolution add value beyond setup/lifetime-aware current-state greedy control?",
+  "secondary_contrasts": [
+    [
+      "B4",
+      "B1"
+    ],
+    [
+      "B3",
+      "B1"
+    ],
+    [
+      "B1",
+      "B0"
+    ]
+  ],
+  "secondary_metrics": [
+    "delivered_bits",
+    "delivery_ratio",
+    "residual_backlog_bits",
+    "mean_queue_bits",
+    "max_queue_bits",
+    "link_utilization",
+    "traffic_weighted_hop_count",
+    "route_change_count",
+    "active_dynamic_link_count",
+    "switch_count",
+    "BBM_count",
+    "MBB_count",
+    "transition_period_outage_s",
+    "transition_period_no_route_by_commodity_s",
+    "post_expiry_no_route_s",
+    "post_expiry_no_route_by_commodity_s",
+    "runtime",
+    "controller_decision_runtime_if_instrumented",
+    "B4_branch_count_if_instrumented"
+  ],
+  "status": "FROZEN",
+  "stochastic_seed_policy": "NOT_APPLICABLE",
+  "topology_regimes": {
+    "Z_MODERATE": "STRICT_CONNECTED_ON_G_admit",
+    "Z_SPARSE_REFERENCE": "BOUNDED_TRANSITION_OUTAGE_Tmax_2s"
+  },
+  "treatment_variable": "controller",
+  "weighted_multimetric_score": false
+}

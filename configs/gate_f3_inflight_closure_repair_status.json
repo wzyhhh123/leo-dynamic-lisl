@@ -1,0 +1,20 @@
+{
+  "D2_internal_return_threshold_bits": 1.0,
+  "F3_COMPLETE_threshold_bits": 0.01,
+  "Gate_F3_inflight_propagation_closure_repair": "PASS",
+  "P1_preflight": "NOT_READY: historical_execution_attempts_are_blocked_or_recorded_abort=false",
+  "P1_restarted": false,
+  "P2_started": false,
+  "RL_started": false,
+  "evidence": "outputs/gate_f3_inflight_closure_repair_20260926T173353_737761Z",
+  "focused_regression": "26/26 PASS",
+  "full_repository_regression": "279/280 PASS; one known unrelated failure because the prior paused P1 attempt is not represented by the legacy abort-only preflight rule",
+  "historical_paused_evidence_zip_sha256": "9f16af068e5576979e52006e37dba8c2c7509e6261153486f446c8208e6c0336",
+  "parent_D2_sha256": "5b674ee226ac07aba136fc7c207f6abe727a4d63ad9097c1291afa6217750fd4",
+  "registered_P1_runs_executed": 0,
+  "repair_overlay": "configs/gate_f3_inflight_closure_repair_v1.json",
+  "repaired_D2_sha256": "9ed1ecf9b8c5cde21fd5a71113fdd45e2d69a20bb808689ccf40a9392ce172e7",
+  "schema": "gate_f3_inflight_closure_repair_status_v1",
+  "scope": "IN_FLIGHT_PROPAGATION_CLOSURE_ONLY",
+  "thresholds_changed": false
+}

@@ -1,0 +1,31 @@
+{
+  "B1_observe_speedup": 4.979817510343229,
+  "P2_started": false,
+  "RL_started": false,
+  "audit_report": "outputs/gate_f3_runtime_phase2a_audit_20260925T134051_381202Z/audit.json",
+  "canonical_sha256": "fa15e85eb04a81db62e55a84fa06bf769cfd438b5c47251190bda511facacdcf",
+  "delay_provider_call_reduction_fraction": 0.9453991887055619,
+  "epoch_speedup": 2.880505699079966,
+  "equivalence": {
+    "B1": true,
+    "B3": true
+  },
+  "equivalence_report": "outputs/gate_f3_runtime_phase2a_20260925T134746_379320Z/report.json",
+  "focused_equivalence_tests_passed": 4,
+  "focused_integrity_tests_passed": 33,
+  "full_regression_status": "PASS",
+  "full_regression_tests_passed": 271,
+  "identical_topology_reuse": "NO_APPLICABLE_DUPLICATES",
+  "legacy_delay_provider_calls": 8711757,
+  "optimized_delay_provider_calls": 475669,
+  "overlay_canonical_sha256": "ec6d9696a5dffcaa89dd21b2fdc7f7dabfd99b844915c1ae027439a585ea55f5",
+  "p1_preflight_status": "PASS",
+  "path_calls": 46080,
+  "phase2b_started": false,
+  "registered_P1_executed": false,
+  "routes_to_destinations_calls": 18,
+  "schema": "gate_f3_runtime_phase2a_status_v1",
+  "status": "GATE_F3_RUNTIME_PHASE2A_PASS",
+  "time_utc": "2026-09-25T13:59:14.733978Z",
+  "unique_satellite_topologies": 16
+}

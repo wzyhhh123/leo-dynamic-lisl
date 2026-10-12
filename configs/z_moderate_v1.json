@@ -1,0 +1,861 @@
+{
+  "bindings": [
+    {
+      "a": [
+        "X0_27",
+        "D1"
+      ],
+      "b": [
+        "X1_27",
+        "D2"
+      ],
+      "end_s": 600.0,
+      "plane_gap": 1,
+      "ready_time_s": 2.0,
+      "remaining_lifetime_s": 600.0,
+      "start_s": 0.0,
+      "usable_lifetime_s": 598.0
+    },
+    {
+      "a": [
+        "X1_11",
+        "D1"
+      ],
+      "b": [
+        "X2_11",
+        "D2"
+      ],
+      "end_s": 600.0,
+      "plane_gap": 1,
+      "ready_time_s": 2.0,
+      "remaining_lifetime_s": 600.0,
+      "start_s": 0.0,
+      "usable_lifetime_s": 598.0
+    },
+    {
+      "a": [
+        "X2_11",
+        "D1"
+      ],
+      "b": [
+        "X3_11",
+        "D2"
+      ],
+      "end_s": 600.0,
+      "plane_gap": 1,
+      "ready_time_s": 2.0,
+      "remaining_lifetime_s": 600.0,
+      "start_s": 0.0,
+      "usable_lifetime_s": 598.0
+    },
+    {
+      "a": [
+        "X0_1",
+        "D2"
+      ],
+      "b": [
+        "X3_1",
+        "D1"
+      ],
+      "construction_proposal_id": "ZM-14b7d1ceb8eac605",
+      "end_s": 600.0,
+      "plane_gap": 3,
+      "ready_time_s": 2.0,
+      "remaining_lifetime_s": 600.0,
+      "start_s": 0.0,
+      "usable_lifetime_s": 598.0
+    }
+  ],
+  "candidate_audit": {
+    "gate_c_rejections_before_selection": [],
+    "pruned_counts": {
+      "does_not_achieve_one_binding_plane_cycle_closure": 1638,
+      "exact_physical_noop_or_identical_binding": 3,
+      "terminal_or_reservation_conflict": 80
+    },
+    "ranked_structural_cycle_closure_candidates": 275,
+    "selected_by_frozen_tie_order": true,
+    "strict_connectivity_rejections_before_selection": 0
+  },
+  "canonical_sha256": "442dc666bc745da6b9fa6316cda450587f4d5da3cf64208318e2d2a15cf9f24e",
+  "construction_epoch_s": 0.0,
+  "deterministic_tie_order": [
+    "largest_plane_bridge_deficit_reduction",
+    "largest_usable_lifetime_s",
+    "smallest_plane_gap",
+    "old_edge",
+    "old_terminal_ids",
+    "new_edge",
+    "new_terminal_ids",
+    "proposal_id"
+  ],
+  "fixed_edges": [
+    [
+      "X0_1",
+      "X0_2"
+    ],
+    [
+      "X0_1",
+      "X0_40"
+    ],
+    [
+      "X0_10",
+      "X0_11"
+    ],
+    [
+      "X0_10",
+      "X0_9"
+    ],
+    [
+      "X0_11",
+      "X0_12"
+    ],
+    [
+      "X0_12",
+      "X0_13"
+    ],
+    [
+      "X0_13",
+      "X0_14"
+    ],
+    [
+      "X0_14",
+      "X0_15"
+    ],
+    [
+      "X0_15",
+      "X0_16"
+    ],
+    [
+      "X0_16",
+      "X0_17"
+    ],
+    [
+      "X0_17",
+      "X0_18"
+    ],
+    [
+      "X0_18",
+      "X0_19"
+    ],
+    [
+      "X0_19",
+      "X0_20"
+    ],
+    [
+      "X0_2",
+      "X0_3"
+    ],
+    [
+      "X0_20",
+      "X0_21"
+    ],
+    [
+      "X0_21",
+      "X0_22"
+    ],
+    [
+      "X0_22",
+      "X0_23"
+    ],
+    [
+      "X0_23",
+      "X0_24"
+    ],
+    [
+      "X0_24",
+      "X0_25"
+    ],
+    [
+      "X0_25",
+      "X0_26"
+    ],
+    [
+      "X0_26",
+      "X0_27"
+    ],
+    [
+      "X0_27",
+      "X0_28"
+    ],
+    [
+      "X0_28",
+      "X0_29"
+    ],
+    [
+      "X0_29",
+      "X0_30"
+    ],
+    [
+      "X0_3",
+      "X0_4"
+    ],
+    [
+      "X0_30",
+      "X0_31"
+    ],
+    [
+      "X0_31",
+      "X0_32"
+    ],
+    [
+      "X0_32",
+      "X0_33"
+    ],
+    [
+      "X0_33",
+      "X0_34"
+    ],
+    [
+      "X0_34",
+      "X0_35"
+    ],
+    [
+      "X0_35",
+      "X0_36"
+    ],
+    [
+      "X0_36",
+      "X0_37"
+    ],
+    [
+      "X0_37",
+      "X0_38"
+    ],
+    [
+      "X0_38",
+      "X0_39"
+    ],
+    [
+      "X0_39",
+      "X0_40"
+    ],
+    [
+      "X0_4",
+      "X0_5"
+    ],
+    [
+      "X0_5",
+      "X0_6"
+    ],
+    [
+      "X0_6",
+      "X0_7"
+    ],
+    [
+      "X0_7",
+      "X0_8"
+    ],
+    [
+      "X0_8",
+      "X0_9"
+    ],
+    [
+      "X1_1",
+      "X1_2"
+    ],
+    [
+      "X1_1",
+      "X1_40"
+    ],
+    [
+      "X1_10",
+      "X1_11"
+    ],
+    [
+      "X1_10",
+      "X1_9"
+    ],
+    [
+      "X1_11",
+      "X1_12"
+    ],
+    [
+      "X1_12",
+      "X1_13"
+    ],
+    [
+      "X1_13",
+      "X1_14"
+    ],
+    [
+      "X1_14",
+      "X1_15"
+    ],
+    [
+      "X1_15",
+      "X1_16"
+    ],
+    [
+      "X1_16",
+      "X1_17"
+    ],
+    [
+      "X1_17",
+      "X1_18"
+    ],
+    [
+      "X1_18",
+      "X1_19"
+    ],
+    [
+      "X1_19",
+      "X1_20"
+    ],
+    [
+      "X1_2",
+      "X1_3"
+    ],
+    [
+      "X1_20",
+      "X1_21"
+    ],
+    [
+      "X1_21",
+      "X1_22"
+    ],
+    [
+      "X1_22",
+      "X1_23"
+    ],
+    [
+      "X1_23",
+      "X1_24"
+    ],
+    [
+      "X1_24",
+      "X1_25"
+    ],
+    [
+      "X1_25",
+      "X1_26"
+    ],
+    [
+      "X1_26",
+      "X1_27"
+    ],
+    [
+      "X1_27",
+      "X1_28"
+    ],
+    [
+      "X1_28",
+      "X1_29"
+    ],
+    [
+      "X1_29",
+      "X1_30"
+    ],
+    [
+      "X1_3",
+      "X1_4"
+    ],
+    [
+      "X1_30",
+      "X1_31"
+    ],
+    [
+      "X1_31",
+      "X1_32"
+    ],
+    [
+      "X1_32",
+      "X1_33"
+    ],
+    [
+      "X1_33",
+      "X1_34"
+    ],
+    [
+      "X1_34",
+      "X1_35"
+    ],
+    [
+      "X1_35",
+      "X1_36"
+    ],
+    [
+      "X1_36",
+      "X1_37"
+    ],
+    [
+      "X1_37",
+      "X1_38"
+    ],
+    [
+      "X1_38",
+      "X1_39"
+    ],
+    [
+      "X1_39",
+      "X1_40"
+    ],
+    [
+      "X1_4",
+      "X1_5"
+    ],
+    [
+      "X1_5",
+      "X1_6"
+    ],
+    [
+      "X1_6",
+      "X1_7"
+    ],
+    [
+      "X1_7",
+      "X1_8"
+    ],
+    [
+      "X1_8",
+      "X1_9"
+    ],
+    [
+      "X2_1",
+      "X2_2"
+    ],
+    [
+      "X2_1",
+      "X2_40"
+    ],
+    [
+      "X2_10",
+      "X2_11"
+    ],
+    [
+      "X2_10",
+      "X2_9"
+    ],
+    [
+      "X2_11",
+      "X2_12"
+    ],
+    [
+      "X2_12",
+      "X2_13"
+    ],
+    [
+      "X2_13",
+      "X2_14"
+    ],
+    [
+      "X2_14",
+      "X2_15"
+    ],
+    [
+      "X2_15",
+      "X2_16"
+    ],
+    [
+      "X2_16",
+      "X2_17"
+    ],
+    [
+      "X2_17",
+      "X2_18"
+    ],
+    [
+      "X2_18",
+      "X2_19"
+    ],
+    [
+      "X2_19",
+      "X2_20"
+    ],
+    [
+      "X2_2",
+      "X2_3"
+    ],
+    [
+      "X2_20",
+      "X2_21"
+    ],
+    [
+      "X2_21",
+      "X2_22"
+    ],
+    [
+      "X2_22",
+      "X2_23"
+    ],
+    [
+      "X2_23",
+      "X2_24"
+    ],
+    [
+      "X2_24",
+      "X2_25"
+    ],
+    [
+      "X2_25",
+      "X2_26"
+    ],
+    [
+      "X2_26",
+      "X2_27"
+    ],
+    [
+      "X2_27",
+      "X2_28"
+    ],
+    [
+      "X2_28",
+      "X2_29"
+    ],
+    [
+      "X2_29",
+      "X2_30"
+    ],
+    [
+      "X2_3",
+      "X2_4"
+    ],
+    [
+      "X2_30",
+      "X2_31"
+    ],
+    [
+      "X2_31",
+      "X2_32"
+    ],
+    [
+      "X2_32",
+      "X2_33"
+    ],
+    [
+      "X2_33",
+      "X2_34"
+    ],
+    [
+      "X2_34",
+      "X2_35"
+    ],
+    [
+      "X2_35",
+      "X2_36"
+    ],
+    [
+      "X2_36",
+      "X2_37"
+    ],
+    [
+      "X2_37",
+      "X2_38"
+    ],
+    [
+      "X2_38",
+      "X2_39"
+    ],
+    [
+      "X2_39",
+      "X2_40"
+    ],
+    [
+      "X2_4",
+      "X2_5"
+    ],
+    [
+      "X2_5",
+      "X2_6"
+    ],
+    [
+      "X2_6",
+      "X2_7"
+    ],
+    [
+      "X2_7",
+      "X2_8"
+    ],
+    [
+      "X2_8",
+      "X2_9"
+    ],
+    [
+      "X3_1",
+      "X3_2"
+    ],
+    [
+      "X3_1",
+      "X3_40"
+    ],
+    [
+      "X3_10",
+      "X3_11"
+    ],
+    [
+      "X3_10",
+      "X3_9"
+    ],
+    [
+      "X3_11",
+      "X3_12"
+    ],
+    [
+      "X3_12",
+      "X3_13"
+    ],
+    [
+      "X3_13",
+      "X3_14"
+    ],
+    [
+      "X3_14",
+      "X3_15"
+    ],
+    [
+      "X3_15",
+      "X3_16"
+    ],
+    [
+      "X3_16",
+      "X3_17"
+    ],
+    [
+      "X3_17",
+      "X3_18"
+    ],
+    [
+      "X3_18",
+      "X3_19"
+    ],
+    [
+      "X3_19",
+      "X3_20"
+    ],
+    [
+      "X3_2",
+      "X3_3"
+    ],
+    [
+      "X3_20",
+      "X3_21"
+    ],
+    [
+      "X3_21",
+      "X3_22"
+    ],
+    [
+      "X3_22",
+      "X3_23"
+    ],
+    [
+      "X3_23",
+      "X3_24"
+    ],
+    [
+      "X3_24",
+      "X3_25"
+    ],
+    [
+      "X3_25",
+      "X3_26"
+    ],
+    [
+      "X3_26",
+      "X3_27"
+    ],
+    [
+      "X3_27",
+      "X3_28"
+    ],
+    [
+      "X3_28",
+      "X3_29"
+    ],
+    [
+      "X3_29",
+      "X3_30"
+    ],
+    [
+      "X3_3",
+      "X3_4"
+    ],
+    [
+      "X3_30",
+      "X3_31"
+    ],
+    [
+      "X3_31",
+      "X3_32"
+    ],
+    [
+      "X3_32",
+      "X3_33"
+    ],
+    [
+      "X3_33",
+      "X3_34"
+    ],
+    [
+      "X3_34",
+      "X3_35"
+    ],
+    [
+      "X3_35",
+      "X3_36"
+    ],
+    [
+      "X3_36",
+      "X3_37"
+    ],
+    [
+      "X3_37",
+      "X3_38"
+    ],
+    [
+      "X3_38",
+      "X3_39"
+    ],
+    [
+      "X3_39",
+      "X3_40"
+    ],
+    [
+      "X3_4",
+      "X3_5"
+    ],
+    [
+      "X3_5",
+      "X3_6"
+    ],
+    [
+      "X3_6",
+      "X3_7"
+    ],
+    [
+      "X3_7",
+      "X3_8"
+    ],
+    [
+      "X3_8",
+      "X3_9"
+    ]
+  ],
+  "minimality_certificate": {
+    "bridges_before": 3,
+    "minimum_added_bindings": 1,
+    "one_addition_satisfies_target": true,
+    "zero_additions_satisfy_target": false
+  },
+  "parent_topology": "outputs/gate_c_simplified_20260922T064019_313843Z/z_ref.json",
+  "result_blind": true,
+  "schema": "z_moderate_v1",
+  "selected_addition": {
+    "a": [
+      "X0_1",
+      "D2"
+    ],
+    "b": [
+      "X3_1",
+      "D1"
+    ],
+    "gate_c_legal": true,
+    "new_edge": [
+      "X0_1",
+      "X3_1"
+    ],
+    "new_terminal_ids": [
+      [
+        "X0_1",
+        "D2"
+      ],
+      [
+        "X3_1",
+        "D1"
+      ]
+    ],
+    "old_edge": [],
+    "old_terminal_ids": [],
+    "plane_bridge_deficit_reduction": 3,
+    "plane_edge": [
+      0,
+      3
+    ],
+    "plane_gap": 3,
+    "proposal_id": "ZM-14b7d1ceb8eac605",
+    "ready_time_s": 2.0,
+    "remaining_lifetime_s": 600.0,
+    "strict_connected_transition": true,
+    "terminal_conflict": false,
+    "transition_profile_classification": "no_partition",
+    "usable_lifetime_s": 598.0,
+    "window": {
+      "distance_km": 3715.2896083243054,
+      "end_s": 600.0,
+      "left_censored": true,
+      "parent_end_s": 600.0,
+      "parent_start_s": 0.0,
+      "plane_gap": 3,
+      "right_censored": true,
+      "sat_a": "X0_1",
+      "sat_b": "X3_1",
+      "start_s": 0.0,
+      "terminal_a": "D2",
+      "terminal_b": "D1"
+    }
+  },
+  "selected_design": "ZM_A_MINIMAL_PLANE_CYCLE_CLOSURE",
+  "status": "CONSTRUCTED",
+  "structural_audit": {
+    "added_dynamic_link_count": 1,
+    "all_binding_gate_c_legality": true,
+    "dynamic_link_count": 4,
+    "nonbridge_dynamic_edge_count": 4,
+    "nonbridge_dynamic_edges": [
+      [
+        "X0_27",
+        "X1_27"
+      ],
+      [
+        "X1_11",
+        "X2_11"
+      ],
+      [
+        "X2_11",
+        "X3_11"
+      ],
+      [
+        "X0_1",
+        "X3_1"
+      ]
+    ],
+    "plane_bridge_count": 0,
+    "plane_bridges": [],
+    "plane_coverage": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "plane_graph_connected": true,
+    "plane_graph_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "planes": 4,
+    "satellite_bridge_count": 0,
+    "satellite_bridges": [],
+    "satellite_graph_connected": true,
+    "satellites": 160,
+    "strict_connected_transition_for_added_binding": true,
+    "terminal_conflict_count": 0,
+    "terminal_occupancy_fraction": 0.025,
+    "total_dynamic_terminals": 320,
+    "used_dynamic_terminals": 8
+  },
+  "traffic_agnostic": true
+}

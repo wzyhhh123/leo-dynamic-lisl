@@ -1,0 +1,214 @@
+{
+  "P2_started": false,
+  "RL_started": false,
+  "classification": "SAME_DESTINATION_REUSE_APPLICABLE",
+  "commodities": [
+    {
+      "commodity_id": "f00",
+      "destination": "X3_21",
+      "source": "X0_1"
+    },
+    {
+      "commodity_id": "f01",
+      "destination": "X0_21",
+      "source": "X3_1"
+    },
+    {
+      "commodity_id": "f02",
+      "destination": "X2_30",
+      "source": "X0_10"
+    },
+    {
+      "commodity_id": "f03",
+      "destination": "X0_30",
+      "source": "X2_10"
+    },
+    {
+      "commodity_id": "f04",
+      "destination": "X3_25",
+      "source": "X1_5"
+    },
+    {
+      "commodity_id": "f05",
+      "destination": "X1_25",
+      "source": "X3_5"
+    },
+    {
+      "commodity_id": "f06",
+      "destination": "X1_40",
+      "source": "X0_20"
+    },
+    {
+      "commodity_id": "f07",
+      "destination": "X0_40",
+      "source": "X1_20"
+    },
+    {
+      "commodity_id": "f08",
+      "destination": "X3_21",
+      "source": "X2_1"
+    },
+    {
+      "commodity_id": "f09",
+      "destination": "X2_21",
+      "source": "X3_1"
+    },
+    {
+      "commodity_id": "f10",
+      "destination": "X2_30",
+      "source": "X1_10"
+    },
+    {
+      "commodity_id": "f11",
+      "destination": "X1_30",
+      "source": "X2_10"
+    },
+    {
+      "commodity_id": "f12",
+      "destination": "X3_35",
+      "source": "X0_15"
+    },
+    {
+      "commodity_id": "f13",
+      "destination": "X0_35",
+      "source": "X3_15"
+    },
+    {
+      "commodity_id": "f14",
+      "destination": "X2_5",
+      "source": "X0_30"
+    },
+    {
+      "commodity_id": "f15",
+      "destination": "X0_5",
+      "source": "X2_30"
+    }
+  ],
+  "commodity_count": 16,
+  "common_router_modified": false,
+  "common_router_sha256_after": "ad2d7916f5662dba36f7f315a6389d2588040d6e701dd55b3be417002f0ff110",
+  "common_router_sha256_before": "ad2d7916f5662dba36f7f315a6389d2588040d6e701dd55b3be417002f0ff110",
+  "current_path_query_count_per_topology": 2560,
+  "destination_groups": [
+    {
+      "commodity_count": 1,
+      "commodity_ids": [
+        "f01"
+      ],
+      "destination": "X0_21"
+    },
+    {
+      "commodity_count": 1,
+      "commodity_ids": [
+        "f03"
+      ],
+      "destination": "X0_30"
+    },
+    {
+      "commodity_count": 1,
+      "commodity_ids": [
+        "f13"
+      ],
+      "destination": "X0_35"
+    },
+    {
+      "commodity_count": 1,
+      "commodity_ids": [
+        "f07"
+      ],
+      "destination": "X0_40"
+    },
+    {
+      "commodity_count": 1,
+      "commodity_ids": [
+        "f15"
+      ],
+      "destination": "X0_5"
+    },
+    {
+      "commodity_count": 1,
+      "commodity_ids": [
+        "f05"
+      ],
+      "destination": "X1_25"
+    },
+    {
+      "commodity_count": 1,
+      "commodity_ids": [
+        "f11"
+      ],
+      "destination": "X1_30"
+    },
+    {
+      "commodity_count": 1,
+      "commodity_ids": [
+        "f06"
+      ],
+      "destination": "X1_40"
+    },
+    {
+      "commodity_count": 1,
+      "commodity_ids": [
+        "f09"
+      ],
+      "destination": "X2_21"
+    },
+    {
+      "commodity_count": 2,
+      "commodity_ids": [
+        "f02",
+        "f10"
+      ],
+      "destination": "X2_30"
+    },
+    {
+      "commodity_count": 1,
+      "commodity_ids": [
+        "f14"
+      ],
+      "destination": "X2_5"
+    },
+    {
+      "commodity_count": 2,
+      "commodity_ids": [
+        "f00",
+        "f08"
+      ],
+      "destination": "X3_21"
+    },
+    {
+      "commodity_count": 1,
+      "commodity_ids": [
+        "f04"
+      ],
+      "destination": "X3_25"
+    },
+    {
+      "commodity_count": 1,
+      "commodity_ids": [
+        "f12"
+      ],
+      "destination": "X3_35"
+    }
+  ],
+  "final_pre_P1_runtime_equivalence_executed": false,
+  "final_pre_P1_runtime_equivalence_required": true,
+  "phase2b2_implementation_started": false,
+  "registered_P1_executed": false,
+  "schema": "gate_f3_runtime_phase2b2_pre_audit_v1",
+  "scope": {
+    "rho": 0.5,
+    "scale": 160,
+    "topology": "Z_MODERATE",
+    "traffic_source": "production frozen 16-OD manifest"
+  },
+  "source_manifest": "configs/gate_d0_od_manifest_16.json",
+  "source_manifest_sha256": "b8e46dd988e4f5136eeb5b8adea4272ad93b3fafc5ed7fc4fb537eff167173de",
+  "status": "PASS",
+  "theoretical_path_query_reduction_count": 320,
+  "theoretical_reduction_fraction": 0.125,
+  "theoretical_same_destination_path_query_count_per_topology": 2240,
+  "time_utc": "2026-09-25T14:40:42.117792Z",
+  "traffic_or_manifest_modified": false,
+  "unique_destination_count": 14
+}

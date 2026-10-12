@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gate_d0_piecewise_constant_fluid_trace_v1",
+  "type": "object",
+  "required": ["schema", "representation", "commodity_ids", "arrival_horizon_s", "segments"],
+  "properties": {
+    "schema": {"const": "gate_d0_piecewise_constant_fluid_trace_v1"},
+    "representation": {"const": "exogenous_fluid_workload_bits"},
+    "commodity_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "arrival_horizon_s": {"type": "number", "exclusiveMinimum": 0},
+    "segments": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "required": ["start_s", "end_s", "rates_bit_s"],
+        "properties": {
+          "start_s": {"type": "number", "minimum": 0},
+          "end_s": {"type": "number", "exclusiveMinimum": 0},
+          "label": {"type": "string"},
+          "rates_bit_s": {"type": "object", "additionalProperties": {"type": "number", "minimum": 0}}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "configs/gate_e2_execution_points.json": "0b2a52a3ee17b53232b73de7c4ef614a3f38fab71f994016f058b84a5d4c0be0",
+    "configs/gate_e2_execution_points_hashes.json": "86977052f86a64baa0702b2294da496351ec4eeca2d5c8dea97b0b2ad9b1d4db",
+    "configs/gate_e2_selected_scenarios.json": "701d274e2ffd424af2891db7d2d5f73a9135e918e5ffcd297b33315da05ddd8e",
+    "docs/GATE_E2_EXECUTION_CONTRACT_CN.md": "5bfffb666ea772a9fac0b3e4d0ee69962851c9c65b1234d1b61beca676eb07f7",
+    "src/dynamic_lisl/gate_e2_experiments.py": "710a89ed6a7916fbd246a58ece268334c6bafc73407403d8f2cac1b48cb5bb2c",
+    "src/dynamic_lisl/gate_e2_parallel.py": "55f810e982dd48f2af29f9388101b6ee8df20190e4cf85fe5fed2bd508979c66",
+    "tests/test_gate_e2_execution.py": "2a7722b1f1418ba0bff8a72199d0839f07c1b0475f95773358017f98d50cae0d",
+    "tools/check_gate_e2.py": "67ac78eb4d84f48a7aa5ea9f7de87ec6537a2812dfd1479be25f19e22fafa764",
+    "tools/prepare_gate_e2_execution_points.py": "dde3f8739be8fee77d9fa6a3d81fb286874257f6c931268c0bab4d8d97c8aedc"
+  },
+  "frozen_before_formal_scientific_execution": true,
+  "schema": "gate_e2_execution_code_hashes_v1"
+}

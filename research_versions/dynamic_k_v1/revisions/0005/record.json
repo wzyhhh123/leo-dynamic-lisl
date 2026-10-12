@@ -1,0 +1,210 @@
+{
+  "N1b_implemented": true,
+  "N2_implemented": false,
+  "algorithm_selection": null,
+  "authorization": {
+    "actor": "human_user",
+    "request": "继续 dynamic_k_v1。接受上一轮N1b STOP，人工决定新版本采用 Node-Local Per-Commodity FIFO；跨commodity保留equal-weight max-min；同刻多入边按bit比例混合；连续注入保留真实分布与原始注入时间。先独立语义合同并通过静态检查，再独立年龄层实现N1b，不修改冻结生产内核。先以独立版本起点和指定0004哈希完整验证；新增连续修订，运行解析/真实D2/N1a/历史回归，保留旧96/97 F3失败，完整版本验证。不执行N2/MADRL/主实验，完成后停止等待审核。",
+    "scope": "N1B_FIFO_SEMANTIC_FREEZE_AND_ENGINEERING_ONLY",
+    "source": "current_conversation_user_request"
+  },
+  "bindings": {
+    "baseline_seal": {
+      "byte_count": 656,
+      "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+      "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+    },
+    "chinese_report": {
+      "byte_count": 8753,
+      "path": "research_versions/dynamic_k_v1/acceptance/0005/RESULT_CN.md",
+      "sha256": "930704e6493ec81c6b3c4534c4084d825064470d3d9d215af757fcddfafe92ef"
+    },
+    "configuration": {
+      "byte_count": 943,
+      "path": "research_versions/dynamic_k_v1/configs/n1b_fifo_semantics_v1.json",
+      "sha256": "a9f3d047acb00579a47e26f0562bc911edc96d536f53c507dcd0315b002c894e"
+    },
+    "contract": {
+      "byte_count": 4468,
+      "path": "research_versions/dynamic_k_v1/contracts/N1B_NODE_LOCAL_FIFO_SEMANTICS_CN.md",
+      "sha256": "fc5b0daf7562a3cae40c3328484adce2dea01fe6d42ea3ea81c4a67c4d3eafd4"
+    },
+    "implementation_manifest": {
+      "byte_count": 21067,
+      "path": "research_versions/dynamic_k_v1/acceptance/0005/implementation_manifest.json",
+      "sha256": "c27ac2866d4bfd12a8384bd91a990f841daad45a7079230301d1aaef4436031a"
+    },
+    "n1a_regression": {
+      "byte_count": 3672,
+      "path": "research_versions/dynamic_k_v1/acceptance/0005/n1a_regression_report.json",
+      "sha256": "ee57e3b9ca6cc47f8b429327acbe8d2fc6a3f3e205036c02a802cb99f84f1aa7"
+    },
+    "n1b_acceptance": {
+      "byte_count": 4908,
+      "path": "research_versions/dynamic_k_v1/acceptance/0005/n1b_test_report.json",
+      "sha256": "854b625c81dbbc982df1b830eb061ca98936e82aeca6647433d7786fbd463c58"
+    },
+    "numerical_precision": {
+      "byte_count": 4094,
+      "path": "research_versions/dynamic_k_v1/contracts/N1B_NUMERICAL_PRECISION_CN.md",
+      "sha256": "1e15d19d0ec8dbdddea72ca9f8e12e0c54aba3aae39e86f80301ad056ed8aec7"
+    },
+    "preseal_old_asset_audit": {
+      "byte_count": 30351,
+      "path": "research_versions/dynamic_k_v1/acceptance/0005/preseal_change_audit.json",
+      "sha256": "950ee31a29126fd5215f39a0f2c1ccc238f25dfdd57cdf6d7b3ef7ca1d7ffdf3"
+    },
+    "static_acceptance": {
+      "byte_count": 1238,
+      "path": "research_versions/dynamic_k_v1/acceptance/0005/fifo_static_report.json",
+      "sha256": "d20a4943245ff9270a280cd6470a4fad057c0d40eba78c040e3d92975b5567e5"
+    }
+  },
+  "changes": {
+    "added": [
+      {
+        "byte_count": 8753,
+        "path": "research_versions/dynamic_k_v1/acceptance/0005/RESULT_CN.md",
+        "sha256": "930704e6493ec81c6b3c4534c4084d825064470d3d9d215af757fcddfafe92ef"
+      },
+      {
+        "byte_count": 3434,
+        "path": "research_versions/dynamic_k_v1/acceptance/0005/check_fifo_semantics.py",
+        "sha256": "53d952e0f22cffe9e0e1f2154c76ca5052caef454c9c122392251ceccf5793b2"
+      },
+      {
+        "byte_count": 519143,
+        "path": "research_versions/dynamic_k_v1/acceptance/0005/engineering_examples.json",
+        "sha256": "426cad416bb0b6de601e7bee8330cc2aff45a2c8caace509ed28ab51222ea0c4"
+      },
+      {
+        "byte_count": 1238,
+        "path": "research_versions/dynamic_k_v1/acceptance/0005/fifo_static_report.json",
+        "sha256": "d20a4943245ff9270a280cd6470a4fad057c0d40eba78c040e3d92975b5567e5"
+      },
+      {
+        "byte_count": 7843,
+        "path": "research_versions/dynamic_k_v1/acceptance/0005/finalize_revision.py",
+        "sha256": "b85119823f2900eeef1d9f94a7211e85a005a2439fc6d3a558bf8be20856d2ca"
+      },
+      {
+        "byte_count": 11804,
+        "path": "research_versions/dynamic_k_v1/acceptance/0005/historical_regression.json",
+        "sha256": "cb8e3981b657bcc1f11b8a75a578e3371cd1169e768e0afa0c54194a90b71122"
+      },
+      {
+        "byte_count": 1169,
+        "path": "research_versions/dynamic_k_v1/acceptance/0005/historical_regression_comparison.json",
+        "sha256": "bb1af4ac6f2c308a9070074b5ec5b90aa3a920faaae9bae1d00009ff46d6470a"
+      },
+      {
+        "byte_count": 21067,
+        "path": "research_versions/dynamic_k_v1/acceptance/0005/implementation_manifest.json",
+        "sha256": "c27ac2866d4bfd12a8384bd91a990f841daad45a7079230301d1aaef4436031a"
+      },
+      {
+        "byte_count": 3672,
+        "path": "research_versions/dynamic_k_v1/acceptance/0005/n1a_regression_report.json",
+        "sha256": "ee57e3b9ca6cc47f8b429327acbe8d2fc6a3f3e205036c02a802cb99f84f1aa7"
+      },
+      {
+        "byte_count": 4908,
+        "path": "research_versions/dynamic_k_v1/acceptance/0005/n1b_test_report.json",
+        "sha256": "854b625c81dbbc982df1b830eb061ca98936e82aeca6647433d7786fbd463c58"
+      },
+      {
+        "byte_count": 649,
+        "path": "research_versions/dynamic_k_v1/acceptance/0005/pre_implementation_verification.json",
+        "sha256": "475009a48a3f1071b69e89f9b438bd5fea02ef3ac88122d6ded79f2e9c98aea9"
+      },
+      {
+        "byte_count": 4284,
+        "path": "research_versions/dynamic_k_v1/acceptance/0005/prepare_candidate.py",
+        "sha256": "817856e5bf0eb2677964afaaf09ddf7beba80bfd20e22d9e027891081886c6e9"
+      },
+      {
+        "byte_count": 30351,
+        "path": "research_versions/dynamic_k_v1/acceptance/0005/preseal_change_audit.json",
+        "sha256": "950ee31a29126fd5215f39a0f2c1ccc238f25dfdd57cdf6d7b3ef7ca1d7ffdf3"
+      },
+      {
+        "byte_count": 3283,
+        "path": "research_versions/dynamic_k_v1/acceptance/0005/run_acceptance.py",
+        "sha256": "7ab1a2b79b346b0a7ba1470cb55ee963d38917403a7f61efade6aa249275065d"
+      },
+      {
+        "byte_count": 609,
+        "path": "research_versions/dynamic_k_v1/acceptance/0005/version_protection_tests.json",
+        "sha256": "22d1699b42f7a71960e3576c779d82ea2cf5a7cbf63dfe3931f8120e3b3d6580"
+      },
+      {
+        "byte_count": 943,
+        "path": "research_versions/dynamic_k_v1/configs/n1b_fifo_semantics_v1.json",
+        "sha256": "a9f3d047acb00579a47e26f0562bc911edc96d536f53c507dcd0315b002c894e"
+      },
+      {
+        "byte_count": 4468,
+        "path": "research_versions/dynamic_k_v1/contracts/N1B_NODE_LOCAL_FIFO_SEMANTICS_CN.md",
+        "sha256": "fc5b0daf7562a3cae40c3328484adce2dea01fe6d42ea3ea81c4a67c4d3eafd4"
+      },
+      {
+        "byte_count": 4094,
+        "path": "research_versions/dynamic_k_v1/contracts/N1B_NUMERICAL_PRECISION_CN.md",
+        "sha256": "1e15d19d0ec8dbdddea72ca9f8e12e0c54aba3aae39e86f80301ad056ed8aec7"
+      },
+      {
+        "byte_count": 6130,
+        "path": "research_versions/dynamic_k_v1/runtime/n1b_evaluator.py",
+        "sha256": "1fd0e7d8eef20c6936b4f14c586e08f7cd72dfb92d7d71a92d287b3173acf487"
+      },
+      {
+        "byte_count": 17162,
+        "path": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py",
+        "sha256": "9fb1d868d67227aff482df004fc9571c47bc21bbdab08a9659d31635b27c04bf"
+      },
+      {
+        "byte_count": 2244,
+        "path": "research_versions/dynamic_k_v1/runtime/n1b_observer.py",
+        "sha256": "7bccef3b17b90ef395b616bfb92ef9e18ebfe5829f0855c2dcab277d0dff0ec6"
+      },
+      {
+        "byte_count": 17278,
+        "path": "research_versions/dynamic_k_v1/schemas/n1b_engineering_result_v1.schema.json",
+        "sha256": "8cb3fc94eacb770492f6d07126337ea2be5bd34d935b69fced82b18b92ffac67"
+      },
+      {
+        "byte_count": 15675,
+        "path": "research_versions/dynamic_k_v1/tests/test_n1b_fifo.py",
+        "sha256": "d8339405ab52787ff8c2b897e96d3f309a5a7dfc2cb5939e65b643e5eee80117"
+      }
+    ],
+    "deleted": [],
+    "modified": []
+  },
+  "created_beijing": "2026-10-10T16:57:14.447982+08:00",
+  "created_utc": "2026-10-10T08:57:14.447982+00:00",
+  "engineering_acceptance": {
+    "N1a_regression": "PASS",
+    "N1b": "PASS",
+    "historical_tests": 97,
+    "known_historical_failures": 1,
+    "n1a_tests": 25,
+    "n1b_tests": 24,
+    "new_regressions": 0,
+    "static_checks": 20,
+    "version_protection_tests": 22
+  },
+  "formal_experiments_executed": false,
+  "old_assets_modified": false,
+  "parent_record": {
+    "byte_count": 8863,
+    "path": "research_versions/dynamic_k_v1/revisions/0004/record.json",
+    "sha256": "815352309856b9e8aa2c5ffbb4e233dd412b6bc7aa3fd2365ea03e17230411f9"
+  },
+  "production_code_modified": false,
+  "reason": "N1b：人工冻结本地每commodity FIFO/同刻比例混合，独立观察与连续cohort年龄积分；仅工程验收，无旧资产修改。",
+  "revision_id": "0005",
+  "schema": "dynamic_k_revision_record_v1",
+  "scientific_gate_pass": false,
+  "version_id": "dynamic_k_v1"
+}

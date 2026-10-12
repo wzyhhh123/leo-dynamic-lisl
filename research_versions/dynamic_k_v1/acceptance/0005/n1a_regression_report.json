@@ -1,0 +1,33 @@
+{
+  "bindings": {
+    "baseline_seal": {
+      "byte_count": 656,
+      "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+      "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+    },
+    "candidate_revision_id": "0004",
+    "implementation_manifest": {
+      "byte_count": 19043,
+      "path": "research_versions/dynamic_k_v1/acceptance/0004/implementation_manifest.json",
+      "sha256": "227043a6bcf318846bbc2e854130613b49082ef6a7e17f3913160f24f40456ad"
+    },
+    "parent_revision": {
+      "byte_count": 5889,
+      "path": "research_versions/dynamic_k_v1/revisions/0003/record.json",
+      "sha256": "7c9fa913a72ab740dfff233513c766ded57326fad2906c259d8ba56a3998baeb"
+    },
+    "scope": "ENGINEERING_TEST_ONLY",
+    "version_origin": {
+      "byte_count": 1555,
+      "path": "research_versions/dynamic_k_v1/version_record.json",
+      "sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+    }
+  },
+  "errors": [],
+  "failures": [],
+  "output": "test_01_all_320_idle_exact_1600T (n1a_regression_tests.N1aTests) ... ok\ntest_02_single_terminal_sequence_and_bilateral_energy_hand_check (n1a_regression_tests.N1aTests) ... ok\ntest_03_draining_45W_excluded_from_main_K (n1a_regression_tests.N1aTests) ... ok\ntest_04_every_terminal_and_total_time_including_fractional_events (n1a_regression_tests.N1aTests) ... ok\ntest_05_traffic_drains_at_2_but_evaluation_reaches_10 (n1a_regression_tests.N1aTests) ... ok\ntest_06_initial_active_no_fake_setup_energy_or_actions (n1a_regression_tests.N1aTests) ... ok\ntest_07a_real_add_drop_and_tail_without_events (n1a_regression_tests.N1aTests) ... ok\ntest_07b_real_BBM_draining_wait_and_asymmetric_setup (n1a_regression_tests.N1aTests) ... ok\ntest_07c_real_MBB_overlapping_energy_and_release (n1a_regression_tests.N1aTests) ... ok\ntest_07d_setup_abort_stale_events_not_double_charged (n1a_regression_tests.N1aTests) ... ok\ntest_07e_natural_expiry_and_no_traffic_advance_terminal_events (n1a_regression_tests.N1aTests) ... ok\ntest_08_same_timestamp_zero_setup_and_release_no_duplicate_dwell (n1a_regression_tests.N1aTests) ... ok\ntest_09_unfinished_traffic_normal_T_and_analytical_J_N (n1a_regression_tests.N1aTests) ... ok\ntest_10_clone_restore_replay_identical_and_no_double_accounting (n1a_regression_tests.N1aTests) ... ok\ntest_11_incremental_energy_nonnegative_across_finite_horizons (n1a_regression_tests.N1aTests) ... ok\ntest_12_numeric_and_cross_field_tampering_rejected (n1a_regression_tests.N1aTests) ... ok\ntest_13_unweighted_J_independent_of_legacy_commodity_weights (n1a_regression_tests.N1aTests) ... ok\ntest_14_initial_pending_setup_actual_remaining_time (n1a_regression_tests.N1aTests) ... ok\ntest_15_log_loss_rewrite_inventory_gap_and_unlogged_state_rejected (n1a_regression_tests.N1aTests) ... ok\ntest_16_horizon_bounds_and_input_mutation_rejected (n1a_regression_tests.N1aTests) ... ok\ntest_17_partial_checkpoint_is_not_normal_T (n1a_regression_tests.N1aTests) ... ok\ntest_18_rejected_command_has_no_phantom_energy (n1a_regression_tests.N1aTests) ... ok\ntest_19_D2_draining_keeps_real_propagation_and_residual_work (n1a_regression_tests.N1aTests) ... ok\ntest_20_initial_draining_actual_remaining_phase_no_fake_setup (n1a_regression_tests.N1aTests) ... ok\ntest_21_wrong_implementation_anchor_rejected_before_execution (n1a_regression_tests.N1aTests) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 31.633s\n\nOK\n",
+  "scientific_gate_pass": false,
+  "scope": "UNCHANGED_N1A_ENGINEERING_REGRESSION",
+  "status": "PASS",
+  "tests_run": 25
+}

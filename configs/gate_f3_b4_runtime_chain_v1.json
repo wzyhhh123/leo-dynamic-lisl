@@ -1,0 +1,14 @@
+{
+  "schema": "b4_runtime_bookkeeping_chain_v1",
+  "status": "FROZEN",
+  "overlays": {
+    "configs/gate_f3_b4_lightweight_clone_overlay_v1.json": "06e7667876a774e3ff8ef9e0b998a07b472c5a7dc9920c4647c9452dac77746f",
+    "configs/gate_f3_b4_decision_hash_reuse_overlay_v1.json": "29eda2ee8a8ab37f244256b2d8dc19597c8dce57584b4203d2ecaafb4e54fe9b"
+  },
+  "pause_archive": "outputs/gate_f3_p1_paused_archive_20260926T141022_5579539Z",
+  "pause_archive_manifest_sha256": "474538cb52533e3e1d7a604fc0ac9e4ee1235bb81bc65a259ba5e0030f81ca10",
+  "new_registered_P1_executed": false,
+  "P2_started": false,
+  "RL_started": false,
+  "canonical_sha256": "61bd7dc640a3f97eec35a88785202a3ae8655e5cee67080b80cd45f58b97e7df"
+}

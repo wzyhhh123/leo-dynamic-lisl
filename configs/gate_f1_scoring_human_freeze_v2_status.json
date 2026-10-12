@@ -1,0 +1,15 @@
+{
+  "B1_B2_B3_scientific_implementation_modified": false,
+  "B1_B2_B3_scientific_implementation_readiness": "READY",
+  "controller_performance_run": false,
+  "evidence": "outputs/gate_f1_scoring_human_freeze_v2_20260924T175640_513843Z",
+  "gate_f1_scoring_human_freeze_v2": "PASS",
+  "gate_f2_started": false,
+  "gate_f3_started": false,
+  "inflight_only_edge_case_resolved": true,
+  "overlay": "configs/gate_f1_scoring_human_freeze_v2.json",
+  "overlay_canonical_sha256": "f35ad97de5c4be5ae2e989f5758986516dd0344f9e6af64be34a48fcff1051f2",
+  "rl_started": false,
+  "scheduler_semantics_aligned": true,
+  "statement": "Gate F1 Scoring Human Freeze v2 = PASS"
+}

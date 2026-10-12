@@ -1,0 +1,83 @@
+{
+  "algorithm_selection": null,
+  "bindings": {
+    "baseline_seal": null,
+    "configuration": null,
+    "contract": null,
+    "initial_state_manifest": null,
+    "input_manifest": null,
+    "revision_id": null,
+    "revision_record": null,
+    "run_id": null,
+    "source_manifest": null
+  },
+  "business_metrics": {
+    "J_T_bit_s": null,
+    "J_T_plus_bit_s": null,
+    "N_T_bits": null,
+    "R_del_T": null,
+    "delivered_bit_age_integral_bit_s": null,
+    "delivered_bits": null,
+    "mean_delivered_fluid_delay_s": null
+  },
+  "completion": {
+    "all_offered_business_delivered": null,
+    "evaluation_completed_normally": null,
+    "terminal_accounting_covers_0_T": null,
+    "termination_reason": null
+  },
+  "energy": {
+    "DeltaE_LCT_J": null,
+    "E_LCT_J": null,
+    "billing_window": "[0,T]",
+    "dynamic_terminal_count": 320,
+    "energy_ACTIVE_dwell_includes_execution_DRAINING": true,
+    "expected_total_dwell_s_expression": "320*T",
+    "five_execution_state_dwell_s": {
+      "ACQUIRING": null,
+      "ACTIVE": null,
+      "DRAINING": null,
+      "IDLE": null,
+      "RETARGETING": null
+    },
+    "four_energy_state_dwell_s": {
+      "ACQUIRING": null,
+      "ACTIVE": null,
+      "IDLE": null,
+      "RETARGETING": null
+    },
+    "initial_state_billing": "ACTUAL_STATE_NO_SYNTHETIC_SETUP",
+    "power_profile_id": "Liu-anchored_parameterized_four-state_LCT_power_profile_v1",
+    "pre_T0_setup_energy_included": false,
+    "standby_baseline_energy_J": null
+  },
+  "horizon": {
+    "cutoff_s": null,
+    "injection_end_s": null,
+    "simulated_until_s": null,
+    "start_s": 0
+  },
+  "implementation_status": {
+    "delivered_fluid_age": "NOT_IMPLEMENTED",
+    "fixed_horizon_energy": "NOT_IMPLEMENTED"
+  },
+  "record_kind": "TEMPLATE_NOT_EXECUTED",
+  "schema": "dynamic_k_research_result_v1_DRAFT",
+  "scientific_parameters": {
+    "D_ref_s": null,
+    "E_ref_J": null,
+    "R_min": null,
+    "T_A_s": null,
+    "T_s": null,
+    "alpha": null,
+    "tau_res_s": null
+  },
+  "topology": {
+    "DRAINING_in_main_K": false,
+    "K_definition": "REAL_ACTIVE_DYNAMIC_CONNECTIONS_ADMITTING_NEW_BUSINESS",
+    "reservation_and_state_counters_may_overlap": true,
+    "setup_in_main_K": false,
+    "time_series": null
+  },
+  "version_id": "dynamic_k_v1"
+}

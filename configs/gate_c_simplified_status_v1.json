@@ -1,0 +1,7 @@
+{
+  "gate_c_simplified": "PASS",
+  "statement": "PASS under simplified parametric terminal model",
+  "evidence": "outputs\\gate_c_simplified_20260922T064019_313843Z",
+  "gate_d_technically_ready": true,
+  "gate_d_started": false
+}

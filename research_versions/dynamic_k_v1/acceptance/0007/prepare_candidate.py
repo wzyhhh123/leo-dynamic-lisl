@@ -1,0 +1,49 @@
+"""Append-only N3 candidate manifest; preserve any preceding attempt."""
+import argparse,hashlib,json
+from pathlib import Path
+V=Path(__file__).resolve().parents[2];P=V.parents[1];A=Path(__file__).parent
+ORIGIN='ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691'
+PARENT='417e46baf6d3d7c8846af61131952739275c9b22bd1d468cc28e649b3c82dd18'
+
+def bind(p):
+    data=p.read_bytes()
+    return dict(path=p.relative_to(P).as_posix(),byte_count=len(data),sha256=hashlib.sha256(data).hexdigest())
+
+def write_new(path,value):
+    with path.open('x',encoding='utf-8',newline='\n') as f:
+        json.dump(value,f,ensure_ascii=False,sort_keys=True,indent=2,allow_nan=False);f.write('\n')
+
+def main():
+    parser=argparse.ArgumentParser();parser.add_argument('--manifest-name',default='implementation_manifest.json');args=parser.parse_args()
+    schema_path=V/'schemas/n3_engineering_result_v1.schema.json'
+    if not schema_path.exists():
+        n2=json.loads((V/'schemas/n2_engineering_result_v1.schema.json').read_text(encoding='utf-8'))
+        schema=dict(schema=dict(const='dynamic_k_n3_engineering_result_v1'),scope=dict(const='ENGINEERING_TEST_ONLY'),
+            bindings=dict(type='object'),controller=dict(enum=['STATIC_HOLD','REACTIVE_DYNAMIC_K']),
+            fixture_identity=dict(type='object'),decision_audit=dict(type='array',items=dict(type='object')),
+            terminal_events_after_last_epoch=dict(type='array',items=dict(type='object')),n2_result=n2,
+            metrics=dict(type='object'),non_HOLD_accepted_count=dict(type='integer',minimum=0),
+            scientific_gate_pass=dict(const=False),formal_experiments_executed=dict(const=False),N4_implemented=dict(const=False))
+        write_new(schema_path,{'$schema':'https://json-schema.org/draft/2020-12/schema','type':'object',
+                              'required':list(schema),'properties':schema,'additionalProperties':False})
+    paths=list((P/'src').rglob('*.py'))+list((V/'runtime').glob('*.py'))
+    paths+=[V/'tests'/n for n in ('test_n1a.py','test_n1b_fifo.py','test_n2_actions.py','test_n3_baselines.py')]
+    paths+=[V/'contracts/N3_CLOSED_LOOP_BASELINES_CN.md',V/'configs/n3_baseline_semantics_v1.json',schema_path,
+            V/'tools/version_control.py',A/'prepare_candidate.py',A/'run_acceptance.py']
+    paths+=[V/'acceptance'/r/'implementation_manifest.json' for r in ('0004','0005','0006')]
+    paths+=[P/'configs/hardware_gate_c_simplified_v1.json']
+    paths+=[P/'outputs/gate_c_simplified_20260922T064019_313843Z'/n for n in ('terminal_pair_intervals.jsonl','z_ref.json')]
+    paths+=[P/'data/raw/sgp4_x720'/n for n in ('manifest.json','hashes.json','constellation.tle')]
+    if (A/'attempt01/catalog_coverage.json').exists():
+        paths+=[A/'implementation_manifest.json']+list((A/'attempt01').glob('*'))
+        paths+=[A/'finalize_revision.py',A/'write_report.py',A/'run_legacy_checks.py']
+    version=json.loads((V/'version_record.json').read_text(encoding='utf-8'))
+    anchors=dict(version_origin=bind(V/'version_record.json'),parent_revision=bind(V/'revisions/0006/record.json'),baseline_seal=version['baseline_seal'])
+    assert anchors['version_origin']['sha256']==ORIGIN and anchors['parent_revision']['sha256']==PARENT
+    target=A/args.manifest_name
+    assert target.parent==A and target.suffix=='.json'
+    write_new(target,dict(schema='dynamic_k_n3_candidate_v1',scope='ENGINEERING_TEST_ONLY',candidate_revision_id='0007',
+        configuration_path='research_versions/dynamic_k_v1/configs/n3_baseline_semantics_v1.json',
+        files=[bind(p) for p in sorted(set(paths))],anchors=anchors,formal_experiments_authorized=False))
+    print(json.dumps(bind(target),indent=2))
+if __name__=='__main__':main()

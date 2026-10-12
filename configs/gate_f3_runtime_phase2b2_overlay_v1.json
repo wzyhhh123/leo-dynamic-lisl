@@ -1,0 +1,34 @@
+{
+  "P2_started": false,
+  "RL_started": false,
+  "audit_evidence": {
+    "report": "outputs/gate_f3_runtime_phase2b2_audit_20260925T144943_355836Z/audit.json",
+    "report_sha256": "0b40f0d8a8317f7ef95f0a7b60f23f02e8581635b21bc73980c9c64f7cc22e78"
+  },
+  "canonical_sha256": "fdc24c670a1c48562f9314e2ddb329aebc68e8a82ac14798e5271a0410a44862",
+  "equivalence": {
+    "B1": true,
+    "B3": true,
+    "path_reduction_exactly_destination_duplicates": true,
+    "route_dict_keys_values_and_order": true,
+    "snapshot_and_network_prefix": true
+  },
+  "equivalence_evidence": {
+    "report": "outputs/gate_f3_runtime_phase2b2_20260925T145217_477550Z/report.json",
+    "report_sha256": "a87c30d8d1ecb358f1b11b1c3abec670ad6f889edd8574796143d168eb53ca26"
+  },
+  "final_pre_P1_runtime_equivalence_executed": false,
+  "final_pre_P1_runtime_equivalence_required": true,
+  "frozen_scientific_semantics_changed": false,
+  "optimized_code_hashes": {
+    "src/dynamic_lisl/common_router.py": "4c6e613533eb8837477dac9115ee8760752a6d9cfafeb54cea15ed5d676341ce"
+  },
+  "parent_code_hashes": {
+    "src/dynamic_lisl/common_router.py": "ad2d7916f5662dba36f7f315a6389d2588040d6e701dd55b3be417002f0ff110"
+  },
+  "phase2b3_started": false,
+  "registered_P1_executed": false,
+  "schema": "gate_f3_runtime_semantic_preserving_optimization_phase2b2_v1",
+  "scope": "EXACT_SAME_DESTINATION_ROUTE_TABLE_REUSE_ONLY",
+  "status": "PASS"
+}

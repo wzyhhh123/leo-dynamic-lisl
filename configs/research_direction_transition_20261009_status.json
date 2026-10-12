@@ -1,0 +1,57 @@
+{
+  "status": "OLD_EXPERIMENTS_PAUSED_NEW_DIRECTION_DISCUSSION_DRAFT",
+  "created_utc": "2026-10-09T08:39:06.464539+00:00",
+  "old_F3_v2_experiment_work_paused": true,
+  "old_42_run_plan_paused": true,
+  "historical_contracts_not_rewritten": true,
+  "new_direction_user_selected": {
+    "scene": "160_SATELLITES_4_PLANES_2_FIXED_2_DYNAMIC",
+    "connectivity": "CONTINUOUS_ADMIT_CONNECTED_WITH_ACTIVE_AUDIT",
+    "dynamic_link_count": "VARIABLE",
+    "energy": "PER_SATELLITE_DYNAMIC_LCT_HARD_ENERGY_BUDGET",
+    "primary_objective": "NETWORK_UNFINISHED_WORK_AREA_J",
+    "conceptual_actions": [
+      "HOLD",
+      "ADD",
+      "DROP",
+      "REPLACE"
+    ],
+    "algorithm": "UNDECIDED"
+  },
+  "draft_recommendations_not_frozen": {
+    "extra_global_K_max": "OMIT_UNLESS_INDEPENDENT_OPERATIONAL_REQUIREMENT",
+    "terminal_count_only_upper_bound": 160,
+    "delivery_constraint": "TERMINAL_BACKLOG_BY_COMMON_HORIZON",
+    "energy_evaluation": "COMMON_HORIZON_INCLUDING_POST_DELIVERY_MAINTENANCE"
+  },
+  "unresolved_numeric_parameters": [
+    "power_by_phase",
+    "energy_budget_by_satellite",
+    "evaluation_horizon_final_freeze",
+    "delivery_tolerance",
+    "decision_cadence",
+    "batch_size",
+    "candidate_budget",
+    "future_maintenance_feasibility_policy"
+  ],
+  "formal_new_contract_frozen": false,
+  "production_code_modified": false,
+  "energy_implementation_started": false,
+  "ADD_DROP_controller_implementation_started": false,
+  "registered_experiments_executed": false,
+  "tests_executed": false,
+  "RL_started": false,
+  "process_inspection": {
+    "one_read_only_command_line_query": true,
+    "identified_project_python_processes": 0,
+    "processes_terminated": 0,
+    "continuous_monitor_created": false,
+    "not_an_exhaustive_background_task_inventory": true
+  },
+  "reports": {
+    "docs/ENERGY_CONSTRAINED_ON_DEMAND_RESEARCH_FRAMEWORK_DRAFT_CN.md": "7216252218748c527c624311df9add673c7c8db19eef958248a53a512dd15caf",
+    "docs/F3_V2_EXPERIMENT_PAUSE_AND_DIRECTION_TRANSITION_20261009_CN.md": "2324734ab9bd6db82ad956611dcac0e4b6e1cbbff287dd93928af6b1e49844cc"
+  },
+  "attempt_dir": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\outputs\\research_direction_pause_20261009T083347_429429Z",
+  "STOP": true
+}

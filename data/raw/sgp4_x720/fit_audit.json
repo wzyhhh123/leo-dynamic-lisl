@@ -1,0 +1,5050 @@
+{
+  "passed": true,
+  "epoch_position_tolerance_m": 25,
+  "epoch_velocity_tolerance_m_s": 0.05,
+  "max_serialized_epoch_position_error_m": 14.704674544787428,
+  "max_serialized_epoch_velocity_error_m_s": 0.013743123595194784,
+  "satellites": [
+    {
+      "sat_name": "X0_1",
+      "serialized_epoch_position_error_m": 1.9695788323366232,
+      "serialized_epoch_velocity_error_m_s": 0.0047962467837245355,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_2",
+      "serialized_epoch_position_error_m": 3.480426565774429,
+      "serialized_epoch_velocity_error_m_s": 0.0018482016113968596,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_3",
+      "serialized_epoch_position_error_m": 2.992486644670124,
+      "serialized_epoch_velocity_error_m_s": 0.0038031776177303717,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_4",
+      "serialized_epoch_position_error_m": 3.2148607585337126,
+      "serialized_epoch_velocity_error_m_s": 0.005660228940379172,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_5",
+      "serialized_epoch_position_error_m": 5.406042511532167,
+      "serialized_epoch_velocity_error_m_s": 0.00688038950277738,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_6",
+      "serialized_epoch_position_error_m": 9.116813853570969,
+      "serialized_epoch_velocity_error_m_s": 0.004410902094168056,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_7",
+      "serialized_epoch_position_error_m": 8.77975692703062,
+      "serialized_epoch_velocity_error_m_s": 0.008179136534044586,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_8",
+      "serialized_epoch_position_error_m": 2.827874236138028,
+      "serialized_epoch_velocity_error_m_s": 0.003939380046782672,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_9",
+      "serialized_epoch_position_error_m": 9.270808054590235,
+      "serialized_epoch_velocity_error_m_s": 0.006060336105171541,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_10",
+      "serialized_epoch_position_error_m": 7.573702653433853,
+      "serialized_epoch_velocity_error_m_s": 0.00504100712862839,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_11",
+      "serialized_epoch_position_error_m": 5.1221612176850595,
+      "serialized_epoch_velocity_error_m_s": 0.0070645066378234945,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_12",
+      "serialized_epoch_position_error_m": 6.352780174301178,
+      "serialized_epoch_velocity_error_m_s": 0.0038093834364967705,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_13",
+      "serialized_epoch_position_error_m": 5.309707928104658,
+      "serialized_epoch_velocity_error_m_s": 0.002635642590524933,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_14",
+      "serialized_epoch_position_error_m": 9.149959972142023,
+      "serialized_epoch_velocity_error_m_s": 0.00957162044474523,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_15",
+      "serialized_epoch_position_error_m": 3.992546493995633,
+      "serialized_epoch_velocity_error_m_s": 0.004524162280242188,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_16",
+      "serialized_epoch_position_error_m": 5.826799680475828,
+      "serialized_epoch_velocity_error_m_s": 0.00531930785781327,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_17",
+      "serialized_epoch_position_error_m": 2.6668489396450563,
+      "serialized_epoch_velocity_error_m_s": 0.006518857477624181,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_18",
+      "serialized_epoch_position_error_m": 7.988423363610197,
+      "serialized_epoch_velocity_error_m_s": 0.0025773087851121775,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_19",
+      "serialized_epoch_position_error_m": 7.187004161329833,
+      "serialized_epoch_velocity_error_m_s": 0.007110342808930149,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_20",
+      "serialized_epoch_position_error_m": 8.005153707350223,
+      "serialized_epoch_velocity_error_m_s": 0.007858929817976762,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_21",
+      "serialized_epoch_position_error_m": 9.62462917188242,
+      "serialized_epoch_velocity_error_m_s": 0.010114806080851704,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_22",
+      "serialized_epoch_position_error_m": 9.720635576071095,
+      "serialized_epoch_velocity_error_m_s": 0.008644156948041676,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_23",
+      "serialized_epoch_position_error_m": 8.68249000120858,
+      "serialized_epoch_velocity_error_m_s": 0.008659036423677961,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_24",
+      "serialized_epoch_position_error_m": 7.478841006911451,
+      "serialized_epoch_velocity_error_m_s": 0.008531339747248297,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_25",
+      "serialized_epoch_position_error_m": 5.01927871266745,
+      "serialized_epoch_velocity_error_m_s": 0.006473203065624179,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_26",
+      "serialized_epoch_position_error_m": 8.413440212049016,
+      "serialized_epoch_velocity_error_m_s": 0.002329388179291741,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_27",
+      "serialized_epoch_position_error_m": 2.4639257799741103,
+      "serialized_epoch_velocity_error_m_s": 0.0025637329310184997,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_28",
+      "serialized_epoch_position_error_m": 3.359702967899801,
+      "serialized_epoch_velocity_error_m_s": 0.004413798227813016,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_29",
+      "serialized_epoch_position_error_m": 10.301114376425156,
+      "serialized_epoch_velocity_error_m_s": 0.007316303722824793,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_30",
+      "serialized_epoch_position_error_m": 10.830484639453267,
+      "serialized_epoch_velocity_error_m_s": 0.008912517929514342,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_31",
+      "serialized_epoch_position_error_m": 5.240057645527021,
+      "serialized_epoch_velocity_error_m_s": 0.007141933653819657,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_32",
+      "serialized_epoch_position_error_m": 7.937841616454255,
+      "serialized_epoch_velocity_error_m_s": 0.005979290313767455,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_33",
+      "serialized_epoch_position_error_m": 5.900741660281652,
+      "serialized_epoch_velocity_error_m_s": 0.0036858218137860352,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_34",
+      "serialized_epoch_position_error_m": 3.0928983147447715,
+      "serialized_epoch_velocity_error_m_s": 0.00470108368266529,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_35",
+      "serialized_epoch_position_error_m": 4.149092071698993,
+      "serialized_epoch_velocity_error_m_s": 0.004681954971744712,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_36",
+      "serialized_epoch_position_error_m": 7.823333903429132,
+      "serialized_epoch_velocity_error_m_s": 0.007391282370371112,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_37",
+      "serialized_epoch_position_error_m": 5.302445750719431,
+      "serialized_epoch_velocity_error_m_s": 0.007814302867021734,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_38",
+      "serialized_epoch_position_error_m": 7.717017312245716,
+      "serialized_epoch_velocity_error_m_s": 0.0016025518352448494,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_39",
+      "serialized_epoch_position_error_m": 5.38671545293006,
+      "serialized_epoch_velocity_error_m_s": 0.004731701890911344,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X0_40",
+      "serialized_epoch_position_error_m": 3.392985700587674,
+      "serialized_epoch_velocity_error_m_s": 0.0029612248177179573,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_1",
+      "serialized_epoch_position_error_m": 6.53832333543996,
+      "serialized_epoch_velocity_error_m_s": 0.007026852642256824,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_2",
+      "serialized_epoch_position_error_m": 1.3149568979392796,
+      "serialized_epoch_velocity_error_m_s": 0.0053537641769338465,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_3",
+      "serialized_epoch_position_error_m": 3.4188565311439385,
+      "serialized_epoch_velocity_error_m_s": 0.0037302848962945992,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_4",
+      "serialized_epoch_position_error_m": 5.658672194086092,
+      "serialized_epoch_velocity_error_m_s": 0.00515757222316813,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_5",
+      "serialized_epoch_position_error_m": 3.9833014726762297,
+      "serialized_epoch_velocity_error_m_s": 0.004043180268042952,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_6",
+      "serialized_epoch_position_error_m": 4.5970901519340455,
+      "serialized_epoch_velocity_error_m_s": 0.001339400457203596,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_7",
+      "serialized_epoch_position_error_m": 7.555721256290157,
+      "serialized_epoch_velocity_error_m_s": 0.008382019714101904,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_8",
+      "serialized_epoch_position_error_m": 1.7115912745912905,
+      "serialized_epoch_velocity_error_m_s": 0.0033525628938993585,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_9",
+      "serialized_epoch_position_error_m": 6.372393128406556,
+      "serialized_epoch_velocity_error_m_s": 0.00701681975451413,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_10",
+      "serialized_epoch_position_error_m": 0.4977685387340032,
+      "serialized_epoch_velocity_error_m_s": 0.004524621054783122,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_11",
+      "serialized_epoch_position_error_m": 11.602915801779885,
+      "serialized_epoch_velocity_error_m_s": 0.011087160914995698,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_12",
+      "serialized_epoch_position_error_m": 5.2556082487983025,
+      "serialized_epoch_velocity_error_m_s": 0.003996432546218271,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_13",
+      "serialized_epoch_position_error_m": 7.121212876815977,
+      "serialized_epoch_velocity_error_m_s": 0.004315053096220552,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_14",
+      "serialized_epoch_position_error_m": 9.283562606149102,
+      "serialized_epoch_velocity_error_m_s": 0.0096185480506515,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_15",
+      "serialized_epoch_position_error_m": 3.3472904297649637,
+      "serialized_epoch_velocity_error_m_s": 0.004645319705070237,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_16",
+      "serialized_epoch_position_error_m": 7.714320376678795,
+      "serialized_epoch_velocity_error_m_s": 0.00796099852343367,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_17",
+      "serialized_epoch_position_error_m": 8.245250064571948,
+      "serialized_epoch_velocity_error_m_s": 0.007984327470256248,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_18",
+      "serialized_epoch_position_error_m": 3.5020665245864486,
+      "serialized_epoch_velocity_error_m_s": 0.0039731785818395305,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_19",
+      "serialized_epoch_position_error_m": 6.070426124160655,
+      "serialized_epoch_velocity_error_m_s": 0.00603530770902064,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_20",
+      "serialized_epoch_position_error_m": 6.885008036232199,
+      "serialized_epoch_velocity_error_m_s": 0.00625476132036947,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_21",
+      "serialized_epoch_position_error_m": 1.7679432761372371,
+      "serialized_epoch_velocity_error_m_s": 0.0032224697011529156,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_22",
+      "serialized_epoch_position_error_m": 7.9657862088772164,
+      "serialized_epoch_velocity_error_m_s": 0.009440808205896848,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_23",
+      "serialized_epoch_position_error_m": 3.0578712116618476,
+      "serialized_epoch_velocity_error_m_s": 0.003513606884406508,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_24",
+      "serialized_epoch_position_error_m": 5.136387945644813,
+      "serialized_epoch_velocity_error_m_s": 0.004338242793737602,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_25",
+      "serialized_epoch_position_error_m": 2.969349849507708,
+      "serialized_epoch_velocity_error_m_s": 0.0031702286276414854,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_26",
+      "serialized_epoch_position_error_m": 4.617828510755158,
+      "serialized_epoch_velocity_error_m_s": 0.0012913660023756595,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_27",
+      "serialized_epoch_position_error_m": 2.5135863030404226,
+      "serialized_epoch_velocity_error_m_s": 0.005117307826140161,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_28",
+      "serialized_epoch_position_error_m": 5.23542197440752,
+      "serialized_epoch_velocity_error_m_s": 0.005800691524353226,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_29",
+      "serialized_epoch_position_error_m": 7.69449132767253,
+      "serialized_epoch_velocity_error_m_s": 0.008026994852385847,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_30",
+      "serialized_epoch_position_error_m": 5.480283475680307,
+      "serialized_epoch_velocity_error_m_s": 0.006910450851079353,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_31",
+      "serialized_epoch_position_error_m": 3.9445855755009926,
+      "serialized_epoch_velocity_error_m_s": 0.003758599347538285,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_32",
+      "serialized_epoch_position_error_m": 8.798392013030366,
+      "serialized_epoch_velocity_error_m_s": 0.007876156304164229,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_33",
+      "serialized_epoch_position_error_m": 8.556883220806332,
+      "serialized_epoch_velocity_error_m_s": 0.006159253334291697,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_34",
+      "serialized_epoch_position_error_m": 1.9308305950637827,
+      "serialized_epoch_velocity_error_m_s": 0.004005647127695718,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_35",
+      "serialized_epoch_position_error_m": 4.729641318651447,
+      "serialized_epoch_velocity_error_m_s": 0.0056987590335900225,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_36",
+      "serialized_epoch_position_error_m": 6.380489429663296,
+      "serialized_epoch_velocity_error_m_s": 0.006566251482601975,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_37",
+      "serialized_epoch_position_error_m": 4.424933830275921,
+      "serialized_epoch_velocity_error_m_s": 0.004613667426288496,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_38",
+      "serialized_epoch_position_error_m": 4.616118377283995,
+      "serialized_epoch_velocity_error_m_s": 0.004819966828493719,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_39",
+      "serialized_epoch_position_error_m": 3.7113270309274906,
+      "serialized_epoch_velocity_error_m_s": 0.0036036477867936404,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X1_40",
+      "serialized_epoch_position_error_m": 1.3827169286576713,
+      "serialized_epoch_velocity_error_m_s": 0.0013512208827042122,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_1",
+      "serialized_epoch_position_error_m": 6.783185503788066,
+      "serialized_epoch_velocity_error_m_s": 0.00488438908762461,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_2",
+      "serialized_epoch_position_error_m": 4.810305037926356,
+      "serialized_epoch_velocity_error_m_s": 0.004057771753611202,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_3",
+      "serialized_epoch_position_error_m": 4.6732660243643,
+      "serialized_epoch_velocity_error_m_s": 0.004152562714910462,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_4",
+      "serialized_epoch_position_error_m": 3.815586335131733,
+      "serialized_epoch_velocity_error_m_s": 0.0023592491671424833,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_5",
+      "serialized_epoch_position_error_m": 3.540488669820834,
+      "serialized_epoch_velocity_error_m_s": 0.0024841264979523388,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_6",
+      "serialized_epoch_position_error_m": 7.586050284138803,
+      "serialized_epoch_velocity_error_m_s": 0.0063520009307190635,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_7",
+      "serialized_epoch_position_error_m": 6.331461217941485,
+      "serialized_epoch_velocity_error_m_s": 0.006163650269334025,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_8",
+      "serialized_epoch_position_error_m": 6.590067432487715,
+      "serialized_epoch_velocity_error_m_s": 0.006063130464635828,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_9",
+      "serialized_epoch_position_error_m": 4.334332636502166,
+      "serialized_epoch_velocity_error_m_s": 0.0048095513281004145,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_10",
+      "serialized_epoch_position_error_m": 5.823685799537214,
+      "serialized_epoch_velocity_error_m_s": 0.0046802647228519996,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_11",
+      "serialized_epoch_position_error_m": 3.3810743480319854,
+      "serialized_epoch_velocity_error_m_s": 0.0023013508810082657,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_12",
+      "serialized_epoch_position_error_m": 8.358029420607402,
+      "serialized_epoch_velocity_error_m_s": 0.008110541748518737,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_13",
+      "serialized_epoch_position_error_m": 8.172489096883657,
+      "serialized_epoch_velocity_error_m_s": 0.006198690720376613,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_14",
+      "serialized_epoch_position_error_m": 3.5326482667305177,
+      "serialized_epoch_velocity_error_m_s": 0.0034897466529345868,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_15",
+      "serialized_epoch_position_error_m": 5.277397611695764,
+      "serialized_epoch_velocity_error_m_s": 0.004106489796813934,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_16",
+      "serialized_epoch_position_error_m": 6.76647831424221,
+      "serialized_epoch_velocity_error_m_s": 0.005823350419719487,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_17",
+      "serialized_epoch_position_error_m": 2.149980129000845,
+      "serialized_epoch_velocity_error_m_s": 0.0022830099613245984,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_18",
+      "serialized_epoch_position_error_m": 4.198281845426259,
+      "serialized_epoch_velocity_error_m_s": 0.0036172371491202124,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_19",
+      "serialized_epoch_position_error_m": 10.010860230776345,
+      "serialized_epoch_velocity_error_m_s": 0.009508521457586152,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_20",
+      "serialized_epoch_position_error_m": 5.694615056094803,
+      "serialized_epoch_velocity_error_m_s": 0.004787159551667889,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_21",
+      "serialized_epoch_position_error_m": 5.998816190908072,
+      "serialized_epoch_velocity_error_m_s": 0.004096589912063787,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_22",
+      "serialized_epoch_position_error_m": 4.504820542407919,
+      "serialized_epoch_velocity_error_m_s": 0.004015075988547799,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_23",
+      "serialized_epoch_position_error_m": 7.974164100239156,
+      "serialized_epoch_velocity_error_m_s": 0.007635041404740495,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_24",
+      "serialized_epoch_position_error_m": 5.869053625172697,
+      "serialized_epoch_velocity_error_m_s": 0.004705823709734295,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_25",
+      "serialized_epoch_position_error_m": 2.8491870963234454,
+      "serialized_epoch_velocity_error_m_s": 0.0011186379221020284,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_26",
+      "serialized_epoch_position_error_m": 10.208019673371014,
+      "serialized_epoch_velocity_error_m_s": 0.009359841317958919,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_27",
+      "serialized_epoch_position_error_m": 3.13656821298754,
+      "serialized_epoch_velocity_error_m_s": 0.0035533973297026257,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_28",
+      "serialized_epoch_position_error_m": 2.2373597482846033,
+      "serialized_epoch_velocity_error_m_s": 0.0014096540781889319,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_29",
+      "serialized_epoch_position_error_m": 10.385155514565414,
+      "serialized_epoch_velocity_error_m_s": 0.010337699823834123,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_30",
+      "serialized_epoch_position_error_m": 3.346146678800387,
+      "serialized_epoch_velocity_error_m_s": 0.0015333456305549379,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_31",
+      "serialized_epoch_position_error_m": 4.192280875632024,
+      "serialized_epoch_velocity_error_m_s": 0.003305022856952898,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_32",
+      "serialized_epoch_position_error_m": 3.8420720365154994,
+      "serialized_epoch_velocity_error_m_s": 0.004254464348006625,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_33",
+      "serialized_epoch_position_error_m": 9.920292484087222,
+      "serialized_epoch_velocity_error_m_s": 0.008174144225127774,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_34",
+      "serialized_epoch_position_error_m": 2.3379993163943027,
+      "serialized_epoch_velocity_error_m_s": 0.002645323931935518,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_35",
+      "serialized_epoch_position_error_m": 4.050053300249097,
+      "serialized_epoch_velocity_error_m_s": 0.002186773175500593,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_36",
+      "serialized_epoch_position_error_m": 5.240015009881461,
+      "serialized_epoch_velocity_error_m_s": 0.00410756449242843,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_37",
+      "serialized_epoch_position_error_m": 1.31013102367121,
+      "serialized_epoch_velocity_error_m_s": 0.0011891829704844931,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_38",
+      "serialized_epoch_position_error_m": 4.247509482140674,
+      "serialized_epoch_velocity_error_m_s": 0.0036481217770519456,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_39",
+      "serialized_epoch_position_error_m": 1.3660249144206842,
+      "serialized_epoch_velocity_error_m_s": 0.0007888047321270258,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X2_40",
+      "serialized_epoch_position_error_m": 10.778445207225875,
+      "serialized_epoch_velocity_error_m_s": 0.009716593409138396,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_1",
+      "serialized_epoch_position_error_m": 6.44567866987243,
+      "serialized_epoch_velocity_error_m_s": 0.006342193207312523,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_2",
+      "serialized_epoch_position_error_m": 12.220184330744893,
+      "serialized_epoch_velocity_error_m_s": 0.01163047485063876,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_3",
+      "serialized_epoch_position_error_m": 6.344456830126788,
+      "serialized_epoch_velocity_error_m_s": 0.005776058730775747,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_4",
+      "serialized_epoch_position_error_m": 0.6885741371719679,
+      "serialized_epoch_velocity_error_m_s": 0.004705284083627601,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_5",
+      "serialized_epoch_position_error_m": 6.81797079841571,
+      "serialized_epoch_velocity_error_m_s": 0.009706183348501467,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_6",
+      "serialized_epoch_position_error_m": 5.3799183333983365,
+      "serialized_epoch_velocity_error_m_s": 0.00791764600859615,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_7",
+      "serialized_epoch_position_error_m": 2.2515260553408867,
+      "serialized_epoch_velocity_error_m_s": 0.007530881779513249,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_8",
+      "serialized_epoch_position_error_m": 4.935054162530557,
+      "serialized_epoch_velocity_error_m_s": 0.0053288317796896046,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_9",
+      "serialized_epoch_position_error_m": 5.513340842017182,
+      "serialized_epoch_velocity_error_m_s": 0.0026388261973864153,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_10",
+      "serialized_epoch_position_error_m": 1.990791953183206,
+      "serialized_epoch_velocity_error_m_s": 0.004436035784649468,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_11",
+      "serialized_epoch_position_error_m": 8.04063554472923,
+      "serialized_epoch_velocity_error_m_s": 0.008904336144665846,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_12",
+      "serialized_epoch_position_error_m": 4.618234957175113,
+      "serialized_epoch_velocity_error_m_s": 0.005473822926351071,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_13",
+      "serialized_epoch_position_error_m": 8.989674622580603,
+      "serialized_epoch_velocity_error_m_s": 0.00597845862815202,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_14",
+      "serialized_epoch_position_error_m": 3.303065722494595,
+      "serialized_epoch_velocity_error_m_s": 0.004527074892253519,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_15",
+      "serialized_epoch_position_error_m": 3.403057515749119,
+      "serialized_epoch_velocity_error_m_s": 0.004682407005225169,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_16",
+      "serialized_epoch_position_error_m": 5.866529823548056,
+      "serialized_epoch_velocity_error_m_s": 0.007587835948719103,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_17",
+      "serialized_epoch_position_error_m": 11.774668378258918,
+      "serialized_epoch_velocity_error_m_s": 0.011064673095386297,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_18",
+      "serialized_epoch_position_error_m": 4.203264097178754,
+      "serialized_epoch_velocity_error_m_s": 0.006843408018527982,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_19",
+      "serialized_epoch_position_error_m": 8.044617648173325,
+      "serialized_epoch_velocity_error_m_s": 0.0037346395635776838,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_20",
+      "serialized_epoch_position_error_m": 1.9073927021979864,
+      "serialized_epoch_velocity_error_m_s": 0.0015989837553673414,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_21",
+      "serialized_epoch_position_error_m": 3.300600264387757,
+      "serialized_epoch_velocity_error_m_s": 0.0028681883461874847,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_22",
+      "serialized_epoch_position_error_m": 7.6176385773726905,
+      "serialized_epoch_velocity_error_m_s": 0.007394951987244423,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_23",
+      "serialized_epoch_position_error_m": 7.005347403503777,
+      "serialized_epoch_velocity_error_m_s": 0.0067438769098982524,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_24",
+      "serialized_epoch_position_error_m": 3.5917901524769076,
+      "serialized_epoch_velocity_error_m_s": 0.005809136830906842,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_25",
+      "serialized_epoch_position_error_m": 4.584112940110761,
+      "serialized_epoch_velocity_error_m_s": 0.00817069924483335,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_26",
+      "serialized_epoch_position_error_m": 8.624936153977165,
+      "serialized_epoch_velocity_error_m_s": 0.010189172919184454,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_27",
+      "serialized_epoch_position_error_m": 6.935073464440546,
+      "serialized_epoch_velocity_error_m_s": 0.009841130675766035,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_28",
+      "serialized_epoch_position_error_m": 8.482877366043725,
+      "serialized_epoch_velocity_error_m_s": 0.008593731936029544,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_29",
+      "serialized_epoch_position_error_m": 5.6913566911788225,
+      "serialized_epoch_velocity_error_m_s": 0.0029797515307693236,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_30",
+      "serialized_epoch_position_error_m": 4.92232415262023,
+      "serialized_epoch_velocity_error_m_s": 0.006196300209253643,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_31",
+      "serialized_epoch_position_error_m": 6.45781396146266,
+      "serialized_epoch_velocity_error_m_s": 0.007671994720482624,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_32",
+      "serialized_epoch_position_error_m": 1.416918603530535,
+      "serialized_epoch_velocity_error_m_s": 0.003258624024071684,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_33",
+      "serialized_epoch_position_error_m": 7.168839980497066,
+      "serialized_epoch_velocity_error_m_s": 0.003496087343663423,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_34",
+      "serialized_epoch_position_error_m": 10.854724182981327,
+      "serialized_epoch_velocity_error_m_s": 0.010820391449644522,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_35",
+      "serialized_epoch_position_error_m": 7.396167775005091,
+      "serialized_epoch_velocity_error_m_s": 0.007780525490468568,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_36",
+      "serialized_epoch_position_error_m": 9.399681627534786,
+      "serialized_epoch_velocity_error_m_s": 0.01026609939604875,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_37",
+      "serialized_epoch_position_error_m": 8.6341790206983,
+      "serialized_epoch_velocity_error_m_s": 0.008030222441061158,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_38",
+      "serialized_epoch_position_error_m": 2.198815389319244,
+      "serialized_epoch_velocity_error_m_s": 0.005929037903579562,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_39",
+      "serialized_epoch_position_error_m": 9.415053263407836,
+      "serialized_epoch_velocity_error_m_s": 0.0061441449852990505,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X3_40",
+      "serialized_epoch_position_error_m": 4.975197652726968,
+      "serialized_epoch_velocity_error_m_s": 0.004510262079499724,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_1",
+      "serialized_epoch_position_error_m": 0.9359489707530847,
+      "serialized_epoch_velocity_error_m_s": 0.006244763306582174,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_2",
+      "serialized_epoch_position_error_m": 0.9726050469934239,
+      "serialized_epoch_velocity_error_m_s": 0.004902464645056258,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_3",
+      "serialized_epoch_position_error_m": 1.986706070284415,
+      "serialized_epoch_velocity_error_m_s": 0.005187492678485751,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_4",
+      "serialized_epoch_position_error_m": 9.410735691342259,
+      "serialized_epoch_velocity_error_m_s": 0.009906506625134934,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_5",
+      "serialized_epoch_position_error_m": 3.7303407302814966,
+      "serialized_epoch_velocity_error_m_s": 0.0064376078241062465,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_6",
+      "serialized_epoch_position_error_m": 2.8752102361142002,
+      "serialized_epoch_velocity_error_m_s": 0.0037126503309296115,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_7",
+      "serialized_epoch_position_error_m": 4.071509124966488,
+      "serialized_epoch_velocity_error_m_s": 0.0020858094260422042,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_8",
+      "serialized_epoch_position_error_m": 7.2940615454301705,
+      "serialized_epoch_velocity_error_m_s": 0.0034686834235475943,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_9",
+      "serialized_epoch_position_error_m": 5.599443703162875,
+      "serialized_epoch_velocity_error_m_s": 0.002383281932458061,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_10",
+      "serialized_epoch_position_error_m": 8.449271884885,
+      "serialized_epoch_velocity_error_m_s": 0.007901426827708185,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_11",
+      "serialized_epoch_position_error_m": 7.620289889306334,
+      "serialized_epoch_velocity_error_m_s": 0.006377950565128372,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_12",
+      "serialized_epoch_position_error_m": 5.573502408335411,
+      "serialized_epoch_velocity_error_m_s": 0.002605360721966439,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_13",
+      "serialized_epoch_position_error_m": 7.159633977184046,
+      "serialized_epoch_velocity_error_m_s": 0.0063986164145821605,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_14",
+      "serialized_epoch_position_error_m": 8.696094068009021,
+      "serialized_epoch_velocity_error_m_s": 0.008537554408242427,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_15",
+      "serialized_epoch_position_error_m": 4.2242920724787485,
+      "serialized_epoch_velocity_error_m_s": 0.00895894258395232,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_16",
+      "serialized_epoch_position_error_m": 11.211494062782226,
+      "serialized_epoch_velocity_error_m_s": 0.00850605588465063,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_17",
+      "serialized_epoch_position_error_m": 1.7971448597353825,
+      "serialized_epoch_velocity_error_m_s": 0.005647484566834324,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_18",
+      "serialized_epoch_position_error_m": 9.920244434597087,
+      "serialized_epoch_velocity_error_m_s": 0.010016139840481076,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_19",
+      "serialized_epoch_position_error_m": 12.176142307817452,
+      "serialized_epoch_velocity_error_m_s": 0.009971262375399581,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_20",
+      "serialized_epoch_position_error_m": 10.317328444583024,
+      "serialized_epoch_velocity_error_m_s": 0.01015308536018374,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_21",
+      "serialized_epoch_position_error_m": 10.655777573656142,
+      "serialized_epoch_velocity_error_m_s": 0.011655708242776563,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_22",
+      "serialized_epoch_position_error_m": 5.369264008352985,
+      "serialized_epoch_velocity_error_m_s": 0.0072695061952874306,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_23",
+      "serialized_epoch_position_error_m": 13.61950972873325,
+      "serialized_epoch_velocity_error_m_s": 0.013743123595194784,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_24",
+      "serialized_epoch_position_error_m": 4.823805253879879,
+      "serialized_epoch_velocity_error_m_s": 0.006099907078619737,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_25",
+      "serialized_epoch_position_error_m": 1.6610998382382427,
+      "serialized_epoch_velocity_error_m_s": 0.005753440278576895,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_26",
+      "serialized_epoch_position_error_m": 1.4267745988746507,
+      "serialized_epoch_velocity_error_m_s": 0.002584961802990625,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_27",
+      "serialized_epoch_position_error_m": 8.903631888846125,
+      "serialized_epoch_velocity_error_m_s": 0.007893855396651096,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_28",
+      "serialized_epoch_position_error_m": 8.05988526995518,
+      "serialized_epoch_velocity_error_m_s": 0.004860093962490325,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_29",
+      "serialized_epoch_position_error_m": 5.654018987495378,
+      "serialized_epoch_velocity_error_m_s": 0.002431079949566344,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_30",
+      "serialized_epoch_position_error_m": 2.2493070381046802,
+      "serialized_epoch_velocity_error_m_s": 0.0018577965510205268,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_31",
+      "serialized_epoch_position_error_m": 7.33606348010432,
+      "serialized_epoch_velocity_error_m_s": 0.006102782913917836,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_32",
+      "serialized_epoch_position_error_m": 6.592374476020605,
+      "serialized_epoch_velocity_error_m_s": 0.004254027932363599,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_33",
+      "serialized_epoch_position_error_m": 9.498075566917667,
+      "serialized_epoch_velocity_error_m_s": 0.008831966079962806,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_34",
+      "serialized_epoch_position_error_m": 1.7521504674968251,
+      "serialized_epoch_velocity_error_m_s": 0.0015820467084515274,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_35",
+      "serialized_epoch_position_error_m": 9.222901538917139,
+      "serialized_epoch_velocity_error_m_s": 0.011915031839244757,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_36",
+      "serialized_epoch_position_error_m": 9.451420055962139,
+      "serialized_epoch_velocity_error_m_s": 0.006489199545780465,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_37",
+      "serialized_epoch_position_error_m": 2.7840995752670143,
+      "serialized_epoch_velocity_error_m_s": 0.005982308723332774,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_38",
+      "serialized_epoch_position_error_m": 6.816671639956535,
+      "serialized_epoch_velocity_error_m_s": 0.0070105617104107894,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_39",
+      "serialized_epoch_position_error_m": 6.863845890571298,
+      "serialized_epoch_velocity_error_m_s": 0.0016060103111545862,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X4_40",
+      "serialized_epoch_position_error_m": 5.236901260787158,
+      "serialized_epoch_velocity_error_m_s": 0.005793022036893132,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_1",
+      "serialized_epoch_position_error_m": 2.157818852505679,
+      "serialized_epoch_velocity_error_m_s": 0.0016183513565139712,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_2",
+      "serialized_epoch_position_error_m": 3.2521200707685276,
+      "serialized_epoch_velocity_error_m_s": 0.004388215619538399,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_3",
+      "serialized_epoch_position_error_m": 8.504960768427827,
+      "serialized_epoch_velocity_error_m_s": 0.008801307828650946,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_4",
+      "serialized_epoch_position_error_m": 6.9810880354549285,
+      "serialized_epoch_velocity_error_m_s": 0.007812608455427316,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_5",
+      "serialized_epoch_position_error_m": 2.2788981866463405,
+      "serialized_epoch_velocity_error_m_s": 0.003919906928233438,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_6",
+      "serialized_epoch_position_error_m": 4.569146109777628,
+      "serialized_epoch_velocity_error_m_s": 0.0022007717813331226,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_7",
+      "serialized_epoch_position_error_m": 7.348532957316362,
+      "serialized_epoch_velocity_error_m_s": 0.009309093399635527,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_8",
+      "serialized_epoch_position_error_m": 7.963697456727504,
+      "serialized_epoch_velocity_error_m_s": 0.0034380040068306993,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_9",
+      "serialized_epoch_position_error_m": 6.355574231333193,
+      "serialized_epoch_velocity_error_m_s": 0.006022124677979788,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_10",
+      "serialized_epoch_position_error_m": 4.691306974894167,
+      "serialized_epoch_velocity_error_m_s": 0.0003525164578298546,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_11",
+      "serialized_epoch_position_error_m": 3.8783177273389207,
+      "serialized_epoch_velocity_error_m_s": 0.0029219078365435368,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_12",
+      "serialized_epoch_position_error_m": 0.9525031557837847,
+      "serialized_epoch_velocity_error_m_s": 0.001198176598932039,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_13",
+      "serialized_epoch_position_error_m": 2.0793873755152164,
+      "serialized_epoch_velocity_error_m_s": 0.002857867490259265,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_14",
+      "serialized_epoch_position_error_m": 0.7625762642579633,
+      "serialized_epoch_velocity_error_m_s": 0.004079676264146719,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_15",
+      "serialized_epoch_position_error_m": 1.912685332240628,
+      "serialized_epoch_velocity_error_m_s": 0.004088030796639337,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_16",
+      "serialized_epoch_position_error_m": 6.9217700729789176,
+      "serialized_epoch_velocity_error_m_s": 0.0042084713192693385,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_17",
+      "serialized_epoch_position_error_m": 14.704674544787428,
+      "serialized_epoch_velocity_error_m_s": 0.012584135611615737,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_18",
+      "serialized_epoch_position_error_m": 5.9294255416218515,
+      "serialized_epoch_velocity_error_m_s": 0.004316560562215013,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_19",
+      "serialized_epoch_position_error_m": 4.938788481113875,
+      "serialized_epoch_velocity_error_m_s": 0.0025791335518623613,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_20",
+      "serialized_epoch_position_error_m": 1.903252711036429,
+      "serialized_epoch_velocity_error_m_s": 0.005006446863551187,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_21",
+      "serialized_epoch_position_error_m": 5.726456014186741,
+      "serialized_epoch_velocity_error_m_s": 0.0054744958348740425,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_22",
+      "serialized_epoch_position_error_m": 10.035707264111497,
+      "serialized_epoch_velocity_error_m_s": 0.00988832141212779,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_23",
+      "serialized_epoch_position_error_m": 10.63620455250175,
+      "serialized_epoch_velocity_error_m_s": 0.010401154896908491,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_24",
+      "serialized_epoch_position_error_m": 2.907819738941926,
+      "serialized_epoch_velocity_error_m_s": 0.004679769060507248,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_25",
+      "serialized_epoch_position_error_m": 3.9305348915123184,
+      "serialized_epoch_velocity_error_m_s": 0.004894018440955919,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_26",
+      "serialized_epoch_position_error_m": 5.050311402249122,
+      "serialized_epoch_velocity_error_m_s": 0.00319854584324902,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_27",
+      "serialized_epoch_position_error_m": 0.3380621258011487,
+      "serialized_epoch_velocity_error_m_s": 0.006167140005220359,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_28",
+      "serialized_epoch_position_error_m": 11.488834438644929,
+      "serialized_epoch_velocity_error_m_s": 0.008635115856551212,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_29",
+      "serialized_epoch_position_error_m": 6.516889542583864,
+      "serialized_epoch_velocity_error_m_s": 0.006032424498296127,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_30",
+      "serialized_epoch_position_error_m": 8.825279076945467,
+      "serialized_epoch_velocity_error_m_s": 0.007163720901818326,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_31",
+      "serialized_epoch_position_error_m": 13.02096942988322,
+      "serialized_epoch_velocity_error_m_s": 0.012234448500274858,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_32",
+      "serialized_epoch_position_error_m": 2.5039894331389667,
+      "serialized_epoch_velocity_error_m_s": 0.0025429981402842134,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_33",
+      "serialized_epoch_position_error_m": 2.220977697530571,
+      "serialized_epoch_velocity_error_m_s": 0.003041037782608855,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_34",
+      "serialized_epoch_position_error_m": 6.6085429225276355,
+      "serialized_epoch_velocity_error_m_s": 0.007486743659235652,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_35",
+      "serialized_epoch_position_error_m": 6.295575709445245,
+      "serialized_epoch_velocity_error_m_s": 0.0070432764499738275,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_36",
+      "serialized_epoch_position_error_m": 6.481391511693453,
+      "serialized_epoch_velocity_error_m_s": 0.0034705366906541894,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_37",
+      "serialized_epoch_position_error_m": 10.916387078341891,
+      "serialized_epoch_velocity_error_m_s": 0.007998802695952633,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_38",
+      "serialized_epoch_position_error_m": 8.590069618062179,
+      "serialized_epoch_velocity_error_m_s": 0.00707315013269443,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_39",
+      "serialized_epoch_position_error_m": 8.136658729111236,
+      "serialized_epoch_velocity_error_m_s": 0.006638042681002526,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X5_40",
+      "serialized_epoch_position_error_m": 3.620872493532661,
+      "serialized_epoch_velocity_error_m_s": 0.005783794696005142,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_1",
+      "serialized_epoch_position_error_m": 9.75589509730482,
+      "serialized_epoch_velocity_error_m_s": 0.006681990329581206,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_2",
+      "serialized_epoch_position_error_m": 11.975268299226041,
+      "serialized_epoch_velocity_error_m_s": 0.010356079135021415,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_3",
+      "serialized_epoch_position_error_m": 6.350312046183992,
+      "serialized_epoch_velocity_error_m_s": 0.006831230497574942,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_4",
+      "serialized_epoch_position_error_m": 4.148810569416344,
+      "serialized_epoch_velocity_error_m_s": 0.003934153267609104,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_5",
+      "serialized_epoch_position_error_m": 7.926888287611958,
+      "serialized_epoch_velocity_error_m_s": 0.007004782797538573,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_6",
+      "serialized_epoch_position_error_m": 2.835885919912442,
+      "serialized_epoch_velocity_error_m_s": 0.007758266639117025,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_7",
+      "serialized_epoch_position_error_m": 6.471058513611123,
+      "serialized_epoch_velocity_error_m_s": 0.00462951605116741,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_8",
+      "serialized_epoch_position_error_m": 0.4375556567088436,
+      "serialized_epoch_velocity_error_m_s": 0.0019454490207151604,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_9",
+      "serialized_epoch_position_error_m": 4.839524188226361,
+      "serialized_epoch_velocity_error_m_s": 0.001301647034705841,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_10",
+      "serialized_epoch_position_error_m": 5.33420140146759,
+      "serialized_epoch_velocity_error_m_s": 0.006876698302558766,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_11",
+      "serialized_epoch_position_error_m": 6.380514994642137,
+      "serialized_epoch_velocity_error_m_s": 0.005137261063281073,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_12",
+      "serialized_epoch_position_error_m": 2.5306143307639624,
+      "serialized_epoch_velocity_error_m_s": 0.00441781739644735,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_13",
+      "serialized_epoch_position_error_m": 8.58221645339201,
+      "serialized_epoch_velocity_error_m_s": 0.009442361390070984,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_14",
+      "serialized_epoch_position_error_m": 7.059499766014928,
+      "serialized_epoch_velocity_error_m_s": 0.007186659967272209,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_15",
+      "serialized_epoch_position_error_m": 6.766288002473142,
+      "serialized_epoch_velocity_error_m_s": 0.0024703972649433525,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_16",
+      "serialized_epoch_position_error_m": 12.273456790887481,
+      "serialized_epoch_velocity_error_m_s": 0.01177073415775734,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_17",
+      "serialized_epoch_position_error_m": 3.7275101454966,
+      "serialized_epoch_velocity_error_m_s": 0.00611140364426876,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_18",
+      "serialized_epoch_position_error_m": 9.486009716929894,
+      "serialized_epoch_velocity_error_m_s": 0.005433553251244692,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_19",
+      "serialized_epoch_position_error_m": 6.596674817575278,
+      "serialized_epoch_velocity_error_m_s": 0.006487542119358012,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_20",
+      "serialized_epoch_position_error_m": 7.202431708935274,
+      "serialized_epoch_velocity_error_m_s": 0.009293612571466147,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_21",
+      "serialized_epoch_position_error_m": 6.7606588026374945,
+      "serialized_epoch_velocity_error_m_s": 0.002166912746810083,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_22",
+      "serialized_epoch_position_error_m": 12.413981883697021,
+      "serialized_epoch_velocity_error_m_s": 0.010800281061933944,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_23",
+      "serialized_epoch_position_error_m": 6.509185128320537,
+      "serialized_epoch_velocity_error_m_s": 0.007228275584386916,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_24",
+      "serialized_epoch_position_error_m": 10.243294643053265,
+      "serialized_epoch_velocity_error_m_s": 0.009885368805715547,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_25",
+      "serialized_epoch_position_error_m": 7.549092687210195,
+      "serialized_epoch_velocity_error_m_s": 0.006325785669560852,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_26",
+      "serialized_epoch_position_error_m": 7.114230052899781,
+      "serialized_epoch_velocity_error_m_s": 0.009912719820229954,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_27",
+      "serialized_epoch_position_error_m": 4.937322016775374,
+      "serialized_epoch_velocity_error_m_s": 0.0027429074363593533,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_28",
+      "serialized_epoch_position_error_m": 4.107372473798263,
+      "serialized_epoch_velocity_error_m_s": 0.00437218514023623,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_29",
+      "serialized_epoch_position_error_m": 5.146666351748163,
+      "serialized_epoch_velocity_error_m_s": 0.001994984494796224,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_30",
+      "serialized_epoch_position_error_m": 2.932199726676808,
+      "serialized_epoch_velocity_error_m_s": 0.005476152279349016,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_31",
+      "serialized_epoch_position_error_m": 8.547362465523772,
+      "serialized_epoch_velocity_error_m_s": 0.00752028002690826,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_32",
+      "serialized_epoch_position_error_m": 1.5571056538366388,
+      "serialized_epoch_velocity_error_m_s": 0.003947698442211593,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_33",
+      "serialized_epoch_position_error_m": 7.631856391027774,
+      "serialized_epoch_velocity_error_m_s": 0.008522268117813338,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_34",
+      "serialized_epoch_position_error_m": 1.4534582818829207,
+      "serialized_epoch_velocity_error_m_s": 0.002961880437811793,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_35",
+      "serialized_epoch_position_error_m": 7.4174056779644655,
+      "serialized_epoch_velocity_error_m_s": 0.003775396516375937,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_36",
+      "serialized_epoch_position_error_m": 2.0786743238403185,
+      "serialized_epoch_velocity_error_m_s": 0.0025582053082849297,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_37",
+      "serialized_epoch_position_error_m": 7.193401968605572,
+      "serialized_epoch_velocity_error_m_s": 0.008371490533701589,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_38",
+      "serialized_epoch_position_error_m": 10.592107690136038,
+      "serialized_epoch_velocity_error_m_s": 0.00725162165967845,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_39",
+      "serialized_epoch_position_error_m": 3.6733565015532297,
+      "serialized_epoch_velocity_error_m_s": 0.0038702436301163,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X6_40",
+      "serialized_epoch_position_error_m": 3.5251022746371867,
+      "serialized_epoch_velocity_error_m_s": 0.0069148969082854315,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_1",
+      "serialized_epoch_position_error_m": 3.3697975893607155,
+      "serialized_epoch_velocity_error_m_s": 0.0025052438129328793,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_2",
+      "serialized_epoch_position_error_m": 12.412996284646354,
+      "serialized_epoch_velocity_error_m_s": 0.011328167211016236,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_3",
+      "serialized_epoch_position_error_m": 6.8698412772914965,
+      "serialized_epoch_velocity_error_m_s": 0.007023870989607031,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_4",
+      "serialized_epoch_position_error_m": 4.550030873705378,
+      "serialized_epoch_velocity_error_m_s": 0.004436269491426999,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_5",
+      "serialized_epoch_position_error_m": 2.751088167383354,
+      "serialized_epoch_velocity_error_m_s": 0.004533698994362792,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_6",
+      "serialized_epoch_position_error_m": 3.346379262707046,
+      "serialized_epoch_velocity_error_m_s": 0.0047514268409159345,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_7",
+      "serialized_epoch_position_error_m": 6.590596402474119,
+      "serialized_epoch_velocity_error_m_s": 0.0051361596916535066,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_8",
+      "serialized_epoch_position_error_m": 5.4980581831599675,
+      "serialized_epoch_velocity_error_m_s": 0.0072191256694548395,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_9",
+      "serialized_epoch_position_error_m": 3.4019221606254333,
+      "serialized_epoch_velocity_error_m_s": 0.005825633387759883,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_10",
+      "serialized_epoch_position_error_m": 2.5164528785186073,
+      "serialized_epoch_velocity_error_m_s": 0.004250510590120081,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_11",
+      "serialized_epoch_position_error_m": 9.296011053282491,
+      "serialized_epoch_velocity_error_m_s": 0.009184451882085071,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_12",
+      "serialized_epoch_position_error_m": 1.3417524716408558,
+      "serialized_epoch_velocity_error_m_s": 0.004440183719691989,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_13",
+      "serialized_epoch_position_error_m": 9.625344250053438,
+      "serialized_epoch_velocity_error_m_s": 0.00818939079916257,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_14",
+      "serialized_epoch_position_error_m": 10.498647121467235,
+      "serialized_epoch_velocity_error_m_s": 0.011968630537923835,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_15",
+      "serialized_epoch_position_error_m": 7.312512316857174,
+      "serialized_epoch_velocity_error_m_s": 0.0059455596800178385,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_16",
+      "serialized_epoch_position_error_m": 10.938370241473898,
+      "serialized_epoch_velocity_error_m_s": 0.010864640093466544,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_17",
+      "serialized_epoch_position_error_m": 8.810674664454526,
+      "serialized_epoch_velocity_error_m_s": 0.006472285538998234,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_18",
+      "serialized_epoch_position_error_m": 6.042789762469671,
+      "serialized_epoch_velocity_error_m_s": 0.0006615746637360068,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_19",
+      "serialized_epoch_position_error_m": 9.951672097169446,
+      "serialized_epoch_velocity_error_m_s": 0.011437538276926075,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_20",
+      "serialized_epoch_position_error_m": 7.631002704631332,
+      "serialized_epoch_velocity_error_m_s": 0.006299920852943274,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_21",
+      "serialized_epoch_position_error_m": 6.344470081966069,
+      "serialized_epoch_velocity_error_m_s": 0.006058335046753404,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_22",
+      "serialized_epoch_position_error_m": 5.634086136089382,
+      "serialized_epoch_velocity_error_m_s": 0.004980663630207961,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_23",
+      "serialized_epoch_position_error_m": 6.74677883283901,
+      "serialized_epoch_velocity_error_m_s": 0.006704467041856984,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_24",
+      "serialized_epoch_position_error_m": 1.9484315693668164,
+      "serialized_epoch_velocity_error_m_s": 0.0016666048653465849,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_25",
+      "serialized_epoch_position_error_m": 3.6702033165384065,
+      "serialized_epoch_velocity_error_m_s": 0.005023474956302612,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_26",
+      "serialized_epoch_position_error_m": 10.451175301956646,
+      "serialized_epoch_velocity_error_m_s": 0.010579692975431447,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_27",
+      "serialized_epoch_position_error_m": 3.896997476035436,
+      "serialized_epoch_velocity_error_m_s": 0.00044735354085111227,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_28",
+      "serialized_epoch_position_error_m": 5.130785624327956,
+      "serialized_epoch_velocity_error_m_s": 0.007073394363749493,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_29",
+      "serialized_epoch_position_error_m": 8.968866640108711,
+      "serialized_epoch_velocity_error_m_s": 0.009816669120588505,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_30",
+      "serialized_epoch_position_error_m": 7.5921020399105155,
+      "serialized_epoch_velocity_error_m_s": 0.008045433804934547,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_31",
+      "serialized_epoch_position_error_m": 6.8396058344689274,
+      "serialized_epoch_velocity_error_m_s": 0.006965471101830642,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_32",
+      "serialized_epoch_position_error_m": 3.1464344879877584,
+      "serialized_epoch_velocity_error_m_s": 0.005211988335089695,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_33",
+      "serialized_epoch_position_error_m": 12.086256587570572,
+      "serialized_epoch_velocity_error_m_s": 0.01101098871570219,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_34",
+      "serialized_epoch_position_error_m": 11.009124332840372,
+      "serialized_epoch_velocity_error_m_s": 0.012387131397866586,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_35",
+      "serialized_epoch_position_error_m": 12.50521987138534,
+      "serialized_epoch_velocity_error_m_s": 0.011589076984281986,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_36",
+      "serialized_epoch_position_error_m": 4.183611298672351,
+      "serialized_epoch_velocity_error_m_s": 0.005486622565772347,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_37",
+      "serialized_epoch_position_error_m": 5.971199610809386,
+      "serialized_epoch_velocity_error_m_s": 0.0010023065704990771,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_38",
+      "serialized_epoch_position_error_m": 6.020877507287634,
+      "serialized_epoch_velocity_error_m_s": 0.0009086466109264436,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_39",
+      "serialized_epoch_position_error_m": 4.8754213417257715,
+      "serialized_epoch_velocity_error_m_s": 0.00786049373796123,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X7_40",
+      "serialized_epoch_position_error_m": 6.07015098881069,
+      "serialized_epoch_velocity_error_m_s": 0.004155853765693826,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_1",
+      "serialized_epoch_position_error_m": 4.544661084270394,
+      "serialized_epoch_velocity_error_m_s": 0.006500678681348964,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_2",
+      "serialized_epoch_position_error_m": 5.365215719420126,
+      "serialized_epoch_velocity_error_m_s": 0.00322040590203071,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_3",
+      "serialized_epoch_position_error_m": 5.2982414410320935,
+      "serialized_epoch_velocity_error_m_s": 0.005995762778305984,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_4",
+      "serialized_epoch_position_error_m": 4.841076026599401,
+      "serialized_epoch_velocity_error_m_s": 0.000983285912011461,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_5",
+      "serialized_epoch_position_error_m": 10.281469977243423,
+      "serialized_epoch_velocity_error_m_s": 0.006867107459086267,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_6",
+      "serialized_epoch_position_error_m": 5.101268629929153,
+      "serialized_epoch_velocity_error_m_s": 0.002706399287947754,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_7",
+      "serialized_epoch_position_error_m": 5.419684665522292,
+      "serialized_epoch_velocity_error_m_s": 0.004388920848450333,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_8",
+      "serialized_epoch_position_error_m": 0.5698120800973077,
+      "serialized_epoch_velocity_error_m_s": 0.00339647008877013,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_9",
+      "serialized_epoch_position_error_m": 4.394121419000531,
+      "serialized_epoch_velocity_error_m_s": 0.00571137901616236,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_10",
+      "serialized_epoch_position_error_m": 7.235836549671649,
+      "serialized_epoch_velocity_error_m_s": 0.005256620084388937,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_11",
+      "serialized_epoch_position_error_m": 6.713704879524244,
+      "serialized_epoch_velocity_error_m_s": 0.0070730402516021315,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_12",
+      "serialized_epoch_position_error_m": 6.384186501910076,
+      "serialized_epoch_velocity_error_m_s": 0.007540309891074946,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_13",
+      "serialized_epoch_position_error_m": 4.991336271758681,
+      "serialized_epoch_velocity_error_m_s": 0.003971571299965255,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_14",
+      "serialized_epoch_position_error_m": 2.6172211739077857,
+      "serialized_epoch_velocity_error_m_s": 0.00823317458816316,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_15",
+      "serialized_epoch_position_error_m": 6.695325958726923,
+      "serialized_epoch_velocity_error_m_s": 0.0022959669404886214,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_16",
+      "serialized_epoch_position_error_m": 7.771183426956681,
+      "serialized_epoch_velocity_error_m_s": 0.0038809136679720238,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_17",
+      "serialized_epoch_position_error_m": 2.4860636612874294,
+      "serialized_epoch_velocity_error_m_s": 0.003707117801492944,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_18",
+      "serialized_epoch_position_error_m": 6.071400374457715,
+      "serialized_epoch_velocity_error_m_s": 0.0060358344229534885,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_19",
+      "serialized_epoch_position_error_m": 4.03256802772575,
+      "serialized_epoch_velocity_error_m_s": 0.00654442655892104,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_20",
+      "serialized_epoch_position_error_m": 9.704553725766218,
+      "serialized_epoch_velocity_error_m_s": 0.008572665917573986,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_21",
+      "serialized_epoch_position_error_m": 8.350482778741236,
+      "serialized_epoch_velocity_error_m_s": 0.00928724289047569,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_22",
+      "serialized_epoch_position_error_m": 8.90549461371238,
+      "serialized_epoch_velocity_error_m_s": 0.007518838139907498,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_23",
+      "serialized_epoch_position_error_m": 5.839646966203096,
+      "serialized_epoch_velocity_error_m_s": 0.006319631076885297,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_24",
+      "serialized_epoch_position_error_m": 7.5458641211609585,
+      "serialized_epoch_velocity_error_m_s": 0.0054927262362218605,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_25",
+      "serialized_epoch_position_error_m": 10.21468552036538,
+      "serialized_epoch_velocity_error_m_s": 0.007009391359525768,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_26",
+      "serialized_epoch_position_error_m": 7.607015938547894,
+      "serialized_epoch_velocity_error_m_s": 0.0060834380187504864,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_27",
+      "serialized_epoch_position_error_m": 6.719721411633603,
+      "serialized_epoch_velocity_error_m_s": 0.005879030682561006,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_28",
+      "serialized_epoch_position_error_m": 4.407337513814473,
+      "serialized_epoch_velocity_error_m_s": 0.005395619277815721,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_29",
+      "serialized_epoch_position_error_m": 4.592810944993175,
+      "serialized_epoch_velocity_error_m_s": 0.0058883482517169405,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_30",
+      "serialized_epoch_position_error_m": 10.14554519743645,
+      "serialized_epoch_velocity_error_m_s": 0.008628393425301919,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_31",
+      "serialized_epoch_position_error_m": 9.99250669034963,
+      "serialized_epoch_velocity_error_m_s": 0.00997397760746951,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_32",
+      "serialized_epoch_position_error_m": 7.910838388187368,
+      "serialized_epoch_velocity_error_m_s": 0.008875854926768748,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_33",
+      "serialized_epoch_position_error_m": 3.372945614454034,
+      "serialized_epoch_velocity_error_m_s": 0.0010813888930242266,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_34",
+      "serialized_epoch_position_error_m": 3.8322181060445715,
+      "serialized_epoch_velocity_error_m_s": 0.008638766888286305,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_35",
+      "serialized_epoch_position_error_m": 8.219648860527517,
+      "serialized_epoch_velocity_error_m_s": 0.005156699981648405,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_36",
+      "serialized_epoch_position_error_m": 11.83560674231184,
+      "serialized_epoch_velocity_error_m_s": 0.00949157028206802,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_37",
+      "serialized_epoch_position_error_m": 7.8597149228333745,
+      "serialized_epoch_velocity_error_m_s": 0.008194457447514953,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_38",
+      "serialized_epoch_position_error_m": 5.317138950251504,
+      "serialized_epoch_velocity_error_m_s": 0.0055613232046056345,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_39",
+      "serialized_epoch_position_error_m": 5.248691620081677,
+      "serialized_epoch_velocity_error_m_s": 0.007436461227850391,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X8_40",
+      "serialized_epoch_position_error_m": 6.258737176204274,
+      "serialized_epoch_velocity_error_m_s": 0.00481158934011572,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_1",
+      "serialized_epoch_position_error_m": 2.765257262821508,
+      "serialized_epoch_velocity_error_m_s": 0.0036596125584572132,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_2",
+      "serialized_epoch_position_error_m": 6.765049029954035,
+      "serialized_epoch_velocity_error_m_s": 0.005762884391075126,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_3",
+      "serialized_epoch_position_error_m": 11.105513168346564,
+      "serialized_epoch_velocity_error_m_s": 0.011798292511172958,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_4",
+      "serialized_epoch_position_error_m": 5.133500770784441,
+      "serialized_epoch_velocity_error_m_s": 0.003544641910474154,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_5",
+      "serialized_epoch_position_error_m": 2.0831394678469715,
+      "serialized_epoch_velocity_error_m_s": 0.004942991735809955,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_6",
+      "serialized_epoch_position_error_m": 11.539582661174087,
+      "serialized_epoch_velocity_error_m_s": 0.010759880186049838,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_7",
+      "serialized_epoch_position_error_m": 5.403934385621378,
+      "serialized_epoch_velocity_error_m_s": 0.0082747675264379,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_8",
+      "serialized_epoch_position_error_m": 7.122369552326961,
+      "serialized_epoch_velocity_error_m_s": 0.006598444968145677,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_9",
+      "serialized_epoch_position_error_m": 6.840549371157923,
+      "serialized_epoch_velocity_error_m_s": 0.004259297233106426,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_10",
+      "serialized_epoch_position_error_m": 5.200237560567642,
+      "serialized_epoch_velocity_error_m_s": 0.0032703621926129384,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_11",
+      "serialized_epoch_position_error_m": 8.756200474407624,
+      "serialized_epoch_velocity_error_m_s": 0.008172702934252164,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_12",
+      "serialized_epoch_position_error_m": 8.198181910752071,
+      "serialized_epoch_velocity_error_m_s": 0.007450888606212103,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_13",
+      "serialized_epoch_position_error_m": 1.666204552024608,
+      "serialized_epoch_velocity_error_m_s": 0.004650639989053992,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_14",
+      "serialized_epoch_position_error_m": 10.352359444007725,
+      "serialized_epoch_velocity_error_m_s": 0.010424813952713554,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_15",
+      "serialized_epoch_position_error_m": 2.46159886364753,
+      "serialized_epoch_velocity_error_m_s": 0.0024127890070862155,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_16",
+      "serialized_epoch_position_error_m": 7.000322178369946,
+      "serialized_epoch_velocity_error_m_s": 0.0072345334228055575,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_17",
+      "serialized_epoch_position_error_m": 5.207339140387532,
+      "serialized_epoch_velocity_error_m_s": 0.004805914750876273,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_18",
+      "serialized_epoch_position_error_m": 8.565047526105642,
+      "serialized_epoch_velocity_error_m_s": 0.008000169447421063,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_19",
+      "serialized_epoch_position_error_m": 4.427749698160868,
+      "serialized_epoch_velocity_error_m_s": 0.0019146271811287046,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_20",
+      "serialized_epoch_position_error_m": 8.060197449051035,
+      "serialized_epoch_velocity_error_m_s": 0.005446709183440659,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_21",
+      "serialized_epoch_position_error_m": 5.823831788701379,
+      "serialized_epoch_velocity_error_m_s": 0.0061689288300569595,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_22",
+      "serialized_epoch_position_error_m": 5.114264718006339,
+      "serialized_epoch_velocity_error_m_s": 0.003329927780725759,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_23",
+      "serialized_epoch_position_error_m": 3.1358263004472104,
+      "serialized_epoch_velocity_error_m_s": 0.00631923968076329,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_24",
+      "serialized_epoch_position_error_m": 9.215370684294136,
+      "serialized_epoch_velocity_error_m_s": 0.008141578998587506,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_25",
+      "serialized_epoch_position_error_m": 2.173338829780662,
+      "serialized_epoch_velocity_error_m_s": 0.004966833447203742,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_26",
+      "serialized_epoch_position_error_m": 7.757931839228216,
+      "serialized_epoch_velocity_error_m_s": 0.007574467744152778,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_27",
+      "serialized_epoch_position_error_m": 0.9811732709061652,
+      "serialized_epoch_velocity_error_m_s": 0.0066896587165551896,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_28",
+      "serialized_epoch_position_error_m": 3.443995678460551,
+      "serialized_epoch_velocity_error_m_s": 0.002443883051430211,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_29",
+      "serialized_epoch_position_error_m": 6.898292530302341,
+      "serialized_epoch_velocity_error_m_s": 0.004326597151438572,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_30",
+      "serialized_epoch_position_error_m": 7.037588520625754,
+      "serialized_epoch_velocity_error_m_s": 0.005604008804546813,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_31",
+      "serialized_epoch_position_error_m": 12.199097587321805,
+      "serialized_epoch_velocity_error_m_s": 0.011485371259844107,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_32",
+      "serialized_epoch_position_error_m": 9.445000919924317,
+      "serialized_epoch_velocity_error_m_s": 0.008721151432122645,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_33",
+      "serialized_epoch_position_error_m": 4.93040566407161,
+      "serialized_epoch_velocity_error_m_s": 0.006454817831689621,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_34",
+      "serialized_epoch_position_error_m": 8.60558675519626,
+      "serialized_epoch_velocity_error_m_s": 0.008582422323533552,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_35",
+      "serialized_epoch_position_error_m": 1.7804153560448357,
+      "serialized_epoch_velocity_error_m_s": 0.0016892306634067363,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_36",
+      "serialized_epoch_position_error_m": 7.6448705705821745,
+      "serialized_epoch_velocity_error_m_s": 0.007492255668129089,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_37",
+      "serialized_epoch_position_error_m": 2.8495115237058646,
+      "serialized_epoch_velocity_error_m_s": 0.001787146476428173,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_38",
+      "serialized_epoch_position_error_m": 9.245908454696464,
+      "serialized_epoch_velocity_error_m_s": 0.008347120567474,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_39",
+      "serialized_epoch_position_error_m": 5.869943274154918,
+      "serialized_epoch_velocity_error_m_s": 0.0039851689304982495,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X9_40",
+      "serialized_epoch_position_error_m": 6.379333137955782,
+      "serialized_epoch_velocity_error_m_s": 0.002812825737240792,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_1",
+      "serialized_epoch_position_error_m": 4.427833914894116,
+      "serialized_epoch_velocity_error_m_s": 0.005707321209916385,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_2",
+      "serialized_epoch_position_error_m": 10.139979162183424,
+      "serialized_epoch_velocity_error_m_s": 0.009937178561179994,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_3",
+      "serialized_epoch_position_error_m": 5.230188493179156,
+      "serialized_epoch_velocity_error_m_s": 0.005423188459437891,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_4",
+      "serialized_epoch_position_error_m": 10.86446742537313,
+      "serialized_epoch_velocity_error_m_s": 0.008823286133481252,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_5",
+      "serialized_epoch_position_error_m": 2.1154855201508393,
+      "serialized_epoch_velocity_error_m_s": 0.0023230754634306345,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_6",
+      "serialized_epoch_position_error_m": 2.9619644491045345,
+      "serialized_epoch_velocity_error_m_s": 0.005276103825470305,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_7",
+      "serialized_epoch_position_error_m": 3.1243389456671578,
+      "serialized_epoch_velocity_error_m_s": 0.004409702924627689,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_8",
+      "serialized_epoch_position_error_m": 8.97455023253615,
+      "serialized_epoch_velocity_error_m_s": 0.005592178498596901,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_9",
+      "serialized_epoch_position_error_m": 8.863519122724018,
+      "serialized_epoch_velocity_error_m_s": 0.007792262671299385,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_10",
+      "serialized_epoch_position_error_m": 10.368499315806037,
+      "serialized_epoch_velocity_error_m_s": 0.008857125753141293,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_11",
+      "serialized_epoch_position_error_m": 10.432821592618016,
+      "serialized_epoch_velocity_error_m_s": 0.010279945525522265,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_12",
+      "serialized_epoch_position_error_m": 3.8584664901733388,
+      "serialized_epoch_velocity_error_m_s": 0.0006548335692340608,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_13",
+      "serialized_epoch_position_error_m": 12.554128306786446,
+      "serialized_epoch_velocity_error_m_s": 0.013624785750123056,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_14",
+      "serialized_epoch_position_error_m": 4.027009745478731,
+      "serialized_epoch_velocity_error_m_s": 0.00560969840197819,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_15",
+      "serialized_epoch_position_error_m": 9.135655830218845,
+      "serialized_epoch_velocity_error_m_s": 0.012098228781408643,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_16",
+      "serialized_epoch_position_error_m": 9.530636489249058,
+      "serialized_epoch_velocity_error_m_s": 0.007151775677051595,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_17",
+      "serialized_epoch_position_error_m": 1.3412142559971583,
+      "serialized_epoch_velocity_error_m_s": 0.00757431404175091,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_18",
+      "serialized_epoch_position_error_m": 1.6205952403475652,
+      "serialized_epoch_velocity_error_m_s": 0.0028158762771812716,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_19",
+      "serialized_epoch_position_error_m": 3.3221022799484454,
+      "serialized_epoch_velocity_error_m_s": 0.002956212108182089,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_20",
+      "serialized_epoch_position_error_m": 9.93139737682239,
+      "serialized_epoch_velocity_error_m_s": 0.008122776241268117,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_21",
+      "serialized_epoch_position_error_m": 8.960669741544686,
+      "serialized_epoch_velocity_error_m_s": 0.009460754952501158,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_22",
+      "serialized_epoch_position_error_m": 10.140404446603048,
+      "serialized_epoch_velocity_error_m_s": 0.01030452009883864,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_23",
+      "serialized_epoch_position_error_m": 7.229258990491633,
+      "serialized_epoch_velocity_error_m_s": 0.007228082381035298,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_24",
+      "serialized_epoch_position_error_m": 7.2215371954362935,
+      "serialized_epoch_velocity_error_m_s": 0.003795702535114649,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_25",
+      "serialized_epoch_position_error_m": 2.475188248895869,
+      "serialized_epoch_velocity_error_m_s": 0.0025450439301326236,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_26",
+      "serialized_epoch_position_error_m": 4.263945757714915,
+      "serialized_epoch_velocity_error_m_s": 0.005984900808609478,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_27",
+      "serialized_epoch_position_error_m": 1.9551821369535827,
+      "serialized_epoch_velocity_error_m_s": 0.003459038866008753,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_28",
+      "serialized_epoch_position_error_m": 7.13627304076863,
+      "serialized_epoch_velocity_error_m_s": 0.002228414738394788,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_29",
+      "serialized_epoch_position_error_m": 7.1057033643728715,
+      "serialized_epoch_velocity_error_m_s": 0.0060626467414716945,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_30",
+      "serialized_epoch_position_error_m": 7.481147087238443,
+      "serialized_epoch_velocity_error_m_s": 0.00551377319453191,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_31",
+      "serialized_epoch_position_error_m": 6.514145998912622,
+      "serialized_epoch_velocity_error_m_s": 0.006579645127181664,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_32",
+      "serialized_epoch_position_error_m": 3.839358909436426,
+      "serialized_epoch_velocity_error_m_s": 0.00046344486052305746,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_33",
+      "serialized_epoch_position_error_m": 4.600304041156487,
+      "serialized_epoch_velocity_error_m_s": 0.0077990781835028675,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_34",
+      "serialized_epoch_position_error_m": 10.073904731141674,
+      "serialized_epoch_velocity_error_m_s": 0.01038009258670068,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_35",
+      "serialized_epoch_position_error_m": 4.416347045330845,
+      "serialized_epoch_velocity_error_m_s": 0.009585390647391855,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_36",
+      "serialized_epoch_position_error_m": 8.566939682103357,
+      "serialized_epoch_velocity_error_m_s": 0.0059089451626235445,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_37",
+      "serialized_epoch_position_error_m": 6.4239892454483565,
+      "serialized_epoch_velocity_error_m_s": 0.009742776253184857,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_38",
+      "serialized_epoch_position_error_m": 2.238511783731228,
+      "serialized_epoch_velocity_error_m_s": 0.0030735948508980953,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_39",
+      "serialized_epoch_position_error_m": 5.015659344033326,
+      "serialized_epoch_velocity_error_m_s": 0.0049474958283887895,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X10_40",
+      "serialized_epoch_position_error_m": 10.944024538445246,
+      "serialized_epoch_velocity_error_m_s": 0.009002769358706472,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_1",
+      "serialized_epoch_position_error_m": 12.655127051623841,
+      "serialized_epoch_velocity_error_m_s": 0.01080964237961951,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_2",
+      "serialized_epoch_position_error_m": 3.7702340199738478,
+      "serialized_epoch_velocity_error_m_s": 0.0008969060324143798,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_3",
+      "serialized_epoch_position_error_m": 7.967895367854903,
+      "serialized_epoch_velocity_error_m_s": 0.004118024233672488,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_4",
+      "serialized_epoch_position_error_m": 8.976334990043444,
+      "serialized_epoch_velocity_error_m_s": 0.010587397892179362,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_5",
+      "serialized_epoch_position_error_m": 7.771421998702461,
+      "serialized_epoch_velocity_error_m_s": 0.005787053343261698,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_6",
+      "serialized_epoch_position_error_m": 4.788054238670933,
+      "serialized_epoch_velocity_error_m_s": 0.004948626503633687,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_7",
+      "serialized_epoch_position_error_m": 1.0618716958208698,
+      "serialized_epoch_velocity_error_m_s": 0.0029962531602230618,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_8",
+      "serialized_epoch_position_error_m": 4.470641084517982,
+      "serialized_epoch_velocity_error_m_s": 0.0015214240820731362,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_9",
+      "serialized_epoch_position_error_m": 12.74102108618679,
+      "serialized_epoch_velocity_error_m_s": 0.01093966321620307,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_10",
+      "serialized_epoch_position_error_m": 2.8311128276859248,
+      "serialized_epoch_velocity_error_m_s": 0.005568092116267329,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_11",
+      "serialized_epoch_position_error_m": 12.968512530169328,
+      "serialized_epoch_velocity_error_m_s": 0.01242569813377267,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_12",
+      "serialized_epoch_position_error_m": 8.266327477600898,
+      "serialized_epoch_velocity_error_m_s": 0.007663175660936998,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_13",
+      "serialized_epoch_position_error_m": 3.3999152287187147,
+      "serialized_epoch_velocity_error_m_s": 0.005066497002958572,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_14",
+      "serialized_epoch_position_error_m": 4.356660285769,
+      "serialized_epoch_velocity_error_m_s": 0.006641164070124949,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_15",
+      "serialized_epoch_position_error_m": 4.226703630539336,
+      "serialized_epoch_velocity_error_m_s": 0.0077564176282267925,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_16",
+      "serialized_epoch_position_error_m": 5.644755370131675,
+      "serialized_epoch_velocity_error_m_s": 0.0057669378096931664,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_17",
+      "serialized_epoch_position_error_m": 7.396983704873242,
+      "serialized_epoch_velocity_error_m_s": 0.006728041458985606,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_18",
+      "serialized_epoch_position_error_m": 5.858111779221924,
+      "serialized_epoch_velocity_error_m_s": 0.004892350743001838,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_19",
+      "serialized_epoch_position_error_m": 4.891522529398251,
+      "serialized_epoch_velocity_error_m_s": 0.0036975834096237897,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_20",
+      "serialized_epoch_position_error_m": 4.46290647430436,
+      "serialized_epoch_velocity_error_m_s": 0.004282047048171285,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_21",
+      "serialized_epoch_position_error_m": 6.340717350162156,
+      "serialized_epoch_velocity_error_m_s": 0.002567813779225445,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_22",
+      "serialized_epoch_position_error_m": 7.637349376809569,
+      "serialized_epoch_velocity_error_m_s": 0.006167364298865291,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_23",
+      "serialized_epoch_position_error_m": 7.8600504446476736,
+      "serialized_epoch_velocity_error_m_s": 0.004350137798770774,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_24",
+      "serialized_epoch_position_error_m": 3.0109044697410603,
+      "serialized_epoch_velocity_error_m_s": 0.00687367631911066,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_25",
+      "serialized_epoch_position_error_m": 8.24188678606559,
+      "serialized_epoch_velocity_error_m_s": 0.006449829878875973,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_26",
+      "serialized_epoch_position_error_m": 4.353383362901024,
+      "serialized_epoch_velocity_error_m_s": 0.004618340161609552,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_27",
+      "serialized_epoch_position_error_m": 6.01439639721339,
+      "serialized_epoch_velocity_error_m_s": 0.006418141569948438,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_28",
+      "serialized_epoch_position_error_m": 4.539099197290817,
+      "serialized_epoch_velocity_error_m_s": 0.0017469130259399758,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_29",
+      "serialized_epoch_position_error_m": 6.974893548085791,
+      "serialized_epoch_velocity_error_m_s": 0.004481359128145587,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_30",
+      "serialized_epoch_position_error_m": 0.9737164176905806,
+      "serialized_epoch_velocity_error_m_s": 0.004978911617490577,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_31",
+      "serialized_epoch_position_error_m": 6.218088261621757,
+      "serialized_epoch_velocity_error_m_s": 0.0059436415313835825,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_32",
+      "serialized_epoch_position_error_m": 9.309095989196484,
+      "serialized_epoch_velocity_error_m_s": 0.00885454287428474,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_33",
+      "serialized_epoch_position_error_m": 8.645547583662243,
+      "serialized_epoch_velocity_error_m_s": 0.009116590534148029,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_34",
+      "serialized_epoch_position_error_m": 3.369174123737499,
+      "serialized_epoch_velocity_error_m_s": 0.00590289151150395,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_35",
+      "serialized_epoch_position_error_m": 2.221309646160254,
+      "serialized_epoch_velocity_error_m_s": 0.00694285823707079,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_36",
+      "serialized_epoch_position_error_m": 6.816238282036447,
+      "serialized_epoch_velocity_error_m_s": 0.006616014110081957,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_37",
+      "serialized_epoch_position_error_m": 3.592906322325173,
+      "serialized_epoch_velocity_error_m_s": 0.0031998306988857313,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_38",
+      "serialized_epoch_position_error_m": 5.741627992341922,
+      "serialized_epoch_velocity_error_m_s": 0.004601233295488582,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_39",
+      "serialized_epoch_position_error_m": 7.8423779250864065,
+      "serialized_epoch_velocity_error_m_s": 0.0068492212639089806,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X11_40",
+      "serialized_epoch_position_error_m": 6.068750936421739,
+      "serialized_epoch_velocity_error_m_s": 0.00594439387352707,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_1",
+      "serialized_epoch_position_error_m": 4.6330631896083,
+      "serialized_epoch_velocity_error_m_s": 0.00480743570975376,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_2",
+      "serialized_epoch_position_error_m": 1.922955902209769,
+      "serialized_epoch_velocity_error_m_s": 0.0054473296267574045,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_3",
+      "serialized_epoch_position_error_m": 7.723165808329706,
+      "serialized_epoch_velocity_error_m_s": 0.0035318280385626005,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_4",
+      "serialized_epoch_position_error_m": 11.314041018490911,
+      "serialized_epoch_velocity_error_m_s": 0.00919111576638905,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_5",
+      "serialized_epoch_position_error_m": 9.341085874297713,
+      "serialized_epoch_velocity_error_m_s": 0.008554200572195912,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_6",
+      "serialized_epoch_position_error_m": 8.628518039184996,
+      "serialized_epoch_velocity_error_m_s": 0.0073483281297001745,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_7",
+      "serialized_epoch_position_error_m": 3.3623924789465227,
+      "serialized_epoch_velocity_error_m_s": 0.0027028209624415955,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_8",
+      "serialized_epoch_position_error_m": 12.076187438713127,
+      "serialized_epoch_velocity_error_m_s": 0.012336399315212743,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_9",
+      "serialized_epoch_position_error_m": 11.264142530354135,
+      "serialized_epoch_velocity_error_m_s": 0.011172282618899196,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_10",
+      "serialized_epoch_position_error_m": 2.5703432394509074,
+      "serialized_epoch_velocity_error_m_s": 0.004084513064025749,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_11",
+      "serialized_epoch_position_error_m": 3.8723615843755894,
+      "serialized_epoch_velocity_error_m_s": 0.00703324826102031,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_12",
+      "serialized_epoch_position_error_m": 7.5580438728917505,
+      "serialized_epoch_velocity_error_m_s": 0.003618034485846258,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_13",
+      "serialized_epoch_position_error_m": 6.103719610181241,
+      "serialized_epoch_velocity_error_m_s": 0.006705601750963646,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_14",
+      "serialized_epoch_position_error_m": 10.415630889121347,
+      "serialized_epoch_velocity_error_m_s": 0.009899887327369817,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_15",
+      "serialized_epoch_position_error_m": 3.9490035353649326,
+      "serialized_epoch_velocity_error_m_s": 0.006119597875420147,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_16",
+      "serialized_epoch_position_error_m": 13.450388081000789,
+      "serialized_epoch_velocity_error_m_s": 0.01246487123746877,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_17",
+      "serialized_epoch_position_error_m": 5.42369553781348,
+      "serialized_epoch_velocity_error_m_s": 0.006524047159136133,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_18",
+      "serialized_epoch_position_error_m": 4.858066318308998,
+      "serialized_epoch_velocity_error_m_s": 0.003168315784210835,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_19",
+      "serialized_epoch_position_error_m": 6.668990474081187,
+      "serialized_epoch_velocity_error_m_s": 0.006178308476726715,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_20",
+      "serialized_epoch_position_error_m": 5.1853789067097384,
+      "serialized_epoch_velocity_error_m_s": 0.0012505384648318907,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_21",
+      "serialized_epoch_position_error_m": 6.330759249009928,
+      "serialized_epoch_velocity_error_m_s": 0.006344228396415072,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_22",
+      "serialized_epoch_position_error_m": 5.449045497621134,
+      "serialized_epoch_velocity_error_m_s": 0.007541877987112694,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_23",
+      "serialized_epoch_position_error_m": 7.346335881299673,
+      "serialized_epoch_velocity_error_m_s": 0.0028228531854873756,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_24",
+      "serialized_epoch_position_error_m": 5.9561522023097755,
+      "serialized_epoch_velocity_error_m_s": 0.0023061794277582184,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_25",
+      "serialized_epoch_position_error_m": 4.297520795701649,
+      "serialized_epoch_velocity_error_m_s": 0.003938462246470973,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_26",
+      "serialized_epoch_position_error_m": 4.960051315822321,
+      "serialized_epoch_velocity_error_m_s": 0.0032096078064415704,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_27",
+      "serialized_epoch_position_error_m": 7.2431296224031,
+      "serialized_epoch_velocity_error_m_s": 0.006756322447881121,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_28",
+      "serialized_epoch_position_error_m": 2.4433424288031698,
+      "serialized_epoch_velocity_error_m_s": 0.004497647122498868,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_29",
+      "serialized_epoch_position_error_m": 8.427739343657755,
+      "serialized_epoch_velocity_error_m_s": 0.008814620107364947,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_30",
+      "serialized_epoch_position_error_m": 3.347472760582766,
+      "serialized_epoch_velocity_error_m_s": 0.004565859056068241,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_31",
+      "serialized_epoch_position_error_m": 11.124582535479316,
+      "serialized_epoch_velocity_error_m_s": 0.012182676516511433,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_32",
+      "serialized_epoch_position_error_m": 7.451527456020225,
+      "serialized_epoch_velocity_error_m_s": 0.003263914921503041,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_33",
+      "serialized_epoch_position_error_m": 4.068408339518193,
+      "serialized_epoch_velocity_error_m_s": 0.005434865796968274,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_34",
+      "serialized_epoch_position_error_m": 4.286515360030108,
+      "serialized_epoch_velocity_error_m_s": 0.003574103370971906,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_35",
+      "serialized_epoch_position_error_m": 0.24907522632568835,
+      "serialized_epoch_velocity_error_m_s": 0.004776620661387776,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_36",
+      "serialized_epoch_position_error_m": 3.7515772015650626,
+      "serialized_epoch_velocity_error_m_s": 0.0015523239827827276,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_37",
+      "serialized_epoch_position_error_m": 5.158932331739112,
+      "serialized_epoch_velocity_error_m_s": 0.006345531336559146,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_38",
+      "serialized_epoch_position_error_m": 4.786094046046304,
+      "serialized_epoch_velocity_error_m_s": 0.0029093376174198107,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_39",
+      "serialized_epoch_position_error_m": 5.74975991751737,
+      "serialized_epoch_velocity_error_m_s": 0.005309269051586432,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X12_40",
+      "serialized_epoch_position_error_m": 6.452998422008911,
+      "serialized_epoch_velocity_error_m_s": 0.004032704986676805,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_1",
+      "serialized_epoch_position_error_m": 5.018349564746729,
+      "serialized_epoch_velocity_error_m_s": 0.0049291923622108375,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_2",
+      "serialized_epoch_position_error_m": 4.247550796561845,
+      "serialized_epoch_velocity_error_m_s": 0.005824650774656355,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_3",
+      "serialized_epoch_position_error_m": 1.9607983996333738,
+      "serialized_epoch_velocity_error_m_s": 0.006333305891898045,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_4",
+      "serialized_epoch_position_error_m": 4.325830002587313,
+      "serialized_epoch_velocity_error_m_s": 0.0032742406572180954,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_5",
+      "serialized_epoch_position_error_m": 8.489889209540578,
+      "serialized_epoch_velocity_error_m_s": 0.005725471141985549,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_6",
+      "serialized_epoch_position_error_m": 1.7714379215665856,
+      "serialized_epoch_velocity_error_m_s": 0.00562812990558273,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_7",
+      "serialized_epoch_position_error_m": 0.2474938203470918,
+      "serialized_epoch_velocity_error_m_s": 0.004212041252367638,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_8",
+      "serialized_epoch_position_error_m": 2.2515360847072827,
+      "serialized_epoch_velocity_error_m_s": 0.005939607498113638,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_9",
+      "serialized_epoch_position_error_m": 4.7239780585190605,
+      "serialized_epoch_velocity_error_m_s": 0.003666848510771432,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_10",
+      "serialized_epoch_position_error_m": 2.0404155661228436,
+      "serialized_epoch_velocity_error_m_s": 0.0034800304975194803,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_11",
+      "serialized_epoch_position_error_m": 4.968336667568976,
+      "serialized_epoch_velocity_error_m_s": 0.004363099336622947,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_12",
+      "serialized_epoch_position_error_m": 7.742798920483734,
+      "serialized_epoch_velocity_error_m_s": 0.007290816762882891,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_13",
+      "serialized_epoch_position_error_m": 2.777279916206798,
+      "serialized_epoch_velocity_error_m_s": 0.0024817940049809465,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_14",
+      "serialized_epoch_position_error_m": 4.834788005801213,
+      "serialized_epoch_velocity_error_m_s": 0.005655855636588058,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_15",
+      "serialized_epoch_position_error_m": 3.463913312969729,
+      "serialized_epoch_velocity_error_m_s": 0.005212771690510749,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_16",
+      "serialized_epoch_position_error_m": 1.6409893640003013,
+      "serialized_epoch_velocity_error_m_s": 0.007533940157067627,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_17",
+      "serialized_epoch_position_error_m": 7.949685735339803,
+      "serialized_epoch_velocity_error_m_s": 0.007665759865079319,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_18",
+      "serialized_epoch_position_error_m": 7.61664079922344,
+      "serialized_epoch_velocity_error_m_s": 0.007852835546615497,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_19",
+      "serialized_epoch_position_error_m": 6.359758395780481,
+      "serialized_epoch_velocity_error_m_s": 0.0027051864442848026,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_20",
+      "serialized_epoch_position_error_m": 7.836437946371528,
+      "serialized_epoch_velocity_error_m_s": 0.005811703718552161,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_21",
+      "serialized_epoch_position_error_m": 4.5706584774825805,
+      "serialized_epoch_velocity_error_m_s": 0.004514357208545229,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_22",
+      "serialized_epoch_position_error_m": 3.731821278549317,
+      "serialized_epoch_velocity_error_m_s": 0.005568278992369826,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_23",
+      "serialized_epoch_position_error_m": 3.391101808555955,
+      "serialized_epoch_velocity_error_m_s": 0.006896219911284294,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_24",
+      "serialized_epoch_position_error_m": 7.895841205831899,
+      "serialized_epoch_velocity_error_m_s": 0.007163481968618191,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_25",
+      "serialized_epoch_position_error_m": 10.255455747151327,
+      "serialized_epoch_velocity_error_m_s": 0.008293104760020391,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_26",
+      "serialized_epoch_position_error_m": 7.908996124114279,
+      "serialized_epoch_velocity_error_m_s": 0.009258441358728949,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_27",
+      "serialized_epoch_position_error_m": 8.13776877894898,
+      "serialized_epoch_velocity_error_m_s": 0.008856885490931093,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_28",
+      "serialized_epoch_position_error_m": 0.32900737661049934,
+      "serialized_epoch_velocity_error_m_s": 0.0054901506743952905,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_29",
+      "serialized_epoch_position_error_m": 5.369918557291879,
+      "serialized_epoch_velocity_error_m_s": 0.0044005694482192785,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_30",
+      "serialized_epoch_position_error_m": 1.1098616360248013,
+      "serialized_epoch_velocity_error_m_s": 0.00306634264005653,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_31",
+      "serialized_epoch_position_error_m": 7.684155493620444,
+      "serialized_epoch_velocity_error_m_s": 0.00710959080638931,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_32",
+      "serialized_epoch_position_error_m": 7.689682537592628,
+      "serialized_epoch_velocity_error_m_s": 0.007368708790514621,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_33",
+      "serialized_epoch_position_error_m": 6.59637248032017,
+      "serialized_epoch_velocity_error_m_s": 0.006314346042283552,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_34",
+      "serialized_epoch_position_error_m": 3.620985955755805,
+      "serialized_epoch_velocity_error_m_s": 0.004487550513455955,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_35",
+      "serialized_epoch_position_error_m": 10.357748961949662,
+      "serialized_epoch_velocity_error_m_s": 0.01068392114360823,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_36",
+      "serialized_epoch_position_error_m": 2.0896921746702986,
+      "serialized_epoch_velocity_error_m_s": 0.007668281242121546,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_37",
+      "serialized_epoch_position_error_m": 0.9145595372448418,
+      "serialized_epoch_velocity_error_m_s": 0.002218614151931158,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_38",
+      "serialized_epoch_position_error_m": 4.532760967967121,
+      "serialized_epoch_velocity_error_m_s": 0.0049554863663803335,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_39",
+      "serialized_epoch_position_error_m": 7.998198643317322,
+      "serialized_epoch_velocity_error_m_s": 0.005375100700031437,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X13_40",
+      "serialized_epoch_position_error_m": 7.5844960396729615,
+      "serialized_epoch_velocity_error_m_s": 0.005850338889844086,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_1",
+      "serialized_epoch_position_error_m": 6.20563283975349,
+      "serialized_epoch_velocity_error_m_s": 0.0072488884503282185,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_2",
+      "serialized_epoch_position_error_m": 9.029565902751157,
+      "serialized_epoch_velocity_error_m_s": 0.0075359028807334815,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_3",
+      "serialized_epoch_position_error_m": 5.471479894563347,
+      "serialized_epoch_velocity_error_m_s": 0.0035193399537055015,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_4",
+      "serialized_epoch_position_error_m": 6.844198298270911,
+      "serialized_epoch_velocity_error_m_s": 0.007851952960209324,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_5",
+      "serialized_epoch_position_error_m": 2.852133301424299,
+      "serialized_epoch_velocity_error_m_s": 0.006966747157690276,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_6",
+      "serialized_epoch_position_error_m": 11.436498214018634,
+      "serialized_epoch_velocity_error_m_s": 0.010216038712730717,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_7",
+      "serialized_epoch_position_error_m": 3.0708295399549317,
+      "serialized_epoch_velocity_error_m_s": 0.0016153255313468289,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_8",
+      "serialized_epoch_position_error_m": 1.1697221063004546,
+      "serialized_epoch_velocity_error_m_s": 0.0010367726725665812,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_9",
+      "serialized_epoch_position_error_m": 8.15484655928785,
+      "serialized_epoch_velocity_error_m_s": 0.008338288815182782,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_10",
+      "serialized_epoch_position_error_m": 2.558916099291848,
+      "serialized_epoch_velocity_error_m_s": 0.00512217646212538,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_11",
+      "serialized_epoch_position_error_m": 10.870215165169947,
+      "serialized_epoch_velocity_error_m_s": 0.01106723683797654,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_12",
+      "serialized_epoch_position_error_m": 7.709631123494811,
+      "serialized_epoch_velocity_error_m_s": 0.006696719460960592,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_13",
+      "serialized_epoch_position_error_m": 12.421412653538512,
+      "serialized_epoch_velocity_error_m_s": 0.011336559764618651,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_14",
+      "serialized_epoch_position_error_m": 7.39918859110806,
+      "serialized_epoch_velocity_error_m_s": 0.006814714786417992,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_15",
+      "serialized_epoch_position_error_m": 4.42994068441616,
+      "serialized_epoch_velocity_error_m_s": 0.004452878655853014,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_16",
+      "serialized_epoch_position_error_m": 2.9645342787454907,
+      "serialized_epoch_velocity_error_m_s": 0.0034935639143996197,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_17",
+      "serialized_epoch_position_error_m": 1.1662070992637807,
+      "serialized_epoch_velocity_error_m_s": 0.007214623561784604,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_18",
+      "serialized_epoch_position_error_m": 6.4748037562787335,
+      "serialized_epoch_velocity_error_m_s": 0.0051121511298842974,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_19",
+      "serialized_epoch_position_error_m": 5.912077000212887,
+      "serialized_epoch_velocity_error_m_s": 0.005611677141542878,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_20",
+      "serialized_epoch_position_error_m": 7.445387674672913,
+      "serialized_epoch_velocity_error_m_s": 0.008141221730692113,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_21",
+      "serialized_epoch_position_error_m": 3.6469589842757415,
+      "serialized_epoch_velocity_error_m_s": 0.0054269582184749325,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_22",
+      "serialized_epoch_position_error_m": 4.742188263092127,
+      "serialized_epoch_velocity_error_m_s": 0.0029464518292776336,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_23",
+      "serialized_epoch_position_error_m": 5.0260048842088505,
+      "serialized_epoch_velocity_error_m_s": 0.0025190241852361883,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_24",
+      "serialized_epoch_position_error_m": 3.1704542120718875,
+      "serialized_epoch_velocity_error_m_s": 0.004972722795074453,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_25",
+      "serialized_epoch_position_error_m": 2.0300782552808636,
+      "serialized_epoch_velocity_error_m_s": 0.006630517938417161,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_26",
+      "serialized_epoch_position_error_m": 5.879286156424458,
+      "serialized_epoch_velocity_error_m_s": 0.003176768646679459,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_27",
+      "serialized_epoch_position_error_m": 6.585725044486659,
+      "serialized_epoch_velocity_error_m_s": 0.005850069460241215,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_28",
+      "serialized_epoch_position_error_m": 2.1234010544933755,
+      "serialized_epoch_velocity_error_m_s": 0.0019156915987864926,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_29",
+      "serialized_epoch_position_error_m": 3.3266884188689145,
+      "serialized_epoch_velocity_error_m_s": 0.004527370093774186,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_30",
+      "serialized_epoch_position_error_m": 2.0031016559955725,
+      "serialized_epoch_velocity_error_m_s": 0.004888146373985215,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_31",
+      "serialized_epoch_position_error_m": 4.768609868050113,
+      "serialized_epoch_velocity_error_m_s": 0.005795615649702826,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_32",
+      "serialized_epoch_position_error_m": 8.172547384656152,
+      "serialized_epoch_velocity_error_m_s": 0.006990307182119223,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_33",
+      "serialized_epoch_position_error_m": 4.762318783326713,
+      "serialized_epoch_velocity_error_m_s": 0.003749837454323478,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_34",
+      "serialized_epoch_position_error_m": 2.843571979208261,
+      "serialized_epoch_velocity_error_m_s": 0.000819441656271271,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_35",
+      "serialized_epoch_position_error_m": 5.0927886432440035,
+      "serialized_epoch_velocity_error_m_s": 0.004793828867084476,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_36",
+      "serialized_epoch_position_error_m": 9.459117437310956,
+      "serialized_epoch_velocity_error_m_s": 0.009417792587975085,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_37",
+      "serialized_epoch_position_error_m": 4.135875538156572,
+      "serialized_epoch_velocity_error_m_s": 0.00811880656106115,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_38",
+      "serialized_epoch_position_error_m": 7.360151831665228,
+      "serialized_epoch_velocity_error_m_s": 0.006155211679791364,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_39",
+      "serialized_epoch_position_error_m": 2.6758756689601637,
+      "serialized_epoch_velocity_error_m_s": 0.0025651369508839983,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X14_40",
+      "serialized_epoch_position_error_m": 11.912090207241807,
+      "serialized_epoch_velocity_error_m_s": 0.01193438468080233,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_1",
+      "serialized_epoch_position_error_m": 2.7457895608123652,
+      "serialized_epoch_velocity_error_m_s": 0.0063823338308166555,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_2",
+      "serialized_epoch_position_error_m": 3.0203699004025517,
+      "serialized_epoch_velocity_error_m_s": 0.0009539497707495974,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_3",
+      "serialized_epoch_position_error_m": 1.6165170650410776,
+      "serialized_epoch_velocity_error_m_s": 0.0025715436173209465,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_4",
+      "serialized_epoch_position_error_m": 3.9321934762473485,
+      "serialized_epoch_velocity_error_m_s": 0.0037475362462251033,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_5",
+      "serialized_epoch_position_error_m": 6.025984241917836,
+      "serialized_epoch_velocity_error_m_s": 0.005964959091557111,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_6",
+      "serialized_epoch_position_error_m": 6.2018160331745715,
+      "serialized_epoch_velocity_error_m_s": 0.006378178582201671,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_7",
+      "serialized_epoch_position_error_m": 2.638458116961424,
+      "serialized_epoch_velocity_error_m_s": 0.0032038016087172294,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_8",
+      "serialized_epoch_position_error_m": 2.2274255881652545,
+      "serialized_epoch_velocity_error_m_s": 0.0034028760431389577,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_9",
+      "serialized_epoch_position_error_m": 7.056788352647959,
+      "serialized_epoch_velocity_error_m_s": 0.0044731227576041595,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_10",
+      "serialized_epoch_position_error_m": 7.686401908846836,
+      "serialized_epoch_velocity_error_m_s": 0.00422558572512154,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_11",
+      "serialized_epoch_position_error_m": 7.502882802194637,
+      "serialized_epoch_velocity_error_m_s": 0.0052489152447482415,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_12",
+      "serialized_epoch_position_error_m": 1.3088838030863748,
+      "serialized_epoch_velocity_error_m_s": 0.004288253419850737,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_13",
+      "serialized_epoch_position_error_m": 0.8425174951901779,
+      "serialized_epoch_velocity_error_m_s": 0.0019293386126217106,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_14",
+      "serialized_epoch_position_error_m": 0.7787465107652931,
+      "serialized_epoch_velocity_error_m_s": 0.00363318038353024,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_15",
+      "serialized_epoch_position_error_m": 3.8067544458781284,
+      "serialized_epoch_velocity_error_m_s": 0.006028312993935634,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_16",
+      "serialized_epoch_position_error_m": 3.746877088566056,
+      "serialized_epoch_velocity_error_m_s": 0.005253357688852862,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_17",
+      "serialized_epoch_position_error_m": 3.593256402641595,
+      "serialized_epoch_velocity_error_m_s": 0.00410674411734154,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_18",
+      "serialized_epoch_position_error_m": 6.705817219715928,
+      "serialized_epoch_velocity_error_m_s": 0.006156490485038633,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_19",
+      "serialized_epoch_position_error_m": 9.801152584518842,
+      "serialized_epoch_velocity_error_m_s": 0.01046518310087642,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_20",
+      "serialized_epoch_position_error_m": 4.896534855736618,
+      "serialized_epoch_velocity_error_m_s": 0.006809190985391253,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_21",
+      "serialized_epoch_position_error_m": 6.666068685782017,
+      "serialized_epoch_velocity_error_m_s": 0.00887082671635989,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_22",
+      "serialized_epoch_position_error_m": 4.3720587522469385,
+      "serialized_epoch_velocity_error_m_s": 0.003471431038745922,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_23",
+      "serialized_epoch_position_error_m": 1.8995220067686844,
+      "serialized_epoch_velocity_error_m_s": 0.0026389166842072033,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_24",
+      "serialized_epoch_position_error_m": 10.364179158102054,
+      "serialized_epoch_velocity_error_m_s": 0.009789104773989237,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_25",
+      "serialized_epoch_position_error_m": 4.961713294348558,
+      "serialized_epoch_velocity_error_m_s": 0.005102691417374069,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_26",
+      "serialized_epoch_position_error_m": 10.446444560860883,
+      "serialized_epoch_velocity_error_m_s": 0.010369717885394748,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_27",
+      "serialized_epoch_position_error_m": 7.598770718340286,
+      "serialized_epoch_velocity_error_m_s": 0.007542362237339377,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_28",
+      "serialized_epoch_position_error_m": 0.3907622307104714,
+      "serialized_epoch_velocity_error_m_s": 0.0025926695343480768,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_29",
+      "serialized_epoch_position_error_m": 7.113653044826055,
+      "serialized_epoch_velocity_error_m_s": 0.004499353732113213,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_30",
+      "serialized_epoch_position_error_m": 12.159943873432379,
+      "serialized_epoch_velocity_error_m_s": 0.009946869958052251,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_31",
+      "serialized_epoch_position_error_m": 5.2543384864952545,
+      "serialized_epoch_velocity_error_m_s": 0.0015404418685265485,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_32",
+      "serialized_epoch_position_error_m": 1.1192425289698844,
+      "serialized_epoch_velocity_error_m_s": 0.004224632199440439,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_33",
+      "serialized_epoch_position_error_m": 4.472914055512608,
+      "serialized_epoch_velocity_error_m_s": 0.0046672885556863644,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_34",
+      "serialized_epoch_position_error_m": 4.566948215793672,
+      "serialized_epoch_velocity_error_m_s": 0.0055720523183431046,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_35",
+      "serialized_epoch_position_error_m": 6.701604265521579,
+      "serialized_epoch_velocity_error_m_s": 0.008062652406991798,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_36",
+      "serialized_epoch_position_error_m": 2.196394109595745,
+      "serialized_epoch_velocity_error_m_s": 0.004179714402221774,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_37",
+      "serialized_epoch_position_error_m": 1.6232266665834927,
+      "serialized_epoch_velocity_error_m_s": 0.0024778488697879716,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_38",
+      "serialized_epoch_position_error_m": 5.764777450377992,
+      "serialized_epoch_velocity_error_m_s": 0.00509991762551237,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_39",
+      "serialized_epoch_position_error_m": 4.531419155395109,
+      "serialized_epoch_velocity_error_m_s": 0.006061518967344221,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X15_40",
+      "serialized_epoch_position_error_m": 5.978795001106637,
+      "serialized_epoch_velocity_error_m_s": 0.007702724806798103,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_1",
+      "serialized_epoch_position_error_m": 10.16052775768627,
+      "serialized_epoch_velocity_error_m_s": 0.009499211755957757,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_2",
+      "serialized_epoch_position_error_m": 4.445694119681931,
+      "serialized_epoch_velocity_error_m_s": 0.004772258510598328,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_3",
+      "serialized_epoch_position_error_m": 4.758094348259768,
+      "serialized_epoch_velocity_error_m_s": 0.004243522801302471,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_4",
+      "serialized_epoch_position_error_m": 9.235041104384129,
+      "serialized_epoch_velocity_error_m_s": 0.008771157462381166,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_5",
+      "serialized_epoch_position_error_m": 2.2631398353234204,
+      "serialized_epoch_velocity_error_m_s": 0.0017724304018406942,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_6",
+      "serialized_epoch_position_error_m": 3.927072737217342,
+      "serialized_epoch_velocity_error_m_s": 0.0019642804476181688,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_7",
+      "serialized_epoch_position_error_m": 3.5042142949852617,
+      "serialized_epoch_velocity_error_m_s": 0.0032577317430477464,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_8",
+      "serialized_epoch_position_error_m": 5.848218014982422,
+      "serialized_epoch_velocity_error_m_s": 0.001332850344011038,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_9",
+      "serialized_epoch_position_error_m": 0.9704379628967426,
+      "serialized_epoch_velocity_error_m_s": 0.0008642932767429145,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_10",
+      "serialized_epoch_position_error_m": 9.10569932091061,
+      "serialized_epoch_velocity_error_m_s": 0.008227771572153002,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_11",
+      "serialized_epoch_position_error_m": 4.5545460461018665,
+      "serialized_epoch_velocity_error_m_s": 0.0016495635951441039,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_12",
+      "serialized_epoch_position_error_m": 4.2870194647255175,
+      "serialized_epoch_velocity_error_m_s": 0.004046699983455218,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_13",
+      "serialized_epoch_position_error_m": 3.833420461076005,
+      "serialized_epoch_velocity_error_m_s": 0.0019090228505019428,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_14",
+      "serialized_epoch_position_error_m": 11.18383511544342,
+      "serialized_epoch_velocity_error_m_s": 0.010862034723852153,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_15",
+      "serialized_epoch_position_error_m": 1.1911633601046503,
+      "serialized_epoch_velocity_error_m_s": 0.0011035687875296167,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_16",
+      "serialized_epoch_position_error_m": 3.4088086194998666,
+      "serialized_epoch_velocity_error_m_s": 0.0032919156053035866,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_17",
+      "serialized_epoch_position_error_m": 6.181694812483529,
+      "serialized_epoch_velocity_error_m_s": 0.006243010526903799,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_18",
+      "serialized_epoch_position_error_m": 4.900392175592268,
+      "serialized_epoch_velocity_error_m_s": 0.004908618774171225,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_19",
+      "serialized_epoch_position_error_m": 2.146466495061255,
+      "serialized_epoch_velocity_error_m_s": 0.0038647437517425605,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_20",
+      "serialized_epoch_position_error_m": 2.4331148249384795,
+      "serialized_epoch_velocity_error_m_s": 0.0007704247393378739,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_21",
+      "serialized_epoch_position_error_m": 2.185663942855737,
+      "serialized_epoch_velocity_error_m_s": 0.0016780496721342634,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_22",
+      "serialized_epoch_position_error_m": 8.460004194855427,
+      "serialized_epoch_velocity_error_m_s": 0.00822202054747993,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_23",
+      "serialized_epoch_position_error_m": 7.636308363257619,
+      "serialized_epoch_velocity_error_m_s": 0.0068800871028051585,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_24",
+      "serialized_epoch_position_error_m": 4.7059839267288845,
+      "serialized_epoch_velocity_error_m_s": 0.004970191566922856,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_25",
+      "serialized_epoch_position_error_m": 2.9060666430001763,
+      "serialized_epoch_velocity_error_m_s": 0.0024639607009195224,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_26",
+      "serialized_epoch_position_error_m": 6.890731787860432,
+      "serialized_epoch_velocity_error_m_s": 0.005818061335006799,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_27",
+      "serialized_epoch_position_error_m": 8.315398905484855,
+      "serialized_epoch_velocity_error_m_s": 0.008028016568902806,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_28",
+      "serialized_epoch_position_error_m": 5.794574680748566,
+      "serialized_epoch_velocity_error_m_s": 0.0013758126610370642,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_29",
+      "serialized_epoch_position_error_m": 3.337141458850735,
+      "serialized_epoch_velocity_error_m_s": 0.0031890981300367965,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_30",
+      "serialized_epoch_position_error_m": 10.090066683720615,
+      "serialized_epoch_velocity_error_m_s": 0.009218487273439477,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_31",
+      "serialized_epoch_position_error_m": 7.277488733535807,
+      "serialized_epoch_velocity_error_m_s": 0.005658749637256009,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_32",
+      "serialized_epoch_position_error_m": 4.445673296370742,
+      "serialized_epoch_velocity_error_m_s": 0.004447825316501996,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_33",
+      "serialized_epoch_position_error_m": 6.9450954809196785,
+      "serialized_epoch_velocity_error_m_s": 0.005882223489727326,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_34",
+      "serialized_epoch_position_error_m": 5.411442183444954,
+      "serialized_epoch_velocity_error_m_s": 0.005720657256001434,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_35",
+      "serialized_epoch_position_error_m": 9.02568033979164,
+      "serialized_epoch_velocity_error_m_s": 0.008666047012164094,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_36",
+      "serialized_epoch_position_error_m": 8.084547759378314,
+      "serialized_epoch_velocity_error_m_s": 0.0076996973853732924,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_37",
+      "serialized_epoch_position_error_m": 11.474944544685705,
+      "serialized_epoch_velocity_error_m_s": 0.01138747418832217,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_38",
+      "serialized_epoch_position_error_m": 1.9337253297264703,
+      "serialized_epoch_velocity_error_m_s": 0.002777046432814763,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_39",
+      "serialized_epoch_position_error_m": 4.160822043184442,
+      "serialized_epoch_velocity_error_m_s": 0.005118051211578583,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X16_40",
+      "serialized_epoch_position_error_m": 4.166285282543516,
+      "serialized_epoch_velocity_error_m_s": 0.003325381882430377,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_1",
+      "serialized_epoch_position_error_m": 5.941643919131473,
+      "serialized_epoch_velocity_error_m_s": 0.0047474096250572475,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_2",
+      "serialized_epoch_position_error_m": 3.043190054562089,
+      "serialized_epoch_velocity_error_m_s": 0.0034499538760278075,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_3",
+      "serialized_epoch_position_error_m": 6.7318916790673455,
+      "serialized_epoch_velocity_error_m_s": 0.004692482853303698,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_4",
+      "serialized_epoch_position_error_m": 2.318002938509573,
+      "serialized_epoch_velocity_error_m_s": 0.0071606457822712384,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_5",
+      "serialized_epoch_position_error_m": 3.7995888745162567,
+      "serialized_epoch_velocity_error_m_s": 0.002300786316384418,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_6",
+      "serialized_epoch_position_error_m": 7.822225161036094,
+      "serialized_epoch_velocity_error_m_s": 0.007817675861285225,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_7",
+      "serialized_epoch_position_error_m": 2.4131813581724897,
+      "serialized_epoch_velocity_error_m_s": 0.0019667894564259804,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_8",
+      "serialized_epoch_position_error_m": 6.615787154625851,
+      "serialized_epoch_velocity_error_m_s": 0.004606874419944745,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_9",
+      "serialized_epoch_position_error_m": 1.6542905502019993,
+      "serialized_epoch_velocity_error_m_s": 0.0031181809084826167,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_10",
+      "serialized_epoch_position_error_m": 6.483775078709746,
+      "serialized_epoch_velocity_error_m_s": 0.0027774581769972064,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_11",
+      "serialized_epoch_position_error_m": 6.464047264324185,
+      "serialized_epoch_velocity_error_m_s": 0.004325378534432068,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_12",
+      "serialized_epoch_position_error_m": 6.642146831128037,
+      "serialized_epoch_velocity_error_m_s": 0.0015492770098042739,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_13",
+      "serialized_epoch_position_error_m": 9.35258864960697,
+      "serialized_epoch_velocity_error_m_s": 0.010362833119769472,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_14",
+      "serialized_epoch_position_error_m": 4.043832579164567,
+      "serialized_epoch_velocity_error_m_s": 0.0032401267733416232,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_15",
+      "serialized_epoch_position_error_m": 11.83869689851273,
+      "serialized_epoch_velocity_error_m_s": 0.008173723730573484,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_16",
+      "serialized_epoch_position_error_m": 11.48465766270218,
+      "serialized_epoch_velocity_error_m_s": 0.013129778565076433,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_17",
+      "serialized_epoch_position_error_m": 3.1472620758696452,
+      "serialized_epoch_velocity_error_m_s": 0.008181307461058161,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_18",
+      "serialized_epoch_position_error_m": 11.273483418636996,
+      "serialized_epoch_velocity_error_m_s": 0.010283392246988892,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_19",
+      "serialized_epoch_position_error_m": 8.003112841158147,
+      "serialized_epoch_velocity_error_m_s": 0.008739485731893051,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_20",
+      "serialized_epoch_position_error_m": 6.188000422189471,
+      "serialized_epoch_velocity_error_m_s": 0.0028245966265085733,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_21",
+      "serialized_epoch_position_error_m": 6.153356511299064,
+      "serialized_epoch_velocity_error_m_s": 0.004980227014620207,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_22",
+      "serialized_epoch_position_error_m": 5.568437223130556,
+      "serialized_epoch_velocity_error_m_s": 0.005731828012080979,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_23",
+      "serialized_epoch_position_error_m": 8.695922895718075,
+      "serialized_epoch_velocity_error_m_s": 0.007351087181298079,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_24",
+      "serialized_epoch_position_error_m": 4.754086873747724,
+      "serialized_epoch_velocity_error_m_s": 0.008180443776244686,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_25",
+      "serialized_epoch_position_error_m": 3.248469336346458,
+      "serialized_epoch_velocity_error_m_s": 0.0009999518182101839,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_26",
+      "serialized_epoch_position_error_m": 0.576454997494381,
+      "serialized_epoch_velocity_error_m_s": 0.00217742014627425,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_27",
+      "serialized_epoch_position_error_m": 7.416469153245545,
+      "serialized_epoch_velocity_error_m_s": 0.006981035292865826,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_28",
+      "serialized_epoch_position_error_m": 5.319386540814991,
+      "serialized_epoch_velocity_error_m_s": 0.0030656986572420108,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_29",
+      "serialized_epoch_position_error_m": 10.244713570401512,
+      "serialized_epoch_velocity_error_m_s": 0.010135767607917455,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_30",
+      "serialized_epoch_position_error_m": 11.67161226288202,
+      "serialized_epoch_velocity_error_m_s": 0.009691815530569314,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_31",
+      "serialized_epoch_position_error_m": 5.553890736756509,
+      "serialized_epoch_velocity_error_m_s": 0.002898924777645333,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_32",
+      "serialized_epoch_position_error_m": 7.083882548159314,
+      "serialized_epoch_velocity_error_m_s": 0.0027328656469787407,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_33",
+      "serialized_epoch_position_error_m": 1.9634536573232357,
+      "serialized_epoch_velocity_error_m_s": 0.005237730678090416,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_34",
+      "serialized_epoch_position_error_m": 8.17851227351213,
+      "serialized_epoch_velocity_error_m_s": 0.007541646867386707,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_35",
+      "serialized_epoch_position_error_m": 8.413529540141424,
+      "serialized_epoch_velocity_error_m_s": 0.0022504803126407354,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_36",
+      "serialized_epoch_position_error_m": 9.022366709697168,
+      "serialized_epoch_velocity_error_m_s": 0.011177702597632212,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_37",
+      "serialized_epoch_position_error_m": 7.863460882392429,
+      "serialized_epoch_velocity_error_m_s": 0.01068379768257761,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_38",
+      "serialized_epoch_position_error_m": 7.942817030058115,
+      "serialized_epoch_velocity_error_m_s": 0.007396874111532864,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_39",
+      "serialized_epoch_position_error_m": 3.320385694542942,
+      "serialized_epoch_velocity_error_m_s": 0.005032247258172252,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    },
+    {
+      "sat_name": "X17_40",
+      "serialized_epoch_position_error_m": 8.267745868601235,
+      "serialized_epoch_velocity_error_m_s": 0.0062371486924311815,
+      "stk_fit_final_rms_km": null,
+      "stk_fit_rms_available": false
+    }
+  ],
+  "interpretation": "Initial fit/serialization error only; full-window difference from archived TwoBody is model divergence, not fitting error"
+}

@@ -1,0 +1,509 @@
+{
+  "schema": "f3_v2_october_deliverables",
+  "status": "DRAFT_NOT_FROZEN",
+  "frozen": false,
+  "created_date_local": "2026-10-08",
+  "timezone": "Asia/Shanghai",
+  "implementation_authorized_by_this_plan": false,
+  "formal_performance_authorized": false,
+  "target_evidence_date": "2026-10-31",
+  "MARL_PPO_in_scope": false,
+  "milestones": [
+    {
+      "id": "M11",
+      "due": "2026-10-11",
+      "work": "科学合同、K0/K1审批包；结构与计算资源预算初估；一次性审批清单",
+      "acceptance": "所有科学未决项集中列出；早期成本可复现，未实现项明确NOT_MEASURED；不能伪称新B4实测",
+      "dependencies": [],
+      "risk": "审批未完成则后续日期不可保证"
+    },
+    {
+      "id": "M16",
+      "due": "2026-10-16",
+      "work": "获批K0/K1审计与初态、共享JointAction/BatchPhysicalValidator、5s调度与batch安全验收",
+      "acceptance": "K*按结构规则选定；全部旧证据不变；联合原子性/全时间线安全/BBM-MBB/守恒通过",
+      "dependencies": [
+        "M11",
+        "human_contract_freeze",
+        "implementation_authorization"
+      ],
+      "risk": "K0/K1与安全验证相互依赖，先完成validator再完成K1联合证据"
+    },
+    {
+      "id": "M20",
+      "due": "2026-10-20",
+      "work": "同一结构batch pool、B1/B3/B4-v2核心、最小B2、evidence writer",
+      "acceptance": "同一root/pool/hash；B3全图snapshot；B4真实joint rollout；信息边界及失败持久化通过",
+      "dependencies": [
+        "M16"
+      ],
+      "risk": "不能以独立单链得分相加替代联合执行"
+    },
+    {
+      "id": "M23",
+      "due": "2026-10-23",
+      "work": "serial/8-worker多epoch精确等价、tiny oracle、完整回归、成本终估、P1-v2 preflight",
+      "acceptance": "新版本每分支/四checkpoint/自然state-chain exact；全回归100%；42项最终manifest、预算和hash齐全",
+      "dependencies": [
+        "M20"
+      ],
+      "risk": "旧multiprocessing PASS不能替代新验收；任一失败禁止正式启动"
+    },
+    {
+      "id": "M24_29",
+      "start": "2026-10-24",
+      "due": "2026-10-29",
+      "work": "独立人工运行授权后，按冻结顺序执行全部42项非MARL实验",
+      "acceptance": "每项COMPLETE/CENSORED或完整失败证据；无删项；invariant失败持久化后STOP",
+      "dependencies": [
+        "M23",
+        "formal_run_authorization"
+      ],
+      "risk": "不可用截断J排名或加快失败重试来赶工"
+    },
+    {
+      "id": "M30_31",
+      "start": "2026-10-30",
+      "due": "2026-10-31",
+      "work": "验证原始数据、paired统计、主要图表/caption、证据封存与局限清单",
+      "acceptance": "11项交付逐项核验；正式结果/工程验收分开；42项ledger全保留；canonical manifest与artifact seal可复现",
+      "dependencies": [
+        "M24_29"
+      ],
+      "risk": "阴性/重合/无法排空结果仍报告；封存不等于必须证明B4更好"
+    }
+  ],
+  "items": [
+    {
+      "id": "D01",
+      "name": "F3-v2完整算法设计、代码和冻结配置",
+      "due": "2026-10-23",
+      "acceptance": "signed contracts/schema/code hashes; no pending executable parameters",
+      "current_status": "PARAMETERIZED_CODE_PRESENT_SCIENTIFIC_FREEZE_AND_CURRENT_ACCEPTANCE_PENDING",
+      "evidence_paths": [
+        "outputs/f3_v2_engineering_check_20261008T155127_587459Z/report.json"
+      ],
+      "accepted": false,
+      "evidence_limit": "部分工程证据，未完成该论文交付项；需最终配置对应验收。"
+    },
+    {
+      "id": "D02",
+      "name": "共享batch executor安全验收",
+      "due": "2026-10-16",
+      "acceptance": "atomic rollback, independent resources, simultaneous mixed transitions, full timeline safety, conservation PASS",
+      "current_status": "SYNTHETIC_AND_NATURAL_PHYSICAL_CHECKS_ONLY_FINAL_PRODUCTION_ACCEPTANCE_PENDING",
+      "evidence_paths": [
+        "outputs/f3_v2_natural_physical_trial_20261008T163118_750402Z/report.json"
+      ],
+      "accepted": false,
+      "evidence_limit": "部分工程证据，未完成该论文交付项；需最终配置对应验收。"
+    },
+    {
+      "id": "D03",
+      "name": "K0/K1结构审计与初始拓扑证据",
+      "due": "2026-10-16",
+      "acceptance": "result-blind20snapshot audit, exact/bound certificates, K* rule, parent/GateC hashes, K1 bindings/ages/connectivity",
+      "current_status": "THREE_POINT_EXACT_CERTIFICATES_ONLY_FULL_K0_K1_PENDING",
+      "evidence_paths": [
+        "outputs/f3_v2_predeclared_cost_summary_20261008T155819_547812Z/report.json"
+      ],
+      "accepted": false,
+      "evidence_limit": "部分工程证据，未完成该论文交付项；需最终配置对应验收。"
+    },
+    {
+      "id": "D04",
+      "name": "B1/B2/B3/B4-v2实现与验收",
+      "due": "2026-10-23",
+      "acceptance": "same pool/info boundary/score exact/tie/hold semantics and deterministic fixtures PASS",
+      "current_status": "IMPLEMENTATION_PRESENT_CP_POOL_AND_CP_SOURCE_COST_BLOCK_PRODUCTION",
+      "evidence_paths": [
+        "outputs/f3_v2_natural_source_coverage_20261008T162145_156464Z/report.json"
+      ],
+      "accepted": false,
+      "evidence_limit": "部分工程证据，未完成该论文交付项；需最终配置对应验收。"
+    },
+    {
+      "id": "D05",
+      "name": "B4 serial/8-worker精确等价",
+      "due": "2026-10-23",
+      "acceptance": "new joint branches and multi-epoch four checkpoints/state-chain exact; no orphan; old PASS not substituted",
+      "current_status": "HISTORICAL_RESTRICTED_K4_PASS_CURRENT_K_STAR_FULL_POOL_NATURAL_GATE_PENDING",
+      "evidence_paths": [
+        "outputs/f3_v2_natural_prefix_20261008T142126_443971Z/report.json"
+      ],
+      "accepted": false,
+      "evidence_limit": "部分工程证据，未完成该论文交付项；需最终配置对应验收。"
+    },
+    {
+      "id": "D06",
+      "name": "全部预注册非MARL正式实验",
+      "due": "2026-10-29",
+      "acceptance": "42/42 registered IDs with valid COMPLETE/CENSORED; zero unresolved execution failures; all raw evidence retained",
+      "current_status": "NOT_AUTHORIZED",
+      "evidence_paths": [],
+      "accepted": false
+    },
+    {
+      "id": "D07",
+      "name": "全部run状态和统计",
+      "due": "2026-10-31",
+      "acceptance": "ledger/metrics/evidence agree; censored residual/delivery and no truncated-J rank; failures explicitly retained",
+      "current_status": "NOT_AVAILABLE",
+      "evidence_paths": [],
+      "accepted": false
+    },
+    {
+      "id": "D08",
+      "name": "核心B4-v2 vs B3-v2比较表",
+      "due": "2026-10-31",
+      "acceptance": "three-load same-config paired contrasts; full J only complete pairs; negative/tied cases preserved",
+      "current_status": "NOT_AVAILABLE",
+      "evidence_paths": [],
+      "accepted": false
+    },
+    {
+      "id": "D09",
+      "name": "控制周期、batch上限和鲁棒性",
+      "due": "2026-10-31",
+      "acceptance": "complete2x2 anchor reuse; K/stable/B2/router registered contrasts; permissions vs forecast effects separated",
+      "current_status": "NOT_AVAILABLE",
+      "evidence_paths": [],
+      "accepted": false
+    },
+    {
+      "id": "D10",
+      "name": "主要论文图表/caption/可复现manifest",
+      "due": "2026-10-31",
+      "acceptance": "opening rho.8 immutable case; main contrasts/regime/ablation/runtime/mechanism plots; scripts/source hashes/seal",
+      "current_status": "NOT_AVAILABLE",
+      "evidence_paths": [],
+      "accepted": false
+    },
+    {
+      "id": "D11",
+      "name": "论文结论与局限性",
+      "due": "2026-10-31",
+      "acceptance": "positive/negative/censor all explained; deterministic trace coverage, capped search, no proven large-scale optimum or MARL claim",
+      "current_status": "NOT_AVAILABLE",
+      "evidence_paths": [],
+      "accepted": false
+    }
+  ],
+  "consolidated_approval_checklist": [
+    {
+      "id": "HF_SCIENCE",
+      "decision": "批准现有v2 action/BBM-MBB/资源独立/原子执行/全时间线STRICT安全，5s主周期、batch4、B1 whole-graph、B3 min_eta、B4 H10 persistence、末端min(10,600-t)",
+      "status": "REQUIRES_HUMAN_FREEZE"
+    },
+    {
+      "id": "HF_K",
+      "decision": "批准K0-v1.1 20snapshot/18-of20/截断寿命及K0-v1.2联合诊断；K*依结构规则选定，K1初态/age0；无合格K则STOP，不按J挑K",
+      "status": "REQUIRES_HUMAN_FREEZE"
+    },
+    {
+      "id": "HF_SEARCH",
+      "decision": "集中审批raw64/singleton16/8+8/W4/M32/184/33草案，同时冻结old-binding/terminal-footprint多样性、按size结构种子、runtime scouting枚举/预算及遗漏记录；原cap数字不变更为自动批准。",
+      "status": "REQUIRES_HUMAN_FREEZE"
+    },
+    {
+      "id": "HF_MATRIX",
+      "decision": "批准42项六块矩阵、全部固定ID与次序、三负载、stable模板、K4同安全政策、2x2消融、B2逐链LINK_UP H4/H8 threshold0、两router；无额外seed/grid",
+      "status": "REQUIRES_HUMAN_FREEZE"
+    },
+    {
+      "id": "HF_RESOURCE",
+      "decision": "确认Oct24-29机器可用时间；建议20h/day、一B4 episode/8workers、RAM上限；授权成本-only测量范围并在Oct23前填齐实测超时/预算",
+      "status": "REQUIRES_HUMAN_RESOURCE_CONFIRMATION"
+    },
+    {
+      "id": "HF_BUILD",
+      "decision": "确认复用现有工程实现和剩余验收范围；此次计划更新不新增实现/测试运行授权，不将已有代码视为生产PASS。",
+      "status": "IMPLEMENTATION_NOT_AUTHORIZED_BY_PLAN"
+    },
+    {
+      "id": "HF_RUN",
+      "decision": "仅在前述冻结、新版本验收、完整预算/manifest/hash齐全后，另行人工授权全部42项正式执行；本次计划或合同审批均不自动授权运行",
+      "status": "SEPARATE_FORMAL_RUN_AUTHORIZATION_REQUIRED"
+    }
+  ],
+  "immediate_independent_preparation": [
+    "只读核对已有代码与验收seal的版本关系，准备当前源码回归任务",
+    "准备synthetic安全/整批冲突/自然expiry/5s边界/tiny-oracle测试fixture",
+    "复用失败持久化、ledger、censor、图表/caption接口并准备literal数据QA",
+    "准备预声明成本采样字段、冷/热池测量协议和机器资源准入检查",
+    "以上工程准备不依赖K*；实际执行仍遵守当前已授工程权限，不授权正式实验"
+  ],
+  "not_executed_by_this_task": [
+    "implementation",
+    "tests/benchmark workloads",
+    "K* selection",
+    "controller performance",
+    "registered experiments"
+  ],
+  "blocked_until_scientific_freeze": [
+    "formal K0 thresholds/K* selection and K1 research initial state",
+    "production adoption of batch safety, scoring and forecast contract",
+    "beam/pruning budgets, B2 clock/hold grid and initialization convention",
+    "final executable registered manifest and measured runtime limits"
+  ],
+  "final_acceptance": "eachD01-D11 accepted separately; engineering PASS never implies scientific superiority or experiment completion",
+  "completion_deadline_not_guaranteed": true,
+  "submission_target": "2026-12 mid-to-late; November writing/interpretation/review, not postponed first main experiments",
+  "plan_revision": "OCTOBER_FULL_NON_MARL_COMPLETION_REVIEW_3",
+  "revision_utc": "20261008T164358_252159Z",
+  "prior_plan_sha256": "9e3e14d302bd910d1310bffb165baadc39ed7426a03fb0ddaf4bea79856ae099",
+  "prior_plan_preserved_at": "outputs/f3_v2_october_completion_plan_20261008T164358_252159Z/prior_plan_bytes",
+  "current_engineering_snapshot": {
+    "scope": "READ_ONLY_EXISTING_EVIDENCE; no tests/benchmarks rerun by planning task",
+    "evidence": {
+      "structural_cost": {
+        "path": "outputs/f3_v2_predeclared_cost_summary_20261008T155819_547812Z/report.json",
+        "sha256": "e9dc8ca4eae5beeed3d133772660697b5087255e719af5008b806eda1fb9ac60"
+      },
+      "natural_source": {
+        "path": "outputs/f3_v2_natural_source_coverage_20261008T162145_156464Z/report.json",
+        "sha256": "2c88ad3e0235383eef203d4f4a02187d673f824ac835633e64482b1d42506e03"
+      },
+      "physical_clone": {
+        "path": "outputs/f3_v2_natural_physical_trial_20261008T163118_750402Z/report.json",
+        "sha256": "46cc374466a56c4337d30aba8798927c9dfda98b97ad3f76165b5ab6e2fab882"
+      },
+      "historical_natural_rollout": {
+        "path": "outputs/f3_v2_natural_prefix_20261008T142126_443971Z/report.json",
+        "sha256": "e054f292ec151031946250dec66b41075251ffec16a73198ef6c7cc29514204f"
+      },
+      "historical_regression": {
+        "path": "outputs/f3_v2_engineering_check_20261008T155127_587459Z/report.json",
+        "sha256": "c54b07f5cb806d99d969bf64187a5f5551f2ad20dd2c73c7826e40dfb5b925e6"
+      }
+    },
+    "historical_focused_tests": 110,
+    "historical_full_tests": 439,
+    "current_code_differs_from_test_seal": [
+      "src/dynamic_lisl/f3_v2/batch_executor.py",
+      "src/dynamic_lisl/f3_v2/joint_proposer.py"
+    ],
+    "new_code_not_in_test_seal": [
+      "src/dynamic_lisl/f3_v2/physical_trial.py",
+      "src/dynamic_lisl/f3_v2/source_diagnostics.py"
+    ],
+    "current_full_stack_acceptance": "PENDING_CURRENT_CODE_REGRESSION_AND_APPROVED_PRODUCTION_CONFIG",
+    "historical_natural_scope": "K4, restricted 9-branch fixture, six 2s epochs; not K*/5s/full production pool",
+    "current_natural_B4_stack_acceptance": "NOT_ESTABLISHED_BY_THIS_PLANNING_TASK",
+    "K_star_selected": false,
+    "formal_K0_K1_complete": false,
+    "B4_v2_engineering_PASS": false,
+    "formal_preflight_READY": false
+  },
+  "reviewed_date_local": "2026-10-09",
+  "task_dependency_registry": [
+    {
+      "id": "T01",
+      "start": "2026-10-09",
+      "due": "2026-10-11",
+      "dependencies": [],
+      "work": "集中科学合同/搜索覆盖/资源审批包",
+      "readiness": "PLAN_AND_READ_ONLY_READY",
+      "authorization": "HF_SCIENCE/HF_K/HF_SEARCH/HF_MATRIX/HF_RESOURCE"
+    },
+    {
+      "id": "T02",
+      "start": "2026-10-09",
+      "due": "2026-10-15",
+      "dependencies": [],
+      "work": "现有batch安全fixture和5s/drain/checkpoint测试准备",
+      "readiness": "INDEPENDENT_ENGINEERING_PREPARATION",
+      "authorization": "执行测试须在已有工程授权范围内；最终生产验收依冻结"
+    },
+    {
+      "id": "T03",
+      "start": "2026-10-12",
+      "due": "2026-10-15",
+      "dependencies": [
+        "T01"
+      ],
+      "work": "按获批规则完成所有K×20点K0和证书/结构报告",
+      "readiness": "WAIT_HUMAN_FREEZE",
+      "authorization": "HF_K"
+    },
+    {
+      "id": "T04",
+      "start": "2026-10-12",
+      "due": "2026-10-16",
+      "dependencies": [
+        "T01",
+        "T02"
+      ],
+      "work": "修订共享source/pool，完成资源独立batch2/3/4的结构与成本验收",
+      "readiness": "WAIT_HUMAN_FREEZE",
+      "authorization": "HF_SEARCH；无J调参"
+    },
+    {
+      "id": "T05",
+      "start": "2026-10-16",
+      "due": "2026-10-16",
+      "dependencies": [
+        "T02",
+        "T03",
+        "T04"
+      ],
+      "work": "结构选择K*并生成K1当前合法初态/年龄/hash",
+      "readiness": "WAIT_HUMAN_FREEZE",
+      "authorization": "HF_K；按结构规则，不按控制器性能"
+    },
+    {
+      "id": "T06",
+      "start": "2026-10-17",
+      "due": "2026-10-20",
+      "dependencies": [
+        "T04",
+        "T05"
+      ],
+      "work": "B1/B3/B4-v2最终共享pool接入、最小B2、真实joint rollout",
+      "readiness": "WAIT_APPROVED_PRODUCTION_CONTRACT",
+      "authorization": "HF_SCIENCE/HF_SEARCH/HF_BUILD"
+    },
+    {
+      "id": "T07",
+      "start": "2026-10-09",
+      "due": "2026-10-20",
+      "dependencies": [],
+      "work": "evidence writer/manifest/图表接口复用、失败与censor fixture准备",
+      "readiness": "INDEPENDENT_ENGINEERING_PREPARATION",
+      "authorization": "不读取正式结果；绘图literal fixture不算论文图"
+    },
+    {
+      "id": "T08",
+      "start": "2026-10-21",
+      "due": "2026-10-23",
+      "dependencies": [
+        "T05",
+        "T06"
+      ],
+      "work": "当前tiny oracle/serial8自然多epoch/全回归/P1-v2 preflight",
+      "readiness": "WAIT_FINAL_PRODUCTION_CONFIG",
+      "authorization": "不得借用旧runtime PASS"
+    },
+    {
+      "id": "T09",
+      "start": "2026-10-17",
+      "due": "2026-10-22",
+      "dependencies": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "work": "冻结前成本-only实测，全部42项预算/机器准入",
+      "readiness": "WAIT_COST_FIXTURE_APPROVAL",
+      "authorization": "HF_RESOURCE；成本与结构，不按J调预算"
+    },
+    {
+      "id": "T10",
+      "start": "2026-10-23",
+      "due": "2026-10-23",
+      "dependencies": [
+        "T07",
+        "T08",
+        "T09"
+      ],
+      "work": "42项最终manifest/hash封存及独立人工运行授权",
+      "readiness": "WAIT_NEW_RUN_AUTHORIZATION",
+      "authorization": "HF_RUN"
+    },
+    {
+      "id": "T11",
+      "start": "2026-10-24",
+      "due": "2026-10-29",
+      "dependencies": [
+        "T10"
+      ],
+      "work": "按唯一冻结顺序执行42项、失败先持久化再STOP",
+      "readiness": "NOT_AUTHORIZED",
+      "authorization": "禁止静默重跑/删项/额外run"
+    },
+    {
+      "id": "T12",
+      "start": "2026-10-30",
+      "due": "2026-10-31",
+      "dependencies": [
+        "T11"
+      ],
+      "work": "数据验证、paired分析、论文图caption、11项证据封存",
+      "readiness": "WAIT_REGISTERED_RESULTS",
+      "authorization": "不以engineering PASS证明科学优越性"
+    }
+  ],
+  "critical_path_blockers": [
+    {
+      "id": "CP_FREEZE",
+      "status": "OPEN",
+      "due": "2026-10-11",
+      "reason": "科学合同、K0/K1、候选搜索政策、矩阵及资源需要集中审批。",
+      "earliest_affected_milestone": "M16",
+      "slip_model": "审批晚于Oct11后，按剩余依赖与资源重新排期，不能假定可追回。"
+    },
+    {
+      "id": "CP_POOL",
+      "status": "OBSERVED_STRUCTURAL_BLOCKER",
+      "due": "2026-10-11",
+      "reason": "真实K4/t0存在安全四链动作，但64 raw到16 singleton全部替换同一old，最终池仅size1。",
+      "evidence": {
+        "path": "outputs/f3_v2_natural_source_coverage_20261008T162145_156464Z/report.json",
+        "sha256": "2c88ad3e0235383eef203d4f4a02187d673f824ac835633e64482b1d42506e03"
+      },
+      "response": "审批result-blind old-binding/terminal-footprint覆盖与按size结构种子的具体规则；全控制器共用。未自动改变候选空间。"
+    },
+    {
+      "id": "CP_SOURCE_COST",
+      "status": "OBSERVED_RUNTIME_BLOCKER",
+      "due": "2026-10-11",
+      "reason": "raw output cap64不限制此前7980次物理验证；K4/t0 source实测455.0807451s。",
+      "evidence": {
+        "path": "outputs/f3_v2_natural_source_coverage_20261008T162145_156464Z/report.json",
+        "sha256": "2c88ad3e0235383eef203d4f4a02187d673f824ac835633e64482b1d42506e03"
+      },
+      "response": "与CP_POOL一并审批runtime scouting/physical-evaluation budget；保留uncapped K0结构审计独立性。"
+    },
+    {
+      "id": "CP_K",
+      "status": "PARTIAL_CERTIFICATES_ONLY",
+      "due": "2026-10-16",
+      "reason": "三点matching/解析exact证书已有；全部获批K×20 snapshots、K*选择及K1初态尚未完成。",
+      "evidence": {
+        "path": "outputs/f3_v2_predeclared_cost_summary_20261008T155819_547812Z/report.json",
+        "sha256": "e9dc8ca4eae5beeed3d133772660697b5087255e719af5008b806eda1fb9ac60"
+      },
+      "response": "按原K列表/lex合同逐点审计，UNKNOWN不是无合格K或最优证书；不得按J选K。"
+    },
+    {
+      "id": "CP_CURRENT_ACCEPTANCE",
+      "status": "OPEN",
+      "due": "2026-10-23",
+      "reason": "旧9-branch/K4/2s自然等价不能验收当前clone与最终K*/5s/完整pool/8worker。",
+      "response": "最终新版本tiny oracle、自然多epoch exact、当前源码全回归及P1-v2 preflight。"
+    },
+    {
+      "id": "CP_EPISODE_BUDGET",
+      "status": "OPEN",
+      "due": "2026-10-22",
+      "reason": "完整42项逐run保守费用与可用机器时段仍未测齐；不能保证Oct31。",
+      "response": "成本准入不过即提前提交预计延期与非核心减项/资源提案，禁止放松正确性。"
+    }
+  ],
+  "deadline_risk": "HIGH; candidate coverage and screening cost are present blockers, not just missing estimates",
+  "slip_reporting_contract": {
+    "when": "each milestone breach or conservative cost admission failure, immediately; no unattended monitoring scheduled",
+    "fields": [
+      "blocker",
+      "affected_dependencies",
+      "earliest/upper completion date or UNKNOWN",
+      "difference vs Oct31",
+      "resource options",
+      "noncore scope proposal"
+    ],
+    "date_formula": "acceptance_finish + conservative approved matrix wall / confirmed effective daily hours + two seal days; pipeline overlap only if dependencies really satisfied",
+    "if_unknown": "report UNKNOWN and missing measurement/date; never promise Oct31",
+    "scope": "CORE12 and same-permission B4/B3 comparisons, safety/exact/invariants are mandatory; reducing robustness needs explicit amended preregistration before results"
+  },
+  "draft_canonical_sha256": "afed351e5c2679529ebfd4bb5869f4c7d2092aed18daad19c8bb479d014ae70f"
+}

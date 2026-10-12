@@ -1,0 +1,9 @@
+{
+  "schema": "b4_production_runtime_registration_v1",
+  "status": "FROZEN",
+  "parent_chain_canonical_sha256": "61bd7dc640a3f97eec35a88785202a3ae8655e5cee67080b80cd45f58b97e7df",
+  "overlay": "configs/gate_f3_b4_production_multiprocessing_overlay_v1.json",
+  "overlay_sha256": "e8763641d58ac7796261213929f2c2e0d7516670479085de70854dce3226c5f4",
+  "registered_P1_executed": false,
+  "canonical_sha256": "b8e06933258f231d6e952cb8410a5e30180580eb78bc23a5b2edb1e1664947ca"
+}

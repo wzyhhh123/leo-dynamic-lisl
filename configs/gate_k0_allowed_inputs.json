@@ -1,0 +1,29 @@
+{
+  "semantic_allowlist": {
+    "configs/hardware_gate_c_simplified_v1.json": "Gate C terminal mounting/FoR/setup",
+    "configs/z_moderate_v1.json": "historical structural anchor only",
+    "outputs/gate_c_simplified_20260922T064019_313843Z/terminal_pair_intervals.jsonl": "frozen bilateral physical intervals",
+    "outputs/geometry_20260921T053240_016088Z/metadata.json": "geometry frame/units and satellite mapping",
+    "data/raw/sgp4_x720/manifest.json": "frozen SGP4 model and time horizon",
+    "data/raw/sgp4_x720/hashes.json": "frozen raw-bundle hashes",
+    "data/raw/sgp4_x720/constellation.tle": "frozen synthetic TLE"
+  },
+  "source_dependencies": [
+    "src/dynamic_lisl/sgp4_model.py",
+    "src/dynamic_lisl/gate_c_terminal_geometry.py",
+    "src/dynamic_lisl/common.py"
+  ],
+  "prohibited_semantic_input_categories": [
+    "controller_results",
+    "traffic",
+    "queue",
+    "J",
+    "delay",
+    "delivery",
+    "action_trace"
+  ],
+  "integrity_only": "historical files may be SHA-256 streamed by protection routine; never parsed or passed to selection",
+  "actual_semantic_read_log": "outputs\\gate_k0_20261004T115537_251895Z\\input_read_log.json",
+  "actual_integrity_only_read_log": "outputs\\gate_k0_20261004T115537_251895Z\\historical_integrity_before.json",
+  "canonical_sha256": "61d5d0db2032c602e55d5375ef49dd7c06df4e176e6bfdbd809beaec3f9df802"
+}

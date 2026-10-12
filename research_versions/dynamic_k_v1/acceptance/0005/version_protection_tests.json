@@ -1,0 +1,16 @@
+{
+  "command": "D:/Program_Files/anaconda3/envs/pytorch/python.exe -B research_versions/dynamic_k_v1/tests/test_version_control.py -v",
+  "coverage": [
+    "raw-byte/newline/content/add/delete/rename",
+    "origin/seal/manifest/parent/tail tamper",
+    "read failure/omission/concurrent mutation",
+    "undeclared old changes/historical test protection",
+    "draft formal experiments rejected"
+  ],
+  "errors": 0,
+  "evidence_source": "actual_execution_tool_transcript_of_current_authorized_turn",
+  "failures": 0,
+  "scope": "ISOLATED_VERSION_PROTECTION_TESTS_ONLY",
+  "status": "PASS",
+  "tests_run": 22
+}

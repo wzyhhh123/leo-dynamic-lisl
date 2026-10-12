@@ -1,0 +1,90 @@
+{
+  "schema": "b4_production_multiprocessing_runtime_overlay_v1",
+  "gate_id": "B4_FINAL_ACCEPTANCE_COMPATIBILITY_REPAIR",
+  "date_utc": "2026-10-03T23:20:27.820017+00:00",
+  "reason": "production B4 branch multiprocessing integration",
+  "semantic_status": "exact-equivalent runtime successor",
+  "status": "PASS",
+  "parent_chain_canonical_sha256": "61bd7dc640a3f97eec35a88785202a3ae8655e5cee67080b80cd45f58b97e7df",
+  "parent_chain_file_sha256": "d13eea6c34f7629a249c1ca2a2545833f39d16cce13c6dfa0b3c304a2ca41728",
+  "production_worker_count": 8,
+  "horizon_s": 10,
+  "decision_cadence_s": 2,
+  "top_k": 16,
+  "scope": "BRANCH_EXECUTION_SCHEDULING_AND_PASSIVE_CHECKPOINT_AUDIT_ONLY",
+  "parent_code_hashes": {
+    "src/dynamic_lisl/gate_f3_p1_execution.py": "3b48ad8c148335c437052924fc51426b6133dec2d895a7ad7077716cf0101607",
+    "src/dynamic_lisl/rollout_controller.py": "c36ddf408d3e703b90bb8438dc644cc8255f3f7507200d50fc3f9001e40f7faf"
+  },
+  "optimized_code_hashes": {
+    "src/dynamic_lisl/gate_f3_p1_execution.py": "9b7353c5b838996fe4fb355cc32b157fa686ea417ffd6af397ff1a72fb3edba0",
+    "src/dynamic_lisl/rollout_controller.py": "ac29e433aeb2c26008e6ecacd7a249d0598d3dff97ca26d55bc7d73bd09695c6"
+  },
+  "bookkeeping_code_hashes": {
+    "src/dynamic_lisl/b4_runtime_seal.py": "cf4546b07a785ebb16f92a4e3a55dc84f8724ea9a4c1e4e7ad6adbb5119c8fed",
+    "src/dynamic_lisl/b4_branch_multiprocessing.py": "b38e66792d7c845f978afc4fb54ac83393f34d6ddbf079a4c80394e9ccda9509",
+    "tools/run_gate_f3_p1_execution.py": "75ea9882b4eccf769379e7704443b957ce2557402da83775815e0a9c9d8a26b6",
+    "tools/runtime_successor_chain.py": "5291d2ebe57da632ba66e2ef76046843983abe96d36877e92447f65ae331bb04",
+    "tools/check_b4_production_multiprocessing_integration.py": "30cb0a6b0d44e8023ebcb386e868b33b5bb9fc6636d0690e1f38f167ee860f72"
+  },
+  "frozen_scientific_semantics_changed": false,
+  "registered_P1_executed": false,
+  "P2_started": false,
+  "RL_started": false,
+  "equivalence_evidence": {
+    "report": "outputs/b4_final_compatibility_20261003T221327_994529Z/multi_epoch/report.json",
+    "report_sha256": "496294d63806f1e63350ace25fd23146084ff372815e60f19a2362600928fb10"
+  },
+  "branch_equivalence_evidence": {
+    "report": "outputs/b4_branch_multiprocessing_retry_20261002T114610_676786Z/report.json",
+    "report_sha256": "d04c3c7217abfe792b6fabeb3e474c3c7ae604982578758150376c3e32ac8adc"
+  },
+  "authorized_executor_successor": {
+    "registry": "configs/b4_executor_compatibility_successor_v1.json",
+    "registry_sha256": "e3ea7f5ef62ecbd3d329dbc66095abfad14a5f3042de84a094df4f89076eeec9",
+    "registration": {
+      "status": "AUTHORIZED_RUNTIME_SUCCESSOR",
+      "file": "src/dynamic_lisl/gate_f3_p1_execution.py",
+      "parent_hash": "f879ea45dd006769108c32205ed111c53f5f2a3c83e7098bdbf0220415b73a44",
+      "successor_hash": "9b7353c5b838996fe4fb355cc32b157fa686ea417ffd6af397ff1a72fb3edba0",
+      "authorization_gate": "B4_RUNTIME_SUCCESSOR_BOOTSTRAP",
+      "semantic_classification": "runtime/instrumentation compatibility successor",
+      "evidence": {
+        "report": "outputs\\b4_successor_bootstrap_20261002T160413_082387Z\\candidate_runtime_successor.json",
+        "report_sha256": "79b269fd568c0c79c18544b1e087a8892404aa2f21f5f6b9bacebe78cd299b9e"
+      },
+      "canonical_sha256": "958c87e476972488230297fb33dfc1b554ad33721c0fe191a950b312020bbb80"
+    }
+  },
+  "successor_chain_verification": {
+    "pass": true,
+    "reason": "AUTHORIZED_SUCCESSOR_CHAIN",
+    "file": "src/dynamic_lisl/gate_f3_p1_execution.py",
+    "validated_chain": [
+      "f879ea45dd006769108c32205ed111c53f5f2a3c83e7098bdbf0220415b73a44",
+      "9b7353c5b838996fe4fb355cc32b157fa686ea417ffd6af397ff1a72fb3edba0"
+    ],
+    "registry_entries": [
+      {
+        "path": "configs/b4_executor_compatibility_successor_v1.json",
+        "sha256": "e3ea7f5ef62ecbd3d329dbc66095abfad14a5f3042de84a094df4f89076eeec9"
+      }
+    ]
+  },
+  "full_regression_result": {
+    "pass": true,
+    "count": 318,
+    "report": "outputs/b4_final_compatibility_20261003T221327_994529Z/multi_epoch/full_acceptance_regression.txt",
+    "report_sha256": "a508b69d3d1066b48f438b28e7fd9183c6ab1068116f604963eaeeb0cc8a23af"
+  },
+  "final_preflight_before_registration": {
+    "pass": true,
+    "report": "outputs\\b4_final_compatibility_20261003T221327_994529Z\\multi_epoch\\pre_registration_p1_preflight.json",
+    "report_sha256": "36a414b5dbc46f0552508b77200b53715df15d3ac600af0ab37bbd718ad85358"
+  },
+  "acceptance_evidence": {
+    "report": "outputs/b4_final_compatibility_20261003T221327_994529Z/multi_epoch/pre_registration_acceptance.json",
+    "report_sha256": "1742ba9e56ddbbadf786395e6b2ca1e2d55faf98615a8d6791820bd2bd41ddcf"
+  },
+  "canonical_sha256": "65b5fbc35eed1c07b77e017412454e27225180a78fb3a1eb1c6f6cb8497c233a"
+}

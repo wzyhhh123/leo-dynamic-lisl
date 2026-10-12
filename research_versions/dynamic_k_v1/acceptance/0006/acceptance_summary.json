@@ -1,0 +1,60 @@
+{
+  "N1a_tests": 25,
+  "N1b_tests": 24,
+  "N2_tests": 27,
+  "example_schema_validation": "PASS",
+  "post_bindings": {
+    "anchors": {
+      "baseline_seal": {
+        "byte_count": 656,
+        "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+        "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+      },
+      "parent_revision": {
+        "byte_count": 9276,
+        "path": "research_versions/dynamic_k_v1/revisions/0005/record.json",
+        "sha256": "c2567b66fe880035853aba2b81463ece42443973d5b5178ae0b28e77a6c44769"
+      },
+      "version_origin": {
+        "byte_count": 1555,
+        "path": "research_versions/dynamic_k_v1/version_record.json",
+        "sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+      }
+    },
+    "candidate_revision_id": "0006",
+    "implementation_manifest": {
+      "byte_count": 23165,
+      "path": "research_versions/dynamic_k_v1/acceptance/0006/implementation_manifest.json",
+      "sha256": "34e3412da99a96c58fe603af5de69777d69e0e2bc292fba4cbd3cfca8acb0b4a"
+    },
+    "scope": "ENGINEERING_TEST_ONLY"
+  },
+  "pre_bindings": {
+    "anchors": {
+      "baseline_seal": {
+        "byte_count": 656,
+        "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+        "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+      },
+      "parent_revision": {
+        "byte_count": 9276,
+        "path": "research_versions/dynamic_k_v1/revisions/0005/record.json",
+        "sha256": "c2567b66fe880035853aba2b81463ece42443973d5b5178ae0b28e77a6c44769"
+      },
+      "version_origin": {
+        "byte_count": 1555,
+        "path": "research_versions/dynamic_k_v1/version_record.json",
+        "sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+      }
+    },
+    "candidate_revision_id": "0006",
+    "implementation_manifest": {
+      "byte_count": 23165,
+      "path": "research_versions/dynamic_k_v1/acceptance/0006/implementation_manifest.json",
+      "sha256": "34e3412da99a96c58fe603af5de69777d69e0e2bc292fba4cbd3cfca8acb0b4a"
+    },
+    "scope": "ENGINEERING_TEST_ONLY"
+  },
+  "scientific_gate_pass": false,
+  "status": "PASS"
+}

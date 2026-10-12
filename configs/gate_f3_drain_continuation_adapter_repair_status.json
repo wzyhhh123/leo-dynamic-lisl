@@ -1,0 +1,28 @@
+{
+  "D2_internal_early_return_semantics": "UNCHANGED",
+  "D2_internal_return_threshold_bits": 1.0,
+  "D2_return_not_F3_completion": "ENFORCED",
+  "F3_COMPLETE_threshold_bits": 0.01,
+  "F3_censor_limit_s": 600.0,
+  "Gate_F3_Drain_Continuation_Adapter_Repair": "PASS",
+  "P2_started": false,
+  "RL_started": false,
+  "drain_controller_cadence": "UNCHANGED",
+  "evidence": "outputs/gate_f3_drain_continuation_adapter_repair_20260925T084633_694138Z",
+  "focused_tests": "10 tests PASS",
+  "frozen_scientific_semantics_unchanged": true,
+  "frozen_tolerances_unchanged": true,
+  "full_regression": "257 tests PASS",
+  "new_P1_execution_attempt_readiness": "READY",
+  "no_progress_guard": "PASS",
+  "real_drain_continuation": "PASS",
+  "registered_P1_runs_executed_in_repair_task": 0,
+  "repair_code_hashes": {
+    "src/dynamic_lisl/f3_drain_continuation.py": "1fa0dfb4373f1e181aab8b2866245f8aecbe7fd58fcb2c0b6d42a739c3da2ab0",
+    "src/dynamic_lisl/gate_f3_p1_execution.py": "9a5ac4afac4f8419096769b82987a540b0bb1bcfa439afb8225b8ea71b99fa11",
+    "tests/test_gate_f3_drain_continuation_adapter.py": "97af4f998735ebeea719c5c29bcb7ea4993c81fce07bb9125c653b6034a294e1",
+    "tools/check_gate_f3_drain_continuation_adapter_repair.py": "c7a5737c9912102128b17029463469665dce287865574d928a3dd005e584da8e",
+    "tools/run_gate_f3_p1_execution.py": "d57724193ae7b254b26b4d187b41626be2d6db6f19ef5dd446e27bc0cd9a5483"
+  },
+  "schema": "gate_f3_drain_continuation_adapter_repair_status_v1"
+}

@@ -1,0 +1,444 @@
+{
+  "schema": "gate_f0_topology_controller_contract_v1",
+  "status": "PASS_WITH_HUMAN_FREEZE_ITEMS",
+  "research_question": "In a persistent dynamic LISL network with time-varying multi-OD aggregate traffic, finite dynamic LCTs, bilateral terminal occupancy, nonzero stateful reconfiguration time, finite terminal-pair lifetime, persistent queues and shared congestion, choose HOLD or one legal terminal-level reconfiguration at common decision epochs to minimize network-wide unfinished work.",
+  "control_layer": {
+    "name": "slow_layer_persistent_topology_reconfiguration",
+    "controls_packet_next_hop": false,
+    "fast_routing_is_common_lower_layer": true
+  },
+  "action_contract": {
+    "max_non_hold_actions_per_epoch": 1,
+    "variants": {
+      "HOLD": {
+        "fields": [
+          "decision_time_s",
+          "absolute_time_frame_id"
+        ],
+        "meaning": "No intentional topology reconfiguration at this decision epoch."
+      },
+      "REPLACE": {
+        "fields": [
+          "decision_time_s",
+          "absolute_time_frame_id",
+          "old_physical_binding.endpoint_a.satellite_id",
+          "old_physical_binding.endpoint_a.terminal_id",
+          "old_physical_binding.endpoint_b.satellite_id",
+          "old_physical_binding.endpoint_b.terminal_id",
+          "new_terminal_pair.endpoint_a.satellite_id",
+          "new_terminal_pair.endpoint_a.terminal_id",
+          "new_terminal_pair.endpoint_b.satellite_id",
+          "new_terminal_pair.endpoint_b.terminal_id"
+        ],
+        "old_binding_must_be_exact_physical_pair": true,
+        "new_pair_must_be_exact_dynamic_terminal_pair": true
+      }
+    },
+    "controller_may_declare_transition_mode": false,
+    "transition_mode_source": [
+      "Gate B current terminal state",
+      "Gate C bilateral legality",
+      "actual idle terminal availability"
+    ],
+    "packet_next_hop_field_forbidden": true,
+    "execution_must_use_gate_b_c": true
+  },
+  "causal_chain": [
+    "current_state",
+    "candidate_proposal",
+    "gate_c_physical_legality_filter",
+    "controller_hold_or_switch_decision",
+    "gate_b_real_terminal_execution",
+    "g_active_and_g_admit",
+    "common_fast_routing",
+    "network_service",
+    "queue_inflight_delivery_state"
+  ],
+  "responsibility_boundary": {
+    "gate_b_c": "can_build",
+    "gate_f_controller": "worth_building"
+  },
+  "observation_contract": {
+    "current_only_by_default": true,
+    "network_topology": [
+      "current_time_s",
+      "absolute_time_frame_id",
+      "G_active",
+      "G_admit",
+      "persistent_dynamic_bindings",
+      "current_components",
+      "current_bridges"
+    ],
+    "terminal_state": [
+      "terminal_id",
+      "phase",
+      "current_peer",
+      "target_peer",
+      "reservation_id",
+      "event_version",
+      "terminal_free_time",
+      "retarget_timestamps",
+      "acquisition_timestamps",
+      "active_link_start",
+      "visibility_end",
+      "idle_or_busy"
+    ],
+    "candidate_physical_state": [
+      "bilateral_gate_c_legality",
+      "terminal_pair_window",
+      "remaining_lifetime_s",
+      "predicted_ready_time_s",
+      "usable_lifetime_s",
+      "plane_gap",
+      "terminal_conflicts",
+      "genuine_mbb_structurally_possible"
+    ],
+    "traffic_network_state": [
+      "current_queue_bits_by_node_commodity",
+      "current_inflight_bits_by_edge_commodity",
+      "current_offered_rate_by_commodity",
+      "current_link_service_and_utilization",
+      "current_routes"
+    ],
+    "allowed_current_state_derived_features": [
+      "kappa2_setup_over_remaining_lifetime",
+      "current_bottleneck_estimates",
+      "current_path_hop_and_propagation_statistics",
+      "candidate_terminal_conflicts"
+    ],
+    "derived_feature_rule": "Every feature must be reproducible from information legally observable at the current decision timestamp."
+  },
+  "future_information_policy": {
+    "classes": {
+      "CURRENT_STATE_ONLY": {
+        "may_read_realized_future_traffic": false,
+        "may_read_future_controller_actions": false,
+        "may_read_final_J": false,
+        "may_read_current_gate_c_predicted_window_end": true
+      },
+      "SHORT_HORIZON_FORECAST": {
+        "shared_forecast_source_required": true,
+        "shared_forecast_horizon_required": true,
+        "may_read_realized_future_traffic": false,
+        "may_read_future_controller_actions": false,
+        "may_read_final_J": false
+      },
+      "ORACLE_SMALL_FIXTURE_ONLY": {
+        "scope": "tiny_fixture_validation_only",
+        "allowed_in_main_scalability_comparison": false,
+        "exhaustive_legal_actions": true,
+        "exhaustive_registered_short_horizon_evaluation": true
+      }
+    },
+    "ordinary_controller_classes": [
+      "CURRENT_STATE_ONLY",
+      "SHORT_HORIZON_FORECAST"
+    ],
+    "forecast_source": null,
+    "forecast_horizon_s": null,
+    "unresolved": [
+      "forecast_source",
+      "forecast_horizon_s"
+    ]
+  },
+  "decision_epoch_contract": {
+    "fixed_semantics": {
+      "same_epoch_schedule_for_all_controllers": true,
+      "existing_propagation_events_settle_before_decision": true,
+      "existing_gate_b_terminal_events_settle_before_decision": true,
+      "current_right_continuous_traffic_state_visible_at_decision": true,
+      "selected_action_then_passes_gate_c_and_gate_b": true,
+      "route_and_service_recompute_after_graph_change": true,
+      "gate_b_equal_time_priority": [
+        "visibility_expiry",
+        "tx_completion",
+        "link_down",
+        "retarget_events",
+        "link_ready"
+      ],
+      "active_setup_target_is_immutable": true,
+      "no_setup_cancellation_or_preemption": true,
+      "during_setup_allowed_action": "HOLD or one Gate-C-legal REPLACE using terminals disjoint from every existing reservation; occupied or reserved terminals cannot be targeted.",
+      "natural_expiry_causes_physical_link_down_without_implicit_controller_repair": true
+    },
+    "cadence_s": null,
+    "topology_event_immediate_decision": null,
+    "natural_expiry_immediate_decision": null,
+    "minimum_controller_reaction_interval_s": null,
+    "optional_event_trigger_policy": null,
+    "unresolved": [
+      "decision_cadence_s",
+      "topology_event_trigger_policy",
+      "natural_expiry_reaction_policy",
+      "minimum_controller_reaction_interval_s"
+    ]
+  },
+  "candidate_proposal_contract": {
+    "interface_output_unit": "concrete_terminal_pair",
+    "required_fields": [
+      "proposal_id",
+      "state_sha256",
+      "decision_time_s",
+      "old_physical_binding",
+      "new_terminal_pair",
+      "gate_c_accepted",
+      "gate_c_reason",
+      "predicted_ready_time_s",
+      "remaining_lifetime_s",
+      "usable_lifetime_s",
+      "plane_gap",
+      "terminal_conflicts",
+      "genuine_mbb_structurally_possible",
+      "deterministic_tie_key"
+    ],
+    "requirements": [
+      "Gate C bilateral feasibility",
+      "current terminal occupancy and reservations respected",
+      "already-invalid bindings excluded",
+      "deterministic under identical canonical state",
+      "no final J",
+      "no realized future performance",
+      "no controller-identity-dependent candidate universe"
+    ],
+    "proposal_budget_model": "top_k_interface",
+    "top_k": null,
+    "ranking_rule": null,
+    "pruning_rule": null,
+    "exhaustive_search_in_main_scale_forbidden": true,
+    "unresolved": [
+      "candidate_top_k",
+      "candidate_ranking_rule",
+      "candidate_pruning_rule"
+    ]
+  },
+  "common_fast_routing": {
+    "primary_contract_id": "DeterministicShortestPropagationDelayRouter",
+    "primary_implementation_class": "dynamic_lisl.common_router.DeterministicShortestPropagationDelayRouter",
+    "robustness_contract_id": "DeterministicCurrentStateLoadAwareRouter",
+    "robustness_implementation_class": "dynamic_lisl.load_aware_router.DeterministicLoadAwareRouter",
+    "fairness": "Complete every controller comparison under the same router. Robustness replays the identical topology scenario, trace, controller parameters, initial state, decision epochs and candidate universe with only the common router replaced.",
+    "primary_results_first": true
+  },
+  "objective": {
+    "primary": "J=sum_f integral N_f(t) dt",
+    "unfinished_work": "N_f(t)=A_f(t)-D_f(t)=sum_i Q_i^f(t)+sum_e I_e^f(t)",
+    "artificial_penalties_forbidden": [
+      "switch_penalty",
+      "setup_penalty",
+      "outage_penalty",
+      "hand_tuned_weighted_reward"
+    ],
+    "transition_cost_enters_through_dynamics": [
+      "service_loss",
+      "rerouting",
+      "queue_buildup",
+      "delayed_benefit",
+      "natural_expiry",
+      "shared_congestion"
+    ]
+  },
+  "secondary_metrics": [
+    "mean_bit_delay_s",
+    "delivered_bits",
+    "delivery_ratio",
+    "residual_backlog_bits",
+    "peak_queue_bits",
+    "queue_area_bit_s",
+    "mean_queue_bits",
+    "link_utilization",
+    "route_change_count",
+    "topology_switch_count",
+    "BBM_count",
+    "MBB_count",
+    "transition_backlog_bits",
+    "transition_period_outage_s",
+    "transition_period_no_route_by_commodity_s",
+    "post_expiry_no_route_s",
+    "post_expiry_no_route_by_commodity_s",
+    "partition_node_time_s",
+    "active_dynamic_link_time_link_s",
+    "controller_runtime_s",
+    "candidate_count",
+    "rollout_evaluation_count"
+  ],
+  "outage_metric_separation": {
+    "cumulative_forced_outage_as_primary_metric_forbidden": true,
+    "transition_period_outage_s": "Measure of time during a Gate-B transition when at least one registered commodity source has no route.",
+    "post_expiry_no_route_s": "Measure of time after a natural LINK_EXPIRE event when at least one registered commodity source has no route, ending at restoration or evaluation end.",
+    "per_commodity_versions_required": true,
+    "total_no_route_duration_may_remain_diagnostic": true
+  },
+  "traffic_contract": {
+    "reuse_gate_d0_semantics": true,
+    "representation": "aggregate_OD_commodity_with_persistent_queue",
+    "external_trace_immutable": true,
+    "normalization": "reference_alpha_star_times_rho",
+    "phases": [
+      "stable",
+      "localized_hotspot",
+      "hotspot_migration",
+      "recovery"
+    ],
+    "arrival_horizon_and_drain_required": true,
+    "redesign_in_f0_forbidden": true
+  },
+  "topology_regimes": {
+    "Z_SPARSE_REFERENCE": {
+      "retained": true,
+      "satellites": 160,
+      "dynamic_cross_plane_links": 3,
+      "dynamic_edges_all_bridges": true,
+      "used_dynamic_terminals": 6,
+      "total_dynamic_terminals": 320,
+      "dynamic_terminal_occupancy_fraction": 0.01875,
+      "limitation": "Bridge-dominated and very low occupancy; cannot alone support a general controller claim or naturally supply connected-BBM."
+    },
+    "Z_MODERATE": {
+      "status": "REQUIRES_HUMAN_FREEZE",
+      "traffic_agnostic": true,
+      "result_blind": true,
+      "common_frozen_rules": [
+        "Use only Gate C legal concrete terminal pairs at the registered construction epoch.",
+        "Respect two dynamic terminals per satellite and forbid terminal conflicts.",
+        "Require connected final active graph.",
+        "Require at least one non-bridge dynamic edge.",
+        "Measure plane coverage and dynamic-terminal occupancy.",
+        "Use deterministic structural tie breaking.",
+        "Do not use J, delay, reversal labels, controller outputs or realized future traffic."
+      ],
+      "structural_tie_order": [
+        "largest reduction in plane-level bridge deficit",
+        "largest usable_lifetime_s",
+        "smallest plane_gap",
+        "lexicographic concrete terminal pair"
+      ],
+      "candidate_designs": [
+        {
+          "id": "ZM_A_MINIMAL_PLANE_CYCLE_CLOSURE",
+          "rule": "Add the minimum legal nonconflicting terminal pairs needed to make the plane-level dynamic graph two-edge-connected where feasible.",
+          "impact": "Clear redundancy mechanism but likely remains low occupancy."
+        },
+        {
+          "id": "ZM_B_BALANCED_PLANE_PAIR_REDUNDANCY",
+          "rule": "Add a human-frozen equal target count of legal links per selected plane pair before deterministic tie breaking.",
+          "impact": "Improves plane balance; needs a target count."
+        },
+        {
+          "id": "ZM_C_TERMINAL_OCCUPANCY_BAND",
+          "rule": "Deterministically augment legal nonconflicting links until a human-frozen dynamic-terminal occupancy band is reached.",
+          "impact": "Directly represents moderate resource use; needs an occupancy band."
+        }
+      ],
+      "selected_design": null,
+      "target_dynamic_terminal_occupancy": null,
+      "target_dynamic_link_count_or_plane_pair_count": null
+    }
+  },
+  "scale_registry": {
+    "development_satellites": 160,
+    "generalization_satellites": 240,
+    "later_scalability_satellites": 720,
+    "f0_runs_scale_experiments": false
+  },
+  "evaluation_axes": {
+    "preregister_for_f3": [
+      "rho",
+      "traffic_regime",
+      "topology_regime",
+      "router",
+      "system_scale"
+    ],
+    "concrete_grid": null,
+    "status": "REQUIRES_HUMAN_FREEZE"
+  },
+  "censoring_contract": {
+    "statuses": [
+      "COMPLETE",
+      "CENSORED_AT_DRAIN_LIMIT"
+    ],
+    "censored_must_report": [
+      "residual_backlog_bits",
+      "delivered_bits",
+      "delivery_ratio"
+    ],
+    "truncated_J_may_rank_complete_performance": false,
+    "censored_may_be_deleted": false,
+    "censored_is_packet_loss": false,
+    "complete_runs_rank_by_J": true,
+    "mixed_censor_controller_ranking_policy": null,
+    "mixed_censor_reporting_before_freeze": "Report completion/censor counts and residual-backlog distributions by registered stratum without a scalar controller ranking.",
+    "unresolved": [
+      "mixed_censor_controller_ranking_policy"
+    ]
+  },
+  "fairness_contract": [
+    "same_initial_topology",
+    "same_initial_terminal_states",
+    "same_traffic_trace",
+    "same_geometry",
+    "same_gate_b_c_executor",
+    "same_capacity",
+    "same_scheduler",
+    "same_router",
+    "same_decision_epochs",
+    "same_candidate_universe",
+    "same_candidate_proposal_budget_where_applicable",
+    "same_forecast_source_where_applicable",
+    "same_drain_and_censor_rule"
+  ],
+  "replay_and_seed_policy": {
+    "deterministic_controller_canonical_replay_required": true,
+    "stochastic_seed_policy": null,
+    "stochastic_policy_required_before_any_stochastic_controller": true
+  },
+  "safety_boundary": {
+    "allowed": [
+      "reject Gate C illegal action",
+      "reject terminal conflict",
+      "reject setup that cannot finish before feasible-window end",
+      "enforce scenario-frozen hard connectivity policy",
+      "preserve Gate B bilateral atomicity"
+    ],
+    "forbidden": [
+      "replace an action using J",
+      "repair an economically bad but physically legal Ignore-Setup action",
+      "choose a better terminal for one controller",
+      "use future information to repair controller decisions"
+    ],
+    "reject_only_no_reranking": true,
+    "scenario_connectivity_policy": null,
+    "scenario_connectivity_policy_unresolved": true
+  },
+  "interface_reuse": {
+    "state_cloning": "REUSE_WITH_CLONE_SAFE_DELAY_PROVIDER",
+    "gate_b_executor": "REUSE",
+    "gate_c_candidate_windows": "REUSE",
+    "g_active_g_admit": "REUSE",
+    "common_router": "REUSE",
+    "d1_d2_service_engine": "REUSE",
+    "e0_paired_harness": "REUSE_FOR_VALIDATION_NOT_MAIN_MULTI_EPOCH_CONTROL_LOOP",
+    "traffic_cursor": "REUSE",
+    "topology_representation": "REUSE",
+    "second_parallel_simulator_required": false,
+    "blocker_found": false
+  },
+  "explicit_forbidden_f0": [
+    "controller_implementation",
+    "matching_or_b_matching",
+    "MPC_implementation",
+    "RL_or_PPO",
+    "training",
+    "performance_comparison",
+    "J_based_hyperparameter_selection",
+    "topology_density_tuning_from_results",
+    "A_to_E2_semantic_changes",
+    "160_240_720_performance_runs"
+  ],
+  "human_freeze_document": "docs/GATE_F0_HUMAN_DECISIONS_REQUIRED_CN.md",
+  "next_gate_state": {
+    "gate_f1_started": false,
+    "gate_f2_started": false,
+    "gate_f3_started": false,
+    "rl_started": false
+  }
+}

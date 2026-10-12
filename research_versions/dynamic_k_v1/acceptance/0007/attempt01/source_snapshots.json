@@ -1,0 +1,17 @@
+{
+  "scope": "UNSEALED_CANDIDATE_ATTEMPT_PROVENANCE",
+  "files": [
+    {
+      "source_path": "research_versions/dynamic_k_v1/runtime/n3_baselines.py",
+      "snapshot_path": "research_versions/dynamic_k_v1/acceptance/0007/attempt01/n3_baselines.py.snapshot",
+      "byte_count": 13619,
+      "sha256": "e61c8c8d67d93364c1afa71a1c472d87b62af04f5670dc6fb864496a66641bab"
+    },
+    {
+      "source_path": "research_versions/dynamic_k_v1/tests/test_n3_baselines.py",
+      "snapshot_path": "research_versions/dynamic_k_v1/acceptance/0007/attempt01/test_n3_baselines.py.snapshot",
+      "byte_count": 19504,
+      "sha256": "62a6cac1b9872173c7be73380d278e298dcbb12c1edba0c2760d6c5a71409541"
+    }
+  ]
+}

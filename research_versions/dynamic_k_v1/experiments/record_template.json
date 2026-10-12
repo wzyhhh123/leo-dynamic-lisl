@@ -1,0 +1,16 @@
+{
+  "schema": "dynamic_k_experiment_record_v1",
+  "version_id": "dynamic_k_v1",
+  "status": "TEMPLATE_NOT_AN_EXECUTABLE_OR_VALID_EXPERIMENT_RECORD",
+  "run_id": null,
+  "revision_id": null,
+  "revision_record": null,
+  "baseline_seal": null,
+  "contract": null,
+  "configuration": null,
+  "source_files": [],
+  "input_files": [],
+  "acceptance_evidence": [],
+  "formal_run_authorization": null,
+  "note": "All file bindings require project-relative path, byte_count and SHA-256. Formal source/input/acceptance inventories must exactly match manifests bound by the frozen configuration. This template must be rejected by validation."
+}

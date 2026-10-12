@@ -1,0 +1,8 @@
+{
+  "gate_e0": "PASS",
+  "statement": "Gate E0 mechanism-validation contract = PASS",
+  "evidence": "outputs\\gate_e0_20260923T014228_143231Z",
+  "gate_e1_started": false,
+  "gate_e2_started": false,
+  "gate_f_started": false
+}

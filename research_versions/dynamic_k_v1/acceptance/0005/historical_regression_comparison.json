@@ -1,0 +1,24 @@
+{
+  "comparison_parent_evidence": {
+    "byte_count": 11804,
+    "path": "research_versions/dynamic_k_v1/acceptance/0004/regression_after.json",
+    "sha256": "e7fab6927058800ae2cd3c17cc1bae14ddefa310f9fd568d17034afb2e2554f3"
+  },
+  "current_evidence": {
+    "byte_count": 11804,
+    "path": "research_versions/dynamic_k_v1/acceptance/0005/historical_regression.json",
+    "sha256": "cb8e3981b657bcc1f11b8a75a578e3371cd1169e768e0afa0c54194a90b71122"
+  },
+  "failures": [
+    {
+      "test": "test_known_witness_domain_discovers_every_registered_size_without_J (test_f3_v2_search_policy_probe.StructuralPolicyProbeTests)",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\tests\\test_f3_v2_search_policy_probe.py\", line 50, in test_known_witness_domain_discovers_every_registered_size_without_J\n    self.assertGreater(pool.audit['coverage_by_size'][str(size)],0)\nAssertionError: 0 not greater than 0\n"
+    }
+  ],
+  "failures_identical_including_traceback": true,
+  "known_legacy_failure_count": 1,
+  "new_regressions": 0,
+  "passed": 96,
+  "status": "PASS_NO_NEW_REGRESSIONS",
+  "tests_run": 97
+}

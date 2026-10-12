@@ -1,0 +1,15 @@
+{
+  "evidence": "outputs/gate_f0_human_freeze_20260924T160525_554136Z",
+  "f1_blocking_human_items_1_to_5_resolved": true,
+  "gate_f0_human_freeze_v1": "PASS",
+  "gate_f1_readiness": "READY",
+  "gate_f1_started": false,
+  "gate_f2_started": false,
+  "gate_f3_started": false,
+  "overlay": "configs/gate_f0_human_freeze_v1.json",
+  "overlay_canonical_sha256": "c4dbd526b1d21a1f0462a49a5a4b59fa54122f72313b1dbe1115c8608b65256b",
+  "parent_f0_status": "PASS_WITH_HUMAN_FREEZE_ITEMS",
+  "rl_started": false,
+  "statement": "Gate F0 human freeze v1 = PASS",
+  "z_moderate": "configs/z_moderate_v1.json"
+}

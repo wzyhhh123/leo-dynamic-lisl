@@ -1,0 +1,75 @@
+{
+  "K_candidates": [
+    4,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    64,
+    80,
+    96,
+    120,
+    160
+  ],
+  "primary_eligible_band_K": [
+    24,
+    32,
+    40,
+    48,
+    64,
+    80
+  ],
+  "occupancy": [
+    {
+      "K": 4,
+      "u_terminal": 0.025
+    },
+    {
+      "K": 8,
+      "u_terminal": 0.05
+    },
+    {
+      "K": 16,
+      "u_terminal": 0.1
+    },
+    {
+      "K": 24,
+      "u_terminal": 0.15
+    },
+    {
+      "K": 32,
+      "u_terminal": 0.2
+    },
+    {
+      "K": 40,
+      "u_terminal": 0.25
+    },
+    {
+      "K": 48,
+      "u_terminal": 0.3
+    },
+    {
+      "K": 64,
+      "u_terminal": 0.4
+    },
+    {
+      "K": 80,
+      "u_terminal": 0.5
+    },
+    {
+      "K": 96,
+      "u_terminal": 0.6
+    },
+    {
+      "K": 120,
+      "u_terminal": 0.75
+    },
+    {
+      "K": 160,
+      "u_terminal": 1.0
+    }
+  ],
+  "canonical_sha256": "c62f59ccc328080046bb40e0a4be287f85dc04f32fe34a6024f2faac449f269b"
+}

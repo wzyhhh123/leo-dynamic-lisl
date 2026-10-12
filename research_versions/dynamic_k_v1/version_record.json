@@ -1,0 +1,38 @@
+{
+  "authorized_stage": "N0_BASELINE_AND_VERSION_SKELETON_ONLY",
+  "baseline_seal": {
+    "byte_count": 656,
+    "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+    "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+  },
+  "created_asia_shanghai": "2026-10-10T11:19:16.148448+08:00",
+  "created_utc": "2026-10-10T03:19:16.148448+00:00",
+  "external_trust_anchors_required": [
+    "version_record_sha256",
+    "latest_revision_record_sha256"
+  ],
+  "formal_experiments_authorized": false,
+  "genesis_configuration": {
+    "byte_count": 3525,
+    "path": "research_versions/dynamic_k_v1/configs/research_v1_DRAFT.json",
+    "sha256": "b8b86d1abc3db1765ee23123bfafaa99c419731cb046984458baa962980e8102"
+  },
+  "genesis_contract": {
+    "byte_count": 4042,
+    "path": "research_versions/dynamic_k_v1/contracts/research_contract_v1_DRAFT_CN.md",
+    "sha256": "7aca0acd0e28164898582ebfa1e12e83e1b84d5a7e8372c5dbc7309987da8bcc"
+  },
+  "git_branch": "main",
+  "git_head_commit": null,
+  "git_root": "D:\\Document\\leo_routing_attitude",
+  "initial_revision": {
+    "byte_count": 5149,
+    "path": "research_versions/dynamic_k_v1/revisions/0001/record.json",
+    "sha256": "fdcfe6019967a442167e00206a11d957f92ec474491b4995411548bc6db11ea6"
+  },
+  "revision_protocol": "APPEND_ONLY_NUMBERED_PARENT_RAW_SHA256_BOUND_RECORDS",
+  "schema": "dynamic_k_version_record_v1",
+  "seal_is_not_gate_acceptance": true,
+  "status": "SEALED_ORIGIN_DRAFT_RESEARCH",
+  "version_id": "dynamic_k_v1"
+}

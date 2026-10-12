@@ -1,0 +1,9 @@
+{
+  "files": {
+    "configs/gate_e0_scenario_selection_manifest.json": "dbbf1bf07b7f19000c9d14ebae63e0e1057b73ed559c12f281a2d33f59cea67d",
+    "configs/gate_e0_sweep_manifest.json": "1f2add6dcd3385deda04051fcdec5d122c1bbe9a39181f31bb8e0bdd3a43bef7"
+  },
+  "frozen_before_e1_e2": true,
+  "schema": "gate_e0_manifest_hashes_v1",
+  "version": 1
+}

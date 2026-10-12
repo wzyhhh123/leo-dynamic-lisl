@@ -1,0 +1,18 @@
+{
+  "baseline_file_count": 5810,
+  "excluded_file_count": 202,
+  "expected_revision_sha256": "c2567b66fe880035853aba2b81463ece42443973d5b5178ae0b28e77a6c44769",
+  "expected_version_sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691",
+  "revision_id": "0005",
+  "scientific_gate_pass": false,
+  "scope": "N0_FILE_INTEGRITY_AND_VERSION_BINDINGS_ONLY",
+  "source": "complete raw-byte version_control.py verify execution output before creating N2 files in current turn",
+  "status": "PASS",
+  "undeclared_changes": {
+    "added": [],
+    "deleted": [],
+    "modified": [],
+    "possible_renames": []
+  },
+  "verified_file_count": 5882
+}

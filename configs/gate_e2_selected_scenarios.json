@@ -1,0 +1,1384 @@
+{
+  "schema": "gate_e2_selected_scenarios_v1",
+  "status": "FROZEN_BEFORE_PAIRED_BRANCH_EXECUTION",
+  "result_blind": true,
+  "result_fields_read": [],
+  "selector_manifest": "configs/gate_e0_scenario_selection_manifest.json",
+  "candidate_inventory": "configs/gate_e2_candidate_inventory.json",
+  "candidate_inventory_sha256": "432706c5adce50a8d793d5ac579e39e37ee10fb588b1d0b08ab404f0db915cd8",
+  "global_selection_setup_s": 2.0,
+  "selection": {
+    "selected": [
+      {
+        "scenario_id": "E2-89eb1b676c1e5dbc",
+        "scenario_class": "E-A_BBM_NO_ROUTE",
+        "t0_s": 1.0,
+        "old_edge": [
+          "X0_27",
+          "X1_27"
+        ],
+        "new_edge": [
+          "X0_23",
+          "X1_27"
+        ],
+        "terminal_ids": [
+          [
+            "X0_23",
+            "D1"
+          ],
+          [
+            "X1_27",
+            "D2"
+          ]
+        ],
+        "gate_c_legal": true,
+        "kappa2": 0.00333889816360601,
+        "transition_type": "BBM",
+        "connected_during_transition": false,
+        "remaining_lifetime_s": 599.0,
+        "terminal_occupancy": {
+          "a": "IDLE",
+          "b": "OCCUPIED"
+        },
+        "hop_difference": {
+          "f00": 4,
+          "f01": -4,
+          "f02": -4,
+          "f03": 4,
+          "f06": -4,
+          "f07": 4,
+          "f12": -4,
+          "f13": 4,
+          "f14": 4,
+          "f15": 0
+        },
+        "path_difference": {
+          "changed": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f06",
+            "f07",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "uses_old": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f06",
+            "f07",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "improved": [
+            "f01",
+            "f02",
+            "f06",
+            "f12"
+          ],
+          "third_party": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f04",
+            "f05",
+            "f06",
+            "f07",
+            "f08",
+            "f09",
+            "f10",
+            "f11",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "shared_edge_count": 64
+        },
+        "shared_edges": [
+          [
+            "X0_10",
+            "X0_11"
+          ],
+          [
+            "X0_11",
+            "X0_12"
+          ],
+          [
+            "X0_12",
+            "X0_13"
+          ],
+          [
+            "X0_13",
+            "X0_14"
+          ],
+          [
+            "X0_14",
+            "X0_15"
+          ],
+          [
+            "X0_15",
+            "X0_16"
+          ],
+          [
+            "X0_16",
+            "X0_17"
+          ],
+          [
+            "X0_17",
+            "X0_18"
+          ]
+        ],
+        "has_third_party_od": true,
+        "focus_commodities": [
+          "f01",
+          "f02",
+          "f06",
+          "f12"
+        ],
+        "kappa2_bin": "low"
+      },
+      {
+        "scenario_id": "E2-685cd1172cf55e1a",
+        "scenario_class": "E-A_BBM_NO_ROUTE",
+        "t0_s": 1.0,
+        "old_edge": [
+          "X0_27",
+          "X1_27"
+        ],
+        "new_edge": [
+          "X0_31",
+          "X1_27"
+        ],
+        "terminal_ids": [
+          [
+            "X0_31",
+            "D1"
+          ],
+          [
+            "X1_27",
+            "D2"
+          ]
+        ],
+        "gate_c_legal": true,
+        "kappa2": 0.2867914851138494,
+        "transition_type": "BBM",
+        "connected_during_transition": false,
+        "remaining_lifetime_s": 6.973707741727575,
+        "terminal_occupancy": {
+          "a": "IDLE",
+          "b": "OCCUPIED"
+        },
+        "hop_difference": {
+          "f00": -4,
+          "f01": 4,
+          "f02": 2,
+          "f03": -2,
+          "f06": 4,
+          "f07": -4,
+          "f12": 4,
+          "f13": -4,
+          "f14": -2,
+          "f15": -4
+        },
+        "path_difference": {
+          "changed": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f06",
+            "f07",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "uses_old": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f06",
+            "f07",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "improved": [
+            "f00",
+            "f03",
+            "f07",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "third_party": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f04",
+            "f05",
+            "f06",
+            "f07",
+            "f08",
+            "f09",
+            "f10",
+            "f11",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "shared_edge_count": 69
+        },
+        "shared_edges": [
+          [
+            "X0_1",
+            "X0_2"
+          ],
+          [
+            "X0_1",
+            "X0_40"
+          ],
+          [
+            "X0_2",
+            "X0_3"
+          ],
+          [
+            "X0_3",
+            "X0_4"
+          ],
+          [
+            "X0_30",
+            "X0_31"
+          ],
+          [
+            "X0_31",
+            "X0_32"
+          ],
+          [
+            "X0_31",
+            "X1_27"
+          ],
+          [
+            "X0_32",
+            "X0_33"
+          ]
+        ],
+        "has_third_party_od": true,
+        "focus_commodities": [
+          "f00",
+          "f03",
+          "f07",
+          "f13",
+          "f14",
+          "f15"
+        ],
+        "kappa2_bin": "medium"
+      },
+      {
+        "scenario_id": "E2-c256965527b22f33",
+        "scenario_class": "E-C_GENUINE_MBB",
+        "t0_s": 1.0,
+        "old_edge": [
+          "X0_27",
+          "X1_27"
+        ],
+        "new_edge": [
+          "X0_1",
+          "X1_1"
+        ],
+        "terminal_ids": [
+          [
+            "X0_1",
+            "D2"
+          ],
+          [
+            "X1_1",
+            "D1"
+          ]
+        ],
+        "gate_c_legal": true,
+        "kappa2": 0.00333889816360601,
+        "transition_type": "MBB",
+        "connected_during_transition": true,
+        "remaining_lifetime_s": 599.0,
+        "terminal_occupancy": {
+          "a": "IDLE",
+          "b": "IDLE"
+        },
+        "hop_difference": {
+          "f00": -20,
+          "f01": 8,
+          "f02": -14,
+          "f03": 2,
+          "f06": 0,
+          "f07": 0,
+          "f12": -4,
+          "f13": -8,
+          "f14": 2,
+          "f15": -20
+        },
+        "path_difference": {
+          "changed": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f06",
+            "f07",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "uses_old": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f06",
+            "f07",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "improved": [
+            "f00",
+            "f02",
+            "f12",
+            "f13",
+            "f15"
+          ],
+          "third_party": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f04",
+            "f05",
+            "f06",
+            "f07",
+            "f08",
+            "f09",
+            "f10",
+            "f11",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "shared_edge_count": 72
+        },
+        "shared_edges": [
+          [
+            "X0_1",
+            "X0_2"
+          ],
+          [
+            "X0_1",
+            "X0_40"
+          ],
+          [
+            "X0_1",
+            "X1_1"
+          ],
+          [
+            "X0_10",
+            "X0_11"
+          ],
+          [
+            "X0_10",
+            "X0_9"
+          ],
+          [
+            "X0_11",
+            "X0_12"
+          ],
+          [
+            "X0_12",
+            "X0_13"
+          ],
+          [
+            "X0_13",
+            "X0_14"
+          ]
+        ],
+        "has_third_party_od": true,
+        "focus_commodities": [
+          "f00",
+          "f02",
+          "f12",
+          "f13",
+          "f15"
+        ],
+        "kappa2_bin": "low"
+      },
+      {
+        "scenario_id": "E2-4732b69e5d14435c",
+        "scenario_class": "E-C_GENUINE_MBB",
+        "t0_s": 1.0,
+        "old_edge": [
+          "X0_27",
+          "X1_27"
+        ],
+        "new_edge": [
+          "X0_11",
+          "X1_10"
+        ],
+        "terminal_ids": [
+          [
+            "X0_11",
+            "D2"
+          ],
+          [
+            "X1_10",
+            "D1"
+          ]
+        ],
+        "gate_c_legal": true,
+        "kappa2": 0.28692749746703566,
+        "transition_type": "MBB",
+        "connected_during_transition": true,
+        "remaining_lifetime_s": 6.970401992335275,
+        "terminal_occupancy": {
+          "a": "IDLE",
+          "b": "IDLE"
+        },
+        "hop_difference": {
+          "f00": -19,
+          "f01": -11,
+          "f02": -31,
+          "f03": 1,
+          "f06": -1,
+          "f07": 1,
+          "f12": -23,
+          "f13": -7,
+          "f14": 1,
+          "f15": -27
+        },
+        "path_difference": {
+          "changed": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f06",
+            "f07",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "uses_old": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f06",
+            "f07",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "improved": [
+            "f00",
+            "f01",
+            "f02",
+            "f06",
+            "f12",
+            "f13",
+            "f15"
+          ],
+          "third_party": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f04",
+            "f05",
+            "f06",
+            "f07",
+            "f08",
+            "f09",
+            "f10",
+            "f11",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "shared_edge_count": 69
+        },
+        "shared_edges": [
+          [
+            "X0_1",
+            "X0_2"
+          ],
+          [
+            "X0_1",
+            "X0_40"
+          ],
+          [
+            "X0_10",
+            "X0_11"
+          ],
+          [
+            "X0_10",
+            "X0_9"
+          ],
+          [
+            "X0_11",
+            "X0_12"
+          ],
+          [
+            "X0_11",
+            "X1_10"
+          ],
+          [
+            "X0_12",
+            "X0_13"
+          ],
+          [
+            "X0_13",
+            "X0_14"
+          ]
+        ],
+        "has_third_party_od": true,
+        "focus_commodities": [
+          "f00",
+          "f01",
+          "f02",
+          "f06",
+          "f12",
+          "f13",
+          "f15"
+        ],
+        "kappa2_bin": "medium"
+      },
+      {
+        "scenario_id": "E2-95d7a2779152a07d",
+        "scenario_class": "E-C_GENUINE_MBB",
+        "t0_s": 596.287348223,
+        "old_edge": [
+          "X1_11",
+          "X2_11"
+        ],
+        "new_edge": [
+          "X1_40",
+          "X3_36"
+        ],
+        "terminal_ids": [
+          [
+            "X1_40",
+            "D2"
+          ],
+          [
+            "X3_36",
+            "D1"
+          ]
+        ],
+        "gate_c_legal": true,
+        "kappa2": 0.5386985152423714,
+        "transition_type": "MBB",
+        "connected_during_transition": true,
+        "remaining_lifetime_s": 3.712651777219321,
+        "terminal_occupancy": {
+          "a": "IDLE",
+          "b": "IDLE"
+        },
+        "hop_difference": {
+          "f00": 1,
+          "f01": -9,
+          "f02": 13,
+          "f03": 13,
+          "f04": -5,
+          "f05": 3,
+          "f10": 25,
+          "f11": 7,
+          "f12": -19,
+          "f13": 11,
+          "f14": 13,
+          "f15": 13
+        },
+        "path_difference": {
+          "changed": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f04",
+            "f05",
+            "f10",
+            "f11",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "uses_old": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f04",
+            "f05",
+            "f10",
+            "f11",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "improved": [
+            "f01",
+            "f04",
+            "f12"
+          ],
+          "third_party": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f04",
+            "f05",
+            "f06",
+            "f07",
+            "f10",
+            "f11",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "shared_edge_count": 48
+        },
+        "shared_edges": [
+          [
+            "X0_15",
+            "X0_16"
+          ],
+          [
+            "X0_16",
+            "X0_17"
+          ],
+          [
+            "X0_17",
+            "X0_18"
+          ],
+          [
+            "X0_18",
+            "X0_19"
+          ],
+          [
+            "X0_19",
+            "X0_20"
+          ],
+          [
+            "X0_20",
+            "X0_21"
+          ],
+          [
+            "X0_21",
+            "X0_22"
+          ],
+          [
+            "X0_22",
+            "X0_23"
+          ]
+        ],
+        "has_third_party_od": true,
+        "focus_commodities": [
+          "f01",
+          "f04",
+          "f12"
+        ],
+        "kappa2_bin": "high"
+      },
+      {
+        "scenario_id": "E2-690df9e96258d16b",
+        "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+        "t0_s": 1.0,
+        "old_edge": [
+          "X0_27",
+          "X1_27"
+        ],
+        "new_edge": [
+          "X0_1",
+          "X1_1"
+        ],
+        "terminal_ids": [
+          [
+            "X0_1",
+            "D2"
+          ],
+          [
+            "X1_1",
+            "D1"
+          ]
+        ],
+        "gate_c_legal": true,
+        "kappa2": 0.00333889816360601,
+        "transition_type": "MBB",
+        "connected_during_transition": true,
+        "remaining_lifetime_s": 599.0,
+        "terminal_occupancy": {
+          "a": "IDLE",
+          "b": "IDLE"
+        },
+        "hop_difference": {
+          "f00": -20,
+          "f01": 8,
+          "f02": -14,
+          "f03": 2,
+          "f06": 0,
+          "f07": 0,
+          "f12": -4,
+          "f13": -8,
+          "f14": 2,
+          "f15": -20
+        },
+        "path_difference": {
+          "changed": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f06",
+            "f07",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "uses_old": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f06",
+            "f07",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "improved": [
+            "f00",
+            "f02",
+            "f12",
+            "f13",
+            "f15"
+          ],
+          "third_party": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f04",
+            "f05",
+            "f06",
+            "f07",
+            "f08",
+            "f09",
+            "f10",
+            "f11",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "shared_edge_count": 72
+        },
+        "shared_edges": [
+          [
+            "X0_1",
+            "X0_2"
+          ],
+          [
+            "X0_1",
+            "X0_40"
+          ],
+          [
+            "X0_1",
+            "X1_1"
+          ],
+          [
+            "X0_10",
+            "X0_11"
+          ],
+          [
+            "X0_10",
+            "X0_9"
+          ],
+          [
+            "X0_11",
+            "X0_12"
+          ],
+          [
+            "X0_12",
+            "X0_13"
+          ],
+          [
+            "X0_13",
+            "X0_14"
+          ]
+        ],
+        "has_third_party_od": true,
+        "focus_commodities": [
+          "f00",
+          "f02",
+          "f12",
+          "f13",
+          "f15"
+        ],
+        "kappa2_bin": "low"
+      },
+      {
+        "scenario_id": "E2-b74951a5d44d4ac9",
+        "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+        "t0_s": 1.0,
+        "old_edge": [
+          "X0_27",
+          "X1_27"
+        ],
+        "new_edge": [
+          "X0_11",
+          "X1_10"
+        ],
+        "terminal_ids": [
+          [
+            "X0_11",
+            "D2"
+          ],
+          [
+            "X1_10",
+            "D1"
+          ]
+        ],
+        "gate_c_legal": true,
+        "kappa2": 0.28692749746703566,
+        "transition_type": "MBB",
+        "connected_during_transition": true,
+        "remaining_lifetime_s": 6.970401992335275,
+        "terminal_occupancy": {
+          "a": "IDLE",
+          "b": "IDLE"
+        },
+        "hop_difference": {
+          "f00": -19,
+          "f01": -11,
+          "f02": -31,
+          "f03": 1,
+          "f06": -1,
+          "f07": 1,
+          "f12": -23,
+          "f13": -7,
+          "f14": 1,
+          "f15": -27
+        },
+        "path_difference": {
+          "changed": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f06",
+            "f07",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "uses_old": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f06",
+            "f07",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "improved": [
+            "f00",
+            "f01",
+            "f02",
+            "f06",
+            "f12",
+            "f13",
+            "f15"
+          ],
+          "third_party": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f04",
+            "f05",
+            "f06",
+            "f07",
+            "f08",
+            "f09",
+            "f10",
+            "f11",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "shared_edge_count": 69
+        },
+        "shared_edges": [
+          [
+            "X0_1",
+            "X0_2"
+          ],
+          [
+            "X0_1",
+            "X0_40"
+          ],
+          [
+            "X0_10",
+            "X0_11"
+          ],
+          [
+            "X0_10",
+            "X0_9"
+          ],
+          [
+            "X0_11",
+            "X0_12"
+          ],
+          [
+            "X0_11",
+            "X1_10"
+          ],
+          [
+            "X0_12",
+            "X0_13"
+          ],
+          [
+            "X0_13",
+            "X0_14"
+          ]
+        ],
+        "has_third_party_od": true,
+        "focus_commodities": [
+          "f00",
+          "f01",
+          "f02",
+          "f06",
+          "f12",
+          "f13",
+          "f15"
+        ],
+        "kappa2_bin": "medium"
+      },
+      {
+        "scenario_id": "E2-a502d6e73f8dea03",
+        "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+        "t0_s": 596.287348223,
+        "old_edge": [
+          "X1_11",
+          "X2_11"
+        ],
+        "new_edge": [
+          "X1_40",
+          "X3_36"
+        ],
+        "terminal_ids": [
+          [
+            "X1_40",
+            "D2"
+          ],
+          [
+            "X3_36",
+            "D1"
+          ]
+        ],
+        "gate_c_legal": true,
+        "kappa2": 0.5386985152423714,
+        "transition_type": "MBB",
+        "connected_during_transition": true,
+        "remaining_lifetime_s": 3.712651777219321,
+        "terminal_occupancy": {
+          "a": "IDLE",
+          "b": "IDLE"
+        },
+        "hop_difference": {
+          "f00": 1,
+          "f01": -9,
+          "f02": 13,
+          "f03": 13,
+          "f04": -5,
+          "f05": 3,
+          "f10": 25,
+          "f11": 7,
+          "f12": -19,
+          "f13": 11,
+          "f14": 13,
+          "f15": 13
+        },
+        "path_difference": {
+          "changed": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f04",
+            "f05",
+            "f10",
+            "f11",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "uses_old": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f04",
+            "f05",
+            "f10",
+            "f11",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "improved": [
+            "f01",
+            "f04",
+            "f12"
+          ],
+          "third_party": [
+            "f00",
+            "f01",
+            "f02",
+            "f03",
+            "f04",
+            "f05",
+            "f06",
+            "f07",
+            "f10",
+            "f11",
+            "f12",
+            "f13",
+            "f14",
+            "f15"
+          ],
+          "shared_edge_count": 48
+        },
+        "shared_edges": [
+          [
+            "X0_15",
+            "X0_16"
+          ],
+          [
+            "X0_16",
+            "X0_17"
+          ],
+          [
+            "X0_17",
+            "X0_18"
+          ],
+          [
+            "X0_18",
+            "X0_19"
+          ],
+          [
+            "X0_19",
+            "X0_20"
+          ],
+          [
+            "X0_20",
+            "X0_21"
+          ],
+          [
+            "X0_21",
+            "X0_22"
+          ],
+          [
+            "X0_22",
+            "X0_23"
+          ]
+        ],
+        "has_third_party_od": true,
+        "focus_commodities": [
+          "f01",
+          "f04",
+          "f12"
+        ],
+        "kappa2_bin": "high"
+      }
+    ],
+    "availability": [
+      {
+        "scenario_class": "E-A_BBM_NO_ROUTE",
+        "kappa2_bin": "low",
+        "eligible_count": 87,
+        "selected_ids": [
+          "E2-89eb1b676c1e5dbc"
+        ],
+        "status": "SELECTED"
+      },
+      {
+        "scenario_class": "E-A_BBM_NO_ROUTE",
+        "kappa2_bin": "medium",
+        "eligible_count": 5,
+        "selected_ids": [
+          "E2-685cd1172cf55e1a"
+        ],
+        "status": "SELECTED"
+      },
+      {
+        "scenario_class": "E-A_BBM_NO_ROUTE",
+        "kappa2_bin": "high",
+        "eligible_count": 0,
+        "selected_ids": [],
+        "status": "NO_ELIGIBLE_CASE"
+      },
+      {
+        "scenario_class": "E-A_BBM_NO_ROUTE",
+        "kappa2_bin": "very_high",
+        "eligible_count": 0,
+        "selected_ids": [],
+        "status": "NO_ELIGIBLE_CASE"
+      },
+      {
+        "scenario_class": "E-B_BBM_CONNECTED_REROUTE",
+        "kappa2_bin": "low",
+        "eligible_count": 0,
+        "selected_ids": [],
+        "status": "NO_ELIGIBLE_CASE"
+      },
+      {
+        "scenario_class": "E-B_BBM_CONNECTED_REROUTE",
+        "kappa2_bin": "medium",
+        "eligible_count": 0,
+        "selected_ids": [],
+        "status": "NO_ELIGIBLE_CASE"
+      },
+      {
+        "scenario_class": "E-B_BBM_CONNECTED_REROUTE",
+        "kappa2_bin": "high",
+        "eligible_count": 0,
+        "selected_ids": [],
+        "status": "NO_ELIGIBLE_CASE"
+      },
+      {
+        "scenario_class": "E-B_BBM_CONNECTED_REROUTE",
+        "kappa2_bin": "very_high",
+        "eligible_count": 0,
+        "selected_ids": [],
+        "status": "NO_ELIGIBLE_CASE"
+      },
+      {
+        "scenario_class": "E-C_GENUINE_MBB",
+        "kappa2_bin": "low",
+        "eligible_count": 4183,
+        "selected_ids": [
+          "E2-c256965527b22f33"
+        ],
+        "status": "SELECTED"
+      },
+      {
+        "scenario_class": "E-C_GENUINE_MBB",
+        "kappa2_bin": "medium",
+        "eligible_count": 88,
+        "selected_ids": [
+          "E2-4732b69e5d14435c"
+        ],
+        "status": "SELECTED"
+      },
+      {
+        "scenario_class": "E-C_GENUINE_MBB",
+        "kappa2_bin": "high",
+        "eligible_count": 4,
+        "selected_ids": [
+          "E2-95d7a2779152a07d"
+        ],
+        "status": "SELECTED"
+      },
+      {
+        "scenario_class": "E-C_GENUINE_MBB",
+        "kappa2_bin": "very_high",
+        "eligible_count": 0,
+        "selected_ids": [],
+        "status": "NO_ELIGIBLE_CASE"
+      },
+      {
+        "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+        "kappa2_bin": "low",
+        "eligible_count": 4108,
+        "selected_ids": [
+          "E2-690df9e96258d16b"
+        ],
+        "status": "SELECTED"
+      },
+      {
+        "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+        "kappa2_bin": "medium",
+        "eligible_count": 87,
+        "selected_ids": [
+          "E2-b74951a5d44d4ac9"
+        ],
+        "status": "SELECTED"
+      },
+      {
+        "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+        "kappa2_bin": "high",
+        "eligible_count": 4,
+        "selected_ids": [
+          "E2-a502d6e73f8dea03"
+        ],
+        "status": "SELECTED"
+      },
+      {
+        "scenario_class": "E-D_SHARED_CONGESTION_EXTERNALITY",
+        "kappa2_bin": "very_high",
+        "eligible_count": 0,
+        "selected_ids": [],
+        "status": "NO_ELIGIBLE_CASE"
+      }
+    ],
+    "ordering": [
+      "t0_s",
+      "old_edge",
+      "new_edge",
+      "terminal_ids",
+      "scenario_id"
+    ],
+    "result_fields_read": []
+  },
+  "selected_gate_c_validation": {
+    "cases": [
+      {
+        "scenario_id": "E2-89eb1b676c1e5dbc",
+        "accepted": true,
+        "physical_reason": null,
+        "policy_reason": null,
+        "profile_classification": "temporary_recoverable_partition",
+        "partition_occurs": true,
+        "outage_duration_s": 2.0,
+        "remaining_lifetime_s": 599.0,
+        "usable_lifetime_s": 597.0,
+        "transition_type_matches": true,
+        "connectivity_class_matches": true
+      },
+      {
+        "scenario_id": "E2-685cd1172cf55e1a",
+        "accepted": true,
+        "physical_reason": null,
+        "policy_reason": null,
+        "profile_classification": "temporary_recoverable_partition",
+        "partition_occurs": true,
+        "outage_duration_s": 2.0,
+        "remaining_lifetime_s": 6.973707741727575,
+        "usable_lifetime_s": 4.973707741727575,
+        "transition_type_matches": true,
+        "connectivity_class_matches": true
+      },
+      {
+        "scenario_id": "E2-c256965527b22f33",
+        "accepted": true,
+        "physical_reason": null,
+        "policy_reason": null,
+        "profile_classification": "no_partition",
+        "partition_occurs": false,
+        "outage_duration_s": 0.0,
+        "remaining_lifetime_s": 599.0,
+        "usable_lifetime_s": 597.0,
+        "transition_type_matches": true,
+        "connectivity_class_matches": true
+      },
+      {
+        "scenario_id": "E2-4732b69e5d14435c",
+        "accepted": true,
+        "physical_reason": null,
+        "policy_reason": null,
+        "profile_classification": "no_partition",
+        "partition_occurs": false,
+        "outage_duration_s": 0.0,
+        "remaining_lifetime_s": 6.970401992335275,
+        "usable_lifetime_s": 4.970401992335275,
+        "transition_type_matches": true,
+        "connectivity_class_matches": true
+      },
+      {
+        "scenario_id": "E2-95d7a2779152a07d",
+        "accepted": true,
+        "physical_reason": null,
+        "policy_reason": null,
+        "profile_classification": "no_partition",
+        "partition_occurs": false,
+        "outage_duration_s": 0.0,
+        "remaining_lifetime_s": 3.712651777000019,
+        "usable_lifetime_s": 1.7126517770000191,
+        "transition_type_matches": true,
+        "connectivity_class_matches": true
+      },
+      {
+        "scenario_id": "E2-690df9e96258d16b",
+        "accepted": true,
+        "physical_reason": null,
+        "policy_reason": null,
+        "profile_classification": "no_partition",
+        "partition_occurs": false,
+        "outage_duration_s": 0.0,
+        "remaining_lifetime_s": 599.0,
+        "usable_lifetime_s": 597.0,
+        "transition_type_matches": true,
+        "connectivity_class_matches": true
+      },
+      {
+        "scenario_id": "E2-b74951a5d44d4ac9",
+        "accepted": true,
+        "physical_reason": null,
+        "policy_reason": null,
+        "profile_classification": "no_partition",
+        "partition_occurs": false,
+        "outage_duration_s": 0.0,
+        "remaining_lifetime_s": 6.970401992335275,
+        "usable_lifetime_s": 4.970401992335275,
+        "transition_type_matches": true,
+        "connectivity_class_matches": true
+      },
+      {
+        "scenario_id": "E2-a502d6e73f8dea03",
+        "accepted": true,
+        "physical_reason": null,
+        "policy_reason": null,
+        "profile_classification": "no_partition",
+        "partition_occurs": false,
+        "outage_duration_s": 0.0,
+        "remaining_lifetime_s": 3.712651777000019,
+        "usable_lifetime_s": 1.7126517770000191,
+        "transition_type_matches": true,
+        "connectivity_class_matches": true
+      }
+    ],
+    "all_selected_gate_c_legal": true,
+    "all_transition_classes_match": true
+  },
+  "paired_branches_executed": false,
+  "canonical_sha256": "ba42f3131fcfa6399468dbc4fcf1de08f5262a0a1bc035a850381c5cf0ee6af1"
+}

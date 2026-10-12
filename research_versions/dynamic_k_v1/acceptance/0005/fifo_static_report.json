@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "scope": "STATIC_FIFO_SEMANTICS_ONLY",
+  "checks": {
+    "local_fifo": true,
+    "proportional_ties": true,
+    "preserve_original_time": true,
+    "no_midpoint": true,
+    "old_scheduler": true,
+    "scientific_null": true,
+    "no_formal_run": true,
+    "no_production_edits": true,
+    "no_N2": true,
+    "no_delivery_null": true,
+    "closed_unknown_stop": true,
+    "continuous_moment_defined": true,
+    "conditional_identity": true,
+    "clone_state": true,
+    "precision_boundary": true,
+    "original_timestamp_not_order": true,
+    "two_batch_exact": true,
+    "proportional_merge_exact": true,
+    "single_and_two_hop_exact": true,
+    "wait_restore_exact": true
+  },
+  "bindings": {
+    "contracts/N1B_NODE_LOCAL_FIFO_SEMANTICS_CN.md": {
+      "byte_count": 4468,
+      "sha256": "fc5b0daf7562a3cae40c3328484adce2dea01fe6d42ea3ea81c4a67c4d3eafd4"
+    },
+    "configs/n1b_fifo_semantics_v1.json": {
+      "byte_count": 943,
+      "sha256": "a9f3d047acb00579a47e26f0562bc911edc96d536f53c507dcd0315b002c894e"
+    }
+  },
+  "N1b_engineering_pass": false,
+  "analytical_cases": {
+    "two_batch_MD": "24",
+    "two_batch_J": "39",
+    "merge_MD": "23",
+    "merge_mean": "23/4",
+    "wait_MD": "55/2"
+  }
+}

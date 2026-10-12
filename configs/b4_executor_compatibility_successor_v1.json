@@ -1,0 +1,13 @@
+{
+  "status": "AUTHORIZED_RUNTIME_SUCCESSOR",
+  "file": "src/dynamic_lisl/gate_f3_p1_execution.py",
+  "parent_hash": "f879ea45dd006769108c32205ed111c53f5f2a3c83e7098bdbf0220415b73a44",
+  "successor_hash": "9b7353c5b838996fe4fb355cc32b157fa686ea417ffd6af397ff1a72fb3edba0",
+  "authorization_gate": "B4_RUNTIME_SUCCESSOR_BOOTSTRAP",
+  "semantic_classification": "runtime/instrumentation compatibility successor",
+  "evidence": {
+    "report": "outputs\\b4_successor_bootstrap_20261002T160413_082387Z\\candidate_runtime_successor.json",
+    "report_sha256": "79b269fd568c0c79c18544b1e087a8892404aa2f21f5f6b9bacebe78cd299b9e"
+  },
+  "canonical_sha256": "958c87e476972488230297fb33dfc1b554ad33721c0fe191a950b312020bbb80"
+}

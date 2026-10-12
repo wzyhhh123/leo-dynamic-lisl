@@ -1,0 +1,89 @@
+{
+  "status": "CRITICAL_BLOCKER_CLOSURE_AUDIT_COMPLETE_FORMAL_FREEZE_NO_GO",
+  "scope": "CURRENT_ENGINEERING_TASK_F3_V2_ONLY",
+  "created_utc": "2026-10-09T03:06:21.480507+00:00",
+  "CP_POOL": "OPEN_KNOWN_RAW_FOOTPRINT_OMISSION",
+  "CP_SOURCE_COST": "INDEPENDENT_COMPONENT_COST_MEASURED_FINAL_DOMAIN_UNKNOWN",
+  "CP_K": "EQUIVALENT_OPTIMIZATION_ANALYSIS_COMPLETE_FULL_K0_UNKNOWN",
+  "fresh_regression": {
+    "status": "FAIL",
+    "records": [
+      {
+        "label": "focused",
+        "command": [
+          "D:\\Program_Files\\anaconda3\\envs\\pytorch\\python.exe",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-v",
+          "-p",
+          "test_f3_v2*.py"
+        ],
+        "cwd": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2",
+        "start_utc": "2026-10-09T02:58:48.676372+00:00",
+        "end_utc": "2026-10-09T03:00:50.317175+00:00",
+        "wall_s": 121.6393379,
+        "returncode": 1,
+        "test_count": 203,
+        "failed_tests": [
+          "test_known_witness_domain_discovers_every_registered_size_without_J (test_f3_v2_search_policy_probe.StructuralPolicyProbeTests)"
+        ],
+        "failure_classification": "KNOWN_SEARCH_POLICY_STRUCTURAL_ACCEPTANCE_FAILURE",
+        "known_failure_not_ignored_or_reclassified_PASS": true
+      },
+      {
+        "label": "full",
+        "command": [
+          "D:\\Program_Files\\anaconda3\\envs\\pytorch\\python.exe",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-v"
+        ],
+        "cwd": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2",
+        "start_utc": "2026-10-09T03:00:50.318177+00:00",
+        "end_utc": "2026-10-09T03:04:06.543253+00:00",
+        "wall_s": 196.22350799999998,
+        "returncode": 1,
+        "test_count": 532,
+        "failed_tests": [
+          "test_known_witness_domain_discovers_every_registered_size_without_J (test_f3_v2_search_policy_probe.StructuralPolicyProbeTests)"
+        ],
+        "failure_classification": "KNOWN_SEARCH_POLICY_STRUCTURAL_ACCEPTANCE_FAILURE",
+        "known_failure_not_ignored_or_reclassified_PASS": true
+      }
+    ],
+    "tested_code_unchanged": true,
+    "full_regression_executed": true,
+    "registered_experiment": false
+  },
+  "natural_exact_equivalence": "CURRENT_NATURAL_ENGINEERING_TWO_EPOCH_EXACT_PASS",
+  "historical_integrity": "PASS",
+  "scientific_scope_A_locked": true,
+  "production_policy_changed": false,
+  "K_star_selected": false,
+  "full_K0_executed": false,
+  "formal_scientific_contract_frozen": false,
+  "registered_P1_P2_executed": false,
+  "MARL_RL_started": false,
+  "historical_P1_attempts_preserved": true,
+  "B4_overall_engineering_PASS": false,
+  "formal_scientific_experiments_completed": false,
+  "STOP_at_formal_freeze_and_run_authorization_boundary": true,
+  "reports": [
+    "component_cost_report.json",
+    "K0_certificate_coverage.json",
+    "runtime_budget_conservative.json",
+    "go_no_go_20261011.json",
+    "historical_integrity_report.json",
+    "policy_specification.json"
+  ],
+  "attempt_path": "outputs/f3_v2_blocker_closure_20261009T020009_842972Z",
+  "decision_report_file_sha256": "d89104c7f06ce109ce38fc0def720c5911723c01d3ea0c25bc83408ed6001e44",
+  "decision_report_canonical_sha256": "be6019a4c6d145d034fa8da87ad868aceb82441666c26d6bd7a58b6ce8af1777",
+  "canonical_sha256": "9fbd3e7a40d157a85c4db3a61907afdb6871c15a6282f8fd81432118cac8b169"
+}

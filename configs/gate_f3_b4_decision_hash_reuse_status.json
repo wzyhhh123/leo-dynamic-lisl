@@ -1,0 +1,37 @@
+{
+  "status": "B4_DECISION_HASH_REUSE_ENGINEERING_PASS",
+  "equivalence_report": "outputs/b4_decision_hash_reuse_20261002T032756_501919Z/report.json",
+  "overlay_canonical_sha256": "f8307bbfe309156b7a57374ac8e3bb9b6aea41aa05ab980b16e87d5215f94cb0",
+  "regression": {
+    "total": 295,
+    "passed": 294,
+    "failed": 1,
+    "failing_test": "test_preflight_accepts_read_only_runtime_abort_record",
+    "reasons": [
+      "PAUSED_INCOMPLETE historical attempt not recognized",
+      "production preflight frozen-parent hash registry has not adopted new B4 overlay"
+    ]
+  },
+  "small_fixture_17_valid_branches": {
+    "legacy_state_hash_calls": 70,
+    "optimized_state_hash_calls": 36,
+    "legacy_forecast_hash_calls": 18,
+    "optimized_forecast_hash_calls": 1
+  },
+  "production_160_star_engineering_three_branches_exact_equal": true,
+  "overall_B4_speedup_measured": false,
+  "final_pre_P1_runtime_equivalence_required": true,
+  "final_pre_P1_runtime_equivalence_executed": false,
+  "registered_P1_executed": false,
+  "P2_started": false,
+  "RL_started": false,
+  "P1_readiness": "NOT_READY",
+  "file_hashes": {
+    "src/dynamic_lisl/rollout_controller.py": "c36ddf408d3e703b90bb8438dc644cc8255f3f7507200d50fc3f9001e40f7faf",
+    "src/dynamic_lisl/rollout_evaluator.py": "424e91dcf5e6e05cf0dfb9079ced72138e33dfd3581e218ee3b2c8d04b06dc71",
+    "tests/test_b4_decision_hash_reuse.py": "e9410ff1a07aeef6cbb12520b35f15bf92e3b0344e8dde3b71a0891b81fef059",
+    "tests/runtime_phase1_overlay.py": "f91dd6b578f2079111e66bc3c311a7c9b09046e95edbff82d25fee7bdfe22cc2",
+    "tools/check_b4_decision_hash_reuse.py": "124b463eb5df38dbabf63cf77f3bd68c660fcdffc32f2a9453eee68fbeda26e1"
+  },
+  "canonical_sha256": "45db5483aef5b86d56daa5bb5df79f18644b739f57d258e8e95ad1b7c7273463"
+}

@@ -1,0 +1,8 @@
+{
+  "gate_e1": "PASS",
+  "statement": "Gate E1 small-scale mechanism experiments = PASS",
+  "registered_domain_conclusion": "SETUP_INDUCED_DECISION_REVERSAL_OBSERVED_IN_REGISTERED_DOMAIN",
+  "evidence": "outputs\\gate_e1_20260923T024344_227121Z",
+  "gate_e2_started": false,
+  "gate_f_started": false
+}

@@ -1,0 +1,13 @@
+{
+  "evidence": "outputs/gate_f1_20260924T162716_169691Z",
+  "f1_regression_count": 21,
+  "frozen_hashes_unchanged": true,
+  "gate_f1_baseline_scoring_contract": "BLOCKED_REQUIRES_HUMAN_FREEZE",
+  "gate_f1_completed_correctness_scope": true,
+  "gate_f1_infrastructure": "PASS",
+  "gate_f1_overall": "BLOCKED_BEFORE_SCIENTIFIC_B1_B3_IMPLEMENTATION",
+  "gate_f1_started": true,
+  "gate_f2_started": false,
+  "gate_f3_started": false,
+  "rl_started": false
+}

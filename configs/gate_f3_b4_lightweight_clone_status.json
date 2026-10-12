@@ -1,0 +1,22 @@
+{
+  "status": "B4_LIGHTWEIGHT_CLONE_ENGINEERING_PASS",
+  "production_hook": "ObservationalE2Engine.clone",
+  "equivalence_report": "outputs\\b4_lightweight_clone_20261002T031207_519998Z\\report.json",
+  "equivalence_report_sha256": "1bf7afe0afec061e186e141e802fe406196ce9597f253b00fad0ffee5bb24c01",
+  "full_regression": {
+    "total": 288,
+    "passed": 287,
+    "failed": 1,
+    "remaining_failure": "existing PAUSED_INCOMPLETE attempt not recognized by P1 preflight"
+  },
+  "registered_P1_executed": false,
+  "P2_started": false,
+  "RL_started": false,
+  "P1_readiness": "NOT_READY_EXISTING_PAUSE_PREFLIGHT_BLOCKER_AND_NEW_FINAL_EQUIVALENCE_REQUIRED",
+  "full_multi_epoch_B4_equivalence_executed": false,
+  "scientific_module_hashes": {
+    "transition_service_orchestrator.py": "9ed1ecf9b8c5cde21fd5a71113fdd45e2d69a20bb808689ccf40a9392ce172e7",
+    "rollout_evaluator.py": "db7e6c187ff834e209a8afe8bab47ec8319fb394739f82f5162da7766bd1db8d"
+  },
+  "canonical_sha256": "f88168bbc1fca8589c201666d5a40c939e0c222b16685790efa89576f2df4d19"
+}

@@ -1,0 +1,59 @@
+{
+  "G_total": 1.0,
+  "after_arrival_horizon": "ALL_RATES_ZERO",
+  "alpha_star_bit_s": 26666666666.666664,
+  "alpha_star_source": "outputs/gate_d1_20260922T133909_838853Z/load_normalization_report.json",
+  "alpha_star_source_sha256": "42afc0cf72188f3c5c5c965b13609cb6a16f0e86c2763931809d9d8e62e01a1a",
+  "arrival_horizon_s": 240.0,
+  "canonical_sha256": "791a9e9d231770c4ff3ed501c9b5ea54335a4067d177c7f8a75621373aa7729c",
+  "constant_total_load": true,
+  "constant_total_tolerance": 1e-12,
+  "g0": {
+    "f00": 0.0625,
+    "f01": 0.0625,
+    "f02": 0.0625,
+    "f03": 0.0625,
+    "f04": 0.0625,
+    "f05": 0.0625,
+    "f06": 0.0625,
+    "f07": 0.0625,
+    "f08": 0.0625,
+    "f09": 0.0625,
+    "f10": 0.0625,
+    "f11": 0.0625,
+    "f12": 0.0625,
+    "f13": 0.0625,
+    "f14": 0.0625,
+    "f15": 0.0625
+  },
+  "lambda_formula": "lambda_f^(rho)(t)=rho*alpha_star*g_f(t)",
+  "od_manifest": "configs/gate_d0_od_manifest_16.json",
+  "od_manifest_sha256": "b8e46dd988e4f5136eeb5b8adea4272ad93b3fafc5ed7fc4fb537eff167173de",
+  "profile_id": "TRAFFIC_STABLE_V1",
+  "schema": "gate_f3_traffic_profile_v1",
+  "segments": [
+    {
+      "end_s": 240.0,
+      "g": {
+        "f00": 0.0625,
+        "f01": 0.0625,
+        "f02": 0.0625,
+        "f03": 0.0625,
+        "f04": 0.0625,
+        "f05": 0.0625,
+        "f06": 0.0625,
+        "f07": 0.0625,
+        "f08": 0.0625,
+        "f09": 0.0625,
+        "f10": 0.0625,
+        "f11": 0.0625,
+        "f12": 0.0625,
+        "f13": 0.0625,
+        "f14": 0.0625,
+        "f15": 0.0625
+      },
+      "label": "STABLE",
+      "start_s": 0.0
+    }
+  ]
+}

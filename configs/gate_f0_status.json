@@ -1,0 +1,15 @@
+{
+  "gate_f0": "PASS_WITH_HUMAN_FREEZE_ITEMS",
+  "statement": "Gate F0 topology-controller contract = PASS_WITH_HUMAN_FREEZE_ITEMS",
+  "evidence": "outputs/gate_f0_contract_20260924T160512_858290Z",
+  "contract": "docs/GATE_F0_TOPOLOGY_CONTROLLER_CONTRACT_CN.md",
+  "interface_audit": "docs/GATE_F0_INTERFACE_AUDIT_CN.md",
+  "baseline_registry": "docs/GATE_F0_BASELINE_REGISTRY_CN.md",
+  "human_decisions": "docs/GATE_F0_HUMAN_DECISIONS_REQUIRED_CN.md",
+  "simulator_blocker": false,
+  "human_freeze_required_before_f1": true,
+  "gate_f1_started": false,
+  "gate_f2_started": false,
+  "gate_f3_started": false,
+  "rl_started": false
+}

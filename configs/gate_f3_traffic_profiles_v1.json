@@ -1,0 +1,54 @@
+{
+  "G_total": 1.0,
+  "alpha_star": {
+    "identifier": "GATE_D1_FROZEN_REFERENCE_MCF_ALPHA_STAR",
+    "recomputed_by_phase_or_controller": false,
+    "source": "outputs/gate_d1_20260922T133909_838853Z/load_normalization_report.json",
+    "source_sha256": "42afc0cf72188f3c5c5c965b13609cb6a16f0e86c2763931809d9d8e62e01a1a",
+    "value_bit_s": 26666666666.666664
+  },
+  "arrival_horizon_s": 240.0,
+  "base_shape_source": "frozen Gate D1 reference_shape",
+  "canonical_sha256": "ce00a04bc57b7ac70717ce21b6646171f66aa1907199db1d4161541907eb5b33",
+  "drain_limit_absolute_s": 600.0,
+  "g0": {
+    "f00": 0.0625,
+    "f01": 0.0625,
+    "f02": 0.0625,
+    "f03": 0.0625,
+    "f04": 0.0625,
+    "f05": 0.0625,
+    "f06": 0.0625,
+    "f07": 0.0625,
+    "f08": 0.0625,
+    "f09": 0.0625,
+    "f10": 0.0625,
+    "f11": 0.0625,
+    "f12": 0.0625,
+    "f13": 0.0625,
+    "f14": 0.0625,
+    "f15": 0.0625
+  },
+  "profiles": {
+    "TRAFFIC_HOTSPOT_MIGRATION_V1": {
+      "canonical_sha256": "f900a135976f66ee508a790372af162b8475df7f12970423ac704112d3f0a0ee",
+      "file_sha256": "7d041ea8a0118502b4a4930862634a859670fe8ff3cc0666bbb4c66a4eedcd8f",
+      "path": "configs/gate_f3_traffic_hotspot_migration_v1.json"
+    },
+    "TRAFFIC_STABLE_V1": {
+      "canonical_sha256": "791a9e9d231770c4ff3ed501c9b5ea54335a4067d177c7f8a75621373aa7729c",
+      "file_sha256": "739fde56405bf2b3f4d1f244d765ba46995792411bf91473c74a9f7bdd17223b",
+      "path": "configs/gate_f3_traffic_stable_v1.json"
+    }
+  },
+  "rho_primary": [
+    0.5,
+    0.8,
+    1.0
+  ],
+  "rho_robustness": [
+    0.2,
+    1.2
+  ],
+  "schema": "gate_f3_traffic_profiles_registry_v1"
+}

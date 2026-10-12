@@ -1,0 +1,12 @@
+{
+  "propagator": "SGP4",
+  "gravity": "WGS72",
+  "frame": "TEMEOfDate",
+  "status": "ACCEPTED_FOR_GATE_B",
+  "pilot": "outputs/geometry_20260921T053240_016088Z",
+  "visibility": "outputs/visibility_20260921T055451_308214Z",
+  "archive": "archive/twobody_20260921/archive_index.json",
+  "acceptance_record": "configs/gate_a_acceptance_v0.3.json",
+  "common_mode_audit": "outputs/common_mode_audit_20260921T061043_579554Z",
+  "absolute_teme_orientation": "DOCUMENTED_COMMON_MODE_OFFSET_NON_BLOCKING"
+}

@@ -1,0 +1,177 @@
+{
+  "gate": "K0",
+  "scope": "STRUCTURAL_CONTRACT_REVISION_ONLY",
+  "satellites": 160,
+  "planes": 4,
+  "satellites_per_plane": 40,
+  "terminals_per_satellite": 2,
+  "terminal_endpoints": 320,
+  "integrity_statement": "DESIGN_REVISION_AFTER_LIMITED_K4_OBSERVATION",
+  "K_candidates": [
+    4,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    64,
+    80,
+    96,
+    120,
+    160
+  ],
+  "snapshot_times_s": [
+    0,
+    30,
+    60,
+    90,
+    120,
+    150,
+    180,
+    210,
+    240,
+    270,
+    300,
+    330,
+    360,
+    390,
+    420,
+    450,
+    480,
+    510,
+    540,
+    570
+  ],
+  "primary_band": [
+    0.15,
+    0.5
+  ],
+  "K4_ROLE": "VERY_SPARSE_HISTORICAL_REFERENCE",
+  "primary_excludes_K4": true,
+  "lexicographic_objectives": [
+    "min_plane_endpoint_range",
+    "max_represented_plane_pairs",
+    "max_total_L_usable_within_horizon",
+    "max_min_L_usable_within_horizon",
+    "canonical_lexical"
+  ],
+  "hard_constraints": [
+    "exact_K",
+    "terminal_degree_le_1",
+    "bilateral_Gate_C",
+    "inter_plane_only",
+    "no_parallel_satellite_pair",
+    "no_reservation_conflict",
+    "exact_replay"
+  ],
+  "admissibility": {
+    "capacity_snapshots": 20,
+    "all_planes_snapshots": 20,
+    "connected_and_bridges_lt_edges_snapshots": 18,
+    "replace_ge_16_snapshots": 18,
+    "MBB_ge_8_and_BBM_ge_8_snapshots": 18,
+    "median_MBB_fraction_band": [
+      0.1,
+      0.9
+    ],
+    "full_audit_replays": 2,
+    "snapshot_denominator": 20,
+    "median_MBB_sample_count": 20
+  },
+  "selection_rule": "min_admissible_K",
+  "empty_set_rule": "PASS_AUDIT_AND_STOP_NO_ADMISSIBLE_K_ONLY_IF_FULL_AUDIT_COMPLETED",
+  "forbidden": [
+    "controller_performance",
+    "traffic",
+    "queues",
+    "J",
+    "delivery",
+    "caps_32_32",
+    "topK_pruning",
+    "P1",
+    "P2",
+    "RL",
+    "production_changes"
+  ],
+  "setup_source": "configs/hardware_gate_c_simplified_v1.json",
+  "request_source": "user Gate K0-v1.1 horizon-alignment draft authorization; no result-driven changes",
+  "version": "1.1",
+  "status": "DRAFT_NOT_FROZEN",
+  "parent_canonical_sha256": "27aedae08055cc89e083f5856d85edcf4ecafb12a7e9e1ac7b5ba89456a10225",
+  "observation_horizon_s": [
+    0.0,
+    600.0
+  ],
+  "snapshot_scope": "20 structural samples; not all 2s controller epochs",
+  "human_approval_required": true,
+  "frozen": false,
+  "full_K0_executed": false,
+  "K_star_selected": false,
+  "K_star": null,
+  "K1_started": false,
+  "lifetime_contract": {
+    "metric": "L_usable_within_horizon",
+    "formula": "max(0, min(t_physical_end, 600) - t_ready)",
+    "right_censored_branch": "t_physical_end unknown; substitute observation cap 600 only in bounded metric; retain RIGHT_CENSORED_AT_600",
+    "ready_source": "actual Gate B/C trial of concrete terminal pair and current physical state",
+    "legality": "unchanged half-open window, strict ready<end and frozen epsilon",
+    "applies_only_to_K0_structural_audit": true,
+    "Gate_C_data_and_B4_horizon_unchanged": true
+  },
+  "implementation_change_list": [
+    {
+      "item": "physical end interpretation",
+      "change": "Natural end known => retain actual end. Right-censored at 600 => physical end null, observation cap 600, RIGHT_CENSORED_AT_600."
+    },
+    {
+      "item": "candidate legality / matching input",
+      "change": "Use current half-open terminal-pair window and actual Gate B/C readiness; retain ready < observed window end and frozen lifetime epsilon. Do not replace legality by max(0,...) > 0 or declare a censored boundary natural expiry."
+    },
+    {
+      "item": "lexicographic priority 3",
+      "old": "max_total_usable_lifetime",
+      "proposed": "max_total_L_usable_within_horizon"
+    },
+    {
+      "item": "lexicographic priority 4",
+      "old": "max_min_usable_lifetime",
+      "proposed": "max_min_L_usable_within_horizon"
+    },
+    {
+      "item": "lexicographic priorities 1/2/5",
+      "change": "Plane imbalance / plane-pair coverage / canonical lexical tie-break unchanged; horizon ties use the same lexical rule, not unknown physical ends."
+    },
+    {
+      "item": "selected Z_K links",
+      "change": "For independent structural construction, use actual Gate B/C construction-hypothesis readiness; do not silently charge a KEEP a new setup. No prior controller state is used."
+    },
+    {
+      "item": "legal REPLACE target statistics",
+      "change": "Use each actual terminal-level BBM/MBB replacement readiness, including drain/resource/release dependencies; never substitute t+2 universally."
+    },
+    {
+      "item": "lifetime summaries",
+      "change": "min/P10/median/P90/max and fractions <=setup, <=10s, <=20s now explicitly refer to L_usable_within_horizon. Cutoffs unchanged; report censored counts and distinguish bounded-audit rejection from known natural expiry."
+    },
+    {
+      "item": "series and aggregations",
+      "change": "All 21-point series/denominators become proposed 20-point series. Median over 20 uses the middle-two mean; recompute full inventories only after authorization."
+    }
+  ],
+  "revision_execution_forbidden": [
+    "maximum_matching",
+    "Z_K_builder",
+    "uncapped_REPLACE_inventory",
+    "full_MBB_BBM_scan",
+    "K_star_selection",
+    "controller_evaluation",
+    "J_queue_delay_delivery_performance",
+    "registered_P1",
+    "P2",
+    "RL",
+    "K1"
+  ],
+  "full_K0_next_step": "Requires human approval/freeze of this draft and separate authorization; exact/controlled solver infrastructure still requires implementation and acceptance.",
+  "draft_canonical_sha256": "8c75083fbb09a0782023787a12a944a87b381cfaed92109ff0ab924bd569451f"
+}

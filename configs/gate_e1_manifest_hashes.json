@@ -1,0 +1,9 @@
+{
+  "files": {
+    "configs/gate_e1_break_even_manifest.json": "ae7ff8e50ab1ee73879fb0caf52fa525c5f955835f7df8831cb360390663fe88",
+    "configs/gate_e1_execution_manifest.json": "96827a50413e31a477e2dea4ed1e9f506620fe3fa6203924c53ad182ca6fa3e3"
+  },
+  "frozen_before_first_scientific_run": true,
+  "schema": "gate_e1_manifest_hashes_v1",
+  "version": 1
+}

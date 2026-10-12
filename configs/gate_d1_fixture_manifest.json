@@ -1,0 +1,13 @@
+{
+  "schema": "gate_d1_analytical_fixture_manifest_v1",
+  "units": {"work": "bit", "rate": "bit/s", "time": "s"},
+  "fixtures": [
+    {"id": "single_link", "arrival": "5 bit/s on [0,2)", "capacity": "10 bit/s", "propagation_s": 0.5, "expected_arrived_bits": 10.0, "expected_max_queue_bits": 0.0, "expected_J_bit_s": 5.0, "expected_mean_bit_delay_s": 0.5},
+    {"id": "two_hop", "arrival": "5 bit/s on [0,2)", "capacity_each": "10 bit/s", "propagation_each_s": 0.2, "expected_arrived_bits": 10.0, "expected_max_queue_bits": 0.0, "expected_J_bit_s": 4.0, "expected_mean_bit_delay_s": 0.4},
+    {"id": "shared_bottleneck", "arrival_each": "8 bit/s on [0,1)", "bottleneck_capacity": "10 bit/s", "propagation_each_s": 0.1, "expected_arrived_bits": 16.0, "expected_max_queue_bits": 6.0, "expected_J_bit_s": 8.0, "expected_mean_bit_delay_s": 0.5},
+    {"id": "overload_then_drain", "arrival": "15 bit/s on [0,2)", "capacity": "10 bit/s", "propagation_s": 0.1, "expected_arrived_bits": 30.0, "expected_max_queue_bits": 10.0, "expected_J_bit_s": 18.0, "expected_mean_bit_delay_s": 0.6},
+    {"id": "disconnected_path", "arrival": "10 bit/s on [0,1)", "evaluation_end_s": 2.0, "expected_residual_backlog_bits": 10.0, "expected_censored": true},
+    {"id": "propagation_in_flight", "check_time_s": 0.5, "expected_arrived_bits": 2.5, "expected_queued_bits": 0.0, "expected_in_flight_bits": 2.5, "expected_delivered_bits": 0.0},
+    {"id": "deterministic_tie", "equal_paths": ["A-B-D", "A-C-D"], "expected_path": "A-B-D"}
+  ]
+}

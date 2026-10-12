@@ -1,0 +1,160 @@
+{
+  "G_total": 1.0,
+  "H0": [
+    "f00",
+    "f02",
+    "f06",
+    "f12",
+    "f14"
+  ],
+  "H2": [
+    "f03",
+    "f08",
+    "f11",
+    "f15"
+  ],
+  "after_arrival_horizon": "ALL_RATES_ZERO",
+  "alpha_star_bit_s": 26666666666.666664,
+  "alpha_star_source": "outputs/gate_d1_20260922T133909_838853Z/load_normalization_report.json",
+  "alpha_star_source_sha256": "42afc0cf72188f3c5c5c965b13609cb6a16f0e86c2763931809d9d8e62e01a1a",
+  "arrival_horizon_s": 240.0,
+  "canonical_sha256": "f900a135976f66ee508a790372af162b8475df7f12970423ac704112d3f0a0ee",
+  "constant_total_load": true,
+  "constant_total_numeric_sums": [
+    1.0,
+    1.0,
+    1.0000000000000002,
+    1.0
+  ],
+  "constant_total_symbolic_statement": "sum_f g_f(t)=G_total in all four phases",
+  "constant_total_tolerance": 1e-12,
+  "g0": {
+    "f00": 0.0625,
+    "f01": 0.0625,
+    "f02": 0.0625,
+    "f03": 0.0625,
+    "f04": 0.0625,
+    "f05": 0.0625,
+    "f06": 0.0625,
+    "f07": 0.0625,
+    "f08": 0.0625,
+    "f09": 0.0625,
+    "f10": 0.0625,
+    "f11": 0.0625,
+    "f12": 0.0625,
+    "f13": 0.0625,
+    "f14": 0.0625,
+    "f15": 0.0625
+  },
+  "hotspot_multiplier": 2.0,
+  "lambda_formula": "lambda_f^(rho)(t)=rho*alpha_star*g_f(t)",
+  "normalization_recomputed_per_phase": false,
+  "od_manifest": "configs/gate_d0_od_manifest_16.json",
+  "od_manifest_sha256": "b8e46dd988e4f5136eeb5b8adea4272ad93b3fafc5ed7fc4fb537eff167173de",
+  "profile_id": "TRAFFIC_HOTSPOT_MIGRATION_V1",
+  "renormalization_formula": "g_hot_f=g_tilde_f*G_total/sum_j(g_tilde_j)",
+  "schema": "gate_f3_traffic_profile_v1",
+  "segments": [
+    {
+      "end_s": 60.0,
+      "g": {
+        "f00": 0.0625,
+        "f01": 0.0625,
+        "f02": 0.0625,
+        "f03": 0.0625,
+        "f04": 0.0625,
+        "f05": 0.0625,
+        "f06": 0.0625,
+        "f07": 0.0625,
+        "f08": 0.0625,
+        "f09": 0.0625,
+        "f10": 0.0625,
+        "f11": 0.0625,
+        "f12": 0.0625,
+        "f13": 0.0625,
+        "f14": 0.0625,
+        "f15": 0.0625
+      },
+      "label": "STABLE",
+      "start_s": 0.0
+    },
+    {
+      "end_s": 120.0,
+      "g": {
+        "f00": 0.09523809523809523,
+        "f01": 0.047619047619047616,
+        "f02": 0.09523809523809523,
+        "f03": 0.047619047619047616,
+        "f04": 0.047619047619047616,
+        "f05": 0.047619047619047616,
+        "f06": 0.09523809523809523,
+        "f07": 0.047619047619047616,
+        "f08": 0.047619047619047616,
+        "f09": 0.047619047619047616,
+        "f10": 0.047619047619047616,
+        "f11": 0.047619047619047616,
+        "f12": 0.09523809523809523,
+        "f13": 0.047619047619047616,
+        "f14": 0.09523809523809523,
+        "f15": 0.047619047619047616
+      },
+      "hotspot_set": "H0",
+      "label": "LOCALIZED_HOTSPOT_PLANE_0",
+      "start_s": 60.0
+    },
+    {
+      "end_s": 180.0,
+      "g": {
+        "f00": 0.05,
+        "f01": 0.05,
+        "f02": 0.05,
+        "f03": 0.1,
+        "f04": 0.05,
+        "f05": 0.05,
+        "f06": 0.05,
+        "f07": 0.05,
+        "f08": 0.1,
+        "f09": 0.05,
+        "f10": 0.05,
+        "f11": 0.1,
+        "f12": 0.05,
+        "f13": 0.05,
+        "f14": 0.05,
+        "f15": 0.1
+      },
+      "hotspot_set": "H2",
+      "label": "HOTSPOT_MIGRATION_TO_PLANE_2",
+      "start_s": 120.0
+    },
+    {
+      "end_s": 240.0,
+      "g": {
+        "f00": 0.0625,
+        "f01": 0.0625,
+        "f02": 0.0625,
+        "f03": 0.0625,
+        "f04": 0.0625,
+        "f05": 0.0625,
+        "f06": 0.0625,
+        "f07": 0.0625,
+        "f08": 0.0625,
+        "f09": 0.0625,
+        "f10": 0.0625,
+        "f11": 0.0625,
+        "f12": 0.0625,
+        "f13": 0.0625,
+        "f14": 0.0625,
+        "f15": 0.0625
+      },
+      "label": "RECOVERY",
+      "start_s": 180.0
+    }
+  ],
+  "stage_boundaries_s": [
+    0.0,
+    60.0,
+    120.0,
+    180.0,
+    240.0
+  ]
+}

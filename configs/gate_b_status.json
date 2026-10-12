@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "report": "outputs\\gate_b_20260921T064554_915646Z/report.json",
+  "design": "docs/GATE_B_DESIGN_CN.md",
+  "tests_run": 34,
+  "deterministic_repeat": true,
+  "gate_c_started": false
+}

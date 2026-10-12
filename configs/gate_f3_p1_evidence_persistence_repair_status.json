@@ -1,0 +1,18 @@
+{
+  "Gate_F3_P1_Evidence_Persistence_Repair": "PASS",
+  "P1_historical_FAILED_count": 1,
+  "P1_historical_result_seal": "NO",
+  "P2_started": false,
+  "RL_started": false,
+  "aggregate_assertion_occurs_after_evidence_persistence": "PASS",
+  "evidence": "outputs/gate_f3_p1_evidence_persistence_repair_20260925T080626_875393Z",
+  "failure_evidence_write_ordering": "PASS",
+  "frozen_scientific_semantics_unchanged": true,
+  "frozen_tolerances_unchanged": true,
+  "full_regression": "247 tests PASS",
+  "historical_failed_P1_attempt_preserved": true,
+  "individual_invariant_persistence": "PASS",
+  "new_P1_execution_attempt_readiness": "READY",
+  "registered_P1_runs_executed_in_repair_task": 0,
+  "schema": "gate_f3_p1_evidence_persistence_repair_status_v1"
+}

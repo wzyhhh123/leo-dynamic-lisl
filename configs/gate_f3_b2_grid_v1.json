@@ -1,0 +1,21 @@
+{
+  "base_controller": "B1_IGNORE_SETUP_DYNAMIC",
+  "base_signal": "DeltaV=V_H-V_c",
+  "best_configuration_selection_forbidden": true,
+  "canonical_sha256": "a9b5cc3bacd03e32f1b059028297ab737e59d9c1b204beab4b956b28b06b374e",
+  "configurations": [
+    {
+      "controller_id": "B2_H4",
+      "improvement_threshold": 0.0,
+      "minimum_hold_s": 4.0
+    },
+    {
+      "controller_id": "B2_H8",
+      "improvement_threshold": 0.0,
+      "minimum_hold_s": 8.0
+    }
+  ],
+  "positive_threshold_grid": false,
+  "role": "ENGINEERING_ROBUSTNESS_ONLY",
+  "schema": "gate_f3_b2_grid_v1"
+}

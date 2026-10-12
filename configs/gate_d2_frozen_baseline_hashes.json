@@ -1,0 +1,32 @@
+{
+  "schema": "gate_d2_frozen_baseline_hashes_v1",
+  "captured_before_gate_d2_formal_acceptance": true,
+  "files": {
+    "configs/gate_a_acceptance_v0.3.json": "4a8cd5ffea4902fa8c5758a01b3963452f02374a764bac52567b7f3deb9f12c7",
+    "configs/gate_b_status.json": "efe9e50c07a3f10a7b424328301751565bc0f73bb783557ed33400ebe7ca0c17",
+    "configs/gate_c_simplified_status_v1.json": "716c5d836cff1fc1839d32017815e1b8ef0f59131972158a1f07bb82a4fe85c5",
+    "configs/gate_d0_traffic_contract.json": "2abb4b1090ebc0cb89576b1159486d91d1c262a7439c013902af09cccba4a8b1",
+    "configs/gate_d0_od_manifest_16.json": "b8e46dd988e4f5136eeb5b8adea4272ad93b3fafc5ed7fc4fb537eff167173de",
+    "configs/gate_d0_metrics_schema.json": "88720c2f445e95a663abe208c99045e6708202786b7db10b1c9def3183e3f21e",
+    "configs/gate_d0_traffic_trace_schema.json": "cfbf85b7f5a44c483bf6e1cd7f988b8c928d9bd9d33722c7d4cddcc64ca8dbec",
+    "configs/gate_d1_fixture_manifest.json": "5e7ee053abd0d3e07293f1fc3b3ed2730c52ed2fa1c8e839664ab3c5dae2e7f2",
+    "configs/gate_d1_status.json": "c6b70e66200d88402869afee4a2cba5af6f0fd5fb29f851b865b1615faff9404",
+    "docs/GATE_D0_TRAFFIC_QUEUE_ROUTING_CONTRACT_CN.md": "f5a01ab84e2ac4744c8540e7776eed50df60af2ef5bd40a7bbe76303e656a0b2",
+    "docs/GATE_D1_NETWORK_SERVICE_RESULT_CN.md": "0ae5831b4b23f3ba0325bf4666a1ed9382cb3a03f6ac40d4f294f7df6d301ba1",
+    "src/dynamic_lisl/terminal_executor.py": "fa8a561d9ae935060a06d2c783f14f76c43e19800e7c1e361e63b18191330d01",
+    "src/dynamic_lisl/gate_c_simplified_feasibility.py": "a194dc87ab8b6df15d15574f95a68588897f59dcd8779860e2bf652436311eac",
+    "src/dynamic_lisl/terminal_pair_intervals.py": "8647a9ecf8ce1d2aa4ab4d67d00fb1ebfd93398531f3248012026427f776db33",
+    "src/dynamic_lisl/commodity.py": "20453ddde62f871fb685a45b89fea970e5aab60743e67bec238b6fb9e0c367ad",
+    "src/dynamic_lisl/traffic_trace.py": "7d4e9a447e228678303a1686325d9ffd5e73e999de9b95933f4d4cfe3f1f413f",
+    "src/dynamic_lisl/queue_state.py": "941c7ec67c8d94ac25ee41a4bfa3007f646180cd9d0b7273dd2b2abe68f3f88a",
+    "src/dynamic_lisl/in_flight.py": "5f15127b13e982df3098b72e10143c7456c756e91c7e151403d728bee6746289",
+    "src/dynamic_lisl/common_router.py": "eff18b438ac8a37d07fd733a787373e367db54ee676e67bc9c274d1bd057af3b",
+    "src/dynamic_lisl/service_scheduler.py": "b014a616e7025fa7229dc9f3acbbd7538b862e4d33a0aa602b941bb2616746b7",
+    "src/dynamic_lisl/network_service_engine.py": "177a23aab7944a52e4c5e8a2c0726c5b137ec4e2bc2e1e2623e1a827bc817f58",
+    "src/dynamic_lisl/load_normalization.py": "53dab95bef443f6abbed334635ab40e4581339d8d68c7f26f08192d2842a5ce2",
+    "src/dynamic_lisl/gate_d_metrics.py": "39829822e7454fb83617768046b3c0ec1adca3979cd8ab47cd3d3ce1375ff41e",
+    "src/dynamic_lisl/gate_d_scenarios.py": "e977d74b5286ab4ec938e289d671cb8c213a83d6c6208f2ed83b4ab78509e53a",
+    "tests/test_gate_d1.py": "8aea6498bb8cc27cb6ae4440fcefc0192fc16dc16dfadedb3d1f0c43b246268d",
+    "tools/check_gate_d1.py": "6c58b06525cc15051818fbc245112002c1ac909c8fa3a85937f8e65c679baf15"
+  }
+}

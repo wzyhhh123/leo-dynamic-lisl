@@ -1,0 +1,44 @@
+{
+  "canonical_sha256": "c67f9d90cee121179cc4d0873669ccd6d39abccc9a606672bedef634748a0eb0",
+  "case_substitution_after_results": false,
+  "cases": [
+    {
+      "case_id": "FIGURE_CASE_MODERATE",
+      "controllers": [
+        "B0",
+        "B1",
+        "B3",
+        "B4"
+      ],
+      "rho": 0.8,
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "scale": 160,
+      "topology": "Z_MODERATE",
+      "traffic": "TRAFFIC_HOTSPOT_MIGRATION_V1"
+    },
+    {
+      "case_id": "FIGURE_CASE_SPARSE",
+      "controllers": [
+        "B0",
+        "B1",
+        "B3",
+        "B4"
+      ],
+      "rho": 0.8,
+      "router": "SHORTEST_PROPAGATION_DELAY",
+      "scale": 160,
+      "topology": "Z_SPARSE_REFERENCE",
+      "traffic": "TRAFFIC_HOTSPOT_MIGRATION_V1"
+    }
+  ],
+  "planned_series": [
+    "total_unfinished_work_N_t",
+    "total_queue_Q_t",
+    "controller_REPLACE_markers",
+    "Gate_B_transition_markers",
+    "traffic_phase_boundaries_60_120_180_240_s"
+  ],
+  "reporting_grid_enters_state_evolution": false,
+  "schema": "gate_f3_figure_cases_v1",
+  "visualization_reporting_grid_s": 1.0
+}

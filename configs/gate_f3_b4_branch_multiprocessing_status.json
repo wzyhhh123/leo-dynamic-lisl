@@ -1,0 +1,20 @@
+{
+  "label": "ENGINEERING_PROFILE_ONLY",
+  "B4_BRANCH_MULTIPROCESSING_GATE": "FAIL",
+  "failure": "WORKER_STARTUP_COUNT_MISMATCH at four-worker warm-up",
+  "serial_wall_s": 277.2711255,
+  "one_worker_wall_s": 278.69903009999996,
+  "two_worker_wall_s": 146.5879003,
+  "two_worker_speedup_vs_one": 1.9012417091016889,
+  "two_worker_efficiency": 0.9506208545508444,
+  "four_worker_rollout_started": false,
+  "eight_worker_started": false,
+  "full_regression_after_change": "NOT_RUN_DUE_TO_STOP_RULE",
+  "P1_preflight_at_gate_start": "PASS",
+  "registered_P1_executed": false,
+  "P2_started": false,
+  "RL_started": false,
+  "production_integration": false,
+  "fastest_valid_worker_count": null,
+  "evidence_dir": "outputs/b4_branch_multiprocessing_20261002T110603_454356Z"
+}

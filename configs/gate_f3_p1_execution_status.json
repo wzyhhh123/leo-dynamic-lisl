@@ -1,0 +1,17 @@
+{
+  "F3_performance_started": true,
+  "Gate_F3_P1_execution": "BLOCKED",
+  "P1_CENSORED_count": 0,
+  "P1_COMPLETE_count": 0,
+  "P1_FAILED_count": 1,
+  "P1_registered_runs_executed": "0/12",
+  "P1_result_seal": "NO",
+  "P2_readiness": "NOT_READY",
+  "P2_started": false,
+  "RL_started": false,
+  "blocker": "GATE_F3_P1_EXECUTION_BLOCKED_BY_POST_RUN_INVARIANT_AGGREGATE_FAILURE_WITH_UNPERSISTED_SUBCHECKS",
+  "evidence": "outputs/gate_f3_p1_execution_20260925T055958_725913Z",
+  "failed_run_id": "F3V1-P1-Z_MODERATE-SHORTEST_PROPAGATION_DELAY-TRAFFIC_HOTSPOT_MIGRATION_V1-RHO0p5-B0",
+  "failure_scope": "new P1 execution/reporting adapter; no scientific controller mutation was observed",
+  "schema": "gate_f3_p1_execution_status_v1"
+}

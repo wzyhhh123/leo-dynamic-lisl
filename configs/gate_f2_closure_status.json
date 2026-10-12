@@ -1,0 +1,10 @@
+{
+  "F3_readiness": "READY",
+  "F3_started": false,
+  "RL_started": false,
+  "evidence": "outputs/gate_f2_closure_20260925T034050_308374Z",
+  "gate_f2_closure": "YES",
+  "gate_f2_overall": "PASS",
+  "schema": "gate_f2_closure_status_v1",
+  "statement": "Gate F2 overall = PASS"
+}

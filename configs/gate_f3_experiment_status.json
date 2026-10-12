@@ -1,0 +1,13 @@
+{
+  "F3_performance_readiness": "READY",
+  "P1_readiness": "READY",
+  "P1_started": false,
+  "RL_started": false,
+  "canonical_sha256": "118d3a61175b08b6ba53f4d92504b52ab879659682799d26c1965baf7bb600a6",
+  "evidence": "outputs/gate_f3_experiment_human_freeze_20260925T042539_710386Z",
+  "gate_f3_experiment_human_freeze_v1": "PASS",
+  "performance_started": false,
+  "planned_run_count": 60,
+  "schema": "gate_f3_experiment_status_v1",
+  "statement": "Gate F3 Experiment Human Freeze v1 = PASS"
+}

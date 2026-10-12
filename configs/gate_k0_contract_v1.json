@@ -1,0 +1,99 @@
+{
+  "gate": "K0",
+  "scope": "STRUCTURAL_DESIGN_ONLY",
+  "satellites": 160,
+  "planes": 4,
+  "satellites_per_plane": 40,
+  "terminals_per_satellite": 2,
+  "terminal_endpoints": 320,
+  "integrity_statement": "DESIGN_REVISION_AFTER_LIMITED_K4_OBSERVATION",
+  "K_candidates": [
+    4,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    64,
+    80,
+    96,
+    120,
+    160
+  ],
+  "snapshot_times_s": [
+    0,
+    30,
+    60,
+    90,
+    120,
+    150,
+    180,
+    210,
+    240,
+    270,
+    300,
+    330,
+    360,
+    390,
+    420,
+    450,
+    480,
+    510,
+    540,
+    570,
+    600
+  ],
+  "primary_band": [
+    0.15,
+    0.5
+  ],
+  "K4_ROLE": "VERY_SPARSE_HISTORICAL_REFERENCE",
+  "primary_excludes_K4": true,
+  "lexicographic_objectives": [
+    "min_plane_endpoint_range",
+    "max_represented_plane_pairs",
+    "max_total_usable_lifetime",
+    "max_min_usable_lifetime",
+    "canonical_lexical"
+  ],
+  "hard_constraints": [
+    "exact_K",
+    "terminal_degree_le_1",
+    "bilateral_Gate_C",
+    "inter_plane_only",
+    "no_parallel_satellite_pair",
+    "no_reservation_conflict",
+    "exact_replay"
+  ],
+  "admissibility": {
+    "capacity_snapshots": 21,
+    "all_planes_snapshots": 21,
+    "connected_and_bridges_lt_edges_snapshots": 18,
+    "replace_ge_16_snapshots": 18,
+    "MBB_ge_8_and_BBM_ge_8_snapshots": 18,
+    "median_MBB_fraction_band": [
+      0.1,
+      0.9
+    ],
+    "full_audit_replays": 2
+  },
+  "selection_rule": "min_admissible_K",
+  "empty_set_rule": "PASS_AUDIT_AND_STOP_NO_ADMISSIBLE_K_ONLY_IF_FULL_AUDIT_COMPLETED",
+  "forbidden": [
+    "controller_performance",
+    "traffic",
+    "queues",
+    "J",
+    "delivery",
+    "caps_32_32",
+    "topK_pruning",
+    "P1",
+    "P2",
+    "RL",
+    "production_changes"
+  ],
+  "setup_source": "configs/hardware_gate_c_simplified_v1.json",
+  "request_source": "user Gate K0 authorization; no result-driven changes",
+  "canonical_sha256": "27aedae08055cc89e083f5856d85edcf4ecafb12a7e9e1ac7b5ba89456a10225"
+}

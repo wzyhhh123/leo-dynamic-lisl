@@ -1,0 +1,16 @@
+{
+  "existing_failure_count": 1,
+  "failures": [
+    {
+      "test": "test_known_witness_domain_discovers_every_registered_size_without_J (test_f3_v2_search_policy_probe.StructuralPolicyProbeTests)",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\tests\\test_f3_v2_search_policy_probe.py\", line 50, in test_known_witness_domain_discovers_every_registered_size_without_J\n    self.assertGreater(pool.audit['coverage_by_size'][str(size)],0)\nAssertionError: 0 not greater than 0\n"
+    }
+  ],
+  "historical_test_expectations_modified": false,
+  "new_regressions": 0,
+  "passed_each": 96,
+  "production_code_modified": false,
+  "same_failure_names_and_tracebacks": true,
+  "scope": "ENGINEERING_REGRESSION_COMPARISON",
+  "tests_run_each": 97
+}

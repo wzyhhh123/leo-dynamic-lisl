@@ -1,0 +1,13 @@
+{
+  "B0_scientific_implementation": "PASS",
+  "B1_scientific_implementation": "PASS",
+  "B2_parameterized_implementation": "PASS",
+  "B3_scientific_implementation": "PASS",
+  "evidence": "outputs/gate_f1_closure_20260924T175639_643073Z",
+  "gate_f1_scientific_scoring_implementation": "PASS",
+  "gate_f2_started": false,
+  "gate_f3_started": false,
+  "rl_started": false,
+  "scheduler_semantics_aligned": true,
+  "shared_V_v2_evaluator": "PASS"
+}

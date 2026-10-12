@@ -1,0 +1,21 @@
+{
+  "P2_started": false,
+  "RL_started": false,
+  "canonical_sha256": "b4696d6afcc4967b49b4f4299d274bf5bd23e66c407a32f6154415e2d386919f",
+  "equivalence_evidence": {
+    "report": "outputs/gate_f3_inflight_closure_repair_20260926T173353_737761Z/equivalence_report.json",
+    "report_sha256": "3d819944fa763d80f16e1f57d2653f62623c383751fd3f51b09222c8775b4342"
+  },
+  "frozen_scientific_semantics_changed": false,
+  "frozen_thresholds_changed": false,
+  "optimized_code_hashes": {
+    "src/dynamic_lisl/transition_service_orchestrator.py": "9ed1ecf9b8c5cde21fd5a71113fdd45e2d69a20bb808689ccf40a9392ce172e7"
+  },
+  "parent_code_hashes": {
+    "src/dynamic_lisl/transition_service_orchestrator.py": "5b674ee226ac07aba136fc7c207f6abe727a4d63ad9097c1291afa6217750fd4"
+  },
+  "registered_P1_executed": false,
+  "schema": "gate_f3_inflight_closure_repair_overlay_v1",
+  "scope": "IN_FLIGHT_PROPAGATION_CLOSURE_ONLY",
+  "status": "PASS"
+}

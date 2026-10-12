@@ -1,0 +1,257 @@
+{
+  "schema": "gate_f2_rollout_human_freeze_v1",
+  "immutable_overlay": true,
+  "overlay_status": "FROZEN",
+  "gate": "F2-0",
+  "purpose": "Freeze exact B4 root-action rollout/MPC semantics before implementation.",
+  "parent_state": {
+    "gate_f1_infrastructure": "PASS",
+    "gate_f1_scoring_contract_v2": "PASS",
+    "B0_B1_B2_B3_scientific_implementation": "PASS",
+    "gate_f1_overall": "PASS",
+    "gate_f1_closure": "YES",
+    "F2_readiness": "READY"
+  },
+  "frozen_inputs": {
+    "decision_cadence_s": 2.0,
+    "candidate_top_k": 16,
+    "maximum_normal_branch_count": 17,
+    "candidate_strata_slots": {
+      "MBB_STRUCTURALLY_FEASIBLE": 8,
+      "BBM_REQUIRED": 8
+    },
+    "spillover_and_ranking": "UNCHANGED_FROM_F0_HUMAN_FREEZE_V1",
+    "proposal_fairness": "B1/B2/B3/B4 receive the same proposal set for the same state, epoch, and regime.",
+    "information_class": "SHORT_HORIZON_FORECAST",
+    "traffic_forecast": "CURRENT_RATE_PERSISTENCE",
+    "forecast_horizon_s": 10.0,
+    "forecast_update_period_s": 2.0,
+    "forecast_formula": "lambda_hat_f(t+tau)=lambda_f(t), 0<=tau<=10s",
+    "realized_future_trace_access": false,
+    "allowed_deterministic_future_physics": [
+      "SGP4_Gate_C_geometry",
+      "known_candidate_windows",
+      "natural_expiry",
+      "deterministic_Gate_B_transition_events"
+    ]
+  },
+  "branch_set": {
+    "hold_branch": "A0=HOLD",
+    "candidate_branches": "Ac for every candidate c in the frozen proposal set",
+    "evaluate_every_proposal": true,
+    "additional_candidate_generation_inside_B4": false,
+    "rollout_score_pruning_or_reranking_before_evaluation": false,
+    "maximum_normal_branch_count": 17,
+    "same_canonical_state_required": true,
+    "state_time_convention": "RIGHT_CONTINUOUS_AT_DECISION_EPOCH"
+  },
+  "clone_contract": {
+    "exact_clone_fields": [
+      "terminal_state",
+      "reservations",
+      "pending_Gate_B_events",
+      "G_active",
+      "G_admit",
+      "queues_Q",
+      "in_flight_I",
+      "arrival_rate_events",
+      "cumulative_arrived_and_delivered_for_conservation",
+      "common_router_configuration",
+      "current_physical_time",
+      "Gate_C_geometry_state",
+      "current_candidate_windows",
+      "all_deterministic_physical_event_state"
+    ],
+    "live_engine_mutation": false,
+    "shared_mutable_objects_between_branches": false,
+    "branch_order_may_affect_scores": false,
+    "future_required_tests": [
+      "clone_isolation",
+      "branch_order_invariance"
+    ]
+  },
+  "root_action_mpc": {
+    "semantics": "ROOT_ACTION_ONLY_RECEDING_HORIZON",
+    "hold_root": "No controller reconfiguration at t.",
+    "replace_root": "Apply exactly the selected candidate REPLACE through frozen real Gate C, regime safety, and Gate B.",
+    "voluntary_controller_actions_after_root_inside_horizon": false,
+    "internal_epochs_s": [
+      2.0,
+      4.0,
+      6.0,
+      8.0,
+      10.0
+    ],
+    "internal_epoch_controller_action": "HOLD",
+    "physical_and_network_evolution_continues": [
+      "committed_propagation_events",
+      "Gate_B_terminal_events",
+      "DRAINING",
+      "LINK_DOWN",
+      "RETARGETING",
+      "ACQUIRING",
+      "LINK_UP",
+      "natural_link_expiry",
+      "deterministic_Gate_C_geometry_and_window_evolution",
+      "physical_event_driven_G_active_and_G_admit_changes",
+      "common_routing",
+      "service_allocation",
+      "Q_I_D_evolution"
+    ],
+    "recursive_B4_calls": false,
+    "B1_B2_B3_future_rollout_policy": false,
+    "exponential_action_tree": false,
+    "next_live_decision": "Recompute root branches at the next real 2 s epoch from the then-current real state."
+  },
+  "forecast_contract": {
+    "branch_start_observation": "lambda_f(t) only",
+    "branch_local_source": true,
+    "constant_over_full_horizon": true,
+    "same_forecast_all_branches": true,
+    "live_realized_future_segments_consumed": false,
+    "next_real_epoch_may_observe_new_current_lambda": true
+  },
+  "objective": {
+    "symbol": "J_H(a;t)",
+    "formula": "sum_f integral_t^(t+H) N_f^a(tau) d tau",
+    "horizon_s": 10.0,
+    "unfinished_work": "N_f=A_f-D_f=sum_i Q_i^f+sum_e I_e^f",
+    "optimization_direction": "MINIMIZE",
+    "real_network_dynamics_rollout": true,
+    "transition_cost_entry": "Only through real Gate B/C transition and resulting routing, service, Q/I/D consequences.",
+    "forbidden_additions": [
+      "V_v2_terminal_penalty",
+      "topology_score",
+      "setup_penalty",
+      "switch_count_penalty",
+      "outage_penalty",
+      "artificial_hysteresis_penalty",
+      "learned_value_function",
+      "alpha_beta_gamma_weighted_objective"
+    ]
+  },
+  "horizon_boundary": {
+    "end": "t+10s",
+    "drain_beyond_horizon": false,
+    "terminal_residual_backlog_penalty": false,
+    "V_v2_at_horizon": false,
+    "residual_backlog_role": "DIAGNOSTIC_ONLY",
+    "finite_horizon_truncation_intentional": true
+  },
+  "branch_invalidity": {
+    "hold_always_evaluated": true,
+    "candidate_invalid_iff": "Root REPLACE cannot legally execute under frozen Gate C, regime safety, and Gate B from the cloned decision state.",
+    "invalid_score": "+infinity",
+    "exact_rejection_reason_required": true,
+    "invalid_after_common_proposer": "PROPOSER_EXECUTOR_CONSISTENCY_DIAGNOSTIC",
+    "not_invalid_reasons": [
+      "later_natural_expiry",
+      "temporary_route_disappearance",
+      "backlog_growth",
+      "delivery_reduction",
+      "physically_valid_no_route_interval"
+    ]
+  },
+  "selection": {
+    "rule": "minimum J_H",
+    "hold_vs_replace_exact_tie": "HOLD",
+    "replace_vs_replace_exact_tie": "FROZEN_PROPOSER_CANONICAL_ORDER",
+    "random_tie_breaking": false,
+    "deadband": false
+  },
+  "router_fairness": {
+    "same_router_for_all_branches": true,
+    "same_router_for_B0_through_B4_in_comparison": true,
+    "primary": "DeterministicShortestPropagationDelayRouter",
+    "robustness": "DeterministicCurrentStateLoadAwareRouter"
+  },
+  "regime_safety": {
+    "Z_SPARSE_REFERENCE": {
+      "policy": "BOUNDED_TRANSITION_OUTAGE",
+      "Tmax_s": 2.0,
+      "scope": "CONTROLLER_INDUCED_TRANSITION_OUTAGE_ONLY"
+    },
+    "Z_MODERATE": {
+      "policy": "STRICT_CONNECTED",
+      "graph": "G_admit",
+      "scope": "ENTIRE_CONTROLLER_INDUCED_TRANSITION"
+    },
+    "safety_is_reject_only": true,
+    "candidate_substitution": false,
+    "natural_post_expiry_no_route_is_transition_outage": false
+  },
+  "live_execution": {
+    "returned_action": "HOLD or REPLACE(old binding,new concrete terminal pair)",
+    "selected_action_execution": "Same real Gate B/C path used by all controllers.",
+    "hypothetical_states_discarded": true,
+    "hypothetical_state_may_replace_live_engine": false,
+    "recompute_each_real_epoch": true
+  },
+  "interpretation": {
+    "B3": "setup-aware current-state greedy controller",
+    "B4": "setup-aware short-horizon predictive controller using explicit transition/routing/service/queue rollout under a shared 10 s current-rate-persistence forecast",
+    "scientific_difference": "B3 analytic current-state proxy versus B4 explicit short-horizon network-dynamics rollout.",
+    "globally_optimal_claim": false,
+    "H_10s_optimal_claim": false
+  },
+  "implementation_boundary": {
+    "B4_implementation_authorized": false,
+    "B4_performance_ranking_authorized": false,
+    "F3_experiment_grid_authorized": false,
+    "B2_grid_selection_authorized": false,
+    "main_scale_sweep_authorized": false,
+    "RL_PPO_authorized": false,
+    "B5_main_scale_oracle_authorized": false,
+    "post_freeze_next_allowed_step": "F2 implementation correctness fixtures only after separate authorization."
+  },
+  "scope_guard": {
+    "controller_performance_run": false,
+    "B4_implemented": false,
+    "F2_started": false,
+    "F3_started": false,
+    "RL_started": false,
+    "frozen_parent_assets_modified": false
+  },
+  "parent_hashes": {
+    "gate_f1_closure_core": {
+      "configs/gate_f1_closure_status.json": "bd2b0ce6efe3f5daf56d704461675fe563bca4918d0d6adc15e493df5b541c26",
+      "docs/GATE_F1_CLOSURE_RESULT_CN.md": "4d04f3e7d7b029244697e8f694af1874267b2519b0748b59e72fe27ada1609f2",
+      "tools/check_gate_f1_closure.py": "8a23f7d53265f71d9798627ca0c1c54cb49ad3e1089d572c7ea92b932219cac4"
+    },
+    "gate_f1_closure_evidence": {
+      "outputs/gate_f1_closure_20260924T175639_643073Z/artifact_hashes.json": "d4a09ebc437c08656a08941a2737fb23438a9a31f82dc5d17f473d44e82e77d8",
+      "outputs/gate_f1_closure_20260924T175639_643073Z/deterministic_replay_report.json": "a9500c902399fa33370ea4d772b57e5b485415ad8499c7e0c98fc8fc49739f4c",
+      "outputs/gate_f1_closure_20260924T175639_643073Z/frozen_hash_report.json": "4ceb960edd4181007a783c8e0657f28772b2e6a6d89724877f9e287a75c3643b",
+      "outputs/gate_f1_closure_20260924T175639_643073Z/report.json": "ba670fd027fc5965eae4c47e34a8c0a154acc163041072f43a137a5973536d29",
+      "outputs/gate_f1_closure_20260924T175639_643073Z/scoring_fixture_report.json": "1f3dd659b9974439a504ece33011f68eb1e310c6ea7783b6dcf7afed521d57c3",
+      "outputs/gate_f1_closure_20260924T175639_643073Z/semantic_sanity_160star.json": "6ea203c58aa4dc0e0bcef4a7bb906ab93d8af955b2758b012ad9de3bab657b75"
+    },
+    "gate_f1_scientific_implementation": {
+      "configs/gate_f1_scientific_implementation_status.json": "88b4f444bab01f63cd8f17d69ffe2e09ad44b944aa6fa9c11fe3a5f298bc2c31",
+      "docs/GATE_F1_SCIENTIFIC_SCORING_IMPLEMENTATION_CN.md": "35fdb775c12e1b2b07022a758b3b2af9f30863638b665d1802f29c472b3bd0cd",
+      "src/dynamic_lisl/gate_f1_scientific_sanity.py": "b220d3095c932c171047b85b69b649c36844dca4af0fa10b8152814f98c949fd",
+      "src/dynamic_lisl/scientific_controllers.py": "19726f56bb83c1c77073aac4618bbbe71733fdc9257b59dbf3ea905e6aaf3407",
+      "src/dynamic_lisl/scientific_snapshot.py": "752f9b3983a052864693f4d432fdb07b6bdef30d50d96e008cb944fa974d5037",
+      "tests/test_gate_f1_scientific_scoring_v2.py": "a4e48a6e8a5658e5460239c45f3a6f5ead3f9f76197761c8b042d787becfa205"
+    },
+    "scoring_human_freeze_v2": {
+      "configs/gate_f1_scoring_human_freeze_v2.json": "e91d23f1f4ea81c2598431bd3d0b1d684efb89df4e704f9d37025cfb425e9c69",
+      "configs/gate_f1_scoring_human_freeze_v2_status.json": "d7cb36a214472ce0ad22322a73b9a571e670412fc84ad3d9923fa7dca90ea67c",
+      "docs/GATE_F1_SCORING_HUMAN_FREEZE_V2_CN.md": "b4acbc80a4fdd22d891ed7bdf7db9cb6a0af5b7210aa5b69c3a64875b50f6e1d",
+      "tools/check_gate_f1_scoring_human_freeze_v2.py": "96aceaf965d5d2d316e7b62a6c80f16c437250d144ff1d23d4ed035c8e4b4a16"
+    },
+    "f0_human_freeze_v1": {
+      "configs/gate_f0_human_freeze_v1.json": "37a90d3eec2f91e94c04ebe0f2867f3eca412d7284402bba6a7bd0639df7c3f7",
+      "configs/gate_f0_human_freeze_status.json": "b4cc4e8e335613d8626c58516fbf1d3355df93da8a9823a9533f88d40e33bae7",
+      "docs/GATE_F0_HUMAN_FREEZE_V1_CN.md": "fb858c63b96da790ec6aba6eaa5b93cc3654b495716eff3f9b33ada35aa5969a",
+      "tools/check_gate_f0_human_freeze.py": "2d78d2578e65c6b933bd48a2a34a2cf3b2a7d82ad7ed8c3e90f279e90bc9cf76"
+    },
+    "z_moderate": {
+      "configs/z_moderate_v1.json": "a28f54be05c5dbae07d0654b507209dad499ff853f9558cdd7da50f28d56c0d9"
+    },
+    "a_to_e2_hash_registry": {
+      "configs/gate_f0_frozen_a_to_e2_hashes.json": "9c016926a99669d62afd62e25a24ebc8a41f752271a8fe95a20a3cfa9e30922e"
+    }
+  },
+  "canonical_sha256": "ca82a1e49f6bdbe56a4c9f2fb79299eac0174844e0bdc6608ea3cb4f12f90b2a"
+}

@@ -1,0 +1,12 @@
+{
+  "F2_readiness": "READY",
+  "evidence": "outputs/gate_f1_closure_20260924T175639_643073Z",
+  "gate_f1_closure": "YES",
+  "gate_f1_infrastructure": "PASS",
+  "gate_f1_overall": "PASS",
+  "gate_f1_scoring_contract_v2": "PASS",
+  "gate_f2_started": false,
+  "gate_f3_started": false,
+  "rl_started": false,
+  "statement": "Gate F1 overall = PASS"
+}

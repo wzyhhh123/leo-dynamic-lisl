@@ -1,0 +1,13 @@
+{
+  "schema": "gate_c_frozen_baseline_hashes_v1",
+  "files": {
+    "src/dynamic_lisl/terminal_executor.py": "fa8a561d9ae935060a06d2c783f14f76c43e19800e7c1e361e63b18191330d01",
+    "src/dynamic_lisl/sgp4_model.py": "35cb1c90e57502fad6e4dcd6087cc771682bd691b223c1e8bf0e220ae73aca63",
+    "src/dynamic_lisl/sgp4_geometry.py": "de9bcea3069b9a4640f5791f905fb16d30cad968142fbe3d44b33bc43c91abd5",
+    "configs/gate_a_acceptance_v0.3.json": "4a8cd5ffea4902fa8c5758a01b3963452f02374a764bac52567b7f3deb9f12c7",
+    "configs/gate_b_status.json": "efe9e50c07a3f10a7b424328301751565bc0f73bb783557ed33400ebe7ca0c17",
+    "data/raw/sgp4_x720/manifest.json": "61a42d76f4fe25d2e613435f9a26fc092a5943a177675f1081ff2d52c2ff4b7d",
+    "data/raw/sgp4_x720/constellation.tle": "6ffcbc0d57c54e54fc274acb518e1436eaf4d70df56570b862ba42fe32345050",
+    "outputs/visibility_20260921T055451_308214Z/subset_160/intervals.jsonl": "5ff0f3367c94d1b7c2d3c585667c58cc37a603b97007b510b8f0005f0038aec9"
+  }
+}

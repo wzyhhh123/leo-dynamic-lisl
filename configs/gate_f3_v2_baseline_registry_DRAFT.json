@@ -1,0 +1,123 @@
+{
+  "schema": "gate_f3_v2_baseline_registry",
+  "status": "DRAFT_NOT_FROZEN",
+  "frozen": false,
+  "implementation_authorized": false,
+  "primary_contrast": "B4-v2_vs_B3-v2",
+  "shared_action_contract": "configs/gate_f3_v2_joint_action_contract_DRAFT.json",
+  "shared_search_plan": "outputs/gate_f3_v2_design_20261008T112538_143340Z/joint_candidate_search_plan.json",
+  "scientific_snapshot": {
+    "version": "frozen scheduler-consistent V_v2",
+    "G_batch_ideal": "(current admitted edges minus all selected old satellite edges) union all selected new satellite edges",
+    "unchanged_other_pending_transitions": "Remain current-state edges for snapshot; idealize only this selected batch.",
+    "route_recompute": "Selected frozen common router on entire ideal topology, same root node/commodity state",
+    "N_f": "sum_i Q_i^f + sum_e I_e^f",
+    "demand": "Frozen evaluator: Q>state_tol => infinite local demand; else positive current source/inflight input => finite demand; in-flight-only without local demand has Psi=0.",
+    "R_snap": "Minimum actual equal_weight_fair_share allocation over current positive local demand nodes, not equal division by all route-using commodities",
+    "V": "sum_{f:N_f>0} [N_f*C_prop_f + Psi_f]; Psi=N_f^2/(2R_snap) if demands exist, otherwise0",
+    "invalid": "Frozen source-route/no-next-hop/nonpositive-allocation invalid reasons => +infinity",
+    "no_time_advance": true,
+    "no_rollout": true,
+    "infinity_rule": "Both HOLD/candidate infinity => not positive improvement; finite candidate vs infinity HOLD => +infinity improvement; never calculate NaN infinity-infinity."
+  },
+  "baselines": [
+    {
+      "id": "B0-v2",
+      "name": "STATIC/HOLD",
+      "information": "CURRENT_STATE_ONLY",
+      "core": true,
+      "rule": "Always HOLD, same geometry/events/traffic/drain; natural expiry applies."
+    },
+    {
+      "id": "B1-v2",
+      "name": "Batch Ignore-Setup",
+      "information": "CURRENT_STATE_ONLY",
+      "core": true,
+      "rule": "argmin V_v2 over HOLD and every shared executable ideal batch topology",
+      "decision_setup_consequence": "ignored in V; physical legality still real",
+      "economic_safety_substitution": false
+    },
+    {
+      "id": "B2-v2",
+      "name": "Batch Hysteresis/Minimum-Hold",
+      "information": "CURRENT_STATE_ONLY",
+      "core_blocker": false,
+      "definition": {
+        "base": "B1-v2 exactly",
+        "threshold_signal": "deltaV of whole batch",
+        "hold_eligibility": "For each member: now-old_link.active_link_start >= minimum_hold_s, all members eligible.",
+        "timer_reset": "new link actual LINK_UP timestamp, not accepted-command time; initial links use explicit supplied ages (propose active_link_start=0 for same constructed initial state).",
+        "initial_age_status": "REQUIRES_HUMAN_FREEZE",
+        "history": {
+          "B2_H4": {
+            "minimum_hold_s": 4,
+            "threshold": 0
+          },
+          "B2_H8": {
+            "minimum_hold_s": 8,
+            "threshold": 0
+          },
+          "old_clock": "global last_accepted_switch_time; first switch has no hold block"
+        },
+        "5s_sampling": "If link_up=0, H4 first eligible t=5, H8 t=10. General elapsed eligibility H<=actual_hold<H+5 absent other blockage; never convert H to epoch counts.",
+        "threshold_boundary": "B1 chooses positive deltaV; threshold equality accepted; exact HOLD tie still HOLD.",
+        "shared_pool": "Read same pool; apply own per-link eligibility to its members without regenerating advantaged proposals.",
+        "final_robustness_inclusion": "Proposed include B2-v2-H4/H8 as engineering robustness after core B3/B4; numerical reuse and new clock need approval, not best-config selection.",
+        "blocks_B3_B4_core": false,
+        "compatibility_mode": "Explicit LEGACY_GLOBAL_ACCEPT_CLOCK adapter for old B2 regression only; default per-link clock cannot claim legacy B2 equality."
+      }
+    },
+    {
+      "id": "B3-v2",
+      "name": "Batch Setup-Aware Greedy",
+      "information": "CURRENT_STATE_ONLY",
+      "core": true,
+      "definition": {
+        "candidate_set": "exact common joint pool",
+        "deltaV": "V(HOLD)-V(G_batch_ideal)",
+        "eta_member": "actual Gate C usable_lifetime_s / remaining_lifetime_s (both current observed-window quantities; retain censor flags)",
+        "eta_batch_proposal": "min_r eta_r",
+        "score_proposal": "S_batch=deltaV_batch*min_r eta_r for deltaV>0 and every remaining/usable>0",
+        "selection": "maximum positive S_batch, otherwise HOLD; exact ties common order",
+        "interpretation": "Myopic setup-aware choice over jointly constructed batches, not independent top-four or sequential summed benefits",
+        "single_mode": "min of one eta recovers old B3 formula when pool/root/router same",
+        "min_eta_status": "NEW_AGGREGATION_REQUIRES_HUMAN_FREEZE; conservative proxy, not exact queue-area/service loss theorem",
+        "evaluate_new_prefix": "Each extended retained prefix recomputes full graph and current service snapshot; never sum individual DeltaV.",
+        "explicit_network_rollout": false
+      }
+    },
+    {
+      "id": "B4-v2",
+      "name": "Bounded Joint Root-Action Rollout",
+      "information": "SHORT_HORIZON_FORECAST",
+      "core": true,
+      "rule": "argmin J_H over HOLD and every exact shared legal batch",
+      "forecast": "current-rate persistence, common source per epoch, no actual future realization",
+      "root_action_only": true,
+      "future_voluntary_actions_inside_branch": false,
+      "terminal_penalty": false,
+      "real_batch_Gate_B_C_D": true,
+      "nominal_horizon_s": 10,
+      "production_worker_count_proposal": 8,
+      "v1_multiprocessing_PASS_implies_v2_PASS": false
+    },
+    {
+      "id": "B5-v2",
+      "name": "Tiny exact batch oracle",
+      "information": "ORACLE_SMALL_FIXTURE_ONLY",
+      "main_scale": false,
+      "role": "Exhaustive legal root batches, not a future-traffic oracle in core contrasts"
+    }
+  ],
+  "forbidden": [
+    "MARL",
+    "PPO",
+    "ADD",
+    "DROP",
+    "variable_K",
+    "adaptive_cadence",
+    "event_triggered_decisions",
+    "720_star_main_experiment"
+  ],
+  "draft_canonical_sha256": "da70751f7432e38bfae29b5aeca8477a4ec2a0ae3ce222a9a01ebb17012e6acd"
+}

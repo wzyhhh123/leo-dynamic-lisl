@@ -1,0 +1,14 @@
+{
+  "B1_scalar_score_resolved": true,
+  "B2_base_signal_resolved": true,
+  "B3_scalar_score_resolved": true,
+  "evidence": "outputs/gate_f1_scoring_human_freeze_20260924T170050_132373Z",
+  "gate_f1_scientific_implementation_readiness": "READY",
+  "gate_f1_scoring_human_freeze_v1": "PASS",
+  "gate_f2_started": false,
+  "gate_f3_started": false,
+  "overlay": "configs/gate_f1_scoring_human_freeze_v1.json",
+  "overlay_canonical_sha256": "afb031e5da8e988aadd081c83b2d2910a01bf87226c07f2938d2e6d541ca3955",
+  "rl_started": false,
+  "statement": "Gate F1 scoring human freeze v1 = PASS"
+}

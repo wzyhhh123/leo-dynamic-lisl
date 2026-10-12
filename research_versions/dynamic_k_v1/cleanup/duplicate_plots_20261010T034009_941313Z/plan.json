@@ -1,0 +1,432 @@
+{
+  "authorization": {
+    "actor": "human_user",
+    "request": "能不能帮我删掉一些之前不太重要的输出文件？",
+    "scope_reply": "也包括仓库根目录的 results 旧输出",
+    "selected_method": "REMOVE_UNTRACKED_EXACT_DUPLICATE_PNG_ONLY_KEEP_IDENTICAL_COPIES_AND_RAW_RESULTS"
+  },
+  "baseline_seal": {
+    "byte_count": 656,
+    "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+    "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+  },
+  "bytes_to_remove": 2770125,
+  "changes": {
+    "added": [],
+    "deleted": [
+      {
+        "delete": {
+          "byte_count": 117486,
+          "path": "results/run_20260327_180406/main_path_queue_heatmap.png",
+          "sha256": "4b649621e31944cb316de88c1376738ba09954c4263ef204f5d0bfd86b498357"
+        },
+        "git_status_before": "?? results/run_20260327_180406/main_path_queue_heatmap.png",
+        "retained_identical_copy": {
+          "byte_count": 117486,
+          "path": "results/run_20260327_174932/main_path_queue_heatmap.png",
+          "sha256": "4b649621e31944cb316de88c1376738ba09954c4263ef204f5d0bfd86b498357"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 88376,
+          "path": "results/run_20260327_180406/performance_summary.png",
+          "sha256": "263e3192eee0dfe19e1e63ed5ffb9b9990c26225d21a6064da775be049efcfef"
+        },
+        "git_status_before": "?? results/run_20260327_180406/performance_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 88376,
+          "path": "results/run_20260327_174932/performance_summary.png",
+          "sha256": "263e3192eee0dfe19e1e63ed5ffb9b9990c26225d21a6064da775be049efcfef"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 50286,
+          "path": "results/run_20260327_180406/phase_delay_summary.png",
+          "sha256": "3b394f1fcded1367e605335e2c000bca3f71457499fdf55bc7f1665e89a9b365"
+        },
+        "git_status_before": "?? results/run_20260327_180406/phase_delay_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 50286,
+          "path": "results/run_20260327_174932/phase_delay_summary.png",
+          "sha256": "3b394f1fcded1367e605335e2c000bca3f71457499fdf55bc7f1665e89a9b365"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 43783,
+          "path": "results/run_20260327_180406/priority_summary.png",
+          "sha256": "a924b0d902339ab677ff78e7a3ae8ead4295e49046171e324b5ae55364ed9c11"
+        },
+        "git_status_before": "?? results/run_20260327_180406/priority_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 43783,
+          "path": "results/run_20260327_174932/priority_summary.png",
+          "sha256": "a924b0d902339ab677ff78e7a3ae8ead4295e49046171e324b5ae55364ed9c11"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 43492,
+          "path": "results/run_20260327_180406/queue_dynamics.png",
+          "sha256": "bacac3e5b0f945f61e71ef6212902c8c40c269a5cd5bdee4b74eb7ca4ae5a66d"
+        },
+        "git_status_before": "?? results/run_20260327_180406/queue_dynamics.png",
+        "retained_identical_copy": {
+          "byte_count": 43492,
+          "path": "results/run_20260327_174932/queue_dynamics.png",
+          "sha256": "bacac3e5b0f945f61e71ef6212902c8c40c269a5cd5bdee4b74eb7ca4ae5a66d"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 82975,
+          "path": "results/run_20260327_180406/reachability.png",
+          "sha256": "0a4fe7611ddbf12a64656b6dc818df290b4e34f2b224c7946897caff4761ef52"
+        },
+        "git_status_before": "?? results/run_20260327_180406/reachability.png",
+        "retained_identical_copy": {
+          "byte_count": 82975,
+          "path": "results/run_20260327_174932/reachability.png",
+          "sha256": "0a4fe7611ddbf12a64656b6dc818df290b4e34f2b224c7946897caff4761ef52"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 102643,
+          "path": "results/run_20260327_180406/slot_metrics.png",
+          "sha256": "1280ae272118556001342581f6b9f974e90262c975bb73a295d9a097f6dc068e"
+        },
+        "git_status_before": "?? results/run_20260327_180406/slot_metrics.png",
+        "retained_identical_copy": {
+          "byte_count": 102643,
+          "path": "results/run_20260327_174932/slot_metrics.png",
+          "sha256": "1280ae272118556001342581f6b9f974e90262c975bb73a295d9a097f6dc068e"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 103387,
+          "path": "results/run_20260327_180406/switching_dynamics.png",
+          "sha256": "8c76d8be15e538a9b1406f20139cd31993768c691b7886b4dd0d006b71133096"
+        },
+        "git_status_before": "?? results/run_20260327_180406/switching_dynamics.png",
+        "retained_identical_copy": {
+          "byte_count": 103387,
+          "path": "results/run_20260327_174932/switching_dynamics.png",
+          "sha256": "8c76d8be15e538a9b1406f20139cd31993768c691b7886b4dd0d006b71133096"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 253926,
+          "path": "results/run_20260327_180406/topology_snapshots.png",
+          "sha256": "fc7022cc734e1ffa7bdb7abd6ec708cb6c289bcf044a4c15ec3950e2ac314378"
+        },
+        "git_status_before": "?? results/run_20260327_180406/topology_snapshots.png",
+        "retained_identical_copy": {
+          "byte_count": 253926,
+          "path": "results/run_20260327_174932/topology_snapshots.png",
+          "sha256": "fc7022cc734e1ffa7bdb7abd6ec708cb6c289bcf044a4c15ec3950e2ac314378"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 125301,
+          "path": "results/run_20260329_223214/main_path_queue_heatmap.png",
+          "sha256": "830c577bb891f763a729b07e7e645b2d547777553dfb52ef0d9e926eb1949261"
+        },
+        "git_status_before": "?? results/run_20260329_223214/main_path_queue_heatmap.png",
+        "retained_identical_copy": {
+          "byte_count": 125301,
+          "path": "results/run_20260327_184233/main_path_queue_heatmap.png",
+          "sha256": "830c577bb891f763a729b07e7e645b2d547777553dfb52ef0d9e926eb1949261"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 88393,
+          "path": "results/run_20260329_223214/performance_summary.png",
+          "sha256": "e35e13d4c81e9a9f2f0db97b61135622b40dd080f323379ce451cd72c3c3b511"
+        },
+        "git_status_before": "?? results/run_20260329_223214/performance_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 88393,
+          "path": "results/run_20260327_184233/performance_summary.png",
+          "sha256": "e35e13d4c81e9a9f2f0db97b61135622b40dd080f323379ce451cd72c3c3b511"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 54309,
+          "path": "results/run_20260329_223214/phase_delay_summary.png",
+          "sha256": "99df9dbd45995fe23c5387b5f6ebf024529f6be9ff134860010b43bee1cb8d4b"
+        },
+        "git_status_before": "?? results/run_20260329_223214/phase_delay_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 54309,
+          "path": "results/run_20260327_184233/phase_delay_summary.png",
+          "sha256": "99df9dbd45995fe23c5387b5f6ebf024529f6be9ff134860010b43bee1cb8d4b"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 43783,
+          "path": "results/run_20260329_223214/priority_summary.png",
+          "sha256": "a924b0d902339ab677ff78e7a3ae8ead4295e49046171e324b5ae55364ed9c11"
+        },
+        "git_status_before": "?? results/run_20260329_223214/priority_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 43783,
+          "path": "results/run_20260327_184233/priority_summary.png",
+          "sha256": "a924b0d902339ab677ff78e7a3ae8ead4295e49046171e324b5ae55364ed9c11"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 88894,
+          "path": "results/run_20260329_223214/queue_dynamics.png",
+          "sha256": "d07330fcfc4ccc170bf0112fbeb86ccdf7af09642fb6d53c8b4744c454f5bc3c"
+        },
+        "git_status_before": "?? results/run_20260329_223214/queue_dynamics.png",
+        "retained_identical_copy": {
+          "byte_count": 88894,
+          "path": "results/run_20260327_184233/queue_dynamics.png",
+          "sha256": "d07330fcfc4ccc170bf0112fbeb86ccdf7af09642fb6d53c8b4744c454f5bc3c"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 82975,
+          "path": "results/run_20260329_223214/reachability.png",
+          "sha256": "0a4fe7611ddbf12a64656b6dc818df290b4e34f2b224c7946897caff4761ef52"
+        },
+        "git_status_before": "?? results/run_20260329_223214/reachability.png",
+        "retained_identical_copy": {
+          "byte_count": 82975,
+          "path": "results/run_20260327_184233/reachability.png",
+          "sha256": "0a4fe7611ddbf12a64656b6dc818df290b4e34f2b224c7946897caff4761ef52"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 102643,
+          "path": "results/run_20260329_223214/slot_metrics.png",
+          "sha256": "1280ae272118556001342581f6b9f974e90262c975bb73a295d9a097f6dc068e"
+        },
+        "git_status_before": "?? results/run_20260329_223214/slot_metrics.png",
+        "retained_identical_copy": {
+          "byte_count": 102643,
+          "path": "results/run_20260327_184233/slot_metrics.png",
+          "sha256": "1280ae272118556001342581f6b9f974e90262c975bb73a295d9a097f6dc068e"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 103387,
+          "path": "results/run_20260329_223214/switching_dynamics.png",
+          "sha256": "8c76d8be15e538a9b1406f20139cd31993768c691b7886b4dd0d006b71133096"
+        },
+        "git_status_before": "?? results/run_20260329_223214/switching_dynamics.png",
+        "retained_identical_copy": {
+          "byte_count": 103387,
+          "path": "results/run_20260327_184233/switching_dynamics.png",
+          "sha256": "8c76d8be15e538a9b1406f20139cd31993768c691b7886b4dd0d006b71133096"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 253926,
+          "path": "results/run_20260329_223214/topology_snapshots.png",
+          "sha256": "fc7022cc734e1ffa7bdb7abd6ec708cb6c289bcf044a4c15ec3950e2ac314378"
+        },
+        "git_status_before": "?? results/run_20260329_223214/topology_snapshots.png",
+        "retained_identical_copy": {
+          "byte_count": 253926,
+          "path": "results/run_20260327_184233/topology_snapshots.png",
+          "sha256": "fc7022cc734e1ffa7bdb7abd6ec708cb6c289bcf044a4c15ec3950e2ac314378"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 125301,
+          "path": "results/run_20260329_230541/main_path_queue_heatmap.png",
+          "sha256": "830c577bb891f763a729b07e7e645b2d547777553dfb52ef0d9e926eb1949261"
+        },
+        "git_status_before": "?? results/run_20260329_230541/main_path_queue_heatmap.png",
+        "retained_identical_copy": {
+          "byte_count": 125301,
+          "path": "results/run_20260327_182615/main_path_queue_heatmap.png",
+          "sha256": "830c577bb891f763a729b07e7e645b2d547777553dfb52ef0d9e926eb1949261"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 88376,
+          "path": "results/run_20260329_230541/performance_summary.png",
+          "sha256": "263e3192eee0dfe19e1e63ed5ffb9b9990c26225d21a6064da775be049efcfef"
+        },
+        "git_status_before": "?? results/run_20260329_230541/performance_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 88376,
+          "path": "results/run_20260327_182615/performance_summary.png",
+          "sha256": "263e3192eee0dfe19e1e63ed5ffb9b9990c26225d21a6064da775be049efcfef"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 50286,
+          "path": "results/run_20260329_230541/phase_delay_summary.png",
+          "sha256": "3b394f1fcded1367e605335e2c000bca3f71457499fdf55bc7f1665e89a9b365"
+        },
+        "git_status_before": "?? results/run_20260329_230541/phase_delay_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 50286,
+          "path": "results/run_20260327_182615/phase_delay_summary.png",
+          "sha256": "3b394f1fcded1367e605335e2c000bca3f71457499fdf55bc7f1665e89a9b365"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 43783,
+          "path": "results/run_20260329_230541/priority_summary.png",
+          "sha256": "a924b0d902339ab677ff78e7a3ae8ead4295e49046171e324b5ae55364ed9c11"
+        },
+        "git_status_before": "?? results/run_20260329_230541/priority_summary.png",
+        "retained_identical_copy": {
+          "byte_count": 43783,
+          "path": "results/run_20260327_182615/priority_summary.png",
+          "sha256": "a924b0d902339ab677ff78e7a3ae8ead4295e49046171e324b5ae55364ed9c11"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 89483,
+          "path": "results/run_20260329_230541/queue_dynamics.png",
+          "sha256": "5c4eb3a1c552ea166c430fff8c142c7723cdb89b5e46aa845058d8b86d63c7b9"
+        },
+        "git_status_before": "?? results/run_20260329_230541/queue_dynamics.png",
+        "retained_identical_copy": {
+          "byte_count": 89483,
+          "path": "results/run_20260327_182615/queue_dynamics.png",
+          "sha256": "5c4eb3a1c552ea166c430fff8c142c7723cdb89b5e46aa845058d8b86d63c7b9"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 82975,
+          "path": "results/run_20260329_230541/reachability.png",
+          "sha256": "0a4fe7611ddbf12a64656b6dc818df290b4e34f2b224c7946897caff4761ef52"
+        },
+        "git_status_before": "?? results/run_20260329_230541/reachability.png",
+        "retained_identical_copy": {
+          "byte_count": 82975,
+          "path": "results/run_20260327_182615/reachability.png",
+          "sha256": "0a4fe7611ddbf12a64656b6dc818df290b4e34f2b224c7946897caff4761ef52"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 102643,
+          "path": "results/run_20260329_230541/slot_metrics.png",
+          "sha256": "1280ae272118556001342581f6b9f974e90262c975bb73a295d9a097f6dc068e"
+        },
+        "git_status_before": "?? results/run_20260329_230541/slot_metrics.png",
+        "retained_identical_copy": {
+          "byte_count": 102643,
+          "path": "results/run_20260327_182615/slot_metrics.png",
+          "sha256": "1280ae272118556001342581f6b9f974e90262c975bb73a295d9a097f6dc068e"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 103387,
+          "path": "results/run_20260329_230541/switching_dynamics.png",
+          "sha256": "8c76d8be15e538a9b1406f20139cd31993768c691b7886b4dd0d006b71133096"
+        },
+        "git_status_before": "?? results/run_20260329_230541/switching_dynamics.png",
+        "retained_identical_copy": {
+          "byte_count": 103387,
+          "path": "results/run_20260327_182615/switching_dynamics.png",
+          "sha256": "8c76d8be15e538a9b1406f20139cd31993768c691b7886b4dd0d006b71133096"
+        }
+      },
+      {
+        "delete": {
+          "byte_count": 253926,
+          "path": "results/run_20260329_230541/topology_snapshots.png",
+          "sha256": "fc7022cc734e1ffa7bdb7abd6ec708cb6c289bcf044a4c15ec3950e2ac314378"
+        },
+        "git_status_before": "?? results/run_20260329_230541/topology_snapshots.png",
+        "retained_identical_copy": {
+          "byte_count": 253926,
+          "path": "results/run_20260327_182615/topology_snapshots.png",
+          "sha256": "fc7022cc734e1ffa7bdb7abd6ec708cb6c289bcf044a4c15ec3950e2ac314378"
+        }
+      }
+    ],
+    "modified": []
+  },
+  "created_asia_shanghai": "2026-10-10T11:40:09.941313+08:00",
+  "created_utc": "2026-10-10T03:40:09.941313+00:00",
+  "dynamic_baseline_old_assets_modified": false,
+  "expected_results_file_set_after": {
+    "file_count": 17147,
+    "path_set_sha256": "77af3db3bc20019d16c267b71cf8fd4d613cbe63c7f66d66601fc755e1b4744e"
+  },
+  "file_count": 27,
+  "outside_original_dynamic_baseline_scope": true,
+  "parent_revision": {
+    "byte_count": 5149,
+    "path": "research_versions/dynamic_k_v1/revisions/0001/record.json",
+    "sha256": "fdcfe6019967a442167e00206a11d957f92ec474491b4995411548bc6db11ea6"
+  },
+  "permitted_root": "D:\\Document\\leo_routing_attitude\\results",
+  "preserved_raw_results": [
+    {
+      "byte_count": 192479,
+      "path": "results/run_20260327_180406/result.json",
+      "sha256": "ce19339320a67d90085f2f505c52cd85085b0c52c5bd1ed8c703c5b1dbcc46f7"
+    },
+    {
+      "byte_count": 15443,
+      "path": "results/run_20260327_180406/slot_summary.csv",
+      "sha256": "e79b0efc4d07983e9def165cd3cbacb3b32a1accd4c7e2c911208e82426539f0"
+    },
+    {
+      "byte_count": 199606,
+      "path": "results/run_20260329_223214/result.json",
+      "sha256": "a9879fd1d086a659bd42e2fc922106d96fdbaecab205f39083badac0a5672f67"
+    },
+    {
+      "byte_count": 16239,
+      "path": "results/run_20260329_223214/slot_summary.csv",
+      "sha256": "ee6f175eb08d41fa303be688bfd7d931386ca0b9864d23d581f7bd333ab774d6"
+    },
+    {
+      "byte_count": 199633,
+      "path": "results/run_20260329_230541/result.json",
+      "sha256": "f05b7c348003026759ec054fa7bc5ea932c67f83d77d929d2798a0b1bd80f8eb"
+    },
+    {
+      "byte_count": 16233,
+      "path": "results/run_20260329_230541/slot_summary.csv",
+      "sha256": "90fc89a6dfc3a2b9dc8ae5b8db53136a35c07ece9c1e6378ae479dba9fa4417b"
+    }
+  ],
+  "project_root": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2",
+  "reference_check": {
+    "historical_audit_csv_references_to_run_result_json_preserved": true,
+    "qualified_paths_in_markdown_python_yaml_toml": 0
+  },
+  "repository_root": "D:\\Document\\leo_routing_attitude",
+  "results_file_set_before": {
+    "file_count": 17174,
+    "path_set_sha256": "23478243c7f1b0fbf87b95778e43380fca2262370bf6c21793476cdfb771e586"
+  },
+  "schema": "dynamic_k_external_results_cleanup_plan_v1",
+  "scientific_experiments_executed": false,
+  "status": "PREDELETE_RAW_HASH_CAPTURE_COMPLETE",
+  "version_record_sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+}

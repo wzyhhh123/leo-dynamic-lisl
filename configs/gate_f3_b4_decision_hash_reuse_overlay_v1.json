@@ -1,0 +1,24 @@
+{
+  "schema": "b4_decision_local_hash_reuse_v1",
+  "status": "PASS",
+  "scope": "DECISION_LOCAL_ROOT_AND_FORECAST_HASH_REUSE_ONLY",
+  "frozen_scientific_semantics_changed": false,
+  "registered_P1_executed": false,
+  "parent_code_hashes": {
+    "src/dynamic_lisl/rollout_evaluator.py": "db7e6c187ff834e209a8afe8bab47ec8319fb394739f82f5162da7766bd1db8d",
+    "src/dynamic_lisl/rollout_controller.py": "5d2b3d4170be148b5cbdf6808a57b9c9cbc105df487405bcef9904c292884e81"
+  },
+  "optimized_code_hashes": {
+    "src/dynamic_lisl/rollout_evaluator.py": "424e91dcf5e6e05cf0dfb9079ced72138e33dfd3581e218ee3b2c8d04b06dc71",
+    "src/dynamic_lisl/rollout_controller.py": "c36ddf408d3e703b90bb8438dc644cc8255f3f7507200d50fc3f9001e40f7faf"
+  },
+  "equivalence_evidence": {
+    "report": "outputs/b4_decision_hash_reuse_20261002T032756_501919Z/report.json",
+    "report_sha256": "88d40ae98a510b6c314b8b4e87415777d09b17cf8a73f7c60223b1c15c5106b4"
+  },
+  "final_pre_P1_runtime_equivalence_required": true,
+  "final_pre_P1_runtime_equivalence_executed": false,
+  "P2_started": false,
+  "RL_started": false,
+  "canonical_sha256": "f8307bbfe309156b7a57374ac8e3bb9b6aea41aa05ab980b16e87d5215f94cb0"
+}

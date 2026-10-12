@@ -1,0 +1,313 @@
+{
+  "schema": "F3_V2_CONSOLIDATED_HUMAN_REVIEW_DRAFT_V1",
+  "status": "DRAFT_NOT_FROZEN",
+  "frozen": false,
+  "approval_status": "HUMAN_DECISION_PENDING",
+  "existing_consolidated_question_pending": true,
+  "new_question_sent": false,
+  "formal_execution_authorized": false,
+  "full_natural_K0_execution_authorized": false,
+  "K_star_selection_authorized": false,
+  "source_policy_implemented": false,
+  "parent_files_sha256": {
+    "docs/F3_V2_CONSOLIDATED_APPROVAL_PACKET_CN.md": "afdb7e0a3596cee883724434291f027e4fb7269c0abde21184b0811ae31e1b55",
+    "docs/F3_V2_HUMAN_FREEZE_CHECKLIST_CN.md": "613be91a1e4676e1d68f8f585bf4bd593b732969799e91e32a6aa49b20cedb5d",
+    "docs/F3_V2_SEARCH_POLICY_APPROVAL_DRAFT_CN.md": "3621e8e496d4992599cd1bbd10b4df6f180028abb1c0eaad7fbba806472b64f8",
+    "configs/f3_v2_search_policy_human_review_DRAFT.json": "957c8624f97268830c523621414ec3912ecce0d35808af8e43b0090b0d6e9763",
+    "configs/gate_k0_contract_v1_1_DRAFT.json": "34f98bcff5deddd323e831c5e7353255d434b7401d08cb651084e9b7130e35a7",
+    "configs/gate_f3_v2_joint_action_contract_DRAFT.json": "66f25876803e0d4a0bb911824d2b6fa164108080062d4e45d17bbf0b0a542eb5",
+    "configs/gate_f3_v2_execution_contract_DRAFT.json": "8c52ffa808d2b310c32a7626ec4d60eb4a07cfcd7a7e7cf1d6f41b683808cf9b",
+    "outputs/f3_v2_natural_input_audit_20261008T190116_616972Z/report.json": "ce7f1ec0f5d8dca30ea9b131b7e1c388ac4dcc2b0b2db16e6e8e7b46ab20de10",
+    "outputs/f3_v2_occupied_cost_probe_20261008T193613_387045Z/report.json": "b0087d2ec4b47bb815734d91f4a068247ae88ed74af4892329c0f32a63124448",
+    "outputs/f3_v2_k0_work_count_diagnostic_20261008T191943_532953Z/report.json": "00f94c7d877ef8d71fa5b9db47c98beafe394e87941c1794390c2264631dd885",
+    "outputs/f3_v2_engineering_check_20261008T190136_458031Z/report.json": "a862b138a017be59fde9908b1a23d3b72bc6f908f1f4e17f0abe74075af0a5ac",
+    "outputs/f3_v2_engineering_check_20261008T190136_458031Z/input_code_hashes.json": "de9cfb9c19d3871eb9efdd5a99b6c347cd61089c5ca1af2e3da4613463e98483",
+    "outputs/f3_v2_search_policy_final_review_20261008T192552_726496Z/report.json": "6d2cf3883eba0676fb7c5ea4bedcd43b6eaea02fb72cf08eabe0bc0b746f25cf",
+    "docs/F3_V2_OCCUPIED_STRUCTURAL_COST_PREFIX_CN.md": "9052d1833a2554a4a27fc267f0b957fa289a5960437274a3d6ccd8058c8116e0",
+    "docs/F3_V2_K0_UNCAPPED_COST_RISK_CN.md": "7a25be2dcc767b3370edb22831d1db86d45342f3bb1a6694677674344ac9efcb",
+    "docs/F3_V2_OCTOBER_CRITICAL_PATH.md": "02d3bc23f92c8d0c8e9145255dbff3a23ca3c6fef430329512d4058a93146575",
+    "configs/F3_V2_PAPER_EXPERIMENT_MATRIX_DRAFT.json": "a727884c1d402ed06874bb431b7d9cc2633618d764f92f1f6944352a8e26a6ea",
+    "configs/F3_V2_RUNTIME_BUDGET_PLAN.json": "be10649974e9ecc6e029eddff47271e971b09e82816d68c493f807a03b7e4928",
+    "configs/F3_V2_OCTOBER_DELIVERABLES.json": "7fada924cf3eec38b2194fd2bf71aaee9fff250b37b823f97ba422caf3679387"
+  },
+  "decisions": [
+    {
+      "id": "HF_SCIENCE",
+      "status": "PENDING",
+      "proposed": {
+        "scale": 160,
+        "decision_cadence_s": 5,
+        "max_batch_replace": 4,
+        "action_kinds": [
+          "HOLD",
+          "BATCH_REPLACE"
+        ],
+        "safety": "STRICT_CONNECTED_WHOLE_TRANSITION",
+        "K4_comparison_safety": "SAME_STRICT_CONNECTED",
+        "fixed_nominal_K": true,
+        "B3_eta_aggregation": "min",
+        "rollout_horizon_s": 10,
+        "effective_horizon": "min(10,600-t)",
+        "forecast": "CURRENT_RATE_PERSISTENCE",
+        "recursive_control": false,
+        "current_production_acceptance_complete": false
+      },
+      "alternatives": "Explicit scientific revision before implementation of different scoring/forecast; no silent changes."
+    },
+    {
+      "id": "HF_K",
+      "status": "PENDING",
+      "proposed": {
+        "K_candidates": [
+          4,
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          64,
+          80,
+          96,
+          120,
+          160
+        ],
+        "snapshot_times_s": [
+          0,
+          30,
+          60,
+          90,
+          120,
+          150,
+          180,
+          210,
+          240,
+          270,
+          300,
+          330,
+          360,
+          390,
+          420,
+          450,
+          480,
+          510,
+          540,
+          570
+        ],
+        "primary_band": [
+          0.15,
+          0.5
+        ],
+        "admissibility": {
+          "capacity_snapshots": 20,
+          "all_planes_snapshots": 20,
+          "connected_and_bridges_lt_edges_snapshots": 18,
+          "replace_ge_16_snapshots": 18,
+          "MBB_ge_8_and_BBM_ge_8_snapshots": 18,
+          "median_MBB_fraction_band": [
+            0.1,
+            0.9
+          ],
+          "full_audit_replays": 2,
+          "snapshot_denominator": 20,
+          "median_MBB_sample_count": 20
+        },
+        "selection_rule": "min_admissible_K",
+        "lifetime_contract": {
+          "metric": "L_usable_within_horizon",
+          "formula": "max(0, min(t_physical_end, 600) - t_ready)",
+          "right_censored_branch": "t_physical_end unknown; substitute observation cap 600 only in bounded metric; retain RIGHT_CENSORED_AT_600",
+          "ready_source": "actual Gate B/C trial of concrete terminal pair and current physical state",
+          "legality": "unchanged half-open window, strict ready<end and frozen epsilon",
+          "applies_only_to_K0_structural_audit": true,
+          "Gate_C_data_and_B4_horizon_unchanged": true
+        },
+        "snapshot_initialization": "INDEPENDENT_PREESTABLISHED_AT_SNAPSHOT_WITH_FORWARD_GATE_C_CERTIFICATE",
+        "batch_compatibility_role": "DIAGNOSTIC_NOT_K_HARD_GATE"
+      },
+      "alternatives": "Trajectory-inherited state is a different audit question requiring its own contract.",
+      "complete_audit_not_authorized_by_approval_packet": true,
+      "runtime_scout_cap_not_applicable": true
+    },
+    {
+      "id": "HF_SEARCH",
+      "status": "PENDING",
+      "proposed": {
+        "policy_id": "RR_STRUCTURAL_SCOUT256_RAW64_SINGLE16_SEED4_V1",
+        "policy_bytes_sha256": "957c8624f97268830c523621414ec3912ecce0d35808af8e43b0090b0d6e9763",
+        "policy_canonical_sha256": "0e02e1fbb5a11ca5d86df2844f94dbf8dc0eb555627104d4d1710f3d13ceb9fb",
+        "normative_rule_document": {
+          "path": "docs/F3_V2_SEARCH_POLICY_APPROVAL_DRAFT_CN.md",
+          "sha256": "3621e8e496d4992599cd1bbd10b4df6f180028abb1c0eaad7fbba806472b64f8"
+        },
+        "scout_visits": 256,
+        "source_singleton_physical_validation_cap": 256,
+        "raw_output_caps": {
+          "BBM": 32,
+          "MBB": 32,
+          "total": 64
+        },
+        "singleton_cap": 16,
+        "per_stratum_slots": 8,
+        "beam_width": 4,
+        "max_non_hold_pool": 32,
+        "shared_joint_expansion_cap": 184,
+        "shared_joint_validation_cap": 184,
+        "rollout_cap": 33,
+        "batch1_rollout_cap": 17,
+        "structural_seeds_share_budget": true
+      },
+      "alternatives": {
+        "scout_visits": [
+          128,
+          256,
+          512
+        ],
+        "policy": "Prior canonical truncation retained as reference with disclosed degeneration."
+      },
+      "scientific_input_policy_change": true,
+      "semantic_preserving_runtime_optimization_claim": false
+    },
+    {
+      "id": "HF_B2",
+      "status": "PENDING",
+      "proposed": {
+        "per_binding_clock": "LINK_UP_ELAPSED_SECONDS",
+        "initial_age_s": 0,
+        "minimum_hold_grid_s": [
+          4,
+          8
+        ],
+        "hysteresis_threshold": 0
+      },
+      "alternatives": "Explicit pre-result revision; no additional algorithm or performance-based choice."
+    },
+    {
+      "id": "HF_MATRIX",
+      "status": "PENDING",
+      "proposed": {
+        "matrix_path": "configs/F3_V2_PAPER_EXPERIMENT_MATRIX_DRAFT.json",
+        "draft_canonical_sha256": "99961f72a8812f6b846dd7545c454ade76cc07c94875e5f603afaddc91d5ae60",
+        "run_count": 42,
+        "run_ids": [
+          "OCT26-CORE-01",
+          "OCT26-CORE-02",
+          "OCT26-CORE-03",
+          "OCT26-CORE-04",
+          "OCT26-CORE-05",
+          "OCT26-CORE-06",
+          "OCT26-CORE-07",
+          "OCT26-CORE-08",
+          "OCT26-CORE-09",
+          "OCT26-CORE-10",
+          "OCT26-CORE-11",
+          "OCT26-CORE-12",
+          "OCT26-STABLE-01",
+          "OCT26-STABLE-02",
+          "OCT26-STABLE-03",
+          "OCT26-STABLE-04",
+          "OCT26-SPARSE-01",
+          "OCT26-SPARSE-02",
+          "OCT26-SPARSE-03",
+          "OCT26-SPARSE-04",
+          "OCT26-SPARSE-05",
+          "OCT26-SPARSE-06",
+          "OCT26-SPARSE-07",
+          "OCT26-SPARSE-08",
+          "OCT26-FACTORIAL-01",
+          "OCT26-FACTORIAL-02",
+          "OCT26-FACTORIAL-03",
+          "OCT26-FACTORIAL-04",
+          "OCT26-FACTORIAL-05",
+          "OCT26-FACTORIAL-06",
+          "OCT26-HOLD-01",
+          "OCT26-HOLD-02",
+          "OCT26-HOLD-03",
+          "OCT26-HOLD-04",
+          "OCT26-HOLD-05",
+          "OCT26-HOLD-06",
+          "OCT26-ROUTER-01",
+          "OCT26-ROUTER-02",
+          "OCT26-ROUTER-03",
+          "OCT26-ROUTER-04",
+          "OCT26-ROUTER-05",
+          "OCT26-ROUTER-06"
+        ],
+        "original_order_unchanged": true,
+        "analysis": "REGISTERED_PAIRED_CONTRASTS_ONLY_NO_TRUNCATED_J_RANKING"
+      },
+      "alternatives": "Any scope reduction requires human revision before formal results."
+    },
+    {
+      "id": "HF_RESOURCE",
+      "status": "PENDING",
+      "proposed": {
+        "B4_concurrent_episodes": 1,
+        "production_workers": 8,
+        "available_hours_per_day": 20,
+        "formal_days": 6,
+        "reserve_fraction": 0.2,
+        "net_hours": 96,
+        "B4_hours": 72,
+        "other_controller_hours": 24
+      },
+      "cost_approval_status": "MISSING_FINAL_K_STAR_POLICY_EPISODE_MATRIX_MEASUREMENTS",
+      "approved_wall_timeout_s": null,
+      "estimated_matrix_wall_s": null,
+      "alternatives": "Resource/time/noncore-scope revision only after measured shortfall; no correctness weakening."
+    }
+  ],
+  "authorization_stages": [
+    {
+      "stage": "SCIENCE_FREEZE",
+      "status": "PENDING",
+      "allows": "Implement and test the explicitly selected new scientific input policy; not formal performance."
+    },
+    {
+      "stage": "FULL_NATURAL_K0",
+      "status": "PENDING",
+      "requires": [
+        "FROZEN structural contract",
+        "detached human authorization",
+        "approved cost/solver bounds",
+        "original complete domain"
+      ],
+      "K_star_automatic": false
+    },
+    {
+      "stage": "CURRENT_FINAL_ACCEPTANCE",
+      "status": "INCOMPLETE",
+      "requires": [
+        "K0/K1",
+        "production full-pool multi-epoch serial8",
+        "tiny oracle",
+        "full regression",
+        "actual runtime bounds"
+      ]
+    },
+    {
+      "stage": "FORMAL_PERFORMANCE",
+      "status": "NOT_AUTHORIZED",
+      "requires": [
+        "Frozen manifest",
+        "complete preflight",
+        "detached human manifest hash and original run-ID authorization"
+      ]
+    }
+  ],
+  "current_evidence_scope": {
+    "natural_input_provenance": "PASS_STATIC_77_CHECKS",
+    "current_regression": {
+      "focused": 194,
+      "full": 523,
+      "new_regression_executed_by_packet": false
+    },
+    "occupied_prefix_cost_calls": 192,
+    "full_K0_runtime_estimate_s": null,
+    "current_natural_B4_stack_exact_equivalence": false,
+    "K_star_selected": false
+  },
+  "deadline_risk": "HIGH_NO_VERIFIABLE_FINAL_EPISODE_OR_MATRIX_COST",
+  "goal_complete": false,
+  "draft_canonical_sha256": "ab94bde775d39d968f2fbf2f3769aaf7026725c026d2a4443e192dc189d63187"
+}

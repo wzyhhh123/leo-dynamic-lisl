@@ -1,0 +1,210 @@
+{
+  "N1b_implemented": false,
+  "N2_implemented": false,
+  "algorithm_selection": null,
+  "authorization": {
+    "actor": "human_user",
+    "request": "继续 dynamic_k_v1，授权执行 Stage N1a — Fixed-Horizon Four-State LCT Energy Accounting。先验证独立起点和指定修订0003哈希；实现320终端真实事件积分、统一固定T及指标，执行解析测试、适用历史回归和完整版本验证。正式科学参数保持null，不实现N1b/N2/MADRL，不开展主性能实验；连续新增修订，完成后停止等待授权。",
+    "scope": "N1a_FIXED_HORIZON_FOUR_STATE_ENERGY_ENGINEERING_ONLY",
+    "source": "current_conversation_user_request"
+  },
+  "bindings": {
+    "baseline_seal": {
+      "byte_count": 656,
+      "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+      "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+    },
+    "chinese_report": {
+      "byte_count": 8516,
+      "path": "research_versions/dynamic_k_v1/acceptance/0004/RESULT_CN.md",
+      "sha256": "09a030f67caa94db8e2ea8e92ff851a0aa930fe5c26b46544fd434ba3705a4cc"
+    },
+    "configuration": {
+      "byte_count": 6252,
+      "path": "research_versions/dynamic_k_v1/configs/research_v1_DRAFT.json",
+      "sha256": "04eabd77ddb4db235dc30c7d66f45a0d3dcd78eab174825e3c42903a81f87d2a"
+    },
+    "contract": {
+      "byte_count": 9599,
+      "path": "research_versions/dynamic_k_v1/contracts/research_contract_v1_DRAFT_CN.md",
+      "sha256": "f8f3e05bd81b144d4ac66cf74c307f174fd1a7a591099c76fd673ed71c2c2f32"
+    },
+    "implementation_manifest": {
+      "byte_count": 19043,
+      "path": "research_versions/dynamic_k_v1/acceptance/0004/implementation_manifest.json",
+      "sha256": "227043a6bcf318846bbc2e854130613b49082ef6a7e17f3913160f24f40456ad"
+    },
+    "n1a_acceptance": {
+      "byte_count": 4550,
+      "path": "research_versions/dynamic_k_v1/acceptance/0004/n1a_test_report.json",
+      "sha256": "3153aedd4b48e494adbdc1ff33a9e72f18ad9a42d251e6cd7e78b39b35420c8d"
+    },
+    "preseal_old_asset_audit": {
+      "byte_count": 5991,
+      "path": "research_versions/dynamic_k_v1/acceptance/0004/preseal_change_audit.json",
+      "sha256": "d9bd5f2e1a054246fd08810dd1002ca4a7657bee565c1ec656c7fbcbb021f56b"
+    }
+  },
+  "changes": {
+    "added": [
+      {
+        "byte_count": 8516,
+        "path": "research_versions/dynamic_k_v1/acceptance/0004/RESULT_CN.md",
+        "sha256": "09a030f67caa94db8e2ea8e92ff851a0aa930fe5c26b46544fd434ba3705a4cc"
+      },
+      {
+        "byte_count": 5563,
+        "path": "research_versions/dynamic_k_v1/acceptance/0004/before/configuration_before.json",
+        "sha256": "71ab1ddfb38cbd9d2804c01a67c131a2e937fc2290293170922d0ef60b7c5742"
+      },
+      {
+        "byte_count": 8127,
+        "path": "research_versions/dynamic_k_v1/acceptance/0004/before/contract_before.md",
+        "sha256": "2dc51c9f844ef28f6a2dede0e1ce253c89bbf2fdd4bb845c57e18907af0a52f5"
+      },
+      {
+        "byte_count": 458337,
+        "path": "research_versions/dynamic_k_v1/acceptance/0004/engineering_examples.json",
+        "sha256": "8e2b3f179796dde22538c4e81ae89970816ae4535621cdfa36ece5a8bfde3385"
+      },
+      {
+        "byte_count": 7067,
+        "path": "research_versions/dynamic_k_v1/acceptance/0004/finalize_revision.py",
+        "sha256": "54343d2ab237c5e3f79099bff87f5206e6e58b51bfb57df9108e9de04828aeb6"
+      },
+      {
+        "byte_count": 19043,
+        "path": "research_versions/dynamic_k_v1/acceptance/0004/implementation_manifest.json",
+        "sha256": "227043a6bcf318846bbc2e854130613b49082ef6a7e17f3913160f24f40456ad"
+      },
+      {
+        "byte_count": 4550,
+        "path": "research_versions/dynamic_k_v1/acceptance/0004/n1a_test_report.json",
+        "sha256": "3153aedd4b48e494adbdc1ff33a9e72f18ad9a42d251e6cd7e78b39b35420c8d"
+      },
+      {
+        "byte_count": 690,
+        "path": "research_versions/dynamic_k_v1/acceptance/0004/pre_implementation_verification.json",
+        "sha256": "c6f4e7c09354f24db98662c674f7e06076bfb35db689ff7c4d7bb125eaf3db4d"
+      },
+      {
+        "byte_count": 8889,
+        "path": "research_versions/dynamic_k_v1/acceptance/0004/prepare_candidate.py",
+        "sha256": "2586dd4d284b9cc04159f5de26f0f872b96be45924ba8e768fbc50dc2672bcf1"
+      },
+      {
+        "byte_count": 5991,
+        "path": "research_versions/dynamic_k_v1/acceptance/0004/preseal_change_audit.json",
+        "sha256": "d9bd5f2e1a054246fd08810dd1002ca4a7657bee565c1ec656c7fbcbb021f56b"
+      },
+      {
+        "byte_count": 11804,
+        "path": "research_versions/dynamic_k_v1/acceptance/0004/regression_after.json",
+        "sha256": "e7fab6927058800ae2cd3c17cc1bae14ddefa310f9fd568d17034afb2e2554f3"
+      },
+      {
+        "byte_count": 11804,
+        "path": "research_versions/dynamic_k_v1/acceptance/0004/regression_before.json",
+        "sha256": "0f9d2c9bb2f9b7f55ca56d4fada9dfdde35629c4a66c77d5ea0c611d40fdb42e"
+      },
+      {
+        "byte_count": 813,
+        "path": "research_versions/dynamic_k_v1/acceptance/0004/regression_comparison.json",
+        "sha256": "e5f9aa3292e7efd9026af9ea1916f8c7728e73f6d01336c7dc649ddd7d176226"
+      },
+      {
+        "byte_count": 2744,
+        "path": "research_versions/dynamic_k_v1/acceptance/0004/run_n1a_acceptance.py",
+        "sha256": "e509db002f8751dc294b3e5f9a28f65b5747de381bf1e3e28638ba852369a260"
+      },
+      {
+        "byte_count": 1562,
+        "path": "research_versions/dynamic_k_v1/acceptance/0004/run_regression.py",
+        "sha256": "2a66d6c4477fe93f4ff156755e5182dc5fa93de9ac8329f3fdc1228be2a587f1"
+      },
+      {
+        "byte_count": 659,
+        "path": "research_versions/dynamic_k_v1/acceptance/0004/version_protection_tests.json",
+        "sha256": "b2e45ac1071eb16f7d1199d6af9bbc98fddc38fb53dee7b65bdf506ce7204c6b"
+      },
+      {
+        "byte_count": 3283,
+        "path": "research_versions/dynamic_k_v1/runtime/README_CN.md",
+        "sha256": "1cfa98eafe9e0b8bd76d3ca1391c9d8285232b98656ea0ed5436f3d22d59c21c"
+      },
+      {
+        "byte_count": 74,
+        "path": "research_versions/dynamic_k_v1/runtime/__init__.py",
+        "sha256": "0b3fe3c9413a7b69e3571423d2e97aa9c41569db15c225d19f9e034909bb8260"
+      },
+      {
+        "byte_count": 3114,
+        "path": "research_versions/dynamic_k_v1/runtime/bindings.py",
+        "sha256": "f6b13808ae4273f1bfb48c21865f74bf6b1ad1cb5a0061bc338c74925f750d2c"
+      },
+      {
+        "byte_count": 17730,
+        "path": "research_versions/dynamic_k_v1/runtime/n1a.py",
+        "sha256": "06287787a8cf7045e7e810a46e0c45781635fad98e02dcba3ef5d90c48d5456f"
+      },
+      {
+        "byte_count": 10312,
+        "path": "research_versions/dynamic_k_v1/schemas/n1a_engineering_result_v1.schema.json",
+        "sha256": "1774eea613b24b59115017ec7d004409612ce7b8c1164b32bca4f9997675b6c0"
+      },
+      {
+        "byte_count": 16126,
+        "path": "research_versions/dynamic_k_v1/tests/test_n1a.py",
+        "sha256": "5ec2cc4f92761ebf945fac49a831224487f6cac356cf8fe013214af6e6093858"
+      }
+    ],
+    "deleted": [],
+    "modified": [
+      {
+        "after": {
+          "byte_count": 6252,
+          "sha256": "04eabd77ddb4db235dc30c7d66f45a0d3dcd78eab174825e3c42903a81f87d2a"
+        },
+        "before": {
+          "byte_count": 5563,
+          "sha256": "71ab1ddfb38cbd9d2804c01a67c131a2e937fc2290293170922d0ef60b7c5742"
+        },
+        "path": "research_versions/dynamic_k_v1/configs/research_v1_DRAFT.json"
+      },
+      {
+        "after": {
+          "byte_count": 9599,
+          "sha256": "f8f3e05bd81b144d4ac66cf74c307f174fd1a7a591099c76fd673ed71c2c2f32"
+        },
+        "before": {
+          "byte_count": 8127,
+          "sha256": "2dc51c9f844ef28f6a2dede0e1ce253c89bbf2fdd4bb845c57e18907af0a52f5"
+        },
+        "path": "research_versions/dynamic_k_v1/contracts/research_contract_v1_DRAFT_CN.md"
+      }
+    ]
+  },
+  "created_beijing": "2026-10-10T12:34:21.408371+08:00",
+  "created_utc": "2026-10-10T04:34:21.408371+00:00",
+  "engineering_acceptance": {
+    "N1a": "PASS",
+    "historical_existing_failures": 1,
+    "historical_regressions": 97,
+    "introduced_regressions": 0,
+    "new_tests": 25,
+    "version_protection_tests": 22
+  },
+  "formal_experiments_executed": false,
+  "old_assets_modified": false,
+  "parent_record": {
+    "byte_count": 5889,
+    "path": "research_versions/dynamic_k_v1/revisions/0003/record.json",
+    "sha256": "7c9fa913a72ab740dfff233513c766ded57326fad2906c259d8ba56a3998baeb"
+  },
+  "production_code_modified": false,
+  "reason": "N1a：独立固定时域推进、四能耗态/五执行态终端事件积分与工程验收；不修改历史生产代码。",
+  "revision_id": "0004",
+  "schema": "dynamic_k_revision_record_v1",
+  "scientific_gate_pass": false,
+  "version_id": "dynamic_k_v1"
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "dynamic_k_n1b_fifo_semantics_v1",
+  "version_id": "dynamic_k_v1",
+  "status": "HUMAN_AUTHORIZED_SEMANTICS_NOT_ENGINEERING_ACCEPTED",
+  "scope": "N1B_ONLY_ENGINEERING_TESTS",
+  "queue_discipline": "NODE_LOCAL_PER_COMMODITY_FIFO",
+  "fifo_order_key": "LOCAL_QUEUE_ARRIVAL_TIME",
+  "original_injection_time_preserved": true,
+  "simultaneous_arrival_rule": "PROPORTIONAL_BY_ARRIVAL_BITS",
+  "continuous_cohort_rule": "PIECEWISE_ORIGINAL_TIME_MAP_NO_MIDPOINT_APPROXIMATION",
+  "cross_commodity_scheduler": "UNCHANGED_EQUAL_WEIGHT_MAX_MIN",
+  "unknown_age_or_unattributable_closure": "STOP_WITH_EVIDENCE",
+  "no_delivery_mean_delay": null,
+  "formal_experiments_authorized": false,
+  "scientific_parameters": {"T_A_s": null, "T_s": null, "tau_res_s": null, "R_min": null, "alpha": null, "D_ref_s": null, "E_ref_J": null},
+  "algorithm_selection": null,
+  "production_kernel_modification_authorized": false,
+  "N2_authorized": false
+}

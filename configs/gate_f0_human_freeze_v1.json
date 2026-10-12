@@ -1,0 +1,309 @@
+{
+  "additive_metric_requirement_before_f1_validation": {
+    "controller_implementation_authorized_by_overlay": false,
+    "forced_outage_duration_role": "diagnostic_only",
+    "required": [
+      "transition_period_outage_s",
+      "transition_period_no_route_by_commodity_s",
+      "post_expiry_no_route_s",
+      "post_expiry_no_route_by_commodity_s"
+    ]
+  },
+  "candidate_proposal": {
+    "B0_candidate_budget_not_used_by_design": true,
+    "B5_tiny_fixture_exact_oracle_exempt_from_k": true,
+    "budget_is_preregistered_not_performance_tuned": true,
+    "candidate_top_k": 16,
+    "forbidden_inputs": [
+      "J",
+      "delta_J",
+      "future_realized_traffic",
+      "reversal_status",
+      "controller_identity",
+      "downstream_performance"
+    ],
+    "hard_pruning": [
+      "gate_c_bilateral_illegal",
+      "setup_cannot_finish_before_terminal_pair_window_end",
+      "terminal_or_reservation_conflict",
+      "target_binding_already_invalid",
+      "exact_physical_noop_or_identical_binding",
+      "violates_regime_frozen_connectivity_safety_policy"
+    ],
+    "main_scale_exhaustive_candidate_evaluation_forbidden": true,
+    "quota_spillover": "Keep every candidate in a stratum with fewer than 8, then deterministically give unused slots to the other stratum; total at most 16.",
+    "ranking_uses_queue_load_or_value": false,
+    "shared_proposal_set_controllers": [
+      "B1",
+      "B2",
+      "B3",
+      "B4"
+    ],
+    "structural_strata": {
+      "BBM_REQUIRED": 8,
+      "MBB_STRUCTURALLY_FEASIBLE": 8
+    },
+    "within_stratum_ranking": [
+      "usable_lifetime_s_descending",
+      "plane_gap_ascending",
+      "old_edge_lexicographic",
+      "old_terminal_ids_lexicographic",
+      "new_edge_lexicographic",
+      "new_terminal_ids_lexicographic",
+      "proposal_id_lexicographic"
+    ]
+  },
+  "canonical_sha256": "c4dbd526b1d21a1f0462a49a5a4b59fa54122f72313b1dbe1115c8608b65256b",
+  "connectivity_safety": {
+    "Z_MODERATE": {
+      "automatic_mbb_conversion_forbidden": true,
+      "must_hold_for_entire_controller_initiated_transition": true,
+      "policy": "STRICT_CONNECTED",
+      "profiled_graph": "G_admit",
+      "safety_is_reject_only": true,
+      "second_best_action_substitution_forbidden": true,
+      "terminal_substitution_forbidden": true
+    },
+    "Z_SPARSE_REFERENCE": {
+      "T_max_transition_outage_s": 2.0,
+      "applies_only_to_controller_initiated_transition_period": true,
+      "equality_is_accepted": true,
+      "fixture_interpretation": "aligned with 2 s simplified setup; not commercial hardware guarantee",
+      "policy": "BOUNDED_TRANSITION_OUTAGE",
+      "post_expiry_must_enter_rollout_objective_and_reporting": true,
+      "post_expiry_no_route_in_transition_budget": false
+    }
+  },
+  "decision_epoch": {
+    "between_epoch_controller_waits_until_next_periodic_epoch": true,
+    "between_epoch_graph_routing_service_update_immediately": true,
+    "between_epoch_physical_events_apply_immediately": true,
+    "decision_cadence_s": 2.0,
+    "epoch_formula": "t_k=t_0+2k_s",
+    "link_down_immediate_decision": false,
+    "link_up_immediate_decision": false,
+    "microstep_order": [
+      "committed_propagation_events",
+      "gate_b_terminal_events",
+      "controller_observes_right_continuous_current_state",
+      "one_action",
+      "gate_c_safety_gate_b",
+      "graph",
+      "router",
+      "service"
+    ],
+    "minimum_controller_reaction_interval_s": 2.0,
+    "natural_expiry_immediate_decision": false,
+    "periodic_decision_enabled": true,
+    "setup_target_cancel_or_rewrite_allowed": false,
+    "simultaneous_periodic_event_policy": "single_periodic_epoch_after_existing_physical_events_settle",
+    "topology_event_immediate_decision": false
+  },
+  "explicit_non_decisions": {
+    "B2_may_be_parameterized_in_f1": true,
+    "B2_performance_based_parameter_selection_allowed": false,
+    "items": [
+      "B2_minimum_hold_grid",
+      "B2_improvement_threshold_grid",
+      "F3_controller_evaluation_cross_product",
+      "mixed_complete_censored_controller_ranking",
+      "stochastic_seed_policy"
+    ],
+    "status": "REQUIRES_HUMAN_FREEZE_BEFORE_F3"
+  },
+  "forbidden": [
+    "implement_B0",
+    "implement_B1",
+    "implement_B2",
+    "implement_B3",
+    "implement_B4_MPC",
+    "implement_B5_oracle",
+    "implement_matching_controller",
+    "implement_RL_PPO",
+    "run_controller_comparison",
+    "run_J_based_tuning",
+    "tune_K",
+    "tune_horizon",
+    "tune_topology_density",
+    "fallback_to_another_Z_MODERATE_design",
+    "modify_E0_E1_E2_manifests",
+    "modify_parent_F0_contract"
+  ],
+  "forecast": {
+    "development_horizon_not_claimed_optimal": true,
+    "forecast_class": "SHORT_HORIZON_FORECAST",
+    "forecast_horizon_s": 10.0,
+    "forecast_update_period_s": 2.0,
+    "formula": "lambda_hat_f(t+tau)=lambda_f(t),0<=tau<=10s",
+    "geometry_is_not_traffic_oracle": true,
+    "horizon_change_before_performance_forbidden": true,
+    "may_read_unrealized_immutable_trace_segments": false,
+    "predictable_geometry_allowed": [
+      "SGP4_Gate_C_deterministic_geometry",
+      "current_known_terminal_pair_windows",
+      "natural_expiry",
+      "Gate_B_deterministic_transition_dynamics"
+    ],
+    "shared_across_short_horizon_controllers": true,
+    "traffic_forecast": "CURRENT_RATE_PERSISTENCE"
+  },
+  "immutable_overlay": true,
+  "overlay_status": "FROZEN",
+  "parent": {
+    "baseline_registry": "configs/gate_f0_baseline_registry.json",
+    "contract": "configs/gate_f0_controller_contract.json",
+    "human_decisions": "docs/GATE_F0_HUMAN_DECISIONS_REQUIRED_CN.md",
+    "parent_baseline_registry_sha256": "7152b90b13c9c18cecdfe969a3908ce8c78b9364e69066bddbc508c09ea9a10b",
+    "parent_contract_sha256": "689212fa5f0b08f5e1e50adf952b478ffc91e3131d0d8fe6acfcd9cd27f0e68c",
+    "parent_f0_status": "PASS_WITH_HUMAN_FREEZE_ITEMS",
+    "parent_human_decisions_sha256": "3354ea1607d42cc1fd676353668603defba9dc9cb5b133e58e2637f0215ab95c",
+    "parent_is_not_rewritten": true
+  },
+  "readiness": {
+    "gate_f1_readiness": "READY",
+    "gate_f1_started": false,
+    "gate_f2_started": false,
+    "gate_f3_started": false,
+    "rl_started": false
+  },
+  "resolved_f1_blockers": {
+    "all_resolved": true,
+    "flag": "F1_BLOCKING_HUMAN_ITEMS_1_TO_5_RESOLVED",
+    "items": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "schema": "gate_f0_human_freeze_v1",
+  "z_moderate": {
+    "asset": "configs/z_moderate_v1.json",
+    "asset_canonical_sha256": "442dc666bc745da6b9fa6316cda450587f4d5da3cf64208318e2d2a15cf9f24e",
+    "asset_file_sha256": "a28f54be05c5dbae07d0654b507209dad499ff853f9558cdd7da50f28d56c0d9",
+    "construction_epoch_s": 0.0,
+    "construction_status": "CONSTRUCTED",
+    "fallback_design_allowed": false,
+    "infeasible_status": "Z_MODERATE_CONSTRUCTION_INFEASIBLE_AT_REGISTERED_EPOCH",
+    "minimum_added_bindings": 1,
+    "result_blind": true,
+    "selected_addition": {
+      "a": [
+        "X0_1",
+        "D2"
+      ],
+      "b": [
+        "X3_1",
+        "D1"
+      ],
+      "gate_c_legal": true,
+      "new_edge": [
+        "X0_1",
+        "X3_1"
+      ],
+      "new_terminal_ids": [
+        [
+          "X0_1",
+          "D2"
+        ],
+        [
+          "X3_1",
+          "D1"
+        ]
+      ],
+      "old_edge": [],
+      "old_terminal_ids": [],
+      "plane_bridge_deficit_reduction": 3,
+      "plane_edge": [
+        0,
+        3
+      ],
+      "plane_gap": 3,
+      "proposal_id": "ZM-14b7d1ceb8eac605",
+      "ready_time_s": 2.0,
+      "remaining_lifetime_s": 600.0,
+      "strict_connected_transition": true,
+      "terminal_conflict": false,
+      "transition_profile_classification": "no_partition",
+      "usable_lifetime_s": 598.0,
+      "window": {
+        "distance_km": 3715.2896083243054,
+        "end_s": 600.0,
+        "left_censored": true,
+        "parent_end_s": 600.0,
+        "parent_start_s": 0.0,
+        "plane_gap": 3,
+        "right_censored": true,
+        "sat_a": "X0_1",
+        "sat_b": "X3_1",
+        "start_s": 0.0,
+        "terminal_a": "D2",
+        "terminal_b": "D1"
+      }
+    },
+    "selected_design": "ZM_A_MINIMAL_PLANE_CYCLE_CLOSURE",
+    "structural_audit": {
+      "added_dynamic_link_count": 1,
+      "all_binding_gate_c_legality": true,
+      "dynamic_link_count": 4,
+      "nonbridge_dynamic_edge_count": 4,
+      "nonbridge_dynamic_edges": [
+        [
+          "X0_27",
+          "X1_27"
+        ],
+        [
+          "X1_11",
+          "X2_11"
+        ],
+        [
+          "X2_11",
+          "X3_11"
+        ],
+        [
+          "X0_1",
+          "X3_1"
+        ]
+      ],
+      "plane_bridge_count": 0,
+      "plane_bridges": [],
+      "plane_coverage": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "plane_graph_connected": true,
+      "plane_graph_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "planes": 4,
+      "satellite_bridge_count": 0,
+      "satellite_bridges": [],
+      "satellite_graph_connected": true,
+      "satellites": 160,
+      "strict_connected_transition_for_added_binding": true,
+      "terminal_conflict_count": 0,
+      "terminal_occupancy_fraction": 0.025,
+      "total_dynamic_terminals": 320,
+      "used_dynamic_terminals": 8
+    },
+    "traffic_agnostic": true
+  }
+}

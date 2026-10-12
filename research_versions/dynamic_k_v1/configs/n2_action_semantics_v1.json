@@ -1,0 +1,19 @@
+{
+  "schema": "dynamic_k_n2_action_semantics_v1",
+  "version_id": "dynamic_k_v1",
+  "scope": "N2_ATOMIC_ACTION_ENGINEERING_ONLY",
+  "actions": ["HOLD", "ADD", "DROP", "REPLACE"],
+  "partition_allowed": true,
+  "connectivity_rejection_policy": null,
+  "minimum_delivery_rate_hard_mask": null,
+  "fixed_K": null,
+  "Kmax": null,
+  "decision_period_s": null,
+  "maximum_concurrent_actions": null,
+  "search_budget": null,
+  "scientific_parameters": {"T_A_s": null, "T_s": null, "tau_res_s": null, "R_min": null, "alpha": null, "D_ref_s": null, "E_ref_J": null},
+  "algorithm_selection": null,
+  "formal_experiments_authorized": false,
+  "production_kernel_modification_authorized": false,
+  "N3_authorized": false
+}

@@ -1,0 +1,35 @@
+{
+  "P2_started": false,
+  "RL_started": false,
+  "canonical_sha256": "605220d3437a1580da9f87b68d71fbe607d9646c75a16e715281bed39bae73f4",
+  "classification": "ENGINEERING_ONLY_SEMANTIC_PRESERVING",
+  "equivalence_evidence": {
+    "deterministic_fixture_tests": 5,
+    "engineering_prefix_decision_epochs": 1,
+    "engineering_prefix_sim_end_s": 0.0,
+    "proposal_equivalence": true,
+    "report": "outputs/gate_f3_runtime_phase1_20260925T123855_238623Z/report.json",
+    "report_sha256": "2ed9002a893e295650b4717a589cdda4027c156e1bbb8b17425a944c4d1dfa4f"
+  },
+  "frozen_manifests_modified": false,
+  "frozen_scientific_semantics_changed": false,
+  "optimized_code_hashes": {
+    "src/dynamic_lisl/candidate_proposer.py": "b5d5fdc0e42f6f6646f3a88feaeaa16e22098b9c51cd8182c1f8d402c61d7b23",
+    "src/dynamic_lisl/terminal_executor.py": "80634fd278655ca6c50a758afe5344f025154879ac71ba5b7dc455a210782583",
+    "src/dynamic_lisl/transition_profiler.py": "e6a21afdfa1d339ed8eaac838ad9d3e49d7ab14d62651729c2da580b814c54bf",
+    "tests/test_gate_e1.py": "acd0c7effcc6abf5081328440e9830b6b34f54c2a830460b3236ea26b99e64e8",
+    "tests/test_pre_e2_absolute_time.py": "93ebb1d49266580bb4a619cf22f16e21a161e3b30018a732bd553b41a33a7e10"
+  },
+  "parent_code_hashes": {
+    "src/dynamic_lisl/candidate_proposer.py": "9bb609292fcbb273a17cc2009d62cee9c46a1a4a45ab305200b6b93b4aaf4b8a",
+    "src/dynamic_lisl/terminal_executor.py": "fa8a561d9ae935060a06d2c783f14f76c43e19800e7c1e361e63b18191330d01",
+    "src/dynamic_lisl/transition_profiler.py": "ff6fed4e56fa794e31d506f30264f6ec66abcd803c15a3b2c813d6b10f6e59ed",
+    "tests/test_gate_e1.py": "30624cf4b09485586e3d1387c00060192393e6217c6428abee1ad7fd2c71e11b",
+    "tests/test_pre_e2_absolute_time.py": "78fd0b72b3189aeeed26f798e8ba444c7d5a459d88bbb88291048b2f7aa3a2cb"
+  },
+  "registered_P1_executed": false,
+  "router_optimization_started": false,
+  "schema": "gate_f3_runtime_semantic_preserving_optimization_phase1_v1",
+  "scope": "PROPOSER_COUNTERFACTUAL_CLONE_DEEPCOPY_AND_EXACT_OVERLAY_GUARDS_ONLY",
+  "status": "PASS"
+}

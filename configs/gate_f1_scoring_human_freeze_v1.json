@@ -1,0 +1,132 @@
+{
+  "B1": {
+    "candidate_decision_setup_s": 0.0,
+    "candidate_value": "V_c = V(G_c_ideal,t)",
+    "hold_value": "V_H = V(G_current,t)",
+    "real_replace_execution": "REAL_GATE_B_C_SETUP",
+    "scalar_score_resolved": true,
+    "selection": "argmin over HOLD and all candidates",
+    "zero_setup_scope": "DECISION_EVALUATION_ONLY"
+  },
+  "B2": {
+    "base_signal_formula": "V_H - V_c",
+    "base_signal_resolved": true,
+    "base_signal_symbol": "DeltaV_c",
+    "hysteresis_grid_frozen_here": false,
+    "minimum_hold_grid_frozen_here": false
+  },
+  "B3": {
+    "economic_reject_rule": "DeltaV_c <= 0",
+    "lifetime_fraction_formula": "L_usable,c / L_remaining,c",
+    "lifetime_fraction_symbol": "eta_c",
+    "scalar_score_resolved": true,
+    "score_formula": "DeltaV_c * eta_c",
+    "score_symbol": "S_c",
+    "selection": "candidate with maximum positive S_c; otherwise HOLD"
+  },
+  "canonical_sha256": "afb031e5da8e988aadd081c83b2d2910a01bf87226c07f2938d2e6d541ca3955",
+  "common_router_rule": {
+    "packet_next_hop_is_not_a_controller_action": true,
+    "rule": "For every candidate topology G, recompute paths with the currently selected frozen common router.",
+    "same_router_for_hold_and_all_candidates": true
+  },
+  "definitions": {
+    "active_commodities": {
+      "formula": "{f : sum_i Q_i^f(t) > 0 or lambda_f(t) > 0}",
+      "symbol": "F_active(t)"
+    },
+    "active_route_count": {
+      "formula": "number of f in F_active(t) whose recomputed route P_f(G,t) uses directed edge e",
+      "symbol": "n_e(G,t)"
+    },
+    "equal_weight_snapshot_edge_rate": {
+      "formula": "C_e / n_e(G,t)",
+      "sharing_rule": "FROZEN_EQUAL_WEIGHT_SNAPSHOT_SHARING",
+      "symbol": "r_e_f(G,t)"
+    },
+    "path_bottleneck_rate": {
+      "formula": "min_{e in P_f(G,t)} r_e_f(G,t)",
+      "symbol": "R_f(G,t)"
+    },
+    "propagation_cost": {
+      "formula": "sum_{e in P_f(G,t)} d_e(t)/c",
+      "symbol": "C_f_prop(G,t)"
+    },
+    "snapshot_value": {
+      "formula": "sum_{f:N_f(t)>0} [N_f(t)*C_f_prop(G,t) + N_f(t)^2/(2*R_f(G,t))]",
+      "optimization_direction": "MINIMIZE",
+      "symbol": "V(G,t)"
+    },
+    "unfinished_work": {
+      "formula": "A_f(t) - D_f(t)",
+      "symbol": "N_f(t)"
+    }
+  },
+  "edge_rules": {
+    "B3_nonpositive_remaining_or_usable_lifetime": "INELIGIBLE",
+    "alpha_beta_gamma_weights": false,
+    "hold_replace_exact_tie": "HOLD",
+    "nonpositive_R_f_target_value": "+infinity",
+    "performance_based_tuning": false,
+    "realized_future_traffic": false,
+    "replace_replace_exact_tie": "FROZEN_PROPOSER_CANONICAL_ORDER",
+    "trainable_coefficients": false,
+    "unrouted_positive_unfinished_commodity_target_value": "+infinity",
+    "zero_total_unfinished_work": "HOLD"
+  },
+  "evaluation_semantics": {
+    "advance_simulation_time": false,
+    "analytic_snapshot_only": true,
+    "final_J": false,
+    "information_class": "CURRENT_STATE_ONLY",
+    "multi_step_rollout": false,
+    "queue_area_term_interpretation": "N_f^2/(2R_f) is a constant-current-service queue-area proxy, not exact multi-hop queue evolution."
+  },
+  "immutable_overlay": true,
+  "overlay_status": "FROZEN",
+  "parent_hashes": {
+    "gate_f0": {
+      "configs/gate_f0_baseline_registry.json": "7152b90b13c9c18cecdfe969a3908ce8c78b9364e69066bddbc508c09ea9a10b",
+      "configs/gate_f0_controller_contract.json": "689212fa5f0b08f5e1e50adf952b478ffc91e3131d0d8fe6acfcd9cd27f0e68c",
+      "configs/gate_f0_status.json": "afe893ad742b1ee3023ce0ba0926a9aba1a2d5b64a2fbc033753a0cb6f9b8501",
+      "docs/GATE_F0_BASELINE_REGISTRY_CN.md": "1d08ba2d3c7302d5e3e33f3bbaec5993421a69c2f76d1e1592bcb2538a31b807",
+      "docs/GATE_F0_TOPOLOGY_CONTROLLER_CONTRACT_CN.md": "8661a0dac7135b8df4c6277a39003cf5d84521dc88bf28f6965e08b0c4910ee4"
+    },
+    "gate_f0_human_freeze_v1": {
+      "configs/gate_f0_human_freeze_status.json": "b4cc4e8e335613d8626c58516fbf1d3355df93da8a9823a9533f88d40e33bae7",
+      "configs/gate_f0_human_freeze_v1.json": "37a90d3eec2f91e94c04ebe0f2867f3eca412d7284402bba6a7bd0639df7c3f7",
+      "docs/GATE_F0_HUMAN_FREEZE_V1_CN.md": "fb858c63b96da790ec6aba6eaa5b93cc3654b495716eff3f9b33ada35aa5969a"
+    },
+    "gate_f1": {
+      "configs/gate_f1_contract.json": "43d1ceb7d72129746d03d5d60f08e455f44f36dde7cf4da7ac7e202a1ecc4bea",
+      "configs/gate_f1_status.json": "822a38aa2a787843850b04383e82322095af5dcaebe0703546e1520a09a7eb8b",
+      "docs/GATE_F1_CONTROLLER_INFRASTRUCTURE_CN.md": "8fbac971690043ddd05e233635d009d08b5deda869f902f0b1f95646665150ee",
+      "docs/GATE_F1_CORRECTNESS_RESULT_CN.md": "52ee4a8e78190733a3ef01d51773920925082b518cc31f33795c566c51b8c0e3",
+      "docs/GATE_F1_SCORING_AMBIGUITY_CN.md": "2fed86f3bf265762793d93f295ed38e3162d2b953a48580c5b3df488d93fa444"
+    },
+    "gate_f1_implementation": {
+      "src/dynamic_lisl/baseline_controllers.py": "44e920bca8fe686ea9c43ce4d9fe4c48679365a6eed0f706b43de20af74b31e8",
+      "src/dynamic_lisl/candidate_proposer.py": "9bb609292fcbb273a17cc2009d62cee9c46a1a4a45ab305200b6b93b4aaf4b8a",
+      "src/dynamic_lisl/controller_runner.py": "187658932a7935135e58e25140db9f32ef0c99c376a11bf2fc206d0198071185",
+      "src/dynamic_lisl/gate_f1_sanity.py": "3c2390a132256df15191ea1b081839511f48944c7c0b47cb531a80c99f1add4d",
+      "src/dynamic_lisl/outage_metrics.py": "484dd14c5552e6a7b1b19e0321a46daa899cd04c1a1b00196455c831d6581b6a",
+      "tests/test_gate_f1_contract.py": "1b896b4348bb9d2c43364b0d66da100eb2499616d17a4e6cafcbf23967a89051",
+      "tests/test_gate_f1_controller.py": "aed3bc64557beca7fcc030fa55f924b17e72261bb2f3027702fc327cf86a1ae7",
+      "tools/check_gate_f1.py": "0a808be03157a9dbc9b66d9222a52d5252aea8cf1d9e0316c4ce57d85ca72d4e"
+    }
+  },
+  "resolution": {
+    "B1_scalar_score_resolved": true,
+    "B2_base_signal_resolved": true,
+    "B3_scalar_score_resolved": true,
+    "gate_f1_scientific_implementation_readiness": "READY"
+  },
+  "schema": "gate_f1_scoring_human_freeze_v1",
+  "scope_guard": {
+    "controller_performance_run": false,
+    "gate_f2_started": false,
+    "gate_f3_started": false,
+    "modify_B1_B2_B3_scientific_implementation": false,
+    "rl_started": false
+  }
+}

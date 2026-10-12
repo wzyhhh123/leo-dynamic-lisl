@@ -1,0 +1,633 @@
+{
+  "$comment": "Unknown scientific values and unexecuted result values are null in the supplied template. No actual N1 implementation is claimed.",
+  "$defs": {
+    "file_binding": {
+      "additionalProperties": false,
+      "properties": {
+        "byte_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "byte_count",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "link_count": {
+      "description": "160 is the existing bilateral terminal resource bound, not an artificial Kmax.",
+      "maximum": 160,
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "terminal_count": {
+      "maximum": 320,
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "topology_sample": {
+      "additionalProperties": false,
+      "properties": {
+        "K_active_admissible": {
+          "$ref": "#/$defs/link_count"
+        },
+        "K_draining": {
+          "$ref": "#/$defs/link_count"
+        },
+        "acquiring_terminal_count": {
+          "$ref": "#/$defs/terminal_count"
+        },
+        "retargeting_terminal_count": {
+          "$ref": "#/$defs/terminal_count"
+        },
+        "setup_connection_count": {
+          "$ref": "#/$defs/link_count"
+        },
+        "setup_reserved_terminal_count": {
+          "$ref": "#/$defs/terminal_count"
+        },
+        "setup_terminal_count": {
+          "$ref": "#/$defs/terminal_count"
+        },
+        "t_s": {
+          "minimum": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "t_s",
+        "K_active_admissible",
+        "K_draining",
+        "setup_connection_count",
+        "setup_terminal_count",
+        "retargeting_terminal_count",
+        "acquiring_terminal_count",
+        "setup_reserved_terminal_count"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:dynamic-k:v1:research-result:draft",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Structure and type reservation only. No simulation or scientific Gate validation; time coverage, state conservation and business conservation require later implementation.",
+  "properties": {
+    "algorithm_selection": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "bindings": {
+      "additionalProperties": false,
+      "properties": {
+        "baseline_seal": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/file_binding"
+            }
+          ]
+        },
+        "configuration": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/file_binding"
+            }
+          ]
+        },
+        "contract": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/file_binding"
+            }
+          ]
+        },
+        "initial_state_manifest": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/file_binding"
+            }
+          ]
+        },
+        "input_manifest": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/file_binding"
+            }
+          ]
+        },
+        "revision_id": {
+          "pattern": "^[0-9]{4}$",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "revision_record": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/file_binding"
+            }
+          ]
+        },
+        "run_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_manifest": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/file_binding"
+            }
+          ]
+        }
+      },
+      "required": [
+        "run_id",
+        "revision_id",
+        "revision_record",
+        "baseline_seal",
+        "contract",
+        "configuration",
+        "source_manifest",
+        "input_manifest",
+        "initial_state_manifest"
+      ],
+      "type": "object"
+    },
+    "business_metrics": {
+      "additionalProperties": false,
+      "properties": {
+        "J_T_bit_s": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "J_T_plus_bit_s": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "N_T_bits": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "R_del_T": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "delivered_bit_age_integral_bit_s": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "delivered_bits": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "mean_delivered_fluid_delay_s": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "R_del_T",
+        "N_T_bits",
+        "J_T_bit_s",
+        "J_T_plus_bit_s",
+        "delivered_bits",
+        "delivered_bit_age_integral_bit_s",
+        "mean_delivered_fluid_delay_s"
+      ],
+      "type": "object"
+    },
+    "completion": {
+      "additionalProperties": false,
+      "properties": {
+        "all_offered_business_delivered": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "evaluation_completed_normally": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "terminal_accounting_covers_0_T": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "termination_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "evaluation_completed_normally",
+        "terminal_accounting_covers_0_T",
+        "all_offered_business_delivered",
+        "termination_reason"
+      ],
+      "type": "object"
+    },
+    "energy": {
+      "additionalProperties": false,
+      "properties": {
+        "DeltaE_LCT_J": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "E_LCT_J": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "billing_window": {
+          "const": "[0,T]"
+        },
+        "dynamic_terminal_count": {
+          "const": 320
+        },
+        "energy_ACTIVE_dwell_includes_execution_DRAINING": {
+          "const": true
+        },
+        "expected_total_dwell_s_expression": {
+          "const": "320*T"
+        },
+        "five_execution_state_dwell_s": {
+          "additionalProperties": false,
+          "properties": {
+            "ACQUIRING": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "ACTIVE": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "DRAINING": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "IDLE": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "RETARGETING": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "IDLE",
+            "RETARGETING",
+            "ACQUIRING",
+            "ACTIVE",
+            "DRAINING"
+          ],
+          "type": "object"
+        },
+        "four_energy_state_dwell_s": {
+          "additionalProperties": false,
+          "properties": {
+            "ACQUIRING": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "ACTIVE": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "IDLE": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "RETARGETING": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "IDLE",
+            "RETARGETING",
+            "ACQUIRING",
+            "ACTIVE"
+          ],
+          "type": "object"
+        },
+        "initial_state_billing": {
+          "const": "ACTUAL_STATE_NO_SYNTHETIC_SETUP"
+        },
+        "power_profile_id": {
+          "const": "Liu-anchored_parameterized_four-state_LCT_power_profile_v1"
+        },
+        "pre_T0_setup_energy_included": {
+          "const": false
+        },
+        "standby_baseline_energy_J": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "power_profile_id",
+        "dynamic_terminal_count",
+        "billing_window",
+        "initial_state_billing",
+        "pre_T0_setup_energy_included",
+        "four_energy_state_dwell_s",
+        "five_execution_state_dwell_s",
+        "energy_ACTIVE_dwell_includes_execution_DRAINING",
+        "expected_total_dwell_s_expression",
+        "E_LCT_J",
+        "standby_baseline_energy_J",
+        "DeltaE_LCT_J"
+      ],
+      "type": "object"
+    },
+    "horizon": {
+      "additionalProperties": false,
+      "properties": {
+        "cutoff_s": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "injection_end_s": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "simulated_until_s": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "start_s": {
+          "const": 0
+        }
+      },
+      "required": [
+        "start_s",
+        "injection_end_s",
+        "cutoff_s",
+        "simulated_until_s"
+      ],
+      "type": "object"
+    },
+    "implementation_status": {
+      "additionalProperties": false,
+      "properties": {
+        "delivered_fluid_age": {
+          "enum": [
+            "NOT_IMPLEMENTED",
+            "IMPLEMENTED_UNACCEPTED",
+            "ACCEPTED_WITH_SEPARATE_EVIDENCE"
+          ]
+        },
+        "fixed_horizon_energy": {
+          "enum": [
+            "NOT_IMPLEMENTED",
+            "IMPLEMENTED_UNACCEPTED",
+            "ACCEPTED_WITH_SEPARATE_EVIDENCE"
+          ]
+        }
+      },
+      "required": [
+        "fixed_horizon_energy",
+        "delivered_fluid_age"
+      ],
+      "type": "object"
+    },
+    "record_kind": {
+      "enum": [
+        "TEMPLATE_NOT_EXECUTED",
+        "MEASURED_RESULT"
+      ]
+    },
+    "schema": {
+      "const": "dynamic_k_research_result_v1_DRAFT"
+    },
+    "scientific_parameters": {
+      "additionalProperties": false,
+      "properties": {
+        "D_ref_s": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "E_ref_J": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "R_min": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "T_A_s": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "T_s": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "alpha": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "tau_res_s": {
+          "minimum": 0,
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "T_A_s",
+        "T_s",
+        "tau_res_s",
+        "R_min",
+        "alpha",
+        "D_ref_s",
+        "E_ref_J"
+      ],
+      "type": "object"
+    },
+    "topology": {
+      "additionalProperties": false,
+      "properties": {
+        "DRAINING_in_main_K": {
+          "const": false
+        },
+        "K_definition": {
+          "const": "REAL_ACTIVE_DYNAMIC_CONNECTIONS_ADMITTING_NEW_BUSINESS"
+        },
+        "reservation_and_state_counters_may_overlap": {
+          "const": true
+        },
+        "setup_in_main_K": {
+          "const": false
+        },
+        "time_series": {
+          "items": {
+            "$ref": "#/$defs/topology_sample"
+          },
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "K_definition",
+        "DRAINING_in_main_K",
+        "setup_in_main_K",
+        "reservation_and_state_counters_may_overlap",
+        "time_series"
+      ],
+      "type": "object"
+    },
+    "version_id": {
+      "const": "dynamic_k_v1"
+    }
+  },
+  "required": [
+    "schema",
+    "version_id",
+    "record_kind",
+    "bindings",
+    "scientific_parameters",
+    "algorithm_selection",
+    "horizon",
+    "completion",
+    "topology",
+    "energy",
+    "business_metrics",
+    "implementation_status"
+  ],
+  "title": "dynamic_k_v1 research result fields — N0c DRAFT",
+  "type": "object"
+}

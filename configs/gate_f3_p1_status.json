@@ -1,0 +1,16 @@
+{
+  "F3_performance_started": false,
+  "Gate_F3_P1_execution": "BLOCKED",
+  "P1_registered_runs_executed": "0/12",
+  "P1_result_seal": "NO",
+  "P1_started": false,
+  "P2_readiness": "BLOCKED_REQUIRES_CANDIDATE_SOURCE_HUMAN_FREEZE",
+  "P2_started": false,
+  "RL_started": false,
+  "blocker_code": "GATE_F3_P1_EXECUTION_BLOCKED_BY_CANDIDATE_SOURCE_NOT_FROZEN",
+  "evidence": "outputs/gate_f3_p1_20260925T050259_813979Z",
+  "historical_F3_0_preflight": "PASS",
+  "performance_outcomes": [],
+  "schema": "gate_f3_p1_status_v1",
+  "statement": "P1 was stopped before performance because the shared production candidate source and drain-period decision horizon are not frozen."
+}

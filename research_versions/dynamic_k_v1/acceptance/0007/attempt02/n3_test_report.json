@@ -1,0 +1,62 @@
+{
+  "errors": [],
+  "failures": [],
+  "formal_experiments_executed": false,
+  "output": "test_01_STATIC_HOLD_natural_expiry_fixed_T (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_02_paired_K0_ADD_then_idle_DROP_analytic_metrics (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_03_setup_not_counted_as_admit_K (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_04_no_demand_DROP_real_DRAINING_and_energy_reduction (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_05_REPLACE_resource_constrained_BBM (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_06_REPLACE_MBB_only_real_spare_resources (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_07_partition_expiry_Q_I_reconnect_FIFO (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_08_unreachable_to_T_remaining_and_no_delivery_null (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_09_partial_delivery_age_and_remaining_age_identity (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_10_clone_checkpoint_restore_full_audit_exact (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_11_identical_real_actions_exact_N1a_N1b (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_12_future_trace_not_visible_and_does_not_affect_selection (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_13_candidate_budget_truncation_distinct_from_physical_absence (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_14_HOLD_while_demand_already_reachable (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_15_sort_reversal_and_no_candidate_or_policy_mutation (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_16_fixed_T_idle_tail_320_dwell_and_nonnegative_delta (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_17_result_validation_rejects_mismatched_metrics_and_scope (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_18_invalid_epoch_inputs_and_no_formal_default (n3_acceptance_tests.ClosedLoopTests) ... ok\ntest_19_complete_registered_catalog_coverage_diagnostic (n3_acceptance_tests.Real160Tests) ... ok\ntest_20_real160_controlled_catalog_multi_epoch_paired_loop_replay (n3_acceptance_tests.Real160Tests) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 2334.332s\n\nOK\n",
+  "post_execution_bindings": {
+    "anchors": {
+      "baseline_seal": {
+        "byte_count": 656,
+        "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+        "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+      },
+      "parent_revision": {
+        "byte_count": 9504,
+        "path": "research_versions/dynamic_k_v1/revisions/0006/record.json",
+        "sha256": "417e46baf6d3d7c8846af61131952739275c9b22bd1d468cc28e649b3c82dd18"
+      },
+      "version_origin": {
+        "byte_count": 1555,
+        "path": "research_versions/dynamic_k_v1/version_record.json",
+        "sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+      }
+    },
+    "candidate_revision_id": "0007",
+    "implementation_manifest": {
+      "byte_count": 25957,
+      "path": "research_versions/dynamic_k_v1/acceptance/0007/implementation_manifest_attempt02.json",
+      "sha256": "dbc7e0d54d6d9bb864ec216a0b7c6cd1b86ec6353ed3ab41a3c3c64b471b9129"
+    },
+    "scope": "ENGINEERING_TEST_ONLY"
+  },
+  "pre_execution_bindings": {
+    "anchors": {
+      "baseline_seal": {
+        "byte_count": 656,
+        "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+        "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+      },
+      "parent_revision": {
+        "byte_count": 9504,
+        "path": "research_versions/dynamic_k_v1/revisions/0006/record.json",
+        "sha256": "417e46baf6d3d7c8846af61131952739275c9b22bd1d468cc28e649b3c82dd18"
+      },
+      "version_origin": {
+        "byte_count": 1555,
+        "path": "research_versions/dynamic_k_v1/version_record.json",
+        "sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+      }
+    },
+    "candidate_revision_id": "0007",
+    "implementation_manifest": {
+      "byte_count": 25957,
+      "path": "research_versions/dynamic_k_v1/acceptance/0007/implementation_manifest_attempt02.json",
+      "sha256": "dbc7e0d54d6d9bb864ec216a0b7c6cd1b86ec6353ed3ab41a3c3c64b471b9129"
+    },
+    "scope": "ENGINEERING_TEST_ONLY"
+  },
+  "scientific_gate_pass": false,
+  "skipped": [],
+  "status": "PASS",
+  "tests_run": 20
+}

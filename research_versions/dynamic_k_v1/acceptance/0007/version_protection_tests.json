@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\Program_Files\\anaconda3\\envs\\pytorch\\python.exe",
+    "-B",
+    "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\tests\\test_version_control.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_coordinated_reseal_cannot_replace_external_version_anchor (__main__.N0IntegrityControls) ... ok\ntest_declared_before_hash_cannot_be_forged (__main__.N0IntegrityControls) ... ok\ntest_deletion_detected (__main__.N0IntegrityControls) ... ok\ntest_draft_configuration_cannot_approve_experiment (__main__.N0IntegrityControls) ... ok\ntest_duplicate_json_key_rejected (__main__.N0IntegrityControls) ... ok\ntest_empty_experiment_template_rejected (__main__.N0IntegrityControls) ... ok\ntest_file_set_change_during_scan_rejected (__main__.N0IntegrityControls) ... ok\ntest_historical_test_change_rejected_even_if_registered (__main__.N0IntegrityControls) ... ok\ntest_manifest_tamper_rejected (__main__.N0IntegrityControls) ... ok\ntest_new_legacy_file_detected (__main__.N0IntegrityControls) ... ok\ntest_new_namespace_file_detected (__main__.N0IntegrityControls) ... ok\ntest_path_escape_and_windows_absolute_paths_rejected (__main__.N0IntegrityControls) ... ok\ntest_raw_byte_line_ending_change_detected (__main__.N0IntegrityControls) ... ok\ntest_read_failure_is_not_partial_success (__main__.N0IntegrityControls) ... ok\ntest_registered_source_change_and_parent_chain_pass (__main__.N0IntegrityControls) ... ok\ntest_rename_reported_without_assuming_identity (__main__.N0IntegrityControls) ... ok\ntest_revision_changed_after_scan_rejected (__main__.N0IntegrityControls) ... ok\ntest_revision_parent_tamper_rejected (__main__.N0IntegrityControls) ... ok\ntest_revision_tail_deletion_detected_by_external_latest_anchor (__main__.N0IntegrityControls) ... ok\ntest_seal_tamper_rejected (__main__.N0IntegrityControls) ... ok\ntest_unchanged_complete_inventory_passes_and_keeps_ignored_evidence (__main__.N0IntegrityControls) ... ok\ntest_version_anchor_changed_between_history_load_and_scan_rejected (__main__.N0IntegrityControls) ... ok\n\n----------------------------------------------------------------------\nRan 22 tests in 26.527s\n\nOK\n",
+  "scope": "ACTUAL_UNCHANGED_TEST_EXECUTION",
+  "scientific_gate_pass": false,
+  "tests_run": 22,
+  "status": "PASS"
+}

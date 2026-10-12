@@ -1,0 +1,108 @@
+{
+  "current_command": "python tools/check_gate_f1.py",
+  "gate_a": {
+    "common_mode_audit": "outputs/common_mode_audit_20260921T061043_579554Z",
+    "geometry": "outputs/geometry_20260921T053240_016088Z",
+    "record": "configs/gate_a_acceptance_v0.3.json",
+    "status": "ACCEPTED_FOR_CURRENT_SATELLITE_ONLY_USE",
+    "visibility": "outputs/visibility_20260921T055451_308214Z"
+  },
+  "gate_b": {
+    "evidence": "outputs/gate_b_20260921T064554_915646Z",
+    "record": "configs/gate_b_status.json",
+    "status": "PASS"
+  },
+  "gate_c": {
+    "detailed_PAT_tracking_optical_link_budget": "OUTSIDE_GATE_C_V1_SCOPE",
+    "evidence": "outputs/gate_c_simplified_20260922T064019_313843Z",
+    "hardware_model": "configs/hardware_gate_c_simplified_v1.json",
+    "record": "configs/gate_c_simplified_status_v1.json",
+    "status": "PASS under simplified parametric terminal model"
+  },
+  "gate_d0": {
+    "config": "configs/gate_d0_traffic_contract.json",
+    "contract": "docs/GATE_D0_TRAFFIC_QUEUE_ROUTING_CONTRACT_CN.md",
+    "status": "PASS"
+  },
+  "gate_d1": {
+    "evidence": "outputs/gate_d1_20260922T133909_838853Z",
+    "record": "configs/gate_d1_status.json",
+    "result": "docs/GATE_D1_NETWORK_SERVICE_RESULT_CN.md",
+    "status": "PASS"
+  },
+  "gate_d2": {
+    "evidence": "outputs/gate_d2_20260922T162211_364524Z",
+    "record": "configs/gate_d2_status.json",
+    "result": "docs/GATE_D2_TRANSITION_SERVICE_RESULT_CN.md",
+    "status": "PASS"
+  },
+  "gate_e0": {
+    "contract": "docs/GATE_E0_MECHANISM_VALIDATION_CONTRACT_CN.md",
+    "evidence": "outputs/gate_e0_20260923T014228_143231Z",
+    "record": "configs/gate_e0_status.json",
+    "result": "docs/GATE_E0_MECHANISM_VALIDATION_RESULT_CN.md",
+    "scenario_selection_manifest": "configs/gate_e0_scenario_selection_manifest.json",
+    "status": "PASS",
+    "sweep_manifest": "configs/gate_e0_sweep_manifest.json"
+  },
+  "gate_e1": {
+    "break_even_manifest": "configs/gate_e1_break_even_manifest.json",
+    "contract": "docs/GATE_E1_EXECUTION_CONTRACT_CN.md",
+    "evidence": "outputs/gate_e1_20260923T024344_227121Z",
+    "execution_manifest": "configs/gate_e1_execution_manifest.json",
+    "record": "configs/gate_e1_status.json",
+    "result": "docs/GATE_E1_MECHANISM_RESULT_CN.md",
+    "status": "PASS"
+  },
+  "gate_e1_started": true,
+  "gate_e2": {
+    "contract": "docs/GATE_E2_EXECUTION_CONTRACT_CN.md",
+    "evidence": "outputs/gate_e2_20260923T073629_059828Z",
+    "execution_points": "configs/gate_e2_execution_points.json",
+    "record": "configs/gate_e2_status.json",
+    "result": "docs/GATE_E2_160STAR_MECHANISM_RESULT_CN.md",
+    "status": "PASS"
+  },
+  "gate_e2_started": true,
+  "gate_e_started": true,
+  "gate_f0": {
+    "baseline_registry": "docs/GATE_F0_BASELINE_REGISTRY_CN.md",
+    "contract": "docs/GATE_F0_TOPOLOGY_CONTROLLER_CONTRACT_CN.md",
+    "evidence": "outputs/gate_f0_contract_20260924T160512_858290Z",
+    "human_decisions": "docs/GATE_F0_HUMAN_DECISIONS_REQUIRED_CN.md",
+    "interface_audit": "docs/GATE_F0_INTERFACE_AUDIT_CN.md",
+    "record": "configs/gate_f0_status.json",
+    "status": "PASS_WITH_HUMAN_FREEZE_ITEMS"
+  },
+  "gate_f0_human_freeze_v1": {
+    "document": "docs/GATE_F0_HUMAN_FREEZE_V1_CN.md",
+    "evidence": "outputs/gate_f0_human_freeze_20260924T160525_554136Z",
+    "gate_f1_readiness": "READY",
+    "overlay": "configs/gate_f0_human_freeze_v1.json",
+    "record": "configs/gate_f0_human_freeze_status.json",
+    "status": "PASS",
+    "z_moderate": "configs/z_moderate_v1.json"
+  },
+  "gate_f0_started": true,
+  "gate_f1": {
+    "baseline_scoring_contract": "BLOCKED_REQUIRES_HUMAN_FREEZE",
+    "contract": "configs/gate_f1_contract.json",
+    "evidence": "outputs/gate_f1_20260924T162716_169691Z",
+    "infrastructure": "PASS",
+    "overall": "BLOCKED_BEFORE_SCIENTIFIC_B1_B3_IMPLEMENTATION",
+    "record": "configs/gate_f1_status.json"
+  },
+  "gate_f1_started": true,
+  "gate_f2_started": false,
+  "gate_f3_started": false,
+  "gate_f_started": true,
+  "gate_g_started": false,
+  "pre_e2_absolute_time_regression": {
+    "contract": "docs/PRE_E2_ABSOLUTE_TIME_REGRESSION_CN.md",
+    "evidence": "outputs/pre_e2_absolute_time_20260923T051334_210599Z",
+    "record": "configs/pre_e2_absolute_time_status.json",
+    "status": "PASS"
+  },
+  "project_status": "GATE_F1_INFRASTRUCTURE_PASS_SCORING_CONTRACT_BLOCKED",
+  "rl_started": false
+}

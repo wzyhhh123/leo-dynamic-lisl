@@ -1,0 +1,19 @@
+{
+  "P2_started": false,
+  "RL_started": false,
+  "canonical_sha256": "78d94f48d43dd86db721f384871071728666b1b348f0f7abc4bee01380799190",
+  "deepcopy_total_call_reduction": 73732224,
+  "deepcopy_total_call_reduction_fraction": 0.7098354999831572,
+  "equivalence_report": "outputs/gate_f3_runtime_phase1_20260925T123855_238623Z/report.json",
+  "focused_equivalence_tests_passed": 5,
+  "full_regression_status": "PASS",
+  "full_regression_tests_passed": 267,
+  "overlay_canonical_sha256": "605220d3437a1580da9f87b68d71fbe607d9646c75a16e715281bed39bae73f4",
+  "preflight_status": "PASS",
+  "proposal_equivalence": true,
+  "proposer_speedup": 2.690985065195627,
+  "registered_P1_executed": false,
+  "router_optimization_started": false,
+  "schema": "gate_f3_runtime_phase1_status_v1",
+  "status": "GATE_F3_RUNTIME_PHASE1_PASS"
+}

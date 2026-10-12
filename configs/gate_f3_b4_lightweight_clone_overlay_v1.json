@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "B4_LIGHTWEIGHT_CLONE_EXISTING_EVIDENCE_REGISTRATION",
+  "registered_P1_executed": false,
+  "frozen_scientific_semantics_changed": false,
+  "source_hashes": {
+    "src/dynamic_lisl/rollout_clone.py": "b1a25bc1413d0189c35eba763ef948878fa1d695004c3d368cdc61fa8572eebd",
+    "src/dynamic_lisl/gate_f3_p1_execution.py": "3b48ad8c148335c437052924fc51426b6133dec2d895a7ad7077716cf0101607"
+  },
+  "equivalence_evidence": {
+    "report": "outputs/b4_lightweight_clone_20261002T031207_519998Z/report.json",
+    "report_sha256": "1bf7afe0afec061e186e141e802fe406196ce9597f253b00fad0ffee5bb24c01"
+  },
+  "canonical_sha256": "6c8448924bb7ba671a29619604738ad95d9ae152d4a8b95b1b10583dbca77155"
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "gate_d0_od_manifest_v1",
+  "selection": "preregistered symmetric cross-plane OD set; traffic-agnostic and not tuned against a controller",
+  "commodities": [
+    {"commodity_id": "f00", "source": "X0_1", "destination": "X3_21", "weight": 1.0},
+    {"commodity_id": "f01", "source": "X3_1", "destination": "X0_21", "weight": 1.0},
+    {"commodity_id": "f02", "source": "X0_10", "destination": "X2_30", "weight": 1.0},
+    {"commodity_id": "f03", "source": "X2_10", "destination": "X0_30", "weight": 1.0},
+    {"commodity_id": "f04", "source": "X1_5", "destination": "X3_25", "weight": 1.0},
+    {"commodity_id": "f05", "source": "X3_5", "destination": "X1_25", "weight": 1.0},
+    {"commodity_id": "f06", "source": "X0_20", "destination": "X1_40", "weight": 1.0},
+    {"commodity_id": "f07", "source": "X1_20", "destination": "X0_40", "weight": 1.0},
+    {"commodity_id": "f08", "source": "X2_1", "destination": "X3_21", "weight": 1.0},
+    {"commodity_id": "f09", "source": "X3_1", "destination": "X2_21", "weight": 1.0},
+    {"commodity_id": "f10", "source": "X1_10", "destination": "X2_30", "weight": 1.0},
+    {"commodity_id": "f11", "source": "X2_10", "destination": "X1_30", "weight": 1.0},
+    {"commodity_id": "f12", "source": "X0_15", "destination": "X3_35", "weight": 1.0},
+    {"commodity_id": "f13", "source": "X3_15", "destination": "X0_35", "weight": 1.0},
+    {"commodity_id": "f14", "source": "X0_30", "destination": "X2_5", "weight": 1.0},
+    {"commodity_id": "f15", "source": "X2_30", "destination": "X0_5", "weight": 1.0}
+  ]
+}

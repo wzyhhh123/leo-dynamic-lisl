@@ -1,0 +1,170 @@
+{
+  "schema": "dynamic_k_research_configuration_v1",
+  "version_id": "dynamic_k_v1",
+  "status": "DRAFT_NOT_FROZEN",
+  "authorized_stage": "N1a_FIXED_HORIZON_FOUR_STATE_ENERGY_ENGINEERING_ONLY",
+  "semantic_supplement": "N0c",
+  "formal_experiments_authorized": false,
+  "production_runner_integrated": false,
+  "scene": {
+    "satellite_count": 160,
+    "plane_count": 4,
+    "satellites_per_plane": 40,
+    "fixed_terminals_per_satellite": 2,
+    "dynamic_terminals_per_satellite": 2,
+    "dynamic_terminal_count": 320,
+    "terminal_resource_link_upper_bound": 160,
+    "extra_artificial_K_max": null
+  },
+  "topology": {
+    "link_count_control": "DYNAMIC",
+    "K_definition": "cardinality_of_real_ACTIVE_dynamic_connection_instances_admitting_new_business_at_time_t",
+    "K_counting_unit": "ONE_PER_BILATERAL_CONNECTION_INSTANCE_NOT_PER_DIRECTED_ARC_OR_TERMINAL",
+    "K_requires_nonempty_traffic": false,
+    "K_DRAINING_accounting": "EXCLUDED_FROM_MAIN_K_COUNT_SEPARATELY",
+    "setup_resource_accounting": {
+      "excluded_from_main_K": true,
+      "setup_terminal_count": "RETARGETING_terminal_count+ACQUIRING_terminal_count",
+      "separate_counters": [
+        "setup_connection_count",
+        "retargeting_terminal_count",
+        "acquiring_terminal_count",
+        "setup_reserved_terminal_count"
+      ],
+      "reservation_count": "DISTINCT_TERMINALS_RESERVED_FOR_PENDING_ACTIVE_CONNECTIONS",
+      "reservation_and_state_counters_may_overlap": true
+    },
+    "actions": [
+      "HOLD",
+      "ADD",
+      "DROP",
+      "REPLACE"
+    ],
+    "execution": "REAL_GATE_B_C_TERMINAL_EVENTS_BBM_MBB",
+    "strict_continuous_connectivity_required": false,
+    "temporary_partition_allowed": true,
+    "unroutable_work": "PERSISTENT_QUEUE_NO_DROP",
+    "physical_and_bilateral_resource_constraints_required": true
+  },
+  "evaluation": {
+    "common_start_trace_geometry_windows_and_initial_state": true,
+    "fixed_common_horizon": true,
+    "continue_terminal_accounting_after_delivery_completion": true,
+    "per_packet_deadline": null,
+    "traffic_representation": "AGGREGATE_FLUID_BITS",
+    "metrics": [
+      "R_del_T",
+      "mean_delivered_end_to_end_delay_s",
+      "N_T_bits",
+      "J_T_bit_s",
+      "E_LCT_J",
+      "DeltaE_LCT_J"
+    ],
+    "delivered_delay_age_transport_rule": null,
+    "delivered_fluid_age_implementation_stage": "N1b",
+    "initial_preestablishment_energy_convention": "ACTUAL_T0_STATE_NO_SYNTHETIC_SETUP_EXCLUDE_T_NEGATIVE_ENERGY",
+    "normal_evaluation_completion_and_delivery_completion_independent": true,
+    "time_comparison_tolerance_s": null,
+    "business_conservation_tolerance_bits": null
+  },
+  "power_profile": {
+    "id": "Liu-anchored_parameterized_four-state_LCT_power_profile_v1",
+    "status": "USER_SELECTED_RESEARCH_MODEL_CONVENTION",
+    "power_W_per_dynamic_terminal": {
+      "IDLE": 5,
+      "RETARGETING": 40,
+      "ACQUIRING": 40,
+      "ACTIVE": 45
+    },
+    "execution_to_energy_state": {
+      "IDLE": "IDLE",
+      "RETARGETING": "RETARGETING",
+      "ACQUIRING": "ACQUIRING",
+      "ACTIVE": "ACTIVE",
+      "DRAINING": "ACTIVE"
+    },
+    "source_doi": "10.1364/JOCN.527910",
+    "source_reference": "Table 3: PAT 40 W, laser source 5 W",
+    "four_state_single_terminal_measured_hardware_claim": false,
+    "PAT_subcomponents_charged_separately": false,
+    "link_level_duplicate_energy_charge": false,
+    "terminal_state_duration_total": "320*T",
+    "billing_window": "[0,T]",
+    "initial_state_billing": "ACTUAL_EXECUTION_STATE_AND_REMAINING_PHASE_TIME_AT_T0",
+    "synthetic_initial_connection_action_allowed": false,
+    "pre_T0_setup_energy_included": false,
+    "event_interval_convention": "CLIPPED_HALF_OPEN_INTERVALS_RIGHT_STATE_NO_ENDPOINT_DURATION",
+    "energy_state_ACTIVE_dwell_includes_execution_DRAINING": true,
+    "execution_DRAINING_dwell_recorded_separately": true,
+    "missing_timeline_may_be_filled_as_IDLE": false,
+    "incremental_energy": "E_LCT - 320*T*P_idle",
+    "incremental_energy_precondition": "identical standby baseline for all 320 terminals over the entire evaluation window"
+  },
+  "scientific_parameters": {
+    "T_A_s": null,
+    "T_s": null,
+    "tau_res_s": null,
+    "R_min": null,
+    "alpha": null,
+    "D_ref_s": null,
+    "E_ref_J": null
+  },
+  "scientific_parameter_status": "UNRESOLVED_REQUIRES_HUMAN_FREEZE",
+  "objective_proposal": "alpha*(J_T+tau_res*N_T)/(B_total*D_ref)+(1-alpha)*E_LCT/E_ref",
+  "delivery_requirement": {
+    "expression": "R_del(T)>=R_min",
+    "verification": "END_OF_EVALUATION",
+    "guaranteed_by_online_action_mask": false
+  },
+  "control_parameters": {
+    "decision_cadence_s": null,
+    "max_parallel_actions": null,
+    "candidate_budget": null,
+    "baseline_parameters": null
+  },
+  "algorithm": {
+    "selection": null,
+    "status": "UNDECIDED",
+    "candidate": "Graph-MAPPO",
+    "RL_implementation_authorized": false
+  },
+  "experiment_binding_manifests": {
+    "source_files": null,
+    "input_files": null,
+    "acceptance_evidence": null
+  },
+  "result_schema_draft_path": "research_versions/dynamic_k_v1/schemas/research_result_v1_DRAFT.schema.json",
+  "result_template_draft_path": "research_versions/dynamic_k_v1/schemas/research_result_v1_DRAFT.template.json",
+  "implementation_plan": {
+    "N1a": {
+      "scope": [
+        "fixed_common_horizon",
+        "terminal_state_dwell_and_energy_accounting"
+      ],
+      "delivered_fluid_age_tracking": false,
+      "implemented": true,
+      "authorized": true,
+      "acceptance_status": "IMPLEMENTED_PENDING_SEPARATE_ACCEPTANCE",
+      "runtime_module": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    "N1b": {
+      "scope": [
+        "delivered_fluid_bit_age_tracking",
+        "bit_weighted_delivered_mean_delay"
+      ],
+      "age_transport_implementation": null,
+      "implemented": false,
+      "authorized": false
+    }
+  },
+  "out_of_scope": [
+    "solar_power",
+    "battery_SOC",
+    "battery_DOD",
+    "whole_satellite_power",
+    "per_satellite_hard_energy_budget"
+  ],
+  "legacy_240_600_values_inherited": false,
+  "legacy_K_star_audit_required_before_new_direction": false,
+  "engineering_result_schema_path": "research_versions/dynamic_k_v1/schemas/n1a_engineering_result_v1.schema.json"
+}

@@ -1,0 +1,92 @@
+{
+  "N1_or_scientific_gate_acceptance_claimed": false,
+  "baseline_seal": {
+    "byte_count": 656,
+    "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+    "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+  },
+  "changes_observed_before_sealing": {
+    "added": [
+      {
+        "byte_count": 3525,
+        "path": "research_versions/dynamic_k_v1/acceptance/0003/before/configuration_before.json",
+        "sha256": "b8b86d1abc3db1765ee23123bfafaa99c419731cb046984458baa962980e8102"
+      },
+      {
+        "byte_count": 4042,
+        "path": "research_versions/dynamic_k_v1/acceptance/0003/before/contract_before.md",
+        "sha256": "7aca0acd0e28164898582ebfa1e12e83e1b84d5a7e8372c5dbc7309987da8bcc"
+      },
+      {
+        "byte_count": 8996,
+        "path": "research_versions/dynamic_k_v1/acceptance/0003/check_n0c_static.py",
+        "sha256": "1b785bd23d7f5cbe778a6663b1443c5a267668a63a117316e7258e7b59a7a1d3"
+      },
+      {
+        "byte_count": 4406,
+        "path": "research_versions/dynamic_k_v1/acceptance/0003/static_validation_report.json",
+        "sha256": "91bc16e8126ccb0614206d0b7fd468571339851b6eb72bf64124b56c93071596"
+      },
+      {
+        "byte_count": 14160,
+        "path": "research_versions/dynamic_k_v1/schemas/research_result_v1_DRAFT.schema.json",
+        "sha256": "76f950872c9045a993ec44fae92aedf9daea3db82e5b1c087ffdf740d53d40d1"
+      },
+      {
+        "byte_count": 2274,
+        "path": "research_versions/dynamic_k_v1/schemas/research_result_v1_DRAFT.template.json",
+        "sha256": "35fbdc47934dd351e54ee1df14152c69c695569a8470b6e74d82b7cd4ee6ecba"
+      }
+    ],
+    "deleted": [],
+    "modified": [
+      {
+        "after": {
+          "byte_count": 5563,
+          "sha256": "71ab1ddfb38cbd9d2804c01a67c131a2e937fc2290293170922d0ef60b7c5742"
+        },
+        "before": {
+          "byte_count": 3525,
+          "sha256": "b8b86d1abc3db1765ee23123bfafaa99c419731cb046984458baa962980e8102"
+        },
+        "path": "research_versions/dynamic_k_v1/configs/research_v1_DRAFT.json"
+      },
+      {
+        "after": {
+          "byte_count": 8127,
+          "sha256": "2dc51c9f844ef28f6a2dede0e1ce253c89bbf2fdd4bb845c57e18907af0a52f5"
+        },
+        "before": {
+          "byte_count": 4042,
+          "sha256": "7aca0acd0e28164898582ebfa1e12e83e1b84d5a7e8372c5dbc7309987da8bcc"
+        },
+        "path": "research_versions/dynamic_k_v1/contracts/research_contract_v1_DRAFT_CN.md"
+      }
+    ],
+    "possible_renames": []
+  },
+  "completed_asia_shanghai": "2026-10-10T12:01:38.360302+08:00",
+  "completed_utc": "2026-10-10T04:01:38.360302+00:00",
+  "excluded_file_count": 202,
+  "legacy_differences": {
+    "added": [],
+    "deleted": [],
+    "modified": [],
+    "possible_renames": []
+  },
+  "legacy_file_count": 5810,
+  "legacy_total_bytes": 15219456380,
+  "parent_revision": {
+    "byte_count": 16033,
+    "path": "research_versions/dynamic_k_v1/revisions/0002/record.json",
+    "sha256": "7462107253e5d0c259176ab45f2475a1d5e8d5997f41419ab4e235be1cebe9ab"
+  },
+  "production_source_modified": false,
+  "protected_version_assets_unchanged_except_two_authorized_drafts": true,
+  "raw_byte_hashes": true,
+  "schema": "dynamic_k_n0c_preseal_change_audit_v1",
+  "simulations_or_training_executed": false,
+  "started_utc": "2026-10-10T04:00:08.920556+00:00",
+  "status": "PASS",
+  "version_record_sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+}

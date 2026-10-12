@@ -1,0 +1,23 @@
+{
+  "accepted": false,
+  "complete_catalog_rescanned": false,
+  "formal_experiments_executed": false,
+  "link_reference": {
+    "endpoints": [
+      [
+        "X0_1",
+        "D2"
+      ],
+      [
+        "X1_1",
+        "D1"
+      ]
+    ],
+    "link_id": "L1"
+  },
+  "live_state_changed": false,
+  "reason": "DUPLICATE_LINK",
+  "scientific_gate_pass": false,
+  "scope": "TARGETED_READ_ONLY_REJECTION_EXPLANATION_ONLY",
+  "status": "PASS_KNOWN_OCCUPIED_CATALOG_DUPLICATE_REPRODUCED"
+}
