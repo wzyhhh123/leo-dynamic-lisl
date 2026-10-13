@@ -1,0 +1,25 @@
+{
+  "errors": [],
+  "explicit_test_module_bindings": true,
+  "failures": [],
+  "full_catalog": "REVALIDATE_SEALED_0007_MAPPING_ONLY",
+  "full_suite_count": 20,
+  "global_monkeypatch": false,
+  "mode": "sweep",
+  "original_assertions_unchanged": true,
+  "output": "test_16_fixed_T_idle_tail_320_dwell_and_nonnegative_delta (fifo20_sweep_N3.ClosedLoopTests) ... ok\ntest_17_result_validation_rejects_mismatched_metrics_and_scope (fifo20_sweep_N3.ClosedLoopTests) ... ok\ntest_18_invalid_epoch_inputs_and_no_formal_default (fifo20_sweep_N3.ClosedLoopTests) ... ok\ntest_19_complete_registered_catalog_coverage_diagnostic (fifo20_sweep_N3.Real160Tests) ... ok\ntest_20_real160_controlled_catalog_multi_epoch_paired_loop_replay (fifo20_sweep_N3.Real160Tests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 28.936s\n\nOK\n",
+  "selected_test_ids": [
+    "fifo20_sweep_N3.ClosedLoopTests.test_16_fixed_T_idle_tail_320_dwell_and_nonnegative_delta",
+    "fifo20_sweep_N3.ClosedLoopTests.test_17_result_validation_rejects_mismatched_metrics_and_scope",
+    "fifo20_sweep_N3.ClosedLoopTests.test_18_invalid_epoch_inputs_and_no_formal_default",
+    "fifo20_sweep_N3.Real160Tests.test_19_complete_registered_catalog_coverage_diagnostic",
+    "fifo20_sweep_N3.Real160Tests.test_20_real160_controlled_catalog_multi_epoch_paired_loop_replay"
+  ],
+  "selection": [
+    15,
+    20
+  ],
+  "source_expectations_unmodified": true,
+  "status": "PASS",
+  "tests_run": 5
+}

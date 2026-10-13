@@ -1,0 +1,21 @@
+{
+  "complete_legal_counts": null,
+  "completed_stage_exclusive_s": {
+    "LOS_FOR": 0.43100940000023513,
+    "SGP4_native": 0.13063809999997034,
+    "binding_and_root_physical": 0.11248069999999188,
+    "catalog_window_lookup": 0.003041199999998412,
+    "physical_window_bilateral": 29.829056399999743
+  },
+  "completed_validation_count": 400,
+  "coverage": "PREFIX_ONLY",
+  "stage_calls": {
+    "LOS_FOR": 750,
+    "SGP4_native": 750,
+    "binding_and_root_physical": 1,
+    "catalog_window_lookup": 1,
+    "physical_window_bilateral": 375,
+    "proposal_and_validation_union": 1
+  },
+  "wall_s": 43.28175349999999
+}

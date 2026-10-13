@@ -1,0 +1,11 @@
+{
+  "baseline_file_count": 5810,
+  "current_parent_chain_rechecked": true,
+  "excluded_file_count": 202,
+  "origin_sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691",
+  "revision_id": "0015",
+  "revision_sha256": "a5c427c4225bbd4850c3979079b18d68afa92d64cdffe1f90025904537ac7318",
+  "source": "Initial complete read-only verifier session 58065, exit 0, before 0016 files created",
+  "status": "PASS",
+  "verified_file_count": 6355
+}

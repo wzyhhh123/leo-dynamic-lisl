@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "action": "HOLD",
+      "cost_bit_s": 854613.2057586825,
+      "exact_score_equal": true,
+      "expected": {
+        "DeltaE_h_J": 480.0,
+        "J_h_bit_s": 187306.60287934053,
+        "N_end_bits": 31217.767146556987
+      }
+    },
+    {
+      "action": "ADD",
+      "cost_bit_s": 995518.0708517093,
+      "exact_score_equal": true,
+      "expected": {
+        "DeltaE_h_J": 950.0,
+        "J_h_bit_s": 38070.340292782945,
+        "N_end_bits": 1241.2884264877325
+      }
+    }
+  ],
+  "lambda_E_bit_s_per_J": 1000.0,
+  "lambda_N_s": 6.0,
+  "science_values_frozen": false,
+  "status": "PASS"
+}

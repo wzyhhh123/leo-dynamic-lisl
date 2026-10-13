@@ -1,0 +1,117 @@
+{
+  "files": [
+    {
+      "byte_count": 13823,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/AUDIT_INPUT_MANIFEST.json",
+      "sha256": "2565fc244ce2d29d8dbf6069d66f5fbd2797eca6bfb88f9ce411769f75802a81"
+    },
+    {
+      "byte_count": 7296,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/audit_static.py",
+      "sha256": "ed3a81952ef6d745472de169289b9452d9c48136dcfd3166770471440a771b97"
+    },
+    {
+      "byte_count": 5994,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/CATALOG_COST_ATTRIBUTION_CN.md",
+      "sha256": "fb3eb15fe762715012e29a5bea813697a3ec23f69b9154a3781185ed4cb39e31"
+    },
+    {
+      "byte_count": 54264,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/COST_EVIDENCE.json",
+      "sha256": "dc2e36779028a23ac3f8148dcbeae09b83f6aedab70e784cd7ff383d6ca7c990"
+    },
+    {
+      "byte_count": 3813,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/derive_event_counts.py",
+      "sha256": "b90b31c3f6d400862e1061ff97c8cd388908e330b4bc0dcd062af53a5c000adb"
+    },
+    {
+      "byte_count": 6030,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/FIFO_COST_ATTRIBUTION_CN.md",
+      "sha256": "621d17230f85579ee66f9e4288ac358c4afea2174aab608146acc07b17d80451"
+    },
+    {
+      "byte_count": 6265,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/OPTION_1_EXACT_OPTIMIZATION_DESIGN_CN.md",
+      "sha256": "932734086de3c69aedbdb711e47e4df1963aefc85ed9e8018064c438f9ec151e"
+    },
+    {
+      "byte_count": 4801,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/OPTION_2_HIERARCHICAL_CANDIDATES_DESIGN_CN.md",
+      "sha256": "e202b580b0df49aa3c2c8a3d7539d9039877ba00d92755c87d0e8a69882fd58b"
+    },
+    {
+      "byte_count": 520,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/pre_implementation_verification.json",
+      "sha256": "9cb2c661d09618c8a09d8516b92f57e173b787632f7d71e2d8c87647ae835eac"
+    },
+    {
+      "byte_count": 5109,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/RESULT_CN.md",
+      "sha256": "9870b1c8287e297513a7763db2de49215d3431d824a9e0e1849a12d1bb18df5a"
+    },
+    {
+      "byte_count": 8788,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/seal_static.py",
+      "sha256": "f73aabd0efc13061131ddaa5d2188e1ac2af3540d08bbbd764a26c0c3d6275ac"
+    },
+    {
+      "byte_count": 27613,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/SOURCE_CALL_SITES.json",
+      "sha256": "99fbb61bbcaba221c222e32cb82ba23b34bbeca8f4232fa961c6bf4ff0dbe79d"
+    },
+    {
+      "byte_count": 909,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/STATIC_VALIDATION.json",
+      "sha256": "c02bf835515fd48f29d659e22e6e2e2f762c89483599f5d265960f8f9c73fece"
+    },
+    {
+      "byte_count": 9928,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/STRUCTURAL_EVENT_COUNTS.json",
+      "sha256": "c6a844adcb0782e272f520002b5f2c387417ecb57d27eb7f8923149a72c14221"
+    },
+    {
+      "byte_count": 1350,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/SUPPLEMENTAL_INPUT_MANIFEST.json",
+      "sha256": "020d97838d9b57342303a4c431bf99d6dd24e85e48d198227164fd23ee3b3d85"
+    },
+    {
+      "byte_count": 1671,
+      "path": "research_versions/dynamic_k_v1/configs/n4_p0g_0017_static_cost_design_v1.json",
+      "sha256": "66e0c3c1637bb1df5e1f7d826ed7456f35dc10a154cb4867c42594db9e37f7e1"
+    },
+    {
+      "byte_count": 1343,
+      "path": "research_versions/dynamic_k_v1/contracts/N4_P0G_0017_STATIC_COST_DESIGN_SCOPE_CN.md",
+      "sha256": "4dbfaab7ee35f1acdd6de7a9c1c275739b1c15c71bd480e8212497016587e26a"
+    }
+  ],
+  "full_N4_P0_engineering_pass": false,
+  "parent_revision": {
+    "byte_count": 27533,
+    "path": "research_versions/dynamic_k_v1/revisions/0016/record.json",
+    "sha256": "8cb85f868c5177663b89222d9da7db66b48e10bec6a38a35b2f83701925ffea6"
+  },
+  "revision_id": "0017",
+  "runtime_changed": false,
+  "schema": "dynamic_k_0017_static_cost_design_manifest_v1",
+  "simulation_runs": 0,
+  "source_binding_manifests": [
+    {
+      "byte_count": 13823,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/AUDIT_INPUT_MANIFEST.json",
+      "sha256": "2565fc244ce2d29d8dbf6069d66f5fbd2797eca6bfb88f9ce411769f75802a81"
+    },
+    {
+      "byte_count": 1350,
+      "path": "research_versions/dynamic_k_v1/acceptance/0017/SUPPLEMENTAL_INPUT_MANIFEST.json",
+      "sha256": "020d97838d9b57342303a4c431bf99d6dd24e85e48d198227164fd23ee3b3d85"
+    }
+  ],
+  "status": "PASS_STATIC_COST_AUDIT_DESIGN_ONLY",
+  "version_origin": {
+    "byte_count": 1555,
+    "path": "research_versions/dynamic_k_v1/version_record.json",
+    "sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+  }
+}

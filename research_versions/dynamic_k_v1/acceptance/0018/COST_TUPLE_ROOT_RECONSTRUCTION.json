@@ -1,0 +1,26 @@
+{
+  "build_and_binding_s": 37.6205732,
+  "comparisons": {
+    "LIVE_PRE_ACTION": {
+      "actual_sha256": "517886a67ee9ef673f11ee29492d040ddcf27ec288326febfedf08309cdde85f",
+      "exact_equal": true,
+      "expected_sha256": "517886a67ee9ef673f11ee29492d040ddcf27ec288326febfedf08309cdde85f",
+      "first_difference": null
+    },
+    "ROOT": {
+      "actual_sha256": "d28a8160b748e31b5f924bbbf74f7de0c0e1de1c3f9938a4362920d3822f1764",
+      "exact_equal": true,
+      "expected_sha256": "d28a8160b748e31b5f924bbbf74f7de0c0e1de1c3f9938a4362920d3822f1764",
+      "first_difference": null
+    },
+    "SANITIZED_PRE_ACTION": {
+      "actual_sha256": "51beaa1cf24c764066f68be3f492d15cac8d28f24bc303a2b4e92acd3cc53c44",
+      "exact_equal": true,
+      "expected_sha256": "51beaa1cf24c764066f68be3f492d15cac8d28f24bc303a2b4e92acd3cc53c44",
+      "first_difference": null
+    }
+  },
+  "pid": 13752,
+  "semantics": "P0F_EXACT_NOMINAL_V1",
+  "status": "PASS"
+}

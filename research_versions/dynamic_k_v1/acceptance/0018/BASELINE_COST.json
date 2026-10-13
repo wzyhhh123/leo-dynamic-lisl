@@ -1,0 +1,516 @@
+{
+  "forecast_branches": 0,
+  "full_catalog_enumerated": false,
+  "reader_startup_s": 7.136547700000001,
+  "rows": [
+    {
+      "accepted": true,
+      "action": {
+        "kind": "HOLD"
+      },
+      "exact_equal": true,
+      "instrumented": {
+        "actual_wall_s": 4.140000000063537e-05,
+        "callbacks": 4,
+        "calls": {
+          "N2_validation_other": 1
+        },
+        "exclusive_s": {
+          "N2_validation_other": 1.0000000003174137e-05
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {}
+      },
+      "name": "HOLD",
+      "plain_wall_s": 5.899999997893701e-06,
+      "reason": null,
+      "root_scale": {
+        "agenda": 2,
+        "dynamic_terminals": 320,
+        "historical_terminal_rows": 2560,
+        "history_JSON_bytes": 1012027,
+        "history_records": 8,
+        "links": 1,
+        "reservations": 0
+      }
+    },
+    {
+      "accepted": true,
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "ADD",
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "exact_equal": true,
+      "instrumented": {
+        "actual_wall_s": 0.9083886000000021,
+        "callbacks": 991538,
+        "calls": {
+          "320_terminal_log_snapshot": 8,
+          "GateC_connect_other": 1,
+          "GateC_layer_checks": 1,
+          "GateC_physical_window_bilateral_other": 1,
+          "LOS_FOR": 2,
+          "N2_outer_structural_clone": 1,
+          "N2_validation_other": 1,
+          "SGP4": 2,
+          "current_events_copy": 1,
+          "current_links_copy": 1,
+          "current_reservations_copy": 1,
+          "current_terminals_copy": 1,
+          "executor_copy_other": 1,
+          "inner_transaction_preplay_other": 2,
+          "inner_transaction_structural_clone": 2,
+          "terminal_history_copy": 1,
+          "terminal_invariant_validation": 4,
+          "window_lookup": 2
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.45753829999999596,
+          "GateC_connect_other": 0.00031229999999737856,
+          "GateC_layer_checks": 0.0008418999999975085,
+          "GateC_physical_window_bilateral_other": 2.350000000461705e-05,
+          "LOS_FOR": 0.0022796999999954437,
+          "N2_outer_structural_clone": 0.003507400000003713,
+          "N2_validation_other": 0.00016379999999571737,
+          "SGP4": 0.00030930000000495284,
+          "current_events_copy": 7.760000000445189e-05,
+          "current_links_copy": 0.00014500000000339242,
+          "current_reservations_copy": 6.599999998968542e-06,
+          "current_terminals_copy": 0.056922200000002476,
+          "executor_copy_other": 0.005740099999997028,
+          "inner_transaction_preplay_other": 0.0009957000000042626,
+          "inner_transaction_structural_clone": 0.006458700000003148,
+          "terminal_history_copy": 0.3714803999999958,
+          "terminal_invariant_validation": 0.0015500999999957799,
+          "window_lookup": 1.1899999996956012e-05
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 2564,
+          "deepcopy_dict_calls": 2903,
+          "deepcopy_dict_item_visits": 43597,
+          "deepcopy_list_calls": 12,
+          "deepcopy_list_item_visits": 2891,
+          "deepcopy_reconstruct_calls": 1286
+        }
+      },
+      "name": "ADD_hot",
+      "plain_wall_s": 0.05958989999999886,
+      "reason": null,
+      "root_scale": {
+        "agenda": 2,
+        "dynamic_terminals": 320,
+        "historical_terminal_rows": 2560,
+        "history_JSON_bytes": 1012027,
+        "history_records": 8,
+        "links": 1,
+        "reservations": 0
+      }
+    },
+    {
+      "accepted": true,
+      "action": {
+        "a": [
+          "X0_10",
+          "D1"
+        ],
+        "b": [
+          "X1_11",
+          "D1"
+        ],
+        "kind": "ADD",
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "exact_equal": true,
+      "instrumented": {
+        "actual_wall_s": 0.9365730999999968,
+        "callbacks": 991538,
+        "calls": {
+          "320_terminal_log_snapshot": 8,
+          "GateC_connect_other": 1,
+          "GateC_layer_checks": 1,
+          "GateC_physical_window_bilateral_other": 1,
+          "LOS_FOR": 2,
+          "N2_outer_structural_clone": 1,
+          "N2_validation_other": 1,
+          "SGP4": 2,
+          "current_events_copy": 1,
+          "current_links_copy": 1,
+          "current_reservations_copy": 1,
+          "current_terminals_copy": 1,
+          "executor_copy_other": 1,
+          "inner_transaction_preplay_other": 2,
+          "inner_transaction_structural_clone": 2,
+          "terminal_history_copy": 1,
+          "terminal_invariant_validation": 4,
+          "window_lookup": 2
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.43447469999999555,
+          "GateC_connect_other": 0.00038629999999528764,
+          "GateC_layer_checks": 0.0007923000000005231,
+          "GateC_physical_window_bilateral_other": 2.179999999896154e-05,
+          "LOS_FOR": 0.0017567000000084931,
+          "N2_outer_structural_clone": 0.003274199999999894,
+          "N2_validation_other": 0.0001553999999899247,
+          "SGP4": 0.0003303999999957341,
+          "current_events_copy": 9.179999999986421e-05,
+          "current_links_copy": 0.00015670000000511664,
+          "current_reservations_copy": 7.500000002380602e-06,
+          "current_terminals_copy": 0.06866540000000043,
+          "executor_copy_other": 0.005749599999994359,
+          "inner_transaction_preplay_other": 0.0009815000000088503,
+          "inner_transaction_structural_clone": 0.008727000000000373,
+          "terminal_history_copy": 0.40942770000000195,
+          "terminal_invariant_validation": 0.0015375999999989176,
+          "window_lookup": 1.139999999821839e-05
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 2564,
+          "deepcopy_dict_calls": 2903,
+          "deepcopy_dict_item_visits": 43597,
+          "deepcopy_list_calls": 12,
+          "deepcopy_list_item_visits": 2891,
+          "deepcopy_reconstruct_calls": 1286
+        }
+      },
+      "name": "ADD_other",
+      "plain_wall_s": 0.06270300000000617,
+      "reason": null,
+      "root_scale": {
+        "agenda": 2,
+        "dynamic_terminals": 320,
+        "historical_terminal_rows": 2560,
+        "history_JSON_bytes": 1012027,
+        "history_records": 8,
+        "links": 1,
+        "reservations": 0
+      }
+    },
+    {
+      "accepted": true,
+      "action": {
+        "kind": "DROP",
+        "old": {
+          "endpoints": [
+            [
+              "X0_1",
+              "D2"
+            ],
+            [
+              "X1_1",
+              "D1"
+            ]
+          ],
+          "link_id": "L1"
+        }
+      },
+      "exact_equal": true,
+      "instrumented": {
+        "actual_wall_s": 0.17846720000000005,
+        "callbacks": 205662,
+        "calls": {
+          "320_terminal_log_snapshot": 3,
+          "N2_outer_structural_clone": 1,
+          "N2_validation_other": 1,
+          "inner_transaction_preplay_other": 1,
+          "inner_transaction_structural_clone": 1,
+          "terminal_invariant_validation": 3
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.1695907999999946,
+          "N2_outer_structural_clone": 0.0037199000000001092,
+          "N2_validation_other": 7.939999999706515e-05,
+          "inner_transaction_preplay_other": 0.00027270000001067274,
+          "inner_transaction_structural_clone": 0.0035766999999964355,
+          "terminal_invariant_validation": 0.0011998000000019715
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 961,
+          "deepcopy_reconstruct_calls": 642
+        }
+      },
+      "name": "DROP",
+      "plain_wall_s": 0.016712600000005295,
+      "reason": null,
+      "root_scale": {
+        "agenda": 2,
+        "dynamic_terminals": 320,
+        "historical_terminal_rows": 2560,
+        "history_JSON_bytes": 1012027,
+        "history_records": 8,
+        "links": 1,
+        "reservations": 0
+      }
+    },
+    {
+      "accepted": true,
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "BBM",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "exact_equal": true,
+      "instrumented": {
+        "actual_wall_s": 0.9900980999999973,
+        "callbacks": 1126106,
+        "calls": {
+          "320_terminal_log_snapshot": 10,
+          "GateC_connect_other": 1,
+          "GateC_layer_checks": 1,
+          "GateC_physical_window_bilateral_other": 1,
+          "LOS_FOR": 2,
+          "N2_outer_structural_clone": 1,
+          "N2_validation_other": 1,
+          "SGP4": 2,
+          "current_events_copy": 1,
+          "current_links_copy": 1,
+          "current_reservations_copy": 1,
+          "current_terminals_copy": 1,
+          "executor_copy_other": 1,
+          "inner_transaction_preplay_other": 2,
+          "inner_transaction_structural_clone": 2,
+          "terminal_history_copy": 1,
+          "terminal_invariant_validation": 6,
+          "window_lookup": 2
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.5360396000000165,
+          "GateC_connect_other": 0.00032420000000144,
+          "GateC_layer_checks": 0.0008823000000006687,
+          "GateC_physical_window_bilateral_other": 2.099999999671809e-05,
+          "LOS_FOR": 0.0017433000000011134,
+          "N2_outer_structural_clone": 0.0028162000000051535,
+          "N2_validation_other": 0.00015959999999637375,
+          "SGP4": 0.000313099999999622,
+          "current_events_copy": 8.449999999982083e-05,
+          "current_links_copy": 0.00014230000000026166,
+          "current_reservations_copy": 6.900000002474371e-06,
+          "current_terminals_copy": 0.056929099999997845,
+          "executor_copy_other": 0.004877000000000464,
+          "inner_transaction_preplay_other": 0.0010526999999882491,
+          "inner_transaction_structural_clone": 0.006282400000003463,
+          "terminal_history_copy": 0.3761526999999987,
+          "terminal_invariant_validation": 0.002235499999990509,
+          "window_lookup": 1.1499999999387e-05
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 3205,
+          "deepcopy_dict_calls": 2903,
+          "deepcopy_dict_item_visits": 43597,
+          "deepcopy_list_calls": 12,
+          "deepcopy_list_item_visits": 2891,
+          "deepcopy_reconstruct_calls": 1286
+        }
+      },
+      "name": "BBM_hot",
+      "plain_wall_s": 0.07383029999999735,
+      "reason": null,
+      "root_scale": {
+        "agenda": 2,
+        "dynamic_terminals": 320,
+        "historical_terminal_rows": 2560,
+        "history_JSON_bytes": 1012027,
+        "history_records": 8,
+        "links": 1,
+        "reservations": 0
+      }
+    },
+    {
+      "accepted": true,
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "MBB",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "exact_equal": true,
+      "instrumented": {
+        "actual_wall_s": 0.846839800000005,
+        "callbacks": 991730,
+        "calls": {
+          "320_terminal_log_snapshot": 8,
+          "GateC_connect_other": 1,
+          "GateC_layer_checks": 1,
+          "GateC_physical_window_bilateral_other": 1,
+          "LOS_FOR": 2,
+          "N2_outer_structural_clone": 1,
+          "N2_validation_other": 1,
+          "SGP4": 2,
+          "current_events_copy": 1,
+          "current_links_copy": 1,
+          "current_reservations_copy": 1,
+          "current_terminals_copy": 1,
+          "executor_copy_other": 1,
+          "inner_transaction_preplay_other": 2,
+          "inner_transaction_structural_clone": 2,
+          "terminal_history_copy": 1,
+          "terminal_invariant_validation": 4,
+          "window_lookup": 2
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.4144369999999924,
+          "GateC_connect_other": 0.0003272000000080766,
+          "GateC_layer_checks": 0.0007982999999995855,
+          "GateC_physical_window_bilateral_other": 3.0299999991711957e-05,
+          "LOS_FOR": 0.0019288000000088346,
+          "N2_outer_structural_clone": 0.003156900000000462,
+          "N2_validation_other": 0.0001925000000042587,
+          "SGP4": 0.00036939999999674455,
+          "current_events_copy": 7.980000000173959e-05,
+          "current_links_copy": 0.00013859999999965567,
+          "current_reservations_copy": 6.8000000013057615e-06,
+          "current_terminals_copy": 0.05943280000000328,
+          "executor_copy_other": 0.005209199999988812,
+          "inner_transaction_preplay_other": 0.0009775000000047385,
+          "inner_transaction_structural_clone": 0.0061661000000015065,
+          "terminal_history_copy": 0.35199690000000317,
+          "terminal_invariant_validation": 0.0015459999999976048,
+          "window_lookup": 1.5099999998824387e-05
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 2564,
+          "deepcopy_dict_calls": 2903,
+          "deepcopy_dict_item_visits": 43597,
+          "deepcopy_list_calls": 12,
+          "deepcopy_list_item_visits": 2891,
+          "deepcopy_reconstruct_calls": 1286
+        }
+      },
+      "name": "MBB_hot",
+      "plain_wall_s": 0.06891060000000238,
+      "reason": null,
+      "root_scale": {
+        "agenda": 2,
+        "dynamic_terminals": 320,
+        "historical_terminal_rows": 2560,
+        "history_JSON_bytes": 1012027,
+        "history_records": 8,
+        "links": 1,
+        "reservations": 0
+      }
+    },
+    {
+      "accepted": false,
+      "action": {
+        "a": [
+          "X0_1",
+          "D2"
+        ],
+        "b": [
+          "X1_1",
+          "D1"
+        ],
+        "kind": "ADD",
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "exact_equal": true,
+      "instrumented": {
+        "actual_wall_s": 0.00014949999999913643,
+        "callbacks": 100,
+        "calls": {
+          "N2_validation_other": 1
+        },
+        "exclusive_s": {
+          "N2_validation_other": 0.00012939999999872498
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 1
+        }
+      },
+      "name": "ADD_occupied",
+      "plain_wall_s": 0.0007988999999994917,
+      "reason": "ADD_WOULD_IMPLICITLY_RELEASE",
+      "root_scale": {
+        "agenda": 2,
+        "dynamic_terminals": 320,
+        "historical_terminal_rows": 2560,
+        "history_JSON_bytes": 1012027,
+        "history_records": 8,
+        "links": 1,
+        "reservations": 0
+      }
+    }
+  ],
+  "specified_actions": 7,
+  "status": "PASS_FINITE_BASELINE_DIAGNOSIS",
+  "validate_calls": 14
+}

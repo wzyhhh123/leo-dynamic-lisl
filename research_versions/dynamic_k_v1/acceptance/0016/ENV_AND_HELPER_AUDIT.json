@@ -1,0 +1,31 @@
+{
+  "executable": "D:\\Program_Files\\anaconda3\\envs\\pytorch\\python.exe",
+  "executable_sha256": "7b43ac317d5f79012ad097559345e0e4597cfcf2016e209d6643aaf2c3be8223",
+  "execution_hashseed_test_only": 1414,
+  "helper_fixes": [
+    {
+      "evidence": "variant_N1a_regression.json and regressions/*",
+      "failure": "Initial regression binding FileNotFoundError",
+      "fix": "Bind immutable 0015 manifest before redirecting only new runner output directory"
+    },
+    {
+      "evidence": "SMALL_INSTRUMENTED_HOLD.json",
+      "failure": "Timer FrozenInstanceError",
+      "fix": "No frozen guard setattr; original error retained"
+    },
+    {
+      "evidence": "RECOVERED_TIMING_PAIR.json",
+      "failure": "Wrapper fields changed final state hash",
+      "fix": "Reject wrapped evidence; use non-mutating thread profiler"
+    },
+    {
+      "evidence": "SMALL_DOMAIN_ACCEPTANCE.json",
+      "failure": "Runtime tuple compared to stored JSON list",
+      "fix": "Compare identical published JSON structures exactly, all non-timing fields including hashes; no tolerance change"
+    }
+  ],
+  "planned_not_executed_helper": "seal_stop.py is a conditional BBM timeout sealer, not called because BBM finished before its deadline",
+  "production_kernel_files_modified": false,
+  "python": "3.9.21 (main, Dec 11 2024, 16:35:24) [MSC v.1929 64 bit (AMD64)]",
+  "traceback_source_note": "New unsealed epoch_workflow helper was corrected while original process already had old code loaded; old tracebacks can show current disk line text. No frozen runtime or bound dependency changed. Final observer measurement uses saved plain/profiled JSON equality, not old wrapper evidence."
+}

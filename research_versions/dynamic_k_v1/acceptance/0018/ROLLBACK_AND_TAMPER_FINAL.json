@@ -1,0 +1,28 @@
+{
+  "local": {
+    "legacy_N1a_history_reject_preserved": true,
+    "pending_reservation_independent": true,
+    "rollback": [
+      {
+        "optimized": false,
+        "reason": "Unknown dynamic terminal (fixed ports cannot be borrowed)",
+        "rollback_exact": true,
+        "snapshot_log_sha256": "caf72cd1b167f7d62619d6045503ccf6998f81622dfe3e280c3309b14690e816"
+      },
+      {
+        "optimized": true,
+        "reason": "Unknown dynamic terminal (fixed ports cannot be borrowed)",
+        "rollback_exact": true,
+        "snapshot_log_sha256": "caf72cd1b167f7d62619d6045503ccf6998f81622dfe3e280c3309b14690e816"
+      }
+    ]
+  },
+  "source": {
+    "dependency_tamper_reject": "P0H_SOURCE_DRIFT:research_versions/dynamic_k_v1/acceptance/0018/negative_inputs/source.txt",
+    "frozen_sources_touched": false,
+    "manifest_anchor_reject": "P0H_MANIFEST_DRIFT",
+    "test_only_input_after": "TAMPERED_TEST_ONLY",
+    "test_only_input_before": "ORIGINAL_TEST_ONLY"
+  },
+  "status": "PASS"
+}

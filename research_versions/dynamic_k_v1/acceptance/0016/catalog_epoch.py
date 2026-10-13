@@ -26,7 +26,12 @@ class Enumerate:
             actual_immediate_release_ids=verdict.get('actual_immediate_release_ids'),
             release_refs=[asdict(x) for x in verdict.get('release_refs',())],wall_s=time.perf_counter()-start)
         self.rows.append(row);self.log.write(json.dumps(row,sort_keys=True)+'\n');self.log.flush()
-        if len(self.rows)%100==0:print('CATALOG_VALIDATIONS '+str(len(self.rows)),flush=True)
+        if len(self.rows)%100==0:
+            print('CATALOG_VALIDATIONS '+str(len(self.rows)),flush=True)
+            w.write(w.A/('CATALOG_PROGRESS_'+str(len(self.rows))+'.json'),dict(
+                completed_validation_count=len(self.rows),wall_s=time.perf_counter()-self.start,
+                completed_stage_exclusive_s=dict(self.parts),stage_calls=dict(self.calls),
+                complete_legal_counts=None,coverage='PREFIX_ONLY'))
         if time.perf_counter()-self.start>=300.:raise CatalogDeadline('CATALOG_300S_SAFETY_LIMIT')
         return verdict
     def run(self):
@@ -39,7 +44,7 @@ class Enumerate:
                 (self.c,'_verify','binding_and_root_physical'),(self.c.source,'generate','proposal_and_validation_union')]:
                 ctx.enter_context(patch.object(obj,name,self.wrap(category,getattr(obj,name))))
             ctx.enter_context(patch.object(self.c.validator,'validate',self.validate))
-            self.start=time.perf_counter();w.write(w.A/'CATALOG_STARTED.json',dict(start_perf_counter=self.start,pid=os.getpid(),deadline_s=300.))
+            self.start=time.perf_counter();w.write(w.A/'CATALOG_STARTED.json',dict(start_perf_counter=self.start,start_unix_s=time.time(),pid=os.getpid(),deadline_s=300.))
             try:source=self.c.candidates(w.SETUP,retention_budgets=None)
             except CatalogDeadline as exc:failure=str(exc)
             except Exception as exc:failure=dict(message=str(exc),traceback=traceback.format_exc())
@@ -67,7 +72,7 @@ def main():
     live,built=w.load_live('CATALOG');lease,live,g,startup=w.open_lease(live)
     try:
         # Full catalog remains intact; only this clone receives timing wrappers.
-        diagnostic=w.Enumerate if False else Enumerate(live.clone())
+        diagnostic=Enumerate(live.clone())
         original_windows=live.validator.physical.catalog.terminal_pair_candidates(3.,live.engine.executor.satellite_ids)
         w.write(w.A/'CATALOG_UNIVERSE.json',dict(registered_catalog_rows=2742,current_window_count=len(original_windows),
             original_rows_are_not_legal_action_count=True,live_root_build_s=built,reader_startup_s=startup))
@@ -89,7 +94,7 @@ def main():
                 scoring_and_sanitization_wall_s=time.perf_counter()-mode_start,forecast_sha256=fc.sha256,
                 root_sha256=root.view.state_sha256)
         w.write(w.A/'SINGLE_EPOCH_ACCEPTANCE.json',dict(status='PASS_SINGLE_T3_EPOCH_ZERO_PERSIST',modes=epochs,
-            enumeration_wall_s=diagnostic.parts['proposal_and_validation_union'] if False else w.vc.read_json(w.A/'CATALOG_DIAGNOSIS.json')['wall_s'],
+            enumeration_wall_s=w.vc.read_json(w.A/'CATALOG_DIAGNOSIS.json')['wall_s'],
             scoring_wall_s=time.perf_counter()-start,reader_startup_s=startup,root_build_s=built,
             safety_limit_is_not_scientific_controller_deadline=True,three_second_realtime_guaranteed=False,
             memory=w.memory(),full_pilot_executed=False,scientific_gate_pass=False))

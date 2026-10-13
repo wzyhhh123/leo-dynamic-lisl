@@ -1,0 +1,361 @@
+{
+  "assumptions": [
+    "All branches accepted/completed without exception; no legacy scripted actions",
+    "Frozen score_action calls Atomic.advance_to at submit time 3, then cuts 6 and 9",
+    "Every ExactEventClock._step executes one _microstep and one _integrate",
+    "Every advance_to ends with exactly one settle_current_time/_microstep",
+    "ObservedD2 emits one SCHEDULE per _schedule_service_segments, one INTERVAL per _integrate",
+    "FIFO consumes every observer record once, appends one closure_audit per CLOSURE",
+    "0016 plain score wrapper and read-only sampler do not advance the engine"
+  ],
+  "equation": "record_delta = 2*positive_time_steps + 3 endpoint_settles + closure_delta",
+  "initial_closure_audit_count": 0,
+  "initial_observation_count": 43,
+  "initial_observation_kinds": {
+    "INTERVAL": 21,
+    "SCHEDULE": 22
+  },
+  "not_counted": [
+    "Propagation rate agenda individual pops",
+    "Cohort allocation/split/consume lifetime counts",
+    "Peak active streams"
+  ],
+  "rows": [
+    {
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "ADD",
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "actual_propagation_heap_pops": null,
+      "age_record_delta": 363,
+      "atomic_advance_calls": 3,
+      "closure_record_delta": 18,
+      "derived_INTERVAL_records": 171,
+      "derived_age_consume_calls": 3,
+      "derived_age_metrics_calls": 6,
+      "derived_microstep_and_SCHEDULE_calls": 174,
+      "derived_positive_time_steps": 171,
+      "kind": "EXACT_STRUCTURAL_DERIVATION_UNDER_BOUND_SUCCESSFUL_CALL_PATH",
+      "mode": "PERSIST"
+    },
+    {
+      "action": {
+        "kind": "DROP",
+        "old": {
+          "endpoints": [
+            [
+              "X0_1",
+              "D2"
+            ],
+            [
+              "X1_1",
+              "D1"
+            ]
+          ],
+          "link_id": "L1"
+        }
+      },
+      "actual_propagation_heap_pops": null,
+      "age_record_delta": 54,
+      "atomic_advance_calls": 3,
+      "closure_record_delta": 7,
+      "derived_INTERVAL_records": 22,
+      "derived_age_consume_calls": 3,
+      "derived_age_metrics_calls": 6,
+      "derived_microstep_and_SCHEDULE_calls": 25,
+      "derived_positive_time_steps": 22,
+      "kind": "EXACT_STRUCTURAL_DERIVATION_UNDER_BOUND_SUCCESSFUL_CALL_PATH",
+      "mode": "PERSIST"
+    },
+    {
+      "action": {
+        "kind": "HOLD"
+      },
+      "actual_propagation_heap_pops": null,
+      "age_record_delta": 7,
+      "atomic_advance_calls": 3,
+      "closure_record_delta": 0,
+      "derived_INTERVAL_records": 2,
+      "derived_age_consume_calls": 3,
+      "derived_age_metrics_calls": 6,
+      "derived_microstep_and_SCHEDULE_calls": 5,
+      "derived_positive_time_steps": 2,
+      "kind": "EXACT_STRUCTURAL_DERIVATION_UNDER_BOUND_SUCCESSFUL_CALL_PATH",
+      "mode": "PERSIST"
+    },
+    {
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "BBM",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "actual_propagation_heap_pops": null,
+      "age_record_delta": 479,
+      "atomic_advance_calls": 3,
+      "closure_record_delta": 10,
+      "derived_INTERVAL_records": 233,
+      "derived_age_consume_calls": 3,
+      "derived_age_metrics_calls": 6,
+      "derived_microstep_and_SCHEDULE_calls": 236,
+      "derived_positive_time_steps": 233,
+      "kind": "EXACT_STRUCTURAL_DERIVATION_UNDER_BOUND_SUCCESSFUL_CALL_PATH",
+      "mode": "PERSIST"
+    },
+    {
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "MBB",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "actual_propagation_heap_pops": null,
+      "age_record_delta": 383,
+      "atomic_advance_calls": 3,
+      "closure_record_delta": 18,
+      "derived_INTERVAL_records": 181,
+      "derived_age_consume_calls": 3,
+      "derived_age_metrics_calls": 6,
+      "derived_microstep_and_SCHEDULE_calls": 184,
+      "derived_positive_time_steps": 181,
+      "kind": "EXACT_STRUCTURAL_DERIVATION_UNDER_BOUND_SUCCESSFUL_CALL_PATH",
+      "mode": "PERSIST"
+    },
+    {
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "ADD",
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "actual_propagation_heap_pops": null,
+      "age_record_delta": 58,
+      "atomic_advance_calls": 3,
+      "closure_record_delta": 7,
+      "derived_INTERVAL_records": 24,
+      "derived_age_consume_calls": 3,
+      "derived_age_metrics_calls": 6,
+      "derived_microstep_and_SCHEDULE_calls": 27,
+      "derived_positive_time_steps": 24,
+      "kind": "EXACT_STRUCTURAL_DERIVATION_UNDER_BOUND_SUCCESSFUL_CALL_PATH",
+      "mode": "ZERO"
+    },
+    {
+      "action": {
+        "kind": "DROP",
+        "old": {
+          "endpoints": [
+            [
+              "X0_1",
+              "D2"
+            ],
+            [
+              "X1_1",
+              "D1"
+            ]
+          ],
+          "link_id": "L1"
+        }
+      },
+      "actual_propagation_heap_pops": null,
+      "age_record_delta": 54,
+      "atomic_advance_calls": 3,
+      "closure_record_delta": 7,
+      "derived_INTERVAL_records": 22,
+      "derived_age_consume_calls": 3,
+      "derived_age_metrics_calls": 6,
+      "derived_microstep_and_SCHEDULE_calls": 25,
+      "derived_positive_time_steps": 22,
+      "kind": "EXACT_STRUCTURAL_DERIVATION_UNDER_BOUND_SUCCESSFUL_CALL_PATH",
+      "mode": "ZERO"
+    },
+    {
+      "action": {
+        "kind": "HOLD"
+      },
+      "actual_propagation_heap_pops": null,
+      "age_record_delta": 54,
+      "atomic_advance_calls": 3,
+      "closure_record_delta": 7,
+      "derived_INTERVAL_records": 22,
+      "derived_age_consume_calls": 3,
+      "derived_age_metrics_calls": 6,
+      "derived_microstep_and_SCHEDULE_calls": 25,
+      "derived_positive_time_steps": 22,
+      "kind": "EXACT_STRUCTURAL_DERIVATION_UNDER_BOUND_SUCCESSFUL_CALL_PATH",
+      "mode": "ZERO"
+    },
+    {
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "BBM",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "actual_propagation_heap_pops": null,
+      "age_record_delta": 299,
+      "atomic_advance_calls": 3,
+      "closure_record_delta": 14,
+      "derived_INTERVAL_records": 141,
+      "derived_age_consume_calls": 3,
+      "derived_age_metrics_calls": 6,
+      "derived_microstep_and_SCHEDULE_calls": 144,
+      "derived_positive_time_steps": 141,
+      "kind": "EXACT_STRUCTURAL_DERIVATION_UNDER_BOUND_SUCCESSFUL_CALL_PATH",
+      "mode": "ZERO"
+    },
+    {
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "MBB",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "actual_propagation_heap_pops": null,
+      "age_record_delta": 58,
+      "atomic_advance_calls": 3,
+      "closure_record_delta": 7,
+      "derived_INTERVAL_records": 24,
+      "derived_age_consume_calls": 3,
+      "derived_age_metrics_calls": 6,
+      "derived_microstep_and_SCHEDULE_calls": 27,
+      "derived_positive_time_steps": 24,
+      "kind": "EXACT_STRUCTURAL_DERIVATION_UNDER_BOUND_SUCCESSFUL_CALL_PATH",
+      "mode": "ZERO"
+    }
+  ],
+  "schema": "dynamic_k_0017_structural_event_counts_v1",
+  "simulation_runs": 0,
+  "stored_fraction_witnesses": {
+    "max_denominator_bits": 112,
+    "max_numerator_bits": 131,
+    "samples": 22720,
+    "scope": "Stored BBM final metrics and roundoff entries only, not maximum transient arithmetic operands"
+  }
+}

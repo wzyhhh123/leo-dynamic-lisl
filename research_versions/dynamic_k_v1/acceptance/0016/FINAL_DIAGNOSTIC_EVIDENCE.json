@@ -1,0 +1,1942 @@
+{
+  "catalog": {
+    "complete_legal_counts": null,
+    "completed_prefix_by_kind": {
+      "ADD": 1996,
+      "DROP": 1,
+      "HOLD": 1,
+      "REPLACE": 600
+    },
+    "completed_validation_count": 2598,
+    "elapsed_s": 300.0830554962158,
+    "full_epoch_executed": false,
+    "indivisible_call_interrupted": true,
+    "legal_in_completed_prefix": {
+      "ADD": 1965,
+      "DROP": 1,
+      "HOLD": 1,
+      "REPLACE": 599
+    },
+    "pid": 57396,
+    "reasons_in_completed_prefix": {
+      "ACCEPTED": 2566,
+      "ADD_WOULD_IMPLICITLY_RELEASE": 31,
+      "DUPLICATE_LINK": 1
+    },
+    "selected_action": null,
+    "started_unix_s": 1791865086.686067,
+    "status": "STOP_CATALOG_300S_HARD_LIMIT",
+    "stopped_unix_s": 1791865386.7691226
+  },
+  "catalog_peak_memory_source": {
+    "byte_count": 368,
+    "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_MEMORY_SNAPSHOT_01.json",
+    "sha256": "076093f63fd9cf71253dc061d66d5b92990c363d0add61f6a843854dd4d1f2b8"
+  },
+  "frozen_source_changes": 0,
+  "instrumentation_scope": "Actual profiler overhead only on paired HOLD; full catalog uses lightweight wrappers; no full uninstrumented catalog rerun authorized or executed",
+  "last_completed_stage_snapshot": {
+    "complete_legal_counts": null,
+    "completed_stage_exclusive_s": {
+      "LOS_FOR": 2.7652715999995365,
+      "SGP4_native": 0.8373567000003419,
+      "binding_and_root_physical": 0.11248069999999188,
+      "catalog_window_lookup": 0.003041199999998412,
+      "physical_window_bilateral": 192.1205672000005
+    },
+    "completed_validation_count": 2500,
+    "coverage": "PREFIX_ONLY",
+    "stage_calls": {
+      "LOS_FOR": 4933,
+      "SGP4_native": 4933,
+      "binding_and_root_physical": 1,
+      "catalog_window_lookup": 1,
+      "physical_window_bilateral": 2467,
+      "proposal_and_validation_union": 1
+    },
+    "wall_s": 288.544831
+  },
+  "main_pilot_runs": 0,
+  "profiler_pair": {
+    "byte_count": 1115391,
+    "path": "research_versions/dynamic_k_v1/acceptance/0016/OBSERVER_PROFILE_TIMING_PAIR.json",
+    "sha256": "4d90755cf9e2f14e9cec6d2675544f9711b9b23aabd83a194049fba1970d349c"
+  },
+  "science_gate_pass": false,
+  "selected_full_epoch_action": null,
+  "small_domain_rows": [
+    {
+      "DeltaE_h_J": 950.0,
+      "E_h_J": 10550.0,
+      "J_h_bit_s": 38070.340292782945,
+      "K_admit": 2,
+      "K_draining": 0,
+      "N_end_bits": 1241.2884264877325,
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "ADD",
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "action_receipt": {
+        "accepted": true,
+        "action": {
+          "a": [
+            "X0_10",
+            "D2"
+          ],
+          "b": [
+            "X1_10",
+            "D1"
+          ],
+          "kind": "ADD",
+          "setup": {
+            "acquisition_s": 0.5,
+            "retarget_a_s": 0.5,
+            "retarget_b_s": 0.5
+          }
+        },
+        "action_id": 1,
+        "actual_immediate_release_ids": [],
+        "after_terminal_sha256": "30821e3e1f172904b6b1e1fd53fe49f0fa6d6c34967b73ad9ed320b294f673db",
+        "before_terminal_sha256": "4ee40e3e91d584802404164422100dc047549a37d47cb7c890bd164b56df54fe",
+        "geometry": {
+          "accepted": true,
+          "geometry": {
+            "end_semantics": "terminal_pair_for_expiry",
+            "ready_time": 4.0,
+            "remaining_lifetime_s": 144.04275553019596,
+            "usable_lifetime_s": 143.04275553019596,
+            "window": {
+              "distance_km": 313.49323540945056,
+              "end_s": 147.04275553019596,
+              "left_censored": true,
+              "parent_end_s": 600.0,
+              "parent_start_s": 0.0,
+              "plane_gap": 1,
+              "right_censored": false,
+              "sat_a": "X0_10",
+              "sat_b": "X1_10",
+              "start_s": 0.0,
+              "terminal_a": "D2",
+              "terminal_b": "D1"
+            }
+          },
+          "geometry_scope": "FROZEN_SYNTHETIC_TLE_REAL_SGP4_GEOMETRY",
+          "hardware_calibration": "PARAMETRIC",
+          "live_geometry": {
+            "accepted": true,
+            "for_details": {
+              "feasible": true,
+              "local_angle_deg": 47.59195836712257,
+              "local_boresight_teme": [
+                -0.005571420808527087,
+                0.9961818220656152,
+                -0.08712483375137767
+              ],
+              "local_half_angle_deg": 90.0,
+              "reason": null,
+              "remote_angle_deg": 37.743920342764326,
+              "remote_boresight_teme": [
+                0.1784660098914253,
+                -0.9800421027725222,
+                0.08756346330888623
+              ],
+              "remote_half_angle_deg": 90.0
+            },
+            "los_margin_km": 1198.8232727111736,
+            "reason": null
+          },
+          "ready_geometry": {
+            "accepted": true,
+            "for_details": {
+              "feasible": true,
+              "local_angle_deg": 47.774198461316004,
+              "local_boresight_teme": [
+                -0.005571234932603126,
+                0.9961818206319164,
+                -0.08712486203034132
+              ],
+              "local_half_angle_deg": 90.0,
+              "reason": null,
+              "remote_angle_deg": 37.92470285536377,
+              "remote_boresight_teme": [
+                0.1784658252263501,
+                -0.9800421340028597,
+                0.08756349013943483
+              ],
+              "remote_half_angle_deg": 90.0
+            },
+            "los_margin_km": 1198.8313711463006,
+            "reason": null
+          },
+          "reason": null
+        },
+        "mode": "ADD",
+        "reason": null,
+        "requested_release_refs": [],
+        "reservation_id": "R2",
+        "terminal_log_start": 8,
+        "time_s": 3.0
+      },
+      "actual_wall_s": 21.46533339999999,
+      "branch_final_state_sha256": "4473c61a160adedbe64b58dc0f5c216cc5038b99007ecea29add7d9cb42d3a4b",
+      "cohort_count": 9,
+      "cost_bit_s": 995518.0708517093,
+      "delivered_bit_age_integral_bit_s": 130569.54918757496,
+      "delivered_bits": 5398758.711573512,
+      "evidence": {
+        "byte_count": 2486069,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/PERSIST/01_ADD_.json",
+        "sha256": "528e07c5d8a1c86640e775968e5a5326498e84ebaa56ba7bcf645646637e2d02"
+      },
+      "mean_delay_absolute_error_bound_s": 8.379611830674548e-13,
+      "mean_delivered_fluid_delay_s": 0.024185105533179013,
+      "memory": {
+        "private_bytes": 120365056,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 132571136
+      },
+      "mode": "PERSIST",
+      "service_observation_count": 363,
+      "setup_terminal_count": 0,
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "f2fb221853d93a71963d17e05872de4d8dd9f220ef648a4980b94d77a20dc9bf",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_event_count": 8,
+      "timings": {
+        "advance_network_fifo_energy_including_binding_s": 20.5884524,
+        "branch_clone_s": 0.09765649999999937,
+        "energy_cost_evidence_s": 0.07431790000001115,
+        "explicit_binding_hash_s": 0.08018009999999975,
+        "n2_submit_including_binding_s": 0.48169660000000647
+      }
+    },
+    {
+      "DeltaE_h_J": 0.0,
+      "E_h_J": 9600.0,
+      "J_h_bit_s": 10886001.959957208,
+      "K_admit": 0,
+      "K_draining": 0,
+      "N_end_bits": 3614279.6524881134,
+      "action": {
+        "kind": "DROP",
+        "old": {
+          "endpoints": [
+            [
+              "X0_1",
+              "D2"
+            ],
+            [
+              "X1_1",
+              "D1"
+            ]
+          ],
+          "link_id": "L1"
+        }
+      },
+      "action_receipt": {
+        "accepted": true,
+        "action": {
+          "kind": "DROP",
+          "old": {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        },
+        "action_id": 1,
+        "actual_immediate_release_ids": [
+          "L1"
+        ],
+        "after_terminal_sha256": "a52a4647cb535d9c434be4fff5c7d4d7ae2ed9a44eae52265f9ffe4200fc0dc7",
+        "before_terminal_sha256": "4ee40e3e91d584802404164422100dc047549a37d47cb7c890bd164b56df54fe",
+        "geometry": null,
+        "mode": "DROP",
+        "reason": null,
+        "requested_release_refs": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "reservation_id": null,
+        "terminal_log_start": 8,
+        "time_s": 3.0
+      },
+      "actual_wall_s": 1.955332900000002,
+      "branch_final_state_sha256": "8168cd2d62a6f8db4340a565fcead5bbe6ed9649d6d79458755d4b5b0c3a63fb",
+      "cohort_count": 92,
+      "cost_bit_s": 32571679.87488589,
+      "delivered_bit_age_integral_bit_s": 92570.48914679623,
+      "delivered_bits": 1785720.347511888,
+      "evidence": {
+        "byte_count": 750139,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/PERSIST/02_DROP_.json",
+        "sha256": "51670c8f4f436a6019fd50c0a3485c678713287a905338da787ad2033609e284"
+      },
+      "mean_delay_absolute_error_bound_s": 4.631821895214169e-13,
+      "mean_delivered_fluid_delay_s": 0.051839297948179965,
+      "memory": {
+        "private_bytes": 118571008,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 130756608
+      },
+      "mode": "PERSIST",
+      "service_observation_count": 54,
+      "setup_terminal_count": 0,
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "f5ed87942109060c412c69d2e8a5078cb5246a54179da8754bd4d29276d10a62",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_event_count": 3,
+      "timings": {
+        "advance_network_fifo_energy_including_binding_s": 1.024683600000003,
+        "branch_clone_s": 0.12236040000000514,
+        "energy_cost_evidence_s": 0.02948359999999184,
+        "explicit_binding_hash_s": 0.09022900000000789,
+        "n2_submit_including_binding_s": 0.5228141999999991
+      }
+    },
+    {
+      "DeltaE_h_J": 480.0,
+      "E_h_J": 10080.0,
+      "J_h_bit_s": 187306.60287934053,
+      "K_admit": 1,
+      "K_draining": 0,
+      "N_end_bits": 31217.767146556987,
+      "action": {
+        "kind": "HOLD"
+      },
+      "action_receipt": {
+        "accepted": true,
+        "action": {
+          "kind": "HOLD"
+        },
+        "action_id": 1,
+        "actual_immediate_release_ids": [],
+        "after_terminal_sha256": "4ee40e3e91d584802404164422100dc047549a37d47cb7c890bd164b56df54fe",
+        "before_terminal_sha256": "4ee40e3e91d584802404164422100dc047549a37d47cb7c890bd164b56df54fe",
+        "geometry": null,
+        "mode": "HOLD",
+        "reason": null,
+        "requested_release_refs": [],
+        "reservation_id": null,
+        "terminal_log_start": 8,
+        "time_s": 3.0
+      },
+      "actual_wall_s": 1.3340139000000022,
+      "branch_final_state_sha256": "e6082c7d10a50e84730fd947b7772224c7b4c1c14aa3b5bfe606744ed343249e",
+      "cohort_count": 20,
+      "cost_bit_s": 854613.2057586825,
+      "delivered_bit_age_integral_bit_s": 278655.96086414147,
+      "delivered_bits": 5368782.232853443,
+      "evidence": {
+        "byte_count": 521101,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/PERSIST/03_HOLD_.json",
+        "sha256": "27cbb8ddacb0c7a4628e1dfb07dee054399fd637921106bef65dd84bd6c78be9"
+      },
+      "mean_delay_absolute_error_bound_s": 3.827114032273576e-14,
+      "mean_delivered_fluid_delay_s": 0.0519030105484534,
+      "memory": {
+        "private_bytes": 123314176,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 135364608
+      },
+      "mode": "PERSIST",
+      "service_observation_count": 7,
+      "setup_terminal_count": 0,
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "281d1599f8b7b22f83c51784e8d0d00de294a4aa8e48be35b300b7174e01becc",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_event_count": 0,
+      "timings": {
+        "advance_network_fifo_energy_including_binding_s": 0.5556054999999986,
+        "branch_clone_s": 0.11355600000000265,
+        "energy_cost_evidence_s": 0.04798620000001108,
+        "explicit_binding_hash_s": 0.09188439999999787,
+        "n2_submit_including_binding_s": 0.37508939999999313
+      }
+    },
+    {
+      "DeltaE_h_J": 470.0,
+      "E_h_J": 10070.0,
+      "J_h_bit_s": 856719.6363402514,
+      "K_admit": 1,
+      "K_draining": 0,
+      "N_end_bits": 14810.158517939777,
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "BBM",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "action_receipt": {
+        "accepted": true,
+        "action": {
+          "a": [
+            "X0_10",
+            "D2"
+          ],
+          "b": [
+            "X1_10",
+            "D1"
+          ],
+          "kind": "REPLACE",
+          "mode": "BBM",
+          "old": [
+            {
+              "endpoints": [
+                [
+                  "X0_1",
+                  "D2"
+                ],
+                [
+                  "X1_1",
+                  "D1"
+                ]
+              ],
+              "link_id": "L1"
+            }
+          ],
+          "setup": {
+            "acquisition_s": 0.5,
+            "retarget_a_s": 0.5,
+            "retarget_b_s": 0.5
+          }
+        },
+        "action_id": 1,
+        "actual_immediate_release_ids": [
+          "L1"
+        ],
+        "after_terminal_sha256": "729c7cc21ca2fee0068ac04bd9ce1db846a6d1fc9de1188e3cdedaf4cd1d1844",
+        "before_terminal_sha256": "4ee40e3e91d584802404164422100dc047549a37d47cb7c890bd164b56df54fe",
+        "geometry": {
+          "accepted": true,
+          "geometry": {
+            "end_semantics": "terminal_pair_for_expiry",
+            "ready_time": 4.0,
+            "remaining_lifetime_s": 144.04275553019596,
+            "usable_lifetime_s": 143.04275553019596,
+            "window": {
+              "distance_km": 313.49323540945056,
+              "end_s": 147.04275553019596,
+              "left_censored": true,
+              "parent_end_s": 600.0,
+              "parent_start_s": 0.0,
+              "plane_gap": 1,
+              "right_censored": false,
+              "sat_a": "X0_10",
+              "sat_b": "X1_10",
+              "start_s": 0.0,
+              "terminal_a": "D2",
+              "terminal_b": "D1"
+            }
+          },
+          "geometry_scope": "FROZEN_SYNTHETIC_TLE_REAL_SGP4_GEOMETRY",
+          "hardware_calibration": "PARAMETRIC",
+          "live_geometry": {
+            "accepted": true,
+            "for_details": {
+              "feasible": true,
+              "local_angle_deg": 47.59195836712257,
+              "local_boresight_teme": [
+                -0.005571420808527087,
+                0.9961818220656152,
+                -0.08712483375137767
+              ],
+              "local_half_angle_deg": 90.0,
+              "reason": null,
+              "remote_angle_deg": 37.743920342764326,
+              "remote_boresight_teme": [
+                0.1784660098914253,
+                -0.9800421027725222,
+                0.08756346330888623
+              ],
+              "remote_half_angle_deg": 90.0
+            },
+            "los_margin_km": 1198.8232727111736,
+            "reason": null
+          },
+          "ready_geometry": {
+            "accepted": true,
+            "for_details": {
+              "feasible": true,
+              "local_angle_deg": 47.774198461316004,
+              "local_boresight_teme": [
+                -0.005571234932603126,
+                0.9961818206319164,
+                -0.08712486203034132
+              ],
+              "local_half_angle_deg": 90.0,
+              "reason": null,
+              "remote_angle_deg": 37.92470285536377,
+              "remote_boresight_teme": [
+                0.1784658252263501,
+                -0.9800421340028597,
+                0.08756349013943483
+              ],
+              "remote_half_angle_deg": 90.0
+            },
+            "los_margin_km": 1198.8313711463006,
+            "reason": null
+          },
+          "reason": null
+        },
+        "mode": "BBM",
+        "reason": null,
+        "requested_release_refs": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "reservation_id": "R2",
+        "terminal_log_start": 8,
+        "time_s": 3.0
+      },
+      "actual_wall_s": 1100.5150513,
+      "branch_final_state_sha256": "40f0330d00578e80773f894aaccf96687a61729c1a6cfef2d485c3c03c793d04",
+      "cohort_count": 27,
+      "cost_bit_s": 1415580.58744789,
+      "delivered_bit_age_integral_bit_s": 948698.3109008205,
+      "delivered_bits": 5385189.841482062,
+      "evidence": {
+        "byte_count": 3636910,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/PERSIST/04_REPLACE_BBM.json",
+        "sha256": "f5c1bcf2867f265d4dcf030c2ee9d96f678dfa9e98c3bad1b2ec7d32a4780b8f"
+      },
+      "mean_delay_absolute_error_bound_s": 1.7336969855084888e-12,
+      "mean_delivered_fluid_delay_s": 0.17616803470752457,
+      "memory": {
+        "private_bytes": 125034496,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 137347072
+      },
+      "mode": "PERSIST",
+      "service_observation_count": 479,
+      "setup_terminal_count": 0,
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "6ea429ccafb3d85e992d28b1112d99775f26f436a762c975dbdde43e846921a3",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_event_count": 10,
+      "timings": {
+        "advance_network_fifo_energy_including_binding_s": 1099.380509,
+        "branch_clone_s": 0.1383550999999983,
+        "energy_cost_evidence_s": 0.1429438999998638,
+        "explicit_binding_hash_s": 0.09716200000001152,
+        "n2_submit_including_binding_s": 0.5762523000000073
+      }
+    },
+    {
+      "DeltaE_h_J": 550.0,
+      "E_h_J": 10150.0,
+      "J_h_bit_s": 105405.1400135375,
+      "K_admit": 1,
+      "K_draining": 0,
+      "N_end_bits": 14812.361421454607,
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "MBB",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "action_receipt": {
+        "accepted": true,
+        "action": {
+          "a": [
+            "X0_10",
+            "D2"
+          ],
+          "b": [
+            "X1_10",
+            "D1"
+          ],
+          "kind": "REPLACE",
+          "mode": "MBB",
+          "old": [
+            {
+              "endpoints": [
+                [
+                  "X0_1",
+                  "D2"
+                ],
+                [
+                  "X1_1",
+                  "D1"
+                ]
+              ],
+              "link_id": "L1"
+            }
+          ],
+          "setup": {
+            "acquisition_s": 0.5,
+            "retarget_a_s": 0.5,
+            "retarget_b_s": 0.5
+          }
+        },
+        "action_id": 1,
+        "actual_immediate_release_ids": [],
+        "after_terminal_sha256": "89d8f9a96fabaf37dd7bfa17af2238f2e27c1bba8354adccfb8ff9180c3078bf",
+        "before_terminal_sha256": "4ee40e3e91d584802404164422100dc047549a37d47cb7c890bd164b56df54fe",
+        "geometry": {
+          "accepted": true,
+          "geometry": {
+            "end_semantics": "terminal_pair_for_expiry",
+            "ready_time": 4.0,
+            "remaining_lifetime_s": 144.04275553019596,
+            "usable_lifetime_s": 143.04275553019596,
+            "window": {
+              "distance_km": 313.49323540945056,
+              "end_s": 147.04275553019596,
+              "left_censored": true,
+              "parent_end_s": 600.0,
+              "parent_start_s": 0.0,
+              "plane_gap": 1,
+              "right_censored": false,
+              "sat_a": "X0_10",
+              "sat_b": "X1_10",
+              "start_s": 0.0,
+              "terminal_a": "D2",
+              "terminal_b": "D1"
+            }
+          },
+          "geometry_scope": "FROZEN_SYNTHETIC_TLE_REAL_SGP4_GEOMETRY",
+          "hardware_calibration": "PARAMETRIC",
+          "live_geometry": {
+            "accepted": true,
+            "for_details": {
+              "feasible": true,
+              "local_angle_deg": 47.59195836712257,
+              "local_boresight_teme": [
+                -0.005571420808527087,
+                0.9961818220656152,
+                -0.08712483375137767
+              ],
+              "local_half_angle_deg": 90.0,
+              "reason": null,
+              "remote_angle_deg": 37.743920342764326,
+              "remote_boresight_teme": [
+                0.1784660098914253,
+                -0.9800421027725222,
+                0.08756346330888623
+              ],
+              "remote_half_angle_deg": 90.0
+            },
+            "los_margin_km": 1198.8232727111736,
+            "reason": null
+          },
+          "ready_geometry": {
+            "accepted": true,
+            "for_details": {
+              "feasible": true,
+              "local_angle_deg": 47.774198461316004,
+              "local_boresight_teme": [
+                -0.005571234932603126,
+                0.9961818206319164,
+                -0.08712486203034132
+              ],
+              "local_half_angle_deg": 90.0,
+              "reason": null,
+              "remote_angle_deg": 37.92470285536377,
+              "remote_boresight_teme": [
+                0.1784658252263501,
+                -0.9800421340028597,
+                0.08756349013943483
+              ],
+              "remote_half_angle_deg": 90.0
+            },
+            "los_margin_km": 1198.8313711463006,
+            "reason": null
+          },
+          "reason": null
+        },
+        "mode": "MBB",
+        "reason": null,
+        "requested_release_refs": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "reservation_id": "R2",
+        "terminal_log_start": 8,
+        "time_s": 3.0
+      },
+      "actual_wall_s": 33.73948329999985,
+      "branch_final_state_sha256": "bc3a7f05597e30cb99c3046ffbfc1462e688df7f68da054e2ba11fa20182e1f2",
+      "cohort_count": 27,
+      "cost_bit_s": 744279.3085422651,
+      "delivered_bit_age_integral_bit_s": 197383.78365425588,
+      "delivered_bits": 5385187.638578546,
+      "evidence": {
+        "byte_count": 2803464,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/PERSIST/05_REPLACE_MBB.json",
+        "sha256": "f15444a551752c2de37db771ea77044cc492f6fd0afc131dc19daf711dedc86e"
+      },
+      "mean_delay_absolute_error_bound_s": 8.90497046204302e-13,
+      "mean_delivered_fluid_delay_s": 0.03665309305849119,
+      "memory": {
+        "private_bytes": 125923328,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 137957376
+      },
+      "mode": "PERSIST",
+      "service_observation_count": 383,
+      "setup_terminal_count": 0,
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "00fac7ffab57fdcc1e9068f764fe5ce5b34e3dda29acd54175a7ca324754da3c",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_event_count": 10,
+      "timings": {
+        "advance_network_fifo_energy_including_binding_s": 32.3527967,
+        "branch_clone_s": 0.2460900999999467,
+        "energy_cost_evidence_s": 0.060377399999879344,
+        "explicit_binding_hash_s": 0.14979440000001887,
+        "n2_submit_including_binding_s": 0.7454944999999498
+      }
+    },
+    {
+      "DeltaE_h_J": 950.0,
+      "E_h_J": 10550.0,
+      "J_h_bit_s": 1151.971727435448,
+      "K_admit": 2,
+      "K_draining": 0,
+      "N_end_bits": 6.107256922405213e-10,
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "ADD",
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "action_receipt": {
+        "accepted": true,
+        "action": {
+          "a": [
+            "X0_10",
+            "D2"
+          ],
+          "b": [
+            "X1_10",
+            "D1"
+          ],
+          "kind": "ADD",
+          "setup": {
+            "acquisition_s": 0.5,
+            "retarget_a_s": 0.5,
+            "retarget_b_s": 0.5
+          }
+        },
+        "action_id": 1,
+        "actual_immediate_release_ids": [],
+        "after_terminal_sha256": "30821e3e1f172904b6b1e1fd53fe49f0fa6d6c34967b73ad9ed320b294f673db",
+        "before_terminal_sha256": "4ee40e3e91d584802404164422100dc047549a37d47cb7c890bd164b56df54fe",
+        "geometry": {
+          "accepted": true,
+          "geometry": {
+            "end_semantics": "terminal_pair_for_expiry",
+            "ready_time": 4.0,
+            "remaining_lifetime_s": 144.04275553019596,
+            "usable_lifetime_s": 143.04275553019596,
+            "window": {
+              "distance_km": 313.49323540945056,
+              "end_s": 147.04275553019596,
+              "left_censored": true,
+              "parent_end_s": 600.0,
+              "parent_start_s": 0.0,
+              "plane_gap": 1,
+              "right_censored": false,
+              "sat_a": "X0_10",
+              "sat_b": "X1_10",
+              "start_s": 0.0,
+              "terminal_a": "D2",
+              "terminal_b": "D1"
+            }
+          },
+          "geometry_scope": "FROZEN_SYNTHETIC_TLE_REAL_SGP4_GEOMETRY",
+          "hardware_calibration": "PARAMETRIC",
+          "live_geometry": {
+            "accepted": true,
+            "for_details": {
+              "feasible": true,
+              "local_angle_deg": 47.59195836712257,
+              "local_boresight_teme": [
+                -0.005571420808527087,
+                0.9961818220656152,
+                -0.08712483375137767
+              ],
+              "local_half_angle_deg": 90.0,
+              "reason": null,
+              "remote_angle_deg": 37.743920342764326,
+              "remote_boresight_teme": [
+                0.1784660098914253,
+                -0.9800421027725222,
+                0.08756346330888623
+              ],
+              "remote_half_angle_deg": 90.0
+            },
+            "los_margin_km": 1198.8232727111736,
+            "reason": null
+          },
+          "ready_geometry": {
+            "accepted": true,
+            "for_details": {
+              "feasible": true,
+              "local_angle_deg": 47.774198461316004,
+              "local_boresight_teme": [
+                -0.005571234932603126,
+                0.9961818206319164,
+                -0.08712486203034132
+              ],
+              "local_half_angle_deg": 90.0,
+              "reason": null,
+              "remote_angle_deg": 37.92470285536377,
+              "remote_boresight_teme": [
+                0.1784658252263501,
+                -0.9800421340028597,
+                0.08756349013943483
+              ],
+              "remote_half_angle_deg": 90.0
+            },
+            "los_margin_km": 1198.8313711463006,
+            "reason": null
+          },
+          "reason": null
+        },
+        "mode": "ADD",
+        "reason": null,
+        "requested_release_refs": [],
+        "reservation_id": "R2",
+        "terminal_log_start": 8,
+        "time_s": 3.0
+      },
+      "actual_wall_s": 2.8697078999998666,
+      "branch_final_state_sha256": "981450367fb0493f183c6202a2193912703193456322806f453181cfce39be20",
+      "cohort_count": 0,
+      "cost_bit_s": 951151.9717274391,
+      "delivered_bit_age_integral_bit_s": 93653.30143967079,
+      "delivered_bits": 1800000.0,
+      "evidence": {
+        "byte_count": 650562,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/ZERO/01_ADD_.json",
+        "sha256": "7ae8b364715a294031c24bf579c9365111070eb01ad89e25723b04e4ec222445"
+      },
+      "mean_delay_absolute_error_bound_s": 4.740203517360365e-13,
+      "mean_delivered_fluid_delay_s": 0.05202961191092822,
+      "memory": {
+        "private_bytes": 126513152,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 138862592
+      },
+      "mode": "ZERO",
+      "service_observation_count": 58,
+      "setup_terminal_count": 0,
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "57704831cb1388055c480f63b79774f2ad2cfee9c4fd376cf5be0a0b09ccc916",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_event_count": 8,
+      "timings": {
+        "advance_network_fifo_energy_including_binding_s": 1.56861600000002,
+        "branch_clone_s": 0.17086010000002716,
+        "energy_cost_evidence_s": 0.07184499999993932,
+        "explicit_binding_hash_s": 0.13570800000002237,
+        "n2_submit_including_binding_s": 0.6958962000001065
+      }
+    },
+    {
+      "DeltaE_h_J": 0.0,
+      "E_h_J": 9600.0,
+      "J_h_bit_s": 86001.95995721004,
+      "K_admit": 0,
+      "K_draining": 0,
+      "N_end_bits": 14279.65248811319,
+      "action": {
+        "kind": "DROP",
+        "old": {
+          "endpoints": [
+            [
+              "X0_1",
+              "D2"
+            ],
+            [
+              "X1_1",
+              "D1"
+            ]
+          ],
+          "link_id": "L1"
+        }
+      },
+      "action_receipt": {
+        "accepted": true,
+        "action": {
+          "kind": "DROP",
+          "old": {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        },
+        "action_id": 1,
+        "actual_immediate_release_ids": [
+          "L1"
+        ],
+        "after_terminal_sha256": "a52a4647cb535d9c434be4fff5c7d4d7ae2ed9a44eae52265f9ffe4200fc0dc7",
+        "before_terminal_sha256": "4ee40e3e91d584802404164422100dc047549a37d47cb7c890bd164b56df54fe",
+        "geometry": null,
+        "mode": "DROP",
+        "reason": null,
+        "requested_release_refs": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "reservation_id": null,
+        "terminal_log_start": 8,
+        "time_s": 3.0
+      },
+      "actual_wall_s": 2.5307262000001174,
+      "branch_final_state_sha256": "e59631978b679861d773095a46ce7388e8e84858015babcccf366c6848b78695",
+      "cohort_count": 48,
+      "cost_bit_s": 171679.87488588918,
+      "delivered_bit_age_integral_bit_s": 92570.48914679623,
+      "delivered_bits": 1785720.347511888,
+      "evidence": {
+        "byte_count": 718384,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/ZERO/02_DROP_.json",
+        "sha256": "4cc7b5f860c50db6450f223a7e182fcfde72d7d442d4897c03d532a497b93ca3"
+      },
+      "mean_delay_absolute_error_bound_s": 4.4358456425826016e-13,
+      "mean_delivered_fluid_delay_s": 0.051839297948179965,
+      "memory": {
+        "private_bytes": 126148608,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 138518528
+      },
+      "mode": "ZERO",
+      "service_observation_count": 54,
+      "setup_terminal_count": 0,
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "4f9daba25606ac3c247fc4b0bd711cf80f5422b1bbb2a5ae8004e05e20e34e5b",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_event_count": 3,
+      "timings": {
+        "advance_network_fifo_energy_including_binding_s": 1.2369606000002022,
+        "branch_clone_s": 0.22754919999988488,
+        "energy_cost_evidence_s": 0.059821600000077524,
+        "explicit_binding_hash_s": 0.13593390000005456,
+        "n2_submit_including_binding_s": 0.6619998999999552
+      }
+    },
+    {
+      "DeltaE_h_J": 480.0,
+      "E_h_J": 10080.0,
+      "J_h_bit_s": 1151.971727435448,
+      "K_admit": 1,
+      "K_draining": 0,
+      "N_end_bits": 6.107256922405213e-10,
+      "action": {
+        "kind": "HOLD"
+      },
+      "action_receipt": {
+        "accepted": true,
+        "action": {
+          "kind": "HOLD"
+        },
+        "action_id": 1,
+        "actual_immediate_release_ids": [],
+        "after_terminal_sha256": "4ee40e3e91d584802404164422100dc047549a37d47cb7c890bd164b56df54fe",
+        "before_terminal_sha256": "4ee40e3e91d584802404164422100dc047549a37d47cb7c890bd164b56df54fe",
+        "geometry": null,
+        "mode": "HOLD",
+        "reason": null,
+        "requested_release_refs": [],
+        "reservation_id": null,
+        "terminal_log_start": 8,
+        "time_s": 3.0
+      },
+      "actual_wall_s": 2.0876580999999987,
+      "branch_final_state_sha256": "25eda4ca37c14f4cc0b02f105e6d06d2a9953d5466e2c5aa142479dce933b3da",
+      "cohort_count": 0,
+      "cost_bit_s": 481151.9717274391,
+      "delivered_bit_age_integral_bit_s": 93653.30143967079,
+      "delivered_bits": 1800000.0,
+      "evidence": {
+        "byte_count": 637272,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/ZERO/03_HOLD_.json",
+        "sha256": "17895e5a03507539d698d1a2914f252163b9d13610e43d42b7d79d153da02a53"
+      },
+      "mean_delay_absolute_error_bound_s": 4.5016430570853247e-13,
+      "mean_delivered_fluid_delay_s": 0.05202961191092822,
+      "memory": {
+        "private_bytes": 131411968,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 142942208
+      },
+      "mode": "ZERO",
+      "service_observation_count": 54,
+      "setup_terminal_count": 0,
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "d22fb4e4b145fa6f23382858477c38c73f17139344e5cb9a43674c3645a53557",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_event_count": 0,
+      "timings": {
+        "advance_network_fifo_energy_including_binding_s": 1.2269572000000153,
+        "branch_clone_s": 0.14759090000006836,
+        "energy_cost_evidence_s": 0.0339429000000564,
+        "explicit_binding_hash_s": 0.10183980000010706,
+        "n2_submit_including_binding_s": 0.3842915999998695
+      }
+    },
+    {
+      "DeltaE_h_J": 470.0,
+      "E_h_J": 10070.0,
+      "J_h_bit_s": 14910.910892027488,
+      "K_admit": 1,
+      "K_draining": 0,
+      "N_end_bits": 1.3246221897134092e-09,
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "BBM",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "action_receipt": {
+        "accepted": true,
+        "action": {
+          "a": [
+            "X0_10",
+            "D2"
+          ],
+          "b": [
+            "X1_10",
+            "D1"
+          ],
+          "kind": "REPLACE",
+          "mode": "BBM",
+          "old": [
+            {
+              "endpoints": [
+                [
+                  "X0_1",
+                  "D2"
+                ],
+                [
+                  "X1_1",
+                  "D1"
+                ]
+              ],
+              "link_id": "L1"
+            }
+          ],
+          "setup": {
+            "acquisition_s": 0.5,
+            "retarget_a_s": 0.5,
+            "retarget_b_s": 0.5
+          }
+        },
+        "action_id": 1,
+        "actual_immediate_release_ids": [
+          "L1"
+        ],
+        "after_terminal_sha256": "729c7cc21ca2fee0068ac04bd9ce1db846a6d1fc9de1188e3cdedaf4cd1d1844",
+        "before_terminal_sha256": "4ee40e3e91d584802404164422100dc047549a37d47cb7c890bd164b56df54fe",
+        "geometry": {
+          "accepted": true,
+          "geometry": {
+            "end_semantics": "terminal_pair_for_expiry",
+            "ready_time": 4.0,
+            "remaining_lifetime_s": 144.04275553019596,
+            "usable_lifetime_s": 143.04275553019596,
+            "window": {
+              "distance_km": 313.49323540945056,
+              "end_s": 147.04275553019596,
+              "left_censored": true,
+              "parent_end_s": 600.0,
+              "parent_start_s": 0.0,
+              "plane_gap": 1,
+              "right_censored": false,
+              "sat_a": "X0_10",
+              "sat_b": "X1_10",
+              "start_s": 0.0,
+              "terminal_a": "D2",
+              "terminal_b": "D1"
+            }
+          },
+          "geometry_scope": "FROZEN_SYNTHETIC_TLE_REAL_SGP4_GEOMETRY",
+          "hardware_calibration": "PARAMETRIC",
+          "live_geometry": {
+            "accepted": true,
+            "for_details": {
+              "feasible": true,
+              "local_angle_deg": 47.59195836712257,
+              "local_boresight_teme": [
+                -0.005571420808527087,
+                0.9961818220656152,
+                -0.08712483375137767
+              ],
+              "local_half_angle_deg": 90.0,
+              "reason": null,
+              "remote_angle_deg": 37.743920342764326,
+              "remote_boresight_teme": [
+                0.1784660098914253,
+                -0.9800421027725222,
+                0.08756346330888623
+              ],
+              "remote_half_angle_deg": 90.0
+            },
+            "los_margin_km": 1198.8232727111736,
+            "reason": null
+          },
+          "ready_geometry": {
+            "accepted": true,
+            "for_details": {
+              "feasible": true,
+              "local_angle_deg": 47.774198461316004,
+              "local_boresight_teme": [
+                -0.005571234932603126,
+                0.9961818206319164,
+                -0.08712486203034132
+              ],
+              "local_half_angle_deg": 90.0,
+              "reason": null,
+              "remote_angle_deg": 37.92470285536377,
+              "remote_boresight_teme": [
+                0.1784658252263501,
+                -0.9800421340028597,
+                0.08756349013943483
+              ],
+              "remote_half_angle_deg": 90.0
+            },
+            "los_margin_km": 1198.8313711463006,
+            "reason": null
+          },
+          "reason": null
+        },
+        "mode": "BBM",
+        "reason": null,
+        "requested_release_refs": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "reservation_id": "R2",
+        "terminal_log_start": 8,
+        "time_s": 3.0
+      },
+      "actual_wall_s": 6.446008600000141,
+      "branch_final_state_sha256": "5ff5594552e8979194cdea3b9856e96d0dbbc40ef317dc5d6b89afb1a69b2f16",
+      "cohort_count": 4,
+      "cost_bit_s": 484910.91089203546,
+      "delivered_bit_age_integral_bit_s": 107412.24060426276,
+      "delivered_bits": 1800000.0,
+      "evidence": {
+        "byte_count": 1624240,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/ZERO/04_REPLACE_BBM.json",
+        "sha256": "4cf46481078e64fe7381f5829a375ecbf293df46c6820a6c951ad7cf5524ff34"
+      },
+      "mean_delay_absolute_error_bound_s": 2.8912909953869745e-12,
+      "mean_delivered_fluid_delay_s": 0.0596734670023682,
+      "memory": {
+        "private_bytes": 131735552,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 143015936
+      },
+      "mode": "ZERO",
+      "service_observation_count": 299,
+      "setup_terminal_count": 0,
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "03b69eecfe1782542afac4fca96832df0361519be3dc02f42d4b47875eab5e18",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_event_count": 10,
+      "timings": {
+        "advance_network_fifo_energy_including_binding_s": 5.167548600000146,
+        "branch_clone_s": 0.1568721999999525,
+        "energy_cost_evidence_s": 0.0492884000000231,
+        "explicit_binding_hash_s": 0.10214139999993677,
+        "n2_submit_including_binding_s": 0.7975232999999662
+      }
+    },
+    {
+      "DeltaE_h_J": 550.0,
+      "E_h_J": 10150.0,
+      "J_h_bit_s": 1151.971727435448,
+      "K_admit": 1,
+      "K_draining": 0,
+      "N_end_bits": 6.107256922405213e-10,
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "MBB",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "action_receipt": {
+        "accepted": true,
+        "action": {
+          "a": [
+            "X0_10",
+            "D2"
+          ],
+          "b": [
+            "X1_10",
+            "D1"
+          ],
+          "kind": "REPLACE",
+          "mode": "MBB",
+          "old": [
+            {
+              "endpoints": [
+                [
+                  "X0_1",
+                  "D2"
+                ],
+                [
+                  "X1_1",
+                  "D1"
+                ]
+              ],
+              "link_id": "L1"
+            }
+          ],
+          "setup": {
+            "acquisition_s": 0.5,
+            "retarget_a_s": 0.5,
+            "retarget_b_s": 0.5
+          }
+        },
+        "action_id": 1,
+        "actual_immediate_release_ids": [],
+        "after_terminal_sha256": "89d8f9a96fabaf37dd7bfa17af2238f2e27c1bba8354adccfb8ff9180c3078bf",
+        "before_terminal_sha256": "4ee40e3e91d584802404164422100dc047549a37d47cb7c890bd164b56df54fe",
+        "geometry": {
+          "accepted": true,
+          "geometry": {
+            "end_semantics": "terminal_pair_for_expiry",
+            "ready_time": 4.0,
+            "remaining_lifetime_s": 144.04275553019596,
+            "usable_lifetime_s": 143.04275553019596,
+            "window": {
+              "distance_km": 313.49323540945056,
+              "end_s": 147.04275553019596,
+              "left_censored": true,
+              "parent_end_s": 600.0,
+              "parent_start_s": 0.0,
+              "plane_gap": 1,
+              "right_censored": false,
+              "sat_a": "X0_10",
+              "sat_b": "X1_10",
+              "start_s": 0.0,
+              "terminal_a": "D2",
+              "terminal_b": "D1"
+            }
+          },
+          "geometry_scope": "FROZEN_SYNTHETIC_TLE_REAL_SGP4_GEOMETRY",
+          "hardware_calibration": "PARAMETRIC",
+          "live_geometry": {
+            "accepted": true,
+            "for_details": {
+              "feasible": true,
+              "local_angle_deg": 47.59195836712257,
+              "local_boresight_teme": [
+                -0.005571420808527087,
+                0.9961818220656152,
+                -0.08712483375137767
+              ],
+              "local_half_angle_deg": 90.0,
+              "reason": null,
+              "remote_angle_deg": 37.743920342764326,
+              "remote_boresight_teme": [
+                0.1784660098914253,
+                -0.9800421027725222,
+                0.08756346330888623
+              ],
+              "remote_half_angle_deg": 90.0
+            },
+            "los_margin_km": 1198.8232727111736,
+            "reason": null
+          },
+          "ready_geometry": {
+            "accepted": true,
+            "for_details": {
+              "feasible": true,
+              "local_angle_deg": 47.774198461316004,
+              "local_boresight_teme": [
+                -0.005571234932603126,
+                0.9961818206319164,
+                -0.08712486203034132
+              ],
+              "local_half_angle_deg": 90.0,
+              "reason": null,
+              "remote_angle_deg": 37.92470285536377,
+              "remote_boresight_teme": [
+                0.1784658252263501,
+                -0.9800421340028597,
+                0.08756349013943483
+              ],
+              "remote_half_angle_deg": 90.0
+            },
+            "los_margin_km": 1198.8313711463006,
+            "reason": null
+          },
+          "reason": null
+        },
+        "mode": "MBB",
+        "reason": null,
+        "requested_release_refs": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "reservation_id": "R2",
+        "terminal_log_start": 8,
+        "time_s": 3.0
+      },
+      "actual_wall_s": 2.9099442000001545,
+      "branch_final_state_sha256": "2cccfb545457990cce6173b8498d47d8ea53f1f042471798d24939811d5ef195",
+      "cohort_count": 0,
+      "cost_bit_s": 551151.9717274391,
+      "delivered_bit_age_integral_bit_s": 93653.30143967079,
+      "delivered_bits": 1800000.0,
+      "evidence": {
+        "byte_count": 652540,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/ZERO/05_REPLACE_MBB.json",
+        "sha256": "c4e37e0b236ed3942423ffcbfd0858de58a9c7a642baa09c0439ee56a34ad3c7"
+      },
+      "mean_delay_absolute_error_bound_s": 4.740203517360365e-13,
+      "mean_delivered_fluid_delay_s": 0.05202961191092822,
+      "memory": {
+        "private_bytes": 130019328,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 142364672
+      },
+      "mode": "ZERO",
+      "service_observation_count": 58,
+      "setup_terminal_count": 0,
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "47f22483cdaf5e98aea097755c0ac05e56cab8c01a9c87e4cae421e43ac54926",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_event_count": 10,
+      "timings": {
+        "advance_network_fifo_energy_including_binding_s": 1.6682902000000013,
+        "branch_clone_s": 0.22970499999996719,
+        "energy_cost_evidence_s": 0.0625518000001648,
+        "explicit_binding_hash_s": 0.13096390000009706,
+        "n2_submit_including_binding_s": 0.6162544000001162
+      }
+    }
+  ],
+  "small_domain_score_order": {
+    "PERSIST": {
+      "ranked_actions": [
+        {
+          "action": {
+            "a": [
+              "X0_10",
+              "D2"
+            ],
+            "b": [
+              "X1_10",
+              "D1"
+            ],
+            "kind": "REPLACE",
+            "mode": "MBB",
+            "old": [
+              {
+                "endpoints": [
+                  [
+                    "X0_1",
+                    "D2"
+                  ],
+                  [
+                    "X1_1",
+                    "D1"
+                  ]
+                ],
+                "link_id": "L1"
+              }
+            ],
+            "setup": {
+              "acquisition_s": 0.5,
+              "retarget_a_s": 0.5,
+              "retarget_b_s": 0.5
+            }
+          },
+          "action_key": [
+            "REPLACE",
+            "MBB",
+            "('X0_10', 'D2')",
+            "('X1_10', 'D1')",
+            "(LinkRef(link_id='L1', endpoints=(('X0_1', 'D2'), ('X1_1', 'D1'))),)"
+          ],
+          "cost_bit_s": 744279.3085422651
+        },
+        {
+          "action": {
+            "kind": "HOLD"
+          },
+          "action_key": [
+            "HOLD",
+            "",
+            "()",
+            "()",
+            "()"
+          ],
+          "cost_bit_s": 854613.2057586825
+        },
+        {
+          "action": {
+            "a": [
+              "X0_10",
+              "D2"
+            ],
+            "b": [
+              "X1_10",
+              "D1"
+            ],
+            "kind": "ADD",
+            "setup": {
+              "acquisition_s": 0.5,
+              "retarget_a_s": 0.5,
+              "retarget_b_s": 0.5
+            }
+          },
+          "action_key": [
+            "ADD",
+            "",
+            "('X0_10', 'D2')",
+            "('X1_10', 'D1')",
+            "()"
+          ],
+          "cost_bit_s": 995518.0708517093
+        },
+        {
+          "action": {
+            "a": [
+              "X0_10",
+              "D2"
+            ],
+            "b": [
+              "X1_10",
+              "D1"
+            ],
+            "kind": "REPLACE",
+            "mode": "BBM",
+            "old": [
+              {
+                "endpoints": [
+                  [
+                    "X0_1",
+                    "D2"
+                  ],
+                  [
+                    "X1_1",
+                    "D1"
+                  ]
+                ],
+                "link_id": "L1"
+              }
+            ],
+            "setup": {
+              "acquisition_s": 0.5,
+              "retarget_a_s": 0.5,
+              "retarget_b_s": 0.5
+            }
+          },
+          "action_key": [
+            "REPLACE",
+            "BBM",
+            "('X0_10', 'D2')",
+            "('X1_10', 'D1')",
+            "(LinkRef(link_id='L1', endpoints=(('X0_1', 'D2'), ('X1_1', 'D1'))),)"
+          ],
+          "cost_bit_s": 1415580.58744789
+        },
+        {
+          "action": {
+            "kind": "DROP",
+            "old": {
+              "endpoints": [
+                [
+                  "X0_1",
+                  "D2"
+                ],
+                [
+                  "X1_1",
+                  "D1"
+                ]
+              ],
+              "link_id": "L1"
+            }
+          },
+          "action_key": [
+            "DROP",
+            "",
+            "()",
+            "()",
+            "LinkRef(link_id='L1', endpoints=(('X0_1', 'D2'), ('X1_1', 'D1')))"
+          ],
+          "cost_bit_s": 32571679.87488589
+        }
+      ],
+      "selected_action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "MBB",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "selected_cost_bit_s": 744279.3085422651
+    },
+    "ZERO": {
+      "ranked_actions": [
+        {
+          "action": {
+            "kind": "DROP",
+            "old": {
+              "endpoints": [
+                [
+                  "X0_1",
+                  "D2"
+                ],
+                [
+                  "X1_1",
+                  "D1"
+                ]
+              ],
+              "link_id": "L1"
+            }
+          },
+          "action_key": [
+            "DROP",
+            "",
+            "()",
+            "()",
+            "LinkRef(link_id='L1', endpoints=(('X0_1', 'D2'), ('X1_1', 'D1')))"
+          ],
+          "cost_bit_s": 171679.87488588918
+        },
+        {
+          "action": {
+            "kind": "HOLD"
+          },
+          "action_key": [
+            "HOLD",
+            "",
+            "()",
+            "()",
+            "()"
+          ],
+          "cost_bit_s": 481151.9717274391
+        },
+        {
+          "action": {
+            "a": [
+              "X0_10",
+              "D2"
+            ],
+            "b": [
+              "X1_10",
+              "D1"
+            ],
+            "kind": "REPLACE",
+            "mode": "BBM",
+            "old": [
+              {
+                "endpoints": [
+                  [
+                    "X0_1",
+                    "D2"
+                  ],
+                  [
+                    "X1_1",
+                    "D1"
+                  ]
+                ],
+                "link_id": "L1"
+              }
+            ],
+            "setup": {
+              "acquisition_s": 0.5,
+              "retarget_a_s": 0.5,
+              "retarget_b_s": 0.5
+            }
+          },
+          "action_key": [
+            "REPLACE",
+            "BBM",
+            "('X0_10', 'D2')",
+            "('X1_10', 'D1')",
+            "(LinkRef(link_id='L1', endpoints=(('X0_1', 'D2'), ('X1_1', 'D1'))),)"
+          ],
+          "cost_bit_s": 484910.91089203546
+        },
+        {
+          "action": {
+            "a": [
+              "X0_10",
+              "D2"
+            ],
+            "b": [
+              "X1_10",
+              "D1"
+            ],
+            "kind": "REPLACE",
+            "mode": "MBB",
+            "old": [
+              {
+                "endpoints": [
+                  [
+                    "X0_1",
+                    "D2"
+                  ],
+                  [
+                    "X1_1",
+                    "D1"
+                  ]
+                ],
+                "link_id": "L1"
+              }
+            ],
+            "setup": {
+              "acquisition_s": 0.5,
+              "retarget_a_s": 0.5,
+              "retarget_b_s": 0.5
+            }
+          },
+          "action_key": [
+            "REPLACE",
+            "MBB",
+            "('X0_10', 'D2')",
+            "('X1_10', 'D1')",
+            "(LinkRef(link_id='L1', endpoints=(('X0_1', 'D2'), ('X1_1', 'D1'))),)"
+          ],
+          "cost_bit_s": 551151.9717274391
+        },
+        {
+          "action": {
+            "a": [
+              "X0_10",
+              "D2"
+            ],
+            "b": [
+              "X1_10",
+              "D1"
+            ],
+            "kind": "ADD",
+            "setup": {
+              "acquisition_s": 0.5,
+              "retarget_a_s": 0.5,
+              "retarget_b_s": 0.5
+            }
+          },
+          "action_key": [
+            "ADD",
+            "",
+            "('X0_10', 'D2')",
+            "('X1_10', 'D1')",
+            "()"
+          ],
+          "cost_bit_s": 951151.9717274391
+        }
+      ],
+      "selected_action": {
+        "kind": "DROP",
+        "old": {
+          "endpoints": [
+            [
+              "X0_1",
+              "D2"
+            ],
+            [
+              "X1_1",
+              "D1"
+            ]
+          ],
+          "link_id": "L1"
+        }
+      },
+      "selected_cost_bit_s": 171679.87488588918
+    }
+  },
+  "stage_snapshot_is_not_complete_enumeration": true
+}

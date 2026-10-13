@@ -1,0 +1,26 @@
+{
+  "errors": [],
+  "explicit_test_module_bindings": true,
+  "failures": [],
+  "full_catalog": "REVALIDATE_SEALED_0007_MAPPING_ONLY",
+  "full_suite_count": 20,
+  "global_monkeypatch": false,
+  "mode": "sweep",
+  "original_assertions_unchanged": true,
+  "output": "test_01_idle_and_existing_ACTIVE_analytic_energy (fifo20_sweep_P0.P0Tests) ... ok\ntest_02_ADD_real_setup_energy_K_and_delivery (fifo20_sweep_P0.P0Tests) ... ok\ntest_03_ZERO_keeps_backlog_and_original_age (fifo20_sweep_P0.P0Tests) ... ok\ntest_04_causal_twins_all_scores_and_graph (fifo20_sweep_P0.P0Tests) ... ok\ntest_05_candidate_order_independence_and_root_checkpoint (fifo20_sweep_P0.P0Tests) ... ok\ntest_06_prefix_multi_rate_fifo_and_inflight_preserved (fifo20_sweep_P0.P0Tests) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 14.596s\n\nOK\n",
+  "selected_test_ids": [
+    "fifo20_sweep_P0.P0Tests.test_01_idle_and_existing_ACTIVE_analytic_energy",
+    "fifo20_sweep_P0.P0Tests.test_02_ADD_real_setup_energy_K_and_delivery",
+    "fifo20_sweep_P0.P0Tests.test_03_ZERO_keeps_backlog_and_original_age",
+    "fifo20_sweep_P0.P0Tests.test_04_causal_twins_all_scores_and_graph",
+    "fifo20_sweep_P0.P0Tests.test_05_candidate_order_independence_and_root_checkpoint",
+    "fifo20_sweep_P0.P0Tests.test_06_prefix_multi_rate_fifo_and_inflight_preserved"
+  ],
+  "selection": [
+    0,
+    6
+  ],
+  "source_expectations_unmodified": true,
+  "status": "PASS",
+  "tests_run": 6
+}

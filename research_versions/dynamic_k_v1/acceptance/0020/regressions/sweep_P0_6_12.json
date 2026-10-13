@@ -1,0 +1,26 @@
+{
+  "errors": [],
+  "explicit_test_module_bindings": true,
+  "failures": [],
+  "full_catalog": "REVALIDATE_SEALED_0007_MAPPING_ONLY",
+  "full_suite_count": 20,
+  "global_monkeypatch": false,
+  "mode": "sweep",
+  "original_assertions_unchanged": true,
+  "output": "test_07_pending_setup_natural_expiry_committed (fifo20_sweep_P0.P0Tests) ... ok\ntest_08_DROP_keeps_TX_DRAINING_and_inflight (fifo20_sweep_P0.P0Tests) ... ok\ntest_09_REPLACE_BBM_and_MBB_and_real_release (fifo20_sweep_P0.P0Tests) ... ok\ntest_10_illegal_ADD_no_hidden_release (fifo20_sweep_P0.P0Tests) ... ok\ntest_11_same_action_independent_true_execution_every_field (fifo20_sweep_P0.P0Tests) ... ok\ntest_12_end_clip_three_second_cadence (fifo20_sweep_P0.P0Tests) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 9.567s\n\nOK\n",
+  "selected_test_ids": [
+    "fifo20_sweep_P0.P0Tests.test_07_pending_setup_natural_expiry_committed",
+    "fifo20_sweep_P0.P0Tests.test_08_DROP_keeps_TX_DRAINING_and_inflight",
+    "fifo20_sweep_P0.P0Tests.test_09_REPLACE_BBM_and_MBB_and_real_release",
+    "fifo20_sweep_P0.P0Tests.test_10_illegal_ADD_no_hidden_release",
+    "fifo20_sweep_P0.P0Tests.test_11_same_action_independent_true_execution_every_field",
+    "fifo20_sweep_P0.P0Tests.test_12_end_clip_three_second_cadence"
+  ],
+  "selection": [
+    6,
+    12
+  ],
+  "source_expectations_unmodified": true,
+  "status": "PASS",
+  "tests_run": 6
+}

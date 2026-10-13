@@ -1,0 +1,25 @@
+{
+  "errors": [],
+  "explicit_test_module_bindings": true,
+  "failures": [],
+  "full_catalog": "REVALIDATE_SEALED_0007_MAPPING_ONLY",
+  "full_suite_count": 20,
+  "global_monkeypatch": false,
+  "mode": "sweep",
+  "original_assertions_unchanged": true,
+  "output": "test_11_identical_real_actions_exact_N1a_N1b (fifo20_sweep_N3.ClosedLoopTests) ... ok\ntest_12_future_trace_not_visible_and_does_not_affect_selection (fifo20_sweep_N3.ClosedLoopTests) ... ok\ntest_13_candidate_budget_truncation_distinct_from_physical_absence (fifo20_sweep_N3.ClosedLoopTests) ... ok\ntest_14_HOLD_while_demand_already_reachable (fifo20_sweep_N3.ClosedLoopTests) ... ok\ntest_15_sort_reversal_and_no_candidate_or_policy_mutation (fifo20_sweep_N3.ClosedLoopTests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 9.534s\n\nOK\n",
+  "selected_test_ids": [
+    "fifo20_sweep_N3.ClosedLoopTests.test_11_identical_real_actions_exact_N1a_N1b",
+    "fifo20_sweep_N3.ClosedLoopTests.test_12_future_trace_not_visible_and_does_not_affect_selection",
+    "fifo20_sweep_N3.ClosedLoopTests.test_13_candidate_budget_truncation_distinct_from_physical_absence",
+    "fifo20_sweep_N3.ClosedLoopTests.test_14_HOLD_while_demand_already_reachable",
+    "fifo20_sweep_N3.ClosedLoopTests.test_15_sort_reversal_and_no_candidate_or_policy_mutation"
+  ],
+  "selection": [
+    10,
+    15
+  ],
+  "source_expectations_unmodified": true,
+  "status": "PASS",
+  "tests_run": 5
+}

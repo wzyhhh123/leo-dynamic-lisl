@@ -1,0 +1,664 @@
+{
+  "functions": [
+    {
+      "end": 24,
+      "line": 22,
+      "name": "write",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/epoch_workflow.py"
+    },
+    {
+      "end": 25,
+      "line": 25,
+      "name": "bind",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/epoch_workflow.py"
+    },
+    {
+      "end": 44,
+      "line": 26,
+      "name": "load_live",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/epoch_workflow.py"
+    },
+    {
+      "end": 50,
+      "line": 45,
+      "name": "open_lease",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/epoch_workflow.py"
+    },
+    {
+      "end": 98,
+      "line": 72,
+      "name": "score",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/epoch_workflow.py"
+    },
+    {
+      "end": 100,
+      "line": 99,
+      "name": "stable",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/epoch_workflow.py"
+    },
+    {
+      "end": 106,
+      "line": 101,
+      "name": "select_success",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/epoch_workflow.py"
+    },
+    {
+      "end": 156,
+      "line": 107,
+      "name": "small",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/epoch_workflow.py"
+    },
+    {
+      "end": 32,
+      "line": 29,
+      "name": "verify",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/epoch_workflow.py"
+    },
+    {
+      "end": 53,
+      "line": 53,
+      "name": "__init__",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/epoch_workflow.py"
+    },
+    {
+      "end": 59,
+      "line": 54,
+      "name": "invoke",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/epoch_workflow.py"
+    },
+    {
+      "end": 62,
+      "line": 60,
+      "name": "install",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/epoch_workflow.py"
+    },
+    {
+      "end": 71,
+      "line": 63,
+      "name": "context",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/epoch_workflow.py"
+    },
+    {
+      "end": 79,
+      "line": 76,
+      "name": "clone",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/epoch_workflow.py"
+    },
+    {
+      "end": 55,
+      "line": 26,
+      "name": "main",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/profile_timing_check.py"
+    },
+    {
+      "end": 6,
+      "line": 6,
+      "name": "__init__",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/profile_timing_check.py"
+    },
+    {
+      "end": 15,
+      "line": 7,
+      "name": "category",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/profile_timing_check.py"
+    },
+    {
+      "end": 25,
+      "line": 16,
+      "name": "hook",
+      "source": "research_versions/dynamic_k_v1/acceptance/0016/profile_timing_check.py"
+    },
+    {
+      "end": 20,
+      "line": 18,
+      "name": "require",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 26,
+      "line": 23,
+      "name": "finite",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 31,
+      "line": 29,
+      "name": "digest",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 43,
+      "line": 34,
+      "name": "normalized",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 62,
+      "line": 46,
+      "name": "topology_sample",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 332,
+      "line": 232,
+      "name": "validate_measurement",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 76,
+      "line": 67,
+      "name": "__init__",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 84,
+      "line": 78,
+      "name": "_integrate_until",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 106,
+      "line": 86,
+      "name": "capture",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 125,
+      "line": 108,
+      "name": "metrics",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 154,
+      "line": 134,
+      "name": "__init__",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 167,
+      "line": 156,
+      "name": "advance_to",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 170,
+      "line": 169,
+      "name": "run",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 173,
+      "line": 172,
+      "name": "clone",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 177,
+      "line": 175,
+      "name": "checkpoint",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 182,
+      "line": 180,
+      "name": "restore",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 229,
+      "line": 184,
+      "name": "measure",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 246,
+      "line": 245,
+      "name": "close",
+      "source": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "end": 111,
+      "line": 82,
+      "name": "validate_n1b",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_evaluator.py"
+    },
+    {
+      "end": 35,
+      "line": 14,
+      "name": "verify",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_evaluator.py"
+    },
+    {
+      "end": 47,
+      "line": 39,
+      "name": "__init__",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_evaluator.py"
+    },
+    {
+      "end": 68,
+      "line": 49,
+      "name": "advance_to",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_evaluator.py"
+    },
+    {
+      "end": 70,
+      "line": 70,
+      "name": "run",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_evaluator.py"
+    },
+    {
+      "end": 72,
+      "line": 72,
+      "name": "clone",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_evaluator.py"
+    },
+    {
+      "end": 74,
+      "line": 74,
+      "name": "checkpoint",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_evaluator.py"
+    },
+    {
+      "end": 79,
+      "line": 77,
+      "name": "restore",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_evaluator.py"
+    },
+    {
+      "end": 19,
+      "line": 15,
+      "name": "rational",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 27,
+      "line": 22,
+      "name": "canonical_components",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 39,
+      "line": 37,
+      "name": "prefix_moment",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 47,
+      "line": 41,
+      "name": "consume",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 58,
+      "line": 57,
+      "name": "mass",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 63,
+      "line": 60,
+      "name": "moment",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 67,
+      "line": 65,
+      "name": "clip",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 73,
+      "line": 71,
+      "name": "__init__",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 76,
+      "line": 75,
+      "name": "total",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 79,
+      "line": 78,
+      "name": "original_moment",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 88,
+      "line": 81,
+      "name": "append_impulse",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 128,
+      "line": 90,
+      "name": "advance_piece",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 134,
+      "line": 132,
+      "name": "__init__",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 158,
+      "line": 139,
+      "name": "__init__",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 163,
+      "line": 160,
+      "name": "_budget",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 170,
+      "line": 165,
+      "name": "_roundoff",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 173,
+      "line": 172,
+      "name": "clone",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 190,
+      "line": 175,
+      "name": "consume",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 211,
+      "line": 192,
+      "name": "_order",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 261,
+      "line": 213,
+      "name": "_interval",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 269,
+      "line": 263,
+      "name": "_deliver",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 299,
+      "line": 271,
+      "name": "_closure",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 320,
+      "line": 301,
+      "name": "_check_state",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 343,
+      "line": 322,
+      "name": "metrics",
+      "source": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py"
+    },
+    {
+      "end": 134,
+      "line": 119,
+      "name": "validate_n2",
+      "source": "research_versions/dynamic_k_v1/runtime/n2_controller.py"
+    },
+    {
+      "end": 18,
+      "line": 12,
+      "name": "__init__",
+      "source": "research_versions/dynamic_k_v1/runtime/n2_controller.py"
+    },
+    {
+      "end": 21,
+      "line": 21,
+      "name": "engine",
+      "source": "research_versions/dynamic_k_v1/runtime/n2_controller.py"
+    },
+    {
+      "end": 32,
+      "line": 23,
+      "name": "_physical_digest",
+      "source": "research_versions/dynamic_k_v1/runtime/n2_controller.py"
+    },
+    {
+      "end": 37,
+      "line": 34,
+      "name": "_verify",
+      "source": "research_versions/dynamic_k_v1/runtime/n2_controller.py"
+    },
+    {
+      "end": 41,
+      "line": 39,
+      "name": "candidates",
+      "source": "research_versions/dynamic_k_v1/runtime/n2_controller.py"
+    },
+    {
+      "end": 46,
+      "line": 43,
+      "name": "submit_batch",
+      "source": "research_versions/dynamic_k_v1/runtime/n2_controller.py"
+    },
+    {
+      "end": 72,
+      "line": 48,
+      "name": "submit",
+      "source": "research_versions/dynamic_k_v1/runtime/n2_controller.py"
+    },
+    {
+      "end": 90,
+      "line": 74,
+      "name": "release_audit",
+      "source": "research_versions/dynamic_k_v1/runtime/n2_controller.py"
+    },
+    {
+      "end": 109,
+      "line": 92,
+      "name": "advance_to",
+      "source": "research_versions/dynamic_k_v1/runtime/n2_controller.py"
+    },
+    {
+      "end": 111,
+      "line": 111,
+      "name": "run",
+      "source": "research_versions/dynamic_k_v1/runtime/n2_controller.py"
+    },
+    {
+      "end": 112,
+      "line": 112,
+      "name": "clone",
+      "source": "research_versions/dynamic_k_v1/runtime/n2_controller.py"
+    },
+    {
+      "end": 113,
+      "line": 113,
+      "name": "checkpoint",
+      "source": "research_versions/dynamic_k_v1/runtime/n2_controller.py"
+    },
+    {
+      "end": 116,
+      "line": 115,
+      "name": "restore",
+      "source": "research_versions/dynamic_k_v1/runtime/n2_controller.py"
+    },
+    {
+      "end": 55,
+      "line": 45,
+      "name": "encode",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 58,
+      "line": 58,
+      "name": "data_hash",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 101,
+      "line": 89,
+      "name": "causal_view",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 112,
+      "line": 104,
+      "name": "observed_prefix",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 128,
+      "line": 115,
+      "name": "graph_objects",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 183,
+      "line": 158,
+      "name": "make_sanitized_root",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 233,
+      "line": 194,
+      "name": "score_action",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 253,
+      "line": 236,
+      "name": "retain_small_domain",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 267,
+      "line": 256,
+      "name": "score_candidates",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 42,
+      "line": 29,
+      "name": "verify",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 74,
+      "line": 69,
+      "name": "from_current",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 77,
+      "line": 77,
+      "name": "end_s",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 79,
+      "line": 79,
+      "name": "sha256",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 149,
+      "line": 139,
+      "name": "verify_isolation",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 151,
+      "line": 151,
+      "name": "clone",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 152,
+      "line": 152,
+      "name": "checkpoint",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 155,
+      "line": 154,
+      "name": "restore",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 191,
+      "line": 190,
+      "name": "__post_init__",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 240,
+      "line": 238,
+      "name": "key",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0.py"
+    },
+    {
+      "end": 26,
+      "line": 19,
+      "name": "verify",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0f_events.py"
+    },
+    {
+      "end": 32,
+      "line": 29,
+      "name": "__init__",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0f_events.py"
+    },
+    {
+      "end": 47,
+      "line": 33,
+      "name": "_settle_propagation_rate_events",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0f_events.py"
+    },
+    {
+      "end": 71,
+      "line": 49,
+      "name": "_next_time",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0f_events.py"
+    },
+    {
+      "end": 87,
+      "line": 73,
+      "name": "advance_to",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0f_events.py"
+    },
+    {
+      "end": 100,
+      "line": 89,
+      "name": "settle_current_time",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0f_events.py"
+    },
+    {
+      "end": 115,
+      "line": 102,
+      "name": "_step",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0f_events.py"
+    },
+    {
+      "end": 156,
+      "line": 117,
+      "name": "_microstep",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0f_events.py"
+    },
+    {
+      "end": 188,
+      "line": 158,
+      "name": "_apply_due_actions",
+      "source": "research_versions/dynamic_k_v1/runtime/n4_p0f_events.py"
+    }
+  ]
+}

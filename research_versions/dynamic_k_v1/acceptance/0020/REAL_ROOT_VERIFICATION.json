@@ -1,0 +1,10 @@
+{
+  "causal_sha256": "ef8183d6f4b46f1096af42ff3ee13d338cdf79d69ad6c546c44356cf7c802494",
+  "exact_match": true,
+  "expected_sha256": "ef8183d6f4b46f1096af42ff3ee13d338cdf79d69ad6c546c44356cf7c802494",
+  "forecast_sha256": "66061c9bc91a8b6af7903cbb898b101081b02621f8f48f92038da54d66ef0da1",
+  "legal_candidates_enumerated": null,
+  "prefix_sha256": "bd36dc338830410efae2e8421cd5b90977857e03c175b18794c2fa7f31273b3f",
+  "registered_catalog_rows": 2742,
+  "root_build_and_guard_s": 5.481254700000001
+}

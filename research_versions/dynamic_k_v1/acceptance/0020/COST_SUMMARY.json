@@ -1,0 +1,378 @@
+{
+  "conclusion": "SYNTHETIC_DISJOINT_GAIN_MEASURED; ONE_REAL_PREFIX_END_TO_END_GAIN_NOT_DEMONSTRATED",
+  "counters_labels": "REFERENCE_PREDICATE_COUNT_STRUCTURALLY_DERIVED_FROM_MEASURED_m_c; SWEEP_CLIP_COUNTS_MEASURED",
+  "fixture_costs": [
+    {
+      "active_peak": 1,
+      "actual_clip_calls": 32,
+      "coverage_created_Stream_objects": 32,
+      "coverage_predicate_reference_count_source_derived": 1024,
+      "index_endpoint_references": 64,
+      "interval_ratio": 1.4027722772277034,
+      "layout": "disjoint",
+      "light_stage_s": {
+        "build_s": 8.409999999997586e-05,
+        "enumeration_and_clip_s": 5.070000000001462e-05,
+        "maintenance_s": 6.0200000000065756e-05
+      },
+      "m": 32,
+      "memory": {
+        "reference": {
+          "current_bytes": 4531,
+          "instrumented_wall_s": 0.005487099999999995,
+          "peak_bytes": 23196
+        },
+        "sweep": {
+          "current_bytes": 6520,
+          "instrumented_wall_s": 0.004946800000000001,
+          "peak_bytes": 28520
+        }
+      },
+      "paired_plain_means": {
+        "reference": {
+          "interval_including_index_cold_build_s": 0.0011806666666666632,
+          "total_fixture_s": 0.002210166666666652
+        },
+        "sweep": {
+          "interval_including_index_cold_build_s": 0.0008416666666666758,
+          "total_fixture_s": 0.0015288000000000062
+        }
+      },
+      "parts_peak": 1,
+      "peak_active_bitset_bits": 32,
+      "sweep_runtime_coverage_predicate_count": 0
+    },
+    {
+      "active_peak": 1,
+      "actual_clip_calls": 64,
+      "coverage_created_Stream_objects": 64,
+      "coverage_predicate_reference_count_source_derived": 4096,
+      "index_endpoint_references": 128,
+      "interval_ratio": 2.0787247521800682,
+      "layout": "disjoint",
+      "light_stage_s": {
+        "build_s": 0.0002471000000000001,
+        "enumeration_and_clip_s": 0.00012820000000018927,
+        "maintenance_s": 0.00016180000000010075
+      },
+      "m": 64,
+      "memory": {
+        "reference": {
+          "current_bytes": 6440,
+          "instrumented_wall_s": 0.019740300000000016,
+          "peak_bytes": 45084
+        },
+        "sweep": {
+          "current_bytes": 7456,
+          "instrumented_wall_s": 0.012968299999999988,
+          "peak_bytes": 56524
+        }
+      },
+      "paired_plain_means": {
+        "reference": {
+          "interval_including_index_cold_build_s": 0.0037187000000000006,
+          "total_fixture_s": 0.006230133333333322
+        },
+        "sweep": {
+          "interval_including_index_cold_build_s": 0.001788933333333335,
+          "total_fixture_s": 0.004124700000000009
+        }
+      },
+      "parts_peak": 1,
+      "peak_active_bitset_bits": 64,
+      "sweep_runtime_coverage_predicate_count": 0
+    },
+    {
+      "active_peak": 1,
+      "actual_clip_calls": 128,
+      "coverage_created_Stream_objects": 128,
+      "coverage_predicate_reference_count_source_derived": 16384,
+      "index_endpoint_references": 256,
+      "interval_ratio": 2.9525676024643106,
+      "layout": "disjoint",
+      "light_stage_s": {
+        "build_s": 0.00037959999999997995,
+        "enumeration_and_clip_s": 0.00022230000000011962,
+        "maintenance_s": 0.0002483000000000901
+      },
+      "m": 128,
+      "memory": {
+        "reference": {
+          "current_bytes": 7168,
+          "instrumented_wall_s": 0.05855199999999999,
+          "peak_bytes": 95260
+        },
+        "sweep": {
+          "current_bytes": 8288,
+          "instrumented_wall_s": 0.03889349999999997,
+          "peak_bytes": 113616
+        }
+      },
+      "paired_plain_means": {
+        "reference": {
+          "interval_including_index_cold_build_s": 0.010671366666666663,
+          "total_fixture_s": 0.01932149999999999
+        },
+        "sweep": {
+          "interval_including_index_cold_build_s": 0.003614266666666662,
+          "total_fixture_s": 0.011676633333333334
+        }
+      },
+      "parts_peak": 1,
+      "peak_active_bitset_bits": 128,
+      "sweep_runtime_coverage_predicate_count": 0
+    },
+    {
+      "active_peak": 1,
+      "actual_clip_calls": 256,
+      "coverage_created_Stream_objects": 256,
+      "coverage_predicate_reference_count_source_derived": 65536,
+      "index_endpoint_references": 512,
+      "interval_ratio": 4.754385250302702,
+      "layout": "disjoint",
+      "light_stage_s": {
+        "build_s": 0.0010191999999999979,
+        "enumeration_and_clip_s": 0.0005689999999989315,
+        "maintenance_s": 0.0006774999999991094
+      },
+      "m": 256,
+      "memory": {
+        "reference": {
+          "current_bytes": 7168,
+          "instrumented_wall_s": 0.24316549999999992,
+          "peak_bytes": 183612
+        },
+        "sweep": {
+          "current_bytes": 8420,
+          "instrumented_wall_s": 0.13939940000000006,
+          "peak_bytes": 227736
+        }
+      },
+      "paired_plain_means": {
+        "reference": {
+          "interval_including_index_cold_build_s": 0.04279786666666672,
+          "total_fixture_s": 0.07661596666666663
+        },
+        "sweep": {
+          "interval_including_index_cold_build_s": 0.009001766666666708,
+          "total_fixture_s": 0.04374659999999997
+        }
+      },
+      "parts_peak": 1,
+      "peak_active_bitset_bits": 256,
+      "sweep_runtime_coverage_predicate_count": 0
+    },
+    {
+      "active_peak": 1,
+      "actual_clip_calls": 512,
+      "coverage_created_Stream_objects": 512,
+      "coverage_predicate_reference_count_source_derived": 262144,
+      "index_endpoint_references": 1024,
+      "interval_ratio": 8.872770938522349,
+      "layout": "disjoint",
+      "light_stage_s": {
+        "build_s": 0.0017636000000003094,
+        "enumeration_and_clip_s": 0.001217100000004745,
+        "maintenance_s": 0.0014220000000007005
+      },
+      "m": 512,
+      "memory": {
+        "reference": {
+          "current_bytes": 8120,
+          "instrumented_wall_s": 0.9225254999999999,
+          "peak_bytes": 406200
+        },
+        "sweep": {
+          "current_bytes": 8368,
+          "instrumented_wall_s": 0.5429936000000004,
+          "peak_bytes": 483692
+        }
+      },
+      "paired_plain_means": {
+        "reference": {
+          "interval_including_index_cold_build_s": 0.15640033333333334,
+          "total_fixture_s": 0.29038866666666663
+        },
+        "sweep": {
+          "interval_including_index_cold_build_s": 0.017626999999999986,
+          "total_fixture_s": 0.14777493333333322
+        }
+      },
+      "parts_peak": 1,
+      "peak_active_bitset_bits": 512,
+      "sweep_runtime_coverage_predicate_count": 0
+    },
+    {
+      "active_peak": 16,
+      "actual_clip_calls": 256,
+      "coverage_created_Stream_objects": 256,
+      "coverage_predicate_reference_count_source_derived": 496,
+      "index_endpoint_references": 32,
+      "interval_ratio": 1.1828842117769425,
+      "layout": "dense",
+      "light_stage_s": {
+        "build_s": 7.409999999907768e-05,
+        "enumeration_and_clip_s": 0.0006194000000006028,
+        "maintenance_s": 9.900000000317988e-05
+      },
+      "m": 16,
+      "memory": {
+        "reference": {
+          "current_bytes": 2277,
+          "instrumented_wall_s": 0.02372680000000038,
+          "peak_bytes": 15362
+        },
+        "sweep": {
+          "current_bytes": 3589,
+          "instrumented_wall_s": 0.02219559999999987,
+          "peak_bytes": 18714
+        }
+      },
+      "paired_plain_means": {
+        "reference": {
+          "interval_including_index_cold_build_s": 0.007965700000000334,
+          "total_fixture_s": 0.008708833333333091
+        },
+        "sweep": {
+          "interval_including_index_cold_build_s": 0.0067341333333329105,
+          "total_fixture_s": 0.00747263333333296
+        }
+      },
+      "parts_peak": 16,
+      "peak_active_bitset_bits": 16,
+      "sweep_runtime_coverage_predicate_count": 0
+    },
+    {
+      "active_peak": 32,
+      "actual_clip_calls": 1024,
+      "coverage_created_Stream_objects": 1024,
+      "coverage_predicate_reference_count_source_derived": 2016,
+      "index_endpoint_references": 64,
+      "interval_ratio": 1.0602720012143485,
+      "layout": "dense",
+      "light_stage_s": {
+        "build_s": 0.00010130000000074801,
+        "enumeration_and_clip_s": 0.0014141000000007509,
+        "maintenance_s": 0.00011029999999667695
+      },
+      "m": 32,
+      "memory": {
+        "reference": {
+          "current_bytes": 5569,
+          "instrumented_wall_s": 0.057634799999999764,
+          "peak_bytes": 30246
+        },
+        "sweep": {
+          "current_bytes": 6817,
+          "instrumented_wall_s": 0.05728289999999969,
+          "peak_bytes": 38138
+        }
+      },
+      "paired_plain_means": {
+        "reference": {
+          "interval_including_index_cold_build_s": 0.024214633333333364,
+          "total_fixture_s": 0.02608213333333313
+        },
+        "sweep": {
+          "interval_including_index_cold_build_s": 0.02283813333333325,
+          "total_fixture_s": 0.024973633333333762
+        }
+      },
+      "parts_peak": 32,
+      "peak_active_bitset_bits": 32,
+      "sweep_runtime_coverage_predicate_count": 0
+    },
+    {
+      "active_peak": 64,
+      "actual_clip_calls": 4096,
+      "coverage_created_Stream_objects": 4096,
+      "coverage_predicate_reference_count_source_derived": 8128,
+      "index_endpoint_references": 128,
+      "interval_ratio": 1.0680603647823426,
+      "layout": "dense",
+      "light_stage_s": {
+        "build_s": 0.00044980000000016673,
+        "enumeration_and_clip_s": 0.009418199999994492,
+        "maintenance_s": 0.0004791000000050616
+      },
+      "m": 64,
+      "memory": {
+        "reference": {
+          "current_bytes": 6790,
+          "instrumented_wall_s": 0.3030222999999994,
+          "peak_bytes": 61764
+        },
+        "sweep": {
+          "current_bytes": 8102,
+          "instrumented_wall_s": 0.29872479999999957,
+          "peak_bytes": 77492
+        }
+      },
+      "paired_plain_means": {
+        "reference": {
+          "interval_including_index_cold_build_s": 0.10135743333333351,
+          "total_fixture_s": 0.10894733333333306
+        },
+        "sweep": {
+          "interval_including_index_cold_build_s": 0.0948985999999999,
+          "total_fixture_s": 0.10251619999999988
+        }
+      },
+      "parts_peak": 64,
+      "peak_active_bitset_bits": 64,
+      "sweep_runtime_coverage_predicate_count": 0
+    }
+  ],
+  "full_BBM_speedup": null,
+  "full_N4_P0_engineering_pass": false,
+  "further_performance_attempts_after_real_pair": 0,
+  "memory_labels": "SEPARATE_TRACEMALLOC_RUNS_SYNTHETIC_ONLY; NOT_PRODUCTION_WALL_OR_PROCESS_RSS",
+  "real_short_prefix": {
+    "active_peak": 1,
+    "comparison": {
+      "existing_causal_and_business_state_hashes_exact": true,
+      "full_BBM_speedup_claim": false,
+      "ledger_fields_exact": true,
+      "measured_prefix_seconds": 0.125,
+      "outputs_exact": true,
+      "plain_order": "REFERENCE_THEN_SWEEP_ONE_PAIR",
+      "process_elapsed_s": 18.389456,
+      "start_s": 3.0,
+      "status": "PASS_SHORT_PREFIX_EXACT",
+      "stop_s": 3.125,
+      "timings": {
+        "reference": {
+          "advance_network_FIFO_energy_validation_s": 0.4702693999999994,
+          "clone_s": 0.08392140000000126,
+          "seam_install_s": 3.9999999934536845e-07,
+          "submit_s": 0.4570515999999998,
+          "total_from_clone_s": 1.0112427999999998
+        },
+        "sweep": {
+          "advance_network_FIFO_energy_validation_s": 0.5422617999999986,
+          "clone_s": 0.11119569999999968,
+          "seam_install_s": 0.003604000000002827,
+          "submit_s": 0.5445267000000023,
+          "total_from_clone_s": 1.2015882000000033
+        }
+      }
+    },
+    "complete_cohort_allocation_count": null,
+    "complete_process_peak_memory_bytes": null,
+    "coverage_created_Stream_objects": 858,
+    "incoming_peak": 19,
+    "index_build_calls": 6720,
+    "index_endpoint_references": 1716,
+    "light_stage_s": {
+      "build_s": 0.009022600000008651,
+      "enumeration_and_clip_s": 0.003015000000054613,
+      "maintenance_s": 0.01371880000003145
+    },
+    "parts_peak": 1,
+    "prefix_source_derived_legacy_predicate_iterations": 9786,
+    "replay_actual_clip_calls": 858,
+    "replay_measured_optimized_predicate_iterations": 0,
+    "scope": "COVERAGE_COUNTERS_ONLY_FROM_READ_ONLY_REPLAY_OF_REAL_PREFIX; TOTAL_COHORT_PEAK_NOT_MEASURED"
+  },
+  "status": "STOP_NO_DEMONSTRATED_NET_GAIN"
+}

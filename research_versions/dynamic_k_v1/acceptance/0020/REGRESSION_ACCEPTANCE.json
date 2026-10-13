@@ -1,0 +1,25 @@
+{
+  "early_N3_60s_whole_group_timeout": "KEPT; NO_PASS_INFERRED_FROM_PARTIAL_LOG; ALL_CASES_COMPLETED_IN_BOUNDED_GROUPS",
+  "early_N3_UTF8_entry_failure": "KEPT; NO_TEST_CASE_STARTED",
+  "event_clock_and_1bit_loss": 7,
+  "historical_tests": 132,
+  "original_control_additional": {
+    "N1b": 24,
+    "N2": 27
+  },
+  "retained_historical_failures": [
+    {
+      "test": "test_known_witness_domain_discovers_every_registered_size_without_J (test_f3_v2_search_policy_probe.StructuralPolicyProbeTests)",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\tests\\test_f3_v2_search_policy_probe.py\", line 50, in test_known_witness_domain_discovers_every_registered_size_without_J\n    self.assertGreater(pool.audit['coverage_by_size'][str(size)],0)\nAssertionError: 0 not greater than 0\n"
+    }
+  ],
+  "status": "PASS_NO_NEW_COMPLETED_REGRESSION_FAILURES",
+  "test_sources_or_expected_results_modified": false,
+  "upstream": {
+    "N1a": 25,
+    "N1b": 24,
+    "N2": 27,
+    "N3": 20,
+    "P0": 20
+  }
+}

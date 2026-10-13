@@ -1,0 +1,1667 @@
+{
+  "HOLD_plain_wall_s": 1.7483776999999918,
+  "HOLD_profiled_stage_calls": {
+    "FIFO": 391,
+    "N2_action_submission": 1,
+    "binding_validation": 27,
+    "branch_clone": 1,
+    "energy_and_measurement": 11,
+    "network_event_clock": 3
+  },
+  "HOLD_profiled_stage_exclusive_s": {
+    "FIFO": 4.681850900000001,
+    "N2_action_submission": 3.9131570000000124,
+    "binding_validation": 2.363100000000003,
+    "branch_clone": 5.749755100000002,
+    "energy_and_measurement": 1.1651952999999793,
+    "network_event_clock": 0.07979210000000592
+  },
+  "HOLD_profiled_wall_s": 27.043724999999995,
+  "HOLD_profiler_callbacks": 7287604,
+  "branch_runs": 0,
+  "branches": [
+    {
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "ADD",
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "age_observation_record_delta": 363,
+      "closure_audit_entries": 18,
+      "evidence": {
+        "byte_count": 2486069,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/PERSIST/01_ADD_.json",
+        "sha256": "528e07c5d8a1c86640e775968e5a5326498e84ebaa56ba7bcf645646637e2d02"
+      },
+      "final_resident_cohort_and_stream_count": 9,
+      "measured_timings": {
+        "advance_network_fifo_energy_including_binding_s": 20.5884524,
+        "branch_clone_s": 0.09765649999999937,
+        "energy_cost_evidence_s": 0.07431790000001115,
+        "explicit_binding_hash_s": 0.08018009999999975,
+        "n2_submit_including_binding_s": 0.48169660000000647
+      },
+      "memory": {
+        "private_bytes": 120365056,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 132571136
+      },
+      "mode": "PERSIST",
+      "roundoff_audit_entries": 4814,
+      "roundoff_by_boundary": {
+        "ABSENT": 32,
+        "FINAL": 74,
+        "INTERVAL_END": 4708
+      },
+      "roundoff_by_state": {
+        "A": 374,
+        "CLOSURE": 18,
+        "D": 370,
+        "I": 2577,
+        "Q": 1461,
+        "REPORTED_DELIVERY": 3,
+        "SERVICE": 11
+      },
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "f2fb221853d93a71963d17e05872de4d8dd9f220ef648a4980b94d77a20dc9bf",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_log_delta": 8,
+      "unique_times_in_nonzero_roundoff_audit": 212,
+      "unrecorded": {
+        "FIFO_exclusive_wall_s": null,
+        "actual_INTERVAL_count": null,
+        "actual_microstep_count": null,
+        "consume_count": null,
+        "peak_resident_cohorts": null,
+        "queue_update_count": null,
+        "sort_count": null,
+        "split_count": null,
+        "total_Cohort_created": null,
+        "total_Stream_created": null
+      },
+      "wall_s": 21.46533339999999
+    },
+    {
+      "action": {
+        "kind": "DROP",
+        "old": {
+          "endpoints": [
+            [
+              "X0_1",
+              "D2"
+            ],
+            [
+              "X1_1",
+              "D1"
+            ]
+          ],
+          "link_id": "L1"
+        }
+      },
+      "age_observation_record_delta": 54,
+      "closure_audit_entries": 7,
+      "evidence": {
+        "byte_count": 750139,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/PERSIST/02_DROP_.json",
+        "sha256": "51670c8f4f436a6019fd50c0a3485c678713287a905338da787ad2033609e284"
+      },
+      "final_resident_cohort_and_stream_count": 92,
+      "measured_timings": {
+        "advance_network_fifo_energy_including_binding_s": 1.024683600000003,
+        "branch_clone_s": 0.12236040000000514,
+        "energy_cost_evidence_s": 0.02948359999999184,
+        "explicit_binding_hash_s": 0.09022900000000789,
+        "n2_submit_including_binding_s": 0.5228141999999991
+      },
+      "memory": {
+        "private_bytes": 118571008,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 130756608
+      },
+      "mode": "PERSIST",
+      "roundoff_audit_entries": 943,
+      "roundoff_by_boundary": {
+        "ABSENT": 19,
+        "FINAL": 74,
+        "INTERVAL_END": 850
+      },
+      "roundoff_by_state": {
+        "A": 80,
+        "CLOSURE": 7,
+        "D": 72,
+        "I": 469,
+        "Q": 303,
+        "REPORTED_DELIVERY": 4,
+        "SERVICE": 8
+      },
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "f5ed87942109060c412c69d2e8a5078cb5246a54179da8754bd4d29276d10a62",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_log_delta": 3,
+      "unique_times_in_nonzero_roundoff_audit": 53,
+      "unrecorded": {
+        "FIFO_exclusive_wall_s": null,
+        "actual_INTERVAL_count": null,
+        "actual_microstep_count": null,
+        "consume_count": null,
+        "peak_resident_cohorts": null,
+        "queue_update_count": null,
+        "sort_count": null,
+        "split_count": null,
+        "total_Cohort_created": null,
+        "total_Stream_created": null
+      },
+      "wall_s": 1.955332900000002
+    },
+    {
+      "action": {
+        "kind": "HOLD"
+      },
+      "age_observation_record_delta": 7,
+      "closure_audit_entries": 0,
+      "evidence": {
+        "byte_count": 521101,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/PERSIST/03_HOLD_.json",
+        "sha256": "27cbb8ddacb0c7a4628e1dfb07dee054399fd637921106bef65dd84bd6c78be9"
+      },
+      "final_resident_cohort_and_stream_count": 20,
+      "measured_timings": {
+        "advance_network_fifo_energy_including_binding_s": 0.5556054999999986,
+        "branch_clone_s": 0.11355600000000265,
+        "energy_cost_evidence_s": 0.04798620000001108,
+        "explicit_binding_hash_s": 0.09188439999999787,
+        "n2_submit_including_binding_s": 0.37508939999999313
+      },
+      "memory": {
+        "private_bytes": 123314176,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 135364608
+      },
+      "mode": "PERSIST",
+      "roundoff_audit_entries": 427,
+      "roundoff_by_boundary": {
+        "ABSENT": 3,
+        "FINAL": 88,
+        "INTERVAL_END": 336
+      },
+      "roundoff_by_state": {
+        "A": 40,
+        "D": 32,
+        "I": 352,
+        "REPORTED_DELIVERY": 3
+      },
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "281d1599f8b7b22f83c51784e8d0d00de294a4aa8e48be35b300b7174e01becc",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_log_delta": 0,
+      "unique_times_in_nonzero_roundoff_audit": 25,
+      "unrecorded": {
+        "FIFO_exclusive_wall_s": null,
+        "actual_INTERVAL_count": null,
+        "actual_microstep_count": null,
+        "consume_count": null,
+        "peak_resident_cohorts": null,
+        "queue_update_count": null,
+        "sort_count": null,
+        "split_count": null,
+        "total_Cohort_created": null,
+        "total_Stream_created": null
+      },
+      "wall_s": 1.3340139000000022
+    },
+    {
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "BBM",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "age_observation_record_delta": 479,
+      "closure_audit_entries": 10,
+      "evidence": {
+        "byte_count": 3636910,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/PERSIST/04_REPLACE_BBM.json",
+        "sha256": "f5c1bcf2867f265d4dcf030c2ee9d96f678dfa9e98c3bad1b2ec7d32a4780b8f"
+      },
+      "final_resident_cohort_and_stream_count": 27,
+      "measured_timings": {
+        "advance_network_fifo_energy_including_binding_s": 1099.380509,
+        "branch_clone_s": 0.1383550999999983,
+        "energy_cost_evidence_s": 0.1429438999998638,
+        "explicit_binding_hash_s": 0.09716200000001152,
+        "n2_submit_including_binding_s": 0.5762523000000073
+      },
+      "memory": {
+        "private_bytes": 125034496,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 137347072
+      },
+      "mode": "PERSIST",
+      "roundoff_audit_entries": 7595,
+      "roundoff_by_boundary": {
+        "ABSENT": 34,
+        "FINAL": 116,
+        "INTERVAL_END": 7445
+      },
+      "roundoff_by_state": {
+        "A": 498,
+        "CLOSURE": 10,
+        "D": 494,
+        "I": 3428,
+        "Q": 3141,
+        "REPORTED_DELIVERY": 3,
+        "SERVICE": 21
+      },
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "6ea429ccafb3d85e992d28b1112d99775f26f436a762c975dbdde43e846921a3",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_log_delta": 10,
+      "unique_times_in_nonzero_roundoff_audit": 266,
+      "unrecorded": {
+        "FIFO_exclusive_wall_s": null,
+        "actual_INTERVAL_count": null,
+        "actual_microstep_count": null,
+        "consume_count": null,
+        "peak_resident_cohorts": null,
+        "queue_update_count": null,
+        "sort_count": null,
+        "split_count": null,
+        "total_Cohort_created": null,
+        "total_Stream_created": null
+      },
+      "wall_s": 1100.5150513
+    },
+    {
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "MBB",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "age_observation_record_delta": 383,
+      "closure_audit_entries": 18,
+      "evidence": {
+        "byte_count": 2803464,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/PERSIST/05_REPLACE_MBB.json",
+        "sha256": "f15444a551752c2de37db771ea77044cc492f6fd0afc131dc19daf711dedc86e"
+      },
+      "final_resident_cohort_and_stream_count": 27,
+      "measured_timings": {
+        "advance_network_fifo_energy_including_binding_s": 32.3527967,
+        "branch_clone_s": 0.2460900999999467,
+        "energy_cost_evidence_s": 0.060377399999879344,
+        "explicit_binding_hash_s": 0.14979440000001887,
+        "n2_submit_including_binding_s": 0.7454944999999498
+      },
+      "memory": {
+        "private_bytes": 125923328,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 137957376
+      },
+      "mode": "PERSIST",
+      "roundoff_audit_entries": 5515,
+      "roundoff_by_boundary": {
+        "ABSENT": 32,
+        "FINAL": 110,
+        "INTERVAL_END": 5373
+      },
+      "roundoff_by_state": {
+        "A": 394,
+        "CLOSURE": 18,
+        "D": 390,
+        "I": 3131,
+        "Q": 1568,
+        "REPORTED_DELIVERY": 3,
+        "SERVICE": 11
+      },
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "00fac7ffab57fdcc1e9068f764fe5ce5b34e3dda29acd54175a7ca324754da3c",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_log_delta": 10,
+      "unique_times_in_nonzero_roundoff_audit": 222,
+      "unrecorded": {
+        "FIFO_exclusive_wall_s": null,
+        "actual_INTERVAL_count": null,
+        "actual_microstep_count": null,
+        "consume_count": null,
+        "peak_resident_cohorts": null,
+        "queue_update_count": null,
+        "sort_count": null,
+        "split_count": null,
+        "total_Cohort_created": null,
+        "total_Stream_created": null
+      },
+      "wall_s": 33.73948329999985
+    },
+    {
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "ADD",
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "age_observation_record_delta": 58,
+      "closure_audit_entries": 7,
+      "evidence": {
+        "byte_count": 650562,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/ZERO/01_ADD_.json",
+        "sha256": "7ae8b364715a294031c24bf579c9365111070eb01ad89e25723b04e4ec222445"
+      },
+      "final_resident_cohort_and_stream_count": 0,
+      "measured_timings": {
+        "advance_network_fifo_energy_including_binding_s": 1.56861600000002,
+        "branch_clone_s": 0.17086010000002716,
+        "energy_cost_evidence_s": 0.07184499999993932,
+        "explicit_binding_hash_s": 0.13570800000002237,
+        "n2_submit_including_binding_s": 0.6958962000001065
+      },
+      "memory": {
+        "private_bytes": 126513152,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 138862592
+      },
+      "mode": "ZERO",
+      "roundoff_audit_entries": 702,
+      "roundoff_by_boundary": {
+        "ABSENT": 27,
+        "FINAL": 60,
+        "INTERVAL_END": 615
+      },
+      "roundoff_by_state": {
+        "A": 40,
+        "CLOSURE": 7,
+        "D": 76,
+        "I": 469,
+        "Q": 90,
+        "REPORTED_DELIVERY": 2,
+        "SERVICE": 18
+      },
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "57704831cb1388055c480f63b79774f2ad2cfee9c4fd376cf5be0a0b09ccc916",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_log_delta": 8,
+      "unique_times_in_nonzero_roundoff_audit": 53,
+      "unrecorded": {
+        "FIFO_exclusive_wall_s": null,
+        "actual_INTERVAL_count": null,
+        "actual_microstep_count": null,
+        "consume_count": null,
+        "peak_resident_cohorts": null,
+        "queue_update_count": null,
+        "sort_count": null,
+        "split_count": null,
+        "total_Cohort_created": null,
+        "total_Stream_created": null
+      },
+      "wall_s": 2.8697078999998666
+    },
+    {
+      "action": {
+        "kind": "DROP",
+        "old": {
+          "endpoints": [
+            [
+              "X0_1",
+              "D2"
+            ],
+            [
+              "X1_1",
+              "D1"
+            ]
+          ],
+          "link_id": "L1"
+        }
+      },
+      "age_observation_record_delta": 54,
+      "closure_audit_entries": 7,
+      "evidence": {
+        "byte_count": 718384,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/ZERO/02_DROP_.json",
+        "sha256": "4cc7b5f860c50db6450f223a7e182fcfde72d7d442d4897c03d532a497b93ca3"
+      },
+      "final_resident_cohort_and_stream_count": 48,
+      "measured_timings": {
+        "advance_network_fifo_energy_including_binding_s": 1.2369606000002022,
+        "branch_clone_s": 0.22754919999988488,
+        "energy_cost_evidence_s": 0.059821600000077524,
+        "explicit_binding_hash_s": 0.13593390000005456,
+        "n2_submit_including_binding_s": 0.6619998999999552
+      },
+      "memory": {
+        "private_bytes": 126148608,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 138518528
+      },
+      "mode": "ZERO",
+      "roundoff_audit_entries": 863,
+      "roundoff_by_boundary": {
+        "ABSENT": 19,
+        "FINAL": 74,
+        "INTERVAL_END": 770
+      },
+      "roundoff_by_state": {
+        "A": 40,
+        "CLOSURE": 7,
+        "D": 72,
+        "I": 469,
+        "Q": 263,
+        "REPORTED_DELIVERY": 4,
+        "SERVICE": 8
+      },
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "4f9daba25606ac3c247fc4b0bd711cf80f5422b1bbb2a5ae8004e05e20e34e5b",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_log_delta": 3,
+      "unique_times_in_nonzero_roundoff_audit": 53,
+      "unrecorded": {
+        "FIFO_exclusive_wall_s": null,
+        "actual_INTERVAL_count": null,
+        "actual_microstep_count": null,
+        "consume_count": null,
+        "peak_resident_cohorts": null,
+        "queue_update_count": null,
+        "sort_count": null,
+        "split_count": null,
+        "total_Cohort_created": null,
+        "total_Stream_created": null
+      },
+      "wall_s": 2.5307262000001174
+    },
+    {
+      "action": {
+        "kind": "HOLD"
+      },
+      "age_observation_record_delta": 54,
+      "closure_audit_entries": 7,
+      "evidence": {
+        "byte_count": 637272,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/ZERO/03_HOLD_.json",
+        "sha256": "17895e5a03507539d698d1a2914f252163b9d13610e43d42b7d79d153da02a53"
+      },
+      "final_resident_cohort_and_stream_count": 0,
+      "measured_timings": {
+        "advance_network_fifo_energy_including_binding_s": 1.2269572000000153,
+        "branch_clone_s": 0.14759090000006836,
+        "energy_cost_evidence_s": 0.0339429000000564,
+        "explicit_binding_hash_s": 0.10183980000010706,
+        "n2_submit_including_binding_s": 0.3842915999998695
+      },
+      "memory": {
+        "private_bytes": 131411968,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 142942208
+      },
+      "mode": "ZERO",
+      "roundoff_audit_entries": 686,
+      "roundoff_by_boundary": {
+        "ABSENT": 27,
+        "FINAL": 60,
+        "INTERVAL_END": 599
+      },
+      "roundoff_by_state": {
+        "A": 40,
+        "CLOSURE": 7,
+        "D": 72,
+        "I": 469,
+        "Q": 78,
+        "REPORTED_DELIVERY": 2,
+        "SERVICE": 18
+      },
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "d22fb4e4b145fa6f23382858477c38c73f17139344e5cb9a43674c3645a53557",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_log_delta": 0,
+      "unique_times_in_nonzero_roundoff_audit": 51,
+      "unrecorded": {
+        "FIFO_exclusive_wall_s": null,
+        "actual_INTERVAL_count": null,
+        "actual_microstep_count": null,
+        "consume_count": null,
+        "peak_resident_cohorts": null,
+        "queue_update_count": null,
+        "sort_count": null,
+        "split_count": null,
+        "total_Cohort_created": null,
+        "total_Stream_created": null
+      },
+      "wall_s": 2.0876580999999987
+    },
+    {
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "BBM",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "age_observation_record_delta": 299,
+      "closure_audit_entries": 14,
+      "evidence": {
+        "byte_count": 1624240,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/ZERO/04_REPLACE_BBM.json",
+        "sha256": "4cf46481078e64fe7381f5829a375ecbf293df46c6820a6c951ad7cf5524ff34"
+      },
+      "final_resident_cohort_and_stream_count": 4,
+      "measured_timings": {
+        "advance_network_fifo_energy_including_binding_s": 5.167548600000146,
+        "branch_clone_s": 0.1568721999999525,
+        "energy_cost_evidence_s": 0.0492884000000231,
+        "explicit_binding_hash_s": 0.10214139999993677,
+        "n2_submit_including_binding_s": 0.7975232999999662
+      },
+      "memory": {
+        "private_bytes": 131735552,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 143015936
+      },
+      "mode": "ZERO",
+      "roundoff_audit_entries": 2985,
+      "roundoff_by_boundary": {
+        "ABSENT": 38,
+        "FINAL": 72,
+        "INTERVAL_END": 2875
+      },
+      "roundoff_by_state": {
+        "A": 40,
+        "CLOSURE": 14,
+        "D": 310,
+        "I": 1208,
+        "Q": 1389,
+        "REPORTED_DELIVERY": 4,
+        "SERVICE": 20
+      },
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "03b69eecfe1782542afac4fca96832df0361519be3dc02f42d4b47875eab5e18",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_log_delta": 10,
+      "unique_times_in_nonzero_roundoff_audit": 179,
+      "unrecorded": {
+        "FIFO_exclusive_wall_s": null,
+        "actual_INTERVAL_count": null,
+        "actual_microstep_count": null,
+        "consume_count": null,
+        "peak_resident_cohorts": null,
+        "queue_update_count": null,
+        "sort_count": null,
+        "split_count": null,
+        "total_Cohort_created": null,
+        "total_Stream_created": null
+      },
+      "wall_s": 6.446008600000141
+    },
+    {
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "MBB",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "age_observation_record_delta": 58,
+      "closure_audit_entries": 7,
+      "evidence": {
+        "byte_count": 652540,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/ZERO/05_REPLACE_MBB.json",
+        "sha256": "c4e37e0b236ed3942423ffcbfd0858de58a9c7a642baa09c0439ee56a34ad3c7"
+      },
+      "final_resident_cohort_and_stream_count": 0,
+      "measured_timings": {
+        "advance_network_fifo_energy_including_binding_s": 1.6682902000000013,
+        "branch_clone_s": 0.22970499999996719,
+        "energy_cost_evidence_s": 0.0625518000001648,
+        "explicit_binding_hash_s": 0.13096390000009706,
+        "n2_submit_including_binding_s": 0.6162544000001162
+      },
+      "memory": {
+        "private_bytes": 130019328,
+        "process_peak_commit_bytes": 342118400,
+        "process_peak_working_set_bytes": 353099776,
+        "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+        "working_set_bytes": 142364672
+      },
+      "mode": "ZERO",
+      "roundoff_audit_entries": 702,
+      "roundoff_by_boundary": {
+        "ABSENT": 27,
+        "FINAL": 60,
+        "INTERVAL_END": 615
+      },
+      "roundoff_by_state": {
+        "A": 40,
+        "CLOSURE": 7,
+        "D": 76,
+        "I": 469,
+        "Q": 90,
+        "REPORTED_DELIVERY": 2,
+        "SERVICE": 18
+      },
+      "state_checks": {
+        "age_clock_s": "9",
+        "causal_final_sha256": "47f22483cdaf5e98aea097755c0ac05e56cab8c01a9c87e4cae421e43ac54926",
+        "clock_s": 9.0,
+        "energy_clock_s": 9.0,
+        "terminal_clock_s": 9.0
+      },
+      "terminal_log_delta": 10,
+      "unique_times_in_nonzero_roundoff_audit": 53,
+      "unrecorded": {
+        "FIFO_exclusive_wall_s": null,
+        "actual_INTERVAL_count": null,
+        "actual_microstep_count": null,
+        "consume_count": null,
+        "peak_resident_cohorts": null,
+        "queue_update_count": null,
+        "sort_count": null,
+        "split_count": null,
+        "total_Cohort_created": null,
+        "total_Stream_created": null
+      },
+      "wall_s": 2.9099442000001545
+    }
+  ],
+  "catalog_prefix": {
+    "accepted_by_kind": {
+      "ADD": 1965,
+      "DROP": 1,
+      "HOLD": 1,
+      "REPLACE": 599
+    },
+    "accepted_count": 2566,
+    "by_kind": {
+      "ADD": 1996,
+      "DROP": 1,
+      "HOLD": 1,
+      "REPLACE": 600
+    },
+    "candidate_deepcopy_actual_calls": null,
+    "candidate_snapshot_actual_calls": null,
+    "candidate_trial_clone_actual_calls": null,
+    "complete_legal_count": null,
+    "completed_count": 2598,
+    "distinct_endpoint_pairs": 1996,
+    "endpoint_pair_multiplicity_histogram": {
+      "1": 1396,
+      "2": 600
+    },
+    "evidence": {
+      "byte_count": 1096809,
+      "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_VALIDATION_PREFIX.jsonl",
+      "sha256": "bf0b0bf80b9af51e110629e8671a28e8e98b9cadf067554397c37558320606dd"
+    },
+    "full_coverage": false,
+    "groups": [
+      {
+        "kind": "ADD",
+        "mode": "ADD",
+        "reason": "None",
+        "timing": {
+          "count": 1965,
+          "max_s": 0.19399970000000621,
+          "median_s": 0.11209279999999922,
+          "min_s": 0.07167129999999133,
+          "sum_s": 225.06501669999938
+        }
+      },
+      {
+        "kind": "ADD",
+        "mode": "None",
+        "reason": "ADD_WOULD_IMPLICITLY_RELEASE",
+        "timing": {
+          "count": 31,
+          "max_s": 0.00013329999998745734,
+          "median_s": 3.829999999993561e-05,
+          "min_s": 3.4499999998161e-05,
+          "sum_s": 0.0017327000000051385
+        }
+      },
+      {
+        "kind": "DROP",
+        "mode": "DROP",
+        "reason": "None",
+        "timing": {
+          "count": 1,
+          "max_s": 0.023609099999987393,
+          "median_s": 0.023609099999987393,
+          "min_s": 0.023609099999987393,
+          "sum_s": 0.023609099999987393
+        }
+      },
+      {
+        "kind": "HOLD",
+        "mode": "HOLD",
+        "reason": "None",
+        "timing": {
+          "count": 1,
+          "max_s": 2.820000000269829e-05,
+          "median_s": 2.820000000269829e-05,
+          "min_s": 2.820000000269829e-05,
+          "sum_s": 2.820000000269829e-05
+        }
+      },
+      {
+        "kind": "REPLACE",
+        "mode": "BBM",
+        "reason": "None",
+        "timing": {
+          "count": 599,
+          "max_s": 0.2142529000000195,
+          "median_s": 0.11677910000003067,
+          "min_s": 0.08731119999998782,
+          "sum_s": 72.8737778999996
+        }
+      },
+      {
+        "kind": "REPLACE",
+        "mode": "None",
+        "reason": "DUPLICATE_LINK",
+        "timing": {
+          "count": 1,
+          "max_s": 0.05765439999998989,
+          "median_s": 0.05765439999998989,
+          "min_s": 0.05765439999998989,
+          "sum_s": 0.05765439999998989
+        }
+      }
+    ],
+    "missing_result_for_interrupted_call": true,
+    "reasons": {
+      "ACCEPTED": 2566,
+      "ADD_WOULD_IMPLICITLY_RELEASE": 31,
+      "DUPLICATE_LINK": 1
+    },
+    "repeated_endpoint_pairs_in_prefix": 600,
+    "total_finished_validate_wall_s": 298.02181899999897
+  },
+  "catalog_progress": [
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 0.08640650000016592,
+          "SGP4_native": 0.02637949999996181,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 5.904744199999868
+        },
+        "completed_validation_count": 100,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 152,
+          "SGP4_native": 152,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 76,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 8.790989300000007
+      },
+      "evidence": {
+        "byte_count": 617,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_100.json",
+        "sha256": "9c48abea1f7a8167cf531de3b41a0cbe9f904b3e038f2dd31a5893b9fb8b09a7"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 0.19998860000028174,
+          "SGP4_native": 0.06094149999989895,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 13.817750799999743
+        },
+        "completed_validation_count": 200,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 352,
+          "SGP4_native": 352,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 176,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 20.169817300000005
+      },
+      "evidence": {
+        "byte_count": 620,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_200.json",
+        "sha256": "722e53cfe144d7c4df14a4c9b928b6a70c6d6a87ae1fe0049b39e72b7d274746"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 0.3180018000002178,
+          "SGP4_native": 0.09660729999997386,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 21.943194599999742
+        },
+        "completed_validation_count": 300,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 550,
+          "SGP4_native": 550,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 275,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 31.892790700000006
+      },
+      "evidence": {
+        "byte_count": 619,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_300.json",
+        "sha256": "6d9e06f08deb7f64c57453059fedecc48b49780113d6f969e5eb8b3a104bb5ac"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 0.43100940000023513,
+          "SGP4_native": 0.13063809999997034,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 29.829056399999743
+        },
+        "completed_validation_count": 400,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 750,
+          "SGP4_native": 750,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 375,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 43.28175349999999
+      },
+      "evidence": {
+        "byte_count": 619,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_400.json",
+        "sha256": "2910726b614888ae5fd4c858ed62b08d9ad9675d629fc9fda89c5be05239d05b"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 0.547008900000165,
+          "SGP4_native": 0.16546949999995775,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 37.732522999999645
+        },
+        "completed_validation_count": 500,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 950,
+          "SGP4_native": 950,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 475,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 54.873426699999996
+      },
+      "evidence": {
+        "byte_count": 618,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_500.json",
+        "sha256": "4a62989c5c0867c3172b9c26d96a8d36dc6e4c296eb270b79a2999c07a96d819"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 0.6559208000003167,
+          "SGP4_native": 0.19918669999994165,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 45.41402679999965
+        },
+        "completed_validation_count": 600,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 1148,
+          "SGP4_native": 1148,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 574,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 66.1542093
+      },
+      "evidence": {
+        "byte_count": 612,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_600.json",
+        "sha256": "61b9bb3f210beb31e7fc92c8159f679a2247e07a8c68863e13ed3c1f2af4a784"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 0.7690744000004059,
+          "SGP4_native": 0.23374370000003353,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 53.09362709999928
+        },
+        "completed_validation_count": 700,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 1348,
+          "SGP4_native": 1348,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 674,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 77.56840659999999
+      },
+      "evidence": {
+        "byte_count": 619,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_700.json",
+        "sha256": "cda1732d8b45e657fd98df57081fb1ba3fbd0bb84cd2a6d945973171104538a3"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 0.8853852000003855,
+          "SGP4_native": 0.2672998999998839,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 60.829549399999394
+        },
+        "completed_validation_count": 800,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 1540,
+          "SGP4_native": 1540,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 770,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 88.99153740000001
+      },
+      "evidence": {
+        "byte_count": 619,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_800.json",
+        "sha256": "1c221c1322d33256b1e9acf303efdfd98e6964519fcaa155e9aa928faf769d2f"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 0.9923628000005777,
+          "SGP4_native": 0.2992611999995489,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 68.15062089999958
+        },
+        "completed_validation_count": 900,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 1736,
+          "SGP4_native": 1736,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 868,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 99.6979635
+      },
+      "evidence": {
+        "byte_count": 611,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_900.json",
+        "sha256": "8feeb63167d57e02ea80cf92c14293d806cb6b7fa91479b02321bcc3ab5b48f0"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 1.1103685000005754,
+          "SGP4_native": 0.3343316999996233,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 76.35776759999959
+        },
+        "completed_validation_count": 1000,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 1936,
+          "SGP4_native": 1936,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 968,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 111.7391253
+      },
+      "evidence": {
+        "byte_count": 613,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_1000.json",
+        "sha256": "503670bd24fe393044cbb076c5fa8f02ed62778dd7226d5047088034511bbc4e"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 1.2180724000002812,
+          "SGP4_native": 0.36699699999995516,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 84.00328599999943
+        },
+        "completed_validation_count": 1100,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 2136,
+          "SGP4_native": 2136,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 1068,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 122.9255879
+      },
+      "evidence": {
+        "byte_count": 615,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_1100.json",
+        "sha256": "0fb7816efb6107ac529ff32e3ffa695614c14e99bc772151033aa8700e47758e"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 1.3306842000001353,
+          "SGP4_native": 0.40189400000012654,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 91.82483289999962
+        },
+        "completed_validation_count": 1200,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 2336,
+          "SGP4_native": 2336,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 1168,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 134.42731179999998
+      },
+      "evidence": {
+        "byte_count": 622,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_1200.json",
+        "sha256": "ed6dc28f93b8db666fe104db98b8dc03aad8707f4c2d58a5bfeb2f1776d7597d"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 1.4505426000001052,
+          "SGP4_native": 0.43734490000009885,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 99.86716059999978
+        },
+        "completed_validation_count": 1300,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 2536,
+          "SGP4_native": 2536,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 1268,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 146.30488759999997
+      },
+      "evidence": {
+        "byte_count": 622,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_1300.json",
+        "sha256": "41381b86c0b323004e3c08c8ff7b2e0bbf8396b20d1e982644bb2012548e21f9"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 1.5632884999998709,
+          "SGP4_native": 0.47072220000019627,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 107.6118415999999
+        },
+        "completed_validation_count": 1400,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 2736,
+          "SGP4_native": 2736,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 1368,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 157.61940349999998
+      },
+      "evidence": {
+        "byte_count": 622,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_1400.json",
+        "sha256": "6a6e7018889dae4917df32f759b62c8de879ffead30572df63b4441e0eb6d125"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 1.681519899999543,
+          "SGP4_native": 0.5056960000004409,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 115.54814459999974
+        },
+        "completed_validation_count": 1500,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 2936,
+          "SGP4_native": 2936,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 1468,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 169.2325277
+      },
+      "evidence": {
+        "byte_count": 614,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_1500.json",
+        "sha256": "02f073c8e1c62328092ec20ad502229dcdaeb7d15f5a3653558adff156bd1cfc"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 1.799401699999848,
+          "SGP4_native": 0.5402982000002936,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 123.48111299999937
+        },
+        "completed_validation_count": 1600,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 3136,
+          "SGP4_native": 3136,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 1568,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 180.90033900000003
+      },
+      "evidence": {
+        "byte_count": 621,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_1600.json",
+        "sha256": "8ce995814338a5bcb77d758a88b0a53e4a965e5de90af6119adbbf6b57a86e9b"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 1.9129805000005007,
+          "SGP4_native": 0.574948000000191,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 131.31547179999876
+        },
+        "completed_validation_count": 1700,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 3336,
+          "SGP4_native": 3336,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 1668,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 192.44617420000003
+      },
+      "evidence": {
+        "byte_count": 621,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_1700.json",
+        "sha256": "5038729187d82a92ca61722fb9f46a8627991059acfe52b9f01b5a4977585048"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 2.020872800000504,
+          "SGP4_native": 0.6075411000004607,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 138.95287489999907
+        },
+        "completed_validation_count": 1800,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 3536,
+          "SGP4_native": 3536,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 1768,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 203.650424
+      },
+      "evidence": {
+        "byte_count": 613,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_1800.json",
+        "sha256": "c2cab3ac2053f6e49e3838c2401e32b9caafa6bcacf3af16dbccbfe2036cb49d"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 2.1330616999996863,
+          "SGP4_native": 0.6416142000004612,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 146.70617579999998
+        },
+        "completed_validation_count": 1900,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 3736,
+          "SGP4_native": 3736,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 1868,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 215.12583460000002
+      },
+      "evidence": {
+        "byte_count": 622,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_1900.json",
+        "sha256": "54421492aba631a713a999978949ebba5223ad2a7bbdcca366f9ef4c654c01f2"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 2.2436557000003603,
+          "SGP4_native": 0.6750060999999761,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 154.57925179999978
+        },
+        "completed_validation_count": 2000,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 3933,
+          "SGP4_native": 3933,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 1967,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 226.8130066
+      },
+      "evidence": {
+        "byte_count": 615,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_2000.json",
+        "sha256": "57055d3b86b8259bd3c9df8c78f054a3728ce44b49723f98f136bdb35e45d2b6"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 2.3605979000008546,
+          "SGP4_native": 0.7098148999996994,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 163.2018146999996
+        },
+        "completed_validation_count": 2100,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 4133,
+          "SGP4_native": 4133,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 2067,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 240.8684857
+      },
+      "evidence": {
+        "byte_count": 614,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_2100.json",
+        "sha256": "7c3754410d9fc8f6f24c70ad35bf7a835f96d0611c5faafcea77c9a760ada171"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 2.4746193000008674,
+          "SGP4_native": 0.7439834999992314,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 171.35169419999994
+        },
+        "completed_validation_count": 2200,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 4333,
+          "SGP4_native": 4333,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 2167,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 254.2024085
+      },
+      "evidence": {
+        "byte_count": 615,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_2200.json",
+        "sha256": "a175d86bc6abd5861b274e6e6617734bbbb1416c2f2a3312dbbf2ae53dfd62c3"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 2.5756959000004684,
+          "SGP4_native": 0.775780099999352,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 178.50497450000017
+        },
+        "completed_validation_count": 2300,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 4533,
+          "SGP4_native": 4533,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 2267,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 265.93003730000004
+      },
+      "evidence": {
+        "byte_count": 621,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_2300.json",
+        "sha256": "8c614faf911d0ed64b348761c1db79822c179fb10369731e9752ac824cf9a027"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 2.670840600000062,
+          "SGP4_native": 0.8068160999998355,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 185.36623730000042
+        },
+        "completed_validation_count": 2400,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 4733,
+          "SGP4_native": 4733,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 2367,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 277.2604283
+      },
+      "evidence": {
+        "byte_count": 614,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_2400.json",
+        "sha256": "0d34e638ffb89a421927b2016cbbe6de3e2910b63254d5069655720daef21369"
+      }
+    },
+    {
+      "data": {
+        "complete_legal_counts": null,
+        "completed_stage_exclusive_s": {
+          "LOS_FOR": 2.7652715999995365,
+          "SGP4_native": 0.8373567000003419,
+          "binding_and_root_physical": 0.11248069999999188,
+          "catalog_window_lookup": 0.003041199999998412,
+          "physical_window_bilateral": 192.1205672000005
+        },
+        "completed_validation_count": 2500,
+        "coverage": "PREFIX_ONLY",
+        "stage_calls": {
+          "LOS_FOR": 4933,
+          "SGP4_native": 4933,
+          "binding_and_root_physical": 1,
+          "catalog_window_lookup": 1,
+          "physical_window_bilateral": 2467,
+          "proposal_and_validation_union": 1
+        },
+        "wall_s": 288.544831
+      },
+      "evidence": {
+        "byte_count": 613,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_PROGRESS_2500.json",
+        "sha256": "7c84b64b01a461f2fbcada92cb29c2ede707166addf00f5057a1b19dd492e02b"
+      }
+    }
+  ],
+  "catalog_validation_calls": 0,
+  "initial_t3_FIFO_graph_type_counts": {
+    "runtime.n1b_fifo.DeliveredAgeLedger": 1,
+    "runtime.n1b_fifo.LocalFIFO": 318,
+    "runtime.n1b_fifo.Stream": 20
+  },
+  "observation_limits": "No BBM call counters or peak stream counts were sealed; resident final count is not lifetime allocation count; aggregate observation count is not microstep count; no full legal universe inferred",
+  "parent_sha256": "8cb85f868c5177663b89222d9da7db66b48e10bec6a38a35b2f83701925ffea6",
+  "precision": "Recorded Python float timings; sums use math.fsum only for offline descriptive analysis, not simulator state",
+  "profiler_scope": "PERSIST HOLD only, FIFO category combines Cohort.consume, DeliveredAgeLedger.consume and metrics; not BBM profiler",
+  "schema": "dynamic_k_0017_static_cost_evidence_v1",
+  "simulation_runs": 0,
+  "status": "STATIC_EVIDENCE_ACCOUNTING_ONLY"
+}

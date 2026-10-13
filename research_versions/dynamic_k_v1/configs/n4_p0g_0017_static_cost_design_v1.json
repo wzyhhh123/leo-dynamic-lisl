@@ -1,0 +1,66 @@
+{
+  "MPC_weights_modified": false,
+  "catalog_validation_calls": 0,
+  "formal_control_parameters": {
+    "decision_cadence_s": null,
+    "maximum_concurrent_actions": null,
+    "search_budget": null
+  },
+  "formal_experiments_authorized": false,
+  "full_N4_P0_engineering_pass": false,
+  "full_pilot_execution_authorized": false,
+  "historical_PILOT_ONLY_background": {
+    "H_s": 6.0,
+    "T_A_s": 20.0,
+    "T_s": 30.0,
+    "acquisition_s": 0.5,
+    "all_branch_seconds_upper_bound": 14364.0,
+    "all_branch_upper_bound": 2520,
+    "decision_cadence_s": 3.0,
+    "decision_epochs_s": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27
+    ],
+    "lambda_E_bit_s_per_J": 1000.0,
+    "lambda_N_s": 6.0,
+    "main_branch_seconds_upper_bound": 4788.0,
+    "main_pilot_branch_upper_bound": 840,
+    "maximum_atomic_actions_per_epoch": 1,
+    "maximum_scored_branches": 7,
+    "retarget_a_s": 0.5,
+    "retarget_b_s": 0.5,
+    "sensitivity_extra_branch_upper_bound": 1680
+  },
+  "optimization_implemented": false,
+  "prospective_scheme_2_budgets": {
+    "ADD": null,
+    "DROP": null,
+    "REPLACE": null,
+    "lookup": null,
+    "refill": null
+  },
+  "retained_prior_status": "STOP_CATALOG_300S_HARD_LIMIT",
+  "schema": "dynamic_k_n4_p0g_0017_static_cost_design_v1",
+  "scientific_parameters": {
+    "D_ref_s": null,
+    "E_ref_J": null,
+    "R_min": null,
+    "T_A_s": null,
+    "T_s": null,
+    "alpha": null,
+    "tau_res_s": null
+  },
+  "scoring_runs": 0,
+  "selected_implementation_scheme": null,
+  "simulation_runs": 0,
+  "stage": "N4_P0G_COST_ATTRIBUTION_DESIGN_ONLY",
+  "status": "PASS_STATIC_COST_AUDIT_DESIGN_ONLY"
+}

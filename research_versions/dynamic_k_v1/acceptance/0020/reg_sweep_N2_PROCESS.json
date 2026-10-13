@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETED",
+  "pid": 7576,
+  "exit_code": 0,
+  "wall_s": 31.719000000040978,
+  "hard_limit_s": 60,
+  "child_launches": 1,
+  "process_scope": "INCLUDES_IMPORT_SETUP_VALIDATION_AND_OUTPUT",
+  "kill_at_deadline": true
+}

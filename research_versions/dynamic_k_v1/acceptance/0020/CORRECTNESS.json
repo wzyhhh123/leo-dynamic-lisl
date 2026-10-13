@@ -1,0 +1,645 @@
+{
+  "all_audits_exact": true,
+  "business_state_and_p0_state_hashes_exact": true,
+  "case_count": 29,
+  "cases": [
+    {
+      "case": "empty",
+      "clips": 0,
+      "exact_Fraction_values": true,
+      "exact_parts_order": true,
+      "input_unmodified": true,
+      "intervals": 1
+    },
+    {
+      "case": "empty_reversed",
+      "clips": 0,
+      "exact_Fraction_values": true,
+      "exact_parts_order": true,
+      "input_unmodified": true,
+      "intervals": 1
+    },
+    {
+      "all_fields_equal": true,
+      "case": "empty",
+      "clone_independent": true,
+      "state_sha256": "b697fcccf9e2ff2a13180308caa5bba4d5c499732dafe44544b544078555001f"
+    },
+    {
+      "case": "disjoint",
+      "clips": 8,
+      "exact_Fraction_values": true,
+      "exact_parts_order": true,
+      "input_unmodified": true,
+      "intervals": 8
+    },
+    {
+      "case": "disjoint_reversed",
+      "clips": 8,
+      "exact_Fraction_values": true,
+      "exact_parts_order": true,
+      "input_unmodified": true,
+      "intervals": 8
+    },
+    {
+      "all_fields_equal": true,
+      "case": "disjoint",
+      "clone_independent": true,
+      "state_sha256": "d0040e0b17dedf86b894ca05c9a706a4497d78d4240047d93807dd95ed911694"
+    },
+    {
+      "case": "identical",
+      "clips": 8,
+      "exact_Fraction_values": true,
+      "exact_parts_order": true,
+      "input_unmodified": true,
+      "intervals": 1
+    },
+    {
+      "case": "identical_reversed",
+      "clips": 8,
+      "exact_Fraction_values": true,
+      "exact_parts_order": true,
+      "input_unmodified": true,
+      "intervals": 1
+    },
+    {
+      "all_fields_equal": true,
+      "case": "identical",
+      "clone_independent": true,
+      "state_sha256": "df361dbcd61b8bb85f0466cc1f60286c52a4a123c6fa97d4040ca5329650a806"
+    },
+    {
+      "case": "nested",
+      "clips": 64,
+      "exact_Fraction_values": true,
+      "exact_parts_order": true,
+      "input_unmodified": true,
+      "intervals": 15
+    },
+    {
+      "case": "nested_reversed",
+      "clips": 64,
+      "exact_Fraction_values": true,
+      "exact_parts_order": true,
+      "input_unmodified": true,
+      "intervals": 15
+    },
+    {
+      "all_fields_equal": true,
+      "case": "nested",
+      "clone_independent": true,
+      "state_sha256": "904f40350cbd2cc0d98eaa29c0c3b4b74d2c69a3f91ee774556c57bf921319b6"
+    },
+    {
+      "case": "same_endpoint",
+      "clips": 5,
+      "exact_Fraction_values": true,
+      "exact_parts_order": true,
+      "input_unmodified": true,
+      "intervals": 2
+    },
+    {
+      "case": "same_endpoint_reversed",
+      "clips": 5,
+      "exact_Fraction_values": true,
+      "exact_parts_order": true,
+      "input_unmodified": true,
+      "intervals": 2
+    },
+    {
+      "all_fields_equal": true,
+      "case": "same_endpoint",
+      "clone_independent": true,
+      "state_sha256": "5384686f776ee0530f853ae587ddc74d12499271c24778825c2bf0aee2f75623"
+    },
+    {
+      "case": "tiny",
+      "clips": 6,
+      "exact_Fraction_values": true,
+      "exact_parts_order": true,
+      "input_unmodified": true,
+      "intervals": 4
+    },
+    {
+      "case": "tiny_reversed",
+      "clips": 6,
+      "exact_Fraction_values": true,
+      "exact_parts_order": true,
+      "input_unmodified": true,
+      "intervals": 4
+    },
+    {
+      "all_fields_equal": true,
+      "case": "tiny",
+      "clone_independent": true,
+      "state_sha256": "b453c0411adcf802c70bb9a63eb376f498462a8dbc850e02ab9af10517fb0fd4"
+    },
+    {
+      "case": "partial_overlap",
+      "clips": 9,
+      "exact_Fraction_values": true,
+      "exact_parts_order": true,
+      "input_unmodified": true,
+      "intervals": 5
+    },
+    {
+      "case": "partial_overlap_reversed",
+      "clips": 9,
+      "exact_Fraction_values": true,
+      "exact_parts_order": true,
+      "input_unmodified": true,
+      "intervals": 5
+    },
+    {
+      "all_fields_equal": true,
+      "case": "partial_overlap",
+      "clone_independent": true,
+      "state_sha256": "8bdfd49a0cb3faac33804fb415d2fd87c91601f5ad9774750324eaf4e725ee39"
+    },
+    {
+      "case": "zero_length",
+      "clips": 2,
+      "exact_Fraction_values": true,
+      "exact_parts_order": true,
+      "input_unmodified": true,
+      "intervals": 2
+    },
+    {
+      "case": "zero_length_reversed",
+      "clips": 2,
+      "exact_Fraction_values": true,
+      "exact_parts_order": true,
+      "input_unmodified": true,
+      "intervals": 2
+    },
+    {
+      "all_fields_equal": true,
+      "case": "zero_length",
+      "clone_independent": true,
+      "state_sha256": "9dba18a2b1eac9259b846fa8ef91a33a7c7632309f9ee71dfe024a980fee83af"
+    },
+    {
+      "all_fields_equal": true,
+      "case": "closure_DELIVERED",
+      "sha256": "36b519a3cc0415a77deac2cde027d8b9913c32b524f18415b0147ec39881edb1"
+    },
+    {
+      "all_fields_equal": true,
+      "case": "closure_QUEUED",
+      "sha256": "5f4f8b6650b95ebd9e3c56c51e4ea72d1207aeb336804c671f7884251355755a"
+    },
+    {
+      "case": "D2_multi_commodity_multihop_partial",
+      "checkpoints": [
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 5e-324,
+            "delivered_bit_age_integral_bit_s": 0.0,
+            "delivered_bits": 0.0,
+            "exact_rational": {
+              "M_D_bit_s": "0",
+              "delivered_bits": "0",
+              "remaining_bit_age_integral_bit_s": "9/32"
+            },
+            "mean_delivered_fluid_delay_s": null,
+            "metric_status": "EXACT_RATIONAL_ENCODED_TRACE_WITH_FLOAT_OUTPUT_ROUNDING",
+            "remaining_bit_age_integral_bit_s": 0.28125,
+            "roundoff_audit": [],
+            "roundoff_mass_envelope_bits": 0.0,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "fe6d192b278cf22349a8271bfb53759da89b66c842254a5589168aac7ec32ac6",
+          "t": 0.25
+        },
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 1.387778780781446e-17,
+            "delivered_bit_age_integral_bit_s": 0.1875,
+            "delivered_bits": 0.75,
+            "exact_rational": {
+              "M_D_bit_s": "3/16",
+              "delivered_bits": "3/4",
+              "remaining_bit_age_integral_bit_s": "27/32"
+            },
+            "mean_delivered_fluid_delay_s": 0.25,
+            "metric_status": "EXACT_RATIONAL_ENCODED_TRACE_WITH_FLOAT_OUTPUT_ROUNDING",
+            "remaining_bit_age_integral_bit_s": 0.84375,
+            "roundoff_audit": [],
+            "roundoff_mass_envelope_bits": 0.0,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "81ab5ce83b8d30f86955847bdc102a6a386b5d795dc9a4b913bb20117c7e0d07",
+          "t": 0.5
+        },
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 1.1102230246251568e-16,
+            "delivered_bit_age_integral_bit_s": 1.5,
+            "delivered_bits": 3.75,
+            "exact_rational": {
+              "M_D_bit_s": "3/2",
+              "delivered_bits": "15/4",
+              "remaining_bit_age_integral_bit_s": "57/32"
+            },
+            "mean_delivered_fluid_delay_s": 0.4,
+            "metric_status": "EXACT_RATIONAL_ENCODED_TRACE_WITH_FLOAT_OUTPUT_ROUNDING",
+            "remaining_bit_age_integral_bit_s": 1.78125,
+            "roundoff_audit": [],
+            "roundoff_mass_envelope_bits": 0.0,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "54935846832a10a37367eeb1de3d8be36f795ee437ef8998623d4fc11a91d481",
+          "t": 1.0
+        },
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 2.2204460492503136e-16,
+            "delivered_bit_age_integral_bit_s": 2.296875,
+            "delivered_bits": 5.25,
+            "exact_rational": {
+              "M_D_bit_s": "147/64",
+              "delivered_bits": "21/4",
+              "remaining_bit_age_integral_bit_s": "141/64"
+            },
+            "mean_delivered_fluid_delay_s": 0.4375,
+            "metric_status": "EXACT_RATIONAL_ENCODED_TRACE_WITH_FLOAT_OUTPUT_ROUNDING",
+            "remaining_bit_age_integral_bit_s": 2.203125,
+            "roundoff_audit": [],
+            "roundoff_mass_envelope_bits": 0.0,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "06d8754360d35f3caf541dc3f4368ee4488641a0519b638d7048d8e0cb1c2871",
+          "t": 1.25
+        },
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 4.440892098500627e-16,
+            "delivered_bit_age_integral_bit_s": 5.25,
+            "delivered_bits": 9.75,
+            "exact_rational": {
+              "M_D_bit_s": "21/4",
+              "delivered_bits": "39/4",
+              "remaining_bit_age_integral_bit_s": "57/32"
+            },
+            "mean_delivered_fluid_delay_s": 0.5384615384615384,
+            "metric_status": "EXACT_RATIONAL_ENCODED_TRACE_WITH_FLOAT_OUTPUT_ROUNDING",
+            "remaining_bit_age_integral_bit_s": 1.78125,
+            "roundoff_audit": [],
+            "roundoff_mass_envelope_bits": 0.0,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "6022349e7bb9fb03cec9d15159aba3be78158051bcf85fd9ee6b8de7773e87fa",
+          "t": 2.0
+        },
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 4.440892098500627e-16,
+            "delivered_bit_age_integral_bit_s": 6.421875,
+            "delivered_bits": 11.25,
+            "exact_rational": {
+              "M_D_bit_s": "411/64",
+              "delivered_bits": "45/4",
+              "remaining_bit_age_integral_bit_s": "71/64"
+            },
+            "mean_delivered_fluid_delay_s": 0.5708333333333333,
+            "metric_status": "EXACT_RATIONAL_ENCODED_TRACE_WITH_FLOAT_OUTPUT_ROUNDING",
+            "remaining_bit_age_integral_bit_s": 1.109375,
+            "roundoff_audit": [],
+            "roundoff_mass_envelope_bits": 0.0,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "145a3b0b3506a6f129ec24952b6d9cc3894dfbb8d515a2d697b32b6b2c2562d2",
+          "t": 2.25
+        },
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 8.881784197001254e-16,
+            "delivered_bit_age_integral_bit_s": 8.453125,
+            "delivered_bits": 14.0,
+            "exact_rational": {
+              "M_D_bit_s": "541/64",
+              "delivered_bits": "14",
+              "remaining_bit_age_integral_bit_s": "1/2"
+            },
+            "mean_delivered_fluid_delay_s": 0.6037946428571429,
+            "metric_status": "EXACT_RATIONAL_ENCODED_TRACE_WITH_FLOAT_OUTPUT_ROUNDING",
+            "remaining_bit_age_integral_bit_s": 0.5,
+            "roundoff_audit": [],
+            "roundoff_mass_envelope_bits": 0.0,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "f4628ab668a07041a05edb4c0aebdf5204cb48bd7152954e81087ddd10ae78c6",
+          "t": 3.0
+        },
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 8.881784197001254e-16,
+            "delivered_bit_age_integral_bit_s": 9.453125,
+            "delivered_bits": 16.0,
+            "exact_rational": {
+              "M_D_bit_s": "605/64",
+              "delivered_bits": "16",
+              "remaining_bit_age_integral_bit_s": "0"
+            },
+            "mean_delivered_fluid_delay_s": 0.5908203125,
+            "metric_status": "EXACT_RATIONAL_ENCODED_TRACE_WITH_FLOAT_OUTPUT_ROUNDING",
+            "remaining_bit_age_integral_bit_s": 0.0,
+            "roundoff_audit": [],
+            "roundoff_mass_envelope_bits": 0.0,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "376e0b658d321bdf71d228187ed5052302d88d85959858da8d37081c5f74faef",
+          "t": 4.0
+        },
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 8.881784197001254e-16,
+            "delivered_bit_age_integral_bit_s": 9.453125,
+            "delivered_bits": 16.0,
+            "exact_rational": {
+              "M_D_bit_s": "605/64",
+              "delivered_bits": "16",
+              "remaining_bit_age_integral_bit_s": "0"
+            },
+            "mean_delivered_fluid_delay_s": 0.5908203125,
+            "metric_status": "EXACT_RATIONAL_ENCODED_TRACE_WITH_FLOAT_OUTPUT_ROUNDING",
+            "remaining_bit_age_integral_bit_s": 0.0,
+            "roundoff_audit": [],
+            "roundoff_mass_envelope_bits": 0.0,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "d69dad94aa5fda2110f96c40711eb13b4ea9bb1c953eab23e9915fe53e328bba",
+          "t": 5.0
+        }
+      ],
+      "clone_replay_exact": true
+    },
+    {
+      "case": "D2_partition_recovery",
+      "checkpoints": [
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 5e-324,
+            "delivered_bit_age_integral_bit_s": 0.0,
+            "delivered_bits": 0.0,
+            "exact_rational": {
+              "M_D_bit_s": "0",
+              "delivered_bits": "0",
+              "remaining_bit_age_integral_bit_s": "9/32"
+            },
+            "mean_delivered_fluid_delay_s": null,
+            "metric_status": "EXACT_RATIONAL_ENCODED_TRACE_WITH_FLOAT_OUTPUT_ROUNDING",
+            "remaining_bit_age_integral_bit_s": 0.28125,
+            "roundoff_audit": [],
+            "roundoff_mass_envelope_bits": 0.0,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "1b430d27890ed8e247b2e4f397b63b8b8d039c8a0a3c27ac03e1ca98d39bbfb5",
+          "t": 0.25
+        },
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 1.387778780781446e-17,
+            "delivered_bit_age_integral_bit_s": 0.1875,
+            "delivered_bits": 0.75,
+            "exact_rational": {
+              "M_D_bit_s": "3/16",
+              "delivered_bits": "3/4",
+              "remaining_bit_age_integral_bit_s": "27/32"
+            },
+            "mean_delivered_fluid_delay_s": 0.25,
+            "metric_status": "EXACT_RATIONAL_ENCODED_TRACE_WITH_FLOAT_OUTPUT_ROUNDING",
+            "remaining_bit_age_integral_bit_s": 0.84375,
+            "roundoff_audit": [],
+            "roundoff_mass_envelope_bits": 0.0,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "dbcccf49280ec6d63ee6c92c88cf3dcf5fd8492c0cedf3160af9c57cafa2bbe2",
+          "t": 0.5
+        },
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 1.1102230246251568e-16,
+            "delivered_bit_age_integral_bit_s": 1.5,
+            "delivered_bits": 3.75,
+            "exact_rational": {
+              "M_D_bit_s": "3/2",
+              "delivered_bits": "15/4",
+              "remaining_bit_age_integral_bit_s": "57/32"
+            },
+            "mean_delivered_fluid_delay_s": 0.4,
+            "metric_status": "EXACT_RATIONAL_ENCODED_TRACE_WITH_FLOAT_OUTPUT_ROUNDING",
+            "remaining_bit_age_integral_bit_s": 1.78125,
+            "roundoff_audit": [],
+            "roundoff_mass_envelope_bits": 0.0,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "4d7b7be903aa079176eebe0d1c0835f2cda0df9e9b8e1741f6d99f1883db15fa",
+          "t": 1.0
+        },
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 2.2204460492503136e-16,
+            "delivered_bit_age_integral_bit_s": 2.296875,
+            "delivered_bits": 5.25,
+            "exact_rational": {
+              "M_D_bit_s": "147/64",
+              "delivered_bits": "21/4",
+              "remaining_bit_age_integral_bit_s": "141/64"
+            },
+            "mean_delivered_fluid_delay_s": 0.4375,
+            "metric_status": "EXACT_RATIONAL_ENCODED_TRACE_WITH_FLOAT_OUTPUT_ROUNDING",
+            "remaining_bit_age_integral_bit_s": 2.203125,
+            "roundoff_audit": [],
+            "roundoff_mass_envelope_bits": 0.0,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "65996f10cac62b7285607c91f9523fc60f8c2b044ce4a7af5ace153d7827db52",
+          "t": 1.25
+        },
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 2.2204460492503135e-15,
+            "delivered_bit_age_integral_bit_s": 4.186874999999999,
+            "delivered_bits": 7.049999999999999,
+            "exact_rational": {
+              "M_D_bit_s": "21229978427322267645664389066915/5070602400912917605986812821504",
+              "delivered_bits": "3968797171620249/562949953421312",
+              "remaining_bit_age_integral_bit_s": "21610273607390746599212561612145/5070602400912917605986812821504"
+            },
+            "mean_delivered_fluid_delay_s": 0.5938829787234042,
+            "metric_status": "IEEE_RECONCILIATION_BOUNDED_NOT_ANALYTIC_EXACT",
+            "remaining_bit_age_integral_bit_s": 4.261875000000001,
+            "roundoff_audit": [
+              {
+                "boundary": "INTERVAL_END",
+                "cohort_bits": "9119789245425255/2251799813685248",
+                "difference_bits": "1/2251799813685248",
+                "key": "g",
+                "legacy_bits": "1139973655678157/281474976710656",
+                "state": "A",
+                "time": "3039929748475085/2251799813685248"
+              }
+            ],
+            "roundoff_mass_envelope_bits": 4.440892098500626e-16,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "0128d5c02878cc59a5cb01ef90dc2d5be3398f394eb52ea1a291b01808fb6c2f",
+          "t": 2.0
+        },
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 2.4424906541753448e-15,
+            "delivered_bit_age_integral_bit_s": 5.864999999999999,
+            "delivered_bits": 8.549999999999999,
+            "exact_rational": {
+              "M_D_bit_s": "29739083081354258516520925491363/5070602400912917605986812821504",
+              "delivered_bits": "4813222101752217/562949953421312",
+              "remaining_bit_age_integral_bit_s": "19059126774431435266470418464113/5070602400912917605986812821504"
+            },
+            "mean_delivered_fluid_delay_s": 0.6859649122807018,
+            "metric_status": "IEEE_RECONCILIATION_BOUNDED_NOT_ANALYTIC_EXACT",
+            "remaining_bit_age_integral_bit_s": 3.7587500000000014,
+            "roundoff_audit": [
+              {
+                "boundary": "INTERVAL_END",
+                "cohort_bits": "9119789245425255/2251799813685248",
+                "difference_bits": "1/2251799813685248",
+                "key": "g",
+                "legacy_bits": "1139973655678157/281474976710656",
+                "state": "A",
+                "time": "3039929748475085/2251799813685248"
+              }
+            ],
+            "roundoff_mass_envelope_bits": 4.440892098500626e-16,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "d86116bf7c35e516611b56fb63b21f9e3f2658cddf4ceeab86b17718afc628e4",
+          "t": 2.25
+        },
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 3.552713678800502e-15,
+            "delivered_bit_age_integral_bit_s": 11.310937500000001,
+            "delivered_bits": 13.049999999999999,
+            "exact_rational": {
+              "M_D_bit_s": "28676633422037978511948107061657/2535301200456458802993406410752",
+              "delivered_bits": "7346496892148121/562949953421312",
+              "remaining_bit_age_integral_bit_s": "2757932337121543584474100022641/2535301200456458802993406410752"
+            },
+            "mean_delivered_fluid_delay_s": 0.8667385057471265,
+            "metric_status": "IEEE_RECONCILIATION_BOUNDED_NOT_ANALYTIC_EXACT",
+            "remaining_bit_age_integral_bit_s": 1.0878125000000007,
+            "roundoff_audit": [
+              {
+                "boundary": "INTERVAL_END",
+                "cohort_bits": "9119789245425255/2251799813685248",
+                "difference_bits": "1/2251799813685248",
+                "key": "g",
+                "legacy_bits": "1139973655678157/281474976710656",
+                "state": "A",
+                "time": "3039929748475085/2251799813685248"
+              }
+            ],
+            "roundoff_mass_envelope_bits": 4.440892098500626e-16,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "48eafe5406fe6daf4e14bdffbe603faaf23f8aee4c33e016a02528f669eaaa2e",
+          "t": 3.0
+        },
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 4.440892098500627e-15,
+            "delivered_bit_age_integral_bit_s": 13.124375000000002,
+            "delivered_bits": 16.0,
+            "exact_rational": {
+              "M_D_bit_s": "8318560923185185324717547852923/633825300114114700748351602688",
+              "delivered_bits": "16",
+              "remaining_bit_age_integral_bit_s": "0"
+            },
+            "mean_delivered_fluid_delay_s": 0.8202734375000001,
+            "metric_status": "IEEE_RECONCILIATION_BOUNDED_NOT_ANALYTIC_EXACT",
+            "remaining_bit_age_integral_bit_s": 0.0,
+            "roundoff_audit": [
+              {
+                "boundary": "INTERVAL_END",
+                "cohort_bits": "9119789245425255/2251799813685248",
+                "difference_bits": "1/2251799813685248",
+                "key": "g",
+                "legacy_bits": "1139973655678157/281474976710656",
+                "state": "A",
+                "time": "3039929748475085/2251799813685248"
+              }
+            ],
+            "roundoff_mass_envelope_bits": 4.440892098500626e-16,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "6252586152a53f00a685375e99ad9f38b3220e44aab737a2024ef49a4c691fbc",
+          "t": 4.0
+        },
+        {
+          "metrics": {
+            "closure_audit": [],
+            "delivered_age_absolute_error_bound_bit_s": 5.329070518200752e-15,
+            "delivered_bit_age_integral_bit_s": 13.124375000000002,
+            "delivered_bits": 16.0,
+            "exact_rational": {
+              "M_D_bit_s": "8318560923185185324717547852923/633825300114114700748351602688",
+              "delivered_bits": "16",
+              "remaining_bit_age_integral_bit_s": "0"
+            },
+            "mean_delivered_fluid_delay_s": 0.8202734375000001,
+            "metric_status": "IEEE_RECONCILIATION_BOUNDED_NOT_ANALYTIC_EXACT",
+            "remaining_bit_age_integral_bit_s": 0.0,
+            "roundoff_audit": [
+              {
+                "boundary": "INTERVAL_END",
+                "cohort_bits": "9119789245425255/2251799813685248",
+                "difference_bits": "1/2251799813685248",
+                "key": "g",
+                "legacy_bits": "1139973655678157/281474976710656",
+                "state": "A",
+                "time": "3039929748475085/2251799813685248"
+              }
+            ],
+            "roundoff_mass_envelope_bits": 4.440892098500626e-16,
+            "temporal_correction_age_bound_bit_s": 0.0
+          },
+          "state_sha256": "f79cecb9d501a02ecbed53553ad8304f6c64d2dce863336767386fd069b7e839",
+          "t": 5.0
+        }
+      ],
+      "clone_replay_exact": true
+    },
+    {
+      "case": "deliberate_1bit_loss",
+      "rejected": true,
+      "threshold_bits": 1e-06
+    }
+  ],
+  "class_identifier_boundary": "NEW_SEAM_TYPE_CODE_PROVENANCE_DIFFERS; existing numeric/causal/vars state hashes unchanged",
+  "full_native_graph_class_identifier_equal": false,
+  "parts_exact": true,
+  "semantics": "ONLY_INCOMING_COVERAGE_LOOKUP_DIFF",
+  "source_bindings": null,
+  "status": "PASS_EXACT_FIELDS_AND_ORDER",
+  "tolerances_modified": false
+}

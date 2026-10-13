@@ -1,0 +1,118 @@
+{
+  "files": [
+    {
+      "byte_count": 6139,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/assemble_static.py",
+      "sha256": "d90397d24b177affd6344392e34fffc62364d605ee009f11c8124647ab994227"
+    },
+    {
+      "byte_count": 11818,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/AUDIT_INPUT_MANIFEST.json",
+      "sha256": "834091a08f43de4b0aece08df8c94c4cf7f02561d4c04fecb825f1867e5cdc4d"
+    },
+    {
+      "byte_count": 0,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/child_stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "byte_count": 18870,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/child_stdout.log",
+      "sha256": "de7bbd2d12639c1ac76438ede7ab8be72112a7229be98c209da212a3c5904450"
+    },
+    {
+      "byte_count": 36886,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/COST_EVIDENCE.json",
+      "sha256": "8cbdd4ed835edf4e09391429d9d4d3a37593556b33fe538fa8c9e19007e2ec8a"
+    },
+    {
+      "byte_count": 8560,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/diagnostic_child.py",
+      "sha256": "464c829101c3513cda6c61ab7e095eb896642940a68bf7e6ee36d6ea12e6d40b"
+    },
+    {
+      "byte_count": 18870,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/DIAGNOSTIC_PROGRESS.jsonl",
+      "sha256": "de7bbd2d12639c1ac76438ede7ab8be72112a7229be98c209da212a3c5904450"
+    },
+    {
+      "byte_count": 643,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/DIAGNOSTIC_VALIDATION.json",
+      "sha256": "247d73cf15eac174866325361a4cb3620a97e797386508a094c547b334b5d936"
+    },
+    {
+      "byte_count": 3658,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/EXACT_OPTIMIZATION_DECISION_CN.md",
+      "sha256": "d1e80843f72319b6359d218bf5e7d8992d50528a18a4600577d2cee350b02a49"
+    },
+    {
+      "byte_count": 6671,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/FIFO_COST_ATTRIBUTION_CN.md",
+      "sha256": "ebd01fca39d456d93e90b7a93d40dad569e7ee7582377cfeb988be8c3329c126"
+    },
+    {
+      "byte_count": 541,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/pre_implementation_verification.json",
+      "sha256": "eabb8cc4ef109e86f43e570b39b8bfe583575d0ac10cf732b0c5dc48dc7c4535"
+    },
+    {
+      "byte_count": 2640,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/RESULT_CN.md",
+      "sha256": "46e99755f4834240b806d629c53812ba5be97cc5335b965750ded438232f3cc0"
+    },
+    {
+      "byte_count": 1866,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/run_bounded_once.py",
+      "sha256": "41f137f9a5da4ec76c910cc45f5044481110ba1f41abde4caf9f2d0f4a2d0fda"
+    },
+    {
+      "byte_count": 6378,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/seal_diagnostic.py",
+      "sha256": "b6002f35e70180c97b223e9276c57894f8089a418d420f65b3ce8d3bf517aadc"
+    },
+    {
+      "byte_count": 16244,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/SOURCE_CALL_SITES.json",
+      "sha256": "fc3539f641cf132bfca549d56e30ee9262d2cc8a711f2a256521fe74136fafc1"
+    },
+    {
+      "byte_count": 330,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/WATCHDOG_RESULT.json",
+      "sha256": "b880c3e47d110b65cff4d547746f5dff576b0c998ef0fd0df929c472d08f298d"
+    },
+    {
+      "byte_count": 273,
+      "path": "research_versions/dynamic_k_v1/acceptance/0019/WATCHDOG_STARTED.json",
+      "sha256": "a7bebcc8bd3893199bc3a621acd4a4ca8a893279b77796b7030c8e87ae3f4150"
+    },
+    {
+      "byte_count": 1381,
+      "path": "research_versions/dynamic_k_v1/configs/n4_p0i_fifo_diagnostic_v1.json",
+      "sha256": "8727c7e38304e7918b5e3d0270a5bbb4023278118c2c3a5f80f81615445fda87"
+    },
+    {
+      "byte_count": 1565,
+      "path": "research_versions/dynamic_k_v1/contracts/N4_P0I_0019_FIFO_DIAGNOSTIC_SCOPE_CN.md",
+      "sha256": "558bf2fbd90eda3845e135ab3618380e88418867cb4fb8c747a11bb3efea3644"
+    }
+  ],
+  "full_N4_P0_engineering_pass": false,
+  "optimization_implemented": false,
+  "parent_revision": {
+    "byte_count": 23329,
+    "path": "research_versions/dynamic_k_v1/revisions/0018/record.json",
+    "sha256": "c5c293b54f0eaf7b74c45effce6a8eafe6d39a4246f4c4b3e79b60b98f2eba4f"
+  },
+  "physical_root_runs": 0,
+  "prediction_branch_runs": 0,
+  "revision_id": "0019",
+  "runtime_changed": false,
+  "schema": "dynamic_k_0019_fifo_diagnosis_manifest_v1",
+  "short_diagnostic_process_runs": 1,
+  "status": "DIAGNOSTIC_COMPLETE_ONLY",
+  "version_origin": {
+    "byte_count": 1555,
+    "path": "research_versions/dynamic_k_v1/version_record.json",
+    "sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+  }
+}

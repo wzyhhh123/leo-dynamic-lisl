@@ -1,0 +1,24 @@
+{
+  "shared": "native tuple/scalar value tree only",
+  "not_shared": [
+    "view objects across previews",
+    "log lists",
+    "Terminal objects",
+    "Link objects and tx_end",
+    "Reservation objects",
+    "event agenda list"
+  ],
+  "events_payloads": "frozen Gate B audited immutable tuples/value objects, retained by existing structural clone",
+  "source_history_checks": "fresh original log canonical bytes before and after preview",
+  "source_validation": "fresh raw SHA through existing 0011 HandleReaderLease, no positive result cache",
+  "final_N2_submission": "unchanged dynamic validation, trial/live equality and release-set check",
+  "history_lifecycle": "one explicit root; source history change rejects and requires explicit rebind",
+  "ordinary_python_integrity_not_hostile_process_sandbox": true,
+  "variants_retained": [
+    "attempt01 frozen dict/list slower",
+    "attempt02 duplicate-check removal and source handle reads still slower",
+    "tuple_final shared native immutable data plus independent views"
+  ],
+  "scientific_state_changes": false,
+  "global_monkeypatch": false
+}

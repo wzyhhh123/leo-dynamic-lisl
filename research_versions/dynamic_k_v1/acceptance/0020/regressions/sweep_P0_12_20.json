@@ -1,0 +1,28 @@
+{
+  "errors": [],
+  "explicit_test_module_bindings": true,
+  "failures": [],
+  "full_catalog": "REVALIDATE_SEALED_0007_MAPPING_ONLY",
+  "full_suite_count": 20,
+  "global_monkeypatch": false,
+  "mode": "sweep",
+  "original_assertions_unchanged": true,
+  "output": "test_13_foreign_oracle_alias_rejected (fifo20_sweep_P0.P0Tests) ... ok\ntest_14_partial_delivery_conditional_age_identity (fifo20_sweep_P0.P0Tests) ... ok\ntest_15_small_domain_counts_and_physical_absence (fifo20_sweep_P0.P0Tests) ... ok\ntest_16_cost_parameter_and_zero_mean_validation (fifo20_sweep_P0.P0Tests) ... ok\ntest_17_same_action_ADD_DROP_REPLACE_independent_fields (fifo20_sweep_P0.P0Tests) ... ok\ntest_18_continuous_non_grid_events_and_multihop (fifo20_sweep_P0.P0Tests) ... ok\ntest_19_future_source_deepcopy_and_reads_poisoned (fifo20_sweep_P0.P0Tests) ... ok\ntest_20_manual_future_rate_injection_rejected (fifo20_sweep_P0.P0Tests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 18.876s\n\nOK\n",
+  "selected_test_ids": [
+    "fifo20_sweep_P0.P0Tests.test_13_foreign_oracle_alias_rejected",
+    "fifo20_sweep_P0.P0Tests.test_14_partial_delivery_conditional_age_identity",
+    "fifo20_sweep_P0.P0Tests.test_15_small_domain_counts_and_physical_absence",
+    "fifo20_sweep_P0.P0Tests.test_16_cost_parameter_and_zero_mean_validation",
+    "fifo20_sweep_P0.P0Tests.test_17_same_action_ADD_DROP_REPLACE_independent_fields",
+    "fifo20_sweep_P0.P0Tests.test_18_continuous_non_grid_events_and_multihop",
+    "fifo20_sweep_P0.P0Tests.test_19_future_source_deepcopy_and_reads_poisoned",
+    "fifo20_sweep_P0.P0Tests.test_20_manual_future_rate_injection_rejected"
+  ],
+  "selection": [
+    12,
+    20
+  ],
+  "source_expectations_unmodified": true,
+  "status": "PASS",
+  "tests_run": 8
+}

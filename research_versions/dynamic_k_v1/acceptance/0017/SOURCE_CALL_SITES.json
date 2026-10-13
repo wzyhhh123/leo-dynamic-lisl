@@ -1,0 +1,1296 @@
+{
+  "schema": "dynamic_k_0017_static_source_sites_v1",
+  "sources": [
+    {
+      "binding": {
+        "byte_count": 17162,
+        "path": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py",
+        "sha256": "9fb1d868d67227aff482df004fc9571c47bc21bbdab08a9659d31635b27c04bf"
+      },
+      "functions": [
+        {
+          "end_line": 19,
+          "line": 15,
+          "name": "rational"
+        },
+        {
+          "end_line": 27,
+          "line": 22,
+          "name": "canonical_components"
+        },
+        {
+          "end_line": 39,
+          "line": 37,
+          "name": "prefix_moment"
+        },
+        {
+          "end_line": 47,
+          "line": 41,
+          "name": "consume"
+        },
+        {
+          "end_line": 58,
+          "line": 57,
+          "name": "mass"
+        },
+        {
+          "end_line": 63,
+          "line": 60,
+          "name": "moment"
+        },
+        {
+          "end_line": 67,
+          "line": 65,
+          "name": "clip"
+        },
+        {
+          "end_line": 73,
+          "line": 71,
+          "name": "__init__"
+        },
+        {
+          "end_line": 76,
+          "line": 75,
+          "name": "total"
+        },
+        {
+          "end_line": 79,
+          "line": 78,
+          "name": "original_moment"
+        },
+        {
+          "end_line": 88,
+          "line": 81,
+          "name": "append_impulse"
+        },
+        {
+          "end_line": 128,
+          "line": 90,
+          "name": "advance_piece"
+        },
+        {
+          "end_line": 134,
+          "line": 132,
+          "name": "__init__"
+        },
+        {
+          "end_line": 158,
+          "line": 139,
+          "name": "__init__"
+        },
+        {
+          "end_line": 163,
+          "line": 160,
+          "name": "_budget"
+        },
+        {
+          "end_line": 170,
+          "line": 165,
+          "name": "_roundoff"
+        },
+        {
+          "end_line": 173,
+          "line": 172,
+          "name": "clone"
+        },
+        {
+          "end_line": 190,
+          "line": 175,
+          "name": "consume"
+        },
+        {
+          "end_line": 211,
+          "line": 192,
+          "name": "_order"
+        },
+        {
+          "end_line": 261,
+          "line": 213,
+          "name": "_interval"
+        },
+        {
+          "end_line": 269,
+          "line": 263,
+          "name": "_deliver"
+        },
+        {
+          "end_line": 299,
+          "line": 271,
+          "name": "_closure"
+        },
+        {
+          "end_line": 320,
+          "line": 301,
+          "name": "_check_state"
+        },
+        {
+          "end_line": 343,
+          "line": 322,
+          "name": "metrics"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 6130,
+        "path": "research_versions/dynamic_k_v1/runtime/n1b_evaluator.py",
+        "sha256": "1fd0e7d8eef20c6936b4f14c586e08f7cd72dfb92d7d71a92d287b3173acf487"
+      },
+      "functions": [
+        {
+          "end_line": 111,
+          "line": 82,
+          "name": "validate_n1b"
+        },
+        {
+          "end_line": 35,
+          "line": 14,
+          "name": "verify"
+        },
+        {
+          "end_line": 47,
+          "line": 39,
+          "name": "__init__"
+        },
+        {
+          "end_line": 68,
+          "line": 49,
+          "name": "advance_to"
+        },
+        {
+          "end_line": 70,
+          "line": 70,
+          "name": "run"
+        },
+        {
+          "end_line": 72,
+          "line": 72,
+          "name": "clone"
+        },
+        {
+          "end_line": 74,
+          "line": 74,
+          "name": "checkpoint"
+        },
+        {
+          "end_line": 79,
+          "line": 77,
+          "name": "restore"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 2244,
+        "path": "research_versions/dynamic_k_v1/runtime/n1b_observer.py",
+        "sha256": "7bccef3b17b90ef395b616bfb92ef9e18ebfe5829f0855c2dcab277d0dff0ec6"
+      },
+      "functions": [
+        {
+          "end_line": 9,
+          "line": 7,
+          "name": "__init__"
+        },
+        {
+          "end_line": 19,
+          "line": 11,
+          "name": "_schedule_service_segments"
+        },
+        {
+          "end_line": 28,
+          "line": 21,
+          "name": "_integrate"
+        },
+        {
+          "end_line": 34,
+          "line": 30,
+          "name": "_finalize_quiescent_propagation"
+        },
+        {
+          "end_line": 38,
+          "line": 36,
+          "name": "age_scalar_state"
+        },
+        {
+          "end_line": 43,
+          "line": 40,
+          "name": "business_state"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 5820,
+        "path": "research_versions/dynamic_k_v1/runtime/n2_actions.py",
+        "sha256": "cf5766703299ef359145e611931eb8342ba95f9e9fb6705fd400cce0b012bfbb"
+      },
+      "functions": [
+        {
+          "end_line": 51,
+          "line": 49,
+          "name": "action_key"
+        },
+        {
+          "end_line": 56,
+          "line": 53,
+          "name": "implicit_releases"
+        },
+        {
+          "end_line": 14,
+          "line": 13,
+          "name": "valid"
+        },
+        {
+          "end_line": 21,
+          "line": 21,
+          "name": "from_link"
+        },
+        {
+          "end_line": 60,
+          "line": 60,
+          "name": "__init__"
+        },
+        {
+          "end_line": 115,
+          "line": 61,
+          "name": "validate"
+        },
+        {
+          "end_line": 62,
+          "line": 62,
+          "name": "reject"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 2459,
+        "path": "research_versions/dynamic_k_v1/runtime/n2_candidates.py",
+        "sha256": "1d6b6ba8ba8ffe33645ed6f25de4808f2720f8c7fdbf2211f0cdbc6365dfdcfb"
+      },
+      "functions": [
+        {
+          "end_line": 6,
+          "line": 6,
+          "name": "__init__"
+        },
+        {
+          "end_line": 40,
+          "line": 8,
+          "name": "generate"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 7947,
+        "path": "research_versions/dynamic_k_v1/runtime/n2_controller.py",
+        "sha256": "0051daeb9ce50e9e1395fa10f52b67a5f880830bbee28152cd365bd166a3a2a8"
+      },
+      "functions": [
+        {
+          "end_line": 134,
+          "line": 119,
+          "name": "validate_n2"
+        },
+        {
+          "end_line": 18,
+          "line": 12,
+          "name": "__init__"
+        },
+        {
+          "end_line": 21,
+          "line": 21,
+          "name": "engine"
+        },
+        {
+          "end_line": 32,
+          "line": 23,
+          "name": "_physical_digest"
+        },
+        {
+          "end_line": 37,
+          "line": 34,
+          "name": "_verify"
+        },
+        {
+          "end_line": 41,
+          "line": 39,
+          "name": "candidates"
+        },
+        {
+          "end_line": 46,
+          "line": 43,
+          "name": "submit_batch"
+        },
+        {
+          "end_line": 72,
+          "line": 48,
+          "name": "submit"
+        },
+        {
+          "end_line": 90,
+          "line": 74,
+          "name": "release_audit"
+        },
+        {
+          "end_line": 109,
+          "line": 92,
+          "name": "advance_to"
+        },
+        {
+          "end_line": 111,
+          "line": 111,
+          "name": "run"
+        },
+        {
+          "end_line": 112,
+          "line": 112,
+          "name": "clone"
+        },
+        {
+          "end_line": 113,
+          "line": 113,
+          "name": "checkpoint"
+        },
+        {
+          "end_line": 116,
+          "line": 115,
+          "name": "restore"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 2697,
+        "path": "research_versions/dynamic_k_v1/runtime/n2_physical.py",
+        "sha256": "dd58fad339d080c27aa204e34893b58a7829199d0e1e24f89d0ab411df2fe8bf"
+      },
+      "functions": [
+        {
+          "end_line": 13,
+          "line": 10,
+          "name": "__deepcopy__"
+        },
+        {
+          "end_line": 20,
+          "line": 18,
+          "name": "__init__"
+        },
+        {
+          "end_line": 27,
+          "line": 22,
+          "name": "evaluate"
+        },
+        {
+          "end_line": 33,
+          "line": 33,
+          "name": "__init__"
+        },
+        {
+          "end_line": 36,
+          "line": 34,
+          "name": "evaluate"
+        },
+        {
+          "end_line": 40,
+          "line": 40,
+          "name": "__init__"
+        },
+        {
+          "end_line": 42,
+          "line": 42,
+          "name": "catalog"
+        },
+        {
+          "end_line": 55,
+          "line": 44,
+          "name": "evaluate"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 13959,
+        "path": "research_versions/dynamic_k_v1/runtime/n4_p0.py",
+        "sha256": "2b7420962fab6db5a663b27e978b417f998ee267d930c5566983e133695c9d0b"
+      },
+      "functions": [
+        {
+          "end_line": 55,
+          "line": 45,
+          "name": "encode"
+        },
+        {
+          "end_line": 58,
+          "line": 58,
+          "name": "data_hash"
+        },
+        {
+          "end_line": 101,
+          "line": 89,
+          "name": "causal_view"
+        },
+        {
+          "end_line": 112,
+          "line": 104,
+          "name": "observed_prefix"
+        },
+        {
+          "end_line": 128,
+          "line": 115,
+          "name": "graph_objects"
+        },
+        {
+          "end_line": 183,
+          "line": 158,
+          "name": "make_sanitized_root"
+        },
+        {
+          "end_line": 233,
+          "line": 194,
+          "name": "score_action"
+        },
+        {
+          "end_line": 253,
+          "line": 236,
+          "name": "retain_small_domain"
+        },
+        {
+          "end_line": 267,
+          "line": 256,
+          "name": "score_candidates"
+        },
+        {
+          "end_line": 42,
+          "line": 29,
+          "name": "verify"
+        },
+        {
+          "end_line": 74,
+          "line": 69,
+          "name": "from_current"
+        },
+        {
+          "end_line": 77,
+          "line": 77,
+          "name": "end_s"
+        },
+        {
+          "end_line": 79,
+          "line": 79,
+          "name": "sha256"
+        },
+        {
+          "end_line": 149,
+          "line": 139,
+          "name": "verify_isolation"
+        },
+        {
+          "end_line": 151,
+          "line": 151,
+          "name": "clone"
+        },
+        {
+          "end_line": 152,
+          "line": 152,
+          "name": "checkpoint"
+        },
+        {
+          "end_line": 155,
+          "line": 154,
+          "name": "restore"
+        },
+        {
+          "end_line": 191,
+          "line": 190,
+          "name": "__post_init__"
+        },
+        {
+          "end_line": 240,
+          "line": 238,
+          "name": "key"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 9360,
+        "path": "research_versions/dynamic_k_v1/runtime/n4_p0f_events.py",
+        "sha256": "9e5bc5544083b67488fe9e9b4077d5ef24107107c16237219c2e71740a6b0df6"
+      },
+      "functions": [
+        {
+          "end_line": 26,
+          "line": 19,
+          "name": "verify"
+        },
+        {
+          "end_line": 32,
+          "line": 29,
+          "name": "__init__"
+        },
+        {
+          "end_line": 47,
+          "line": 33,
+          "name": "_settle_propagation_rate_events"
+        },
+        {
+          "end_line": 71,
+          "line": 49,
+          "name": "_next_time"
+        },
+        {
+          "end_line": 87,
+          "line": 73,
+          "name": "advance_to"
+        },
+        {
+          "end_line": 100,
+          "line": 89,
+          "name": "settle_current_time"
+        },
+        {
+          "end_line": 115,
+          "line": 102,
+          "name": "_step"
+        },
+        {
+          "end_line": 156,
+          "line": 117,
+          "name": "_microstep"
+        },
+        {
+          "end_line": 188,
+          "line": 158,
+          "name": "_apply_due_actions"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 17730,
+        "path": "research_versions/dynamic_k_v1/runtime/n1a.py",
+        "sha256": "06287787a8cf7045e7e810a46e0c45781635fad98e02dcba3ef5d90c48d5456f"
+      },
+      "functions": [
+        {
+          "end_line": 20,
+          "line": 18,
+          "name": "require"
+        },
+        {
+          "end_line": 26,
+          "line": 23,
+          "name": "finite"
+        },
+        {
+          "end_line": 31,
+          "line": 29,
+          "name": "digest"
+        },
+        {
+          "end_line": 43,
+          "line": 34,
+          "name": "normalized"
+        },
+        {
+          "end_line": 62,
+          "line": 46,
+          "name": "topology_sample"
+        },
+        {
+          "end_line": 332,
+          "line": 232,
+          "name": "validate_measurement"
+        },
+        {
+          "end_line": 76,
+          "line": 67,
+          "name": "__init__"
+        },
+        {
+          "end_line": 84,
+          "line": 78,
+          "name": "_integrate_until"
+        },
+        {
+          "end_line": 106,
+          "line": 86,
+          "name": "capture"
+        },
+        {
+          "end_line": 125,
+          "line": 108,
+          "name": "metrics"
+        },
+        {
+          "end_line": 154,
+          "line": 134,
+          "name": "__init__"
+        },
+        {
+          "end_line": 167,
+          "line": 156,
+          "name": "advance_to"
+        },
+        {
+          "end_line": 170,
+          "line": 169,
+          "name": "run"
+        },
+        {
+          "end_line": 173,
+          "line": 172,
+          "name": "clone"
+        },
+        {
+          "end_line": 177,
+          "line": 175,
+          "name": "checkpoint"
+        },
+        {
+          "end_line": 182,
+          "line": 180,
+          "name": "restore"
+        },
+        {
+          "end_line": 229,
+          "line": 184,
+          "name": "measure"
+        },
+        {
+          "end_line": 246,
+          "line": 245,
+          "name": "close"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 7790,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/catalog_epoch.py",
+        "sha256": "a3b57542ed41d3b288a6a774e2bc48a4c796bebd49edd8583d89d1b88c00f6ee"
+      },
+      "functions": [
+        {
+          "end_line": 102,
+          "line": 69,
+          "name": "main"
+        },
+        {
+          "end_line": 12,
+          "line": 10,
+          "name": "__init__"
+        },
+        {
+          "end_line": 20,
+          "line": 13,
+          "name": "wrap"
+        },
+        {
+          "end_line": 36,
+          "line": 21,
+          "name": "validate"
+        },
+        {
+          "end_line": 68,
+          "line": 37,
+          "name": "run"
+        },
+        {
+          "end_line": 19,
+          "line": 14,
+          "name": "invoke"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 3874,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/profile_timing_check.py",
+        "sha256": "7dd043fa2c4041f6f84c6119bf0f0bf3c4d9f8ba5f2ab74c132a263a5d6cc6e9"
+      },
+      "functions": [
+        {
+          "end_line": 55,
+          "line": 26,
+          "name": "main"
+        },
+        {
+          "end_line": 6,
+          "line": 6,
+          "name": "__init__"
+        },
+        {
+          "end_line": 15,
+          "line": 7,
+          "name": "category"
+        },
+        {
+          "end_line": 25,
+          "line": 16,
+          "name": "hook"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 11115,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/epoch_workflow.py",
+        "sha256": "5b322e8e04dff25836fc1d922ed30056ddb262cda41089bfa3996dec4337cf8e"
+      },
+      "functions": [
+        {
+          "end_line": 24,
+          "line": 22,
+          "name": "write"
+        },
+        {
+          "end_line": 25,
+          "line": 25,
+          "name": "bind"
+        },
+        {
+          "end_line": 44,
+          "line": 26,
+          "name": "load_live"
+        },
+        {
+          "end_line": 50,
+          "line": 45,
+          "name": "open_lease"
+        },
+        {
+          "end_line": 98,
+          "line": 72,
+          "name": "score"
+        },
+        {
+          "end_line": 100,
+          "line": 99,
+          "name": "stable"
+        },
+        {
+          "end_line": 106,
+          "line": 101,
+          "name": "select_success"
+        },
+        {
+          "end_line": 156,
+          "line": 107,
+          "name": "small"
+        },
+        {
+          "end_line": 32,
+          "line": 29,
+          "name": "verify"
+        },
+        {
+          "end_line": 53,
+          "line": 53,
+          "name": "__init__"
+        },
+        {
+          "end_line": 59,
+          "line": 54,
+          "name": "invoke"
+        },
+        {
+          "end_line": 62,
+          "line": 60,
+          "name": "install"
+        },
+        {
+          "end_line": 71,
+          "line": 63,
+          "name": "context"
+        },
+        {
+          "end_line": 79,
+          "line": 76,
+          "name": "clone"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 24881,
+        "path": "src/dynamic_lisl/terminal_executor.py",
+        "sha256": "80634fd278655ca6c50a758afe5344f025154879ac71ba5b7dc455a210782583"
+      },
+      "functions": [
+        {
+          "end_line": 20,
+          "line": 16,
+          "name": "pair"
+        },
+        {
+          "end_line": 114,
+          "line": 99,
+          "name": "__init__"
+        },
+        {
+          "end_line": 157,
+          "line": 122,
+          "name": "_exact_structural_clone"
+        },
+        {
+          "end_line": 161,
+          "line": 159,
+          "name": "clone_for_transaction"
+        },
+        {
+          "end_line": 165,
+          "line": 163,
+          "name": "clone_for_counterfactual"
+        },
+        {
+          "end_line": 176,
+          "line": 167,
+          "name": "snapshot"
+        },
+        {
+          "end_line": 180,
+          "line": 178,
+          "name": "_log"
+        },
+        {
+          "end_line": 186,
+          "line": 182,
+          "name": "_schedule"
+        },
+        {
+          "end_line": 192,
+          "line": 188,
+          "name": "_ends"
+        },
+        {
+          "end_line": 195,
+          "line": 194,
+          "name": "_link"
+        },
+        {
+          "end_line": 218,
+          "line": 197,
+          "name": "_commit_commands_on_trial"
+        },
+        {
+          "end_line": 221,
+          "line": 220,
+          "name": "submit"
+        },
+        {
+          "end_line": 225,
+          "line": 223,
+          "name": "submit_legacy_reference"
+        },
+        {
+          "end_line": 300,
+          "line": 227,
+          "name": "_connect"
+        },
+        {
+          "end_line": 311,
+          "line": 302,
+          "name": "_drain"
+        },
+        {
+          "end_line": 323,
+          "line": 313,
+          "name": "_start_retarget"
+        },
+        {
+          "end_line": 344,
+          "line": 325,
+          "name": "_down"
+        },
+        {
+          "end_line": 361,
+          "line": 346,
+          "name": "_abort"
+        },
+        {
+          "end_line": 374,
+          "line": 363,
+          "name": "expire_visibility"
+        },
+        {
+          "end_line": 394,
+          "line": 376,
+          "name": "start_tx"
+        },
+        {
+          "end_line": 400,
+          "line": 396,
+          "name": "_valid_reservation"
+        },
+        {
+          "end_line": 411,
+          "line": 402,
+          "name": "advance"
+        },
+        {
+          "end_line": 479,
+          "line": 413,
+          "name": "_event"
+        },
+        {
+          "end_line": 535,
+          "line": 481,
+          "name": "assert_invariants"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 9763,
+        "path": "src/dynamic_lisl/terminal_pair_intervals.py",
+        "sha256": "8647a9ecf8ce1d2aa4ab4d67d00fb1ebfd93398531f3248012026427f776db33"
+      },
+      "functions": [
+        {
+          "end_line": 54,
+          "line": 45,
+          "name": "_time_grid"
+        },
+        {
+          "end_line": 76,
+          "line": 57,
+          "name": "_intervals_from_samples"
+        },
+        {
+          "end_line": 90,
+          "line": 79,
+          "name": "positive_intervals"
+        },
+        {
+          "end_line": 101,
+          "line": 93,
+          "name": "_pair_margin"
+        },
+        {
+          "end_line": 138,
+          "line": 104,
+          "name": "refine_terminal_pair_windows"
+        },
+        {
+          "end_line": 32,
+          "line": 31,
+          "name": "endpoint_a"
+        },
+        {
+          "end_line": 36,
+          "line": 35,
+          "name": "endpoint_b"
+        },
+        {
+          "end_line": 39,
+          "line": 38,
+          "name": "contains"
+        },
+        {
+          "end_line": 42,
+          "line": 41,
+          "name": "to_dict"
+        },
+        {
+          "end_line": 100,
+          "line": 94,
+          "name": "margin"
+        },
+        {
+          "end_line": 157,
+          "line": 143,
+          "name": "__init__"
+        },
+        {
+          "end_line": 161,
+          "line": 160,
+          "name": "_key"
+        },
+        {
+          "end_line": 165,
+          "line": 164,
+          "name": "from_records"
+        },
+        {
+          "end_line": 171,
+          "line": 167,
+          "name": "current_window"
+        },
+        {
+          "end_line": 185,
+          "line": 173,
+          "name": "terminal_pair_candidates"
+        },
+        {
+          "end_line": 197,
+          "line": 187,
+          "name": "diagnose"
+        },
+        {
+          "end_line": 226,
+          "line": 199,
+          "name": "connect_command"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 2798,
+        "path": "src/dynamic_lisl/gate_c_simplified_feasibility.py",
+        "sha256": "a194dc87ab8b6df15d15574f95a68588897f59dcd8779860e2bf652436311eac"
+      },
+      "functions": [
+        {
+          "end_line": 12,
+          "line": 10,
+          "name": "__init__"
+        },
+        {
+          "end_line": 65,
+          "line": 14,
+          "name": "evaluate"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 6353,
+        "path": "src/dynamic_lisl/gate_c_terminal_geometry.py",
+        "sha256": "cf11dc19fac77fab583c7791e4b20e6c19da3a4a740bf7bab656ba5477085e04"
+      },
+      "functions": [
+        {
+          "end_line": 22,
+          "line": 15,
+          "name": "_unit"
+        },
+        {
+          "end_line": 34,
+          "line": 25,
+          "name": "rtn_basis"
+        },
+        {
+          "end_line": 46,
+          "line": 37,
+          "name": "validate_rtn"
+        },
+        {
+          "end_line": 56,
+          "line": 49,
+          "name": "mounting_boresight"
+        },
+        {
+          "end_line": 62,
+          "line": 59,
+          "name": "angle_deg"
+        },
+        {
+          "end_line": 69,
+          "line": 65,
+          "name": "conic_for_pass"
+        },
+        {
+          "end_line": 117,
+          "line": 93,
+          "name": "bilateral_for"
+        },
+        {
+          "end_line": 129,
+          "line": 120,
+          "name": "bilateral_for_margin"
+        },
+        {
+          "end_line": 90,
+          "line": 79,
+          "name": "from_dict"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 39079,
+        "path": "src/dynamic_lisl/transition_service_orchestrator.py",
+        "sha256": "9ed1ecf9b8c5cde21fd5a71113fdd45e2d69a20bb808689ccf40a9392ce172e7"
+      },
+      "functions": [
+        {
+          "end_line": 40,
+          "line": 38,
+          "name": "_directed"
+        },
+        {
+          "end_line": 144,
+          "line": 52,
+          "name": "__init__"
+        },
+        {
+          "end_line": 151,
+          "line": 147,
+          "name": "_compensated_add"
+        },
+        {
+          "end_line": 156,
+          "line": 153,
+          "name": "_transition_active"
+        },
+        {
+          "end_line": 159,
+          "line": 158,
+          "name": "_active_admit_snapshot"
+        },
+        {
+          "end_line": 190,
+          "line": 161,
+          "name": "_recompute_routes"
+        },
+        {
+          "end_line": 218,
+          "line": 192,
+          "name": "_record"
+        },
+        {
+          "end_line": 228,
+          "line": 220,
+          "name": "_inputs"
+        },
+        {
+          "end_line": 256,
+          "line": 230,
+          "name": "_allocate_service"
+        },
+        {
+          "end_line": 284,
+          "line": 258,
+          "name": "_schedule_service_segments"
+        },
+        {
+          "end_line": 300,
+          "line": 286,
+          "name": "_settle_propagation_rate_events"
+        },
+        {
+          "end_line": 371,
+          "line": 302,
+          "name": "_finalize_quiescent_propagation"
+        },
+        {
+          "end_line": 378,
+          "line": 373,
+          "name": "_proposal_mode"
+        },
+        {
+          "end_line": 410,
+          "line": 380,
+          "name": "_apply_due_actions"
+        },
+        {
+          "end_line": 431,
+          "line": 412,
+          "name": "_update_transition_episode_state"
+        },
+        {
+          "end_line": 472,
+          "line": 433,
+          "name": "_microstep"
+        },
+        {
+          "end_line": 490,
+          "line": 474,
+          "name": "_derivatives"
+        },
+        {
+          "end_line": 514,
+          "line": 492,
+          "name": "_next_time"
+        },
+        {
+          "end_line": 594,
+          "line": 516,
+          "name": "_integrate"
+        },
+        {
+          "end_line": 607,
+          "line": 596,
+          "name": "advance_to"
+        },
+        {
+          "end_line": 617,
+          "line": 609,
+          "name": "settle_current_time"
+        },
+        {
+          "end_line": 629,
+          "line": 619,
+          "name": "_step"
+        },
+        {
+          "end_line": 639,
+          "line": 631,
+          "name": "schedule_action"
+        },
+        {
+          "end_line": 642,
+          "line": 641,
+          "name": "clone"
+        },
+        {
+          "end_line": 666,
+          "line": 644,
+          "name": "canonical_state"
+        },
+        {
+          "end_line": 671,
+          "line": 668,
+          "name": "canonical_state_sha256"
+        },
+        {
+          "end_line": 776,
+          "line": 673,
+          "name": "run"
+        }
+      ]
+    },
+    {
+      "binding": {
+        "byte_count": 3736,
+        "path": "src/dynamic_lisl/sgp4_model.py",
+        "sha256": "35cb1c90e57502fad6e4dcd6087cc771682bd691b223c1e8bf0e220ae73aca63"
+      },
+      "functions": [
+        {
+          "end_line": 9,
+          "line": 9,
+          "name": "checksum"
+        },
+        {
+          "end_line": 21,
+          "line": 11,
+          "name": "parse_tle"
+        },
+        {
+          "end_line": 61,
+          "line": 59,
+          "name": "tle_mean_elements"
+        },
+        {
+          "end_line": 34,
+          "line": 26,
+          "name": "__init__"
+        },
+        {
+          "end_line": 43,
+          "line": 36,
+          "name": "state"
+        },
+        {
+          "end_line": 56,
+          "line": 46,
+          "name": "load"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "all_safety_limits": "ENGINEERING_ONLY_NOT_REALTIME_OR_SCIENCE",
+  "catalog_evidence": {
+    "byte_count": 706,
+    "path": "research_versions/dynamic_k_v1/acceptance/0016/CATALOG_HARD_STOP.json",
+    "sha256": "fea6d98ee6d7fb88f54454fe7325f09c464bf9fa919313984737a55e77f99e55"
+  },
+  "complete_epoch": false,
+  "epoch_selected_action": null,
+  "full_N4_P0_engineering_pass": false,
+  "original_0014_failure_preserved": true,
+  "production_kernel_modified": false,
+  "root_reconstruction": "PASS_EXACT_0015",
+  "scientific_gate_pass": false,
+  "small_domain": {
+    "all_costs_from_real_fixed_horizon_execution": true,
+    "comparison": "Exact persisted JSON fields, same serialization for all branches; timings only excluded; no numerical tolerance; final state hashes and post-wrapper state checks equal",
+    "evidence": {
+      "byte_count": 1115391,
+      "path": "research_versions/dynamic_k_v1/acceptance/0016/OBSERVER_PROFILE_TIMING_PAIR.json",
+      "sha256": "4d90755cf9e2f14e9cec6d2675544f9711b9b23aabd83a194049fba1970d349c"
+    },
+    "extra_failed_instrumentation_attempts": 1,
+    "extra_successful_timing_branches": 4,
+    "full_catalog_domain_claimed": false,
+    "helper_errors_retained": [
+      "FrozenInstanceError",
+      "wrapper_state_hash_difference",
+      "native_tuple_vs_persisted_JSON_list_comparison"
+    ],
+    "instrumentation_result_exact_equal": true,
+    "instrumented_HOLD_wall_s": 27.043724999999995,
+    "main_pilot_runs": 0,
+    "modes": [
+      "ZERO",
+      "PERSIST"
+    ],
+    "observed_timer_overhead_s": 25.295347300000003,
+    "per_mode_branches": 5,
+    "plain_HOLD_wall_s": 1.7483776999999918,
+    "same_history_prefix": true,
+    "same_root_view": true,
+    "status": "PASS"
+  },
+  "status": "STOP_CATALOG_300S_HARD_LIMIT",
+  "tests": {
+    "complete_catalog_reenumerated": false,
+    "event_clock_and_1bit_loss": 7,
+    "historical": 132,
+    "historical_passed": 131,
+    "known_F3_failed": 1,
+    "original_targeted": 116,
+    "source_tests_or_expectations_modified": false,
+    "status": "PASS_NO_NEW_FAILURES",
+    "variant_inline": 1,
+    "variant_targeted": 116
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "all_fields_exact": true,
+  "index_build_and_maintenance_in_plain_timings": true,
+  "layout": "disjoint",
+  "memory": {
+    "reference": {
+      "current_bytes": 7168,
+      "instrumented_wall_s": 0.24316549999999992,
+      "peak_bytes": 183612
+    },
+    "sweep": {
+      "current_bytes": 8420,
+      "instrumented_wall_s": 0.13939940000000006,
+      "peak_bytes": 227736
+    }
+  },
+  "memory_scope": "TRACEMALLOC_SEPARATE_RUN_ENTIRE_SYNTHETIC_FIXTURE_NOT_PRODUCTION_WALL",
+  "n": 256,
+  "paired_plain_samples": [
+    {
+      "reference": {
+        "interval_including_index_cold_build_s": 0.04090290000000002,
+        "total_fixture_s": 0.07156099999999999
+      },
+      "sweep": {
+        "interval_including_index_cold_build_s": 0.009006500000000028,
+        "total_fixture_s": 0.043300899999999976
+      }
+    },
+    {
+      "reference": {
+        "interval_including_index_cold_build_s": 0.04668250000000007,
+        "total_fixture_s": 0.08170879999999991
+      },
+      "sweep": {
+        "interval_including_index_cold_build_s": 0.00931930000000003,
+        "total_fixture_s": 0.04338019999999998
+      }
+    },
+    {
+      "reference": {
+        "interval_including_index_cold_build_s": 0.04080820000000007,
+        "total_fixture_s": 0.07657809999999998
+      },
+      "sweep": {
+        "interval_including_index_cold_build_s": 0.008679500000000062,
+        "total_fixture_s": 0.04455869999999995
+      }
+    }
+  ],
+  "sweep_light_measurements": [
+    {
+      "active_peak": 1,
+      "build_s": 0.0010145000000000293,
+      "clips": 256,
+      "cut_intervals": 256,
+      "endpoint_references": 512,
+      "enumeration_and_clip_s": 0.0005687999999989257,
+      "input_streams": 256,
+      "legacy_coverage_predicate_iterations": 65536,
+      "maintenance_endpoint_visits": 511,
+      "maintenance_s": 0.0006754999999990519,
+      "optimized_coverage_predicate_iterations": 0,
+      "parts_peak": 1,
+      "peak_active_bitset_bits": 256,
+      "temporary_clip_Stream_objects": 256
+    },
+    {
+      "active_peak": 0,
+      "build_s": 4.699999999968618e-06,
+      "clips": 0,
+      "cut_intervals": 1,
+      "endpoint_references": 0,
+      "enumeration_and_clip_s": 2.0000000000575113e-07,
+      "input_streams": 0,
+      "legacy_coverage_predicate_iterations": 0,
+      "maintenance_endpoint_visits": 0,
+      "maintenance_s": 2.0000000000575113e-06,
+      "optimized_coverage_predicate_iterations": 0,
+      "parts_peak": 0,
+      "peak_active_bitset_bits": 0,
+      "temporary_clip_Stream_objects": 0
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "frozen_source_sha256": "9fb1d868d67227aff482df004fc9571c47bc21bbdab08a9659d31635b27c04bf",
+  "seam_sha256": "0596ecb95354522733732bffcf17357f325558f0fbe31e82877be1382a26a9b0",
+  "restored_method_AST_exact_equal": true,
+  "changed_business_statement_count": 0,
+  "change": "ONLY_REPLACE_FOR_COVERAGE_SEARCH_WITH_EXACT_ORDERED_GENERATOR",
+  "global_monkeypatch": false
+}

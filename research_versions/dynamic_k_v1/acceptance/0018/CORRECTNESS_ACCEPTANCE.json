@@ -1,0 +1,15 @@
+{
+  "full_N4_P0_engineering_pass": false,
+  "history_alias_tests": {
+    "base_class_bypass_detected": true,
+    "independent_current_state": true,
+    "independent_log_lists": true,
+    "public_mutations_rejected": 4,
+    "shared_records_read_only": true,
+    "source_tamper_detected": true
+  },
+  "paired_real_atomic_actions": 5,
+  "real160_cases": 7,
+  "status": "PASS_LIMITED_SEAM_CORRECTNESS",
+  "synthetic_cases": 22
+}

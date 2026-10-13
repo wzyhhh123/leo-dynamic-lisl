@@ -1,0 +1,10 @@
+{
+  "files": [
+    {
+      "byte_count": 18,
+      "path": "research_versions/dynamic_k_v1/acceptance/0018/negative_inputs/source.txt",
+      "sha256": "d5e437fbd035f7185d6920c2e82bc90bcf9da0372ceedc7a5a416b215ea34eb5"
+    }
+  ],
+  "schema": "dynamic_k_p0h_structural_seam_sources_v1"
+}

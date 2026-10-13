@@ -1,0 +1,15 @@
+{
+  "counters_scope": "SYNTHETIC_ONLY_INTEGER_OPERATIONS_IN_ISOLATED_AST_COPY",
+  "fixture_conservation_and_original_moments": "EXACT_RATIONAL_PASS",
+  "global_monkeypatch": false,
+  "inherited_regression_evidence": "0018_ONLY_NOT_RERUN",
+  "new_regression_runs": 0,
+  "original_observation_records_mutated": false,
+  "plain_vs_counter_exact_state_or_result_equal": true,
+  "production_or_frozen_source_modified": false,
+  "profiler_or_trace_callbacks": 0,
+  "runtime_or_scientific_acceptance": false,
+  "short_fixture_cases": 13,
+  "status": "PASS_DIAGNOSTIC_SCOPE_ONLY",
+  "timing_scope": "ONE_SAMPLE_PER_LAYOUT_NOT_STATISTICAL_BENCHMARK"
+}
