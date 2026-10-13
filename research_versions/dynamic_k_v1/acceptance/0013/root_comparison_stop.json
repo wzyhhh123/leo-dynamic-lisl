@@ -1,0 +1,13 @@
+{
+  "N4_P0_engineering_pass": false,
+  "actual_sha256": "06f3803e0c74ca9ba4a45a04ac5efada773ad988e044f7323083cc3421fc2adb",
+  "add_submissions": 0,
+  "business_conservation_root_cause": "UNRESOLVED",
+  "evidence_saved_before_comparison": true,
+  "expected_sha256": "ba301c6b0d92b96b8490fe28b24322e254377aea01adffd0c368653daa3f01f6",
+  "original_failure_reproduced": false,
+  "prediction_branches": 0,
+  "root_constructions": 1,
+  "status": "STOP_ROOT_BINDING_MISMATCH",
+  "strict_equality": false
+}

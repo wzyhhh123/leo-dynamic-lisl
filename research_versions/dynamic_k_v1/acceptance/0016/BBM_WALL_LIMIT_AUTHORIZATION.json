@@ -1,0 +1,11 @@
+{
+  "basis": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0016\\small\\PERSIST\\03_HOLD_.json",
+  "boundary_description": "previous HOLD evidence write completed immediately before BBM; conservative lower bound, not exact branch-start timestamp",
+  "catalog_limit_s": 300,
+  "catalog_not_started": true,
+  "deadline_utc": "2026-10-13T04:20:20.167889+00:00",
+  "pid": 10368,
+  "start_boundary_utc": "2026-10-13T03:50:20.167889+00:00",
+  "user_authorization": "This branch cumulative 30 minutes unfinished then STOP and seal partial evidence",
+  "user_limit_s": 1800
+}

@@ -1,0 +1,35 @@
+{
+  "current_rate_entry_retests": {
+    "byte_count": 712,
+    "path": "research_versions/dynamic_k_v1/acceptance/0010/attempt03/p0_tests.json",
+    "sha256": "4aec665774910febaaab2270621fd8f1cd1639571049182810af3b9bf9dcf87e"
+  },
+  "exact_entry_guard_change_audit": {
+    "byte_count": 1145,
+    "path": "research_versions/dynamic_k_v1/acceptance/0010/entry_guard_change_audit.json",
+    "sha256": "b2638077bbc24f885a4795b88c594128b3b266a4d859c67f210e36e4c0defeee"
+  },
+  "full_suite": {
+    "byte_count": 1660,
+    "path": "research_versions/dynamic_k_v1/acceptance/0010/attempt02/p0_tests.json",
+    "sha256": "70736a9f567554f1df0104e66a7a8631f0f42bea5d3560c4cd38cfaf8f7f164c"
+  },
+  "object_graph_scope": "DATA_REFERENCES_AND_FUNCTION_CLOSURES_NOT_MALICIOUS_PYTHON_SECURITY_SANDBOX",
+  "science_pass": false,
+  "source": {
+    "byte_count": 13959,
+    "path": "research_versions/dynamic_k_v1/runtime/n4_p0.py",
+    "sha256": "2b7420962fab6db5a663b27e978b417f998ee267d930c5566983e133695c9d0b"
+  },
+  "status": "PASS_TESTED_DATA_CAUSAL_ISOLATION",
+  "tested_cases": [
+    "historical_prefix_mass_and_origin_age",
+    "twin_roots_different_future_trace",
+    "candidate_order_and_checkpoint",
+    "ZERO_retains_backlog",
+    "committed_TX_setup_propagation_expiry",
+    "foreign_trace_alias_rejected",
+    "future_read_and_deepcopy_poisoned",
+    "manual_future_rate_rejected"
+  ]
+}

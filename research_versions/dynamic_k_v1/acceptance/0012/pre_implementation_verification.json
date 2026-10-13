@@ -1,0 +1,16 @@
+{
+  "baseline_file_count": 5810,
+  "excluded_file_count": 202,
+  "revision_record_sha256": "89046f4c855a6f7830c620889216ef131577887ee15b04593d501b6ddf06b71f",
+  "scope": "N0_FILE_INTEGRITY_AND_VERSION_BINDINGS_ONLY",
+  "source": "actual complete independent verifier output before 0012 file creation",
+  "status": "PASS",
+  "undeclared_changes": {
+    "added": [],
+    "deleted": [],
+    "modified": [],
+    "possible_renames": []
+  },
+  "verified_file_count": 6090,
+  "version_record_sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+}

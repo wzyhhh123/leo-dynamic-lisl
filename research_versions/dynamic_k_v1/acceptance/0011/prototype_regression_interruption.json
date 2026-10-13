@@ -1,0 +1,9 @@
+{
+  "processId": 3792,
+  "executable": "D:\\Program_Files\\anaconda3\\envs\\pytorch\\python.exe",
+  "commandLine": "\"D:\\Program_Files\\anaconda3\\envs\\pytorch\\python.exe\" -B research_versions/dynamic_k_v1/acceptance/0011/workflow.py regress",
+  "reason": "Replace prototype regression run with final fresh-handle reader run; N1a/N1b/N2 complete, partial N3 not claimed",
+  "interrupted_N3_not_a_complete_result": true,
+  "cpu_s": 534.921875,
+  "utc": "2026-10-12T12:43:25.3776903Z"
+}

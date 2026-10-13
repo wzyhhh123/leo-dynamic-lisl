@@ -1,0 +1,35 @@
+{
+  "clean_process": true,
+  "complete_state_comparisons": {
+    "LIVE_PRE_ACTION": {
+      "actual_sha256": "1c45c2ce11146117aa663ff0252dda0ece3df2b6bbee4cf6fc404c49c49482dd",
+      "exact_every_field_equal": true,
+      "expected_sha256": "1c45c2ce11146117aa663ff0252dda0ece3df2b6bbee4cf6fc404c49c49482dd",
+      "first_difference": null
+    },
+    "ROOT": {
+      "actual_sha256": "a36f45f5875ad4dc1323260d87a07654a369a7b618a6ad75ce436cf463a77cc3",
+      "exact_every_field_equal": true,
+      "expected_sha256": "a36f45f5875ad4dc1323260d87a07654a369a7b618a6ad75ce436cf463a77cc3",
+      "first_difference": null
+    },
+    "SANITIZED_PRE_ACTION": {
+      "actual_sha256": "42f133cb5cbf54f785caa1dab9a68e8fdb118256ad80227c844a953981262149",
+      "exact_every_field_equal": true,
+      "expected_sha256": "42f133cb5cbf54f785caa1dab9a68e8fdb118256ad80227c844a953981262149",
+      "first_difference": null
+    }
+  },
+  "hash_bindings": {
+    "forecast": true,
+    "live_causal": true,
+    "prefix": true,
+    "root_view": true,
+    "sanitized_causal": true
+  },
+  "hash_seed": "1414",
+  "pid": 23448,
+  "prediction_executed": false,
+  "scenario_id": "P0E_0014_NEW_160_PERSIST_T3_SEED1414",
+  "status": "ROOT_RECONSTRUCTION_PASS"
+}

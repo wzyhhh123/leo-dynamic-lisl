@@ -1,0 +1,1898 @@
+{
+  "old_raw_reports_preserved": true,
+  "sections": {
+    "paired_handle_instrumented": {
+      "branch": {
+        "actual_bytes_hashed": 40461106,
+        "actual_files": {
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\configs\\hardware_gate_c_simplified_v1.json": {
+            "bytes_hashed": 10728,
+            "calls": 9,
+            "per_call_byte_count": 1192,
+            "sha256": "66ca6881b739aad87ccd850a89f0dcddb9bb35684f48fcdee2e0aece33fadd19"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\data\\raw\\sgp4_x720\\constellation.tle": {
+            "bytes_hashed": 966942,
+            "calls": 9,
+            "per_call_byte_count": 107438,
+            "sha256": "6ffcbc0d57c54e54fc274acb518e1436eaf4d70df56570b862ba42fe32345050"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\data\\raw\\sgp4_x720\\hashes.json": {
+            "bytes_hashed": 1647,
+            "calls": 9,
+            "per_call_byte_count": 183,
+            "sha256": "b0dad2adfb3cbacbf0e03a4fd2f1877e64478965f86b95ee40770cdee9934fbc"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\data\\raw\\sgp4_x720\\manifest.json": {
+            "bytes_hashed": 7647912,
+            "calls": 9,
+            "per_call_byte_count": 849768,
+            "sha256": "61a42d76f4fe25d2e613435f9a26fc092a5943a177675f1081ff2d52c2ff4b7d"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\outputs\\gate_c_simplified_20260922T064019_313843Z\\terminal_pair_intervals.jsonl": {
+            "bytes_hashed": 6452406,
+            "calls": 9,
+            "per_call_byte_count": 716934,
+            "sha256": "c4f166e05319f7c9a50459f853c5d68f3b67816452c3a85acabd8020e9be0a0a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\outputs\\gate_c_simplified_20260922T064019_313843Z\\z_ref.json": {
+            "bytes_hashed": 81864,
+            "calls": 9,
+            "per_call_byte_count": 9096,
+            "sha256": "59644ec7acc56f6a2efe098347874a6caf2eaf8540008c0bcb2a6509b37efa34"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0004\\implementation_manifest.json": {
+            "bytes_hashed": 514161,
+            "calls": 27,
+            "per_call_byte_count": 19043,
+            "sha256": "227043a6bcf318846bbc2e854130613b49082ef6a7e17f3913160f24f40456ad"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0004\\prepare_candidate.py": {
+            "bytes_hashed": 62223,
+            "calls": 7,
+            "per_call_byte_count": 8889,
+            "sha256": "2586dd4d284b9cc04159f5de26f0f872b96be45924ba8e768fbc50dc2672bcf1"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0004\\run_n1a_acceptance.py": {
+            "bytes_hashed": 19208,
+            "calls": 7,
+            "per_call_byte_count": 2744,
+            "sha256": "e509db002f8751dc294b3e5f9a28f65b5747de381bf1e3e28638ba852369a260"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0004\\run_regression.py": {
+            "bytes_hashed": 28116,
+            "calls": 18,
+            "per_call_byte_count": 1562,
+            "sha256": "2a66d6c4477fe93f4ff156755e5182dc5fa93de9ac8329f3fdc1228be2a587f1"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0005\\check_fifo_semantics.py": {
+            "bytes_hashed": 37774,
+            "calls": 11,
+            "per_call_byte_count": 3434,
+            "sha256": "53d952e0f22cffe9e0e1f2154c76ca5052caef454c9c122392251ceccf5793b2"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0005\\fifo_static_report.json": {
+            "bytes_hashed": 13618,
+            "calls": 11,
+            "per_call_byte_count": 1238,
+            "sha256": "d20a4943245ff9270a280cd6470a4fad057c0d40eba78c040e3d92975b5567e5"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0005\\implementation_manifest.json": {
+            "bytes_hashed": 421340,
+            "calls": 20,
+            "per_call_byte_count": 21067,
+            "sha256": "c27ac2866d4bfd12a8384bd91a990f841daad45a7079230301d1aaef4436031a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0005\\prepare_candidate.py": {
+            "bytes_hashed": 47124,
+            "calls": 11,
+            "per_call_byte_count": 4284,
+            "sha256": "817856e5bf0eb2677964afaaf09ddf7beba80bfd20e22d9e027891081886c6e9"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0005\\run_acceptance.py": {
+            "bytes_hashed": 36113,
+            "calls": 11,
+            "per_call_byte_count": 3283,
+            "sha256": "7ab1a2b79b346b0a7ba1470cb55ee963d38917403a7f61efade6aa249275065d"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0006\\implementation_manifest.json": {
+            "bytes_hashed": 208485,
+            "calls": 9,
+            "per_call_byte_count": 23165,
+            "sha256": "34e3412da99a96c58fe603af5de69777d69e0e2bc292fba4cbd3cfca8acb0b4a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0006\\prepare_candidate.py": {
+            "bytes_hashed": 31784,
+            "calls": 8,
+            "per_call_byte_count": 3973,
+            "sha256": "f69883fb0ad13a070d72dd929ef66da7bd05ef0bafa9658970b63d9c3eb4824b"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0006\\run_acceptance.py": {
+            "bytes_hashed": 31880,
+            "calls": 8,
+            "per_call_byte_count": 3985,
+            "sha256": "775f2635ad920cec7c44bba800e5735fd3d537bced7590c714850390b0cd0e1a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0006\\run_historical_regression.py": {
+            "bytes_hashed": 13008,
+            "calls": 8,
+            "per_call_byte_count": 1626,
+            "sha256": "7c81a55b9a6d11fbb003848a23869e798506656121a07cfa11d39454738c6aa5"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0007\\implementation_manifest_attempt02.json": {
+            "bytes_hashed": 25957,
+            "calls": 1,
+            "per_call_byte_count": 25957,
+            "sha256": "dbc7e0d54d6d9bb864ec216a0b7c6cd1b86ec6353ed3ab41a3c3c64b471b9129"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\cost_measurement.py": {
+            "bytes_hashed": 7398,
+            "calls": 1,
+            "per_call_byte_count": 7398,
+            "sha256": "55ae607bdb14589f99977bd5dd99016e6d95ecaa380e9cc1d0eedcc3ebdbe611"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\manifest_final.json": {
+            "bytes_hashed": 24630,
+            "calls": 1,
+            "per_call_byte_count": 24630,
+            "sha256": "8d15d8492b4662ad554b4cc25b27d4b3954fcbf340f9b38b5468de5bcfa17ebf"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\pilot_review_3s\\MPC_INTERFACE_GAP_AUDIT.md": {
+            "bytes_hashed": 1478,
+            "calls": 1,
+            "per_call_byte_count": 1478,
+            "sha256": "724bdf79b5c0947e6b746ea53467b7779cad668701e92eaede7badfd4f47274b"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\pilot_review_3s\\PILOT_ACCEPTANCE_CRITERIA.md": {
+            "bytes_hashed": 1564,
+            "calls": 1,
+            "per_call_byte_count": 1564,
+            "sha256": "291a989b88ed22368f71bf6353789f37204308e4cf9d3d7ad74a53748380491b"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\pilot_review_3s\\PILOT_PARAMETER_MANIFEST_DRAFT.md": {
+            "bytes_hashed": 1380,
+            "calls": 1,
+            "per_call_byte_count": 1380,
+            "sha256": "1a1028c6f4799bb75b648309b56cfb354f33afb94f76bfc950f0ca7d35aa3c0e"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\pilot_review_3s\\PILOT_SCENARIO_MATRIX.md": {
+            "bytes_hashed": 1618,
+            "calls": 1,
+            "per_call_byte_count": 1618,
+            "sha256": "69a4795e57c72b5d1b2322e21fa32edf535eea02ab5238846ad08a087dc13bbc"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\seal_revision.py": {
+            "bytes_hashed": 9952,
+            "calls": 1,
+            "per_call_byte_count": 9952,
+            "sha256": "f7fbec35fa13b225c2c9a854b0cf5aa4381532ebfc64aca9d1e610bb415fadf7"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\workflow.py": {
+            "bytes_hashed": 17376,
+            "calls": 1,
+            "per_call_byte_count": 17376,
+            "sha256": "0febc2ac9d4d8eca0c10996a525cf6d1091c16f70d1bff4ecdf07c43094a6534"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\baselines\\legacy_baseline_20261010T030541_607456Z\\seal.json": {
+            "bytes_hashed": 17712,
+            "calls": 27,
+            "per_call_byte_count": 656,
+            "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\configs\\n1b_fifo_semantics_v1.json": {
+            "bytes_hashed": 10373,
+            "calls": 11,
+            "per_call_byte_count": 943,
+            "sha256": "a9f3d047acb00579a47e26f0562bc911edc96d536f53c507dcd0315b002c894e"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\configs\\n2_action_semantics_v1.json": {
+            "bytes_hashed": 5704,
+            "calls": 8,
+            "per_call_byte_count": 713,
+            "sha256": "5d8f82ad814eedc4ab1b88635bee769bb0928cb74f70ba21d6776410f9dd4041"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\configs\\n4_p0_pilot_semantics_v1.json": {
+            "bytes_hashed": 1231,
+            "calls": 1,
+            "per_call_byte_count": 1231,
+            "sha256": "ebbca01b0cf28a94824af0cd31598ca972cbacb2561082a70bd033412a736ebe"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\configs\\research_v1_DRAFT.json": {
+            "bytes_hashed": 43764,
+            "calls": 7,
+            "per_call_byte_count": 6252,
+            "sha256": "04eabd77ddb4db235dc30c7d66f45a0d3dcd78eab174825e3c42903a81f87d2a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N1B_NODE_LOCAL_FIFO_SEMANTICS_CN.md": {
+            "bytes_hashed": 49148,
+            "calls": 11,
+            "per_call_byte_count": 4468,
+            "sha256": "fc5b0daf7562a3cae40c3328484adce2dea01fe6d42ea3ea81c4a67c4d3eafd4"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N1B_NUMERICAL_PRECISION_CN.md": {
+            "bytes_hashed": 45034,
+            "calls": 11,
+            "per_call_byte_count": 4094,
+            "sha256": "1e15d19d0ec8dbdddea72ca9f8e12e0c54aba3aae39e86f80301ad056ed8aec7"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N2_ATOMIC_TOPOLOGY_ACTIONS_CN.md": {
+            "bytes_hashed": 37120,
+            "calls": 8,
+            "per_call_byte_count": 4640,
+            "sha256": "9e7525b0e831f4400dc3459be8ae8838db8a942d87f0fb313cb11ef22159624b"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N4_P0_CAUSAL_ROOT_SCORING_CN.md": {
+            "bytes_hashed": 1391,
+            "calls": 1,
+            "per_call_byte_count": 1391,
+            "sha256": "c62bebcb2a873a3f6d36b6d5b80cf368b6c3f65a43ccb2ee3c49a8b500706025"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\research_contract_v1_DRAFT_CN.md": {
+            "bytes_hashed": 67193,
+            "calls": 7,
+            "per_call_byte_count": 9599,
+            "sha256": "f8f3e05bd81b144d4ac66cf74c307f174fd1a7a591099c76fd673ed71c2c2f32"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\revisions\\0003\\record.json": {
+            "bytes_hashed": 41223,
+            "calls": 7,
+            "per_call_byte_count": 5889,
+            "sha256": "7c9fa913a72ab740dfff233513c766ded57326fad2906c259d8ba56a3998baeb"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\revisions\\0004\\record.json": {
+            "bytes_hashed": 97493,
+            "calls": 11,
+            "per_call_byte_count": 8863,
+            "sha256": "815352309856b9e8aa2c5ffbb4e233dd412b6bc7aa3fd2365ea03e17230411f9"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\revisions\\0005\\record.json": {
+            "bytes_hashed": 74208,
+            "calls": 8,
+            "per_call_byte_count": 9276,
+            "sha256": "c2567b66fe880035853aba2b81463ece42443973d5b5178ae0b28e77a6c44769"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\revisions\\0007\\record.json": {
+            "bytes_hashed": 14325,
+            "calls": 1,
+            "per_call_byte_count": 14325,
+            "sha256": "f58cc5eb037eaf6ee804c9aa1c5ec54f38894d00ca0d715f8b7baae8a47e06db"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\revisions\\0009\\record.json": {
+            "bytes_hashed": 8162,
+            "calls": 1,
+            "per_call_byte_count": 8162,
+            "sha256": "bd54f8efb78375acca995b8ed43f5ccbfb4be80228d46eb2ca2ab5e954d86342"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\__init__.py": {
+            "bytes_hashed": 1998,
+            "calls": 27,
+            "per_call_byte_count": 74,
+            "sha256": "0b3fe3c9413a7b69e3571423d2e97aa9c41569db15c225d19f9e034909bb8260"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\bindings.py": {
+            "bytes_hashed": 84078,
+            "calls": 27,
+            "per_call_byte_count": 3114,
+            "sha256": "f6b13808ae4273f1bfb48c21865f74bf6b1ad1cb5a0061bc338c74925f750d2c"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n1a.py": {
+            "bytes_hashed": 478710,
+            "calls": 27,
+            "per_call_byte_count": 17730,
+            "sha256": "06287787a8cf7045e7e810a46e0c45781635fad98e02dcba3ef5d90c48d5456f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n1b_evaluator.py": {
+            "bytes_hashed": 122600,
+            "calls": 20,
+            "per_call_byte_count": 6130,
+            "sha256": "1fd0e7d8eef20c6936b4f14c586e08f7cd72dfb92d7d71a92d287b3173acf487"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n1b_fifo.py": {
+            "bytes_hashed": 343240,
+            "calls": 20,
+            "per_call_byte_count": 17162,
+            "sha256": "9fb1d868d67227aff482df004fc9571c47bc21bbdab08a9659d31635b27c04bf"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n1b_observer.py": {
+            "bytes_hashed": 44880,
+            "calls": 20,
+            "per_call_byte_count": 2244,
+            "sha256": "7bccef3b17b90ef395b616bfb92ef9e18ebfe5829f0855c2dcab277d0dff0ec6"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n2_actions.py": {
+            "bytes_hashed": 52380,
+            "calls": 9,
+            "per_call_byte_count": 5820,
+            "sha256": "cf5766703299ef359145e611931eb8342ba95f9e9fb6705fd400cce0b012bfbb"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n2_binding.py": {
+            "bytes_hashed": 17739,
+            "calls": 9,
+            "per_call_byte_count": 1971,
+            "sha256": "dd454a57bf7f13338885e9ececd1852e41105700129a2686db95f34954a634e6"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n2_candidates.py": {
+            "bytes_hashed": 22131,
+            "calls": 9,
+            "per_call_byte_count": 2459,
+            "sha256": "1d6b6ba8ba8ffe33645ed6f25de4808f2720f8c7fdbf2211f0cdbc6365dfdcfb"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n2_controller.py": {
+            "bytes_hashed": 71523,
+            "calls": 9,
+            "per_call_byte_count": 7947,
+            "sha256": "0051daeb9ce50e9e1395fa10f52b67a5f880830bbee28152cd365bd166a3a2a8"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n2_physical.py": {
+            "bytes_hashed": 24273,
+            "calls": 9,
+            "per_call_byte_count": 2697,
+            "sha256": "dd58fad339d080c27aa204e34893b58a7829199d0e1e24f89d0ab411df2fe8bf"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n3_baselines.py": {
+            "bytes_hashed": 14038,
+            "calls": 1,
+            "per_call_byte_count": 14038,
+            "sha256": "513dc16be7a6d84817f4001eb6cefe01c54011892c923718f5ad35351a3c420b"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n4_p0.py": {
+            "bytes_hashed": 13959,
+            "calls": 1,
+            "per_call_byte_count": 13959,
+            "sha256": "2b7420962fab6db5a663b27e978b417f998ee267d930c5566983e133695c9d0b"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\schemas\\n1a_engineering_result_v1.schema.json": {
+            "bytes_hashed": 268112,
+            "calls": 26,
+            "per_call_byte_count": 10312,
+            "sha256": "1774eea613b24b59115017ec7d004409612ce7b8c1164b32bca4f9997675b6c0"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\schemas\\n1b_engineering_result_v1.schema.json": {
+            "bytes_hashed": 328282,
+            "calls": 19,
+            "per_call_byte_count": 17278,
+            "sha256": "8cb3fc94eacb770492f6d07126337ea2be5bd34d935b69fced82b18b92ffac67"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\schemas\\n2_engineering_result_v1.schema.json": {
+            "bytes_hashed": 186920,
+            "calls": 8,
+            "per_call_byte_count": 23365,
+            "sha256": "239f96fe256bfde92d9e9a88f2180bb7280949aab144ccbf180b0a8456ee7325"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\tests\\test_n1a.py": {
+            "bytes_hashed": 435402,
+            "calls": 27,
+            "per_call_byte_count": 16126,
+            "sha256": "5ec2cc4f92761ebf945fac49a831224487f6cac356cf8fe013214af6e6093858"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\tests\\test_n1b_fifo.py": {
+            "bytes_hashed": 313500,
+            "calls": 20,
+            "per_call_byte_count": 15675,
+            "sha256": "d8339405ab52787ff8c2b897e96d3f309a5a7dfc2cb5939e65b643e5eee80117"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\tests\\test_n2_actions.py": {
+            "bytes_hashed": 187812,
+            "calls": 9,
+            "per_call_byte_count": 20868,
+            "sha256": "f47c5aff515c87b7803ee7ab6dc063bcb0b81cde18cceb4c64b3ad13d3cc0185"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\tests\\test_n3_baselines.py": {
+            "bytes_hashed": 23062,
+            "calls": 1,
+            "per_call_byte_count": 23062,
+            "sha256": "d0fd21ea7a3e4c6b7db0f2ac858aba5b40097ee60e1e31e865e6761997a251a3"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\tests\\test_n4_p0.py": {
+            "bytes_hashed": 15157,
+            "calls": 1,
+            "per_call_byte_count": 15157,
+            "sha256": "d7683bc9b82d7bcd3a4acd3a6e61113292d9dbe0de10497f9262991415807025"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\tools\\version_control.py": {
+            "bytes_hashed": 410305,
+            "calls": 19,
+            "per_call_byte_count": 21595,
+            "sha256": "c740401a75c2b43063957db3ef9dc4575098f3f7bb4bfadfd3f16d40739e04b5"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\version_record.json": {
+            "bytes_hashed": 41985,
+            "calls": 27,
+            "per_call_byte_count": 1555,
+            "sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\__init__.py": {
+            "bytes_hashed": 1701,
+            "calls": 27,
+            "per_call_byte_count": 63,
+            "sha256": "6b2df750dfbdd0115434c4c1efb9265dcc3d601532a14a409e6400b5fc310f5b"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\absolute_time_regression.py": {
+            "bytes_hashed": 511866,
+            "calls": 27,
+            "per_call_byte_count": 18958,
+            "sha256": "3fdccead5b03d430d44f6a69fd23646e6913ff220ea169fb45733791e38b8180"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\b4_branch_multiprocessing.py": {
+            "bytes_hashed": 211896,
+            "calls": 27,
+            "per_call_byte_count": 7848,
+            "sha256": "b38e66792d7c845f978afc4fb54ac83393f34d6ddbf079a4c80394e9ccda9509"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\b4_runtime_seal.py": {
+            "bytes_hashed": 326673,
+            "calls": 27,
+            "per_call_byte_count": 12099,
+            "sha256": "cf4546b07a785ebb16f92a4e3a55dc84f8724ea9a4c1e4e7ad6adbb5119c8fed"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\baseline_controllers.py": {
+            "bytes_hashed": 190485,
+            "calls": 27,
+            "per_call_byte_count": 7055,
+            "sha256": "44e920bca8fe686ea9c43ce4d9fe4c48679365a6eed0f706b43de20af74b31e8"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\candidate_proposer.py": {
+            "bytes_hashed": 221184,
+            "calls": 27,
+            "per_call_byte_count": 8192,
+            "sha256": "b5d5fdc0e42f6f6646f3a88feaeaa16e22098b9c51cd8182c1f8d402c61d7b23"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\commodity.py": {
+            "bytes_hashed": 27054,
+            "calls": 27,
+            "per_call_byte_count": 1002,
+            "sha256": "20453ddde62f871fb685a45b89fea970e5aab60743e67bec238b6fb9e0c367ad"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\common.py": {
+            "bytes_hashed": 22491,
+            "calls": 27,
+            "per_call_byte_count": 833,
+            "sha256": "a29c1aa4e0ed92e88be4310ed6168be7d13714043f99a4c088283c2fd3e9e551"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\common_router.py": {
+            "bytes_hashed": 152496,
+            "calls": 27,
+            "per_call_byte_count": 5648,
+            "sha256": "4c6e613533eb8837477dac9115ee8760752a6d9cfafeb54cea15ed5d676341ce"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\controller_runner.py": {
+            "bytes_hashed": 235197,
+            "calls": 27,
+            "per_call_byte_count": 8711,
+            "sha256": "187658932a7935135e58e25140db9f32ef0c99c376a11bf2fc206d0198071185"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\ephemeris.py": {
+            "bytes_hashed": 97740,
+            "calls": 27,
+            "per_call_byte_count": 3620,
+            "sha256": "a0b078753268b7177fca2d1c5a4869f41ddbf385113c4d63bc9d85e3be69d2c2"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_drain_continuation.py": {
+            "bytes_hashed": 104463,
+            "calls": 27,
+            "per_call_byte_count": 3869,
+            "sha256": "1fa0dfb4373f1e181aab8b2866245f8aecbe7fd58fcb2c0b6d42a739c3da2ab0"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_progress.py": {
+            "bytes_hashed": 78462,
+            "calls": 27,
+            "per_call_byte_count": 2906,
+            "sha256": "0d00fa44e92de973704e1d4f5641ce80229e06f5fce8c8da7d80431a0a3f17ac"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\__init__.py": {
+            "bytes_hashed": 6021,
+            "calls": 27,
+            "per_call_byte_count": 223,
+            "sha256": "9e5ef9c66ce27a50988ad7188ba68874f42579babec9f82672438f1ebd68a4fd"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\batch_executor.py": {
+            "bytes_hashed": 327078,
+            "calls": 27,
+            "per_call_byte_count": 12114,
+            "sha256": "6ea97686bb406e434a08c14b8bd94c761ae02de0324bd5fb575ff219666a5d28"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\batch_rollout.py": {
+            "bytes_hashed": 307989,
+            "calls": 27,
+            "per_call_byte_count": 11407,
+            "sha256": "eb98a5780487884749e482dbf99fba0b878bf75fe5ffa33b55306da6cfb4a835"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\candidate_source.py": {
+            "bytes_hashed": 89505,
+            "calls": 27,
+            "per_call_byte_count": 3315,
+            "sha256": "0688aa1ba699589e404a9843b1607ce4e67cd0c957c3279e40135ad3d176e796"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\certified_topology.py": {
+            "bytes_hashed": 196911,
+            "calls": 27,
+            "per_call_byte_count": 7293,
+            "sha256": "ed7512455839240107c5e8abac2ec5e9d2388c31cc770076fb11fbcbcb2012a5"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\engineering_episode.py": {
+            "bytes_hashed": 21195,
+            "calls": 27,
+            "per_call_byte_count": 785,
+            "sha256": "7314e1b9114189d9f374125d1d897f1b4caab5473036f14e32186ae89c14b769"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\episode_execution.py": {
+            "bytes_hashed": 182952,
+            "calls": 27,
+            "per_call_byte_count": 6776,
+            "sha256": "5ebbd1f80c35e02437ab3e91781116f8fbc14bfa3a17463a242c869c3c41e41a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\epoch_validation.py": {
+            "bytes_hashed": 102897,
+            "calls": 27,
+            "per_call_byte_count": 3811,
+            "sha256": "0233173e953e9d72288ddacfe8d0cbfdeec3a85c43f8bfa7a4c4c95f45f25c4f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\evidence.py": {
+            "bytes_hashed": 221400,
+            "calls": 27,
+            "per_call_byte_count": 8200,
+            "sha256": "97fb6e55965f869a562e39a222c1d5a4ee6174a1642f81b48bccd5656f466b3c"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\joint_action.py": {
+            "bytes_hashed": 107541,
+            "calls": 27,
+            "per_call_byte_count": 3983,
+            "sha256": "b7ca2a17eebb4871b5bbd8a7248104770dde5862fa226c454a7a7b84e3150d57"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\joint_proposer.py": {
+            "bytes_hashed": 216459,
+            "calls": 27,
+            "per_call_byte_count": 8017,
+            "sha256": "aa92bca427d974bed4f8e148c55e52b18bce88dbf842436006c92a51a542915c"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\k0_audit_runner.py": {
+            "bytes_hashed": 545616,
+            "calls": 27,
+            "per_call_byte_count": 20208,
+            "sha256": "f52a08b92d2a6ae68a35fadd96175507af98fb0a7ff5edcdc2a1bd2e3fcfd7a5"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\k0_fixture.py": {
+            "bytes_hashed": 42579,
+            "calls": 27,
+            "per_call_byte_count": 1577,
+            "sha256": "1328a1d8ebf7b71ccfea26774aea0b99e449c734dcd19eede21787e3beb80a08"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\k0_independent_review.py": {
+            "bytes_hashed": 312417,
+            "calls": 27,
+            "per_call_byte_count": 11571,
+            "sha256": "ac3366843bfbcc23ee8966a3aa77ff61729dcd05fbf05790b61e6a7ce506012c"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\k0_ledger.py": {
+            "bytes_hashed": 396873,
+            "calls": 27,
+            "per_call_byte_count": 14699,
+            "sha256": "1ca9cb13be31d7c4de434620029613c491a562c8e77b40f951361c29f2aeafd3"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\k0_snapshot.py": {
+            "bytes_hashed": 495045,
+            "calls": 27,
+            "per_call_byte_count": 18335,
+            "sha256": "872ccca998068c3a5502f420a895b807c94946a0a91782b99cd2d61f34b16ec8"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\k0_support.py": {
+            "bytes_hashed": 267543,
+            "calls": 27,
+            "per_call_byte_count": 9909,
+            "sha256": "e604e8ec4d47f878f701e920700925d08227d7fff5c2157324de42fcc9493fee"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\k1.py": {
+            "bytes_hashed": 65718,
+            "calls": 27,
+            "per_call_byte_count": 2434,
+            "sha256": "784686f5700cea1b6091c2282e3e3c519bebf83001429d399b13cebebad4b892"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\manifest_review.py": {
+            "bytes_hashed": 137025,
+            "calls": 27,
+            "per_call_byte_count": 5075,
+            "sha256": "14a13069512bfae099ee0fc0fd28f437f8c996ab7123c8f103d68a95c40ee218"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\matrix_execution.py": {
+            "bytes_hashed": 572238,
+            "calls": 27,
+            "per_call_byte_count": 21194,
+            "sha256": "1028603e9e146b50120f823fc48cd1bfe8075551b1627f165574d46132d6d98f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\natural_engine.py": {
+            "bytes_hashed": 9801,
+            "calls": 27,
+            "per_call_byte_count": 363,
+            "sha256": "8f0426beb49ae9b5e180075c328b16eb27f50462589752194cf2e488e0eecd76"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\paper_figures.py": {
+            "bytes_hashed": 185463,
+            "calls": 27,
+            "per_call_byte_count": 6869,
+            "sha256": "3bea15fc057e3747679a77b1c83dace7e8b42e39ebe35530d69a8e61597a245f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\physical_trial.py": {
+            "bytes_hashed": 25002,
+            "calls": 27,
+            "per_call_byte_count": 926,
+            "sha256": "11865ede467b8a1d99505d8f2db167ec7f1110926ce1f11d64604faf0bff42be"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\preflight.py": {
+            "bytes_hashed": 128358,
+            "calls": 27,
+            "per_call_byte_count": 4754,
+            "sha256": "6a233c2c3c4d7fb5009814509314b3a83edf0808ab5aeafb72f8d682911e064d"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\registered_runtime.py": {
+            "bytes_hashed": 233901,
+            "calls": 27,
+            "per_call_byte_count": 8663,
+            "sha256": "ede2747f04e45c4a9331b28024b7dda8a2797dd1b39324af0163e14636c77d04"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\result_analysis.py": {
+            "bytes_hashed": 205119,
+            "calls": 27,
+            "per_call_byte_count": 7597,
+            "sha256": "4b838fdd3045221060151e07489a1efc8cb97f80e1d727ce3c115ca1e8cc2ea7"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\search_policy_probe.py": {
+            "bytes_hashed": 405864,
+            "calls": 27,
+            "per_call_byte_count": 15032,
+            "sha256": "cf386dc85756a54bdb95a0cd05cd748f918b02f81bb90dfaffbcab0273bbbfc6"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\service_adapter.py": {
+            "bytes_hashed": 333612,
+            "calls": 27,
+            "per_call_byte_count": 12356,
+            "sha256": "f3bf80a7a21246e50d4c817f876a89ff5835ed0b5753369eb6d2920eca03e2ac"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\snapshot_controllers.py": {
+            "bytes_hashed": 154710,
+            "calls": 27,
+            "per_call_byte_count": 5730,
+            "sha256": "ce0fe43ae9acdc00ac789c2038d6e7f27298046ad4609939a26334d62169479e"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\source_diagnostics.py": {
+            "bytes_hashed": 94365,
+            "calls": 27,
+            "per_call_byte_count": 3495,
+            "sha256": "f551a6d33460763ac4bcbac32669daf39ec70b7ea1eba704db6d3afaf976d625"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\structural.py": {
+            "bytes_hashed": 306288,
+            "calls": 27,
+            "per_call_byte_count": 11344,
+            "sha256": "422049a2a1364b1fedc6f3b512c5c325ac78fb1475e515b3f960d1fa18a821bc"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\tiny_diagnostics.py": {
+            "bytes_hashed": 50436,
+            "calls": 27,
+            "per_call_byte_count": 1868,
+            "sha256": "df9c7f63d8ebee8ffc6a46b1a4ea34bd79427e94946e4bcd558db0b4258e964f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\tiny_oracle.py": {
+            "bytes_hashed": 99576,
+            "calls": 27,
+            "per_call_byte_count": 3688,
+            "sha256": "4e9d1760e244447da87267581f49a5f29a50ef5001f16c245bd102b9c472e1dc"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\forecast.py": {
+            "bytes_hashed": 67311,
+            "calls": 27,
+            "per_call_byte_count": 2493,
+            "sha256": "fd9c2c56a6abc789cbb1e5d2fa5e2d8dec12a3b7be9bc568d4518602dea77a27"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_c_reference_topology.py": {
+            "bytes_hashed": 164781,
+            "calls": 27,
+            "per_call_byte_count": 6103,
+            "sha256": "d371164b478bd942b33c23dd1c505146ea2a97145408de32bcd4ab92067e06ee"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_c_simplified_feasibility.py": {
+            "bytes_hashed": 75546,
+            "calls": 27,
+            "per_call_byte_count": 2798,
+            "sha256": "a194dc87ab8b6df15d15574f95a68588897f59dcd8779860e2bf652436311eac"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_c_terminal_geometry.py": {
+            "bytes_hashed": 171531,
+            "calls": 27,
+            "per_call_byte_count": 6353,
+            "sha256": "cf11dc19fac77fab583c7791e4b20e6c19da3a4a740bf7bab656ba5477085e04"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_c_transition_report.py": {
+            "bytes_hashed": 49221,
+            "calls": 27,
+            "per_call_byte_count": 1823,
+            "sha256": "003a5d76ffecb8bdde8e53df342d9baf2ed523d77451c31ccd914398b7051608"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_d2_fixtures.py": {
+            "bytes_hashed": 315333,
+            "calls": 27,
+            "per_call_byte_count": 11679,
+            "sha256": "a8d111d93916db6cd1cd708519f49cd37d6301fc90bcf0d501a06fc102bacaac"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_d_metrics.py": {
+            "bytes_hashed": 20061,
+            "calls": 27,
+            "per_call_byte_count": 743,
+            "sha256": "39829822e7454fb83617768046b3c0ec1adca3979cd8ab47cd3d3ce1375ff41e"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_d_scenarios.py": {
+            "bytes_hashed": 104976,
+            "calls": 27,
+            "per_call_byte_count": 3888,
+            "sha256": "e977d74b5286ab4ec938e289d671cb8c213a83d6c6208f2ed83b4ab78509e53a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_e1_experiments.py": {
+            "bytes_hashed": 527418,
+            "calls": 27,
+            "per_call_byte_count": 19534,
+            "sha256": "74c90dafe96d461b3cc58ad74a792cd897281012dda7a8a22e4a76d575a3755f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_e2_enumeration.py": {
+            "bytes_hashed": 369144,
+            "calls": 27,
+            "per_call_byte_count": 13672,
+            "sha256": "9eeb66e546544d526fc86aec765e4eb45cb8112d28fbdd55d5777a9a10647b32"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_e2_experiments.py": {
+            "bytes_hashed": 544725,
+            "calls": 27,
+            "per_call_byte_count": 20175,
+            "sha256": "710a89ed6a7916fbd246a58ece268334c6bafc73407403d8f2cac1b48cb5bb2c"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_e2_parallel.py": {
+            "bytes_hashed": 191592,
+            "calls": 27,
+            "per_call_byte_count": 7096,
+            "sha256": "55f810e982dd48f2af29f9388101b6ee8df20190e4cf85fe5fed2bd508979c66"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_f1_sanity.py": {
+            "bytes_hashed": 142938,
+            "calls": 27,
+            "per_call_byte_count": 5294,
+            "sha256": "3c2390a132256df15191ea1b081839511f48944c7c0b47cb531a80c99f1add4d"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_f1_scientific_sanity.py": {
+            "bytes_hashed": 198801,
+            "calls": 27,
+            "per_call_byte_count": 7363,
+            "sha256": "b220d3095c932c171047b85b69b649c36844dca4af0fa10b8152814f98c949fd"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_f2_sanity.py": {
+            "bytes_hashed": 120798,
+            "calls": 27,
+            "per_call_byte_count": 4474,
+            "sha256": "8e6fb8b8a9e49d3780cc5ed5fe39a92be42a5000901dbecb70a0f4a0c73cb545"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_f3_p1_evidence.py": {
+            "bytes_hashed": 239733,
+            "calls": 27,
+            "per_call_byte_count": 8879,
+            "sha256": "d5379c61f57db4876352a4db7f604b9ac3fd3df519a2f8d1367ca2da01d788ec"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_f3_p1_execution.py": {
+            "bytes_hashed": 982584,
+            "calls": 27,
+            "per_call_byte_count": 36392,
+            "sha256": "9b7353c5b838996fe4fb355cc32b157fa686ea417ffd6af397ff1a72fb3edba0"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\geometry_interface.py": {
+            "bytes_hashed": 169884,
+            "calls": 27,
+            "per_call_byte_count": 6292,
+            "sha256": "408144fdc1b6957fa4ab2f983f04f860a7c657ae8d1a9a2dd5f61028844b8473"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\in_flight.py": {
+            "bytes_hashed": 38421,
+            "calls": 27,
+            "per_call_byte_count": 1423,
+            "sha256": "5f15127b13e982df3098b72e10143c7456c756e91c7e151403d728bee6746289"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\load_aware_router.py": {
+            "bytes_hashed": 123714,
+            "calls": 27,
+            "per_call_byte_count": 4582,
+            "sha256": "adc3e5c345cce0e32cd6dc27bb03b0d7566ee41e7cfcad1d101bf45a0022d55e"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\load_normalization.py": {
+            "bytes_hashed": 135513,
+            "calls": 27,
+            "per_call_byte_count": 5019,
+            "sha256": "53dab95bef443f6abbed334635ab40e4581339d8d68c7f26f08192d2842a5ce2"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\mechanism_validation.py": {
+            "bytes_hashed": 340281,
+            "calls": 27,
+            "per_call_byte_count": 12603,
+            "sha256": "c14e7a3c8fa7644529851a4b8e2d5156f1edc4ce33fdff9b260fd9aceef799e5"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\network_service_engine.py": {
+            "bytes_hashed": 606798,
+            "calls": 27,
+            "per_call_byte_count": 22474,
+            "sha256": "177a23aab7944a52e4c5e8a2c0726c5b137ec4e2bc2e1e2623e1a827bc817f58"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\operational_policy.py": {
+            "bytes_hashed": 80514,
+            "calls": 27,
+            "per_call_byte_count": 2982,
+            "sha256": "e9afdd05bf02366bc2c0a75e0a060df851a61dfd3c3dbafbf1201f486d005f57"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\outage_metrics.py": {
+            "bytes_hashed": 99036,
+            "calls": 27,
+            "per_call_byte_count": 3668,
+            "sha256": "484dd14c5552e6a7b1b19e0321a46daa899cd04c1a1b00196455c831d6581b6a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\physical_feasibility.py": {
+            "bytes_hashed": 173421,
+            "calls": 27,
+            "per_call_byte_count": 6423,
+            "sha256": "a09d17f0b07c1b3bc0701c726bcda3372394c4cd588be3e6db5c4397c8454691"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\production_candidate_source.py": {
+            "bytes_hashed": 425034,
+            "calls": 27,
+            "per_call_byte_count": 15742,
+            "sha256": "16e70218cb5d097499a8728eba270085f1efb69b26a2349b717eb372dd21cf73"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\queue_state.py": {
+            "bytes_hashed": 35721,
+            "calls": 27,
+            "per_call_byte_count": 1323,
+            "sha256": "941c7ec67c8d94ac25ee41a4bfa3007f646180cd9d0b7273dd2b2abe68f3f88a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\reference_topology.py": {
+            "bytes_hashed": 225639,
+            "calls": 27,
+            "per_call_byte_count": 8357,
+            "sha256": "5dc58100c35dde7fdafd3f0274dc59e3efbff8bcc0787c01953af43503059d0f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\rollout_clone.py": {
+            "bytes_hashed": 33372,
+            "calls": 27,
+            "per_call_byte_count": 1236,
+            "sha256": "b1a25bc1413d0189c35eba763ef948878fa1d695004c3d368cdc61fa8572eebd"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\rollout_controller.py": {
+            "bytes_hashed": 309042,
+            "calls": 27,
+            "per_call_byte_count": 11446,
+            "sha256": "ac29e433aeb2c26008e6ecacd7a249d0598d3dff97ca26d55bc7d73bd09695c6"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\rollout_evaluator.py": {
+            "bytes_hashed": 218349,
+            "calls": 27,
+            "per_call_byte_count": 8087,
+            "sha256": "424e91dcf5e6e05cf0dfb9079ced72138e33dfd3581e218ee3b2c8d04b06dc71"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\scenario_selection.py": {
+            "bytes_hashed": 101196,
+            "calls": 27,
+            "per_call_byte_count": 3748,
+            "sha256": "642ab48cb7e8e903df8a8f548ee611f1db92580fc59345efd0df20a69fc338e9"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\scientific_controllers.py": {
+            "bytes_hashed": 134460,
+            "calls": 27,
+            "per_call_byte_count": 4980,
+            "sha256": "19726f56bb83c1c77073aac4618bbbe71733fdc9257b59dbf3ea905e6aaf3407"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\scientific_snapshot.py": {
+            "bytes_hashed": 267732,
+            "calls": 27,
+            "per_call_byte_count": 9916,
+            "sha256": "259d60e598ce1b4a0beb07e8b7ae821a5e53c3482929bd80d7d94fa2e45cd0dd"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\service_scheduler.py": {
+            "bytes_hashed": 34830,
+            "calls": 27,
+            "per_call_byte_count": 1290,
+            "sha256": "b014a616e7025fa7229dc9f3acbbd7538b862e4d33a0aa602b941bb2616746b7"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\sgp4_geometry.py": {
+            "bytes_hashed": 122877,
+            "calls": 27,
+            "per_call_byte_count": 4551,
+            "sha256": "de9bcea3069b9a4640f5791f905fb16d30cad968142fbe3d44b33bc43c91abd5"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\sgp4_model.py": {
+            "bytes_hashed": 100872,
+            "calls": 27,
+            "per_call_byte_count": 3736,
+            "sha256": "35cb1c90e57502fad6e4dcd6087cc771682bd691b223c1e8bf0e220ae73aca63"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\terminal_executor.py": {
+            "bytes_hashed": 671787,
+            "calls": 27,
+            "per_call_byte_count": 24881,
+            "sha256": "80634fd278655ca6c50a758afe5344f025154879ac71ba5b7dc455a210782583"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\terminal_pair_intervals.py": {
+            "bytes_hashed": 263601,
+            "calls": 27,
+            "per_call_byte_count": 9763,
+            "sha256": "8647a9ecf8ce1d2aa4ab4d67d00fb1ebfd93398531f3248012026427f776db33"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\traffic_trace.py": {
+            "bytes_hashed": 112293,
+            "calls": 27,
+            "per_call_byte_count": 4159,
+            "sha256": "7d4e9a447e228678303a1686325d9ffd5e73e999de9b95933f4d4cfe3f1f413f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\transition_profiler.py": {
+            "bytes_hashed": 206685,
+            "calls": 27,
+            "per_call_byte_count": 7655,
+            "sha256": "e6a21afdfa1d339ed8eaac838ad9d3e49d7ab14d62651729c2da580b814c54bf"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\transition_service_orchestrator.py": {
+            "bytes_hashed": 1055133,
+            "calls": 27,
+            "per_call_byte_count": 39079,
+            "sha256": "9ed1ecf9b8c5cde21fd5a71113fdd45e2d69a20bb808689ccf40a9392ce172e7"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\z_moderate_construction.py": {
+            "bytes_hashed": 325350,
+            "calls": 27,
+            "per_call_byte_count": 12050,
+            "sha256": "0b435caa9b7f0192fea6377d26ff6262c87b822c5e01541ccec388b99bf5fc63"
+          }
+        },
+        "actual_reads": 3114,
+        "removed_delegated_bytes": 5839288,
+        "removed_delegated_returns": 728
+      },
+      "root": {
+        "actual_bytes_hashed": 7247700,
+        "actual_files": {
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\configs\\hardware_gate_c_simplified_v1.json": {
+            "bytes_hashed": 2384,
+            "calls": 2,
+            "per_call_byte_count": 1192,
+            "sha256": "66ca6881b739aad87ccd850a89f0dcddb9bb35684f48fcdee2e0aece33fadd19"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\data\\raw\\sgp4_x720\\constellation.tle": {
+            "bytes_hashed": 214876,
+            "calls": 2,
+            "per_call_byte_count": 107438,
+            "sha256": "6ffcbc0d57c54e54fc274acb518e1436eaf4d70df56570b862ba42fe32345050"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\data\\raw\\sgp4_x720\\hashes.json": {
+            "bytes_hashed": 366,
+            "calls": 2,
+            "per_call_byte_count": 183,
+            "sha256": "b0dad2adfb3cbacbf0e03a4fd2f1877e64478965f86b95ee40770cdee9934fbc"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\data\\raw\\sgp4_x720\\manifest.json": {
+            "bytes_hashed": 1699536,
+            "calls": 2,
+            "per_call_byte_count": 849768,
+            "sha256": "61a42d76f4fe25d2e613435f9a26fc092a5943a177675f1081ff2d52c2ff4b7d"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\outputs\\gate_c_simplified_20260922T064019_313843Z\\terminal_pair_intervals.jsonl": {
+            "bytes_hashed": 1433868,
+            "calls": 2,
+            "per_call_byte_count": 716934,
+            "sha256": "c4f166e05319f7c9a50459f853c5d68f3b67816452c3a85acabd8020e9be0a0a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\outputs\\gate_c_simplified_20260922T064019_313843Z\\z_ref.json": {
+            "bytes_hashed": 18192,
+            "calls": 2,
+            "per_call_byte_count": 9096,
+            "sha256": "59644ec7acc56f6a2efe098347874a6caf2eaf8540008c0bcb2a6509b37efa34"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0004\\implementation_manifest.json": {
+            "bytes_hashed": 76172,
+            "calls": 4,
+            "per_call_byte_count": 19043,
+            "sha256": "227043a6bcf318846bbc2e854130613b49082ef6a7e17f3913160f24f40456ad"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0004\\prepare_candidate.py": {
+            "bytes_hashed": 8889,
+            "calls": 1,
+            "per_call_byte_count": 8889,
+            "sha256": "2586dd4d284b9cc04159f5de26f0f872b96be45924ba8e768fbc50dc2672bcf1"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0004\\run_n1a_acceptance.py": {
+            "bytes_hashed": 2744,
+            "calls": 1,
+            "per_call_byte_count": 2744,
+            "sha256": "e509db002f8751dc294b3e5f9a28f65b5747de381bf1e3e28638ba852369a260"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0004\\run_regression.py": {
+            "bytes_hashed": 3124,
+            "calls": 2,
+            "per_call_byte_count": 1562,
+            "sha256": "2a66d6c4477fe93f4ff156755e5182dc5fa93de9ac8329f3fdc1228be2a587f1"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0005\\check_fifo_semantics.py": {
+            "bytes_hashed": 3434,
+            "calls": 1,
+            "per_call_byte_count": 3434,
+            "sha256": "53d952e0f22cffe9e0e1f2154c76ca5052caef454c9c122392251ceccf5793b2"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0005\\fifo_static_report.json": {
+            "bytes_hashed": 1238,
+            "calls": 1,
+            "per_call_byte_count": 1238,
+            "sha256": "d20a4943245ff9270a280cd6470a4fad057c0d40eba78c040e3d92975b5567e5"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0005\\implementation_manifest.json": {
+            "bytes_hashed": 63201,
+            "calls": 3,
+            "per_call_byte_count": 21067,
+            "sha256": "c27ac2866d4bfd12a8384bd91a990f841daad45a7079230301d1aaef4436031a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0005\\prepare_candidate.py": {
+            "bytes_hashed": 4284,
+            "calls": 1,
+            "per_call_byte_count": 4284,
+            "sha256": "817856e5bf0eb2677964afaaf09ddf7beba80bfd20e22d9e027891081886c6e9"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0005\\run_acceptance.py": {
+            "bytes_hashed": 3283,
+            "calls": 1,
+            "per_call_byte_count": 3283,
+            "sha256": "7ab1a2b79b346b0a7ba1470cb55ee963d38917403a7f61efade6aa249275065d"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0006\\implementation_manifest.json": {
+            "bytes_hashed": 46330,
+            "calls": 2,
+            "per_call_byte_count": 23165,
+            "sha256": "34e3412da99a96c58fe603af5de69777d69e0e2bc292fba4cbd3cfca8acb0b4a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0006\\prepare_candidate.py": {
+            "bytes_hashed": 3973,
+            "calls": 1,
+            "per_call_byte_count": 3973,
+            "sha256": "f69883fb0ad13a070d72dd929ef66da7bd05ef0bafa9658970b63d9c3eb4824b"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0006\\run_acceptance.py": {
+            "bytes_hashed": 3985,
+            "calls": 1,
+            "per_call_byte_count": 3985,
+            "sha256": "775f2635ad920cec7c44bba800e5735fd3d537bced7590c714850390b0cd0e1a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0006\\run_historical_regression.py": {
+            "bytes_hashed": 1626,
+            "calls": 1,
+            "per_call_byte_count": 1626,
+            "sha256": "7c81a55b9a6d11fbb003848a23869e798506656121a07cfa11d39454738c6aa5"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0007\\implementation_manifest_attempt02.json": {
+            "bytes_hashed": 25957,
+            "calls": 1,
+            "per_call_byte_count": 25957,
+            "sha256": "dbc7e0d54d6d9bb864ec216a0b7c6cd1b86ec6353ed3ab41a3c3c64b471b9129"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\cost_measurement.py": {
+            "bytes_hashed": 7398,
+            "calls": 1,
+            "per_call_byte_count": 7398,
+            "sha256": "55ae607bdb14589f99977bd5dd99016e6d95ecaa380e9cc1d0eedcc3ebdbe611"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\manifest_final.json": {
+            "bytes_hashed": 24630,
+            "calls": 1,
+            "per_call_byte_count": 24630,
+            "sha256": "8d15d8492b4662ad554b4cc25b27d4b3954fcbf340f9b38b5468de5bcfa17ebf"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\pilot_review_3s\\MPC_INTERFACE_GAP_AUDIT.md": {
+            "bytes_hashed": 1478,
+            "calls": 1,
+            "per_call_byte_count": 1478,
+            "sha256": "724bdf79b5c0947e6b746ea53467b7779cad668701e92eaede7badfd4f47274b"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\pilot_review_3s\\PILOT_ACCEPTANCE_CRITERIA.md": {
+            "bytes_hashed": 1564,
+            "calls": 1,
+            "per_call_byte_count": 1564,
+            "sha256": "291a989b88ed22368f71bf6353789f37204308e4cf9d3d7ad74a53748380491b"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\pilot_review_3s\\PILOT_PARAMETER_MANIFEST_DRAFT.md": {
+            "bytes_hashed": 1380,
+            "calls": 1,
+            "per_call_byte_count": 1380,
+            "sha256": "1a1028c6f4799bb75b648309b56cfb354f33afb94f76bfc950f0ca7d35aa3c0e"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\pilot_review_3s\\PILOT_SCENARIO_MATRIX.md": {
+            "bytes_hashed": 1618,
+            "calls": 1,
+            "per_call_byte_count": 1618,
+            "sha256": "69a4795e57c72b5d1b2322e21fa32edf535eea02ab5238846ad08a087dc13bbc"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\seal_revision.py": {
+            "bytes_hashed": 9952,
+            "calls": 1,
+            "per_call_byte_count": 9952,
+            "sha256": "f7fbec35fa13b225c2c9a854b0cf5aa4381532ebfc64aca9d1e610bb415fadf7"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\workflow.py": {
+            "bytes_hashed": 17376,
+            "calls": 1,
+            "per_call_byte_count": 17376,
+            "sha256": "0febc2ac9d4d8eca0c10996a525cf6d1091c16f70d1bff4ecdf07c43094a6534"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\baselines\\legacy_baseline_20261010T030541_607456Z\\seal.json": {
+            "bytes_hashed": 2624,
+            "calls": 4,
+            "per_call_byte_count": 656,
+            "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\configs\\n1b_fifo_semantics_v1.json": {
+            "bytes_hashed": 943,
+            "calls": 1,
+            "per_call_byte_count": 943,
+            "sha256": "a9f3d047acb00579a47e26f0562bc911edc96d536f53c507dcd0315b002c894e"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\configs\\n2_action_semantics_v1.json": {
+            "bytes_hashed": 713,
+            "calls": 1,
+            "per_call_byte_count": 713,
+            "sha256": "5d8f82ad814eedc4ab1b88635bee769bb0928cb74f70ba21d6776410f9dd4041"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\configs\\n4_p0_pilot_semantics_v1.json": {
+            "bytes_hashed": 1231,
+            "calls": 1,
+            "per_call_byte_count": 1231,
+            "sha256": "ebbca01b0cf28a94824af0cd31598ca972cbacb2561082a70bd033412a736ebe"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\configs\\research_v1_DRAFT.json": {
+            "bytes_hashed": 6252,
+            "calls": 1,
+            "per_call_byte_count": 6252,
+            "sha256": "04eabd77ddb4db235dc30c7d66f45a0d3dcd78eab174825e3c42903a81f87d2a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N1B_NODE_LOCAL_FIFO_SEMANTICS_CN.md": {
+            "bytes_hashed": 4468,
+            "calls": 1,
+            "per_call_byte_count": 4468,
+            "sha256": "fc5b0daf7562a3cae40c3328484adce2dea01fe6d42ea3ea81c4a67c4d3eafd4"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N1B_NUMERICAL_PRECISION_CN.md": {
+            "bytes_hashed": 4094,
+            "calls": 1,
+            "per_call_byte_count": 4094,
+            "sha256": "1e15d19d0ec8dbdddea72ca9f8e12e0c54aba3aae39e86f80301ad056ed8aec7"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N2_ATOMIC_TOPOLOGY_ACTIONS_CN.md": {
+            "bytes_hashed": 4640,
+            "calls": 1,
+            "per_call_byte_count": 4640,
+            "sha256": "9e7525b0e831f4400dc3459be8ae8838db8a942d87f0fb313cb11ef22159624b"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N4_P0_CAUSAL_ROOT_SCORING_CN.md": {
+            "bytes_hashed": 1391,
+            "calls": 1,
+            "per_call_byte_count": 1391,
+            "sha256": "c62bebcb2a873a3f6d36b6d5b80cf368b6c3f65a43ccb2ee3c49a8b500706025"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\research_contract_v1_DRAFT_CN.md": {
+            "bytes_hashed": 9599,
+            "calls": 1,
+            "per_call_byte_count": 9599,
+            "sha256": "f8f3e05bd81b144d4ac66cf74c307f174fd1a7a591099c76fd673ed71c2c2f32"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\revisions\\0003\\record.json": {
+            "bytes_hashed": 5889,
+            "calls": 1,
+            "per_call_byte_count": 5889,
+            "sha256": "7c9fa913a72ab740dfff233513c766ded57326fad2906c259d8ba56a3998baeb"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\revisions\\0004\\record.json": {
+            "bytes_hashed": 8863,
+            "calls": 1,
+            "per_call_byte_count": 8863,
+            "sha256": "815352309856b9e8aa2c5ffbb4e233dd412b6bc7aa3fd2365ea03e17230411f9"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\revisions\\0005\\record.json": {
+            "bytes_hashed": 9276,
+            "calls": 1,
+            "per_call_byte_count": 9276,
+            "sha256": "c2567b66fe880035853aba2b81463ece42443973d5b5178ae0b28e77a6c44769"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\revisions\\0007\\record.json": {
+            "bytes_hashed": 14325,
+            "calls": 1,
+            "per_call_byte_count": 14325,
+            "sha256": "f58cc5eb037eaf6ee804c9aa1c5ec54f38894d00ca0d715f8b7baae8a47e06db"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\revisions\\0009\\record.json": {
+            "bytes_hashed": 8162,
+            "calls": 1,
+            "per_call_byte_count": 8162,
+            "sha256": "bd54f8efb78375acca995b8ed43f5ccbfb4be80228d46eb2ca2ab5e954d86342"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\__init__.py": {
+            "bytes_hashed": 296,
+            "calls": 4,
+            "per_call_byte_count": 74,
+            "sha256": "0b3fe3c9413a7b69e3571423d2e97aa9c41569db15c225d19f9e034909bb8260"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\bindings.py": {
+            "bytes_hashed": 12456,
+            "calls": 4,
+            "per_call_byte_count": 3114,
+            "sha256": "f6b13808ae4273f1bfb48c21865f74bf6b1ad1cb5a0061bc338c74925f750d2c"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n1a.py": {
+            "bytes_hashed": 70920,
+            "calls": 4,
+            "per_call_byte_count": 17730,
+            "sha256": "06287787a8cf7045e7e810a46e0c45781635fad98e02dcba3ef5d90c48d5456f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n1b_evaluator.py": {
+            "bytes_hashed": 18390,
+            "calls": 3,
+            "per_call_byte_count": 6130,
+            "sha256": "1fd0e7d8eef20c6936b4f14c586e08f7cd72dfb92d7d71a92d287b3173acf487"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n1b_fifo.py": {
+            "bytes_hashed": 51486,
+            "calls": 3,
+            "per_call_byte_count": 17162,
+            "sha256": "9fb1d868d67227aff482df004fc9571c47bc21bbdab08a9659d31635b27c04bf"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n1b_observer.py": {
+            "bytes_hashed": 6732,
+            "calls": 3,
+            "per_call_byte_count": 2244,
+            "sha256": "7bccef3b17b90ef395b616bfb92ef9e18ebfe5829f0855c2dcab277d0dff0ec6"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n2_actions.py": {
+            "bytes_hashed": 11640,
+            "calls": 2,
+            "per_call_byte_count": 5820,
+            "sha256": "cf5766703299ef359145e611931eb8342ba95f9e9fb6705fd400cce0b012bfbb"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n2_binding.py": {
+            "bytes_hashed": 3942,
+            "calls": 2,
+            "per_call_byte_count": 1971,
+            "sha256": "dd454a57bf7f13338885e9ececd1852e41105700129a2686db95f34954a634e6"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n2_candidates.py": {
+            "bytes_hashed": 4918,
+            "calls": 2,
+            "per_call_byte_count": 2459,
+            "sha256": "1d6b6ba8ba8ffe33645ed6f25de4808f2720f8c7fdbf2211f0cdbc6365dfdcfb"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n2_controller.py": {
+            "bytes_hashed": 15894,
+            "calls": 2,
+            "per_call_byte_count": 7947,
+            "sha256": "0051daeb9ce50e9e1395fa10f52b67a5f880830bbee28152cd365bd166a3a2a8"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n2_physical.py": {
+            "bytes_hashed": 5394,
+            "calls": 2,
+            "per_call_byte_count": 2697,
+            "sha256": "dd58fad339d080c27aa204e34893b58a7829199d0e1e24f89d0ab411df2fe8bf"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n3_baselines.py": {
+            "bytes_hashed": 14038,
+            "calls": 1,
+            "per_call_byte_count": 14038,
+            "sha256": "513dc16be7a6d84817f4001eb6cefe01c54011892c923718f5ad35351a3c420b"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n4_p0.py": {
+            "bytes_hashed": 13959,
+            "calls": 1,
+            "per_call_byte_count": 13959,
+            "sha256": "2b7420962fab6db5a663b27e978b417f998ee267d930c5566983e133695c9d0b"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\schemas\\n1a_engineering_result_v1.schema.json": {
+            "bytes_hashed": 30936,
+            "calls": 3,
+            "per_call_byte_count": 10312,
+            "sha256": "1774eea613b24b59115017ec7d004409612ce7b8c1164b32bca4f9997675b6c0"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\schemas\\n1b_engineering_result_v1.schema.json": {
+            "bytes_hashed": 34556,
+            "calls": 2,
+            "per_call_byte_count": 17278,
+            "sha256": "8cb3fc94eacb770492f6d07126337ea2be5bd34d935b69fced82b18b92ffac67"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\schemas\\n2_engineering_result_v1.schema.json": {
+            "bytes_hashed": 23365,
+            "calls": 1,
+            "per_call_byte_count": 23365,
+            "sha256": "239f96fe256bfde92d9e9a88f2180bb7280949aab144ccbf180b0a8456ee7325"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\tests\\test_n1a.py": {
+            "bytes_hashed": 64504,
+            "calls": 4,
+            "per_call_byte_count": 16126,
+            "sha256": "5ec2cc4f92761ebf945fac49a831224487f6cac356cf8fe013214af6e6093858"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\tests\\test_n1b_fifo.py": {
+            "bytes_hashed": 47025,
+            "calls": 3,
+            "per_call_byte_count": 15675,
+            "sha256": "d8339405ab52787ff8c2b897e96d3f309a5a7dfc2cb5939e65b643e5eee80117"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\tests\\test_n2_actions.py": {
+            "bytes_hashed": 41736,
+            "calls": 2,
+            "per_call_byte_count": 20868,
+            "sha256": "f47c5aff515c87b7803ee7ab6dc063bcb0b81cde18cceb4c64b3ad13d3cc0185"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\tests\\test_n3_baselines.py": {
+            "bytes_hashed": 23062,
+            "calls": 1,
+            "per_call_byte_count": 23062,
+            "sha256": "d0fd21ea7a3e4c6b7db0f2ac858aba5b40097ee60e1e31e865e6761997a251a3"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\tests\\test_n4_p0.py": {
+            "bytes_hashed": 15157,
+            "calls": 1,
+            "per_call_byte_count": 15157,
+            "sha256": "d7683bc9b82d7bcd3a4acd3a6e61113292d9dbe0de10497f9262991415807025"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\tools\\version_control.py": {
+            "bytes_hashed": 43190,
+            "calls": 2,
+            "per_call_byte_count": 21595,
+            "sha256": "c740401a75c2b43063957db3ef9dc4575098f3f7bb4bfadfd3f16d40739e04b5"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\version_record.json": {
+            "bytes_hashed": 6220,
+            "calls": 4,
+            "per_call_byte_count": 1555,
+            "sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\__init__.py": {
+            "bytes_hashed": 252,
+            "calls": 4,
+            "per_call_byte_count": 63,
+            "sha256": "6b2df750dfbdd0115434c4c1efb9265dcc3d601532a14a409e6400b5fc310f5b"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\absolute_time_regression.py": {
+            "bytes_hashed": 75832,
+            "calls": 4,
+            "per_call_byte_count": 18958,
+            "sha256": "3fdccead5b03d430d44f6a69fd23646e6913ff220ea169fb45733791e38b8180"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\b4_branch_multiprocessing.py": {
+            "bytes_hashed": 31392,
+            "calls": 4,
+            "per_call_byte_count": 7848,
+            "sha256": "b38e66792d7c845f978afc4fb54ac83393f34d6ddbf079a4c80394e9ccda9509"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\b4_runtime_seal.py": {
+            "bytes_hashed": 48396,
+            "calls": 4,
+            "per_call_byte_count": 12099,
+            "sha256": "cf4546b07a785ebb16f92a4e3a55dc84f8724ea9a4c1e4e7ad6adbb5119c8fed"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\baseline_controllers.py": {
+            "bytes_hashed": 28220,
+            "calls": 4,
+            "per_call_byte_count": 7055,
+            "sha256": "44e920bca8fe686ea9c43ce4d9fe4c48679365a6eed0f706b43de20af74b31e8"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\candidate_proposer.py": {
+            "bytes_hashed": 32768,
+            "calls": 4,
+            "per_call_byte_count": 8192,
+            "sha256": "b5d5fdc0e42f6f6646f3a88feaeaa16e22098b9c51cd8182c1f8d402c61d7b23"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\commodity.py": {
+            "bytes_hashed": 4008,
+            "calls": 4,
+            "per_call_byte_count": 1002,
+            "sha256": "20453ddde62f871fb685a45b89fea970e5aab60743e67bec238b6fb9e0c367ad"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\common.py": {
+            "bytes_hashed": 3332,
+            "calls": 4,
+            "per_call_byte_count": 833,
+            "sha256": "a29c1aa4e0ed92e88be4310ed6168be7d13714043f99a4c088283c2fd3e9e551"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\common_router.py": {
+            "bytes_hashed": 22592,
+            "calls": 4,
+            "per_call_byte_count": 5648,
+            "sha256": "4c6e613533eb8837477dac9115ee8760752a6d9cfafeb54cea15ed5d676341ce"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\controller_runner.py": {
+            "bytes_hashed": 34844,
+            "calls": 4,
+            "per_call_byte_count": 8711,
+            "sha256": "187658932a7935135e58e25140db9f32ef0c99c376a11bf2fc206d0198071185"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\ephemeris.py": {
+            "bytes_hashed": 14480,
+            "calls": 4,
+            "per_call_byte_count": 3620,
+            "sha256": "a0b078753268b7177fca2d1c5a4869f41ddbf385113c4d63bc9d85e3be69d2c2"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_drain_continuation.py": {
+            "bytes_hashed": 15476,
+            "calls": 4,
+            "per_call_byte_count": 3869,
+            "sha256": "1fa0dfb4373f1e181aab8b2866245f8aecbe7fd58fcb2c0b6d42a739c3da2ab0"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_progress.py": {
+            "bytes_hashed": 11624,
+            "calls": 4,
+            "per_call_byte_count": 2906,
+            "sha256": "0d00fa44e92de973704e1d4f5641ce80229e06f5fce8c8da7d80431a0a3f17ac"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\__init__.py": {
+            "bytes_hashed": 892,
+            "calls": 4,
+            "per_call_byte_count": 223,
+            "sha256": "9e5ef9c66ce27a50988ad7188ba68874f42579babec9f82672438f1ebd68a4fd"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\batch_executor.py": {
+            "bytes_hashed": 48456,
+            "calls": 4,
+            "per_call_byte_count": 12114,
+            "sha256": "6ea97686bb406e434a08c14b8bd94c761ae02de0324bd5fb575ff219666a5d28"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\batch_rollout.py": {
+            "bytes_hashed": 45628,
+            "calls": 4,
+            "per_call_byte_count": 11407,
+            "sha256": "eb98a5780487884749e482dbf99fba0b878bf75fe5ffa33b55306da6cfb4a835"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\candidate_source.py": {
+            "bytes_hashed": 13260,
+            "calls": 4,
+            "per_call_byte_count": 3315,
+            "sha256": "0688aa1ba699589e404a9843b1607ce4e67cd0c957c3279e40135ad3d176e796"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\certified_topology.py": {
+            "bytes_hashed": 29172,
+            "calls": 4,
+            "per_call_byte_count": 7293,
+            "sha256": "ed7512455839240107c5e8abac2ec5e9d2388c31cc770076fb11fbcbcb2012a5"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\engineering_episode.py": {
+            "bytes_hashed": 3140,
+            "calls": 4,
+            "per_call_byte_count": 785,
+            "sha256": "7314e1b9114189d9f374125d1d897f1b4caab5473036f14e32186ae89c14b769"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\episode_execution.py": {
+            "bytes_hashed": 27104,
+            "calls": 4,
+            "per_call_byte_count": 6776,
+            "sha256": "5ebbd1f80c35e02437ab3e91781116f8fbc14bfa3a17463a242c869c3c41e41a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\epoch_validation.py": {
+            "bytes_hashed": 15244,
+            "calls": 4,
+            "per_call_byte_count": 3811,
+            "sha256": "0233173e953e9d72288ddacfe8d0cbfdeec3a85c43f8bfa7a4c4c95f45f25c4f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\evidence.py": {
+            "bytes_hashed": 32800,
+            "calls": 4,
+            "per_call_byte_count": 8200,
+            "sha256": "97fb6e55965f869a562e39a222c1d5a4ee6174a1642f81b48bccd5656f466b3c"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\joint_action.py": {
+            "bytes_hashed": 15932,
+            "calls": 4,
+            "per_call_byte_count": 3983,
+            "sha256": "b7ca2a17eebb4871b5bbd8a7248104770dde5862fa226c454a7a7b84e3150d57"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\joint_proposer.py": {
+            "bytes_hashed": 32068,
+            "calls": 4,
+            "per_call_byte_count": 8017,
+            "sha256": "aa92bca427d974bed4f8e148c55e52b18bce88dbf842436006c92a51a542915c"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\k0_audit_runner.py": {
+            "bytes_hashed": 80832,
+            "calls": 4,
+            "per_call_byte_count": 20208,
+            "sha256": "f52a08b92d2a6ae68a35fadd96175507af98fb0a7ff5edcdc2a1bd2e3fcfd7a5"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\k0_fixture.py": {
+            "bytes_hashed": 6308,
+            "calls": 4,
+            "per_call_byte_count": 1577,
+            "sha256": "1328a1d8ebf7b71ccfea26774aea0b99e449c734dcd19eede21787e3beb80a08"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\k0_independent_review.py": {
+            "bytes_hashed": 46284,
+            "calls": 4,
+            "per_call_byte_count": 11571,
+            "sha256": "ac3366843bfbcc23ee8966a3aa77ff61729dcd05fbf05790b61e6a7ce506012c"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\k0_ledger.py": {
+            "bytes_hashed": 58796,
+            "calls": 4,
+            "per_call_byte_count": 14699,
+            "sha256": "1ca9cb13be31d7c4de434620029613c491a562c8e77b40f951361c29f2aeafd3"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\k0_snapshot.py": {
+            "bytes_hashed": 73340,
+            "calls": 4,
+            "per_call_byte_count": 18335,
+            "sha256": "872ccca998068c3a5502f420a895b807c94946a0a91782b99cd2d61f34b16ec8"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\k0_support.py": {
+            "bytes_hashed": 39636,
+            "calls": 4,
+            "per_call_byte_count": 9909,
+            "sha256": "e604e8ec4d47f878f701e920700925d08227d7fff5c2157324de42fcc9493fee"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\k1.py": {
+            "bytes_hashed": 9736,
+            "calls": 4,
+            "per_call_byte_count": 2434,
+            "sha256": "784686f5700cea1b6091c2282e3e3c519bebf83001429d399b13cebebad4b892"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\manifest_review.py": {
+            "bytes_hashed": 20300,
+            "calls": 4,
+            "per_call_byte_count": 5075,
+            "sha256": "14a13069512bfae099ee0fc0fd28f437f8c996ab7123c8f103d68a95c40ee218"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\matrix_execution.py": {
+            "bytes_hashed": 84776,
+            "calls": 4,
+            "per_call_byte_count": 21194,
+            "sha256": "1028603e9e146b50120f823fc48cd1bfe8075551b1627f165574d46132d6d98f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\natural_engine.py": {
+            "bytes_hashed": 1452,
+            "calls": 4,
+            "per_call_byte_count": 363,
+            "sha256": "8f0426beb49ae9b5e180075c328b16eb27f50462589752194cf2e488e0eecd76"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\paper_figures.py": {
+            "bytes_hashed": 27476,
+            "calls": 4,
+            "per_call_byte_count": 6869,
+            "sha256": "3bea15fc057e3747679a77b1c83dace7e8b42e39ebe35530d69a8e61597a245f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\physical_trial.py": {
+            "bytes_hashed": 3704,
+            "calls": 4,
+            "per_call_byte_count": 926,
+            "sha256": "11865ede467b8a1d99505d8f2db167ec7f1110926ce1f11d64604faf0bff42be"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\preflight.py": {
+            "bytes_hashed": 19016,
+            "calls": 4,
+            "per_call_byte_count": 4754,
+            "sha256": "6a233c2c3c4d7fb5009814509314b3a83edf0808ab5aeafb72f8d682911e064d"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\registered_runtime.py": {
+            "bytes_hashed": 34652,
+            "calls": 4,
+            "per_call_byte_count": 8663,
+            "sha256": "ede2747f04e45c4a9331b28024b7dda8a2797dd1b39324af0163e14636c77d04"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\result_analysis.py": {
+            "bytes_hashed": 30388,
+            "calls": 4,
+            "per_call_byte_count": 7597,
+            "sha256": "4b838fdd3045221060151e07489a1efc8cb97f80e1d727ce3c115ca1e8cc2ea7"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\search_policy_probe.py": {
+            "bytes_hashed": 60128,
+            "calls": 4,
+            "per_call_byte_count": 15032,
+            "sha256": "cf386dc85756a54bdb95a0cd05cd748f918b02f81bb90dfaffbcab0273bbbfc6"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\service_adapter.py": {
+            "bytes_hashed": 49424,
+            "calls": 4,
+            "per_call_byte_count": 12356,
+            "sha256": "f3bf80a7a21246e50d4c817f876a89ff5835ed0b5753369eb6d2920eca03e2ac"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\snapshot_controllers.py": {
+            "bytes_hashed": 22920,
+            "calls": 4,
+            "per_call_byte_count": 5730,
+            "sha256": "ce0fe43ae9acdc00ac789c2038d6e7f27298046ad4609939a26334d62169479e"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\source_diagnostics.py": {
+            "bytes_hashed": 13980,
+            "calls": 4,
+            "per_call_byte_count": 3495,
+            "sha256": "f551a6d33460763ac4bcbac32669daf39ec70b7ea1eba704db6d3afaf976d625"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\structural.py": {
+            "bytes_hashed": 45376,
+            "calls": 4,
+            "per_call_byte_count": 11344,
+            "sha256": "422049a2a1364b1fedc6f3b512c5c325ac78fb1475e515b3f960d1fa18a821bc"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\tiny_diagnostics.py": {
+            "bytes_hashed": 7472,
+            "calls": 4,
+            "per_call_byte_count": 1868,
+            "sha256": "df9c7f63d8ebee8ffc6a46b1a4ea34bd79427e94946e4bcd558db0b4258e964f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\f3_v2\\tiny_oracle.py": {
+            "bytes_hashed": 14752,
+            "calls": 4,
+            "per_call_byte_count": 3688,
+            "sha256": "4e9d1760e244447da87267581f49a5f29a50ef5001f16c245bd102b9c472e1dc"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\forecast.py": {
+            "bytes_hashed": 9972,
+            "calls": 4,
+            "per_call_byte_count": 2493,
+            "sha256": "fd9c2c56a6abc789cbb1e5d2fa5e2d8dec12a3b7be9bc568d4518602dea77a27"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_c_reference_topology.py": {
+            "bytes_hashed": 24412,
+            "calls": 4,
+            "per_call_byte_count": 6103,
+            "sha256": "d371164b478bd942b33c23dd1c505146ea2a97145408de32bcd4ab92067e06ee"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_c_simplified_feasibility.py": {
+            "bytes_hashed": 11192,
+            "calls": 4,
+            "per_call_byte_count": 2798,
+            "sha256": "a194dc87ab8b6df15d15574f95a68588897f59dcd8779860e2bf652436311eac"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_c_terminal_geometry.py": {
+            "bytes_hashed": 25412,
+            "calls": 4,
+            "per_call_byte_count": 6353,
+            "sha256": "cf11dc19fac77fab583c7791e4b20e6c19da3a4a740bf7bab656ba5477085e04"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_c_transition_report.py": {
+            "bytes_hashed": 7292,
+            "calls": 4,
+            "per_call_byte_count": 1823,
+            "sha256": "003a5d76ffecb8bdde8e53df342d9baf2ed523d77451c31ccd914398b7051608"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_d2_fixtures.py": {
+            "bytes_hashed": 46716,
+            "calls": 4,
+            "per_call_byte_count": 11679,
+            "sha256": "a8d111d93916db6cd1cd708519f49cd37d6301fc90bcf0d501a06fc102bacaac"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_d_metrics.py": {
+            "bytes_hashed": 2972,
+            "calls": 4,
+            "per_call_byte_count": 743,
+            "sha256": "39829822e7454fb83617768046b3c0ec1adca3979cd8ab47cd3d3ce1375ff41e"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_d_scenarios.py": {
+            "bytes_hashed": 15552,
+            "calls": 4,
+            "per_call_byte_count": 3888,
+            "sha256": "e977d74b5286ab4ec938e289d671cb8c213a83d6c6208f2ed83b4ab78509e53a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_e1_experiments.py": {
+            "bytes_hashed": 78136,
+            "calls": 4,
+            "per_call_byte_count": 19534,
+            "sha256": "74c90dafe96d461b3cc58ad74a792cd897281012dda7a8a22e4a76d575a3755f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_e2_enumeration.py": {
+            "bytes_hashed": 54688,
+            "calls": 4,
+            "per_call_byte_count": 13672,
+            "sha256": "9eeb66e546544d526fc86aec765e4eb45cb8112d28fbdd55d5777a9a10647b32"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_e2_experiments.py": {
+            "bytes_hashed": 80700,
+            "calls": 4,
+            "per_call_byte_count": 20175,
+            "sha256": "710a89ed6a7916fbd246a58ece268334c6bafc73407403d8f2cac1b48cb5bb2c"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_e2_parallel.py": {
+            "bytes_hashed": 28384,
+            "calls": 4,
+            "per_call_byte_count": 7096,
+            "sha256": "55f810e982dd48f2af29f9388101b6ee8df20190e4cf85fe5fed2bd508979c66"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_f1_sanity.py": {
+            "bytes_hashed": 21176,
+            "calls": 4,
+            "per_call_byte_count": 5294,
+            "sha256": "3c2390a132256df15191ea1b081839511f48944c7c0b47cb531a80c99f1add4d"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_f1_scientific_sanity.py": {
+            "bytes_hashed": 29452,
+            "calls": 4,
+            "per_call_byte_count": 7363,
+            "sha256": "b220d3095c932c171047b85b69b649c36844dca4af0fa10b8152814f98c949fd"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_f2_sanity.py": {
+            "bytes_hashed": 17896,
+            "calls": 4,
+            "per_call_byte_count": 4474,
+            "sha256": "8e6fb8b8a9e49d3780cc5ed5fe39a92be42a5000901dbecb70a0f4a0c73cb545"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_f3_p1_evidence.py": {
+            "bytes_hashed": 35516,
+            "calls": 4,
+            "per_call_byte_count": 8879,
+            "sha256": "d5379c61f57db4876352a4db7f604b9ac3fd3df519a2f8d1367ca2da01d788ec"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\gate_f3_p1_execution.py": {
+            "bytes_hashed": 145568,
+            "calls": 4,
+            "per_call_byte_count": 36392,
+            "sha256": "9b7353c5b838996fe4fb355cc32b157fa686ea417ffd6af397ff1a72fb3edba0"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\geometry_interface.py": {
+            "bytes_hashed": 25168,
+            "calls": 4,
+            "per_call_byte_count": 6292,
+            "sha256": "408144fdc1b6957fa4ab2f983f04f860a7c657ae8d1a9a2dd5f61028844b8473"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\in_flight.py": {
+            "bytes_hashed": 5692,
+            "calls": 4,
+            "per_call_byte_count": 1423,
+            "sha256": "5f15127b13e982df3098b72e10143c7456c756e91c7e151403d728bee6746289"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\load_aware_router.py": {
+            "bytes_hashed": 18328,
+            "calls": 4,
+            "per_call_byte_count": 4582,
+            "sha256": "adc3e5c345cce0e32cd6dc27bb03b0d7566ee41e7cfcad1d101bf45a0022d55e"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\load_normalization.py": {
+            "bytes_hashed": 20076,
+            "calls": 4,
+            "per_call_byte_count": 5019,
+            "sha256": "53dab95bef443f6abbed334635ab40e4581339d8d68c7f26f08192d2842a5ce2"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\mechanism_validation.py": {
+            "bytes_hashed": 50412,
+            "calls": 4,
+            "per_call_byte_count": 12603,
+            "sha256": "c14e7a3c8fa7644529851a4b8e2d5156f1edc4ce33fdff9b260fd9aceef799e5"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\network_service_engine.py": {
+            "bytes_hashed": 89896,
+            "calls": 4,
+            "per_call_byte_count": 22474,
+            "sha256": "177a23aab7944a52e4c5e8a2c0726c5b137ec4e2bc2e1e2623e1a827bc817f58"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\operational_policy.py": {
+            "bytes_hashed": 11928,
+            "calls": 4,
+            "per_call_byte_count": 2982,
+            "sha256": "e9afdd05bf02366bc2c0a75e0a060df851a61dfd3c3dbafbf1201f486d005f57"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\outage_metrics.py": {
+            "bytes_hashed": 14672,
+            "calls": 4,
+            "per_call_byte_count": 3668,
+            "sha256": "484dd14c5552e6a7b1b19e0321a46daa899cd04c1a1b00196455c831d6581b6a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\physical_feasibility.py": {
+            "bytes_hashed": 25692,
+            "calls": 4,
+            "per_call_byte_count": 6423,
+            "sha256": "a09d17f0b07c1b3bc0701c726bcda3372394c4cd588be3e6db5c4397c8454691"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\production_candidate_source.py": {
+            "bytes_hashed": 62968,
+            "calls": 4,
+            "per_call_byte_count": 15742,
+            "sha256": "16e70218cb5d097499a8728eba270085f1efb69b26a2349b717eb372dd21cf73"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\queue_state.py": {
+            "bytes_hashed": 5292,
+            "calls": 4,
+            "per_call_byte_count": 1323,
+            "sha256": "941c7ec67c8d94ac25ee41a4bfa3007f646180cd9d0b7273dd2b2abe68f3f88a"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\reference_topology.py": {
+            "bytes_hashed": 33428,
+            "calls": 4,
+            "per_call_byte_count": 8357,
+            "sha256": "5dc58100c35dde7fdafd3f0274dc59e3efbff8bcc0787c01953af43503059d0f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\rollout_clone.py": {
+            "bytes_hashed": 4944,
+            "calls": 4,
+            "per_call_byte_count": 1236,
+            "sha256": "b1a25bc1413d0189c35eba763ef948878fa1d695004c3d368cdc61fa8572eebd"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\rollout_controller.py": {
+            "bytes_hashed": 45784,
+            "calls": 4,
+            "per_call_byte_count": 11446,
+            "sha256": "ac29e433aeb2c26008e6ecacd7a249d0598d3dff97ca26d55bc7d73bd09695c6"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\rollout_evaluator.py": {
+            "bytes_hashed": 32348,
+            "calls": 4,
+            "per_call_byte_count": 8087,
+            "sha256": "424e91dcf5e6e05cf0dfb9079ced72138e33dfd3581e218ee3b2c8d04b06dc71"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\scenario_selection.py": {
+            "bytes_hashed": 14992,
+            "calls": 4,
+            "per_call_byte_count": 3748,
+            "sha256": "642ab48cb7e8e903df8a8f548ee611f1db92580fc59345efd0df20a69fc338e9"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\scientific_controllers.py": {
+            "bytes_hashed": 19920,
+            "calls": 4,
+            "per_call_byte_count": 4980,
+            "sha256": "19726f56bb83c1c77073aac4618bbbe71733fdc9257b59dbf3ea905e6aaf3407"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\scientific_snapshot.py": {
+            "bytes_hashed": 39664,
+            "calls": 4,
+            "per_call_byte_count": 9916,
+            "sha256": "259d60e598ce1b4a0beb07e8b7ae821a5e53c3482929bd80d7d94fa2e45cd0dd"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\service_scheduler.py": {
+            "bytes_hashed": 5160,
+            "calls": 4,
+            "per_call_byte_count": 1290,
+            "sha256": "b014a616e7025fa7229dc9f3acbbd7538b862e4d33a0aa602b941bb2616746b7"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\sgp4_geometry.py": {
+            "bytes_hashed": 18204,
+            "calls": 4,
+            "per_call_byte_count": 4551,
+            "sha256": "de9bcea3069b9a4640f5791f905fb16d30cad968142fbe3d44b33bc43c91abd5"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\sgp4_model.py": {
+            "bytes_hashed": 14944,
+            "calls": 4,
+            "per_call_byte_count": 3736,
+            "sha256": "35cb1c90e57502fad6e4dcd6087cc771682bd691b223c1e8bf0e220ae73aca63"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\terminal_executor.py": {
+            "bytes_hashed": 99524,
+            "calls": 4,
+            "per_call_byte_count": 24881,
+            "sha256": "80634fd278655ca6c50a758afe5344f025154879ac71ba5b7dc455a210782583"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\terminal_pair_intervals.py": {
+            "bytes_hashed": 39052,
+            "calls": 4,
+            "per_call_byte_count": 9763,
+            "sha256": "8647a9ecf8ce1d2aa4ab4d67d00fb1ebfd93398531f3248012026427f776db33"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\traffic_trace.py": {
+            "bytes_hashed": 16636,
+            "calls": 4,
+            "per_call_byte_count": 4159,
+            "sha256": "7d4e9a447e228678303a1686325d9ffd5e73e999de9b95933f4d4cfe3f1f413f"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\transition_profiler.py": {
+            "bytes_hashed": 30620,
+            "calls": 4,
+            "per_call_byte_count": 7655,
+            "sha256": "e6a21afdfa1d339ed8eaac838ad9d3e49d7ab14d62651729c2da580b814c54bf"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\transition_service_orchestrator.py": {
+            "bytes_hashed": 156316,
+            "calls": 4,
+            "per_call_byte_count": 39079,
+            "sha256": "9ed1ecf9b8c5cde21fd5a71113fdd45e2d69a20bb808689ccf40a9392ce172e7"
+          },
+          "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\z_moderate_construction.py": {
+            "bytes_hashed": 48200,
+            "calls": 4,
+            "per_call_byte_count": 12050,
+            "sha256": "0b435caa9b7f0192fea6377d26ff6262c87b822c5e01541ccec388b99bf5fc63"
+          }
+        },
+        "actual_reads": 475,
+        "removed_delegated_bytes": 834184,
+        "removed_delegated_returns": 104
+      }
+    }
+  },
+  "state_hash_calls_not_changed": true,
+  "status": "PASS",
+  "timing_values_unchanged": true
+}

@@ -1,0 +1,100 @@
+{
+  "anchors": {
+    "frozen_p0_manifest": {
+      "byte_count": 24630,
+      "path": "research_versions/dynamic_k_v1/acceptance/0010/manifest_final.json",
+      "sha256": "8d15d8492b4662ad554b4cc25b27d4b3954fcbf340f9b38b5468de5bcfa17ebf"
+    },
+    "parent_revision": {
+      "byte_count": 16418,
+      "path": "research_versions/dynamic_k_v1/revisions/0010/record.json",
+      "sha256": "fa9564caf795279ce608cf7ff31c9a86693c7336238b285a52c95c7ffb66c897"
+    },
+    "version_origin": {
+      "byte_count": 1555,
+      "path": "research_versions/dynamic_k_v1/version_record.json",
+      "sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+    }
+  },
+  "candidate_revision_id": "0011",
+  "configuration_path": "research_versions/dynamic_k_v1/configs/n4_p0r_engineering_v1.json",
+  "files": [
+    {
+      "byte_count": 13757,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/controlled_cost.py",
+      "sha256": "d10437c01aeca3ba6f8532bd2592476711c0ce5b543e04bd3e061b14edc9e3f8"
+    },
+    {
+      "byte_count": 2751,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/equivalence.py",
+      "sha256": "2639998675ac78186ca94d9668b69ad42385634a8e3b1dd9c5762a6edf83c0ab"
+    },
+    {
+      "byte_count": 2502,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/prepare.py",
+      "sha256": "33d61a579ee786d7938188cce9f4ea60511b58aabaef81c29118cdb3f164b328"
+    },
+    {
+      "byte_count": 1488,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/regress_n3_retained.py",
+      "sha256": "f45cf8808b0720f2cf60c3e34bef6a7797cc60bb74e2fd6c9de92c37b4ca12a4"
+    },
+    {
+      "byte_count": 5526,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/trace_costs.py",
+      "sha256": "bc5080155e8fd04be5d4afde3f74a602dec887ab64d1187cc1c0d7837a3c73bf"
+    },
+    {
+      "byte_count": 3510,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/workflow.py",
+      "sha256": "79b006de413fea77c4c56c249b70d1c8bcbee2826e8093a9250731e8a36986bf"
+    },
+    {
+      "byte_count": 1642,
+      "path": "research_versions/dynamic_k_v1/configs/n4_p0r_engineering_v1.json",
+      "sha256": "c8c3ddeef52b863500dffb5cd56ff414ea84eb9981448cf0573edf51266cd3d0"
+    },
+    {
+      "byte_count": 4697,
+      "path": "research_versions/dynamic_k_v1/contracts/N4_P0R_EXACT_READER_AND_COST_CN.md",
+      "sha256": "efdf1ea5b128537773fa061703c2e78d067e574eef70414f63a9e9d9d2f10505"
+    },
+    {
+      "byte_count": 13959,
+      "path": "research_versions/dynamic_k_v1/runtime/n4_p0.py",
+      "sha256": "2b7420962fab6db5a663b27e978b417f998ee267d930c5566983e133695c9d0b"
+    },
+    {
+      "byte_count": 4916,
+      "path": "research_versions/dynamic_k_v1/runtime/n4_p0r_handle_reader.py",
+      "sha256": "c3fa23f396529fbc11007b434e375932c1a757b6a1a03d39dd9ace2bf354ae65"
+    },
+    {
+      "byte_count": 7456,
+      "path": "research_versions/dynamic_k_v1/runtime/n4_p0r_reader.py",
+      "sha256": "552c5032b32430d5f4bd3ab17dbe8cf15f0f99cf63c9bf351c9b7cc9098a9ee4"
+    },
+    {
+      "byte_count": 15157,
+      "path": "research_versions/dynamic_k_v1/tests/test_n4_p0.py",
+      "sha256": "d7683bc9b82d7bcd3a4acd3a6e61113292d9dbe0de10497f9262991415807025"
+    },
+    {
+      "byte_count": 6676,
+      "path": "research_versions/dynamic_k_v1/tests/test_n4_p0r_reader.py",
+      "sha256": "b32d55297838eb6c5830bad329ee2dee28672c0542e220b831c5e0441b50b00c"
+    },
+    {
+      "byte_count": 21595,
+      "path": "research_versions/dynamic_k_v1/tools/version_control.py",
+      "sha256": "c740401a75c2b43063957db3ef9dc4575098f3f7bb4bfadfd3f16d40739e04b5"
+    },
+    {
+      "byte_count": 25158,
+      "path": "research_versions/dynamic_k_v1/tools/version_control_readme_v1.py",
+      "sha256": "33fae3b852d3bda75802c8743101c68ed69d7a462886481bceb3b8bd7626c0fd"
+    }
+  ],
+  "formal_experiments_authorized": false,
+  "schema": "dynamic_k_n4_p0r_candidate_v1"
+}

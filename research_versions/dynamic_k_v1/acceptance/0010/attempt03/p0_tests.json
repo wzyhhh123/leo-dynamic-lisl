@@ -1,0 +1,16 @@
+{
+  "errors": [],
+  "failures": [],
+  "output": "test_04_causal_twins_all_scores_and_graph (p0_tests.P0Tests) ... ok\ntest_06_prefix_multi_rate_fifo_and_inflight_preserved (p0_tests.P0Tests) ... ok\ntest_12_end_clip_three_second_cadence (p0_tests.P0Tests) ... ok\ntest_19_future_source_deepcopy_and_reads_poisoned (p0_tests.P0Tests) ... ok\ntest_20_manual_future_rate_injection_rejected (p0_tests.P0Tests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 339.267s\n\nOK\n",
+  "selected_prefixes": [
+    "test_04",
+    "test_06",
+    "test_12",
+    "test_19",
+    "test_20"
+  ],
+  "skipped": [],
+  "status": "PASS",
+  "tests_run": 5,
+  "wallclock_s": 339.2672088
+}

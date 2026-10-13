@@ -1,0 +1,22 @@
+{
+  "N4_P0_engineering_pass": false,
+  "business_tolerance_bits": 1e-06,
+  "delivered_bits": 3598758.711573384,
+  "error": "BUSINESS_CONSERVATION_MISMATCH",
+  "failure_time_s": 6.0,
+  "forecast_sha256": "66061c9bc91a8b6af7903cbb898b101081b02621f8f48f92038da54d66ef0da1",
+  "frozen_kernel_modified": false,
+  "full_catalog_diagnostic_executed": false,
+  "offered_bits": 3600000.0,
+  "original_and_optimized_exception_equal": true,
+  "rejected_measurement_and_state_every_field_equal": true,
+  "remaining_bits": 1241.2884277067496,
+  "residual_bits": -1.0905205272138119e-06,
+  "root_sha256": "ba301c6b0d92b96b8490fe28b24322e254377aea01adffd0c368653daa3f01f6",
+  "scientific_gate_pass": false,
+  "state_exclusions": [
+    "delay/native Satrec model object and router implementation object; physical input SHA retained"
+  ],
+  "status": "STOP_EXISTING_CORE_BOUNDARY_REPRODUCED",
+  "tolerance_relaxed": false
+}

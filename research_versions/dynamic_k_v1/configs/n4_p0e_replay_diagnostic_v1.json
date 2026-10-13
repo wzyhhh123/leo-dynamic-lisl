@@ -1,0 +1,69 @@
+{
+  "PILOT_ONLY": {
+    "H_s": 6.0,
+    "T_A_s": 20.0,
+    "T_s": 30.0,
+    "acquisition_s": 0.5,
+    "all_branch_seconds_upper_bound": 14364.0,
+    "all_branch_upper_bound": 2520,
+    "decision_cadence_s": 3.0,
+    "decision_epochs_s": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27
+    ],
+    "lambda_E_bit_s_per_J": 1000.0,
+    "lambda_N_s": 6.0,
+    "main_branch_seconds_upper_bound": 4788.0,
+    "main_pilot_branch_upper_bound": 840,
+    "maximum_atomic_actions_per_epoch": 1,
+    "maximum_scored_branches": 7,
+    "retarget_a_s": 0.5,
+    "retarget_b_s": 0.5,
+    "sensitivity_extra_branch_upper_bound": 1680
+  },
+  "actual_branch_count": 2,
+  "authorized_branch_budget": {
+    "ADD": 1,
+    "HOLD": 1
+  },
+  "catalog_action_enumeration_authorized": false,
+  "forecast": {
+    "H_s": 6.0,
+    "end_s": 9.0,
+    "mode": "PERSIST",
+    "start_s": 3.0
+  },
+  "formal_control_parameters": {
+    "decision_cadence_s": null,
+    "maximum_concurrent_actions": null,
+    "search_budget": null
+  },
+  "formal_experiments_authorized": false,
+  "full_pilot_execution_authorized": false,
+  "kernel_modifications_authorized": false,
+  "physical_catalog_rows_loaded": 2742,
+  "replay_process_hash_seed_test_only": 1414,
+  "root_reconstruction_pass": true,
+  "scenario_id": "P0E_0014_NEW_160_PERSIST_T3_SEED1414",
+  "schema": "dynamic_k_n4_p0e_replay_diagnostic_v1",
+  "scientific_parameters": {
+    "D_ref_s": null,
+    "E_ref_J": null,
+    "R_min": null,
+    "T_A_s": null,
+    "T_s": null,
+    "alpha": null,
+    "tau_res_s": null
+  },
+  "stage": "N4_P0E",
+  "status": "STOP_BUSINESS_CONSERVATION_MISMATCH",
+  "tolerance_changes_authorized": false
+}

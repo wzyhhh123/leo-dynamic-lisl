@@ -1,0 +1,198 @@
+{
+  "N3_implemented": true,
+  "N4_implemented": false,
+  "algorithm_selection": null,
+  "authorization": {
+    "actor": "human_user",
+    "named_requested_file": "README.md",
+    "request": "这个readme也得更新吧",
+    "scope": "PROJECT_ROOT_README_DOCUMENTATION_UPDATE_ONLY",
+    "source": "current_conversation_user_request",
+    "user_named_absolute_file": "D:/Document/leo_routing_attitude/dynamic_lisl_v2/README.md"
+  },
+  "bindings": {
+    "baseline_seal": {
+      "byte_count": 656,
+      "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+      "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+    },
+    "configuration": {
+      "byte_count": 664,
+      "path": "research_versions/dynamic_k_v1/configs/n3_baseline_semantics_v1.json",
+      "sha256": "4d28fdf90a6086676a8cd7579d613ffd381ffb58e3cb39308774c2b0c9838d00"
+    },
+    "contract": {
+      "byte_count": 4367,
+      "path": "research_versions/dynamic_k_v1/contracts/N3_CLOSED_LOOP_BASELINES_CN.md",
+      "sha256": "6ffb638ed9ce300879abd2c0a3e162b8210593a0c550bc7dfd09b5a4f43853a4"
+    },
+    "documentation_validation": {
+      "byte_count": 7311,
+      "path": "research_versions/dynamic_k_v1/acceptance/0009/documentation_update.json",
+      "sha256": "c60c3f9298405e639df553b294efde360fa96da0f8e02ee3e74d72c8ed691ced"
+    },
+    "implementation_manifest": {
+      "byte_count": 25957,
+      "path": "research_versions/dynamic_k_v1/acceptance/0007/implementation_manifest_attempt02.json",
+      "sha256": "dbc7e0d54d6d9bb864ec216a0b7c6cd1b86ec6353ed3ab41a3c3c64b471b9129"
+    },
+    "old_asset_audit": {
+      "byte_count": 28913,
+      "path": "research_versions/dynamic_k_v1/acceptance/0009/preseal_change_audit.json",
+      "sha256": "2ce90ce69839966c8aa40f3b86e507e1b24e05588c62ed4ecdcc170b43f8ae6e"
+    },
+    "original_version_verifier": {
+      "byte_count": 21595,
+      "path": "research_versions/dynamic_k_v1/tools/version_control.py",
+      "sha256": "c740401a75c2b43063957db3ef9dc4575098f3f7bb4bfadfd3f16d40739e04b5"
+    },
+    "policy_contract": {
+      "byte_count": 2152,
+      "path": "research_versions/dynamic_k_v1/contracts/ROOT_README_DOCUMENTATION_CHANGE_CN.md",
+      "sha256": "32cfcc6744b7d189c2e32f56e1e933423a5a613510e0518ded00da4785ec408c"
+    },
+    "project_README": {
+      "byte_count": 7333,
+      "path": "README.md",
+      "sha256": "d31ba8a5361960520c47c186a5b372dd648777fc2b6f7f799522d073953e60b9"
+    },
+    "protection_tests": {
+      "byte_count": 3393,
+      "path": "research_versions/dynamic_k_v1/acceptance/0009/protection_test_report.json",
+      "sha256": "9ee93bade0e01473ca3ec31d47c9047a8d4a3ba0032376c64d47dd0f6cbb3831"
+    },
+    "root_readme_policy": {
+      "byte_count": 636,
+      "path": "research_versions/dynamic_k_v1/contracts/root_readme_documentation_exception_v1.json",
+      "sha256": "2db801af09a15a2090d73916f2683ba1e27d7e0b8aa043933e08af713b6c8027"
+    },
+    "version_README": {
+      "byte_count": 13302,
+      "path": "research_versions/dynamic_k_v1/README_CN.md",
+      "sha256": "0625e61cc010fb885de5ba3e1dfaee529f495c78c0d7bca94db23ff9aba57044"
+    },
+    "version_verifier": {
+      "byte_count": 25158,
+      "path": "research_versions/dynamic_k_v1/tools/version_control_readme_v1.py",
+      "sha256": "33fae3b852d3bda75802c8743101c68ed69d7a462886481bceb3b8bd7626c0fd"
+    }
+  },
+  "changes": {
+    "added": [
+      {
+        "byte_count": 7333,
+        "path": "research_versions/dynamic_k_v1/acceptance/0009/PROJECT_README.after.md",
+        "sha256": "d31ba8a5361960520c47c186a5b372dd648777fc2b6f7f799522d073953e60b9"
+      },
+      {
+        "byte_count": 2251,
+        "path": "research_versions/dynamic_k_v1/acceptance/0009/PROJECT_README.before.md",
+        "sha256": "905a689bdfc027fd904c5cbe8f1bbd3a907232b3a9f0e47349bb3119f8a7b72d"
+      },
+      {
+        "byte_count": 12527,
+        "path": "research_versions/dynamic_k_v1/acceptance/0009/VERSION_README.before.md",
+        "sha256": "ff378e7f3339b6ce2febf1109c73941d0c7f3ceeac65f2b49f9c1af5758db4c3"
+      },
+      {
+        "byte_count": 7311,
+        "path": "research_versions/dynamic_k_v1/acceptance/0009/documentation_update.json",
+        "sha256": "c60c3f9298405e639df553b294efde360fa96da0f8e02ee3e74d72c8ed691ced"
+      },
+      {
+        "byte_count": 5268,
+        "path": "research_versions/dynamic_k_v1/acceptance/0009/generate_verifier.py",
+        "sha256": "f9b07f30b5bcf5c7ffa5c140cca782eeaa32974e5fadd7554a73210ce3272332"
+      },
+      {
+        "byte_count": 28913,
+        "path": "research_versions/dynamic_k_v1/acceptance/0009/preseal_change_audit.json",
+        "sha256": "2ce90ce69839966c8aa40f3b86e507e1b24e05588c62ed4ecdcc170b43f8ae6e"
+      },
+      {
+        "byte_count": 3393,
+        "path": "research_versions/dynamic_k_v1/acceptance/0009/protection_test_report.json",
+        "sha256": "9ee93bade0e01473ca3ec31d47c9047a8d4a3ba0032376c64d47dd0f6cbb3831"
+      },
+      {
+        "byte_count": 1215,
+        "path": "research_versions/dynamic_k_v1/acceptance/0009/run_protection_tests.py",
+        "sha256": "0bbe527a24c919b01ed8007a3f9b8c1cfb2f5e39d468b56e2ea61cec774a7dfb"
+      },
+      {
+        "byte_count": 7897,
+        "path": "research_versions/dynamic_k_v1/acceptance/0009/seal_readme_update.py",
+        "sha256": "63e8cddc7f112b45a8bd0c2abdeb6ef04910b48d6debb3d626d7f2f513734420"
+      },
+      {
+        "byte_count": 524,
+        "path": "research_versions/dynamic_k_v1/acceptance/0009/verifier_source_audit.json",
+        "sha256": "505e0fcd9f2982073665ba1a7d8ee9abbcea1577562dd41ec0012b15115f1a3c"
+      },
+      {
+        "byte_count": 2152,
+        "path": "research_versions/dynamic_k_v1/contracts/ROOT_README_DOCUMENTATION_CHANGE_CN.md",
+        "sha256": "32cfcc6744b7d189c2e32f56e1e933423a5a613510e0518ded00da4785ec408c"
+      },
+      {
+        "byte_count": 636,
+        "path": "research_versions/dynamic_k_v1/contracts/root_readme_documentation_exception_v1.json",
+        "sha256": "2db801af09a15a2090d73916f2683ba1e27d7e0b8aa043933e08af713b6c8027"
+      },
+      {
+        "byte_count": 7806,
+        "path": "research_versions/dynamic_k_v1/tests/test_root_readme_policy.py",
+        "sha256": "84b5f3e15d56faec274fbd5d8504395106ec90d2c4fcda06976ebf68df347e4c"
+      },
+      {
+        "byte_count": 25158,
+        "path": "research_versions/dynamic_k_v1/tools/version_control_readme_v1.py",
+        "sha256": "33fae3b852d3bda75802c8743101c68ed69d7a462886481bceb3b8bd7626c0fd"
+      }
+    ],
+    "deleted": [],
+    "modified": [
+      {
+        "after": {
+          "byte_count": 7333,
+          "sha256": "d31ba8a5361960520c47c186a5b372dd648777fc2b6f7f799522d073953e60b9"
+        },
+        "before": {
+          "byte_count": 2251,
+          "sha256": "905a689bdfc027fd904c5cbe8f1bbd3a907232b3a9f0e47349bb3119f8a7b72d"
+        },
+        "path": "README.md"
+      },
+      {
+        "after": {
+          "byte_count": 13302,
+          "sha256": "0625e61cc010fb885de5ba3e1dfaee529f495c78c0d7bca94db23ff9aba57044"
+        },
+        "before": {
+          "byte_count": 12527,
+          "sha256": "ff378e7f3339b6ce2febf1109c73941d0c7f3ceeac65f2b49f9c1af5758db4c3"
+        },
+        "path": "research_versions/dynamic_k_v1/README_CN.md"
+      }
+    ]
+  },
+  "created_beijing": "2026-10-12T14:45:09.779062+08:00",
+  "created_utc": "2026-10-12T06:45:09.779062+00:00",
+  "documentation_only": true,
+  "documentation_validation": "PASS",
+  "engineering_acceptance_not_rerun": true,
+  "engineering_source_and_evidence_modified": false,
+  "formal_experiments_executed": false,
+  "parent_record": {
+    "byte_count": 4282,
+    "path": "research_versions/dynamic_k_v1/revisions/0008/record.json",
+    "sha256": "0ab864c1bc8eaf8b3e746cf68df2e32f2924b91a07c316c25f3bc0d220b9bbbc"
+  },
+  "production_code_modified": false,
+  "protection_tests": 32,
+  "reason": "Explicitly requested project README update and exact-path documentation protection addendum; engineering/science unchanged.",
+  "revision_id": "0009",
+  "schema": "dynamic_k_revision_record_v1",
+  "scientific_gate_pass": false,
+  "version_id": "dynamic_k_v1"
+}

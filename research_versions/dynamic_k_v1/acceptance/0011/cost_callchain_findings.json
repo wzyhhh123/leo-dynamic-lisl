@@ -1,0 +1,80 @@
+{
+  "branch_dynamic_verify_calls": 5,
+  "branch_immutable_guard_calls": {
+    "N1a": 7,
+    "N1b": 11,
+    "N2": 8,
+    "P0": 1
+  },
+  "branch_physical_input_hash_calls": 5,
+  "geometry_catalog_cost_not_measured_after_failure": true,
+  "json_and_state_hash_results_not_cached": true,
+  "native_exclusive_instrumented_s": {
+    "dynamic_physical_and_clock_guard": 3.474745499999969,
+    "energy": 0.3819844999999731,
+    "fifo": 2.3670774999999935,
+    "fresh_raw_file_sha256": 0.9141843000002865,
+    "fresh_raw_reader_dispatch": 0.051304899999351505,
+    "immutable_dependency_verification": 0.09323100000047191,
+    "json_dumps": 0.184790499999977,
+    "json_loads": 0.02319280000003232,
+    "network": 0.47919590000000767,
+    "other": 5.068183300000058,
+    "path_namespace_validation": 0.3992695999998688,
+    "state_or_evidence_sha256": 0.5031388000000163
+  },
+  "native_profiler_callback_events": 17732403,
+  "optimized_branch_actual_bytes": 40461106,
+  "optimized_branch_actual_reads": 3114,
+  "original_branch_distinct_files": 156,
+  "original_branch_raw_bytes": 40461106,
+  "original_branch_raw_reads": 3114,
+  "original_exclusive_instrumented_s": {
+    "dynamic_physical_and_clock_guard": 3.3829509000000044,
+    "energy": 0.4000573000000358,
+    "fifo": 2.58784390000001,
+    "fresh_raw_file_sha256": 10.79807560000016,
+    "immutable_dependency_verification": 0.38976920000020954,
+    "json_dumps": 0.18667779999999112,
+    "json_loads": 0.024586699999943562,
+    "network": 0.44434530000003036,
+    "other": 5.11757509999989,
+    "path_namespace_validation": 11.70161509999972,
+    "state_or_evidence_sha256": 0.5631243999999995
+  },
+  "original_json_dumps": 25,
+  "original_json_loads": 54,
+  "original_json_parsed_characters": 636060,
+  "original_json_serialized_characters": 15942322,
+  "original_profiler_callback_events": 19556075,
+  "original_raw_io_sha": {
+    "configuration": {
+      "raw_bytes_hashed": 71800,
+      "reads": 36,
+      "unique_files": 5
+    },
+    "contract_document": {
+      "raw_bytes_hashed": 199886,
+      "reads": 38,
+      "unique_files": 5
+    },
+    "manifest_version_evidence": {
+      "raw_bytes_hashed": 2292653,
+      "reads": 208,
+      "unique_files": 20
+    },
+    "physical_data": {
+      "raw_bytes_hashed": 15150771,
+      "reads": 45,
+      "unique_files": 5
+    },
+    "source": {
+      "raw_bytes_hashed": 22745996,
+      "reads": 2787,
+      "unique_files": 121
+    }
+  },
+  "pure_sha_cpu_seconds_not_separately_measured": true,
+  "raw_hash_time_includes_io_metadata_and_profiler": true,
+  "status": "ACTUAL_CALLS_RECONCILED"
+}

@@ -1,0 +1,20 @@
+{
+  "actual_hash_capture": "not persisted before assertion; do not invent it",
+  "actual_root_sha256": null,
+  "analytic_controls": 0,
+  "assertions_bypassed": false,
+  "command": "D:/Program_Files/anaconda3/envs/pytorch/python.exe -B research_versions/dynamic_k_v1/acceptance/0012/run_diagnosis.py",
+  "exit_code": 1,
+  "expected_root_sha256": "ba301c6b0d92b96b8490fe28b24322e254377aea01adffd0c368653daa3f01f6",
+  "failure_at": "run_case before writing root snapshot, cloning prediction branch or submitting action",
+  "fresh_failure_branch_replays": 0,
+  "frozen_inputs_modified": false,
+  "hold_controls": 0,
+  "observed_assertion": "ROOT_BINDING_MISMATCH",
+  "reruns_after_mismatch": 0,
+  "source_file": "acceptance/0012/run_diagnosis.py",
+  "source_line": 41,
+  "status": "STOP_ROOT_BINDING_MISMATCH",
+  "tolerances_modified": false,
+  "zero_controls": 0
+}

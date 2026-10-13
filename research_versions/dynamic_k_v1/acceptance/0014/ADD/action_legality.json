@@ -1,0 +1,22 @@
+{
+  "accepted": true,
+  "full_catalog_enumeration": false,
+  "mode": "ADD",
+  "reason": null,
+  "requested_action": {
+    "a": [
+      "X0_10",
+      "D2"
+    ],
+    "b": [
+      "X1_10",
+      "D1"
+    ],
+    "kind": "ADD",
+    "setup": {
+      "acquisition_s": 0.5,
+      "retarget_a_s": 0.5,
+      "retarget_b_s": 0.5
+    }
+  }
+}

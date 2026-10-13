@@ -1,0 +1,30 @@
+{
+  "errors": [],
+  "examples": {
+    "continuous_short_fifo": {
+      "age": 9.313225746154785e-10,
+      "bits": 0.0009765625,
+      "delay": 9.5367431640625e-07
+    },
+    "loss_negative": {
+      "deliberate_lost_bits": 1.0,
+      "rejected": true,
+      "threshold_bits": 1e-06
+    },
+    "sub_ps_pulse": {
+      "actual_times": [
+        1.0000000000000002,
+        1.0000000000000004
+      ],
+      "end": 1.0000000000000004,
+      "exact_integral_bit": "1/4096",
+      "start": 1.0000000000000002
+    }
+  },
+  "failures": [],
+  "output": "test_01_no_early_positive_or_negative (__main__.EventClockTests) ... ok\ntest_02_true_simultaneous_events_multi_edges (__main__.EventClockTests) ... ok\ntest_03_extreme_short_positive_target_and_boundaries (__main__.EventClockTests) ... ok\ntest_04_continuous_ulps_injection_fifo_exact_mass (__main__.EventClockTests) ... ok\ntest_05_multihop_tail_delivery_and_age (__main__.EventClockTests) ... ok\ntest_06_explicit_real_one_bit_loss_rejected (__main__.EventClockTests) ... ok\ntest_07_refresh_extreme_short_interval (__main__.EventClockTests) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 20.926s\n\nOK\n",
+  "skipped": [],
+  "status": "PASS",
+  "tests_run": 7,
+  "wallclock_s": 20.9265952
+}

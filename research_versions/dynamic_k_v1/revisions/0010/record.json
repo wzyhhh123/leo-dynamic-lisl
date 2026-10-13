@@ -1,0 +1,364 @@
+{
+  "N4_P0_engineering_pass": false,
+  "authorization": {
+    "actor": "human_user",
+    "request": "Implement independent causal ZERO/PERSIST root scoring using unchanged N1a/N1b/N2/N3. Validate historical prefix/FIFO/events/energy and causal isolation. Measure only one branch and one epoch; STOP if cost is clearly excessive. Amend decision cadence from 1 to 3 seconds, keep old draft bytes/hashes, main pilot budget 840. No complete pilot/sensitivity/GNN/formal experiments; formal parameters remain null.",
+    "scope": "N4_P0_MINIMUM_ENGINEERING_THREE_SECOND_AMENDMENT_AND_COST_STOP",
+    "source": "current_conversation_user_request"
+  },
+  "bindings": {
+    "baseline_seal": {
+      "byte_count": 656,
+      "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+      "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+    },
+    "configuration": {
+      "byte_count": 1231,
+      "path": "research_versions/dynamic_k_v1/configs/n4_p0_pilot_semantics_v1.json",
+      "sha256": "ebbca01b0cf28a94824af0cd31598ca972cbacb2561082a70bd033412a736ebe"
+    },
+    "contract": {
+      "byte_count": 1391,
+      "path": "research_versions/dynamic_k_v1/contracts/N4_P0_CAUSAL_ROOT_SCORING_CN.md",
+      "sha256": "c62bebcb2a873a3f6d36b6d5b80cf368b6c3f65a43ccb2ee3c49a8b500706025"
+    },
+    "cost": {
+      "byte_count": 1392,
+      "path": "research_versions/dynamic_k_v1/acceptance/0010/cost_acceptance_report.json",
+      "sha256": "4fef1dac159f97fabb9207e095a4b042f9804f067e0d4db64a6dc5354d37cd31"
+    },
+    "implementation_manifest": {
+      "byte_count": 24630,
+      "path": "research_versions/dynamic_k_v1/acceptance/0010/manifest_final.json",
+      "sha256": "8d15d8492b4662ad554b4cc25b27d4b3954fcbf340f9b38b5468de5bcfa17ebf"
+    },
+    "old_asset_audit": {
+      "byte_count": 37915,
+      "path": "research_versions/dynamic_k_v1/acceptance/0010/preseal_change_audit.json",
+      "sha256": "6aff46efbf026b0e4ba7cdd70f484ba8a52d26e897741e4ee08967ff0d60ea2c"
+    },
+    "report": {
+      "byte_count": 8108,
+      "path": "research_versions/dynamic_k_v1/acceptance/0010/RESULT_CN.md",
+      "sha256": "ad7f45789c8f87ddbc6c200b8fee9c810179a31fb4cc7e13247d5e3a85702870"
+    },
+    "seal_tool": {
+      "byte_count": 10114,
+      "path": "research_versions/dynamic_k_v1/acceptance/0010/seal_stop.py",
+      "sha256": "2f23e166f308adc27e9c3140ee81de09919c9a9a76bc1e0ca6eab570e58ad949"
+    },
+    "summary": {
+      "byte_count": 668,
+      "path": "research_versions/dynamic_k_v1/acceptance/0010/acceptance_summary.json",
+      "sha256": "c02f0a700e09935cf71925986cd2c393a37e28802d35ea546b5e59dac01696b1"
+    }
+  },
+  "changes": {
+    "added": [
+      {
+        "byte_count": 8108,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/RESULT_CN.md",
+        "sha256": "ad7f45789c8f87ddbc6c200b8fee9c810179a31fb4cc7e13247d5e3a85702870"
+      },
+      {
+        "byte_count": 7762,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/RESULT_TEMPLATE_CN.md",
+        "sha256": "6ca30e53f6f4ca5831b8b809f53234dcc21ef8fe1aceb1649508c541f670ad30"
+      },
+      {
+        "byte_count": 1362,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/acceptance_coverage_plan.json",
+        "sha256": "88f0a97c65a9db4431ab6500a49e780789bf9c75b97d8e2cf306054536e91e2f"
+      },
+      {
+        "byte_count": 668,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/acceptance_summary.json",
+        "sha256": "c02f0a700e09935cf71925986cd2c393a37e28802d35ea546b5e59dac01696b1"
+      },
+      {
+        "byte_count": 1269,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/analytic_and_equivalence_report.json",
+        "sha256": "bf76558fd6c7ce1c157ab0c14a6ca9a775aa026463652672fb6cf6a65112cb5c"
+      },
+      {
+        "byte_count": 13638,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/attempt01/n4_p0.py.snapshot",
+        "sha256": "06855cb4d7a235d58a746509964c1dcb00678ffaa80ee5ea928a628374a49d55"
+      },
+      {
+        "byte_count": 5730,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/attempt01/p0_tests.json",
+        "sha256": "5314298d5ccd7017a1b46d360ce42313731e22b553c9c28306ffc639131aca8e"
+      },
+      {
+        "byte_count": 10825,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/attempt01/test_n4_p0.py.snapshot",
+        "sha256": "1fa422abbba5cdd533853b82c564fc76e42042f416119be2cc0f585fc286e530"
+      },
+      {
+        "byte_count": 16838,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/attempt01/workflow.py.snapshot",
+        "sha256": "5333744db44f3427ff1f53a6283e699b0b2de7976d399bee1403c373f7711e04"
+      },
+      {
+        "byte_count": 13638,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/attempt02/n4_p0.py.passed.snapshot",
+        "sha256": "06855cb4d7a235d58a746509964c1dcb00678ffaa80ee5ea928a628374a49d55"
+      },
+      {
+        "byte_count": 1660,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/attempt02/p0_tests.json",
+        "sha256": "70736a9f567554f1df0104e66a7a8631f0f42bea5d3560c4cd38cfaf8f7f164c"
+      },
+      {
+        "byte_count": 14822,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/attempt02/test_n4_p0.py.passed.snapshot",
+        "sha256": "287115fd131f86b5d8178badd233b25e894a39961083bd33748beceda9179faa"
+      },
+      {
+        "byte_count": 17081,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/attempt02/workflow.py.passed.snapshot",
+        "sha256": "ac5212f53489a00a7441d1f753cd36f9dc35b8a631798ff8d47a314c185c0d71"
+      },
+      {
+        "byte_count": 712,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/attempt03/p0_tests.json",
+        "sha256": "4aec665774910febaaab2270621fd8f1cd1639571049182810af3b9bf9dcf87e"
+      },
+      {
+        "byte_count": 992,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/cadence_revision_audit.json",
+        "sha256": "b746000bd0af24896b50f4db7e1a868c28b739ba1918a9298bd605dd4dae6ef1"
+      },
+      {
+        "byte_count": 1384,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/causal_isolation_test_report.json",
+        "sha256": "4b7fd765ad8f8d92529887f3307b8971f54ef0855961a492418549a6d8d42370"
+      },
+      {
+        "byte_count": 1392,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/cost_acceptance_report.json",
+        "sha256": "4fef1dac159f97fabb9207e095a4b042f9804f067e0d4db64a6dc5354d37cd31"
+      },
+      {
+        "byte_count": 851,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/cost_execution_transcript.json",
+        "sha256": "d0b179d2f439f75d8896b19cb1fd11b51700d72545bce13a241a43367e380256"
+      },
+      {
+        "byte_count": 7398,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/cost_measurement.py",
+        "sha256": "55ae607bdb14589f99977bd5dd99016e6d95ecaa380e9cc1d0eedcc3ebdbe611"
+      },
+      {
+        "byte_count": 1153,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/cost_stop_process_evidence.json",
+        "sha256": "871d0af497e448ba856c61ca3b9c79cfe5d4e27791a29ac9073e93f593253204"
+      },
+      {
+        "byte_count": 1145,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/entry_guard_change_audit.json",
+        "sha256": "b2638077bbc24f885a4795b88c594128b3b266a4d859c67f210e36e4c0defeee"
+      },
+      {
+        "byte_count": 1853,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/historical_execution.json",
+        "sha256": "748c36262c55b5aa8432dc22cfff77ca11aa3d24bdc995406359e49693f2d5e1"
+      },
+      {
+        "byte_count": 15392,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/historical_regression.json",
+        "sha256": "c37b52e6dfacd9306adfe8d7db2cd3332643083967f43d867e42fb56d32bec12"
+      },
+      {
+        "byte_count": 24630,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/manifest_attempt01.json",
+        "sha256": "ef762dee3c3b94a8740dd2d8abd407671da2692b5946473a4d692222363a00ae"
+      },
+      {
+        "byte_count": 24630,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/manifest_attempt02.json",
+        "sha256": "6ed480053781250c442a0c8084583a1d7114eba637fbe632938afbb079b96b97"
+      },
+      {
+        "byte_count": 24630,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/manifest_attempt03.json",
+        "sha256": "41edd7a14fa323e026736396ae4227ffdd938c16ad7ea157a354fc9f7505888e"
+      },
+      {
+        "byte_count": 24630,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/manifest_final.json",
+        "sha256": "8d15d8492b4662ad554b4cc25b27d4b3954fcbf340f9b38b5468de5bcfa17ebf"
+      },
+      {
+        "byte_count": 1478,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/pilot_review_3s/MPC_INTERFACE_GAP_AUDIT.md",
+        "sha256": "724bdf79b5c0947e6b746ea53467b7779cad668701e92eaede7badfd4f47274b"
+      },
+      {
+        "byte_count": 1564,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/pilot_review_3s/PILOT_ACCEPTANCE_CRITERIA.md",
+        "sha256": "291a989b88ed22368f71bf6353789f37204308e4cf9d3d7ad74a53748380491b"
+      },
+      {
+        "byte_count": 1380,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/pilot_review_3s/PILOT_PARAMETER_MANIFEST_DRAFT.md",
+        "sha256": "1a1028c6f4799bb75b648309b56cfb354f33afb94f76bfc950f0ca7d35aa3c0e"
+      },
+      {
+        "byte_count": 1618,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/pilot_review_3s/PILOT_SCENARIO_MATRIX.md",
+        "sha256": "69a4795e57c72b5d1b2322e21fa32edf535eea02ab5238846ad08a087dc13bbc"
+      },
+      {
+        "byte_count": 4965,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/pre_implementation_verification.json",
+        "sha256": "1f6cfda9d62356645309498b0485bad79b1c2c0ef1157c252a49200c951b48d2"
+      },
+      {
+        "byte_count": 37915,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/preseal_change_audit.json",
+        "sha256": "6aff46efbf026b0e4ba7cdd70f484ba8a52d26e897741e4ee08967ff0d60ea2c"
+      },
+      {
+        "byte_count": 2067,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/prior_pilot_draft_hashes.json",
+        "sha256": "7b8315ad405bf76d1416433c4e1ed1a21b18ee50df040b120d0a0ea4a86c274a"
+      },
+      {
+        "byte_count": 17292,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/prior_pilot_drafts_1s/MPC_INTERFACE_GAP_AUDIT.md",
+        "sha256": "b788cc248806f13ab7c8054441625ad15421e401bd52f1ea93e035ec4cb704bf"
+      },
+      {
+        "byte_count": 14208,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/prior_pilot_drafts_1s/PILOT_ACCEPTANCE_CRITERIA.md",
+        "sha256": "d2d8d15f4c2bbb3d53db35061321cba92b061586fb67970cc648ff66af7da30c"
+      },
+      {
+        "byte_count": 9208,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/prior_pilot_drafts_1s/PILOT_PARAMETER_MANIFEST_DRAFT.md",
+        "sha256": "6a015d1e6993fbe3d4c0fcd0464113e5696436a98e6a19e8eb4524573063bf23"
+      },
+      {
+        "byte_count": 8597,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/prior_pilot_drafts_1s/PILOT_SCENARIO_MATRIX.md",
+        "sha256": "4938bf3debd0d4747620383b206c563fb094aa34765416a2a0db7018d1e27b4f"
+      },
+      {
+        "byte_count": 2551,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/regression_N1a.json",
+        "sha256": "cdd28504b32d66d3d207649f154434542b3d826a53043e0077e5a8c08eb5764f"
+      },
+      {
+        "byte_count": 2534,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/regression_N1b.json",
+        "sha256": "bffda7506fdf9ac773e715e1b03390e2d5e793f1935b4573979ef8f6cf622eee"
+      },
+      {
+        "byte_count": 2897,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/regression_N2.json",
+        "sha256": "8221fc5211449e67066d97b50733844a36fcd44937ccfd08fea4f9661d4d3f94"
+      },
+      {
+        "byte_count": 2157,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/regression_N3.json",
+        "sha256": "c51f5feac03e8819618b25c7f4cc28308ada2257870bb3b863b28be27a1a94bd"
+      },
+      {
+        "byte_count": 781,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/regression_comparison.json",
+        "sha256": "96b42380146f844382cefaccdf9bc12f71a9b87079718d4e245230a7f0772464"
+      },
+      {
+        "byte_count": 9952,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/seal_revision.py",
+        "sha256": "f7fbec35fa13b225c2c9a854b0cf5aa4381532ebfc64aca9d1e610bb415fadf7"
+      },
+      {
+        "byte_count": 10114,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/seal_stop.py",
+        "sha256": "2f23e166f308adc27e9c3140ee81de09919c9a9a76bc1e0ca6eab570e58ad949"
+      },
+      {
+        "byte_count": 522091,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/standalone_branch_cost.json",
+        "sha256": "d27c19ec87ba9d41715bcc9ab0a6ac331e9276d1af0619840dbe404a957eeaa2"
+      },
+      {
+        "byte_count": 379,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/startup_failure/evidence.json",
+        "sha256": "06c31b30c012edf7f87cb970bd8bf4dc25a6b6813da21e63de1cafa4afc37629"
+      },
+      {
+        "byte_count": 13831,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/startup_failure/workflow_utf8.py.snapshot",
+        "sha256": "2188673d5cab4310c1319e27b5d2fefdfc54657a550e3e9350c75dce45e98d18"
+      },
+      {
+        "byte_count": 883,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/static_design_audit.json",
+        "sha256": "f56b728f2e963149c7c5978fc7485020bae257bf757427358d3ba979bcdac973"
+      },
+      {
+        "byte_count": 3288,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/version_protection_tests.json",
+        "sha256": "527a8582d0206d2111ebafc204b61952f43b5e6eb66b8dc1f1e4b6dd2d0bd9b4"
+      },
+      {
+        "byte_count": 17376,
+        "path": "research_versions/dynamic_k_v1/acceptance/0010/workflow.py",
+        "sha256": "0febc2ac9d4d8eca0c10996a525cf6d1091c16f70d1bff4ecdf07c43094a6534"
+      },
+      {
+        "byte_count": 1231,
+        "path": "research_versions/dynamic_k_v1/configs/n4_p0_pilot_semantics_v1.json",
+        "sha256": "ebbca01b0cf28a94824af0cd31598ca972cbacb2561082a70bd033412a736ebe"
+      },
+      {
+        "byte_count": 1391,
+        "path": "research_versions/dynamic_k_v1/contracts/N4_P0_CAUSAL_ROOT_SCORING_CN.md",
+        "sha256": "c62bebcb2a873a3f6d36b6d5b80cf368b6c3f65a43ccb2ee3c49a8b500706025"
+      },
+      {
+        "byte_count": 5090,
+        "path": "research_versions/dynamic_k_v1/contracts/N4_P0_EXACT_COST_OPTIMIZATION_PROPOSAL_CN.md",
+        "sha256": "c07c8ea8d616a7871dbd255ca3437968fdbed1ad449ae43c45609b6899d2d6dc"
+      },
+      {
+        "byte_count": 4192,
+        "path": "research_versions/dynamic_k_v1/contracts/N4_P0_INTERFACE_CN.md",
+        "sha256": "6ccbd6a897c7a71ea23f2134b7624cefd418433362e768d4e1090c713c7ded66"
+      },
+      {
+        "byte_count": 13959,
+        "path": "research_versions/dynamic_k_v1/runtime/n4_p0.py",
+        "sha256": "2b7420962fab6db5a663b27e978b417f998ee267d930c5566983e133695c9d0b"
+      },
+      {
+        "byte_count": 15157,
+        "path": "research_versions/dynamic_k_v1/tests/test_n4_p0.py",
+        "sha256": "d7683bc9b82d7bcd3a4acd3a6e61113292d9dbe0de10497f9262991415807025"
+      }
+    ],
+    "deleted": [],
+    "modified": []
+  },
+  "cost_status": "STOP_COST_EXCESSIVE",
+  "created_beijing": "2026-10-12T18:53:58.985416+08:00",
+  "created_utc": "2026-10-12T10:53:58.985416+00:00",
+  "engineering_functionality_tests_pass": true,
+  "formal_experiments_executed": false,
+  "full_epoch_completed": false,
+  "full_pilot_executed": false,
+  "parent_record": {
+    "byte_count": 8162,
+    "path": "research_versions/dynamic_k_v1/revisions/0009/record.json",
+    "sha256": "bd54f8efb78375acca995b8ed43f5ccbfb4be80228d46eb2ca2ab5e954d86342"
+  },
+  "reason": "N4-P0 causal root-action scorer engineering implementation; three-second PILOT_ONLY amendment; functionality passed, cost STOP, no completed full epoch or paired pilot.",
+  "revision_id": "0010",
+  "schema": "dynamic_k_revision_record_v1",
+  "scientific_gate_pass": false,
+  "version_id": "dynamic_k_v1"
+}

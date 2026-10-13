@@ -1,0 +1,25 @@
+{
+  "N3_catalog": "FROZEN_TEST_RETAINED_INDEPENDENT_EVIDENCE_PATH; all frozen assertions executed",
+  "final_P0": 20,
+  "historical_passed": 131,
+  "historical_total": 132,
+  "known_old_F3_failure": [
+    {
+      "test": "test_known_witness_domain_discovers_every_registered_size_without_J (test_f3_v2_search_policy_probe.StructuralPolicyProbeTests)",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\tests\\test_f3_v2_search_policy_probe.py\", line 50, in test_known_witness_domain_discovers_every_registered_size_without_J\n    self.assertGreater(pool.audit['coverage_by_size'][str(size)],0)\nAssertionError: 0 not greater than 0\n"
+    }
+  ],
+  "new_reader_regression": false,
+  "new_reader_tests": 8,
+  "original_P0": 20,
+  "pre_post_actions": 6,
+  "separate_new_real_stress_case": "PERSIST_ADD_REJECTED_BY_BOTH_ORIGINAL_AND_OPTIMIZED_N1A",
+  "status": "PASS_NO_NEW_EXISTING_SUITE_REGRESSIONS",
+  "upstream": {
+    "N1a": 25,
+    "N1b": 24,
+    "N2": 27,
+    "N3": 20
+  },
+  "version_protection": 32
+}

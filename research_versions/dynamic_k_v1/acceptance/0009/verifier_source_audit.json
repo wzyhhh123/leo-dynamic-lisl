@@ -1,0 +1,12 @@
+{
+  "status": "PASS_EXACT_ADDITIVE_TRANSFORMATION",
+  "original_sha256": "c740401a75c2b43063957db3ef9dc4575098f3f7bb4bfadfd3f16d40739e04b5",
+  "new_sha256": "33fae3b852d3bda75802c8743101c68ed69d7a462886481bceb3b8bd7626c0fd",
+  "original_source_unchanged": true,
+  "original_exclusion_policy_and_change_roots_unchanged": true,
+  "changes": [
+    "add authorized_project_readme and fixed policy constants",
+    "extend one path authorization require"
+  ],
+  "reverting_only_these_additions_reproduces_original_source": true
+}

@@ -1,0 +1,281 @@
+{
+  "actions_submitted": 0,
+  "energy_prefix_comparison": {
+    "current_samples_at_t3": [],
+    "current_samples_before_t3": [
+      [
+        [
+          "K_active_admissible",
+          1
+        ],
+        [
+          "K_draining",
+          0
+        ],
+        [
+          "acquiring_terminal_count",
+          0
+        ],
+        [
+          "retargeting_terminal_count",
+          0
+        ],
+        [
+          "setup_connection_count",
+          0
+        ],
+        [
+          "setup_reserved_terminal_count",
+          0
+        ],
+        [
+          "setup_terminal_count",
+          0
+        ],
+        [
+          "t_s",
+          0.0
+        ]
+      ]
+    ],
+    "original_samples_at_t3": [
+      [
+        [
+          "K_active_admissible",
+          1
+        ],
+        [
+          "K_draining",
+          0
+        ],
+        [
+          "acquiring_terminal_count",
+          0
+        ],
+        [
+          "retargeting_terminal_count",
+          2
+        ],
+        [
+          "setup_connection_count",
+          1
+        ],
+        [
+          "setup_reserved_terminal_count",
+          2
+        ],
+        [
+          "setup_terminal_count",
+          2
+        ],
+        [
+          "t_s",
+          3.0
+        ]
+      ]
+    ],
+    "original_samples_before_t3": [
+      [
+        [
+          "K_active_admissible",
+          1
+        ],
+        [
+          "K_draining",
+          0
+        ],
+        [
+          "acquiring_terminal_count",
+          0
+        ],
+        [
+          "retargeting_terminal_count",
+          0
+        ],
+        [
+          "setup_connection_count",
+          0
+        ],
+        [
+          "setup_reserved_terminal_count",
+          0
+        ],
+        [
+          "setup_terminal_count",
+          0
+        ],
+        [
+          "t_s",
+          0.0
+        ]
+      ]
+    ],
+    "samples_before_t3_exact_equal": true,
+    "warning": "Original t3 sample includes post-ADD setup. Does not reconstruct old dwell/cursor/agenda."
+  },
+  "event_prefix_comparisons": {
+    "graph_event_sequence": {
+      "comparison": "STRICTLY_BEFORE_ADD_T3",
+      "current_count": 0,
+      "exact_equal": true,
+      "original_count": 0,
+      "timestamp_field": "time_s"
+    },
+    "route_changes": {
+      "comparison": "STRICTLY_BEFORE_ADD_T3",
+      "current_count": 0,
+      "exact_equal": true,
+      "original_count": 0,
+      "timestamp_field": "time_s"
+    },
+    "terminal_event_sequence": {
+      "comparison": "STRICTLY_BEFORE_ADD_T3",
+      "current_count": 0,
+      "exact_equal": true,
+      "original_count": 0,
+      "timestamp_field": "time"
+    }
+  },
+  "new_root_history_count": 8,
+  "old_full_t3_agenda": "UNVERIFIABLE",
+  "old_full_t3_energy_dwell": "UNVERIFIABLE",
+  "old_full_t3_reservations": "UNVERIFIABLE",
+  "old_full_t3_terminal_snapshot": "UNVERIFIABLE",
+  "original_at_t3_events": [
+    {
+      "details": [
+        [
+          "endpoints",
+          [
+            [
+              "X0_10",
+              "D2"
+            ],
+            [
+              "X1_10",
+              "D1"
+            ]
+          ]
+        ],
+        [
+          "predicted_ready",
+          4.0
+        ],
+        [
+          "reservation_id",
+          "R2"
+        ]
+      ],
+      "event": "RESERVE_BOTH",
+      "time": 3.0
+    },
+    {
+      "details": [
+        [
+          "reservation_id",
+          "R2"
+        ],
+        [
+          "terminal",
+          [
+            "X0_10",
+            "D2"
+          ]
+        ]
+      ],
+      "event": "RETARGET_START",
+      "time": 3.0
+    },
+    {
+      "details": [
+        [
+          "reservation_id",
+          "R2"
+        ],
+        [
+          "terminal",
+          [
+            "X1_10",
+            "D1"
+          ]
+        ]
+      ],
+      "event": "RETARGET_START",
+      "time": 3.0
+    },
+    {
+      "details": [
+        [
+          "command_count",
+          1
+        ],
+        [
+          "commands",
+          [
+            [
+              [
+                "a",
+                [
+                  "X0_10",
+                  "D2"
+                ]
+              ],
+              [
+                "acquisition",
+                0.5
+              ],
+              [
+                "b",
+                [
+                  "X1_10",
+                  "D1"
+                ]
+              ],
+              [
+                "orientation_a",
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              ],
+              [
+                "orientation_b",
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              ],
+              [
+                "release_after",
+                []
+              ],
+              [
+                "retarget_a",
+                0.5
+              ],
+              [
+                "retarget_b",
+                0.5
+              ],
+              [
+                "type",
+                "Connect"
+              ],
+              [
+                "visibility_end",
+                147.04275553019596
+              ]
+            ]
+          ]
+        ]
+      ],
+      "event": "BATCH_COMMIT",
+      "time": 3.0
+    }
+  ],
+  "original_pre_t3_log_count": 8,
+  "simulated_roots_constructed": 0,
+  "terminal_history_before_t3_exactly_equals_new_root_history": true
+}

@@ -1,0 +1,607 @@
+{
+  "files": [
+    {
+      "byte_count": 3629,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/acceptance_summary.json",
+      "sha256": "80b7fb5870c62f09fa9664aa63790df016a80d82fa4c2f20fb3bbd806f85f149"
+    },
+    {
+      "byte_count": 159518,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/audit_summary.json",
+      "sha256": "43665ed0d4c5bedc2f21607ff47eb8fab0e883edaff1974937b86d2ad3199082"
+    },
+    {
+      "byte_count": 15799799,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/boundaries.jsonl",
+      "sha256": "65b86d75babca8897a946e8e06749c771392923b5ab638636a37d8cc1e0f436e"
+    },
+    {
+      "byte_count": 2328804,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/branch_result.json",
+      "sha256": "cd98bf37da99a58dc4abfbd0375fa139e10a1efa0dd409e82261abb293551871"
+    },
+    {
+      "byte_count": 3595814,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/CHECKPOINT_6_CAUSAL_PREIMAGE.json",
+      "sha256": "1b48f4180763baa20f11bf72796bc88c2e974ebce18079741ba81fb9f639990d"
+    },
+    {
+      "byte_count": 52096474,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/CHECKPOINT_6_FULL_STATE.json",
+      "sha256": "303ebd46af7d3b3a77a69c335000438d5b8ff7be0a2ec1c75f0e37fce4baba89"
+    },
+    {
+      "byte_count": 1846002,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/CHECKPOINT_6_SUMMARY.json",
+      "sha256": "c63553e8f6f35199ac2ff95dc876a89d68ad1568c9e7ae1d391883f5a015bc35"
+    },
+    {
+      "byte_count": 3602199,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/CHECKPOINT_9_CAUSAL_PREIMAGE.json",
+      "sha256": "f2fb221853d93a71963d17e05872de4d8dd9f220ef648a4980b94d77a20dc9bf"
+    },
+    {
+      "byte_count": 52204070,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/CHECKPOINT_9_FULL_STATE.json",
+      "sha256": "d25d90e0e2204cf0b648178987149975002ce58c5935b49c05874e36b223621d"
+    },
+    {
+      "byte_count": 1855059,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/CHECKPOINT_9_SUMMARY.json",
+      "sha256": "f2d233b0469769c21bc6a7015c9af4fc79096145c0314bbfe38ffa324c98e678"
+    },
+    {
+      "byte_count": 5055491,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/intervals.jsonl",
+      "sha256": "716921506a6187948d491453588a10388fcc4e5f50ef6a7029795155da2a0fa9"
+    },
+    {
+      "byte_count": 138828,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/next_events.jsonl",
+      "sha256": "765dadb4e8fc4e5251e2cf31414d01c3df7e04582261dfea49fc2b4975ff94bf"
+    },
+    {
+      "byte_count": 21547885,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/operations.jsonl",
+      "sha256": "2e412a9dacee23107dc30dfe413893e20702cec60366b3122887bf5b6e26fe69"
+    },
+    {
+      "byte_count": 1879085,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/POST_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "86684904c00023350816c7c036f26d95cebe06b417214629c077cd82d00bd7bd"
+    },
+    {
+      "byte_count": 29546449,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/POST_ACTION_FULL_STATE.json",
+      "sha256": "c37675107fb93f49fd1ff976a5f37e98039f29595c3ac9d9fa640b522bc50fb5"
+    },
+    {
+      "byte_count": 211256,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/POST_ACTION_SUMMARY.json",
+      "sha256": "03776a73cecb1f5de5e95d9292f813162df2e0fd99d72076e2c93719d017c6a1"
+    },
+    {
+      "byte_count": 1368502,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/PRE_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "ef8183d6f4b46f1096af42ff3ee13d338cdf79d69ad6c546c44356cf7c802494"
+    },
+    {
+      "byte_count": 24120661,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/PRE_ACTION_FULL_STATE.json",
+      "sha256": "5be22264a9d4145b88effb6565fe6ed93b744aa956a8b1659e391beece682e32"
+    },
+    {
+      "byte_count": 203285,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/PRE_ACTION_SUMMARY.json",
+      "sha256": "3dd5dbb2439ce37d445fbba64b3671c44de14ee5511cef49c848028cf829065b"
+    },
+    {
+      "byte_count": 2682,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/receipt.json",
+      "sha256": "4e0993b044d02c9a2efb5db51b9d8c6f489dbd5a6867508a26fea0e75eaaad15"
+    },
+    {
+      "byte_count": 1431,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/reconstruction.json",
+      "sha256": "01647c5ca58206f43c127d85c6e68a591d56daa9a330af2eff1ff983cb6aad25"
+    },
+    {
+      "byte_count": 74618,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/VALIDATION_INPUT_001.json",
+      "sha256": "d8f36b372e012341a83b9bd108d7d2a02ad9cf3db9b08ba48fb2702ff6b73eb7"
+    },
+    {
+      "byte_count": 75455,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/VALIDATION_INPUT_002.json",
+      "sha256": "f30085826b2c0f70c0de6ea0f185b9b6b827757df528ab7ec258ade0e5c8aba3"
+    },
+    {
+      "byte_count": 75457,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ADD/VALIDATION_INPUT_003.json",
+      "sha256": "64e2a96056124a5c6f43f14ecb5015d274935d4234eaf9fb9afcac9e05dbc930"
+    },
+    {
+      "byte_count": 1292,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/analytic_tests.json",
+      "sha256": "2434ad73bc71e09cc6ddf206fbe7ecca4ec91e404742d1a5d608d786e433e47c"
+    },
+    {
+      "byte_count": 5204,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/analyze_evidence.py",
+      "sha256": "eca48d6403c945b411a2a87f113fb23b639beb116488ab769c0f3fd072c80251"
+    },
+    {
+      "byte_count": 1431,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/CLEAN_REBUILD/reconstruction.json",
+      "sha256": "df45dae1b8e44d30c22cd4404ee626bf43c6be9cf2db35841cceb085bfca3b5e"
+    },
+    {
+      "byte_count": 3401,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/diagnostic_measure.py",
+      "sha256": "fd21bc257f1e1538fe8dccda62f15a2d871c63f989a90967d65ae1e02293cc78"
+    },
+    {
+      "byte_count": 4881,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/EVENT_CLOCK_PLAN_AND_AUDIT_CN.md",
+      "sha256": "bb699fff17a2062396e4e9ab9658eb970926b96af267f8b1e0b63e308e77af7e"
+    },
+    {
+      "byte_count": 2013,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/EVENT_TIMING_AND_CONSERVATION_SUMMARY.json",
+      "sha256": "a8036687f0f992482ed808c62ca87f26d6eabc4d592c0d59058bd0fe92b54d13"
+    },
+    {
+      "byte_count": 312737,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/EXACT_ADD_DIAGNOSIS.json",
+      "sha256": "20c766413538d68713985d10d8d2922b14fbe2ba0dc6cadba80fa25178a86d69"
+    },
+    {
+      "byte_count": 50966,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/EXACT_HOLD_DIAGNOSIS.json",
+      "sha256": "e5b95a5753ef7cf0bcc4aa281b0215511bb208cb98ad7bf27d71871b36c518e0"
+    },
+    {
+      "byte_count": 72486,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/EXACT_ROOT_PREFIX_DIAGNOSIS.json",
+      "sha256": "764fa66b4af07a59977601f2f1b63075f6bbec54dcd80bee759f631fd0a3258e"
+    },
+    {
+      "byte_count": 2941,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/FINAL_EVIDENCE_CHECKS.json",
+      "sha256": "cc8ee60a57070419897cab6d536fe4376c912506f3ade8721d9f4b73301528b4"
+    },
+    {
+      "byte_count": 3242,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/final_evidence_checks.py",
+      "sha256": "005d6155132928c4013e34aad860a53666ad0b2a3580dc322848edd2b01a22f4"
+    },
+    {
+      "byte_count": 3057,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/generate_local_observer.py",
+      "sha256": "f7b2ce0edb541585e9431bf2b18e3d331c6931882215c0a2c24715cab2df067f"
+    },
+    {
+      "byte_count": 4481,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/generate_variant.py",
+      "sha256": "99882816ce5a7bafe95b43a6573a16102737c180dda6f11e70308bc88302f44c"
+    },
+    {
+      "byte_count": 1859,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/historical.py",
+      "sha256": "9ee8d17b942d2b275c35b5beb0a8454ac9ef83c975075040f338315939633748"
+    },
+    {
+      "byte_count": 12061,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/historical_group_0.json",
+      "sha256": "a4698ab1054613264159b6700f326e93e8213a34ce8459c44e2157b5a5c20c83"
+    },
+    {
+      "byte_count": 3612,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/historical_group_1.json",
+      "sha256": "3f05d353b71fc973f3974e8bde8623b97f47c2c599c36a57c750161dd14ee9b6"
+    },
+    {
+      "byte_count": 46,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/historical_summary.json",
+      "sha256": "68cec87acf09c041a67db8907f0cd2db39ba2d186ca9ef55ff8f7ed0bd4ac528"
+    },
+    {
+      "byte_count": 5003,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/audit_summary.json",
+      "sha256": "ae7f60e5f3d72487e572fed6cf17fe742cd8c53eed93ac9d902a1b01796048d9"
+    },
+    {
+      "byte_count": 105147,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/boundaries.jsonl",
+      "sha256": "297a23cff1a2111af138d69a36a96e70b81edd9889d9b945cd8db1da124edc50"
+    },
+    {
+      "byte_count": 482264,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/branch_result.json",
+      "sha256": "fe7ebc19b1645b343be7af0b403510c8bd7ebb7621f9f379e8a8f98ec37975ce"
+    },
+    {
+      "byte_count": 1384448,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/CHECKPOINT_6_CAUSAL_PREIMAGE.json",
+      "sha256": "7a4846bec6411f7746d44c4f4e0971a5f64c3233ae5a931b7338dd002ed8c94e"
+    },
+    {
+      "byte_count": 26147522,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/CHECKPOINT_6_FULL_STATE.json",
+      "sha256": "bff7921ae6fccbbe01e66c6c22d7400adf89a129a897e9e049d527fcded543ac"
+    },
+    {
+      "byte_count": 227231,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/CHECKPOINT_6_SUMMARY.json",
+      "sha256": "f63ae28084fd52fd7346b7b80c7a727d8df4f7f5daa21b482c4c2a49070337de"
+    },
+    {
+      "byte_count": 1394888,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/CHECKPOINT_9_CAUSAL_PREIMAGE.json",
+      "sha256": "281d1599f8b7b22f83c51784e8d0d00de294a4aa8e48be35b300b7174e01becc"
+    },
+    {
+      "byte_count": 26314143,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/CHECKPOINT_9_FULL_STATE.json",
+      "sha256": "281c68868122c4eaf0a0da75c3b128ca8251256c08798e6eb5dfeb37a01d99f1"
+    },
+    {
+      "byte_count": 243087,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/CHECKPOINT_9_SUMMARY.json",
+      "sha256": "2dbc594150db5bc4c4debc0c7954e8a59c46f728336798df01319bf4e63f3c84"
+    },
+    {
+      "byte_count": 55716,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/intervals.jsonl",
+      "sha256": "4a44300d0c76f74688a7e171eb0a7025a7efda2ee25daf977f97a16a8c066ac0"
+    },
+    {
+      "byte_count": 956,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/next_events.jsonl",
+      "sha256": "d1ec1b823edde4190495476f3bc39f492f5477d49ff1a348ce2e96a9062b150a"
+    },
+    {
+      "byte_count": 291951,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/operations.jsonl",
+      "sha256": "61779d1bb2bcb80a092ef43ec2a4622a85f4a1ef508edbbb7e74357698e0dcac"
+    },
+    {
+      "byte_count": 1373965,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/POST_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "8e9687cbf00a3b39c1be8205979f17a0d80327ce01cb9465049562d8de936ae9"
+    },
+    {
+      "byte_count": 25980855,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/POST_ACTION_FULL_STATE.json",
+      "sha256": "00af7cb9f5b54076287f46758cf233f9af03ee1f3a630949bae1f77c3fad1783"
+    },
+    {
+      "byte_count": 211255,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/POST_ACTION_SUMMARY.json",
+      "sha256": "f406bd1eb46d53569c441e72bc6dc7dc89e6ab56f0c11be14380dc4eec5a24cb"
+    },
+    {
+      "byte_count": 1368502,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/PRE_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "ef8183d6f4b46f1096af42ff3ee13d338cdf79d69ad6c546c44356cf7c802494"
+    },
+    {
+      "byte_count": 24120661,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/PRE_ACTION_FULL_STATE.json",
+      "sha256": "5be22264a9d4145b88effb6565fe6ed93b744aa956a8b1659e391beece682e32"
+    },
+    {
+      "byte_count": 203285,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/PRE_ACTION_SUMMARY.json",
+      "sha256": "3dd5dbb2439ce37d445fbba64b3671c44de14ee5511cef49c848028cf829065b"
+    },
+    {
+      "byte_count": 466,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/receipt.json",
+      "sha256": "d9397003d6ebfc1b1b574ee1ca32135f6c1e458117621bc3e327d549941e8213"
+    },
+    {
+      "byte_count": 1431,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/reconstruction.json",
+      "sha256": "fed8bd280a4e67e9683bba4e83bb24f1dfe65c0509e1781cd925a0c4dbb398eb"
+    },
+    {
+      "byte_count": 74618,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/VALIDATION_INPUT_001.json",
+      "sha256": "52871f1f6f39804c3fbb28e499649a390d3367b29cc2d9522f7e45b2ca05ed72"
+    },
+    {
+      "byte_count": 74625,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/VALIDATION_INPUT_002.json",
+      "sha256": "307f570ba1a292c78a3bab6ba3d9b832d2266a7c96ef8cbcca2ac0ef64533734"
+    },
+    {
+      "byte_count": 74624,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD/VALIDATION_INPUT_003.json",
+      "sha256": "ae4ef19415fb9898a7100a74e9e916feca11a798432fc9c7a859fdeec4874a3d"
+    },
+    {
+      "byte_count": 5234,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/HOLD_ADD_RESULTS.json",
+      "sha256": "c8b17efbbc294d166ca490ce0bc1a2bf39a4ff1fbdaf71142fc5d49c376c75a6"
+    },
+    {
+      "byte_count": 2051,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/inline_variant_test.py",
+      "sha256": "db2d0c959af47c7e0e049c246dabf8dc55301cc098362e080ef080b32015e0fb"
+    },
+    {
+      "byte_count": 6829,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/local_observer.py",
+      "sha256": "1d8693ba3f93d0d8f62976772c60756d52c1e75d477462e198482b65b17c985f"
+    },
+    {
+      "byte_count": 3235,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/LOCAL_OBSERVER_SOURCE_DIFF.json",
+      "sha256": "c3adc2e1bff206d504613101246eaccf146b7e20f298cc636c5c4d4d4f4f6b2b"
+    },
+    {
+      "byte_count": 6637,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/MINIMAL_SOURCE_DIFF.json",
+      "sha256": "809316ae5256e247a780bf20836e80f552885a187c6440c85864ff40f10aceb4"
+    },
+    {
+      "byte_count": 1667,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ORIGINAL_0014_RECONSTRUCTION.json",
+      "sha256": "66f6bd13c4555d20caee9539d1b50b95d393479baaeb9ccaa37fb1fbf0a0592e"
+    },
+    {
+      "byte_count": 86234,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ORIGINAL_FAILURE_COMPARISON.json",
+      "sha256": "0afd51e5f227adf373e9ecc3cff7c9c09303375311366aa89d90196b131fe80b"
+    },
+    {
+      "byte_count": 2833,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/original_N1a_regression.json",
+      "sha256": "9d9259144d00e33d98317d46483257bcb7ea36e871123329b0ea2e6a3b46214a"
+    },
+    {
+      "byte_count": 2821,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/original_N1b_regression.json",
+      "sha256": "8c705e27782ba853ad9410220111006cb63cfbe27615eaffa4ad1f707d1d19f6"
+    },
+    {
+      "byte_count": 3186,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/original_N2_regression.json",
+      "sha256": "7d1f2f2c37dc5e4c28829f8a415241d1a8994509f48e2bcc67b0dd13c9babaa4"
+    },
+    {
+      "byte_count": 2431,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/original_N3_regression.json",
+      "sha256": "904e8c8d4b2c4e7ee542cc42cf789f5eeb254bb30ea82e4ed361720a60f43814"
+    },
+    {
+      "byte_count": 2166,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/original_P0_regression.json",
+      "sha256": "4479f0c63507c1ec4774aa38ff0aef6545477f506bbd5dfc59e7eea2c64e5af0"
+    },
+    {
+      "byte_count": 270,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/original_regression_summary.json",
+      "sha256": "875b5719806e8ef1f7795b010f3f0849ba69c4c326100b06068a544caa27f04f"
+    },
+    {
+      "byte_count": 491,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/pre_implementation_verification.json",
+      "sha256": "49002307834f477db0e2f4a2fbdfab0f982ebdb0ef1887d5fec45eb1fbc7c45a"
+    },
+    {
+      "byte_count": 2493,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/regression.py",
+      "sha256": "1a891d3f3dbe89e66b40b1cfaf1e5d688027e18e75121cdf047c113963816a1e"
+    },
+    {
+      "byte_count": 1948,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/replay_entry.py",
+      "sha256": "960c91d495e4865ec7c7bc03131e0197e4fbd5f8f3e0bdedf5b4a0ae849fbcbc"
+    },
+    {
+      "byte_count": 278294,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/replay_recipe.json",
+      "sha256": "dac8cc22b8bea4e303f118a1cf38170cb1ab2f96e218c9b593be0af82885e0c6"
+    },
+    {
+      "byte_count": 6586,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/RESULT_CN.md",
+      "sha256": "cab9a7e4abd8d64430a8972679c555c17433de991ce4e0ac9befa8081d3ed169"
+    },
+    {
+      "byte_count": 4648,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/root_artifact_anchor.json",
+      "sha256": "5cf023f4f75c7cbf151d24102e7d1d8be2ff3e35f9b0218a0ec91222a6e1ea7f"
+    },
+    {
+      "byte_count": 1368502,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ROOT_BASELINE/LIVE_PRE_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "ef8183d6f4b46f1096af42ff3ee13d338cdf79d69ad6c546c44356cf7c802494"
+    },
+    {
+      "byte_count": 25884777,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ROOT_BASELINE/LIVE_PRE_ACTION_FULL_STATE.json",
+      "sha256": "bce3233875f5b41c04b4127c5167b576ddde9ce344270c25ab1ff9c2ad4d80f1"
+    },
+    {
+      "byte_count": 203290,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ROOT_BASELINE/LIVE_PRE_ACTION_SUMMARY.json",
+      "sha256": "917680344345afe8e3697c1e5ccb7384d51cde6d371cedd2cabe6c067110ed95"
+    },
+    {
+      "byte_count": 891358,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ROOT_BASELINE/prefix_audit/boundaries.jsonl",
+      "sha256": "1d6316fd6e77ed3400885d65c9d88dea79c64eff99149bce4a1b93e811d0ea01"
+    },
+    {
+      "byte_count": 400970,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ROOT_BASELINE/prefix_audit/intervals.jsonl",
+      "sha256": "a1d84254bd33e426b751977e3368f848d1008570ddfef3b1b716660eb7711343"
+    },
+    {
+      "byte_count": 16690,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ROOT_BASELINE/prefix_audit/next_events.jsonl",
+      "sha256": "38ca720eda33fbdc4e23c09ca420598af76f825b33552e50892d1987cbc6480c"
+    },
+    {
+      "byte_count": 2230532,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ROOT_BASELINE/prefix_audit/operations.jsonl",
+      "sha256": "44bc254e91c56420e9c837fbd500de5ffba12027d72d21b5a898a5932f55fe44"
+    },
+    {
+      "byte_count": 21484,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ROOT_BASELINE/prefix_audit/summary.json",
+      "sha256": "a4eefa430119cadf9d1e23d739cebcc6c735a4e968759d7c5bf56294c33fc277"
+    },
+    {
+      "byte_count": 462,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ROOT_BASELINE/root_binding.json",
+      "sha256": "cef9d1cde2b47a052e082dacf79cada0e2406579fdf7b5668e36036d978f8d45"
+    },
+    {
+      "byte_count": 25762439,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ROOT_BASELINE/ROOT_FULL_STATE.json",
+      "sha256": "378f0d77e8881dd1873f50e855526c259da5daf29d14835382ed2646db686541"
+    },
+    {
+      "byte_count": 1368502,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ROOT_BASELINE/SANITIZED_PRE_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "ef8183d6f4b46f1096af42ff3ee13d338cdf79d69ad6c546c44356cf7c802494"
+    },
+    {
+      "byte_count": 24120661,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ROOT_BASELINE/SANITIZED_PRE_ACTION_FULL_STATE.json",
+      "sha256": "6dadb4a04ad09ebba12127a61e7deef4d1078a906b1e28a26157f703a051cef0"
+    },
+    {
+      "byte_count": 203295,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ROOT_BASELINE/SANITIZED_PRE_ACTION_SUMMARY.json",
+      "sha256": "4b5c1121918a8becebb3c69d8d085c2aebc4670d7b8b54eaab554220f5404d98"
+    },
+    {
+      "byte_count": 2180,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/ROOT_SEMANTIC_DIFF.json",
+      "sha256": "23e5ff125ef9f8feaa2ace5c2cee13d620bd1f1693ae7723cd31437146be503f"
+    },
+    {
+      "byte_count": 6304,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/seal.py",
+      "sha256": "ce0e8c6e931a90b39de2e89f5940cd9cb93d5161389c9e6fde1250cafc25733b"
+    },
+    {
+      "byte_count": 3854,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/support.py",
+      "sha256": "7cb3b2c7d976f74940f3510ef32431e501fbe70c4e246accb7865dfd5383ee2e"
+    },
+    {
+      "byte_count": 5141,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/test_event_clock.py",
+      "sha256": "2a821b43fc26b77286bdf9d469d92106258d4d356a628124e423f95e7089e706"
+    },
+    {
+      "byte_count": 92,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/VARIANT_BINDING.json",
+      "sha256": "870c02e8c53ffd697357612cc4aeb5c9407092699cc3f5c8a3b73e2d82d52a6f"
+    },
+    {
+      "byte_count": 42292,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/variant_dependencies.json",
+      "sha256": "4fe35f65dfce934c2ec6ab4daadc6856ebea9f5a7c072e8aa794cf23a3e7df59"
+    },
+    {
+      "byte_count": 2815,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/variant_N1a_regression.json",
+      "sha256": "c97276597a9b13386adec9ad2bd2c4c1e321b9aa2e5e93c5c4c2ee81481c1d27"
+    },
+    {
+      "byte_count": 2796,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/variant_N1b_regression.json",
+      "sha256": "2831d8377d61da3bc2f55c0df36780bc52eeffad6a5a6bbe69693ba5337aef2d"
+    },
+    {
+      "byte_count": 3150,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/variant_N2_regression.json",
+      "sha256": "686cf3ae583b4876caa9e4e65007a868a71134eca92d021eedd618e389eecfa8"
+    },
+    {
+      "byte_count": 2410,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/variant_N3_regression.json",
+      "sha256": "d1e09f0ef9430c10b12be7d5db9aef7cb7016223a1d1ad4cdbcbb2e56a0e36f0"
+    },
+    {
+      "byte_count": 2578,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/variant_P0_inline_constructor_test.json",
+      "sha256": "26e34208066f272fa792d21155897721ed750b11c08320334dde730c1bb1fd2e"
+    },
+    {
+      "byte_count": 2146,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/variant_P0_regression.json",
+      "sha256": "8bc941776f645f568eee724a551c78abed221177980c81435e17581308b2a1fe"
+    },
+    {
+      "byte_count": 270,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/variant_regression_summary.json",
+      "sha256": "875b5719806e8ef1f7795b010f3f0849ba69c4c326100b06068a544caa27f04f"
+    },
+    {
+      "byte_count": 7242,
+      "path": "research_versions/dynamic_k_v1/acceptance/0015/variant_worker.py",
+      "sha256": "dddd88da854b59515797154c173d9f36d5dc915b9c8d881281b03e2f907fdaa6"
+    },
+    {
+      "byte_count": 9360,
+      "path": "research_versions/dynamic_k_v1/runtime/n4_p0f_events.py",
+      "sha256": "9e5bc5544083b67488fe9e9b4077d5ef24107107c16237219c2e71740a6b0df6"
+    },
+    {
+      "byte_count": 1747,
+      "path": "research_versions/dynamic_k_v1/configs/n4_p0f_isolated_event_timing_v1.json",
+      "sha256": "eba007339866ab880c898543240b3275a6fea9cd341cdb5abe9d0711d313a15d"
+    },
+    {
+      "byte_count": 1267,
+      "path": "research_versions/dynamic_k_v1/contracts/N4_P0F_ISOLATED_EVENT_TIMING_SCOPE_CN.md",
+      "sha256": "740c19ce04030c488b21719e8fdaad4bac2899591941a890ba107671a3d431e6"
+    }
+  ],
+  "full_N4_P0_engineering_pass": false,
+  "new_root": {
+    "causal_root_sha256": "ef8183d6f4b46f1096af42ff3ee13d338cdf79d69ad6c546c44356cf7c802494",
+    "forecast_sha256": "66061c9bc91a8b6af7903cbb898b101081b02621f8f48f92038da54d66ef0da1",
+    "original_0014_root_equivalence_claimed": false,
+    "prefix_sha256": "bd36dc338830410efae2e8421cd5b90977857e03c175b18794c2fa7f31273b3f",
+    "root_complete_sha256": "d28a8160b748e31b5f924bbbf74f7de0c0e1de1c3f9938a4362920d3822f1764",
+    "scene": "P0F_0015_EXACT_NOMINAL_NEW_ROOT"
+  },
+  "parent_revision": {
+    "byte_count": 30426,
+    "path": "research_versions/dynamic_k_v1/revisions/0014/record.json",
+    "sha256": "3e7b1015d628d601caa2f16bec99c8a91161ed3a83ec144760fc85bd79c15a73"
+  },
+  "recipe": {
+    "byte_count": 278294,
+    "path": "research_versions/dynamic_k_v1/acceptance/0015/replay_recipe.json",
+    "sha256": "dac8cc22b8bea4e303f118a1cf38170cb1ab2f96e218c9b593be0af82885e0c6"
+  },
+  "revision_id": "0015",
+  "root_artifact_anchor": {
+    "byte_count": 4648,
+    "path": "research_versions/dynamic_k_v1/acceptance/0015/root_artifact_anchor.json",
+    "sha256": "5cf023f4f75c7cbf151d24102e7d1d8be2ff3e35f9b0218a0ec91222a6e1ea7f"
+  },
+  "schema": "dynamic_k_n4_p0f_isolated_event_variant_manifest_v1",
+  "scientific_gate_pass": false,
+  "status": "PASS_N4_P0F_ISOLATED_ENGINEERING_ONLY",
+  "variant_binding": {
+    "byte_count": 42292,
+    "path": "research_versions/dynamic_k_v1/acceptance/0015/variant_dependencies.json",
+    "sha256": "4fe35f65dfce934c2ec6ab4daadc6856ebea9f5a7c072e8aa794cf23a3e7df59"
+  },
+  "version_origin": {
+    "byte_count": 1555,
+    "path": "research_versions/dynamic_k_v1/version_record.json",
+    "sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+  }
+}

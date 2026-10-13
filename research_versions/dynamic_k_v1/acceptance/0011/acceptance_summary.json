@@ -1,0 +1,20 @@
+{
+  "N4_P0R_engineering_pass": false,
+  "N4_P0_engineering_pass": false,
+  "PERSIST_small_domain_failed": 1,
+  "PERSIST_small_domain_unexecuted_after_failure": 4,
+  "ZERO_small_domain_completed": 5,
+  "business_tolerance_bits": 1e-06,
+  "completed_global_epochs": 0,
+  "conservation_residual_sequential_subtraction_bits": -1.0905205272138119e-06,
+  "conservation_residual_validator_bits": -1.0905787348747253e-06,
+  "controlled_paired_hold_completed": 4,
+  "exact_reader_interface_tests_pass": true,
+  "formal_experiments_executed": false,
+  "main_pilot_runs": 0,
+  "original_and_optimized_failure_same": true,
+  "readonly_failure_reproductions": 2,
+  "restore_full_epoch_recommended": false,
+  "scientific_gate_pass": false,
+  "status": "STOP_EXISTING_CONSERVATION_BOUNDARY"
+}

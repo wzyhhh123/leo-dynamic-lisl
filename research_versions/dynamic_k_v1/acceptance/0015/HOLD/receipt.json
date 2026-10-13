@@ -1,0 +1,17 @@
+{
+  "accepted": true,
+  "action": {
+    "kind": "HOLD"
+  },
+  "action_id": 1,
+  "actual_immediate_release_ids": [],
+  "after_terminal_sha256": "4ee40e3e91d584802404164422100dc047549a37d47cb7c890bd164b56df54fe",
+  "before_terminal_sha256": "4ee40e3e91d584802404164422100dc047549a37d47cb7c890bd164b56df54fe",
+  "geometry": null,
+  "mode": "HOLD",
+  "reason": null,
+  "requested_release_refs": [],
+  "reservation_id": null,
+  "terminal_log_start": 8,
+  "time_s": 3.0
+}

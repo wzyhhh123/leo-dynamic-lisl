@@ -1,0 +1,173 @@
+{
+  "bound_after_offline_stage_adjustment_exact_equal": true,
+  "energy_topology_samples_through_t3_exact_equal": false,
+  "event_prefix_comparisons": {
+    "graph_event_sequence": {
+      "exact_equal": true,
+      "new_filtered_count": 0,
+      "original_filtered_count": 0,
+      "status": "UNVERIFIABLE_TIMESTAMP_SCHEMA"
+    },
+    "route_changes": {
+      "exact_equal": true,
+      "new_filtered_count": 0,
+      "original_filtered_count": 0,
+      "status": "UNVERIFIABLE_TIMESTAMP_SCHEMA"
+    },
+    "route_state_events": {
+      "exact_equal": true,
+      "new_filtered_count": 2,
+      "original_filtered_count": 2,
+      "status": "COMPARED"
+    },
+    "terminal_event_sequence": {
+      "exact_equal": true,
+      "new_filtered_count": 0,
+      "original_filtered_count": 0,
+      "status": "UNVERIFIABLE_TIMESTAMP_SCHEMA"
+    },
+    "timeline": {
+      "exact_equal": true,
+      "new_filtered_count": 22,
+      "original_filtered_count": 22,
+      "status": "COMPARED"
+    }
+  },
+  "first_localizable_difference": {
+    "current": [
+      [
+        "boundary",
+        "INTERVAL_END"
+      ],
+      [
+        "cohort_bits",
+        "7145582695152459375/4503599627370496"
+      ],
+      [
+        "difference_bits",
+        "401/4503599627370496"
+      ],
+      [
+        "key",
+        [
+          [
+            "X0_10",
+            "X0_9"
+          ],
+          "f_hot"
+        ]
+      ],
+      [
+        "legacy_bits",
+        "872263512591853/549755813888"
+      ],
+      [
+        "state",
+        "I"
+      ],
+      [
+        "time",
+        "2554160564200857/576460752303423488"
+      ]
+    ],
+    "index": 4,
+    "original": [
+      [
+        "boundary",
+        "INTERVAL_END"
+      ],
+      [
+        "cohort_bits",
+        "7981751763127678125/9007199254740992"
+      ],
+      [
+        "difference_bits",
+        "851/9007199254740992"
+      ],
+      [
+        "key",
+        [
+          [
+            "X0_1",
+            "X1_1"
+          ],
+          "f_bg"
+        ]
+      ],
+      [
+        "legacy_bits",
+        "3897339728089687/4398046511104"
+      ],
+      [
+        "state",
+        "I"
+      ],
+      [
+        "time",
+        "2554160564200857/576460752303423488"
+      ]
+    ],
+    "time_rational": "2554160564200857/576460752303423488",
+    "time_s": 0.004430762292133393
+  },
+  "forecast_digest_exact_equal": true,
+  "historical_bound_minus_post_submit_tail": "3600151/1125899906842624",
+  "historical_pre_submit_audit_prefix_length": 315,
+  "historical_prefix_exact_multiset_equal": true,
+  "historical_prefix_exact_order_equal": false,
+  "new_bound": "3600151/1125899906842624",
+  "new_observation_count": 43,
+  "new_root_cursor": 43,
+  "new_root_roundoff_count": 315,
+  "no_old_or_new_native_state_modified": true,
+  "no_second_root_constructed": true,
+  "observation_prefix_exact_equal": true,
+  "original_0012_actual_root_hash_unverifiable": true,
+  "original_bound": "10978471/2251799813685248",
+  "original_extra_observation": {
+    "emitted_event_count": 0,
+    "index": 43,
+    "kind": "SCHEDULE",
+    "old_rates_equal_new": true,
+    "time": 3.0
+  },
+  "original_full_root_equivalence_claimed": false,
+  "original_full_roundoff_count": 338,
+  "original_snapshot_cursor": 44,
+  "original_snapshot_now": "3",
+  "physical_input_digest_exact_equal": true,
+  "prefix_extraction_basis": "Identical complete t0-t3 observation prefix; appended t3 SCHEDULE; Atomic.submit calls advance_to(now); 22 FINAL plus one REPORTED_DELIVERY item at t3",
+  "raw_A_Q_I_D_at_last_t3_interval_exact_equal": true,
+  "raw_A_Q_I_D_totals_bits": {
+    "A": 1800000.0,
+    "D": 1768782.232853443,
+    "I": 31217.767146556987,
+    "Q": 0.0
+  },
+  "root_age_scientific_fields_exact_equal": [
+    "MD",
+    "arrived",
+    "closure_audit",
+    "commodities",
+    "delivered",
+    "delivered_original_moment",
+    "flight",
+    "nodes",
+    "now",
+    "queue",
+    "scale",
+    "sent_mass",
+    "shift"
+  ],
+  "source_snapshot_stage": "POST_ADD_SAME_TIME_SETTLEMENT_THEN_T6_BASE_REJECTION",
+  "tail_absolute_bound": "3778169/2251799813685248",
+  "tail_boundary_counts": {
+    "FINAL": 22,
+    "REPORTED_DELIVERY": 1
+  },
+  "tail_count": 23,
+  "tail_times": [
+    "3",
+    "3.0"
+  ]
+}

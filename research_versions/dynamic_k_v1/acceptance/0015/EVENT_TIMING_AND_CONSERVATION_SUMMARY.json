@@ -1,0 +1,77 @@
+{
+  "ADD": {
+    "events": {
+      "clip_mass_gain_bit": 4.741878001368605e-10,
+      "consumed_events": 182,
+      "early_events": [],
+      "late_events": [],
+      "max_actual_formula_boundary_residual_bits": 9.313225746154785e-10,
+      "max_exact_boundary_residual_bits": 5.323954610503279e-10,
+      "pending_head_skips": 0,
+      "positive_clip_updates": 10,
+      "time_monotonic": true
+    },
+    "exact_final_residual": {
+      "approx": -2.587512426543981e-10,
+      "rational": "-569/2199023255552"
+    },
+    "expected_transfer_net": {
+      "approx": 0.0,
+      "rational": "0"
+    },
+    "signed_clip": {
+      "approx": -4.741878001368605e-10,
+      "rational": "-4171/8796093022208"
+    }
+  },
+  "HOLD": {
+    "events": {
+      "clip_mass_gain_bit": 0,
+      "consumed_events": 0,
+      "early_events": [],
+      "late_events": [],
+      "max_actual_formula_boundary_residual_bits": 4.656612873077393e-10,
+      "max_exact_boundary_residual_bits": 1.1641532182693481e-10,
+      "pending_head_skips": 0,
+      "positive_clip_updates": 0,
+      "time_monotonic": true
+    },
+    "exact_final_residual": {
+      "approx": -1.1641532182693481e-10,
+      "rational": "-1/8589934592"
+    },
+    "expected_transfer_net": {
+      "approx": 0.0,
+      "rational": "0"
+    },
+    "signed_clip": {
+      "approx": 0.0,
+      "rational": "0"
+    }
+  },
+  "ROOT_PREFIX": {
+    "events": {
+      "clip_mass_gain_bit": 0,
+      "consumed_events": 20,
+      "early_events": [],
+      "late_events": [],
+      "max_actual_formula_boundary_residual_bits": 1.4551915228366852e-11,
+      "max_exact_boundary_residual_bits": 1.1641532182693481e-10,
+      "pending_head_skips": 0,
+      "positive_clip_updates": 0,
+      "time_monotonic": true
+    },
+    "exact_final_residual": {
+      "approx": 1.1641532182693481e-10,
+      "rational": "1/8589934592"
+    },
+    "expected_transfer_net": {
+      "approx": 0.0,
+      "rational": "0"
+    },
+    "signed_clip": {
+      "approx": 0.0,
+      "rational": "0"
+    }
+  }
+}

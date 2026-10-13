@@ -1,0 +1,14 @@
+{
+  "anchor_sha256": "918f57102a8ccf00db087a6fafd6f48ebdc6de82cb67353cfbc621331ead3dc0",
+  "command": [
+    "D:\\Program_Files\\anaconda3\\envs\\pytorch\\python.exe",
+    "-B",
+    "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\replay_worker.py",
+    "rebuild"
+  ],
+  "exit_code": 0,
+  "hash_seed": "1414",
+  "isolated_new_process": true,
+  "output": "ROOT_RECONSTRUCTION_PASS\n",
+  "wall_s": 46.3624564
+}

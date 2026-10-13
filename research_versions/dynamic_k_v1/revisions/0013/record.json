@@ -1,0 +1,205 @@
+{
+  "N4_P0R_engineering_pass": false,
+  "N4_P0_engineering_pass": false,
+  "authorization": {
+    "actor": "human_user",
+    "request": "Verify independent origin/0012/full chain; audit original 0011 root evidence; one read-only new t3 root with pre-assert evidence; stop mismatch; no action, prediction, frozen core, tolerance or hash-anchor changes; append 0013",
+    "scope": "N4_P0D_ROOT_PROVENANCE_ONLY",
+    "source": "current_conversation_user_request"
+  },
+  "bindings": {
+    "baseline_seal": {
+      "byte_count": 656,
+      "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+      "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+    },
+    "configuration": {
+      "byte_count": 1735,
+      "path": "research_versions/dynamic_k_v1/configs/n4_p0d_root_audit_v1.json",
+      "sha256": "dcf33b8e27a65cea0b356a818169db1634501767279753673ff36c022ee62510"
+    },
+    "contract": {
+      "byte_count": 1153,
+      "path": "research_versions/dynamic_k_v1/contracts/N4_P0D_ROOT_PROVENANCE_SCOPE_CN.md",
+      "sha256": "b924297ad6dec0879e0c469466bd27e4197a2a82662ec91c814e05288c445950"
+    },
+    "diagnostic_manifest": {
+      "byte_count": 6140,
+      "path": "research_versions/dynamic_k_v1/acceptance/0013/manifest_final.json",
+      "sha256": "c65b2c84ec0e003b974dc8c43b3b02030a43a80390f4a0a8a6f5eef1f5150862"
+    },
+    "old_asset_audit": {
+      "byte_count": 30199,
+      "path": "research_versions/dynamic_k_v1/acceptance/0013/preseal_change_audit.json",
+      "sha256": "19ca6141345dc9e937a7735cd75d3c93fec5702368c48df5513a826d341718ed"
+    },
+    "raw_hash_preimage": {
+      "byte_count": 1368252,
+      "path": "research_versions/dynamic_k_v1/acceptance/0013/actual_root_hash_preimage.json",
+      "sha256": "06f3803e0c74ca9ba4a45a04ac5efada773ad988e044f7323083cc3421fc2adb"
+    },
+    "replayability_decision": {
+      "byte_count": 3710,
+      "path": "research_versions/dynamic_k_v1/acceptance/0013/ROOT_REPLAYABILITY_DECISION_CN.md",
+      "sha256": "76cd4f06793907827190168a6fa79185eee25a6a2269c45ce7db01fb4cc58ea2"
+    },
+    "result_report": {
+      "byte_count": 2982,
+      "path": "research_versions/dynamic_k_v1/acceptance/0013/RESULT_CN.md",
+      "sha256": "b2d6b89399419090f6238afe98f3c67d3ecfe3d7a35acb491a155faa719bd28f"
+    },
+    "root_diff": {
+      "byte_count": 10496,
+      "path": "research_versions/dynamic_k_v1/acceptance/0013/ROOT_RECONSTRUCTION_DIFF.json",
+      "sha256": "3567e90aa63fe3e865fc7b951d3a89310be87b2a43700b32e5d0a0d42a2cade6"
+    },
+    "root_provenance": {
+      "byte_count": 11331,
+      "path": "research_versions/dynamic_k_v1/acceptance/0013/ROOT_HASH_PROVENANCE_CN.md",
+      "sha256": "0a8ea84f40c2fc3851f0f33049ad56a229da7a74c17745ae9d90bbf932244c1a"
+    },
+    "stop_evidence": {
+      "byte_count": 499,
+      "path": "research_versions/dynamic_k_v1/acceptance/0013/root_comparison_stop.json",
+      "sha256": "509f70b4d1cf9aba876b35e40251a29720a09a99859e835e3c9468b3262eebb7"
+    }
+  },
+  "changes": {
+    "added": [
+      {
+        "byte_count": 632,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/NEW_DIAGNOSTIC_ATTEMPT.json",
+        "sha256": "eb1e5565a83e881b8aabf230b948909389f752f12763fe62fb8bbb5edca115b4"
+      },
+      {
+        "byte_count": 2982,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/RESULT_CN.md",
+        "sha256": "b2d6b89399419090f6238afe98f3c67d3ecfe3d7a35acb491a155faa719bd28f"
+      },
+      {
+        "byte_count": 11331,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/ROOT_HASH_PROVENANCE_CN.md",
+        "sha256": "0a8ea84f40c2fc3851f0f33049ad56a229da7a74c17745ae9d90bbf932244c1a"
+      },
+      {
+        "byte_count": 10496,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/ROOT_RECONSTRUCTION_DIFF.json",
+        "sha256": "3567e90aa63fe3e865fc7b951d3a89310be87b2a43700b32e5d0a0d42a2cade6"
+      },
+      {
+        "byte_count": 3710,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/ROOT_REPLAYABILITY_DECISION_CN.md",
+        "sha256": "76cd4f06793907827190168a6fa79185eee25a6a2269c45ce7db01fb4cc58ea2"
+      },
+      {
+        "byte_count": 1368252,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/actual_root_hash_preimage.json",
+        "sha256": "06f3803e0c74ca9ba4a45a04ac5efada773ad988e044f7323083cc3421fc2adb"
+      },
+      {
+        "byte_count": 11929594,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/actual_root_summary.json",
+        "sha256": "d0cd0461a7c398976ee27960e2c638316de9ccd860f3acabce3ac42fa7cd348c"
+      },
+      {
+        "byte_count": 3462,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/age_mixed_stage_comparison_attempt01.json",
+        "sha256": "4876e4b7189ee1b0776bed6c2ffa493f843841b33928beb404935c76ad8fe4ff"
+      },
+      {
+        "byte_count": 93705,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/historical_evidence_inventory.json",
+        "sha256": "2404e6a5b3c11f00ddeb9e1a528c1fd13db65ccdd77114a220efa94578fbecd5"
+      },
+      {
+        "byte_count": 6140,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/manifest_final.json",
+        "sha256": "c65b2c84ec0e003b974dc8c43b3b02030a43a80390f4a0a8a6f5eef1f5150862"
+      },
+      {
+        "byte_count": 6909,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/offline_field_audit.py",
+        "sha256": "7a408ae5d4aedf692f0b7ff5c4ebbac61bca4f2d2409cf3c78747a1d79658427"
+      },
+      {
+        "byte_count": 2260,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/original_available_fields.json",
+        "sha256": "454aa09f912f50d46f4054a27fce2e394173b1c3e12d6ab21fe26e78e7155ed2"
+      },
+      {
+        "byte_count": 652,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/pre_implementation_verification.json",
+        "sha256": "7499d0aa0f8fae33d7aa965e83eaa4fe1255a639cce7c0599f4c216ac996e703"
+      },
+      {
+        "byte_count": 8215,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/prepare_and_seal.py",
+        "sha256": "eeeede1bfccaadec2d15f536c33d4a69900d1776946271804951f1b352d6b36c"
+      },
+      {
+        "byte_count": 30199,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/preseal_change_audit.json",
+        "sha256": "19ca6141345dc9e937a7735cd75d3c93fec5702368c48df5513a826d341718ed"
+      },
+      {
+        "byte_count": 916,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/read_only_audit_checks.json",
+        "sha256": "9d0c1f43014f86289fd2b99671d90af742f34d0ebc4e0d8886a7849d29be857c"
+      },
+      {
+        "byte_count": 11069,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/root_audit.py",
+        "sha256": "122127bdb2d67ce71e071a0cd0b3284761327469c80b911860baf6150a52de4f"
+      },
+      {
+        "byte_count": 499,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/root_comparison_stop.json",
+        "sha256": "509f70b4d1cf9aba876b35e40251a29720a09a99859e835e3c9468b3262eebb7"
+      },
+      {
+        "byte_count": 4200,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/same_time_stage_and_audit_order_evidence.json",
+        "sha256": "29e157758b5107bd9244d6b44d4a9996e2e861200efd66883bb362117eddf1c5"
+      },
+      {
+        "byte_count": 5348,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/terminal_event_and_energy_prefix_evidence.json",
+        "sha256": "2485bc27c021049a966007df91cad8f677bad7cc725cd6b5e241c65da4d4553f"
+      },
+      {
+        "byte_count": 2902,
+        "path": "research_versions/dynamic_k_v1/acceptance/0013/terminal_prefix_audit.py",
+        "sha256": "24ff6926690395a74d8070215d3081d2ff986067a8ae97850e47d79341f63c7e"
+      },
+      {
+        "byte_count": 1735,
+        "path": "research_versions/dynamic_k_v1/configs/n4_p0d_root_audit_v1.json",
+        "sha256": "dcf33b8e27a65cea0b356a818169db1634501767279753673ff36c022ee62510"
+      },
+      {
+        "byte_count": 1153,
+        "path": "research_versions/dynamic_k_v1/contracts/N4_P0D_ROOT_PROVENANCE_SCOPE_CN.md",
+        "sha256": "b924297ad6dec0879e0c469466bd27e4197a2a82662ec91c814e05288c445950"
+      }
+    ],
+    "deleted": [],
+    "modified": []
+  },
+  "conservation_root_cause": "UNRESOLVED",
+  "created_beijing": "2026-10-12T23:25:28.598903+08:00",
+  "created_utc": "2026-10-12T15:25:28.598903+00:00",
+  "formal_experiments_executed": false,
+  "full_pilot_executed": false,
+  "native_root_recoverability": "ORIGINAL_NATIVE_ROOT_NOT_RECOVERABLE",
+  "parent_record": {
+    "byte_count": 6445,
+    "path": "research_versions/dynamic_k_v1/revisions/0012/record.json",
+    "sha256": "e77bf7624a4ac505e0dc52d77d79f6a2dcb45c240d3494d8fffe1119d3040aae"
+  },
+  "reason": "N4-P0D original root fingerprint provenance and offline stage-aware diff; one t3 diagnostic mismatched; original native root not recoverable",
+  "revision_id": "0013",
+  "schema": "dynamic_k_revision_record_v1",
+  "scientific_gate_pass": false,
+  "status": "STOP_ROOT_BINDING_MISMATCH",
+  "version_id": "dynamic_k_v1"
+}

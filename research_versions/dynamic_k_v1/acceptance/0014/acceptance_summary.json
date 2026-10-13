@@ -1,0 +1,27 @@
+{
+  "ADD": "STOP_BUSINESS_CONSERVATION_MISMATCH",
+  "HOLD": "COMPLETED",
+  "N4_P0_engineering_pass": false,
+  "checks": {
+    "ADD_original_assertion_stop": true,
+    "HOLD_completed_horizon": true,
+    "both_branch_roots_strictly_rebuilt": true,
+    "branches_not_rerun": true,
+    "clean_rebuild_strict_pass": true,
+    "durable_recovery_strict_pass": true,
+    "event_early_processing_measured": true,
+    "exact_paired_pre_action_state": true,
+    "no_kernel_fix_or_tolerance_change": true,
+    "one_atomic_action_per_branch": true,
+    "parent_chain_verified": true,
+    "same_root_and_forecast": true,
+    "unchanged_business_tolerance": true,
+    "update_decomposition_exact": true
+  },
+  "full_pilot_executed": false,
+  "new_scenario_cause": "EARLY_PROPAGATION_RATE_EVENT_COALESCING_CAUSES_ARRIVAL_OVERRUN_THEN_INFLIGHT_ZERO_CLAMP",
+  "original_0011_replay": false,
+  "root_replayability": "PASS_EXECUTABLE_RECONSTRUCTION",
+  "scientific_gate_pass": false,
+  "status": "DIAGNOSIS_COMPLETED_STOP_CONSERVATION"
+}

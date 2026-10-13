@@ -1,0 +1,6 @@
+{
+  "status": "STARTUP_FAILED_BEFORE_SIMULATION",
+  "source_utf8_bytes_valid": true,
+  "source_sha256": "2188673d5cab4310c1319e27b5d2fefdfc54657a550e3e9350c75dce45e98d18",
+  "error": "Direct Conda source decoding raised SyntaxError Non-UTF-8 at workflow.py line 94; raw bytes strict UTF-8 decode succeeded. Unicode string literals escaped to ASCII, semantics unchanged."
+}

@@ -1,0 +1,52 @@
+{
+  "scope": "STATIC_ONLY",
+  "status": "PASS",
+  "decision_epochs_s": [
+    0,
+    3,
+    6,
+    9,
+    12,
+    15,
+    18,
+    21,
+    24,
+    27
+  ],
+  "effective_horizon_by_epoch_s": [
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    6.0,
+    3.0
+  ],
+  "main_max_branches": 840,
+  "main_max_branch_seconds": 4788,
+  "sensitivity_extra_max_branches": 1680,
+  "all_max_branches": 2520,
+  "all_max_branch_seconds": 14364,
+  "all_controllers_same_schedule": true,
+  "events_quantized_to_decision_grid": false,
+  "formal_scientific_parameters": {
+    "D_ref_s": null,
+    "E_ref_J": null,
+    "R_min": null,
+    "T_A_s": null,
+    "T_s": null,
+    "alpha": null,
+    "tau_res_s": null
+  },
+  "full_pilot_started": false,
+  "old_draft_hash_manifest": "prior_pilot_draft_hashes.json",
+  "three_second_review_copies": [
+    "MPC_INTERFACE_GAP_AUDIT.md",
+    "PILOT_ACCEPTANCE_CRITERIA.md",
+    "PILOT_PARAMETER_MANIFEST_DRAFT.md",
+    "PILOT_SCENARIO_MATRIX.md"
+  ]
+}

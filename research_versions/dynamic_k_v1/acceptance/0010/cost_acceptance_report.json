@@ -1,0 +1,35 @@
+{
+  "benchmark_instrumentation": "sys.setprofile_cost_included_no_uninstrumented_speed_claim",
+  "branch_ending_cohorts": 20,
+  "branch_seconds_completed": 6,
+  "branch_service_observations": 7,
+  "branch_terminal_events": 0,
+  "branch_wallclock_s": 31.3563975,
+  "completed_full_decision_epochs": 0,
+  "completed_standalone_branches": 1,
+  "full_catalog_candidate_counts": null,
+  "full_epoch_action_selection": null,
+  "full_epoch_wallclock_s": null,
+  "full_pilot_runs": 0,
+  "further_optimization_runs": 0,
+  "partial_epoch_branch_compute_count": null,
+  "process_cpu_s": 2208.984375,
+  "process_elapsed_wall_s": 2281.7635673,
+  "process_peak_working_set_bytes": 105111552,
+  "process_stop_evidence": {
+    "byte_count": 1153,
+    "path": "research_versions/dynamic_k_v1/acceptance/0010/cost_stop_process_evidence.json",
+    "sha256": "871d0af497e448ba856c61ca3b9c79cfe5d4e27791a29ac9073e93f593253204"
+  },
+  "reason": "STOP rule requested by human user; no incomplete phase reported as a completed epoch",
+  "sanitation_wallclock_s": 6.7296935,
+  "scientific_gate_pass": false,
+  "sensitivity_runs": 0,
+  "standalone_measurement": {
+    "byte_count": 522091,
+    "path": "research_versions/dynamic_k_v1/acceptance/0010/standalone_branch_cost.json",
+    "sha256": "d27c19ec87ba9d41715bcc9ab0a6ac331e9276d1af0619840dbe404a957eeaa2"
+  },
+  "status": "STOP_COST_EXCESSIVE",
+  "workers": 1
+}

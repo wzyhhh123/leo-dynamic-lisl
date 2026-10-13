@@ -1,0 +1,18 @@
+{
+  "baseline_file_count": 5810,
+  "excluded_file_count": 202,
+  "revision_id": "0010",
+  "revision_record_sha256": "fa9564caf795279ce608cf7ff31c9a86693c7336238b285a52c95c7ffb66c897",
+  "scientific_gate_pass": false,
+  "scope": "N0_FILE_INTEGRITY_AND_VERSION_BINDINGS_ONLY",
+  "source": "actual independent full verify output completed before any 0011 file creation",
+  "status": "PASS",
+  "undeclared_changes": {
+    "added": [],
+    "deleted": [],
+    "modified": [],
+    "possible_renames": []
+  },
+  "verified_file_count": 6023,
+  "version_record_sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+}

@@ -1,0 +1,59 @@
+{
+  "scope": "TEST_COVERAGE_MAP_NOT_PASS_CLAIM",
+  "requirements": {
+    "historical_prefix_and_fifo": [
+      "test_03",
+      "test_06",
+      "test_11",
+      "test_17",
+      "test_18"
+    ],
+    "no_future_oracle": [
+      "test_04",
+      "test_13",
+      "test_19"
+    ],
+    "same_root_forecast_order": [
+      "test_04",
+      "test_05"
+    ],
+    "committed_setup_tx_propagation_expiry": [
+      "test_06",
+      "test_07",
+      "test_08",
+      "test_18"
+    ],
+    "real_atomic_actions": [
+      "test_02",
+      "test_08",
+      "test_09",
+      "test_10",
+      "test_17"
+    ],
+    "energy_K_and_numeric_bounds": [
+      "test_01",
+      "test_02",
+      "test_08",
+      "test_12",
+      "test_14",
+      "test_16"
+    ],
+    "checkpoint_replay": [
+      "test_05"
+    ],
+    "catalog_and_truncation": [
+      "test_15",
+      "one_epoch_cost_full_catalog_check"
+    ],
+    "same_action_independent_execution": [
+      "test_11",
+      "test_17"
+    ],
+    "non_grid_continuous_multihop": [
+      "test_18"
+    ]
+  },
+  "exact_comparison": "full encoded raw state, not object identity; no numerical tolerance changed",
+  "real_numeric_precision": "unchanged N1b conditional IEEE envelope; rational encoded trace not hardware precision",
+  "cost_scope": "one standalone PERSIST HOLD branch plus one full-catalog PERSIST epoch, no paired pilot"
+}

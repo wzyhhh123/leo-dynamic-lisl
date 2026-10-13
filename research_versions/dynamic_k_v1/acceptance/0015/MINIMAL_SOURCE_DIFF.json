@@ -1,0 +1,51 @@
+{
+  "generated_variant_path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n4_p0f_events.py",
+  "global_monkeypatch": false,
+  "methods": [
+    {
+      "diff": "--- frozen/_settle_propagation_rate_events\n+++ variant/_settle_propagation_rate_events\n@@ -1,7 +1,7 @@\n     def _settle_propagation_rate_events(self):\n         deltas = defaultdict(float)\n         while (self.propagation_agenda\n-               and self.propagation_agenda[0].time_s <= self.now+1e-12):\n+               and self.propagation_agenda[0].time_s <= self.now):\n             event = heapq.heappop(self.propagation_agenda)\n             deltas[(event.edge, event.commodity_id)] += event.delta_rate_bit_s\n         for key, delta in deltas.items():\n",
+      "method": "_settle_propagation_rate_events",
+      "original_end_line": 300,
+      "original_start_line": 286
+    },
+    {
+      "diff": "--- frozen/_next_time\n+++ variant/_next_time\n@@ -1,7 +1,7 @@\n     def _next_time(self, drain_limit_s, queue_derivative):\n         candidates = [drain_limit_s]\n         while (self.boundary_index < len(self.boundaries)\n-               and self.boundaries[self.boundary_index] <= self.now+1e-12):\n+               and self.boundaries[self.boundary_index] <= self.now):\n             self.boundary_index += 1\n         if self.boundary_index < len(self.boundaries):\n             candidates.append(self.boundaries[self.boundary_index])\n@@ -17,7 +17,7 @@\n             backlog = self.queues.get(node, commodity_id)\n             if backlog > self.state_tol and derivative < -1e-15:\n                 candidates.append(self.now+backlog/(-derivative))\n-        future = [value for value in candidates if value > self.now+1e-13]\n+        future = [value for value in candidates if value > self.now]\n         if not future:\n             raise RuntimeError(\"NO_FORWARD_EVENT\")\n         return min(future)\n",
+      "method": "_next_time",
+      "original_end_line": 514,
+      "original_start_line": 492
+    },
+    {
+      "diff": "--- frozen/advance_to\n+++ variant/advance_to\n@@ -3,10 +3,13 @@\n         if until_s < self.now or not math.isfinite(until_s):\n             raise ValueError(\"INVALID_ADVANCE_TARGET\")\n         events = 0\n-        while self.now < until_s-1e-13:\n+        while self.now < until_s:\n             events += 1\n             if events > 1000000:\n                 raise RuntimeError(\"EVENT_LIMIT_EXCEEDED\")\n+            prior = self.now\n             self._step(until_s)\n+            if not prior < self.now <= until_s:\n+                raise RuntimeError(\"P0F_NON_FORWARD_OR_OVERSHOOT\")\n         self.settle_current_time()\n         return self\n",
+      "method": "advance_to",
+      "original_end_line": 607,
+      "original_start_line": 596
+    },
+    {
+      "diff": "--- frozen/settle_current_time\n+++ variant/settle_current_time\n@@ -1,9 +1,12 @@\n     def settle_current_time(self):\n         \"\"\"Process all real events at the current timestamp without advancing time.\"\"\"\n         is_refresh = False\n-        if self.next_refresh is not None and self.next_refresh <= self.now+1e-12:\n+        if self.next_refresh is not None and self.next_refresh <= self.now:\n             is_refresh = True\n-            while self.next_refresh <= self.now+1e-12:\n+            while self.next_refresh <= self.now:\n+                prior_refresh = self.next_refresh\n                 self.next_refresh += self.geometry_refresh_s\n+                if self.next_refresh <= prior_refresh:\n+                    raise RuntimeError(\"P0F_UNREPRESENTABLE_REFRESH_INCREMENT\")\n         self._microstep(force_refresh=is_refresh)\n         return self\n",
+      "method": "settle_current_time",
+      "original_end_line": 617,
+      "original_start_line": 609
+    },
+    {
+      "diff": "--- frozen/_step\n+++ variant/_step\n@@ -1,9 +1,12 @@\n     def _step(self, limit_s):\n         is_refresh = False\n-        if self.next_refresh is not None and self.next_refresh <= self.now+1e-12:\n+        if self.next_refresh is not None and self.next_refresh <= self.now:\n             is_refresh = True\n-            while self.next_refresh <= self.now+1e-12:\n+            while self.next_refresh <= self.now:\n+                prior_refresh = self.next_refresh\n                 self.next_refresh += self.geometry_refresh_s\n+                if self.next_refresh <= prior_refresh:\n+                    raise RuntimeError(\"P0F_UNREPRESENTABLE_REFRESH_INCREMENT\")\n         external, inputs = self._microstep(force_refresh=is_refresh)\n         queue_derivative, delivery_rates = self._derivatives(inputs)\n         next_time = self._next_time(limit_s, queue_derivative)\n",
+      "method": "_step",
+      "original_end_line": 629,
+      "original_start_line": 619
+    },
+    {
+      "diff": "--- frozen/_microstep\n+++ variant/_microstep\n@@ -1,8 +1,8 @@\n     def _microstep(self, force_refresh=False):\n         self._settle_propagation_rate_events()\n-        due_terminal = bool(self.executor.events and self.executor.events[0][0] <= self.now+1e-12)\n+        due_terminal = bool(self.executor.events and self.executor.events[0][0] <= self.now)\n         due_action = bool(self.action_index < len(self.actions)\n-                          and self.actions[self.action_index].time_s <= self.now+1e-12)\n+                          and self.actions[self.action_index].time_s <= self.now)\n         old_graph = self.graph\n         log_start = len(self.executor.log)\n         if due_terminal or due_action:\n",
+      "method": "_microstep",
+      "original_end_line": 472,
+      "original_start_line": 433
+    },
+    {
+      "diff": "--- frozen/_apply_due_actions\n+++ variant/_apply_due_actions\n@@ -1,6 +1,6 @@\n     def _apply_due_actions(self):\n         while (self.action_index < len(self.actions)\n-               and self.actions[self.action_index].time_s <= self.now+1e-12):\n+               and self.actions[self.action_index].time_s <= self.now):\n             action = self.actions[self.action_index]\n             self.action_index += 1\n             physical = action.physical_layer.evaluate(self.executor, **action.proposal)\n",
+      "method": "_apply_due_actions",
+      "original_end_line": 410,
+      "original_start_line": 380
+    }
+  ],
+  "original_path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\transition_service_orchestrator.py",
+  "original_raw_sha256": "9ed1ecf9b8c5cde21fd5a71113fdd45e2d69a20bb808689ccf40a9392ce172e7",
+  "unchanged_service_and_integrate": true
+}

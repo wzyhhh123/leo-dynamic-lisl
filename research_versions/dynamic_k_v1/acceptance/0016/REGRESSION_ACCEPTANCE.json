@@ -1,0 +1,12 @@
+{
+  "complete_catalog_reenumerated": false,
+  "event_clock_and_1bit_loss": 7,
+  "historical": 132,
+  "historical_passed": 131,
+  "known_F3_failed": 1,
+  "original_targeted": 116,
+  "source_tests_or_expectations_modified": false,
+  "status": "PASS_NO_NEW_FAILURES",
+  "variant_inline": 1,
+  "variant_targeted": 116
+}

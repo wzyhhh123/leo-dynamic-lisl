@@ -1,0 +1,13 @@
+{
+  "schema": "dynamic_k_root_readme_documentation_exception_v1",
+  "version_id": "dynamic_k_v1",
+  "revision_id": "0009",
+  "parent_revision_sha256": "0ab864c1bc8eaf8b3e746cf68df2e32f2924b91a07c316c25f3bc0d220b9bbbc",
+  "legacy_path": "README.md",
+  "allowed_operation": "modified",
+  "legacy_before_sha256": "905a689bdfc027fd904c5cbe8f1bbd3a907232b3a9f0e47349bb3119f8a7b72d",
+  "original_verifier_sha256": "c740401a75c2b43063957db3ef9dc4575098f3f7bb4bfadfd3f16d40739e04b5",
+  "scope": "ONE_EXPLICITLY_AUTHORIZED_PROJECT_README_UPDATE",
+  "baseline_or_history_rewrite_allowed": false,
+  "production_or_science_change_allowed": false
+}

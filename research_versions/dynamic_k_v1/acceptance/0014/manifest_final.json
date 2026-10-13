@@ -1,0 +1,581 @@
+{
+  "N4_P0_engineering_pass": false,
+  "complete_root_graph_sha256": "a36f45f5875ad4dc1323260d87a07654a369a7b618a6ad75ce436cf463a77cc3",
+  "files": [
+    {
+      "byte_count": 1019,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/acceptance_summary.json",
+      "sha256": "1dff407a5785ae7fdb1d6923eed379962f3b176737146b592716fae8bf735396"
+    },
+    {
+      "byte_count": 333,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/action_legality.json",
+      "sha256": "38cd1b4b179695678bc5481fcc5eb1a2fb66d4370f7019fe41db8b33c775ff2b"
+    },
+    {
+      "byte_count": 162846,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/audit_summary.json",
+      "sha256": "81d784fd3ecd9faf895ac6325e8c962ad8bc5cf26e495b86074d8d7c68acfbf9"
+    },
+    {
+      "byte_count": 12974210,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/boundaries.jsonl",
+      "sha256": "946e2d17ff0f51483086ad50f6b784e6ef229f197cb92d6286583841a951e994"
+    },
+    {
+      "byte_count": 86445,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/branch_result.json",
+      "sha256": "539b9afa633686285847f031ec75bbafa262b032a7fac0b6bb689ceb359b0940"
+    },
+    {
+      "byte_count": 4283597,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/intervals.jsonl",
+      "sha256": "48fa424f4260103f413305c66c5a36bd3ccfed19eaeabe96851e3ff171d0619f"
+    },
+    {
+      "byte_count": 117436,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/next_events.jsonl",
+      "sha256": "203045ead44f4546a58a3fc7c22bb2aca6c131078fc22d3831163028617749d9"
+    },
+    {
+      "byte_count": 18445235,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/operations.jsonl",
+      "sha256": "9fcf88e5c915e01bb50781148510ea98a9d6947f9030ffad9e8ea50ba070afb6"
+    },
+    {
+      "byte_count": 1878835,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/POST_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "95e70a1325970368c21ad08a52ba9e21475c22a3772d74361c11abceb9108fee"
+    },
+    {
+      "byte_count": 29545583,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/POST_ACTION_FULL_STATE.json",
+      "sha256": "456ed75dc1a2258d7b322ed3d8fbd7795badeff8202298256865db192aeed675"
+    },
+    {
+      "byte_count": 211439,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/POST_ACTION_SUMMARY.json",
+      "sha256": "a127911e20d8286be96f7acc0eb7f5a197ac8f31070d22ac925559bdf96a5e2c"
+    },
+    {
+      "byte_count": 1368252,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/PRE_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "1a6a346c324c6a9d34721ba1d049ac4ea5de62036a62d1a89d17a02255cb5fb3"
+    },
+    {
+      "byte_count": 24120054,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/PRE_ACTION_FULL_STATE.json",
+      "sha256": "917a6604bb06a3f58a94f20956513391d65c2d7c8ef29cc951e407ab087310f6"
+    },
+    {
+      "byte_count": 203467,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/PRE_ACTION_SUMMARY.json",
+      "sha256": "874b5471eb7c6154d5e05c9b6ee9d772fc34f5383911cf9ecdcae297f5c37a77"
+    },
+    {
+      "byte_count": 2682,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/receipt.json",
+      "sha256": "4e0993b044d02c9a2efb5db51b9d8c6f489dbd5a6867508a26fea0e75eaaad15"
+    },
+    {
+      "byte_count": 1231,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/reconstruction_validation.json",
+      "sha256": "cc9422086259342619f8ee2076f4f99b5ac1d7aba3c411dede8ea284db9c6271"
+    },
+    {
+      "byte_count": 1901,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/STOP_EXCEPTION.json",
+      "sha256": "0d825c3708f7408afd75d9dd9c9e7b4e434e0e236d1f77f6c6677b3485bbddab"
+    },
+    {
+      "byte_count": 2468527,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/STOP_STATE_CAUSAL_PREIMAGE.json",
+      "sha256": "4d45530c89e30965a9b6ff3548521c852943e746670a97812b54047551d90d6a"
+    },
+    {
+      "byte_count": 39735374,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/STOP_STATE_FULL_STATE.json",
+      "sha256": "9404739e7a2477cbeb75547c8dd861c828588cbf45b22fe78f2d196b5ab60152"
+    },
+    {
+      "byte_count": 212317,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/STOP_STATE_SUMMARY.json",
+      "sha256": "b9acce225291f6e026716ef7d75748073e7791810d77c7f9dc2030b4806838da"
+    },
+    {
+      "byte_count": 74618,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/VALIDATION_INPUT_001.json",
+      "sha256": "d2aef3c49328ed12b4e5ef0345b37c9974bf65b832ed7d4ebd58610ab54f6dd7"
+    },
+    {
+      "byte_count": 74618,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/VALIDATION_INPUT_002.json",
+      "sha256": "d2aef3c49328ed12b4e5ef0345b37c9974bf65b832ed7d4ebd58610ab54f6dd7"
+    },
+    {
+      "byte_count": 74618,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/VALIDATION_INPUT_003.json",
+      "sha256": "d2aef3c49328ed12b4e5ef0345b37c9974bf65b832ed7d4ebd58610ab54f6dd7"
+    },
+    {
+      "byte_count": 75456,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/VALIDATION_INPUT_004.json",
+      "sha256": "6cc5657f1698af0b925f4ddccf3cb4f101ddd53ac4c0e9b77ecefc20d6c35e58"
+    },
+    {
+      "byte_count": 1087,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ADD/validation_residual_timeline.json",
+      "sha256": "b099398536a2af8f094d39ef257d10be561a2897a1e4f8e756ed745b068e475d"
+    },
+    {
+      "byte_count": 8969,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/analyze_saved.py",
+      "sha256": "47a11fe59edbbb45738275e29ec8838d40cb569851fb8fea188b8017168b1db4"
+    },
+    {
+      "byte_count": 2806,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/audit_event_times.py",
+      "sha256": "f0b44c8cbcc755fdcb1bda718b434bdac81b24fc70ca695eac52f85e4c9e302b"
+    },
+    {
+      "byte_count": 1368252,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/CLEAN_REBUILD/LIVE_PRE_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "1a6a346c324c6a9d34721ba1d049ac4ea5de62036a62d1a89d17a02255cb5fb3"
+    },
+    {
+      "byte_count": 25884170,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/CLEAN_REBUILD/LIVE_PRE_ACTION_FULL_STATE.json",
+      "sha256": "1559fdd71adbbb3e9154ce1a76032462b0320c4040e3cfde2d14f98e31d2e349"
+    },
+    {
+      "byte_count": 203472,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/CLEAN_REBUILD/LIVE_PRE_ACTION_SUMMARY.json",
+      "sha256": "271a6fb35525d278a52f3335c200a790eb17f7ce3e8be2be587115691419ba7c"
+    },
+    {
+      "byte_count": 1231,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/CLEAN_REBUILD/reconstruction_validation.json",
+      "sha256": "9d5367d4aec870dd511a50946ad46d585a48eee2a73bd60dd0c431c584238a12"
+    },
+    {
+      "byte_count": 25761556,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/CLEAN_REBUILD/ROOT_FULL_STATE.json",
+      "sha256": "6962d1ff0f2e72d696b7663479eb17644548c9168bd623aee718eec453d52bd5"
+    },
+    {
+      "byte_count": 1368252,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/CLEAN_REBUILD/SANITIZED_PRE_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "1a6a346c324c6a9d34721ba1d049ac4ea5de62036a62d1a89d17a02255cb5fb3"
+    },
+    {
+      "byte_count": 24120054,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/CLEAN_REBUILD/SANITIZED_PRE_ACTION_FULL_STATE.json",
+      "sha256": "b2e231e8d2b753b9093e72bb7d17522e70acfd9a2e1a8c2c9506ea1643347860"
+    },
+    {
+      "byte_count": 203477,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/CLEAN_REBUILD/SANITIZED_PRE_ACTION_SUMMARY.json",
+      "sha256": "8df6a873908357670e56b5792b12dbc26e7a261833666c9ecc09f339a728bbac"
+    },
+    {
+      "byte_count": 2853,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/clone_set_audit.py",
+      "sha256": "666fc08d7ba75565b59e15aeefcbaf084cd466371c4e02b6672425f41b5155d2"
+    },
+    {
+      "byte_count": 1245,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/CLONE_SET_LAYOUT_AUDIT.json",
+      "sha256": "d996240ed7295200e163b4e3a68c75a083414322d9dd605f5f2dd9bbb69e4dc9"
+    },
+    {
+      "byte_count": 5414,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/COMPACT_BRANCH_CHECKPOINTS.json",
+      "sha256": "7ffcfca82b5c49c4e28d58986f8c10e019de8194be26ff5c729a90daf148f790"
+    },
+    {
+      "byte_count": 8134,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/CONSERVATION_DIAGNOSIS_CN.md",
+      "sha256": "e48bb7913e2fd281fdf71cde249671436e425621a6539bebceaaf687c0a514f2"
+    },
+    {
+      "byte_count": 198,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/CONTROL_STOP.json",
+      "sha256": "9e19a91f4f51a40361538f790ab36ddbfce60902d96979f2c52c7303bf05f82a"
+    },
+    {
+      "byte_count": 4955,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/DIAGNOSIS_SUMMARY.json",
+      "sha256": "1e88850ede56cedff778a3a8957da1a540d69893766ee810f20cc7558bf7bdf2"
+    },
+    {
+      "byte_count": 1667,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/DURABLE_REPLAY_VERIFICATION.json",
+      "sha256": "0633a3f8fe3409cbfdf1ab74ab36b8b8a03dcfe94f3a2df9014daf8ed6f975b1"
+    },
+    {
+      "byte_count": 421987,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/EXACT_ADD_DIAGNOSIS.json",
+      "sha256": "d875fff897c6c6100b631c9b878e1b0fe0878f995210f89616ca2aafe092630f"
+    },
+    {
+      "byte_count": 50966,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/EXACT_HOLD_DIAGNOSIS.json",
+      "sha256": "e5b95a5753ef7cf0bcc4aa281b0215511bb208cb98ad7bf27d71871b36c518e0"
+    },
+    {
+      "byte_count": 72500,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/EXACT_ROOT_PREFIX_DIAGNOSIS.json",
+      "sha256": "860a10d1a1c8f5178cde080613b242e2fd5c750372b142536aa810935746a6ae"
+    },
+    {
+      "byte_count": 3782,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/full_state.py",
+      "sha256": "3f0d71558c5803dbbe3643b89918242e0c0d915daed8d7cc73642d4ea0f9d904"
+    },
+    {
+      "byte_count": 144,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/action_legality.json",
+      "sha256": "60e2f70c6c47024d83521f743386825fb6f81f7ac372767db4d576a8cb1f0a35"
+    },
+    {
+      "byte_count": 5003,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/audit_summary.json",
+      "sha256": "ae7f60e5f3d72487e572fed6cf17fe742cd8c53eed93ac9d902a1b01796048d9"
+    },
+    {
+      "byte_count": 105147,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/boundaries.jsonl",
+      "sha256": "297a23cff1a2111af138d69a36a96e70b81edd9889d9b945cd8db1da124edc50"
+    },
+    {
+      "byte_count": 565598,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/branch_result.json",
+      "sha256": "14f7cbbe6158907ee3fc540c23de3442bf1bd20a159a95c7fc30fd74dab0439b"
+    },
+    {
+      "byte_count": 1384198,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/CHECKPOINT_6_CAUSAL_PREIMAGE.json",
+      "sha256": "da8d098a04acffe4273a4c075c94f83a18a4b3d619e7aa91a0294721bb2bdf8a"
+    },
+    {
+      "byte_count": 26146655,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/CHECKPOINT_6_FULL_STATE.json",
+      "sha256": "6785c277823a6cf1f38a03adb094a5b384ec8b341044b918d0510fd355b3d873"
+    },
+    {
+      "byte_count": 227413,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/CHECKPOINT_6_SUMMARY.json",
+      "sha256": "771e6ff23b73e3aa0794698dcc3fa78c96ade71d31585222b9fa39de43623284"
+    },
+    {
+      "byte_count": 1394638,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/CHECKPOINT_9_CAUSAL_PREIMAGE.json",
+      "sha256": "f4447340ff7503b8fb9dc674daa88f7b2e59eb2cdd456c71c5004e1d0cd87601"
+    },
+    {
+      "byte_count": 26313276,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/CHECKPOINT_9_FULL_STATE.json",
+      "sha256": "7ecc41213d369789b5d2e4c1ac6603e664b4031919bb5717464e81889cc39791"
+    },
+    {
+      "byte_count": 243269,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/CHECKPOINT_9_SUMMARY.json",
+      "sha256": "b0361c2026dcadf8f532dc20cdeb472415e655e3f85358e5de19f43d219937f4"
+    },
+    {
+      "byte_count": 55716,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/intervals.jsonl",
+      "sha256": "4a44300d0c76f74688a7e171eb0a7025a7efda2ee25daf977f97a16a8c066ac0"
+    },
+    {
+      "byte_count": 956,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/next_events.jsonl",
+      "sha256": "d1ec1b823edde4190495476f3bc39f492f5477d49ff1a348ce2e96a9062b150a"
+    },
+    {
+      "byte_count": 291951,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/operations.jsonl",
+      "sha256": "61779d1bb2bcb80a092ef43ec2a4622a85f4a1ef508edbbb7e74357698e0dcac"
+    },
+    {
+      "byte_count": 1373715,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/POST_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "6f476deee2610e8e07d4eba731647f776673e43c6d85613541222bbc572731c9"
+    },
+    {
+      "byte_count": 25979988,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/POST_ACTION_FULL_STATE.json",
+      "sha256": "c67f62cfca51ac7c208d93ee0d0444506bc3a061d041c14328bbe7dff23c61e4"
+    },
+    {
+      "byte_count": 211437,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/POST_ACTION_SUMMARY.json",
+      "sha256": "93ce57d7b5c3baee1cad5c55fcdb5b655625aaedf9dc11e677b89393d481e3b7"
+    },
+    {
+      "byte_count": 1368252,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/PRE_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "1a6a346c324c6a9d34721ba1d049ac4ea5de62036a62d1a89d17a02255cb5fb3"
+    },
+    {
+      "byte_count": 24120054,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/PRE_ACTION_FULL_STATE.json",
+      "sha256": "917a6604bb06a3f58a94f20956513391d65c2d7c8ef29cc951e407ab087310f6"
+    },
+    {
+      "byte_count": 203467,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/PRE_ACTION_SUMMARY.json",
+      "sha256": "874b5471eb7c6154d5e05c9b6ee9d772fc34f5383911cf9ecdcae297f5c37a77"
+    },
+    {
+      "byte_count": 466,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/receipt.json",
+      "sha256": "d9397003d6ebfc1b1b574ee1ca32135f6c1e458117621bc3e327d549941e8213"
+    },
+    {
+      "byte_count": 1231,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/reconstruction_validation.json",
+      "sha256": "2970b06a461be8f7e0f3c5e4befd1295f24355f0764006ae7780dd8631dbc2fd"
+    },
+    {
+      "byte_count": 74618,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/VALIDATION_INPUT_001.json",
+      "sha256": "95f309e112f2361fda8b97d914db7055be45e602c77d7dd1eca9279809d8b2a2"
+    },
+    {
+      "byte_count": 74618,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/VALIDATION_INPUT_002.json",
+      "sha256": "95f309e112f2361fda8b97d914db7055be45e602c77d7dd1eca9279809d8b2a2"
+    },
+    {
+      "byte_count": 74618,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/VALIDATION_INPUT_003.json",
+      "sha256": "95f309e112f2361fda8b97d914db7055be45e602c77d7dd1eca9279809d8b2a2"
+    },
+    {
+      "byte_count": 74625,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/VALIDATION_INPUT_004.json",
+      "sha256": "3f33c3d51e420072f570db3b06b654cfe2222b5c278ba83f1d7f014f1202fdd1"
+    },
+    {
+      "byte_count": 74625,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/VALIDATION_INPUT_005.json",
+      "sha256": "3f33c3d51e420072f570db3b06b654cfe2222b5c278ba83f1d7f014f1202fdd1"
+    },
+    {
+      "byte_count": 74625,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/VALIDATION_INPUT_006.json",
+      "sha256": "3f33c3d51e420072f570db3b06b654cfe2222b5c278ba83f1d7f014f1202fdd1"
+    },
+    {
+      "byte_count": 74624,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/VALIDATION_INPUT_007.json",
+      "sha256": "d2c4991beb7a2bfd3d16db070c8ca95bfe80f746c0e7cf0589de453d908cdd52"
+    },
+    {
+      "byte_count": 74624,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/VALIDATION_INPUT_008.json",
+      "sha256": "d2c4991beb7a2bfd3d16db070c8ca95bfe80f746c0e7cf0589de453d908cdd52"
+    },
+    {
+      "byte_count": 74624,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/VALIDATION_INPUT_009.json",
+      "sha256": "d2c4991beb7a2bfd3d16db070c8ca95bfe80f746c0e7cf0589de453d908cdd52"
+    },
+    {
+      "byte_count": 2418,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD/validation_residual_timeline.json",
+      "sha256": "f9e961a069e6cba592bdab4442fbe5846308e4fed93412ae2a37bbd0d2921ee4"
+    },
+    {
+      "byte_count": 1853411,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/HOLD_ADD_COMPARISON.json",
+      "sha256": "440dc5f9ec96d5bc7ea9bc4b720235b4decef15feafd99ea3e9aa630fa33102d"
+    },
+    {
+      "byte_count": 4202,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/independent_root_evidence_anchor.json",
+      "sha256": "918f57102a8ccf00db087a6fafd6f48ebdc6de82cb67353cfbc621331ead3dc0"
+    },
+    {
+      "byte_count": 2786,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/MINIMAL_FIX_PROPOSAL_CN.md",
+      "sha256": "f72bfd6f26e5d8cb30d2c0a54d03bf5f246a3e1c5bbcc70447f9ff5b980defcd"
+    },
+    {
+      "byte_count": 580,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/pre_implementation_verification.json",
+      "sha256": "faf350c6bbd1dac0a8a8a7032af7b005afc1cfefdf7ea0a7690c723ba8d9cb49"
+    },
+    {
+      "byte_count": 4326,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/prepare_recipe.py",
+      "sha256": "bcb626c8c62f9e51be96bf5cd9bbc03c493effedf2ceb9a1b74cdac6299e8e04"
+    },
+    {
+      "byte_count": 534,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/PROCESS_ADD.json",
+      "sha256": "7e43266209b3bc677ef5890b00a777fe97d8e3078fb26c739748eda331106856"
+    },
+    {
+      "byte_count": 523,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/PROCESS_HOLD.json",
+      "sha256": "14b0534d58c4cb87f61f42a1d0e5c33b3e4ad49679dc87fc107ff696420d34db"
+    },
+    {
+      "byte_count": 464,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/PROCESS_rebuild.json",
+      "sha256": "70aaccf24cbeec4bb9b2de6231ceeb6dcb51f461c85ac01d39f93c7dfcd7083d"
+    },
+    {
+      "byte_count": 21894,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/PROPAGATION_EVENT_TIMING_AUDIT.json",
+      "sha256": "57eda30b1256d7a663537b5ca035dfa36b6580f4fe010d42430d3f0fdfda7534"
+    },
+    {
+      "byte_count": 3821,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/replay_entry.py",
+      "sha256": "33f82dbc50e60cce032032ed23d02be49db9702257c731304552f865e3848f21"
+    },
+    {
+      "byte_count": 277543,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/replay_recipe.json",
+      "sha256": "da5c7ddfade01045cdea1f787e3802fe75d56d16c5ca8c0b5c86c3e050551916"
+    },
+    {
+      "byte_count": 11234,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/replay_worker.py",
+      "sha256": "b5df87334bf9c8882fb7817a69ea16bf478f48d72676c5aacba5e2f6cfdf1564"
+    },
+    {
+      "byte_count": 4326,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/RESULT_CN.md",
+      "sha256": "bc61301800c4d29a6b2b20375e0153667107e7a8c173e5d55c9a878cd937aa7b"
+    },
+    {
+      "byte_count": 1368252,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ROOT_BASELINE/LIVE_PRE_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "1a6a346c324c6a9d34721ba1d049ac4ea5de62036a62d1a89d17a02255cb5fb3"
+    },
+    {
+      "byte_count": 25884170,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ROOT_BASELINE/LIVE_PRE_ACTION_FULL_STATE.json",
+      "sha256": "1559fdd71adbbb3e9154ce1a76032462b0320c4040e3cfde2d14f98e31d2e349"
+    },
+    {
+      "byte_count": 203472,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ROOT_BASELINE/LIVE_PRE_ACTION_SUMMARY.json",
+      "sha256": "271a6fb35525d278a52f3335c200a790eb17f7ce3e8be2be587115691419ba7c"
+    },
+    {
+      "byte_count": 891372,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ROOT_BASELINE/prefix_audit/boundaries.jsonl",
+      "sha256": "38d46e61f8b5440fa826a7edbb3b7755956b40f2b363bb3e65f6b22b759f43e5"
+    },
+    {
+      "byte_count": 400970,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ROOT_BASELINE/prefix_audit/intervals.jsonl",
+      "sha256": "a1d84254bd33e426b751977e3368f848d1008570ddfef3b1b716660eb7711343"
+    },
+    {
+      "byte_count": 16690,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ROOT_BASELINE/prefix_audit/next_events.jsonl",
+      "sha256": "38ca720eda33fbdc4e23c09ca420598af76f825b33552e50892d1987cbc6480c"
+    },
+    {
+      "byte_count": 2230532,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ROOT_BASELINE/prefix_audit/operations.jsonl",
+      "sha256": "44bc254e91c56420e9c837fbd500de5ffba12027d72d21b5a898a5932f55fe44"
+    },
+    {
+      "byte_count": 21498,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ROOT_BASELINE/prefix_audit/summary.json",
+      "sha256": "11e2d83c5edcd86d872a7c07a23a0776d9089af30b7be8307b39c8228c2480a4"
+    },
+    {
+      "byte_count": 443159,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ROOT_BASELINE/root_binding.json",
+      "sha256": "e5f2ac0f041038cacd5c625b25606f3d8b3097d06114c4c1f1bbd360c0178651"
+    },
+    {
+      "byte_count": 25761556,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ROOT_BASELINE/ROOT_FULL_STATE.json",
+      "sha256": "6962d1ff0f2e72d696b7663479eb17644548c9168bd623aee718eec453d52bd5"
+    },
+    {
+      "byte_count": 1368252,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ROOT_BASELINE/SANITIZED_PRE_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "1a6a346c324c6a9d34721ba1d049ac4ea5de62036a62d1a89d17a02255cb5fb3"
+    },
+    {
+      "byte_count": 24120054,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ROOT_BASELINE/SANITIZED_PRE_ACTION_FULL_STATE.json",
+      "sha256": "b2e231e8d2b753b9093e72bb7d17522e70acfd9a2e1a8c2c9506ea1643347860"
+    },
+    {
+      "byte_count": 203477,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ROOT_BASELINE/SANITIZED_PRE_ACTION_SUMMARY.json",
+      "sha256": "8df6a873908357670e56b5792b12dbc26e7a261833666c9ecc09f339a728bbac"
+    },
+    {
+      "byte_count": 4799,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/ROOT_REPLAY_GUIDE_CN.md",
+      "sha256": "3fc32493ac93f6473146e46ea42059eadbd3a8fb0d9ea27e7b0cbb557b174498"
+    },
+    {
+      "byte_count": 2755,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/run_next.py",
+      "sha256": "e9baa429579aae50827567987b91a000315e878692987f0c2c389f43112f21d6"
+    },
+    {
+      "byte_count": 8551,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/seal_diagnostic.py",
+      "sha256": "c0c1f57771992312ab6e10e9f6a64708954eb3e9efc1f2d9b3b65e9840357814"
+    },
+    {
+      "byte_count": 7857,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/TIMING_CAUSE_CLASSIFICATION.json",
+      "sha256": "8b5e1446e83d4c79d5e9000dc5d1305ebc84e9b602d88ccb438687e06003f3c0"
+    },
+    {
+      "byte_count": 4884,
+      "path": "research_versions/dynamic_k_v1/acceptance/0014/timing_cause_summary.py",
+      "sha256": "0d75ceaa3ce97837264d3b42afe10a3a8e6bf5eaa397d140f4dec7941825ba55"
+    },
+    {
+      "byte_count": 1694,
+      "path": "research_versions/dynamic_k_v1/configs/n4_p0e_replay_diagnostic_v1.json",
+      "sha256": "f20b0abb3daa71027dcbac9cb16829df891daee762c64ffc1c1d86c014c21395"
+    },
+    {
+      "byte_count": 1149,
+      "path": "research_versions/dynamic_k_v1/contracts/N4_P0E_REPLAY_DIAGNOSTIC_SCOPE_CN.md",
+      "sha256": "0779cb344aca438be2376b8bd12b01d6e89234ec9e1c6d4d5a21b17eea7465c6"
+    }
+  ],
+  "new_root_artifact_anchor": {
+    "byte_count": 4202,
+    "path": "research_versions/dynamic_k_v1/acceptance/0014/independent_root_evidence_anchor.json",
+    "sha256": "918f57102a8ccf00db087a6fafd6f48ebdc6de82cb67353cfbc621331ead3dc0"
+  },
+  "parent_revision": {
+    "byte_count": 9118,
+    "path": "research_versions/dynamic_k_v1/revisions/0013/record.json",
+    "sha256": "ae00610b223f9f5172f5290ade4a382bb2d54e38a79d6b473c41247f7a6ec61a"
+  },
+  "replay_recipe": {
+    "byte_count": 277543,
+    "path": "research_versions/dynamic_k_v1/acceptance/0014/replay_recipe.json",
+    "sha256": "da5c7ddfade01045cdea1f787e3802fe75d56d16c5ca8c0b5c86c3e050551916"
+  },
+  "revision_id": "0014",
+  "root_causal_sha256": "1a6a346c324c6a9d34721ba1d049ac4ea5de62036a62d1a89d17a02255cb5fb3",
+  "schema": "dynamic_k_n4_p0e_diagnostic_manifest_v1",
+  "scientific_gate_pass": false,
+  "status": "STOP_BUSINESS_CONSERVATION_MISMATCH",
+  "version_origin": {
+    "byte_count": 1555,
+    "path": "research_versions/dynamic_k_v1/version_record.json",
+    "sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+  }
+}

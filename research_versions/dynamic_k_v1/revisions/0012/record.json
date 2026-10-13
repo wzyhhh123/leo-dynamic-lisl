@@ -1,0 +1,149 @@
+{
+  "N4_P0R_engineering_pass": false,
+  "N4_P0_engineering_pass": false,
+  "authorization": {
+    "actor": "human_user",
+    "request": "Verify independent 0011/origin/full assets; strictly reuse bound failure root/forecast/action, diagnose first residual with high precision references only; stop any binding mismatch; no frozen core/tolerance changes, no full pilot",
+    "scope": "N4_P0C_READ_ONLY_CONSERVATION_DIAGNOSIS_ONLY",
+    "source": "current_conversation_user_request"
+  },
+  "bindings": {
+    "baseline_seal": {
+      "byte_count": 656,
+      "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+      "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+    },
+    "configuration": {
+      "byte_count": 1749,
+      "path": "research_versions/dynamic_k_v1/configs/n4_p0c_diagnostic_v1.json",
+      "sha256": "54bcfc3ccbdbf21e8cef1aa1feba70007031a318fe50663b844c0d036fcc2c61"
+    },
+    "contract": {
+      "byte_count": 1019,
+      "path": "research_versions/dynamic_k_v1/contracts/N4_P0C_DIAGNOSTIC_STOP_SCOPE_CN.md",
+      "sha256": "def3655626530792e29c2038f2bb336a36c0205d7b4a48be7cb807151ce7a65e"
+    },
+    "diagnostic_manifest": {
+      "byte_count": 4044,
+      "path": "research_versions/dynamic_k_v1/acceptance/0012/manifest_final.json",
+      "sha256": "9ee89b4fbda2fbf3d6c6598352746bfc916d17a9070479ceaa299dd078ed59a5"
+    },
+    "old_asset_audit": {
+      "byte_count": 28270,
+      "path": "research_versions/dynamic_k_v1/acceptance/0012/preseal_change_audit.json",
+      "sha256": "1aa366dced63c08da440f629c973ab189b2bb2a5edd6d3ddfac8c2047021de6f"
+    },
+    "result_report": {
+      "byte_count": 4990,
+      "path": "research_versions/dynamic_k_v1/acceptance/0012/RESULT_CN.md",
+      "sha256": "9f952b686096d50564b57318792b82a6efd0f5ceff366c736a3a8b04201115cd"
+    },
+    "saved_state_reference": {
+      "byte_count": 61805,
+      "path": "research_versions/dynamic_k_v1/acceptance/0012/offline_saved_evidence_scan.json",
+      "sha256": "3e7a9a7db1fb47363c49453ccfb30a6d989dcc2f8f4b32d7fefbf2a74f0536c5"
+    },
+    "stop_evidence": {
+      "byte_count": 862,
+      "path": "research_versions/dynamic_k_v1/acceptance/0012/stop_binding_evidence.json",
+      "sha256": "f28700db78e4c17ad08ceec1ace4bc4fa3bb47475290f460989e8f581ca6fb05"
+    }
+  },
+  "changes": {
+    "added": [
+      {
+        "byte_count": 4990,
+        "path": "research_versions/dynamic_k_v1/acceptance/0012/RESULT_CN.md",
+        "sha256": "9f952b686096d50564b57318792b82a6efd0f5ceff366c736a3a8b04201115cd"
+      },
+      {
+        "byte_count": 1177,
+        "path": "research_versions/dynamic_k_v1/acceptance/0012/acceptance_summary.json",
+        "sha256": "b4bd5b0f543b713d7d7c76c8d9866aa15fc3caba87ef986206b14326c2603a5f"
+      },
+      {
+        "byte_count": 1417,
+        "path": "research_versions/dynamic_k_v1/acceptance/0012/audit_workflow.py",
+        "sha256": "0c2b0175a29018ffbc77e730fa71b5dd9f926311f6789c87109974fc6485f9ff"
+      },
+      {
+        "byte_count": 13557,
+        "path": "research_versions/dynamic_k_v1/acceptance/0012/event_auditor.py",
+        "sha256": "aa8d552f91456551c006782fb28fbb74d35efb8e9728ce6c3439edd73e907421"
+      },
+      {
+        "byte_count": 4044,
+        "path": "research_versions/dynamic_k_v1/acceptance/0012/manifest_final.json",
+        "sha256": "9ee89b4fbda2fbf3d6c6598352746bfc916d17a9070479ceaa299dd078ed59a5"
+      },
+      {
+        "byte_count": 61805,
+        "path": "research_versions/dynamic_k_v1/acceptance/0012/offline_saved_evidence_scan.json",
+        "sha256": "3e7a9a7db1fb47363c49453ccfb30a6d989dcc2f8f4b32d7fefbf2a74f0536c5"
+      },
+      {
+        "byte_count": 1664,
+        "path": "research_versions/dynamic_k_v1/acceptance/0012/offline_scan.py",
+        "sha256": "90101482deec10376e605458592c8038b03ac929f13e096babe67f557a269b33"
+      },
+      {
+        "byte_count": 563,
+        "path": "research_versions/dynamic_k_v1/acceptance/0012/pre_implementation_verification.json",
+        "sha256": "88b48615206f31b332e936407d00596e4c2e0f55c8dccb5fe4e6124d403ffa05"
+      },
+      {
+        "byte_count": 28270,
+        "path": "research_versions/dynamic_k_v1/acceptance/0012/preseal_change_audit.json",
+        "sha256": "1aa366dced63c08da440f629c973ab189b2bb2a5edd6d3ddfac8c2047021de6f"
+      },
+      {
+        "byte_count": 7187,
+        "path": "research_versions/dynamic_k_v1/acceptance/0012/run_diagnosis.py",
+        "sha256": "664b89c6730f4d1cbe31daff1564c4108233fd2701300fa14f32437958ec8656"
+      },
+      {
+        "byte_count": 11601,
+        "path": "research_versions/dynamic_k_v1/acceptance/0012/seal_stop.py",
+        "sha256": "05c6eb6fbc9b6f48cfdbdd4875303845e0f39282c47287ce18b2666a3c865b2d"
+      },
+      {
+        "byte_count": 15393,
+        "path": "research_versions/dynamic_k_v1/acceptance/0012/seal_stop_ascii.py",
+        "sha256": "12326a5515ba7cacec452ae2aa713dc602fc9d12fc5a3c7dfbcb91848ef62308"
+      },
+      {
+        "byte_count": 862,
+        "path": "research_versions/dynamic_k_v1/acceptance/0012/stop_binding_evidence.json",
+        "sha256": "f28700db78e4c17ad08ceec1ace4bc4fa3bb47475290f460989e8f581ca6fb05"
+      },
+      {
+        "byte_count": 1749,
+        "path": "research_versions/dynamic_k_v1/configs/n4_p0c_diagnostic_v1.json",
+        "sha256": "54bcfc3ccbdbf21e8cef1aa1feba70007031a318fe50663b844c0d036fcc2c61"
+      },
+      {
+        "byte_count": 1019,
+        "path": "research_versions/dynamic_k_v1/contracts/N4_P0C_DIAGNOSTIC_STOP_SCOPE_CN.md",
+        "sha256": "def3655626530792e29c2038f2bb336a36c0205d7b4a48be7cb807151ce7a65e"
+      }
+    ],
+    "deleted": [],
+    "modified": []
+  },
+  "created_beijing": "2026-10-12T22:49:24.513056+08:00",
+  "created_utc": "2026-10-12T14:49:24.513056+00:00",
+  "formal_experiments_executed": false,
+  "full_pilot_executed": false,
+  "parent_record": {
+    "byte_count": 18836,
+    "path": "research_versions/dynamic_k_v1/revisions/0011/record.json",
+    "sha256": "89046f4c855a6f7830c620889216ef131577887ee15b04593d501b6ddf06b71f"
+  },
+  "reason": "N4-P0C diagnostic only; bound saved-state high precision scan; immediate STOP at reconstructed root SHA mismatch, root cause UNRESOLVED",
+  "revision_id": "0012",
+  "root_cause": "UNRESOLVED",
+  "schema": "dynamic_k_revision_record_v1",
+  "scientific_gate_pass": false,
+  "status": "STOP_ROOT_BINDING_MISMATCH",
+  "version_id": "dynamic_k_v1"
+}

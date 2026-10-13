@@ -1,0 +1,201 @@
+{
+  "boundaries": [
+    {
+      "exact_residual": "1/8589934592",
+      "index": 1,
+      "label": "PRE_ACTION_t3",
+      "op_count": 0,
+      "residual_bits": 1.1641532182693481e-10,
+      "time_s": 3.0
+    },
+    {
+      "exact_residual": "1/8589934592",
+      "index": 2,
+      "label": "POST_ACTION_t3",
+      "op_count": 0,
+      "residual_bits": 1.1641532182693481e-10,
+      "time_s": 3.0
+    },
+    {
+      "exact_residual": "1/8589934592",
+      "index": 3,
+      "label": "BEFORE_INTEGRATE",
+      "op_count": 0,
+      "residual_bits": 1.1641532182693481e-10,
+      "time_s": 3.0
+    },
+    {
+      "exact_residual": "-1/8589934592",
+      "index": 4,
+      "label": "AFTER_INTEGRATE",
+      "op_count": 84,
+      "residual_bits": -1.1641532182693481e-10,
+      "time_s": 6.0
+    },
+    {
+      "exact_residual": "-1/8589934592",
+      "index": 5,
+      "label": "PREDICTION_CHECKPOINT_6.0",
+      "op_count": 84,
+      "residual_bits": -1.1641532182693481e-10,
+      "time_s": 6.0
+    },
+    {
+      "exact_residual": "-1/8589934592",
+      "index": 6,
+      "label": "BEFORE_INTEGRATE",
+      "op_count": 84,
+      "residual_bits": -1.1641532182693481e-10,
+      "time_s": 6.0
+    },
+    {
+      "exact_residual": "-1/8589934592",
+      "index": 7,
+      "label": "AFTER_INTEGRATE",
+      "op_count": 168,
+      "residual_bits": -1.1641532182693481e-10,
+      "time_s": 9.0
+    },
+    {
+      "exact_residual": "-1/8589934592",
+      "index": 8,
+      "label": "PREDICTION_CHECKPOINT_9.0",
+      "op_count": 168,
+      "residual_bits": -1.1641532182693481e-10,
+      "time_s": 9.0
+    }
+  ],
+  "boundary_count": 8,
+  "decomposition_exactly_closed": true,
+  "final_by_commodity": {
+    "f_bg": {
+      "absolute_update_error_bound": {
+        "approx_bits": 0.0,
+        "rational": "0"
+      },
+      "clip_mass_gain": {
+        "approx_bits": 0.0,
+        "rational": "0"
+      },
+      "exact_update_error": {
+        "approx_bits": 0.0,
+        "rational": "0"
+      },
+      "expected_transfers": {
+        "approx_bits": 0.0,
+        "rational": "0"
+      },
+      "initial": {
+        "approx_bits": 1.1641532182693481e-10,
+        "rational": "1/8589934592"
+      }
+    },
+    "f_hot": {
+      "absolute_update_error_bound": {
+        "approx_bits": 2.3283064365386963e-10,
+        "rational": "1/4294967296"
+      },
+      "clip_mass_gain": {
+        "approx_bits": 0.0,
+        "rational": "0"
+      },
+      "exact_update_error": {
+        "approx_bits": -2.3283064365386963e-10,
+        "rational": "-1/4294967296"
+      },
+      "expected_transfers": {
+        "approx_bits": 0.0,
+        "rational": "0"
+      },
+      "initial": {
+        "approx_bits": 0.0,
+        "rational": "0"
+      }
+    }
+  },
+  "final_totals": {
+    "A": {
+      "denominator": "1",
+      "exact_decimal": "5400000",
+      "hex": "0x1.4997000000000p+22",
+      "numerator": "5400000",
+      "repr": "5400000.0"
+    },
+    "A_minus_D_minus_QI": {
+      "denominator": "8589934592",
+      "exact_decimal": "-3.49245965480804443359375E-10",
+      "hex": "-0x1.8000000000000p-32",
+      "numerator": "-3",
+      "repr": "-3.4924596548080444e-10"
+    },
+    "A_minus_D_plus_QI": {
+      "denominator": "1",
+      "exact_decimal": "0",
+      "hex": "0x0.0p+0",
+      "numerator": "0",
+      "repr": "0.0"
+    },
+    "D": {
+      "denominator": "1073741824",
+      "exact_decimal": "5368782.232853443361818790435791015625",
+      "hex": "0x1.47af38ee71221p+22",
+      "numerator": "5764686027362849",
+      "repr": "5368782.232853443"
+    },
+    "I": {
+      "denominator": "8589934592",
+      "exact_decimal": "31217.767146556987427175045013427734375",
+      "hex": "0x1.e7c7118eddf60p+14",
+      "numerator": "268158577897211",
+      "repr": "31217.767146556987"
+    },
+    "N": {
+      "denominator": "8589934592",
+      "exact_decimal": "31217.767146556987427175045013427734375",
+      "hex": "0x1.e7c7118eddf60p+14",
+      "numerator": "268158577897211",
+      "repr": "31217.767146556987"
+    },
+    "Q": {
+      "denominator": "1",
+      "exact_decimal": "0",
+      "hex": "0x0.0p+0",
+      "numerator": "0",
+      "repr": "0.0"
+    },
+    "exact_IEEE_operand_residual": {
+      "approx_bits": -1.1641532182693481e-10,
+      "rational": "-1/8589934592"
+    },
+    "fsum_signed_all_terms": {
+      "denominator": "8589934592",
+      "exact_decimal": "-1.16415321826934814453125E-10",
+      "hex": "-0x1.0000000000000p-33",
+      "numerator": "-1",
+      "repr": "-1.1641532182693481e-10"
+    }
+  },
+  "first_boundary_above_N1a_threshold": null,
+  "first_clip": null,
+  "initial_exact_residual_by_commodity": {
+    "f_bg": {
+      "approx_bits": 1.1641532182693481e-10,
+      "rational": "1/8589934592"
+    },
+    "f_hot": {
+      "approx_bits": 0.0,
+      "rational": "0"
+    }
+  },
+  "largest_clip": null,
+  "original_methods_once": true,
+  "state_substitutions": false,
+  "tolerances_changed": false,
+  "update_count": 168,
+  "update_counts": {
+    "A": 4,
+    "D": 4,
+    "I": 80,
+    "Q": 80
+  }
+}

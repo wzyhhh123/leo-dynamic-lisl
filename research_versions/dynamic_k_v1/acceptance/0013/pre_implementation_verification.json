@@ -1,0 +1,18 @@
+{
+  "baseline_file_count": 5810,
+  "excluded_file_count": 202,
+  "receipt_source": "Transcribed completed version_control_readme_v1.py verify tool output, session 52641, exit 0",
+  "revision_id": "0012",
+  "revision_record_sha256": "e77bf7624a4ac505e0dc52d77d79f6a2dcb45c240d3494d8fffe1119d3040aae",
+  "scientific_gate_pass": false,
+  "scope": "N0_FILE_INTEGRITY_AND_VERSION_BINDINGS_ONLY",
+  "status": "PASS",
+  "undeclared_changes": {
+    "added": [],
+    "deleted": [],
+    "modified": [],
+    "possible_renames": []
+  },
+  "verified_file_count": 6105,
+  "version_record_sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+}

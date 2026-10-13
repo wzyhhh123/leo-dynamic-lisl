@@ -1,0 +1,11 @@
+{
+  "command": [
+    "D:\\Program_Files\\anaconda3\\envs\\pytorch\\python.exe",
+    "-B",
+    "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0006\\run_historical_regression.py",
+    "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0010\\historical_regression.json"
+  ],
+  "returncode": 1,
+  "stderr": "",
+  "stdout": "{\n  \"base\": {\n    \"scope\": \"ENGINEERING_HISTORICAL_REGRESSION\",\n    \"tests_run\": 97,\n    \"failures\": [\n      {\n        \"test\": \"test_known_witness_domain_discovers_every_registered_size_without_J (test_f3_v2_search_policy_probe.StructuralPolicyProbeTests)\",\n        \"traceback\": \"Traceback (most recent call last):\\n  File \\\"D:\\\\Document\\\\leo_routing_attitude\\\\dynamic_lisl_v2\\\\tests\\\\test_f3_v2_search_policy_probe.py\\\", line 50, in test_known_witness_domain_discovers_every_registered_size_without_J\\n    self.assertGreater(pool.audit['coverage_by_size'][str(size)],0)\\nAssertionError: 0 not greater than 0\\n\"\n      }\n    ],\n    \"errors\": [],\n    \"skipped\": [],\n    \"patterns\": [\n      \"test_terminal_executor.py\",\n      \"test_gate_d1.py\",\n      \"test_gate_d2.py\",\n      \"test_inflight_propagation_closure.py\",\n      \"test_b4_lightweight_clone.py\",\n      \"test_b4_checkpoint_alignment.py\",\n      \"test_gate_f3_drain_continuation_adapter.py\",\n      \"test_f3_v2_joint_snapshot.py\",\n      \"test_f3_v2_search_policy_probe.py\"\n    ]\n  },\n  \"physical_gate_c\": {\n    \"scope\": \"ENGINEERING_HISTORICAL_REGRESSION\",\n    \"tests_run\": 35,\n    \"failures\": [],\n    \"errors\": [],\n    \"skipped\": [],\n    \"patterns\": [\n      \"test_gate_c.py\",\n      \"test_gate_c_simplified.py\",\n      \"test_gate_c_for_reasons.py\"\n    ]\n  }\n}\n"
+}

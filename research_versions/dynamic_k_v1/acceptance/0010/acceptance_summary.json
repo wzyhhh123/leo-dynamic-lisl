@@ -1,0 +1,19 @@
+{
+  "N4_P0_engineering_pass": false,
+  "complete_cost_acceptance": false,
+  "current_candidate_manifest": {
+    "byte_count": 24630,
+    "path": "research_versions/dynamic_k_v1/acceptance/0010/manifest_final.json",
+    "sha256": "8d15d8492b4662ad554b4cc25b27d4b3954fcbf340f9b38b5468de5bcfa17ebf"
+  },
+  "decision_cadence_s": 3,
+  "engineering_functionality_tests_pass": true,
+  "formal_parameters_remain_null": true,
+  "frozen_upstream_regressions_pass": true,
+  "full_epoch_completed": false,
+  "full_pilot_authorized": false,
+  "new_historical_regressions": 0,
+  "scientific_gate_pass": false,
+  "status": "STOP_COST_EXCESSIVE",
+  "unique_functionality_cases": 20
+}

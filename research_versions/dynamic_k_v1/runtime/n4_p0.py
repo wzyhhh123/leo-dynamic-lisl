@@ -1,0 +1,267 @@
+"""PILOT_ONLY causal root-action scoring over unchanged N1a/b/N2 kernels.
+
+No live engine is stored by a scorer. This is data isolation, not a sandbox for
+malicious Python code. Committed physical/propagation events remain observable.
+"""
+from copy import deepcopy
+from dataclasses import asdict, dataclass, is_dataclass
+from collections import deque
+from fractions import Fraction
+from pathlib import Path
+from types import FunctionType
+from time import perf_counter
+import hashlib
+import json
+import math
+
+from dynamic_lisl.traffic_trace import PiecewiseConstantTrafficTrace, TrafficSegment
+from .n1a import require, finite, digest
+from .n2_actions import Hold, Add, Drop, Replace, action_key
+from .n2_controller import AtomicTopologyController
+from .n3_baselines import observe_current
+
+
+@dataclass(frozen=True)
+class P0EvidenceBinding:
+    project_root: Path
+    manifest_path: str
+    expected_manifest_sha256: str
+    def verify(self):
+        import importlib.util
+        spec=importlib.util.spec_from_file_location('p0_binding_vc',Path(__file__).resolve().parents[1]/'tools/version_control_readme_v1.py')
+        vc=importlib.util.module_from_spec(spec);spec.loader.exec_module(vc)
+        mpath=vc.safe_path(self.project_root,self.manifest_path)
+        require(vc.file_info(mpath)['sha256']==self.expected_manifest_sha256,'P0_MANIFEST_ANCHOR')
+        m=vc.read_json(mpath);require(m['schema']=='dynamic_k_n4_p0_candidate_v1' and
+            m['candidate_revision_id']=='0010' and not m['formal_experiments_authorized'],'P0_SCOPE')
+        for row in m['files']+list(m['anchors'].values()):
+            require(vc.binding(self.project_root,row['path'])==row,'P0_FILE_DRIFT:'+row['path'])
+        c=vc.read_json(vc.safe_path(self.project_root,m['configuration_path']))
+        require(all(x is None for x in c['scientific_parameters'].values()) and
+            c['PILOT_ONLY']['decision_cadence_s']==3. and not c['formal_experiments_authorized'],'P0_CONFIGURATION')
+        return dict(status='PASS',scope='N4_P0_ENGINEERING_ONLY',manifest_sha256=self.expected_manifest_sha256)
+
+
+def encode(x):
+    if x is None or type(x) in (str, bool, int, float): return x
+    if isinstance(x, Fraction): return str(x)
+    if isinstance(x, Path): return x.as_posix()
+    if is_dataclass(x): return encode(asdict(x))
+    if isinstance(x, dict): return [[encode(k), encode(v)] for k,v in sorted(x.items(),key=lambda z:repr(z[0]))]
+    if isinstance(x,(list,tuple,deque)): return [encode(v) for v in x]
+    if isinstance(x,(set,frozenset)): return [encode(v) for v in sorted(x,key=repr)]
+    if hasattr(x,'tolist'): return x.tolist()
+    if hasattr(x,'__dict__'): return dict(type=type(x).__name__,fields=encode(vars(x)))
+    raise ValueError('UNSUPPORTED_CAUSAL_STATE:'+type(x).__name__)
+
+
+def data_hash(x): return digest(encode(x))
+
+
+@dataclass(frozen=True)
+class ForecastInput:
+    start_s: float
+    horizon_s: float
+    mode: str
+    rates: tuple
+
+    @classmethod
+    def from_current(cls, observation, *, T_s, H_s, mode):
+        finite(H_s,'H',minimum=1e-12);finite(T_s,'T',minimum=1e-12)
+        require(mode in ('ZERO','PERSIST') and observation.time_s<T_s,'INVALID_FORECAST')
+        rates=tuple((k,0. if mode=='ZERO' else float(v)) for k,v in observation.injection_rates)
+        require(all(math.isfinite(v) and v>=0 for _,v in rates),'INVALID_RATE')
+        return cls(observation.time_s,min(H_s,T_s-observation.time_s),mode,rates)
+
+    @property
+    def end_s(self):return self.start_s+self.horizon_s
+    @property
+    def sha256(self):return digest(asdict(self))
+
+
+@dataclass(frozen=True)
+class CausalRootView:
+    observation: object
+    state_json: str
+    state_sha256: str
+
+
+def causal_view(atomic):
+    e=atomic.engine
+    # No trace, future trace hash, exogenous boundary, or stale cached result.
+    state={k:v for k,v in e.business_state().items() if k not in
+           ('trace','boundaries','boundary_index','delay','router','executor')}
+    require(not any(isinstance(x,PiecewiseConstantTrafficTrace) for x in graph_objects(state)),
+            'FOREIGN_TRAFFIC_IN_CURRENT_STATE')
+    state.update(terminal_snapshot=e.executor.snapshot(),terminal_events=e.executor.events,
+        terminal_history=e.executor.log,energy=vars(atomic.evaluator.base.ledger),
+        age=vars(atomic.evaluator.age),receipts=atomic.receipts,
+        physical_sha256=atomic.physical_sha256,delay_class=type(e.delay).__name__)
+    payload=json.dumps(encode(state),sort_keys=True,separators=(',',':'),allow_nan=False)
+    return CausalRootView(observe_current(atomic),payload,hashlib.sha256(payload.encode()).hexdigest())
+
+
+def observed_prefix(engine):
+    segments=[];end=0.
+    for r in engine.age_observations:
+        if r['kind']!='INTERVAL':continue
+        require(r['start']==end and r['end']<=engine.now,'INVALID_OBSERVED_PREFIX')
+        segments.append(TrafficSegment(r['start'],r['end'],dict(r['external']),'OBSERVED_HISTORY'))
+        end=r['end']
+    require(end==engine.now,'MISSING_OBSERVED_HISTORY')
+    return tuple(segments)
+
+
+def graph_objects(root):
+    """Walk data references including Python closure/default cells, no globals."""
+    seen=set();todo=[root]
+    while todo:
+        x=todo.pop()
+        if id(x) in seen:continue
+        seen.add(id(x));yield x
+        if isinstance(x,dict):todo.extend(x.keys());todo.extend(x.values())
+        elif isinstance(x,(list,tuple,set,frozenset,deque)):todo.extend(x)
+        elif isinstance(x,FunctionType):
+            todo.extend(x.__defaults__ or ())
+            todo.extend(c.cell_contents for c in x.__closure__ or ())
+        elif hasattr(x,'__dict__') and not isinstance(x,(type,Path)):
+            todo.extend(vars(x).values())
+
+
+@dataclass
+class SanitizedRoot:
+    atomic: object
+    forecast: ForecastInput
+    view: CausalRootView
+    prefix_sha256: str
+    binding: P0EvidenceBinding
+
+    def verify_isolation(self):
+        trace=self.atomic.engine.trace
+        for x in graph_objects(self):
+            if isinstance(x,PiecewiseConstantTrafficTrace):
+                require(x is trace,'FOREIGN_TRACE_IN_SCORER_GRAPH')
+        require(trace.sha256()==self.atomic.evaluator.base.input_trace_sha256,'BRANCH_SOURCE_DRIFT')
+        require(not self.atomic.engine.actions,'FUTURE_POLICY_IN_BRANCH')
+        require(self.atomic.engine.boundaries==list(trace.boundaries_after(self.forecast.start_s)),
+                'EXOGENOUS_BOUNDARY_DRIFT')
+        return dict(status='PASS',scope='DATA_OBJECT_GRAPH_NOT_PROCESS_SECURITY_SANDBOX',
+                    trace_count=1,forecast_sha256=self.forecast.sha256,prefix_sha256=self.prefix_sha256)
+
+    def clone(self):return deepcopy(self)
+    def checkpoint(self):return self.clone()
+    @classmethod
+    def restore(cls,checkpoint):
+        require(type(checkpoint) is cls,'INVALID_P0_CHECKPOINT');return checkpoint.clone()
+
+
+def make_sanitized_root(live,forecast,*,binding):
+    require(type(binding) is P0EvidenceBinding,'P0_BINDING_REQUIRED');binding.verify()
+    require(type(live) is AtomicTopologyController,'PINNED_N2_REQUIRED')
+    require(live.engine.now==forecast.start_s and forecast.end_s<=live.evaluator.base.T,'FORECAST_ROOT_CLOCK')
+    live._verify()
+    require(type(forecast) is ForecastInput and forecast.mode in ('ZERO','PERSIST'),'P0_FORECAST_TYPE_MODE')
+    current=observe_current(live)
+    expected=tuple((k,0. if forecast.mode=='ZERO' else float(v)) for k,v in current.injection_rates)
+    require(forecast.rates==expected,'P0_FORECAST_NOT_CURRENT_CAUSAL_RATES')
+    prefix=observed_prefix(live.engine)
+    trace=PiecewiseConstantTrafficTrace(tuple(sorted(live.engine.by_id)),prefix+(
+        TrafficSegment(forecast.start_s,forecast.end_s,dict(forecast.rates),'PILOT_'+forecast.mode),))
+    view=causal_view(live)
+    # Replace references during deepcopy, not after exposing a true-future clone.
+    memo={id(live.engine.trace):trace,id(live.engine.boundaries):list(trace.boundaries_after(live.engine.now))}
+    if live.last_result is not None:memo[id(live.last_result)]=None
+    memo[id(live.evaluator.base.input_trace_sha256)]=trace.sha256()
+    memo[id(live.evaluator.base.initial_state_sha256)]=view.state_sha256
+    cloned=deepcopy(live,memo)
+    cloned.engine.boundary_index=0
+    cloned.last_result=None
+    root=SanitizedRoot(cloned,forecast,view,data_hash(prefix),binding)
+    root.verify_isolation()
+    # Existing N1a cumulative A/prefix check, with original tolerances.
+    cloned.evaluator.base.measure()
+    return root
+
+
+@dataclass(frozen=True)
+class PilotCost:
+    lambda_N_s: float
+    lambda_E_bit_s_per_J: float
+    def __post_init__(self):
+        finite(self.lambda_N_s,'lambda_N');finite(self.lambda_E_bit_s_per_J,'lambda_E')
+
+
+def score_action(root,action,cost,*,cadence_s=3.):
+    finite(cadence_s,'PILOT_cadence',minimum=1e-12)
+    root.binding.verify()
+    root.verify_isolation();before=data_hash((root.view,root.atomic.engine.canonical_state(),vars(root.atomic.evaluator.age)))
+    timings={};start=perf_counter();branch=root.atomic.clone();timings['branch_clone_s']=perf_counter()-start
+    start=perf_counter();branch._verify();timings['explicit_binding_hash_s']=perf_counter()-start
+    initial=branch.evaluator.base.measure();start=perf_counter()
+    receipt=branch.submit(action);timings['n2_submit_including_binding_s']=perf_counter()-start
+    result=dict(action=asdict(action),action_key=action_key(action),accepted=receipt['accepted'],reason=receipt['reason'],
+        root_sha256=root.view.state_sha256,forecast_sha256=root.forecast.sha256,receipt=receipt,timings=timings)
+    if not receipt['accepted']:return result
+    cuts=[];t=root.forecast.start_s+cadence_s
+    while t<root.forecast.end_s:cuts.append(t);t+=cadence_s
+    cuts.append(root.forecast.end_s);start=perf_counter();checkpoints=[]
+    for t in cuts:
+        measured=branch.advance_to(t)
+        c=measured['n1b_result']['n1a_result']
+        checkpoints.append(dict(time_s=t,J_increment_bit_s=c['J_T_bit_s']-initial['J_T_bit_s'],
+            N_bits=c['N_T_bits'],D_increment_bits=c['delivered_bits']-initial['delivered_bits'],
+            E_increment_J=c['E_LCT_J']-initial['E_LCT_J']))
+    timings['advance_network_fifo_energy_including_binding_s']=perf_counter()-start
+    start=perf_counter();final=measured['n1b_result']['n1a_result']
+    j=final['J_T_bit_s']-initial['J_T_bit_s'];n=final['N_T_bits']
+    energy=final['E_LCT_J']-initial['E_LCT_J'];delta=energy-1600.*root.forecast.horizon_s
+    for x,k in ((j,'J_h'),(n,'N_end'),(delta,'DeltaE_h')):finite(x,k)
+    value=j+cost.lambda_N_s*n+cost.lambda_E_bit_s_per_J*delta;finite(value,'C_h')
+    result.update(J_h_bit_s=j,N_end_bits=n,E_h_J=energy,DeltaE_h_J=delta,cost_bit_s=value,
+        cost_parameters=asdict(cost),units=dict(J_h='bit*s',N_end='bit',DeltaE_h='J',cost='bit*s'),
+        prediction_completed=branch.engine.now==root.forecast.end_s,effective_horizon_s=root.forecast.horizon_s,
+        checkpoints=checkpoints,n2_result=measured,
+        terminal_event_count=len(branch.engine.executor.log)-len(root.atomic.engine.executor.log),
+        service_observation_count=len(branch.engine.age_observations)-len(root.atomic.engine.age_observations),
+        cohort_count=sum(len(q.rows) for q in branch.evaluator.age.queue.values())+
+                     sum(len(v) for v in branch.evaluator.age.flight.values()),
+        branch_final_state_sha256=data_hash((branch.engine.business_state() | {'delay':None,'router':None},vars(branch.evaluator.age)))
+        if not hasattr(branch.engine.delay,'model') else data_hash((branch.engine.canonical_state(),vars(branch.evaluator.age))))
+    timings['energy_cost_evidence_s']=perf_counter()-start
+    require(before==data_hash((root.view,root.atomic.engine.canonical_state(),vars(root.atomic.evaluator.age))),
+            'SCORER_MUTATED_ROOT')
+    return result
+
+
+def retain_small_domain(source):
+    targets=[frozenset((('X0_10','D2'),('X1_10','D1'))),frozenset((('X0_1','D2'),('X1_1','D1')))]
+    def key(a):
+        pair=frozenset((a.a,a.b)) if isinstance(a,(Add,Replace)) else None
+        return (targets.index(pair) if pair in targets else len(targets),action_key(a))
+    legal=source['candidates'];keep=[a for a in legal if isinstance(a,Hold)]
+    keep+=sorted((a for a in legal if isinstance(a,Add)),key=key)[:2]
+    keep+=sorted((a for a in legal if isinstance(a,Drop)),key=action_key)[:2]
+    repl=sorted((a for a in legal if isinstance(a,Replace)),key=key);chosen=[]
+    for mode in ('BBM','MBB'):
+        found=next((a for a in repl if a.mode==mode),None)
+        if found is not None:chosen.append(found)
+    chosen.extend([a for a in repl if a not in chosen][:2-len(chosen)])
+    keep+=chosen[:2]
+    audit={k:dict(physical_legal_count=sum(a.kind==k for a in legal),retained_count=sum(a.kind==k for a in keep),
+        truncated_count=sum(a.kind==k for a in legal)-sum(a.kind==k for a in keep)) for k in ('HOLD','ADD','DROP','REPLACE')}
+    require(len(keep)<=7 and any(isinstance(a,Hold) for a in keep),'INVALID_SMALL_DOMAIN')
+    return tuple(keep),audit
+
+
+def score_candidates(root,candidates,cost,*,cadence_s=3.):
+    unique=sorted(set(candidates),key=action_key)
+    require(any(isinstance(a,Hold) for a in unique),'HOLD_REQUIRED')
+    results=[score_action(root,a,cost,cadence_s=cadence_s) for a in unique]
+    valid=[r for r in results if r['accepted'] and r['prediction_completed']]
+    require(any(r['action']['kind']=='HOLD' for r in valid),'HOLD_BRANCH_FAILED')
+    winner=min(valid,key=lambda r:(r['cost_bit_s'],0 if r['action']['kind']=='HOLD' else 1,r['action_key']))
+    return dict(scope='PILOT_ONLY_N4_P0_ENGINEERING',mode=root.forecast.mode,
+        root_sha256=root.view.state_sha256,forecast_sha256=root.forecast.sha256,
+        selected_action=winner['action'],selected_cost_bit_s=winner['cost_bit_s'],branches=results,
+        scored_count=len(results),effective_horizon_s=root.forecast.horizon_s,
+        scientific_gate_pass=False,formal_experiments_executed=False)

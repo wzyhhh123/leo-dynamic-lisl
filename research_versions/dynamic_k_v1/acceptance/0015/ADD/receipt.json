@@ -1,0 +1,101 @@
+{
+  "accepted": true,
+  "action": {
+    "a": [
+      "X0_10",
+      "D2"
+    ],
+    "b": [
+      "X1_10",
+      "D1"
+    ],
+    "kind": "ADD",
+    "setup": {
+      "acquisition_s": 0.5,
+      "retarget_a_s": 0.5,
+      "retarget_b_s": 0.5
+    }
+  },
+  "action_id": 1,
+  "actual_immediate_release_ids": [],
+  "after_terminal_sha256": "30821e3e1f172904b6b1e1fd53fe49f0fa6d6c34967b73ad9ed320b294f673db",
+  "before_terminal_sha256": "4ee40e3e91d584802404164422100dc047549a37d47cb7c890bd164b56df54fe",
+  "geometry": {
+    "accepted": true,
+    "geometry": {
+      "end_semantics": "terminal_pair_for_expiry",
+      "ready_time": 4.0,
+      "remaining_lifetime_s": 144.04275553019596,
+      "usable_lifetime_s": 143.04275553019596,
+      "window": {
+        "distance_km": 313.49323540945056,
+        "end_s": 147.04275553019596,
+        "left_censored": true,
+        "parent_end_s": 600.0,
+        "parent_start_s": 0.0,
+        "plane_gap": 1,
+        "right_censored": false,
+        "sat_a": "X0_10",
+        "sat_b": "X1_10",
+        "start_s": 0.0,
+        "terminal_a": "D2",
+        "terminal_b": "D1"
+      }
+    },
+    "geometry_scope": "FROZEN_SYNTHETIC_TLE_REAL_SGP4_GEOMETRY",
+    "hardware_calibration": "PARAMETRIC",
+    "live_geometry": {
+      "accepted": true,
+      "for_details": {
+        "feasible": true,
+        "local_angle_deg": 47.59195836712257,
+        "local_boresight_teme": [
+          -0.005571420808527087,
+          0.9961818220656152,
+          -0.08712483375137767
+        ],
+        "local_half_angle_deg": 90.0,
+        "reason": null,
+        "remote_angle_deg": 37.743920342764326,
+        "remote_boresight_teme": [
+          0.1784660098914253,
+          -0.9800421027725222,
+          0.08756346330888623
+        ],
+        "remote_half_angle_deg": 90.0
+      },
+      "los_margin_km": 1198.8232727111736,
+      "reason": null
+    },
+    "ready_geometry": {
+      "accepted": true,
+      "for_details": {
+        "feasible": true,
+        "local_angle_deg": 47.774198461316004,
+        "local_boresight_teme": [
+          -0.005571234932603126,
+          0.9961818206319164,
+          -0.08712486203034132
+        ],
+        "local_half_angle_deg": 90.0,
+        "reason": null,
+        "remote_angle_deg": 37.92470285536377,
+        "remote_boresight_teme": [
+          0.1784658252263501,
+          -0.9800421340028597,
+          0.08756349013943483
+        ],
+        "remote_half_angle_deg": 90.0
+      },
+      "los_margin_km": 1198.8313711463006,
+      "reason": null
+    },
+    "reason": null
+  },
+  "mode": "ADD",
+  "reason": null,
+  "requested_release_refs": [],
+  "reservation_id": "R2",
+  "terminal_log_start": 8,
+  "time_s": 3.0
+}

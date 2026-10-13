@@ -1,0 +1,18 @@
+{
+  "command": "\"D:\\Program_Files\\anaconda3\\envs\\pytorch\\python.exe\" -B dynamic_lisl_v2/research_versions/dynamic_k_v1/acceptance/0010/workflow.py cost --manifest manifest_final.json --sha 8d15d8492b4662ad554b4cc25b27d4b3954fcbf340f9b38b5468de5bcfa17ebf",
+  "exit_code": 1,
+  "stdout_observed": [
+    "COST_STANDALONE_BRANCH_START",
+    "COST_COMPLETE_CATALOG_EPOCH_START"
+  ],
+  "termination": "Stop-Process after exact process command identity check; requested excessive-cost STOP",
+  "complete_epoch_report_exists": false,
+  "completed_branch_report": {
+    "path": "standalone_branch_cost.json",
+    "sha256": "d27c19ec87ba9d41715bcc9ab0a6ac331e9276d1af0619840dbe404a957eeaa2"
+  },
+  "execution_candidate_manifest": {
+    "path": "manifest_final.json",
+    "sha256": "8d15d8492b4662ad554b4cc25b27d4b3954fcbf340f9b38b5468de5bcfa17ebf"
+  }
+}

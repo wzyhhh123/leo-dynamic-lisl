@@ -1,0 +1,15 @@
+[
+  {
+    "ancestor_rename": "OS_REJECTED",
+    "delete": "OS_REJECTED",
+    "rename": "OS_REJECTED",
+    "replace": "OS_REJECTED",
+    "write": "OS_REJECTED"
+  },
+  {
+    "preexisting_writer": "PIN_ACQUISITION_REJECTED"
+  },
+  {
+    "native_writable_mapping": "PIN_ACQUISITION_REJECTED"
+  }
+]

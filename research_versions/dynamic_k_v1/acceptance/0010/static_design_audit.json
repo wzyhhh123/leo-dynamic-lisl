@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "scope": "STATIC_ONLY_NOT_RUNTIME_ACCEPTANCE",
+  "new_source_sha256": "06855cb4d7a235d58a746509964c1dcb00678ffaa80ee5ea928a628374a49d55",
+  "imports": [
+    "copy",
+    "dataclasses",
+    "collections",
+    "fractions",
+    "pathlib",
+    "types",
+    "time",
+    "hashlib",
+    "json",
+    "math",
+    "dynamic_lisl.traffic_trace",
+    "n1a",
+    "n2_actions",
+    "n2_controller",
+    "n3_baselines",
+    "importlib.util"
+  ],
+  "old_b4_scoring_or_execution_imported": false,
+  "all_source_and_existing_runtime_edits": [],
+  "known_attempt01_failures": "3 value-comparison assertions compared LocalFIFO object identities; snapshots retained; values compared in full canonical encoding after repair",
+  "old_pilot_drafts_unchanged": true,
+  "science_parameters_remain_null": true,
+  "main_budget_branches": 840,
+  "last_epoch_s": 27,
+  "last_horizon_s": 3
+}

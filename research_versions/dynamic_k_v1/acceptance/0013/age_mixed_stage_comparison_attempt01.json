@@ -1,0 +1,144 @@
+{
+  "actual_sha256": "06f3803e0c74ca9ba4a45a04ac5efada773ad988e044f7323083cc3421fc2adb",
+  "age_field_differences": [
+    {
+      "current_length": null,
+      "current_type": "int",
+      "exact_multiset_equal": null,
+      "first_difference": null,
+      "original_length": null,
+      "original_type": "int",
+      "path": "$.age.cursor"
+    },
+    {
+      "current_length": 24,
+      "current_type": "str",
+      "exact_multiset_equal": null,
+      "first_difference": null,
+      "original_length": 25,
+      "original_type": "str",
+      "path": "$.age.mass_error_bound"
+    },
+    {
+      "current_length": 315,
+      "current_type": "list",
+      "exact_multiset_equal": false,
+      "first_difference": {
+        "current": [
+          [
+            "boundary",
+            "INTERVAL_END"
+          ],
+          [
+            "cohort_bits",
+            "7145582695152459375/4503599627370496"
+          ],
+          [
+            "difference_bits",
+            "401/4503599627370496"
+          ],
+          [
+            "key",
+            [
+              [
+                "X0_10",
+                "X0_9"
+              ],
+              "f_hot"
+            ]
+          ],
+          [
+            "legacy_bits",
+            "872263512591853/549755813888"
+          ],
+          [
+            "state",
+            "I"
+          ],
+          [
+            "time",
+            "2554160564200857/576460752303423488"
+          ]
+        ],
+        "index": 4,
+        "original": [
+          [
+            "boundary",
+            "INTERVAL_END"
+          ],
+          [
+            "cohort_bits",
+            "7981751763127678125/9007199254740992"
+          ],
+          [
+            "difference_bits",
+            "851/9007199254740992"
+          ],
+          [
+            "key",
+            [
+              [
+                "X0_1",
+                "X1_1"
+              ],
+              "f_bg"
+            ]
+          ],
+          [
+            "legacy_bits",
+            "3897339728089687/4398046511104"
+          ],
+          [
+            "state",
+            "I"
+          ],
+          [
+            "time",
+            "2554160564200857/576460752303423488"
+          ]
+        ]
+      },
+      "original_length": 338,
+      "original_type": "list",
+      "path": "$.age.roundoff_audit"
+    }
+  ],
+  "age_fields_exactly_equal": [
+    "MD",
+    "arrived",
+    "closure_audit",
+    "commodities",
+    "delivered",
+    "delivered_original_moment",
+    "flight",
+    "nodes",
+    "now",
+    "queue",
+    "scale",
+    "sent_mass",
+    "shift"
+  ],
+  "conservation_root_cause": "UNRESOLVED",
+  "current_age_now": "3",
+  "equal_fields_do_not_establish_full_root_equivalence": true,
+  "expected_sha256": "ba301c6b0d92b96b8490fe28b24322e254377aea01adffd0c368653daa3f01f6",
+  "first_observation_difference": null,
+  "future_forecast_not_run": true,
+  "missing_original_t3_fields": [
+    "terminal_snapshot",
+    "terminal_events",
+    "terminal_history",
+    "energy",
+    "receipts",
+    "whole_native_engine",
+    "whole_causal_view_state_json"
+  ],
+  "new_observation_count": 43,
+  "observations_t0_t3_prefix_exactly_equal": true,
+  "original_age_now": "3",
+  "original_and_handle_saved_records_exactly_equal": true,
+  "original_full_hash_preimage": "NOT_SAVED_IN_INSPECTED_0011_EVIDENCE",
+  "original_native_root_recoverability": "ORIGINAL_NATIVE_ROOT_NOT_RECOVERABLE",
+  "original_observations_prefix_length": 43,
+  "status": "STOP_ROOT_BINDING_MISMATCH"
+}

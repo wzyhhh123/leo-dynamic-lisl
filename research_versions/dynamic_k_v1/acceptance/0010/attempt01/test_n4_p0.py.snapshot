@@ -1,0 +1,171 @@
+"""Targeted P0 engineering tests, no paired pilot runs."""
+from copy import deepcopy
+from dataclasses import asdict
+import math
+import unittest
+from dynamic_lisl.traffic_trace import PiecewiseConstantTrafficTrace,TrafficSegment
+from dynamic_lisl.terminal_pair_intervals import TerminalPairWindow
+from runtime.n2_actions import Hold,Add,Drop,Replace,Setup,LinkRef
+from runtime.n4_p0 import (ForecastInput,PilotCost,causal_view,make_sanitized_root,
+    score_action,score_candidates,retain_small_domain,graph_objects,data_hash,SanitizedRoot)
+
+FIXTURES=None
+BINDING=None
+COST=PilotCost(6.,1000.)
+SETUP=Setup(.5,.5,.5)
+
+def fixture(**kwargs):return FIXTURES.synthetic(T=30.,rate=4.,capacity=8.,**kwargs)
+
+def root(c,mode='PERSIST',H=6.):
+    return make_sanitized_root(c,ForecastInput.from_current(FIXTURES.observe_current(c),
+        T_s=30.,H_s=H,mode=mode),binding=BINDING)
+
+def stable(r):
+    r=deepcopy(r);r.pop('timings',None);return r
+
+class P0Tests(unittest.TestCase):
+    def test_01_idle_and_existing_ACTIVE_analytic_energy(self):
+        for active,expected in ((False,9600.),(True,10080.)):
+            c=fixture(connected=active,segments=[TrafficSegment(0.,20.,{'f':0.})])
+            s=score_action(root(c),Hold(),COST)
+            self.assertEqual(s['E_h_J'],expected)
+            self.assertEqual(s['DeltaE_h_J'],expected-9600.)
+            self.assertEqual(s['N_end_bits'],0.)
+            self.assertIsNone(s['n2_result']['n1b_result']['mean_delivered_fluid_delay_s'])
+            self.assertEqual(sum(s['n2_result']['n1b_result']['n1a_result']['five_execution_state_dwell_s'].values()),1920.)
+
+    def test_02_ADD_real_setup_energy_K_and_delivery(self):
+        c=fixture(segments=[TrafficSegment(0.,20.,{'f':0.})]);a=Add(FIXTURES.A1,FIXTURES.B1,SETUP)
+        s=score_action(root(c),a,COST)
+        self.assertEqual(s['DeltaE_h_J'],470.)
+        self.assertEqual(s['cost_bit_s'],470000.)
+        self.assertEqual(s['n2_result']['K_admit'],1)
+        events=s['n2_result']['dynamic_K_time_series']
+        self.assertTrue(all(e['K_admit']==0 for e in events if e['t_s']<1.))
+        self.assertTrue(any(e['K_admit']==1 and e['t_s']==1. for e in events))
+
+    def test_03_ZERO_keeps_backlog_and_original_age(self):
+        c=fixture(segments=[TrafficSegment(0.,20.,{'f':4.})]);c.advance_to(3.)
+        r=root(c,'ZERO');before=deepcopy(vars(c.evaluator.age))
+        s=score_action(r,Add(FIXTURES.A1,FIXTURES.B1,SETUP),COST)
+        self.assertEqual(s['n2_result']['n1b_result']['n1a_result']['offered_bits'],12.)
+        self.assertEqual(s['n2_result']['n1b_result']['delivered_bits'],12.)
+        self.assertGreater(s['n2_result']['n1b_result']['mean_delivered_fluid_delay_s'],3.)
+        self.assertEqual(before,vars(c.evaluator.age))
+
+    def test_04_causal_twins_all_scores_and_graph(self):
+        c=fixture(segments=[TrafficSegment(0.,3.,{'f':4.}),TrafficSegment(3.,4.,{'f':2.}),TrafficSegment(4.,20.,{'f':1000.},'FUTURE_SECRET_A')])
+        d=fixture(segments=[TrafficSegment(0.,3.,{'f':4.}),TrafficSegment(3.,5.,{'f':2.}),TrafficSegment(5.,20.,{'f':0.},'FUTURE_SECRET_B')])
+        c.advance_to(3.);d.advance_to(3.)
+        for mode in ('ZERO','PERSIST'):
+            r=root(c,mode);q=root(d,mode)
+            self.assertEqual(r.view,q.view);self.assertEqual(r.forecast,q.forecast)
+            a=(Hold(),Add(FIXTURES.A1,FIXTURES.B1,SETUP))
+            x=score_candidates(r,a,COST);y=score_candidates(q,a,COST)
+            for z in (x,y):z['branches']=[stable(v) for v in z['branches']]
+            self.assertEqual(x,y)
+            for obj in graph_objects(r):
+                if isinstance(obj,PiecewiseConstantTrafficTrace):self.assertIs(obj,r.atomic.engine.trace)
+                if isinstance(obj,str):self.assertNotIn('FUTURE_SECRET',obj)
+
+    def test_05_candidate_order_independence_and_root_checkpoint(self):
+        r=root(fixture());a=[Hold(),Add(FIXTURES.A1,FIXTURES.B1,SETUP)]
+        x=score_candidates(r,a,COST);y=score_candidates(SanitizedRoot.restore(r.checkpoint()),list(reversed(a)),COST)
+        for z in (x,y):z['branches']=[stable(v) for v in z['branches']]
+        self.assertEqual(x,y)
+
+    def test_06_prefix_multi_rate_fifo_and_inflight_preserved(self):
+        c=fixture(connected=True,segments=[TrafficSegment(0.,1.,{'f':2.}),TrafficSegment(1.,2.,{'f':4.}),TrafficSegment(2.,20.,{'f':2.})])
+        c.advance_to(3.);r=root(c)
+        self.assertEqual(c.engine.age_scalar_state(),r.atomic.engine.age_scalar_state())
+        self.assertEqual(vars(c.evaluator.age),vars(r.atomic.evaluator.age))
+        self.assertEqual(vars(c.evaluator.base.ledger),vars(r.atomic.evaluator.base.ledger))
+        self.assertEqual(c.engine.propagation_agenda,r.atomic.engine.propagation_agenda)
+        self.assertEqual(r.atomic.engine.trace.cumulative_arrivals(3.),dict(c.engine.arrived))
+        self.assertEqual(r.atomic.engine.trace.rate_at(5.),{'f':2.})
+
+    def test_07_pending_setup_natural_expiry_committed(self):
+        c=fixture(windows=[TerminalPairWindow(FIXTURES.A,'D1',FIXTURES.B,'D1',0.,4.)],
+                  segments=[TrafficSegment(0.,20.,{'f':4.})])
+        c.submit(Add(FIXTURES.A1,FIXTURES.B1,SETUP));c.advance_to(.5)
+        r=root(c);self.assertEqual(c.engine.executor.events,r.atomic.engine.executor.events)
+        s=score_action(r,Hold(),COST)
+        self.assertEqual(s['n2_result']['K_admit'],0)
+        self.assertTrue(any(e['K_admit']==0 and e['t_s']==4. for e in s['n2_result']['dynamic_K_time_series']))
+
+    def test_08_DROP_keeps_TX_DRAINING_and_inflight(self):
+        c=fixture(connected=True,tx_end=5.,segments=[TrafficSegment(0.,20.,{'f':4.})]);c.advance_to(3.)
+        r=root(c,'ZERO');ref=LinkRef.from_link(next(iter(c.engine.executor.links.values())))
+        s=score_action(r,Drop(ref),COST)
+        self.assertEqual(s['DeltaE_h_J'],160.)
+        self.assertEqual(s['n2_result']['K_admit'],0)
+        self.assertEqual(s['n2_result']['release_audit'][-1]['draining_times_s'],[3.])
+        self.assertEqual(s['n2_result']['release_audit'][-1]['link_down'][0]['time_s'],5.)
+        self.assertGreater(s['n2_result']['n1b_result']['delivered_bits'],c.evaluator.base.measure()['delivered_bits'])
+
+    def test_09_REPLACE_BBM_and_MBB_and_real_release(self):
+        for mode,pairs,ends in (('BBM',((FIXTURES.A1,FIXTURES.C1),),(FIXTURES.A1,FIXTURES.C1)),
+                                ('MBB',((FIXTURES.A2,FIXTURES.C2),),(FIXTURES.A2,FIXTURES.C2))):
+            c=fixture(connected=True,pairs=pairs,destination=FIXTURES.C,tx_end=2.,segments=[TrafficSegment(0.,20.,{'f':4.})])
+            ref=LinkRef.from_link(next(iter(c.engine.executor.links.values())))
+            s=score_action(root(c),Replace((ref,),*ends,SETUP,mode),COST)
+            self.assertTrue(s['accepted']);self.assertEqual(s['receipt']['mode'],mode)
+            self.assertEqual(s['n2_result']['release_audit'][-1]['status'],'COMPLETE')
+            self.assertGreater(s['n2_result']['n1b_result']['delivered_bits'],0.)
+
+    def test_10_illegal_ADD_no_hidden_release(self):
+        c=fixture(connected=True,pairs=((FIXTURES.A1,FIXTURES.C1),));r=root(c)
+        s=score_action(r,Add(FIXTURES.A1,FIXTURES.C1,SETUP),COST)
+        self.assertFalse(s['accepted']);self.assertEqual(len(r.atomic.engine.executor.links),1)
+        self.assertNotIn('cost_bit_s',s)
+
+    def test_11_same_action_independent_true_execution_every_field(self):
+        # Independent reference runs the forecast as an actual trace from zero;
+        # it never invokes make_sanitized_root or the scorer on its path.
+        c=fixture(connected=True,segments=[TrafficSegment(0.,3.,{'f':4.}),TrafficSegment(3.,20.,{'f':2.})]);c.advance_to(3.)
+        r=root(c);s=score_action(r,Hold(),COST)
+        actual=FIXTURES.synthetic(T=30.,rate=4.,capacity=8.,connected=True,segments=list(r.atomic.engine.trace.segments))
+        actual.advance_to(3.);actual.submit(Hold());actual.advance_to(6.);m=actual.advance_to(9.)
+        pred=r.atomic.clone();pred.submit(Hold());pred.advance_to(6.);pm=pred.advance_to(9.)
+        def state(e):
+            d=e.business_state() | {'boundaries':list(e.trace.boundaries_after(e.now)),'boundary_index':0}
+            return data_hash(d)
+        self.assertEqual(state(actual.engine),state(pred.engine))
+        self.assertEqual(actual.engine.age_observations,pred.engine.age_observations)
+        self.assertEqual(vars(actual.evaluator.age),vars(pred.evaluator.age))
+        self.assertEqual(vars(actual.evaluator.base.ledger),vars(pred.evaluator.base.ledger))
+        # Audit-only initial snapshot hashes reflect source assembly, not service.
+        for z in (m,pm):z['n1b_result']['n1a_result'].pop('initial_state_sha256')
+        self.assertEqual(m,pm);self.assertEqual(s['J_h_bit_s'],pm['n1b_result']['n1a_result']['J_T_bit_s']-r.atomic.evaluator.base.measure()['J_T_bit_s'])
+
+    def test_12_end_clip_three_second_cadence(self):
+        c=fixture(segments=[TrafficSegment(0.,20.,{'f':0.})]);c.advance_to(27.)
+        r=root(c);self.assertEqual(r.forecast.horizon_s,3.)
+        s=score_action(r,Hold(),COST);self.assertEqual(s['effective_horizon_s'],3.)
+        self.assertEqual([x['time_s'] for x in s['checkpoints']],[30.])
+        self.assertTrue(s['n2_result']['n1b_result']['n1a_result']['evaluation_completed_normally'])
+
+    def test_13_foreign_oracle_alias_rejected(self):
+        c=fixture();c.engine.oracle=PiecewiseConstantTrafficTrace(('f',),[TrafficSegment(0.,20.,{'f':100.},'ORACLE')])
+        with self.assertRaisesRegex(ValueError,'FOREIGN_TRAFFIC'):root(c)
+
+    def test_14_partial_delivery_conditional_age_identity(self):
+        c=fixture(segments=[TrafficSegment(0.,20.,{'f':4.})]);c.advance_to(3.)
+        s=score_action(root(c),Add(FIXTURES.A1,FIXTURES.B1,SETUP),COST)
+        b=s['n2_result']['n1b_result'];n=b['n1a_result']
+        self.assertGreater(n['N_T_bits'],0.)
+        a=b['age_accounting'];self.assertLessEqual(abs(n['J_T_bit_s']-a['delivered_bit_age_integral_bit_s']-a['remaining_bit_age_integral_bit_s']),
+            2*a['delivered_age_absolute_error_bound_bit_s']+64*math.ulp(max(1.,n['J_T_bit_s'])))
+        self.assertEqual(b['mean_delivered_fluid_delay_s'],b['delivered_bit_age_integral_bit_s']/n['delivered_bits'])
+
+    def test_15_small_domain_counts_and_physical_absence(self):
+        c=fixture();source=c.candidates(SETUP);keep,a=retain_small_domain(source)
+        self.assertEqual(a['DROP']['physical_legal_count'],0)
+        self.assertEqual(len(keep),2)
+        self.assertEqual(a['ADD']['retained_count'],1)
+
+    def test_16_cost_parameter_and_zero_mean_validation(self):
+        for bad in (-1.,float('nan'),float('inf')):
+            with self.assertRaises(ValueError):PilotCost(bad,1000.)
+        s=score_action(root(fixture(segments=[TrafficSegment(0.,20.,{'f':0.})])),Hold(),PilotCost(0.,0.))
+        self.assertEqual(s['cost_bit_s'],0.)

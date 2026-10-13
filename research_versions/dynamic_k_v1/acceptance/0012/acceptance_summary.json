@@ -1,0 +1,29 @@
+{
+  "N4_P0R_engineering_pass": false,
+  "N4_P0_engineering_pass": false,
+  "additional_kernel_authorization_needed": "No implementation proposed until valid root and actual cause are established",
+  "bound_saved_state_intervals_scanned": 144,
+  "first_threshold_interval": {
+    "change_bits": -5.165451284483424e-07,
+    "end_hex": "0x1.0289e2057132ap+2",
+    "end_s": 4.039665704073551,
+    "exact_after": "-9590129/8796093022208",
+    "exact_before": "-2523275/4398046511104",
+    "exact_change": "-4543579/8796093022208",
+    "observation_index": 337,
+    "residual_bits": -1.0902714393523638e-06,
+    "start_hex": "0x1.025770f8c3389p+2",
+    "start_s": 4.0365869931528175
+  },
+  "fresh_bound_failure_reproduction_pass": false,
+  "full_catalog_runs": 0,
+  "full_version_precheck_pass": true,
+  "main_pilot_runs": 0,
+  "numeric_reference": "exact Fraction of IEEE-754 binary values, not printed decimal as exact physical real",
+  "observer_runtime_validated": false,
+  "root_cause": "UNRESOLVED",
+  "scientific_gate_pass": false,
+  "simulation_controls_executed": 0,
+  "status": "STOP_ROOT_BINDING_MISMATCH",
+  "stored_original_handle_failure_records_exactly_equal": true
+}

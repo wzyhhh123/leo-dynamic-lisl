@@ -1,0 +1,49 @@
+{
+  "baseline_memory": {
+    "private_bytes": 73236480,
+    "process_peak_commit_bytes": 82554880,
+    "process_peak_working_set_bytes": 93052928,
+    "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+    "working_set_bytes": 83865600
+  },
+  "exact_equality": true,
+  "lock_acquisition_and_original_postlock_full_checks_s": 3.8984041999999874,
+  "measures": {
+    "handle_instrumented": {
+      "branch_wallclock_s": 13.9403638,
+      "root_wallclock_s": 5.897828199999992
+    },
+    "handle_plain": {
+      "branch_wallclock_s": 1.510072699999995,
+      "root_wallclock_s": 0.43269080000000315
+    },
+    "original_instrumented": {
+      "branch_wallclock_s": 35.5966859,
+      "root_wallclock_s": 8.713215599999998
+    },
+    "original_plain": {
+      "branch_wallclock_s": 20.8058705,
+      "root_wallclock_s": 3.7696997000000003
+    }
+  },
+  "new_binding": {
+    "path": "research_versions/dynamic_k_v1/acceptance/0011/implementation_manifest.json",
+    "sha256": "c23f188ebc7bfcea9b04d53749d9111b48872ac46ac3eec84669263378de5ec7"
+  },
+  "new_binding_startup_s": 0.14083289999999993,
+  "reader_construction_original_full_checks_s": 6.032251400000007,
+  "same_physical_state_and_forecast": true,
+  "scalar_result": {
+    "DeltaE_h_J": 480.0,
+    "E_h_J": 10080.0,
+    "J_h_bit_s": 187306.60287934053,
+    "N_end_bits": 31217.767146556987,
+    "cohort_count": 20,
+    "cost_bit_s": 854613.2057586825,
+    "service_observation_count": 7,
+    "terminal_event_count": 0
+  },
+  "startup_not_hidden_or_amortized_into_three_second_claim": true,
+  "status": "PASS_EXACT_EQUIVALENCE",
+  "three_second_realtime_guaranteed": false
+}

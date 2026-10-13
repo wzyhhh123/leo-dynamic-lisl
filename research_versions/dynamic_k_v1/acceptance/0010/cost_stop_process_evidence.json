@@ -1,0 +1,21 @@
+{
+  "status": "STOP_COST_EXCESSIVE",
+  "reason": "User-directed STOP when cost is clearly excessive; standalone branch 31.3563975 s plus sanitation 6.7296935 s, full epoch unfinished after over 36 CPU minutes",
+  "stopped_utc": "2026-10-12T10:43:29.2889819Z",
+  "process_id": 54448,
+  "command_line": "\"D:\\Program_Files\\anaconda3\\envs\\pytorch\\python.exe\" -B dynamic_lisl_v2/research_versions/dynamic_k_v1/acceptance/0010/workflow.py cost --manifest manifest_final.json --sha 8d15d8492b4662ad554b4cc25b27d4b3954fcbf340f9b38b5468de5bcfa17ebf",
+  "process_start_utc": "2026-10-12T10:05:27.5364077Z",
+  "process_cpu_s": 2208.984375,
+  "process_elapsed_wall_s": 2281.7635673,
+  "working_set_bytes": 95592448,
+  "process_peak_working_set_bytes": 105111552,
+  "full_epoch_completed": false,
+  "complete_epoch_candidate_counts": null,
+  "complete_epoch_scores": null,
+  "caveat": "Process elapsed and CPU include fixture build and standalone branch; not exact candidate-stage timings",
+  "scoring_workers": 1,
+  "full_pilot_runs": 0,
+  "sensitivity_runs": 0,
+  "formal_experiments_executed": false,
+  "scientific_gate_pass": false
+}

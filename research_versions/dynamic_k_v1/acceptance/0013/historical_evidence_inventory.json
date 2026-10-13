@@ -1,0 +1,2126 @@
+{
+  "acceptance_0011_files": [
+    {
+      "byte_count": 778,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/acceptance_summary.json",
+      "relevant_fields": [],
+      "sha256": "487e237283cab4a87527922cf688abe2f7c1f3577250d1ceb9c5d87743a05622",
+      "top_level_keys": [
+        "N4_P0R_engineering_pass",
+        "N4_P0_engineering_pass",
+        "PERSIST_small_domain_failed",
+        "PERSIST_small_domain_unexecuted_after_failure",
+        "ZERO_small_domain_completed",
+        "business_tolerance_bits",
+        "completed_global_epochs",
+        "conservation_residual_sequential_subtraction_bits",
+        "conservation_residual_validator_bits",
+        "controlled_paired_hold_completed",
+        "exact_reader_interface_tests_pass",
+        "formal_experiments_executed",
+        "main_pilot_runs",
+        "original_and_optimized_failure_same",
+        "readonly_failure_reproductions",
+        "restore_full_epoch_recommended",
+        "scientific_gate_pass",
+        "status"
+      ]
+    },
+    {
+      "byte_count": 202525,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/actual_binding_callchain_original.json",
+      "relevant_fields": [
+        {
+          "path": "$[4].trace.raw_files.D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N4_P0_CAUSAL_ROOT_SCORING_CN.md",
+          "scalar": null,
+          "type": "dict"
+        }
+      ],
+      "sha256": "cea705711e0534d0464b03995d39f535d418aeef0a7d845cb80f0e2ed6efcbfd",
+      "top_level_keys": null
+    },
+    {
+      "byte_count": 203612,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/actual_binding_callchain_original_handle_leaf_counts.json",
+      "relevant_fields": [
+        {
+          "path": "$[4].trace.raw_files.D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N4_P0_CAUSAL_ROOT_SCORING_CN.md",
+          "scalar": null,
+          "type": "dict"
+        }
+      ],
+      "sha256": "ec08f81973b43598376557562437d3771def35c2e355e6b3cd1b8047f095861b",
+      "top_level_keys": null
+    },
+    {
+      "byte_count": 202509,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/actual_binding_callchain_original_leaf_counts.json",
+      "relevant_fields": [
+        {
+          "path": "$[4].trace.raw_files.D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N4_P0_CAUSAL_ROOT_SCORING_CN.md",
+          "scalar": null,
+          "type": "dict"
+        }
+      ],
+      "sha256": "f1f9a139260eded53fb04a5a21fc349cdb2251864ac9a7b95c2ab59d27f0c077",
+      "top_level_keys": null
+    },
+    {
+      "byte_count": 205539,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/actual_binding_callchain_path_pinned.json",
+      "relevant_fields": [
+        {
+          "path": "$[4].trace.raw_files.D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N4_P0_CAUSAL_ROOT_SCORING_CN.md",
+          "scalar": null,
+          "type": "dict"
+        }
+      ],
+      "sha256": "af766e1fdb174c9f89e4446cb49c00ccf9cea22164ce7d9ec7ac06b877d87384",
+      "top_level_keys": null
+    },
+    {
+      "byte_count": 208385,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/actual_binding_callchain_path_pinned_handle_leaf_counts.json",
+      "relevant_fields": [
+        {
+          "path": "$[4].trace.raw_files.D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N4_P0_CAUSAL_ROOT_SCORING_CN.md",
+          "scalar": null,
+          "type": "dict"
+        }
+      ],
+      "sha256": "3f6cc4e48d92ef945590bc37cd08566ebb0ded686ae708f5a6e3bb32f5917c50",
+      "top_level_keys": null
+    },
+    {
+      "byte_count": 205632,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/actual_binding_callchain_path_pinned_leaf_counts.json",
+      "relevant_fields": [
+        {
+          "path": "$[4].trace.raw_files.D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N4_P0_CAUSAL_ROOT_SCORING_CN.md",
+          "scalar": null,
+          "type": "dict"
+        }
+      ],
+      "sha256": "b3293d6c22aa993a51afd4ba1f70c4e1bfd2b70fc90d142ad61b3505604c37ec",
+      "top_level_keys": null
+    },
+    {
+      "byte_count": 477,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/catalog_cost_boundary.json",
+      "relevant_fields": [],
+      "sha256": "bf725ee2bab761faf72372b29a6f16e9952d823081a35243bfa7af583902d7b1",
+      "top_level_keys": [
+        "catalog_budget_truncation_performed",
+        "complete_catalog_legal_counts",
+        "completed_catalog_validation_count",
+        "completed_global_epoch_count",
+        "physical_catalog_shrunk",
+        "planned_test_only_wall_limit_s",
+        "reason",
+        "registered_catalog_rows",
+        "selected_global_action",
+        "status"
+      ]
+    },
+    {
+      "byte_count": 907,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/conservation_failure_comparison_attempt02.json",
+      "relevant_fields": [
+        {
+          "path": "$.root_sha256",
+          "scalar": "ba301c6b0d92b96b8490fe28b24322e254377aea01adffd0c368653daa3f01f6",
+          "type": "str"
+        }
+      ],
+      "sha256": "9ff9e281e3e29765bb7a51059ccc6c5b4f39c1cc0e396f5c3691d40023859583",
+      "top_level_keys": [
+        "N4_P0_engineering_pass",
+        "business_tolerance_bits",
+        "delivered_bits",
+        "error",
+        "failure_time_s",
+        "forecast_sha256",
+        "frozen_kernel_modified",
+        "full_catalog_diagnostic_executed",
+        "offered_bits",
+        "original_and_optimized_exception_equal",
+        "rejected_measurement_and_state_every_field_equal",
+        "remaining_bits",
+        "residual_bits",
+        "root_sha256",
+        "scientific_gate_pass",
+        "state_exclusions",
+        "status",
+        "tolerance_relaxed"
+      ]
+    },
+    {
+      "byte_count": 106915,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/conservation_failure_handle.json",
+      "relevant_fields": [
+        {
+          "path": "$.records[0].measurement.initial_state_sha256",
+          "scalar": "1a92d98f23ecf5a7b8879e3d5aefcb3adbd9718fdfd7d7d1677ad4c6574fd23e",
+          "type": "str"
+        },
+        {
+          "path": "$.root_sha256",
+          "scalar": "1a92d98f23ecf5a7b8879e3d5aefcb3adbd9718fdfd7d7d1677ad4c6574fd23e",
+          "type": "str"
+        }
+      ],
+      "sha256": "a4ae89a50f2182698447714e2ecc5af649689016c9386d8438198fa776c12d8e",
+      "top_level_keys": [
+        "error",
+        "forecast_sha256",
+        "observer_calls_original_once",
+        "observer_changes_service",
+        "records",
+        "result",
+        "root_sha256",
+        "tolerance_relaxed",
+        "traceback"
+      ]
+    },
+    {
+      "byte_count": 20944158,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/conservation_failure_handle_attempt02.json",
+      "relevant_fields": [
+        {
+          "path": "$.records[0].measurement.initial_state_sha256",
+          "scalar": "ba301c6b0d92b96b8490fe28b24322e254377aea01adffd0c368653daa3f01f6",
+          "type": "str"
+        },
+        {
+          "path": "$.root_sha256",
+          "scalar": "ba301c6b0d92b96b8490fe28b24322e254377aea01adffd0c368653daa3f01f6",
+          "type": "str"
+        }
+      ],
+      "sha256": "36201d2b82a7dba573eea72277d00b84961291d0016e27698a39192dc5dbdf6e",
+      "top_level_keys": [
+        "error",
+        "forecast_sha256",
+        "observer_calls_original_once",
+        "observer_changes_service",
+        "records",
+        "result",
+        "root_sha256",
+        "tolerance_relaxed",
+        "traceback"
+      ]
+    },
+    {
+      "byte_count": 106915,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/conservation_failure_original.json",
+      "relevant_fields": [
+        {
+          "path": "$.records[0].measurement.initial_state_sha256",
+          "scalar": "1a92d98f23ecf5a7b8879e3d5aefcb3adbd9718fdfd7d7d1677ad4c6574fd23e",
+          "type": "str"
+        },
+        {
+          "path": "$.root_sha256",
+          "scalar": "1a92d98f23ecf5a7b8879e3d5aefcb3adbd9718fdfd7d7d1677ad4c6574fd23e",
+          "type": "str"
+        }
+      ],
+      "sha256": "a4ae89a50f2182698447714e2ecc5af649689016c9386d8438198fa776c12d8e",
+      "top_level_keys": [
+        "error",
+        "forecast_sha256",
+        "observer_calls_original_once",
+        "observer_changes_service",
+        "records",
+        "result",
+        "root_sha256",
+        "tolerance_relaxed",
+        "traceback"
+      ]
+    },
+    {
+      "byte_count": 20944158,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/conservation_failure_original_attempt02.json",
+      "relevant_fields": [
+        {
+          "path": "$.records[0].measurement.initial_state_sha256",
+          "scalar": "ba301c6b0d92b96b8490fe28b24322e254377aea01adffd0c368653daa3f01f6",
+          "type": "str"
+        },
+        {
+          "path": "$.root_sha256",
+          "scalar": "ba301c6b0d92b96b8490fe28b24322e254377aea01adffd0c368653daa3f01f6",
+          "type": "str"
+        }
+      ],
+      "sha256": "36201d2b82a7dba573eea72277d00b84961291d0016e27698a39192dc5dbdf6e",
+      "top_level_keys": [
+        "error",
+        "forecast_sha256",
+        "observer_calls_original_once",
+        "observer_changes_service",
+        "records",
+        "result",
+        "root_sha256",
+        "tolerance_relaxed",
+        "traceback"
+      ]
+    },
+    {
+      "byte_count": 13757,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/controlled_cost.py",
+      "sha256": "d10437c01aeca3ba6f8532bd2592476711c0ce5b543e04bd3e061b14edc9e3f8"
+    },
+    {
+      "byte_count": 2591,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/cost_callchain_findings.json",
+      "relevant_fields": [],
+      "sha256": "033f689d258141f2f221011b64ae20f276d0c5b4aa66fa5a96607a5ab1c22da6",
+      "top_level_keys": [
+        "branch_dynamic_verify_calls",
+        "branch_immutable_guard_calls",
+        "branch_physical_input_hash_calls",
+        "geometry_catalog_cost_not_measured_after_failure",
+        "json_and_state_hash_results_not_cached",
+        "native_exclusive_instrumented_s",
+        "native_profiler_callback_events",
+        "optimized_branch_actual_bytes",
+        "optimized_branch_actual_reads",
+        "original_branch_distinct_files",
+        "original_branch_raw_bytes",
+        "original_branch_raw_reads",
+        "original_exclusive_instrumented_s",
+        "original_json_dumps",
+        "original_json_loads",
+        "original_json_parsed_characters",
+        "original_json_serialized_characters",
+        "original_profiler_callback_events",
+        "original_raw_io_sha",
+        "pure_sha_cpu_seconds_not_separately_measured",
+        "raw_hash_time_includes_io_metadata_and_profiler",
+        "status"
+      ]
+    },
+    {
+      "byte_count": 2751,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/equivalence.py",
+      "sha256": "2639998675ac78186ca94d9668b69ad42385634a8e3b1dd9c5762a6edf83c0ab"
+    },
+    {
+      "byte_count": 3762,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/failure_diagnostic.py",
+      "sha256": "b7f24a32d2d1676b9fb1754cf998577763141a68c4c75a7ba24c1a935f39f657"
+    },
+    {
+      "byte_count": 2336,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/failure_diagnostic_attempt02.py",
+      "sha256": "d5ce4bf95d90872ce005ec58268285a538e54993328fe6613b4d68d66071ef30"
+    },
+    {
+      "byte_count": 294,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/final_path_pin_mutation_evidence.json",
+      "relevant_fields": [],
+      "sha256": "1b0797a6f8d25f34f753e4f7cc52cac1e66b32bd47ca112c91127b374d830356",
+      "top_level_keys": null
+    },
+    {
+      "byte_count": 1890691,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/final_pre_post_all_action_equivalence.json",
+      "relevant_fields": [
+        {
+          "path": "$.results[0].stable_result.checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.results[0].stable_result.n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "5a275a6c472f01ba95cad5fb7614f04d705d881707d567e91299ac0f2dc6fb3b",
+          "type": "str"
+        },
+        {
+          "path": "$.results[0].stable_result.root_sha256",
+          "scalar": "5a275a6c472f01ba95cad5fb7614f04d705d881707d567e91299ac0f2dc6fb3b",
+          "type": "str"
+        },
+        {
+          "path": "$.results[1].stable_result.checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.results[1].stable_result.n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "1411746eeee5acb2774db939ac74a5338706de182a07273b2e11a59421d21d29",
+          "type": "str"
+        },
+        {
+          "path": "$.results[1].stable_result.root_sha256",
+          "scalar": "1411746eeee5acb2774db939ac74a5338706de182a07273b2e11a59421d21d29",
+          "type": "str"
+        },
+        {
+          "path": "$.results[2].stable_result.checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.results[2].stable_result.n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "5a275a6c472f01ba95cad5fb7614f04d705d881707d567e91299ac0f2dc6fb3b",
+          "type": "str"
+        },
+        {
+          "path": "$.results[2].stable_result.root_sha256",
+          "scalar": "5a275a6c472f01ba95cad5fb7614f04d705d881707d567e91299ac0f2dc6fb3b",
+          "type": "str"
+        },
+        {
+          "path": "$.results[3].stable_result.checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.results[3].stable_result.n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "67fccb00ba179dc7d68900e2de606b7fd179eb1e49fda211e48ca74243eef007",
+          "type": "str"
+        },
+        {
+          "path": "$.results[3].stable_result.root_sha256",
+          "scalar": "67fccb00ba179dc7d68900e2de606b7fd179eb1e49fda211e48ca74243eef007",
+          "type": "str"
+        },
+        {
+          "path": "$.results[4].stable_result.checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.results[4].stable_result.n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "39731961d8621f29dee3bccc0a3b46695403dcc772fcb2c728933d1b95fef51a",
+          "type": "str"
+        },
+        {
+          "path": "$.results[4].stable_result.root_sha256",
+          "scalar": "39731961d8621f29dee3bccc0a3b46695403dcc772fcb2c728933d1b95fef51a",
+          "type": "str"
+        },
+        {
+          "path": "$.results[5].stable_result.root_sha256",
+          "scalar": "46f1d486638136fa5494f5fefb220a1f79dbd68d73a291df9cb2ef6284db2583",
+          "type": "str"
+        }
+      ],
+      "sha256": "80ba88245700c3f5aee609b00aa2356def69cd12bcedeff75fd26c92b0cc6593",
+      "top_level_keys": [
+        "results",
+        "status"
+      ]
+    },
+    {
+      "byte_count": 959,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/final_reader_tests.json",
+      "relevant_fields": [],
+      "sha256": "ceead445747d16a109c0ea7fe98936592c8d200b59571242959d2c7913dcd34e",
+      "top_level_keys": [
+        "errors",
+        "failures",
+        "output",
+        "skipped",
+        "status",
+        "tests_run",
+        "wallclock_s"
+      ]
+    },
+    {
+      "byte_count": 2457,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/final_regression_N1a.json",
+      "relevant_fields": [],
+      "sha256": "f676b1b7ccf83af58975d98f862af3ffa25cebb856ed0c703e7de214acef3355",
+      "top_level_keys": [
+        "errors",
+        "failures",
+        "output",
+        "reader_mode",
+        "skipped",
+        "status",
+        "tests_run",
+        "wallclock_s"
+      ]
+    },
+    {
+      "byte_count": 2446,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/final_regression_N1b.json",
+      "relevant_fields": [],
+      "sha256": "f8b3bd810bdfa44d0cb53f8dbd98f97d545f99fbc1afa7b237970cfef4e4e953",
+      "top_level_keys": [
+        "errors",
+        "failures",
+        "output",
+        "reader_mode",
+        "skipped",
+        "status",
+        "tests_run",
+        "wallclock_s"
+      ]
+    },
+    {
+      "byte_count": 2784,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/final_regression_N2.json",
+      "relevant_fields": [],
+      "sha256": "cd88b132e5a38342dad57bb5e5e0a31a6b91fecaa5a1f146983b2b57a4cbd4f5",
+      "top_level_keys": [
+        "errors",
+        "failures",
+        "output",
+        "reader_mode",
+        "skipped",
+        "status",
+        "tests_run",
+        "wallclock_s"
+      ]
+    },
+    {
+      "byte_count": 2085,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/final_regression_N3.json",
+      "relevant_fields": [],
+      "sha256": "44debd346a52d2d4f187a0b5f66590eabce13d77017533e0dba653860adc0ed7",
+      "top_level_keys": [
+        "errors",
+        "failures",
+        "output",
+        "reader_mode",
+        "skipped",
+        "status",
+        "tests_run",
+        "wallclock_s"
+      ]
+    },
+    {
+      "byte_count": 20637,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/finish_and_seal.py",
+      "sha256": "e086a8b5592c1655ad7ff3cb2f5906c734f05931646370ef7dbfd6a24bb8e9db"
+    },
+    {
+      "byte_count": 27897,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/finish_and_seal_ascii.py",
+      "sha256": "77d81376e88a7eed83d96b07459da6ce50a334e715751ce7508eb52918dd0e1e"
+    },
+    {
+      "byte_count": 15392,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/historical_regression.json",
+      "relevant_fields": [],
+      "sha256": "153158fb40b89050daac06e25d3f4b900a13dd8b66f7d38988b35bab2fa97936",
+      "top_level_keys": [
+        "base",
+        "physical_gate_c"
+      ]
+    },
+    {
+      "byte_count": 217006,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/immutable_dependency_actual_leaf_counts.json",
+      "relevant_fields": [
+        {
+          "path": "$.guards[4].trace.raw_files.D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N4_P0_CAUSAL_ROOT_SCORING_CN.md",
+          "scalar": null,
+          "type": "dict"
+        }
+      ],
+      "sha256": "22ae79db12840fb6a90ca783fc9074d513987ffea093abadd7d9cb5de24b1f03",
+      "top_level_keys": [
+        "guards",
+        "original_instrumentation_note",
+        "status"
+      ]
+    },
+    {
+      "byte_count": 3916,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/implementation_manifest.json",
+      "relevant_fields": [],
+      "sha256": "c23f188ebc7bfcea9b04d53749d9111b48872ac46ac3eec84669263378de5ec7",
+      "top_level_keys": [
+        "anchors",
+        "candidate_revision_id",
+        "configuration_path",
+        "files",
+        "formal_experiments_authorized",
+        "schema"
+      ]
+    },
+    {
+      "byte_count": 3328,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/leaf_count_audit.py",
+      "sha256": "ba61addf8133b2d2ff77365ff2c229f21cb96ce80a3a8a54feb8162b4b4bcac3"
+    },
+    {
+      "byte_count": 14879,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/manifest_final.json",
+      "relevant_fields": [],
+      "sha256": "1ab6cf7cd96abaaf90946c0e1bdb2cbca397e2d2326b4174c4dc4521f6687527",
+      "top_level_keys": [
+        "anchors",
+        "candidate_revision_id",
+        "files",
+        "formal_experiments_authorized",
+        "schema"
+      ]
+    },
+    {
+      "byte_count": 1794,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/MINIMAL_NEXT_STEP_CN.md",
+      "sha256": "8d54ccbc77edb3a206b6a968337ddc87549c5925303ac6abde9b2a6902c9ff1f"
+    },
+    {
+      "byte_count": 565583,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/n3_retained_coverage_validation.json",
+      "relevant_fields": [],
+      "sha256": "8a3e3292e38001d79a9b1018947e697040f07961babd4f8c4dd37aa3b0106228",
+      "top_level_keys": [
+        "all_record_reason_counts",
+        "candidate_budget",
+        "current_t0_windows",
+        "formal_experiments_executed",
+        "occupied_current_catalog_diagnostics",
+        "omitted_registered_rows",
+        "record_probes",
+        "record_probes_evidence",
+        "registered_nodes",
+        "registered_rows",
+        "replacement_subset_coverage",
+        "retained_diagnostic_evidence",
+        "scientific_gate_pass",
+        "scope",
+        "status",
+        "t0_diagnostics",
+        "t0_rejection_counts",
+        "unregistered_universe_coverage_claimed"
+      ]
+    },
+    {
+      "byte_count": 2099,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/p0_handle.json",
+      "relevant_fields": [],
+      "sha256": "6b98af76bd813fd1e23bd4de14379e6c0e64ac5669061047c6f464a4ec7439e7",
+      "top_level_keys": [
+        "errors",
+        "failures",
+        "frozen_test_source_unmodified",
+        "mode",
+        "output",
+        "skipped",
+        "status",
+        "tests_run",
+        "wallclock_s"
+      ]
+    },
+    {
+      "byte_count": 2162,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/p0_optimized.json",
+      "relevant_fields": [],
+      "sha256": "378cd7f87e86bc93bd168f67a000b3893834de5d3de245400c1a71644d423705",
+      "top_level_keys": [
+        "errors",
+        "failures",
+        "frozen_test_source_unmodified",
+        "mode",
+        "output",
+        "skipped",
+        "status",
+        "tests_run",
+        "wallclock_s"
+      ]
+    },
+    {
+      "byte_count": 2136,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/p0_original.json",
+      "relevant_fields": [],
+      "sha256": "37c4756f3746d8a7da1be008aa18dd6e860dc6bdfe26e04395b1070dd55ac239",
+      "top_level_keys": [
+        "errors",
+        "failures",
+        "frozen_test_source_unmodified",
+        "mode",
+        "output",
+        "skipped",
+        "status",
+        "tests_run",
+        "wallclock_s"
+      ]
+    },
+    {
+      "byte_count": 1655,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/paired_cost_summary.json",
+      "relevant_fields": [
+        {
+          "path": "$.measures.handle_instrumented.root_wallclock_s",
+          "scalar": 5.897828199999992,
+          "type": "float"
+        },
+        {
+          "path": "$.measures.handle_plain.root_wallclock_s",
+          "scalar": 0.43269080000000315,
+          "type": "float"
+        },
+        {
+          "path": "$.measures.original_instrumented.root_wallclock_s",
+          "scalar": 8.713215599999998,
+          "type": "float"
+        },
+        {
+          "path": "$.measures.original_plain.root_wallclock_s",
+          "scalar": 3.7696997000000003,
+          "type": "float"
+        }
+      ],
+      "sha256": "2b8bc1e08c490678ba339c8d9671f1246628b81980c4067d6c5d493c06ae3507",
+      "top_level_keys": [
+        "baseline_memory",
+        "exact_equality",
+        "lock_acquisition_and_original_postlock_full_checks_s",
+        "measures",
+        "new_binding",
+        "new_binding_startup_s",
+        "reader_construction_original_full_checks_s",
+        "same_physical_state_and_forecast",
+        "scalar_result",
+        "startup_not_hidden_or_amortized_into_three_second_claim",
+        "status",
+        "three_second_realtime_guaranteed"
+      ]
+    },
+    {
+      "byte_count": 724586,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/paired_handle_instrumented.json",
+      "relevant_fields": [
+        {
+          "path": "$.branch.raw_files.D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N4_P0_CAUSAL_ROOT_SCORING_CN.md",
+          "scalar": null,
+          "type": "dict"
+        },
+        {
+          "path": "$.result.checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.result.n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.result.root_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.root",
+          "scalar": null,
+          "type": "dict"
+        },
+        {
+          "path": "$.root.call_rows.<N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:checked_path.caller_chains.<N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed",
+          "scalar": 105,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.<N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:raw_info.caller_chains.<N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed",
+          "scalar": 104,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.<N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify.caller_chains.n4_p0r_reader.py:__call__ <- n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.<N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify.caller_chains.n4_p0r_reader.py:__call__ <- n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 2,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.<N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify.caller_chains.n4_p0r_reader.py:__call__ <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n1a.py:<dictcomp>.caller_chains.n1a.py:metrics <- n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n1a.py:<listcomp>.caller_chains.n1a.py:metrics <- n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n1a.py:digest.caller_chains.n2_controller.py:_physical_digest <- n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n1a.py:digest.caller_chains.n4_p0.py:data_hash <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n1a.py:digest.caller_chains.n4_p0.py:sha256 <- n4_p0.py:verify_isolation <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n1a.py:metrics.caller_chains.n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n2_controller.py:_physical_digest.caller_chains.n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n2_controller.py:_verify.caller_chains.n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0.py:data_hash.caller_chains.n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0.py:sha256.caller_chains.n4_p0.py:verify_isolation <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0r_handle_reader.py:_read_verified.caller_chains.n4_p0r_handle_reader.py:file_info <- <N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run",
+          "scalar": 239,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0r_handle_reader.py:_read_verified.caller_chains.n4_p0r_handle_reader.py:file_info <- <N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0r_handle_reader.py:_read_verified.caller_chains.n4_p0r_handle_reader.py:file_info <- n4_p0r_handle_reader.py:binding <- <N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run",
+          "scalar": 131,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0r_handle_reader.py:_read_verified.caller_chains.n4_p0r_handle_reader.py:raw_info <- <N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:raw_info <- <N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda>",
+          "scalar": 104,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0r_handle_reader.py:file_info.caller_chains.<N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed",
+          "scalar": 239,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0r_handle_reader.py:file_info.caller_chains.<N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0r_handle_reader.py:file_info.caller_chains.n4_p0r_handle_reader.py:binding <- <N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed",
+          "scalar": 131,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0r_handle_reader.py:raw_info.caller_chains.<N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:raw_info <- <N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run",
+          "scalar": 104,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0r_reader.py:safe_path.caller_chains.<N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:checked_path <- <N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run",
+          "scalar": 105,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0r_reader.py:safe_path.caller_chains.<N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed",
+          "scalar": 242,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0r_reader.py:safe_path.caller_chains.<N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 2,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0r_reader.py:safe_path.caller_chains.n4_p0r_handle_reader.py:binding <- <N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed",
+          "scalar": 131,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/src/dynamic_lisl/traffic_trace.py:sha256.caller_chains.n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/src/dynamic_lisl/traffic_trace.py:sha256.caller_chains.n4_p0.py:verify_isolation <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:dumps.caller_chains.n1a.py:digest <- n2_controller.py:_physical_digest <- n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:dumps.caller_chains.n1a.py:digest <- n4_p0.py:data_hash <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:dumps.caller_chains.n1a.py:digest <- n4_p0.py:sha256 <- n4_p0.py:verify_isolation <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:dumps.caller_chains.n4_p0.py:causal_view <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:dumps.caller_chains.traffic_trace.py:canonical_bytes <- traffic_trace.py:sha256 <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:dumps.caller_chains.traffic_trace.py:canonical_bytes <- traffic_trace.py:sha256 <- n4_p0.py:verify_isolation <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:loads.caller_chains.<N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed",
+          "scalar": 2,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:loads.caller_chains.version_control_readme_v1.py:read_json <- n4_p0r_reader.py:read_json <- <N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda>",
+          "scalar": 4,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:loads.caller_chains.version_control_readme_v1.py:read_json <- n4_p0r_reader.py:read_json <- <N4_P0R_FRESH_HANDLE_SHA_ADAPTER>:verify <- n4_p0r_reader.py:__call__ <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run",
+          "scalar": 2,
+          "type": "int"
+        },
+        {
+          "path": "$.root.raw_files.D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N4_P0_CAUSAL_ROOT_SCORING_CN.md",
+          "scalar": null,
+          "type": "dict"
+        }
+      ],
+      "sha256": "03594daae5882bc30227f9c3e99f351a1d69ba52056cf685ab11d559bed3d3b3",
+      "top_level_keys": [
+        "branch",
+        "fresh_native_bytes_hashed",
+        "fresh_native_file_reads",
+        "result",
+        "root"
+      ]
+    },
+    {
+      "byte_count": 521113,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/paired_handle_plain.json",
+      "relevant_fields": [
+        {
+          "path": "$.result.checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.result.n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.result.root_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.root",
+          "scalar": null,
+          "type": "dict"
+        }
+      ],
+      "sha256": "c51cf033ac088ed9b43695bd2a10067f8ec95253b972558f810b8d2ce7d7058c",
+      "top_level_keys": [
+        "branch",
+        "fresh_native_bytes_hashed",
+        "fresh_native_file_reads",
+        "result",
+        "root"
+      ]
+    },
+    {
+      "byte_count": 722697,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/paired_original_instrumented.json",
+      "relevant_fields": [
+        {
+          "path": "$.branch.raw_files.D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N4_P0_CAUSAL_ROOT_SCORING_CN.md",
+          "scalar": null,
+          "type": "dict"
+        },
+        {
+          "path": "$.result.checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.result.n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.result.root_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.root",
+          "scalar": null,
+          "type": "dict"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/bindings.py:checked_path.caller_chains.bindings.py:verify <- n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 105,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/bindings.py:raw_info.caller_chains.bindings.py:verify <- n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 104,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/bindings.py:verify.caller_chains.n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n1a.py:<dictcomp>.caller_chains.n1a.py:metrics <- n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n1a.py:<listcomp>.caller_chains.n1a.py:metrics <- n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n1a.py:digest.caller_chains.n2_controller.py:_physical_digest <- n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n1a.py:digest.caller_chains.n4_p0.py:data_hash <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n1a.py:digest.caller_chains.n4_p0.py:sha256 <- n4_p0.py:verify_isolation <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n1a.py:metrics.caller_chains.n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n1b_evaluator.py:verify.caller_chains.n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n2_binding.py:verify.caller_chains.n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n2_controller.py:_physical_digest.caller_chains.n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n2_controller.py:_verify.caller_chains.n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0.py:data_hash.caller_chains.n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0.py:sha256.caller_chains.n4_p0.py:verify_isolation <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/runtime/n4_p0.py:verify.caller_chains.n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/tools/version_control.py:file_info.caller_chains.n1b_evaluator.py:verify <- n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 114,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/tools/version_control.py:file_info.caller_chains.n2_binding.py:verify <- n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 125,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/tools/version_control.py:safe_path.caller_chains.n1b_evaluator.py:verify <- n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 115,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/tools/version_control.py:safe_path.caller_chains.n2_binding.py:verify <- n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 127,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/tools/version_control_readme_v1.py:file_info.caller_chains.n4_p0.py:verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/tools/version_control_readme_v1.py:file_info.caller_chains.version_control_readme_v1.py:binding <- n4_p0.py:verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 131,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/tools/version_control_readme_v1.py:safe_path.caller_chains.n4_p0.py:verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 2,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/research_versions/dynamic_k_v1/tools/version_control_readme_v1.py:safe_path.caller_chains.version_control_readme_v1.py:binding <- n4_p0.py:verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 131,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/src/dynamic_lisl/traffic_trace.py:sha256.caller_chains.n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Document/leo_routing_attitude/dynamic_lisl_v2/src/dynamic_lisl/traffic_trace.py:sha256.caller_chains.n4_p0.py:verify_isolation <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:dumps.caller_chains.n1a.py:digest <- n2_controller.py:_physical_digest <- n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:dumps.caller_chains.n1a.py:digest <- n4_p0.py:data_hash <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:dumps.caller_chains.n1a.py:digest <- n4_p0.py:sha256 <- n4_p0.py:verify_isolation <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:dumps.caller_chains.n4_p0.py:causal_view <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main <- controlled_cost.py:<module>",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:dumps.caller_chains.traffic_trace.py:canonical_bytes <- traffic_trace.py:sha256 <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:dumps.caller_chains.traffic_trace.py:canonical_bytes <- traffic_trace.py:sha256 <- n4_p0.py:verify_isolation <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed",
+          "scalar": 1,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:loads.caller_chains.bindings.py:verify <- n1a.py:measure <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 2,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:loads.caller_chains.version_control.py:read_json <- n1b_evaluator.py:verify <- n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed",
+          "scalar": 2,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:loads.caller_chains.version_control.py:read_json <- n2_binding.py:verify <- n2_controller.py:_verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed",
+          "scalar": 2,
+          "type": "int"
+        },
+        {
+          "path": "$.root.call_rows.D:/Program_Files/anaconda3/envs/pytorch/lib/json/__init__.py:loads.caller_chains.version_control_readme_v1.py:read_json <- n4_p0.py:verify <- n4_p0.py:make_sanitized_root <- controlled_cost.py:<lambda> <- trace_costs.py:run <- controlled_cost.py:timed <- controlled_cost.py:main",
+          "scalar": 2,
+          "type": "int"
+        },
+        {
+          "path": "$.root.raw_files.D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N4_P0_CAUSAL_ROOT_SCORING_CN.md",
+          "scalar": null,
+          "type": "dict"
+        }
+      ],
+      "sha256": "782b626ef909ab7a71ee32d0f9b05932a8c8461b437b578408a8dff75c3653f5",
+      "top_level_keys": [
+        "branch",
+        "result",
+        "root"
+      ]
+    },
+    {
+      "byte_count": 521018,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/paired_original_plain.json",
+      "relevant_fields": [
+        {
+          "path": "$.result.checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.result.n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.result.root_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.root",
+          "scalar": null,
+          "type": "dict"
+        }
+      ],
+      "sha256": "0fd8be5fe6413e33ce84b019209faf69b30221b5b660446cec386e39778a065b",
+      "top_level_keys": [
+        "branch",
+        "result",
+        "root"
+      ]
+    },
+    {
+      "byte_count": 101465,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/paired_trace_native_counter_reconciliation.json",
+      "relevant_fields": [
+        {
+          "path": "$.sections.paired_handle_instrumented.branch.actual_files.D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N4_P0_CAUSAL_ROOT_SCORING_CN.md",
+          "scalar": null,
+          "type": "dict"
+        },
+        {
+          "path": "$.sections.paired_handle_instrumented.root",
+          "scalar": null,
+          "type": "dict"
+        },
+        {
+          "path": "$.sections.paired_handle_instrumented.root.actual_files.D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\contracts\\N4_P0_CAUSAL_ROOT_SCORING_CN.md",
+          "scalar": null,
+          "type": "dict"
+        }
+      ],
+      "sha256": "f59b3eac379f64ba5cd0b12621b9790132cad4db977288b80721668f9921bdb8",
+      "top_level_keys": [
+        "old_raw_reports_preserved",
+        "sections",
+        "state_hash_calls_not_changed",
+        "status",
+        "timing_values_unchanged"
+      ]
+    },
+    {
+      "byte_count": 294,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/path_pin_mutation_evidence_attempt01.json",
+      "relevant_fields": [],
+      "sha256": "1b0797a6f8d25f34f753e4f7cc52cac1e66b32bd47ca112c91127b374d830356",
+      "top_level_keys": null
+    },
+    {
+      "byte_count": 629,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/pre_implementation_verification.json",
+      "relevant_fields": [],
+      "sha256": "1dcf4e3dcd775390afc3efbc08685e766ace8a46f13d5e87a8c4d58a5664d721",
+      "top_level_keys": [
+        "baseline_file_count",
+        "excluded_file_count",
+        "revision_id",
+        "revision_record_sha256",
+        "scientific_gate_pass",
+        "scope",
+        "source",
+        "status",
+        "undeclared_changes",
+        "verified_file_count",
+        "version_record_sha256"
+      ]
+    },
+    {
+      "byte_count": 1890691,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/pre_post_all_action_equivalence.json",
+      "relevant_fields": [
+        {
+          "path": "$.results[0].stable_result.checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.results[0].stable_result.n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "5a275a6c472f01ba95cad5fb7614f04d705d881707d567e91299ac0f2dc6fb3b",
+          "type": "str"
+        },
+        {
+          "path": "$.results[0].stable_result.root_sha256",
+          "scalar": "5a275a6c472f01ba95cad5fb7614f04d705d881707d567e91299ac0f2dc6fb3b",
+          "type": "str"
+        },
+        {
+          "path": "$.results[1].stable_result.checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.results[1].stable_result.n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "1411746eeee5acb2774db939ac74a5338706de182a07273b2e11a59421d21d29",
+          "type": "str"
+        },
+        {
+          "path": "$.results[1].stable_result.root_sha256",
+          "scalar": "1411746eeee5acb2774db939ac74a5338706de182a07273b2e11a59421d21d29",
+          "type": "str"
+        },
+        {
+          "path": "$.results[2].stable_result.checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.results[2].stable_result.n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "5a275a6c472f01ba95cad5fb7614f04d705d881707d567e91299ac0f2dc6fb3b",
+          "type": "str"
+        },
+        {
+          "path": "$.results[2].stable_result.root_sha256",
+          "scalar": "5a275a6c472f01ba95cad5fb7614f04d705d881707d567e91299ac0f2dc6fb3b",
+          "type": "str"
+        },
+        {
+          "path": "$.results[3].stable_result.checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.results[3].stable_result.n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "67fccb00ba179dc7d68900e2de606b7fd179eb1e49fda211e48ca74243eef007",
+          "type": "str"
+        },
+        {
+          "path": "$.results[3].stable_result.root_sha256",
+          "scalar": "67fccb00ba179dc7d68900e2de606b7fd179eb1e49fda211e48ca74243eef007",
+          "type": "str"
+        },
+        {
+          "path": "$.results[4].stable_result.checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.results[4].stable_result.n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "39731961d8621f29dee3bccc0a3b46695403dcc772fcb2c728933d1b95fef51a",
+          "type": "str"
+        },
+        {
+          "path": "$.results[4].stable_result.root_sha256",
+          "scalar": "39731961d8621f29dee3bccc0a3b46695403dcc772fcb2c728933d1b95fef51a",
+          "type": "str"
+        },
+        {
+          "path": "$.results[5].stable_result.root_sha256",
+          "scalar": "46f1d486638136fa5494f5fefb220a1f79dbd68d73a291df9cb2ef6284db2583",
+          "type": "str"
+        }
+      ],
+      "sha256": "80ba88245700c3f5aee609b00aa2356def69cd12bcedeff75fd26c92b0cc6593",
+      "top_level_keys": [
+        "results",
+        "status"
+      ]
+    },
+    {
+      "byte_count": 2502,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/prepare.py",
+      "sha256": "33d61a579ee786d7938188cce9f4ea60511b58aabaef81c29118cdb3f164b328"
+    },
+    {
+      "byte_count": 40384,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/preseal_change_audit.json",
+      "relevant_fields": [],
+      "sha256": "221d50589f63666b5a2aadf88c23f2bd48f15f0d9142657de198df80d7d693b4",
+      "top_level_keys": [
+        "changes_before_audit_creation",
+        "excluded",
+        "excluded_count",
+        "includes_gitignored_assets",
+        "old_assets_deleted",
+        "old_assets_modified",
+        "protected_parent_revision",
+        "protected_parent_sha256",
+        "raw_bytes_and_file_set_checked",
+        "registered_0010_and_older_assets_modified",
+        "scientific_gate_pass",
+        "status"
+      ]
+    },
+    {
+      "byte_count": 498,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/prototype_regression_interruption.json",
+      "relevant_fields": [],
+      "sha256": "1fd600eee98c39927775d8bae8efad7ea01594ee7e3d68be9ec68cff66de9aa0",
+      "top_level_keys": [
+        "processId",
+        "executable",
+        "commandLine",
+        "reason",
+        "interrupted_N3_not_a_complete_result",
+        "cpu_s",
+        "utc"
+      ]
+    },
+    {
+      "byte_count": 16661,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/reader_adapter_source_audit.json",
+      "relevant_fields": [],
+      "sha256": "116c8bf722ce80429f94b9ed050549703912d4de9738c2b8d435421101764d07",
+      "top_level_keys": null
+    },
+    {
+      "byte_count": 33621,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/reader_adapter_source_audit_handle.json",
+      "relevant_fields": [],
+      "sha256": "d5667d512b531b7ed220cb2a5709277bb0d9faa93f539bc768b9897ffc442fb7",
+      "top_level_keys": null
+    },
+    {
+      "byte_count": 812,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/reader_tests_attempt01.json",
+      "relevant_fields": [],
+      "sha256": "06aae33f67ea1debbd19b47c02174121dcfa728ce9dd8ed392eb5c7ba069f60b",
+      "top_level_keys": [
+        "errors",
+        "failures",
+        "output",
+        "skipped",
+        "status",
+        "tests_run",
+        "wallclock_s"
+      ]
+    },
+    {
+      "byte_count": 1488,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/regress_n3_retained.py",
+      "sha256": "f45cf8808b0720f2cf60c3e34bef6a7797cc60bb74e2fd6c9de92c37b4ca12a4"
+    },
+    {
+      "byte_count": 1075,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/regression_comparison.json",
+      "relevant_fields": [],
+      "sha256": "bb36954c40ae4eca3fb534222f6b456cc3e607a8b7805984367f7fb399085c73",
+      "top_level_keys": [
+        "N3_catalog",
+        "final_P0",
+        "historical_passed",
+        "historical_total",
+        "known_old_F3_failure",
+        "new_reader_regression",
+        "new_reader_tests",
+        "original_P0",
+        "pre_post_actions",
+        "separate_new_real_stress_case",
+        "status",
+        "upstream",
+        "version_protection"
+      ]
+    },
+    {
+      "byte_count": 2454,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/regression_N1a.json",
+      "relevant_fields": [],
+      "sha256": "90f8cae946b56b38125d4705aedfd20871957b7847799af7edf4a8bdbaebff7a",
+      "top_level_keys": [
+        "errors",
+        "failures",
+        "output",
+        "reader_mode",
+        "skipped",
+        "status",
+        "tests_run",
+        "wallclock_s"
+      ]
+    },
+    {
+      "byte_count": 2442,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/regression_N1b.json",
+      "relevant_fields": [],
+      "sha256": "5eb0f0fa2a83c1d681d8166d52c4ea0be7708b6f5508cba410ec27cd8582d5c9",
+      "top_level_keys": [
+        "errors",
+        "failures",
+        "output",
+        "reader_mode",
+        "skipped",
+        "status",
+        "tests_run",
+        "wallclock_s"
+      ]
+    },
+    {
+      "byte_count": 2773,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/regression_N2.json",
+      "relevant_fields": [],
+      "sha256": "a0771529cfd45d23dab17f3819b9be1c936e51768fbe2a1aec8968452721d3fb",
+      "top_level_keys": [
+        "errors",
+        "failures",
+        "output",
+        "reader_mode",
+        "skipped",
+        "status",
+        "tests_run",
+        "wallclock_s"
+      ]
+    },
+    {
+      "byte_count": 8049,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/RESULT_CN.md",
+      "sha256": "76917a9bedd40dde6ebb81a60288a91b1662d58322f25c3beb24977356b229f7"
+    },
+    {
+      "byte_count": 4842224,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/small_domain_ZERO.json",
+      "relevant_fields": [
+        {
+          "path": "$.decision.branches[0].checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.decision.branches[0].n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.decision.branches[0].root_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.decision.branches[1].checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.decision.branches[1].n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.decision.branches[1].root_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.decision.branches[2].checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.decision.branches[2].n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.decision.branches[2].root_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.decision.branches[3].checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.decision.branches[3].n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.decision.branches[3].root_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.decision.branches[4].checkpoints",
+          "scalar": null,
+          "type": "list"
+        },
+        {
+          "path": "$.decision.branches[4].n2_result.n1b_result.n1a_result.initial_state_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.decision.branches[4].root_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        },
+        {
+          "path": "$.decision.root_sha256",
+          "scalar": "f40e3d2607d345531e9c228658833b390cde4e9d084f879d6ab0675ea26d07c8",
+          "type": "str"
+        }
+      ],
+      "sha256": "59917abc565e333c6875f357ec8447f4fe611c46c6d19958b0066c63318d2cb8",
+      "top_level_keys": [
+        "branch_count",
+        "branch_seconds",
+        "decision",
+        "forecast_input_sha256",
+        "memory",
+        "wallclock_s"
+      ]
+    },
+    {
+      "byte_count": 5526,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/trace_costs.py",
+      "sha256": "bc5080155e8fd04be5d4afde3f74a602dec887ab64d1187cc1c0d7837a3c73bf"
+    },
+    {
+      "byte_count": 3282,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/version_protection_tests.json",
+      "relevant_fields": [],
+      "sha256": "b20584fbd8f14307195d6b7947d982befc54a1fed402045d54c090bb4e7ed86e",
+      "top_level_keys": [
+        "errors",
+        "failures",
+        "output",
+        "skipped",
+        "status",
+        "tests_run",
+        "wallclock_s"
+      ]
+    },
+    {
+      "byte_count": 3510,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/workflow.py",
+      "sha256": "79b006de413fea77c4c56c249b70d1c8bcbee2826e8093a9250731e8a36986bf"
+    }
+  ],
+  "native_checkpoint_file_extensions": [],
+  "origin_sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691",
+  "parent_sha256": "e77bf7624a4ac505e0dc52d77d79f6a2dcb45c240d3494d8fffe1119d3040aae",
+  "physical_input_bindings": [
+    {
+      "byte_count": 9096,
+      "path": "outputs/gate_c_simplified_20260922T064019_313843Z/z_ref.json",
+      "sha256": "59644ec7acc56f6a2efe098347874a6caf2eaf8540008c0bcb2a6509b37efa34"
+    },
+    {
+      "byte_count": 716934,
+      "path": "outputs/gate_c_simplified_20260922T064019_313843Z/terminal_pair_intervals.jsonl",
+      "sha256": "c4f166e05319f7c9a50459f853c5d68f3b67816452c3a85acabd8020e9be0a0a"
+    },
+    {
+      "byte_count": 1192,
+      "path": "configs/hardware_gate_c_simplified_v1.json",
+      "sha256": "66ca6881b739aad87ccd850a89f0dcddb9bb35684f48fcdee2e0aece33fadd19"
+    },
+    {
+      "byte_count": 849768,
+      "path": "data/raw/sgp4_x720/manifest.json",
+      "sha256": "61a42d76f4fe25d2e613435f9a26fc092a5943a177675f1081ff2d52c2ff4b7d"
+    },
+    {
+      "byte_count": 183,
+      "path": "data/raw/sgp4_x720/hashes.json",
+      "sha256": "b0dad2adfb3cbacbf0e03a4fd2f1877e64478965f86b95ee40770cdee9934fbc"
+    },
+    {
+      "byte_count": 107438,
+      "path": "data/raw/sgp4_x720/constellation.tle",
+      "sha256": "6ffcbc0d57c54e54fc274acb518e1436eaf4d70df56570b862ba42fe32345050"
+    }
+  ],
+  "revision_0011_all_added_files": [
+    {
+      "byte_count": 1794,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/MINIMAL_NEXT_STEP_CN.md",
+      "sha256": "8d54ccbc77edb3a206b6a968337ddc87549c5925303ac6abde9b2a6902c9ff1f"
+    },
+    {
+      "byte_count": 8049,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/RESULT_CN.md",
+      "sha256": "76917a9bedd40dde6ebb81a60288a91b1662d58322f25c3beb24977356b229f7"
+    },
+    {
+      "byte_count": 778,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/acceptance_summary.json",
+      "sha256": "487e237283cab4a87527922cf688abe2f7c1f3577250d1ceb9c5d87743a05622"
+    },
+    {
+      "byte_count": 202525,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/actual_binding_callchain_original.json",
+      "sha256": "cea705711e0534d0464b03995d39f535d418aeef0a7d845cb80f0e2ed6efcbfd"
+    },
+    {
+      "byte_count": 203612,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/actual_binding_callchain_original_handle_leaf_counts.json",
+      "sha256": "ec08f81973b43598376557562437d3771def35c2e355e6b3cd1b8047f095861b"
+    },
+    {
+      "byte_count": 202509,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/actual_binding_callchain_original_leaf_counts.json",
+      "sha256": "f1f9a139260eded53fb04a5a21fc349cdb2251864ac9a7b95c2ab59d27f0c077"
+    },
+    {
+      "byte_count": 205539,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/actual_binding_callchain_path_pinned.json",
+      "sha256": "af766e1fdb174c9f89e4446cb49c00ccf9cea22164ce7d9ec7ac06b877d87384"
+    },
+    {
+      "byte_count": 208385,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/actual_binding_callchain_path_pinned_handle_leaf_counts.json",
+      "sha256": "3f6cc4e48d92ef945590bc37cd08566ebb0ded686ae708f5a6e3bb32f5917c50"
+    },
+    {
+      "byte_count": 205632,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/actual_binding_callchain_path_pinned_leaf_counts.json",
+      "sha256": "b3293d6c22aa993a51afd4ba1f70c4e1bfd2b70fc90d142ad61b3505604c37ec"
+    },
+    {
+      "byte_count": 477,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/catalog_cost_boundary.json",
+      "sha256": "bf725ee2bab761faf72372b29a6f16e9952d823081a35243bfa7af583902d7b1"
+    },
+    {
+      "byte_count": 907,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/conservation_failure_comparison_attempt02.json",
+      "sha256": "9ff9e281e3e29765bb7a51059ccc6c5b4f39c1cc0e396f5c3691d40023859583"
+    },
+    {
+      "byte_count": 106915,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/conservation_failure_handle.json",
+      "sha256": "a4ae89a50f2182698447714e2ecc5af649689016c9386d8438198fa776c12d8e"
+    },
+    {
+      "byte_count": 20944158,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/conservation_failure_handle_attempt02.json",
+      "sha256": "36201d2b82a7dba573eea72277d00b84961291d0016e27698a39192dc5dbdf6e"
+    },
+    {
+      "byte_count": 106915,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/conservation_failure_original.json",
+      "sha256": "a4ae89a50f2182698447714e2ecc5af649689016c9386d8438198fa776c12d8e"
+    },
+    {
+      "byte_count": 20944158,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/conservation_failure_original_attempt02.json",
+      "sha256": "36201d2b82a7dba573eea72277d00b84961291d0016e27698a39192dc5dbdf6e"
+    },
+    {
+      "byte_count": 13757,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/controlled_cost.py",
+      "sha256": "d10437c01aeca3ba6f8532bd2592476711c0ce5b543e04bd3e061b14edc9e3f8"
+    },
+    {
+      "byte_count": 2591,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/cost_callchain_findings.json",
+      "sha256": "033f689d258141f2f221011b64ae20f276d0c5b4aa66fa5a96607a5ab1c22da6"
+    },
+    {
+      "byte_count": 2751,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/equivalence.py",
+      "sha256": "2639998675ac78186ca94d9668b69ad42385634a8e3b1dd9c5762a6edf83c0ab"
+    },
+    {
+      "byte_count": 3762,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/failure_diagnostic.py",
+      "sha256": "b7f24a32d2d1676b9fb1754cf998577763141a68c4c75a7ba24c1a935f39f657"
+    },
+    {
+      "byte_count": 2336,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/failure_diagnostic_attempt02.py",
+      "sha256": "d5ce4bf95d90872ce005ec58268285a538e54993328fe6613b4d68d66071ef30"
+    },
+    {
+      "byte_count": 294,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/final_path_pin_mutation_evidence.json",
+      "sha256": "1b0797a6f8d25f34f753e4f7cc52cac1e66b32bd47ca112c91127b374d830356"
+    },
+    {
+      "byte_count": 1890691,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/final_pre_post_all_action_equivalence.json",
+      "sha256": "80ba88245700c3f5aee609b00aa2356def69cd12bcedeff75fd26c92b0cc6593"
+    },
+    {
+      "byte_count": 959,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/final_reader_tests.json",
+      "sha256": "ceead445747d16a109c0ea7fe98936592c8d200b59571242959d2c7913dcd34e"
+    },
+    {
+      "byte_count": 2457,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/final_regression_N1a.json",
+      "sha256": "f676b1b7ccf83af58975d98f862af3ffa25cebb856ed0c703e7de214acef3355"
+    },
+    {
+      "byte_count": 2446,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/final_regression_N1b.json",
+      "sha256": "f8b3bd810bdfa44d0cb53f8dbd98f97d545f99fbc1afa7b237970cfef4e4e953"
+    },
+    {
+      "byte_count": 2784,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/final_regression_N2.json",
+      "sha256": "cd88b132e5a38342dad57bb5e5e0a31a6b91fecaa5a1f146983b2b57a4cbd4f5"
+    },
+    {
+      "byte_count": 2085,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/final_regression_N3.json",
+      "sha256": "44debd346a52d2d4f187a0b5f66590eabce13d77017533e0dba653860adc0ed7"
+    },
+    {
+      "byte_count": 20637,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/finish_and_seal.py",
+      "sha256": "e086a8b5592c1655ad7ff3cb2f5906c734f05931646370ef7dbfd6a24bb8e9db"
+    },
+    {
+      "byte_count": 27897,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/finish_and_seal_ascii.py",
+      "sha256": "77d81376e88a7eed83d96b07459da6ce50a334e715751ce7508eb52918dd0e1e"
+    },
+    {
+      "byte_count": 15392,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/historical_regression.json",
+      "sha256": "153158fb40b89050daac06e25d3f4b900a13dd8b66f7d38988b35bab2fa97936"
+    },
+    {
+      "byte_count": 217006,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/immutable_dependency_actual_leaf_counts.json",
+      "sha256": "22ae79db12840fb6a90ca783fc9074d513987ffea093abadd7d9cb5de24b1f03"
+    },
+    {
+      "byte_count": 3916,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/implementation_manifest.json",
+      "sha256": "c23f188ebc7bfcea9b04d53749d9111b48872ac46ac3eec84669263378de5ec7"
+    },
+    {
+      "byte_count": 3328,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/leaf_count_audit.py",
+      "sha256": "ba61addf8133b2d2ff77365ff2c229f21cb96ce80a3a8a54feb8162b4b4bcac3"
+    },
+    {
+      "byte_count": 14879,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/manifest_final.json",
+      "sha256": "1ab6cf7cd96abaaf90946c0e1bdb2cbca397e2d2326b4174c4dc4521f6687527"
+    },
+    {
+      "byte_count": 565583,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/n3_retained_coverage_validation.json",
+      "sha256": "8a3e3292e38001d79a9b1018947e697040f07961babd4f8c4dd37aa3b0106228"
+    },
+    {
+      "byte_count": 2099,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/p0_handle.json",
+      "sha256": "6b98af76bd813fd1e23bd4de14379e6c0e64ac5669061047c6f464a4ec7439e7"
+    },
+    {
+      "byte_count": 2162,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/p0_optimized.json",
+      "sha256": "378cd7f87e86bc93bd168f67a000b3893834de5d3de245400c1a71644d423705"
+    },
+    {
+      "byte_count": 2136,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/p0_original.json",
+      "sha256": "37c4756f3746d8a7da1be008aa18dd6e860dc6bdfe26e04395b1070dd55ac239"
+    },
+    {
+      "byte_count": 1655,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/paired_cost_summary.json",
+      "sha256": "2b8bc1e08c490678ba339c8d9671f1246628b81980c4067d6c5d493c06ae3507"
+    },
+    {
+      "byte_count": 724586,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/paired_handle_instrumented.json",
+      "sha256": "03594daae5882bc30227f9c3e99f351a1d69ba52056cf685ab11d559bed3d3b3"
+    },
+    {
+      "byte_count": 521113,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/paired_handle_plain.json",
+      "sha256": "c51cf033ac088ed9b43695bd2a10067f8ec95253b972558f810b8d2ce7d7058c"
+    },
+    {
+      "byte_count": 722697,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/paired_original_instrumented.json",
+      "sha256": "782b626ef909ab7a71ee32d0f9b05932a8c8461b437b578408a8dff75c3653f5"
+    },
+    {
+      "byte_count": 521018,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/paired_original_plain.json",
+      "sha256": "0fd8be5fe6413e33ce84b019209faf69b30221b5b660446cec386e39778a065b"
+    },
+    {
+      "byte_count": 101465,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/paired_trace_native_counter_reconciliation.json",
+      "sha256": "f59b3eac379f64ba5cd0b12621b9790132cad4db977288b80721668f9921bdb8"
+    },
+    {
+      "byte_count": 294,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/path_pin_mutation_evidence_attempt01.json",
+      "sha256": "1b0797a6f8d25f34f753e4f7cc52cac1e66b32bd47ca112c91127b374d830356"
+    },
+    {
+      "byte_count": 629,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/pre_implementation_verification.json",
+      "sha256": "1dcf4e3dcd775390afc3efbc08685e766ace8a46f13d5e87a8c4d58a5664d721"
+    },
+    {
+      "byte_count": 1890691,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/pre_post_all_action_equivalence.json",
+      "sha256": "80ba88245700c3f5aee609b00aa2356def69cd12bcedeff75fd26c92b0cc6593"
+    },
+    {
+      "byte_count": 2502,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/prepare.py",
+      "sha256": "33d61a579ee786d7938188cce9f4ea60511b58aabaef81c29118cdb3f164b328"
+    },
+    {
+      "byte_count": 40384,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/preseal_change_audit.json",
+      "sha256": "221d50589f63666b5a2aadf88c23f2bd48f15f0d9142657de198df80d7d693b4"
+    },
+    {
+      "byte_count": 498,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/prototype_regression_interruption.json",
+      "sha256": "1fd600eee98c39927775d8bae8efad7ea01594ee7e3d68be9ec68cff66de9aa0"
+    },
+    {
+      "byte_count": 16661,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/reader_adapter_source_audit.json",
+      "sha256": "116c8bf722ce80429f94b9ed050549703912d4de9738c2b8d435421101764d07"
+    },
+    {
+      "byte_count": 33621,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/reader_adapter_source_audit_handle.json",
+      "sha256": "d5667d512b531b7ed220cb2a5709277bb0d9faa93f539bc768b9897ffc442fb7"
+    },
+    {
+      "byte_count": 812,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/reader_tests_attempt01.json",
+      "sha256": "06aae33f67ea1debbd19b47c02174121dcfa728ce9dd8ed392eb5c7ba069f60b"
+    },
+    {
+      "byte_count": 1488,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/regress_n3_retained.py",
+      "sha256": "f45cf8808b0720f2cf60c3e34bef6a7797cc60bb74e2fd6c9de92c37b4ca12a4"
+    },
+    {
+      "byte_count": 2454,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/regression_N1a.json",
+      "sha256": "90f8cae946b56b38125d4705aedfd20871957b7847799af7edf4a8bdbaebff7a"
+    },
+    {
+      "byte_count": 2442,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/regression_N1b.json",
+      "sha256": "5eb0f0fa2a83c1d681d8166d52c4ea0be7708b6f5508cba410ec27cd8582d5c9"
+    },
+    {
+      "byte_count": 2773,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/regression_N2.json",
+      "sha256": "a0771529cfd45d23dab17f3819b9be1c936e51768fbe2a1aec8968452721d3fb"
+    },
+    {
+      "byte_count": 1075,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/regression_comparison.json",
+      "sha256": "bb36954c40ae4eca3fb534222f6b456cc3e607a8b7805984367f7fb399085c73"
+    },
+    {
+      "byte_count": 4842224,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/small_domain_ZERO.json",
+      "sha256": "59917abc565e333c6875f357ec8447f4fe611c46c6d19958b0066c63318d2cb8"
+    },
+    {
+      "byte_count": 5526,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/trace_costs.py",
+      "sha256": "bc5080155e8fd04be5d4afde3f74a602dec887ab64d1187cc1c0d7837a3c73bf"
+    },
+    {
+      "byte_count": 3282,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/version_protection_tests.json",
+      "sha256": "b20584fbd8f14307195d6b7947d982befc54a1fed402045d54c090bb4e7ed86e"
+    },
+    {
+      "byte_count": 3510,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/workflow.py",
+      "sha256": "79b006de413fea77c4c56c249b70d1c8bcbee2826e8093a9250731e8a36986bf"
+    },
+    {
+      "byte_count": 1642,
+      "path": "research_versions/dynamic_k_v1/configs/n4_p0r_engineering_v1.json",
+      "sha256": "c8c3ddeef52b863500dffb5cd56ff414ea84eb9981448cf0573edf51266cd3d0"
+    },
+    {
+      "byte_count": 4697,
+      "path": "research_versions/dynamic_k_v1/contracts/N4_P0R_EXACT_READER_AND_COST_CN.md",
+      "sha256": "efdf1ea5b128537773fa061703c2e78d067e574eef70414f63a9e9d9d2f10505"
+    },
+    {
+      "byte_count": 4916,
+      "path": "research_versions/dynamic_k_v1/runtime/n4_p0r_handle_reader.py",
+      "sha256": "c3fa23f396529fbc11007b434e375932c1a757b6a1a03d39dd9ace2bf354ae65"
+    },
+    {
+      "byte_count": 7456,
+      "path": "research_versions/dynamic_k_v1/runtime/n4_p0r_reader.py",
+      "sha256": "552c5032b32430d5f4bd3ab17dbe8cf15f0f99cf63c9bf351c9b7cc9098a9ee4"
+    },
+    {
+      "byte_count": 6676,
+      "path": "research_versions/dynamic_k_v1/tests/test_n4_p0r_reader.py",
+      "sha256": "b32d55297838eb6c5830bad329ee2dee28672c0542e220b831c5e0441b50b00c"
+    }
+  ],
+  "revision_chain": [
+    {
+      "byte_count": 5149,
+      "path": "research_versions/dynamic_k_v1/revisions/0001/record.json",
+      "sha256": "fdcfe6019967a442167e00206a11d957f92ec474491b4995411548bc6db11ea6"
+    },
+    {
+      "byte_count": 16033,
+      "path": "research_versions/dynamic_k_v1/revisions/0002/record.json",
+      "sha256": "7462107253e5d0c259176ab45f2475a1d5e8d5997f41419ab4e235be1cebe9ab"
+    },
+    {
+      "byte_count": 5889,
+      "path": "research_versions/dynamic_k_v1/revisions/0003/record.json",
+      "sha256": "7c9fa913a72ab740dfff233513c766ded57326fad2906c259d8ba56a3998baeb"
+    },
+    {
+      "byte_count": 8863,
+      "path": "research_versions/dynamic_k_v1/revisions/0004/record.json",
+      "sha256": "815352309856b9e8aa2c5ffbb4e233dd412b6bc7aa3fd2365ea03e17230411f9"
+    },
+    {
+      "byte_count": 9276,
+      "path": "research_versions/dynamic_k_v1/revisions/0005/record.json",
+      "sha256": "c2567b66fe880035853aba2b81463ece42443973d5b5178ae0b28e77a6c44769"
+    },
+    {
+      "byte_count": 9504,
+      "path": "research_versions/dynamic_k_v1/revisions/0006/record.json",
+      "sha256": "417e46baf6d3d7c8846af61131952739275c9b22bd1d468cc28e649b3c82dd18"
+    },
+    {
+      "byte_count": 14325,
+      "path": "research_versions/dynamic_k_v1/revisions/0007/record.json",
+      "sha256": "f58cc5eb037eaf6ee804c9aa1c5ec54f38894d00ca0d715f8b7baae8a47e06db"
+    },
+    {
+      "byte_count": 4282,
+      "path": "research_versions/dynamic_k_v1/revisions/0008/record.json",
+      "sha256": "0ab864c1bc8eaf8b3e746cf68df2e32f2924b91a07c316c25f3bc0d220b9bbbc"
+    },
+    {
+      "byte_count": 8162,
+      "path": "research_versions/dynamic_k_v1/revisions/0009/record.json",
+      "sha256": "bd54f8efb78375acca995b8ed43f5ccbfb4be80228d46eb2ca2ab5e954d86342"
+    },
+    {
+      "byte_count": 16418,
+      "path": "research_versions/dynamic_k_v1/revisions/0010/record.json",
+      "sha256": "fa9564caf795279ce608cf7ff31c9a86693c7336238b285a52c95c7ffb66c897"
+    },
+    {
+      "byte_count": 18836,
+      "path": "research_versions/dynamic_k_v1/revisions/0011/record.json",
+      "sha256": "89046f4c855a6f7830c620889216ef131577887ee15b04593d501b6ddf06b71f"
+    },
+    {
+      "byte_count": 6445,
+      "path": "research_versions/dynamic_k_v1/revisions/0012/record.json",
+      "sha256": "e77bf7624a4ac505e0dc52d77d79f6a2dcb45c240d3494d8fffe1119d3040aae"
+    }
+  ],
+  "source_bindings": [
+    {
+      "byte_count": 13757,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/controlled_cost.py",
+      "sha256": "d10437c01aeca3ba6f8532bd2592476711c0ce5b543e04bd3e061b14edc9e3f8"
+    },
+    {
+      "byte_count": 3762,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/failure_diagnostic.py",
+      "sha256": "b7f24a32d2d1676b9fb1754cf998577763141a68c4c75a7ba24c1a935f39f657"
+    },
+    {
+      "byte_count": 2336,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/failure_diagnostic_attempt02.py",
+      "sha256": "d5ce4bf95d90872ce005ec58268285a538e54993328fe6613b4d68d66071ef30"
+    },
+    {
+      "byte_count": 3510,
+      "path": "research_versions/dynamic_k_v1/acceptance/0011/workflow.py",
+      "sha256": "79b006de413fea77c4c56c249b70d1c8bcbee2826e8093a9250731e8a36986bf"
+    },
+    {
+      "byte_count": 7187,
+      "path": "research_versions/dynamic_k_v1/acceptance/0012/run_diagnosis.py",
+      "sha256": "664b89c6730f4d1cbe31daff1564c4108233fd2701300fa14f32437958ec8656"
+    },
+    {
+      "byte_count": 13959,
+      "path": "research_versions/dynamic_k_v1/runtime/n4_p0.py",
+      "sha256": "2b7420962fab6db5a663b27e978b417f998ee267d930c5566983e133695c9d0b"
+    },
+    {
+      "byte_count": 17162,
+      "path": "research_versions/dynamic_k_v1/runtime/n1b_fifo.py",
+      "sha256": "9fb1d868d67227aff482df004fc9571c47bc21bbdab08a9659d31635b27c04bf"
+    },
+    {
+      "byte_count": 2244,
+      "path": "research_versions/dynamic_k_v1/runtime/n1b_observer.py",
+      "sha256": "7bccef3b17b90ef395b616bfb92ef9e18ebfe5829f0855c2dcab277d0dff0ec6"
+    },
+    {
+      "byte_count": 6130,
+      "path": "research_versions/dynamic_k_v1/runtime/n1b_evaluator.py",
+      "sha256": "1fd0e7d8eef20c6936b4f14c586e08f7cd72dfb92d7d71a92d287b3173acf487"
+    },
+    {
+      "byte_count": 17730,
+      "path": "research_versions/dynamic_k_v1/runtime/n1a.py",
+      "sha256": "06287787a8cf7045e7e810a46e0c45781635fad98e02dcba3ef5d90c48d5456f"
+    },
+    {
+      "byte_count": 7947,
+      "path": "research_versions/dynamic_k_v1/runtime/n2_controller.py",
+      "sha256": "0051daeb9ce50e9e1395fa10f52b67a5f880830bbee28152cd365bd166a3a2a8"
+    },
+    {
+      "byte_count": 14038,
+      "path": "research_versions/dynamic_k_v1/runtime/n3_baselines.py",
+      "sha256": "513dc16be7a6d84817f4001eb6cefe01c54011892c923718f5ad35351a3c420b"
+    },
+    {
+      "byte_count": 23062,
+      "path": "research_versions/dynamic_k_v1/tests/test_n3_baselines.py",
+      "sha256": "d0fd21ea7a3e4c6b7db0f2ac858aba5b40097ee60e1e31e865e6761997a251a3"
+    }
+  ]
+}

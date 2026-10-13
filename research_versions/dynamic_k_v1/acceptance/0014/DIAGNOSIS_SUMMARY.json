@@ -1,0 +1,158 @@
+{
+  "ADD_clip_contribution": {
+    "approx": -1.0904434475378366e-06,
+    "rational": "-4795821/4398046511104"
+  },
+  "ADD_expected_transfer_net": {
+    "approx": 0.0,
+    "rational": "0"
+  },
+  "ADD_final_exact_residual": {
+    "approx": -1.0902878102569957e-06,
+    "rational": "-9590273/8796093022208"
+  },
+  "ADD_initial_exact_residual": {
+    "approx": 1.1641532182693481e-10,
+    "rational": "1/8589934592"
+  },
+  "ADD_nonclip_contribution": {
+    "approx": 3.922195901395753e-11,
+    "rational": "345/8796093022208"
+  },
+  "HOLD_final_exact_residual": {
+    "approx": -1.1641532182693481e-10,
+    "rational": "-1/8589934592"
+  },
+  "N4_P0_engineering_pass": false,
+  "classification": "MEASURED_NUMERICAL_CLAMP_DOMINATED_CONSERVATION_BOUNDARY",
+  "first_completed_N1a_formula_threshold_time_s": 4.039665704073551,
+  "first_threshold_interval": {
+    "end_s": 4.039665704073551,
+    "first_operation": 8033,
+    "last_operation": 8048,
+    "operation_count": 16,
+    "start_s": 4.0365869931528175,
+    "update_errors": {
+      "clip": {
+        "approx": -5.165643415239174e-07,
+        "rational": "-1135937/2199023255552"
+      },
+      "error": {
+        "approx": -5.165451284483424e-07,
+        "rational": "-4543579/8796093022208"
+      },
+      "nonclip": {
+        "approx": 1.921307557495311e-11,
+        "rational": "169/8796093022208"
+      }
+    }
+  },
+  "formula_changed": false,
+  "kernel_or_tolerance_modified": false,
+  "original_0011_replay": false,
+  "original_0011_root_cause_resolved": false,
+  "root_prefix_final_exact_residual": {
+    "approx": 1.1641532182693481e-10,
+    "rational": "1/8589934592"
+  },
+  "root_prefix_first_update_error": {
+    "accounting_interval": {
+      "dt": {
+        "denominator": "288230376151711744",
+        "exact_decimal": "0.0004641670758727227397155701282827067188918590545654296875",
+        "hex": "0x1.e6b6e692720c0p-12",
+        "numerator": "133787050876035",
+        "repr": "0.00046416707587272274"
+      },
+      "end": {
+        "denominator": "576460752303423488",
+        "exact_decimal": "0.00443076229213339341239663582427965593524277210235595703125",
+        "hex": "0x1.225fdb241cb32p-8",
+        "numerator": "2554160564200857",
+        "repr": "0.004430762292133393"
+      },
+      "start": {
+        "denominator": "576460752303423488",
+        "exact_decimal": "0.00396659521626067067268106569599694921635091304779052734375",
+        "hex": "0x1.03f46cbaf5926p-8",
+        "numerator": "2286586462448787",
+        "repr": "0.003966595216260671"
+      }
+    },
+    "actual_increment": {
+      "denominator": "17592186044416",
+      "exact_decimal": "92.83341517454454105973127298057079315185546875",
+      "hex": "0x1.73556ac99aa2cp+6",
+      "numerator": "1633142710889099",
+      "repr": "92.83341517454454"
+    },
+    "after": {
+      "denominator": "4398046511104",
+      "exact_decimal": "886.152458426678776959306560456752777099609375",
+      "hex": "0x1.bb1383c1fa4aep+9",
+      "numerator": "3897339728089687",
+      "repr": "886.1524584266788"
+    },
+    "before": {
+      "denominator": "1099511627776",
+      "exact_decimal": "793.3190432521341790561564266681671142578125",
+      "hex": "0x1.8ca8d668c6f68p+9",
+      "numerator": "872263512591853",
+      "repr": "793.3190432521342"
+    },
+    "caller": {
+      "file": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\transition_service_orchestrator.py",
+      "function": "_integrate",
+      "line": 527
+    },
+    "clip_mass_gain": {
+      "denominator": "1",
+      "exact_decimal": "0",
+      "hex": "0x0.0p+0",
+      "numerator": "0",
+      "repr": "0.0"
+    },
+    "commodity": "f_bg",
+    "compensation_after": {
+      "denominator": "17592186044416",
+      "exact_decimal": "5.684341886080801486968994140625E-14",
+      "hex": "0x1.0000000000000p-44",
+      "numerator": "1",
+      "repr": "5.684341886080802e-14"
+    },
+    "compensation_before": {
+      "denominator": "1",
+      "exact_decimal": "0",
+      "hex": "0x0.0p+0",
+      "numerator": "0",
+      "repr": "0.0"
+    },
+    "exact_update_error": {
+      "approx_bits": 5.684341886080802e-14,
+      "rational": "1/17592186044416"
+    },
+    "index": 9,
+    "key": "f_bg",
+    "kind": "A",
+    "nonclip_arithmetic_error": {
+      "approx_bits": 5.684341886080802e-14,
+      "rational": "1/17592186044416"
+    },
+    "preclip_rounded_sum": null,
+    "signed_global_mass_error": {
+      "approx_bits": 5.684341886080802e-14,
+      "rational": "1/17592186044416"
+    },
+    "time": {
+      "denominator": "576460752303423488",
+      "exact_decimal": "0.00396659521626067067268106569599694921635091304779052734375",
+      "hex": "0x1.03f46cbaf5926p-8",
+      "numerator": "2286586462448787",
+      "repr": "0.003966595216260671"
+    }
+  },
+  "root_reconstruction_pass": true,
+  "scenario_id": "P0E_0014_NEW_160_PERSIST_T3_SEED1414",
+  "status": "STOP_BUSINESS_CONSERVATION_MISMATCH",
+  "universal_error_bound_claimed": false
+}

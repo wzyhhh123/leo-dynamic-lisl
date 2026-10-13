@@ -1,0 +1,9 @@
+{
+  "errors": [],
+  "failures": [],
+  "output": "test_01_original_descriptor_and_clone_equal (reader_final_tests.ReaderTests) ... ok\ntest_02_writes_deletes_replace_and_ancestor_rename_rejected (reader_final_tests.ReaderTests) ... ok\ntest_03_preexisting_writer_fails_closed (reader_final_tests.ReaderTests) ... ok\ntest_04_tamper_after_close_rejected_new_lease (reader_final_tests.ReaderTests) ... ok\ntest_05_unpinned_paths_and_roots_rejected (reader_final_tests.ReaderTests) ... ok\ntest_06_reparse_input_rejected (reader_final_tests.ReaderTests) ... ok\ntest_07_preexisting_native_writable_mapping_not_trusted (reader_final_tests.ReaderTests) ... ok\ntest_08_raw_binary_empty_multiblock_hash_exact_and_never_cached (reader_final_tests.ReaderTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 1.887s\n\nOK\n",
+  "skipped": [],
+  "status": "PASS",
+  "tests_run": 8,
+  "wallclock_s": 1.8869620000000003
+}

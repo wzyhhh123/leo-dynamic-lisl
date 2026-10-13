@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "AST_EXACT_EXISTING_SCORER_UNCHANGED_PLUS_CURRENT_RATE_ENTRY_REJECTION",
+  "previous_full_suite": {
+    "path": "attempt02/p0_tests.json",
+    "tests_run": 19,
+    "status": "PASS"
+  },
+  "latest_targeted_suite": {
+    "path": "attempt03/p0_tests.json",
+    "tests_run": 5,
+    "status": "PASS",
+    "new_test": "test_20_manual_future_rate_injection_rejected"
+  },
+  "unique_test_cases_passed": 20,
+  "total_passed_case_executions": 24,
+  "changed_function": "make_sanitized_root",
+  "added_statements": [
+    "require(type(forecast) is ForecastInput and forecast.mode in ('ZERO', 'PERSIST'), 'P0_FORECAST_TYPE_MODE')",
+    "current = observe_current(live)",
+    "expected = tuple(((k, 0.0 if forecast.mode == 'ZERO' else float(v)) for (k, v) in current.injection_rates))",
+    "require(forecast.rates == expected, 'P0_FORECAST_NOT_CURRENT_CAUSAL_RATES')"
+  ],
+  "prior_runtime_sha256": "06855cb4d7a235d58a746509964c1dcb00678ffaa80ee5ea928a628374a49d55",
+  "final_runtime_sha256": "2b7420962fab6db5a663b27e978b417f998ee267d930c5566983e133695c9d0b",
+  "full_suite_not_repeated_after_rejection_only_guard": true
+}

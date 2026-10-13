@@ -1,0 +1,174 @@
+{
+  "formal_performance_claim": false,
+  "original_0014_ADD_failure_preserved": true,
+  "results": {
+    "ADD": {
+      "A": 5400000.0,
+      "D": 5398758.711573512,
+      "DeltaE_0_t": 1190.0,
+      "DeltaE_h": 950.0,
+      "E_0_t": 15590.0,
+      "E_h": 10550.0,
+      "I": 1241.2884264778113,
+      "J_0_t": 130571.67000501856,
+      "J_h": 38070.340292782945,
+      "K_time_series": [
+        {
+          "K_active_admissible": 1,
+          "K_admit": 1,
+          "K_draining": 0,
+          "acquiring_terminal_count": 0,
+          "retargeting_terminal_count": 0,
+          "setup_connection_count": 0,
+          "setup_reserved_terminal_count": 0,
+          "setup_terminal_count": 0,
+          "t_s": 0.0
+        },
+        {
+          "K_active_admissible": 1,
+          "K_admit": 1,
+          "K_draining": 0,
+          "acquiring_terminal_count": 0,
+          "retargeting_terminal_count": 2,
+          "setup_connection_count": 1,
+          "setup_reserved_terminal_count": 2,
+          "setup_terminal_count": 2,
+          "t_s": 3.0
+        },
+        {
+          "K_active_admissible": 1,
+          "K_admit": 1,
+          "K_draining": 0,
+          "acquiring_terminal_count": 2,
+          "retargeting_terminal_count": 0,
+          "setup_connection_count": 1,
+          "setup_reserved_terminal_count": 2,
+          "setup_terminal_count": 2,
+          "t_s": 3.5
+        },
+        {
+          "K_active_admissible": 2,
+          "K_admit": 2,
+          "K_draining": 0,
+          "acquiring_terminal_count": 0,
+          "retargeting_terminal_count": 0,
+          "setup_connection_count": 0,
+          "setup_reserved_terminal_count": 0,
+          "setup_terminal_count": 0,
+          "t_s": 4.0
+        },
+        {
+          "K_active_admissible": 2,
+          "K_admit": 2,
+          "K_draining": 0,
+          "acquiring_terminal_count": 0,
+          "retargeting_terminal_count": 0,
+          "setup_connection_count": 0,
+          "setup_reserved_terminal_count": 0,
+          "setup_terminal_count": 0,
+          "t_s": 9.0
+        }
+      ],
+      "M_D": 130569.54918757496,
+      "N_end": 1241.2884264877325,
+      "Q": 9.921222954289988e-09,
+      "R_del": 0.9997701317728727,
+      "business_tolerance_bits": 1e-06,
+      "event_metrics": {
+        "events": {
+          "clip_mass_gain_bit": 4.741878001368605e-10,
+          "consumed_events": 182,
+          "early_events": [],
+          "late_events": [],
+          "max_actual_formula_boundary_residual_bits": 9.313225746154785e-10,
+          "max_exact_boundary_residual_bits": 5.323954610503279e-10,
+          "pending_head_skips": 0,
+          "positive_clip_updates": 10,
+          "time_monotonic": true
+        },
+        "exact_final_residual": {
+          "approx": -2.587512426543981e-10,
+          "rational": "-569/2199023255552"
+        },
+        "expected_transfer_net": {
+          "approx": 0.0,
+          "rational": "0"
+        },
+        "signed_clip": {
+          "approx": -4.741878001368605e-10,
+          "rational": "-4171/8796093022208"
+        }
+      },
+      "mean_delay_error_bound_s": 8.379611830674548e-13,
+      "mean_delivered_fluid_delay_s": 0.024185105533179013
+    },
+    "HOLD": {
+      "A": 5400000.0,
+      "D": 5368782.232853443,
+      "DeltaE_0_t": 720.0,
+      "DeltaE_h": 480.0,
+      "E_0_t": 15120.0,
+      "E_h": 10080.0,
+      "I": 31217.767146556987,
+      "J_0_t": 279807.93259157613,
+      "J_h": 187306.60287934053,
+      "K_time_series": [
+        {
+          "K_active_admissible": 1,
+          "K_admit": 1,
+          "K_draining": 0,
+          "acquiring_terminal_count": 0,
+          "retargeting_terminal_count": 0,
+          "setup_connection_count": 0,
+          "setup_reserved_terminal_count": 0,
+          "setup_terminal_count": 0,
+          "t_s": 0.0
+        },
+        {
+          "K_active_admissible": 1,
+          "K_admit": 1,
+          "K_draining": 0,
+          "acquiring_terminal_count": 0,
+          "retargeting_terminal_count": 0,
+          "setup_connection_count": 0,
+          "setup_reserved_terminal_count": 0,
+          "setup_terminal_count": 0,
+          "t_s": 9.0
+        }
+      ],
+      "M_D": 278655.96086414147,
+      "N_end": 31217.767146556987,
+      "Q": 0.0,
+      "R_del": 0.994218932009897,
+      "business_tolerance_bits": 1e-06,
+      "event_metrics": {
+        "events": {
+          "clip_mass_gain_bit": 0,
+          "consumed_events": 0,
+          "early_events": [],
+          "late_events": [],
+          "max_actual_formula_boundary_residual_bits": 4.656612873077393e-10,
+          "max_exact_boundary_residual_bits": 1.1641532182693481e-10,
+          "pending_head_skips": 0,
+          "positive_clip_updates": 0,
+          "time_monotonic": true
+        },
+        "exact_final_residual": {
+          "approx": -1.1641532182693481e-10,
+          "rational": "-1/8589934592"
+        },
+        "expected_transfer_net": {
+          "approx": 0.0,
+          "rational": "0"
+        },
+        "signed_clip": {
+          "approx": 0.0,
+          "rational": "0"
+        }
+      },
+      "mean_delay_error_bound_s": 3.827114032273576e-14,
+      "mean_delivered_fluid_delay_s": 0.0519030105484534
+    }
+  },
+  "variant": "P0F_EXACT_NOMINAL_V1"
+}

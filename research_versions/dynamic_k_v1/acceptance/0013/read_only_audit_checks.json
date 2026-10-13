@@ -1,0 +1,25 @@
+{
+  "N4_P0_engineering_pass": false,
+  "checks": {
+    "exact_t3_stop": true,
+    "independent_expected_anchor_unchanged": true,
+    "initial_terminal_history_equal": true,
+    "known_scalar_business_state_equal": true,
+    "no_control_action_or_prediction": true,
+    "no_original_native_checkpoint_or_preimage_in_inventory": true,
+    "observation_prefix_equal": true,
+    "one_new_root_only": true,
+    "original_forecast_and_physical_digest_equal": true,
+    "original_replay_not_claimed": true,
+    "parent_full_verification_pass": true,
+    "post_submit_envelope_difference_explained": true,
+    "preimage_raw_sha256_matches_actual": true,
+    "same_stage_audit_multiset_equal": true,
+    "same_stage_audit_order_difference": true,
+    "strict_mismatch_preserved": true
+  },
+  "new_engine_test_runs": 0,
+  "old_regression_runs": 0,
+  "root_cause": "UNRESOLVED",
+  "status": "PASS_SAVED_ARTIFACT_CHECKS_ONLY"
+}

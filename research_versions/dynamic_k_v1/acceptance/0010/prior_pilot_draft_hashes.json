@@ -1,0 +1,38 @@
+[
+  {
+    "original_path": "C:/Users/11656/.codex/visualizations/2026/10/10/01a123b2-70a3-7090-a938-138b860cbb46/pilot_preregistration_20261012T070653Z/MPC_INTERFACE_GAP_AUDIT.md",
+    "sha256": "b788cc248806f13ab7c8054441625ad15421e401bd52f1ea93e035ec4cb704bf",
+    "snapshot": {
+      "byte_count": 17292,
+      "path": "research_versions/dynamic_k_v1/acceptance/0010/prior_pilot_drafts_1s/MPC_INTERFACE_GAP_AUDIT.md",
+      "sha256": "b788cc248806f13ab7c8054441625ad15421e401bd52f1ea93e035ec4cb704bf"
+    }
+  },
+  {
+    "original_path": "C:/Users/11656/.codex/visualizations/2026/10/10/01a123b2-70a3-7090-a938-138b860cbb46/pilot_preregistration_20261012T070653Z/PILOT_ACCEPTANCE_CRITERIA.md",
+    "sha256": "d2d8d15f4c2bbb3d53db35061321cba92b061586fb67970cc648ff66af7da30c",
+    "snapshot": {
+      "byte_count": 14208,
+      "path": "research_versions/dynamic_k_v1/acceptance/0010/prior_pilot_drafts_1s/PILOT_ACCEPTANCE_CRITERIA.md",
+      "sha256": "d2d8d15f4c2bbb3d53db35061321cba92b061586fb67970cc648ff66af7da30c"
+    }
+  },
+  {
+    "original_path": "C:/Users/11656/.codex/visualizations/2026/10/10/01a123b2-70a3-7090-a938-138b860cbb46/pilot_preregistration_20261012T070653Z/PILOT_PARAMETER_MANIFEST_DRAFT.md",
+    "sha256": "6a015d1e6993fbe3d4c0fcd0464113e5696436a98e6a19e8eb4524573063bf23",
+    "snapshot": {
+      "byte_count": 9208,
+      "path": "research_versions/dynamic_k_v1/acceptance/0010/prior_pilot_drafts_1s/PILOT_PARAMETER_MANIFEST_DRAFT.md",
+      "sha256": "6a015d1e6993fbe3d4c0fcd0464113e5696436a98e6a19e8eb4524573063bf23"
+    }
+  },
+  {
+    "original_path": "C:/Users/11656/.codex/visualizations/2026/10/10/01a123b2-70a3-7090-a938-138b860cbb46/pilot_preregistration_20261012T070653Z/PILOT_SCENARIO_MATRIX.md",
+    "sha256": "4938bf3debd0d4747620383b206c563fb094aa34765416a2a0db7018d1e27b4f",
+    "snapshot": {
+      "byte_count": 8597,
+      "path": "research_versions/dynamic_k_v1/acceptance/0010/prior_pilot_drafts_1s/PILOT_SCENARIO_MATRIX.md",
+      "sha256": "4938bf3debd0d4747620383b206c563fb094aa34765416a2a0db7018d1e27b4f"
+    }
+  }
+]

@@ -1,0 +1,4321 @@
+{
+  "N4_P0_engineering_pass": false,
+  "action": "ADD",
+  "actual_end_s": 6.0,
+  "age_cursor": 44,
+  "age_now": "3",
+  "completed_checkpoints": [],
+  "error": {
+    "actual_time_s": 6.0,
+    "age_time_s": "3",
+    "energy_time_s": 6.0,
+    "message": "BUSINESS_CONSERVATION_MISMATCH",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\replay_worker.py\", line 140, in branch\n    measured=c.advance_to(cut);completed.append(cut)\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n2_controller.py\", line 94, in advance_to\n    original=self.evaluator.advance_to(t)\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n1b_evaluator.py\", line 51, in advance_to\n    core=self.base.advance_to(t)\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n1a.py\", line 167, in advance_to\n    return self.measure()\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n1a.py\", line 228, in measure\n    validate_measurement(result)\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\replay_worker.py\", line 132, in validate\n    return validation(value)\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n1a.py\", line 286, in validate_measurement\n    close(r['offered_bits'], r['delivered_bits']+r['N_T_bits'],\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n1a.py\", line 246, in close\n    require(abs(a-b) <= tolerance, code)\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n1a.py\", line 20, in require\n    raise ValueError(message)\nValueError: BUSINESS_CONSERVATION_MISMATCH\n",
+    "type": "ValueError"
+  },
+  "final_A_Q_I_D": {
+    "A": {
+      "denominator": "1",
+      "exact_decimal": "3600000",
+      "hex": "0x1.b774000000000p+21",
+      "numerator": "3600000",
+      "repr": "3600000.0"
+    },
+    "A_minus_D_minus_QI": {
+      "denominator": "17179869184",
+      "exact_decimal": "-0.0000010905205272138118743896484375",
+      "hex": "-0x1.24bc000000000p-20",
+      "numerator": "-18735",
+      "repr": "-1.0905205272138119e-06"
+    },
+    "A_minus_D_plus_QI": {
+      "denominator": "1073741824",
+      "exact_decimal": "-0.000001090578734874725341796875",
+      "hex": "-0x1.24c0000000000p-20",
+      "numerator": "-1171",
+      "repr": "-1.0905787348747253e-06"
+    },
+    "D": {
+      "denominator": "1073741824",
+      "exact_decimal": "3598758.711573383770883083343505859375",
+      "hex": "0x1.b74d35b14d62ep+21",
+      "numerator": "3864137743100695",
+      "repr": "3598758.711573384"
+    },
+    "I": {
+      "denominator": "4294967296",
+      "exact_decimal": "1241.28842768794856965541839599609375",
+      "hex": "0x1.3652759967c00p+10",
+      "numerator": "5331293201823",
+      "repr": "1241.2884276879486"
+    },
+    "N": {
+      "denominator": "17179869184",
+      "exact_decimal": "1241.2884277067496441304683685302734375",
+      "hex": "0x1.365275997bf00p+10",
+      "numerator": "21325172807615",
+      "repr": "1241.2884277067496"
+    },
+    "Q": {
+      "denominator": "8796093022208",
+      "exact_decimal": "1.88011881618876941502094268798828125E-8",
+      "hex": "0x1.4300800000000p-26",
+      "numerator": "165377",
+      "repr": "1.8801188161887694e-08"
+    },
+    "exact_IEEE_operand_residual": {
+      "approx_bits": -1.0902878102569957e-06,
+      "rational": "-9590273/8796093022208"
+    },
+    "fsum_signed_all_terms": {
+      "denominator": "8796093022208",
+      "exact_decimal": "-0.0000010902878102569957263767719268798828125",
+      "hex": "-0x1.24ac020000000p-20",
+      "numerator": "-9590273",
+      "repr": "-1.0902878102569957e-06"
+    }
+  },
+  "final_energy": {
+    "DeltaE_LCT_J": 710.0,
+    "E_LCT_J": 10310.0,
+    "K_time_series": [
+      {
+        "K_active_admissible": 1,
+        "K_draining": 0,
+        "acquiring_terminal_count": 0,
+        "retargeting_terminal_count": 0,
+        "setup_connection_count": 0,
+        "setup_reserved_terminal_count": 0,
+        "setup_terminal_count": 0,
+        "t_s": 0.0
+      },
+      {
+        "K_active_admissible": 1,
+        "K_draining": 0,
+        "acquiring_terminal_count": 0,
+        "retargeting_terminal_count": 2,
+        "setup_connection_count": 1,
+        "setup_reserved_terminal_count": 2,
+        "setup_terminal_count": 2,
+        "t_s": 3.0
+      },
+      {
+        "K_active_admissible": 1,
+        "K_draining": 0,
+        "acquiring_terminal_count": 2,
+        "retargeting_terminal_count": 0,
+        "setup_connection_count": 1,
+        "setup_reserved_terminal_count": 2,
+        "setup_terminal_count": 2,
+        "t_s": 3.5
+      },
+      {
+        "K_active_admissible": 2,
+        "K_draining": 0,
+        "acquiring_terminal_count": 0,
+        "retargeting_terminal_count": 0,
+        "setup_connection_count": 0,
+        "setup_reserved_terminal_count": 0,
+        "setup_terminal_count": 0,
+        "t_s": 4.0
+      },
+      {
+        "K_active_admissible": 2,
+        "K_draining": 0,
+        "acquiring_terminal_count": 0,
+        "retargeting_terminal_count": 0,
+        "setup_connection_count": 0,
+        "setup_reserved_terminal_count": 0,
+        "setup_terminal_count": 0,
+        "t_s": 6.0
+      }
+    ],
+    "five_execution_state_dwell_s": {
+      "ACQUIRING": 1.0,
+      "ACTIVE": 16.0,
+      "DRAINING": 0.0,
+      "IDLE": 1902.0,
+      "RETARGETING": 1.0
+    },
+    "four_energy_state_dwell_s": {
+      "ACQUIRING": 1.0,
+      "ACTIVE": 16.0,
+      "IDLE": 1902.0,
+      "RETARGETING": 1.0
+    },
+    "per_terminal_execution_dwell_s": [
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_1",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 6.0,
+          "DRAINING": 0.0,
+          "IDLE": 0.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_1",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_10",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.5,
+          "ACTIVE": 2.0,
+          "DRAINING": 0.0,
+          "IDLE": 3.0,
+          "RETARGETING": 0.5
+        },
+        "terminal_id": [
+          "X0_10",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_11",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_11",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_12",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_12",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_13",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_13",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_14",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_14",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_15",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_15",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_16",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_16",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_17",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_17",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_18",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_18",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_19",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_19",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_2",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_2",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_20",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_20",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_21",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_21",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_22",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_22",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_23",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_23",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_24",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_24",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_25",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_25",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_26",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_26",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_27",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_27",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_28",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_28",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_29",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_29",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_3",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_3",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_30",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_30",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_31",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_31",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_32",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_32",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_33",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_33",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_34",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_34",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_35",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_35",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_36",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_36",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_37",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_37",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_38",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_38",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_39",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_39",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_4",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_4",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_40",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_40",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_5",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_5",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_6",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_6",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_7",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_7",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_8",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_8",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_9",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X0_9",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 6.0,
+          "DRAINING": 0.0,
+          "IDLE": 0.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_1",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_1",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.5,
+          "ACTIVE": 2.0,
+          "DRAINING": 0.0,
+          "IDLE": 3.0,
+          "RETARGETING": 0.5
+        },
+        "terminal_id": [
+          "X1_10",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_10",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_11",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_11",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_12",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_12",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_13",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_13",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_14",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_14",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_15",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_15",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_16",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_16",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_17",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_17",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_18",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_18",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_19",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_19",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_2",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_2",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_20",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_20",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_21",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_21",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_22",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_22",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_23",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_23",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_24",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_24",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_25",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_25",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_26",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_26",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_27",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_27",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_28",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_28",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_29",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_29",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_3",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_3",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_30",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_30",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_31",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_31",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_32",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_32",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_33",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_33",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_34",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_34",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_35",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_35",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_36",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_36",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_37",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_37",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_38",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_38",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_39",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_39",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_4",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_4",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_40",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_40",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_5",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_5",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_6",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_6",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_7",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_7",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_8",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_8",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_9",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X1_9",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_1",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_1",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_10",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_10",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_11",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_11",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_12",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_12",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_13",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_13",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_14",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_14",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_15",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_15",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_16",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_16",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_17",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_17",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_18",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_18",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_19",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_19",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_2",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_2",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_20",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_20",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_21",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_21",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_22",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_22",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_23",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_23",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_24",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_24",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_25",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_25",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_26",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_26",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_27",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_27",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_28",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_28",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_29",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_29",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_3",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_3",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_30",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_30",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_31",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_31",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_32",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_32",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_33",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_33",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_34",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_34",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_35",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_35",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_36",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_36",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_37",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_37",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_38",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_38",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_39",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_39",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_4",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_4",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_40",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_40",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_5",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_5",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_6",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_6",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_7",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_7",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_8",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_8",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_9",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X2_9",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_1",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_1",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_10",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_10",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_11",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_11",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_12",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_12",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_13",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_13",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_14",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_14",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_15",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_15",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_16",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_16",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_17",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_17",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_18",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_18",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_19",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_19",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_2",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_2",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_20",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_20",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_21",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_21",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_22",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_22",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_23",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_23",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_24",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_24",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_25",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_25",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_26",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_26",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_27",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_27",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_28",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_28",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_29",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_29",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_3",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_3",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_30",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_30",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_31",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_31",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_32",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_32",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_33",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_33",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_34",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_34",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_35",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_35",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_36",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_36",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_37",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_37",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_38",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_38",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_39",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_39",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_4",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_4",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_40",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_40",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_5",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_5",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_6",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_6",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_7",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_7",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_8",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_8",
+          "D2"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_9",
+          "D1"
+        ]
+      },
+      {
+        "dwell_s": {
+          "ACQUIRING": 0.0,
+          "ACTIVE": 0.0,
+          "DRAINING": 0.0,
+          "IDLE": 6.0,
+          "RETARGETING": 0.0
+        },
+        "terminal_id": [
+          "X3_9",
+          "D2"
+        ]
+      }
+    ],
+    "standby_baseline_energy_J": 9600.0
+  },
+  "forecast_sha256": "66061c9bc91a8b6af7903cbb898b101081b02621f8f48f92038da54d66ef0da1",
+  "original_0011_replay": false,
+  "partial_age_state_not_accepted_as_final": true,
+  "prediction_start_s": 3.0,
+  "recipe_root_sha256": "1a6a346c324c6a9d34721ba1d049ac4ea5de62036a62d1a89d17a02255cb5fb3",
+  "requested_end_s": 9.0,
+  "requested_horizon_s": 6.0,
+  "root_unchanged": true,
+  "scenario_id": "P0E_0014_NEW_160_PERSIST_T3_SEED1414",
+  "scientific_gate_pass": false,
+  "status": "STOP_BUSINESS_CONSERVATION_MISMATCH"
+}

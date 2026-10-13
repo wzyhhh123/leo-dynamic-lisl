@@ -1,0 +1,126 @@
+{
+  "analytic_test_count": 7,
+  "event_ledger": {
+    "ADD": {
+      "all_final_pending_strictly_after_horizon": true,
+      "emitted_after_root": 184,
+      "every_event_id_accounted_once": true,
+      "pending": [
+        {
+          "commodity_id": "f_hot",
+          "delta_rate_bit_s": -400000.0,
+          "edge": [
+            "X0_10",
+            "X1_10"
+          ],
+          "sequence": 204,
+          "time_s": 9.000887839920127
+        },
+        {
+          "commodity_id": "f_bg",
+          "delta_rate_bit_s": -200000.0,
+          "edge": [
+            "X0_1",
+            "X1_1"
+          ],
+          "sequence": 203,
+          "time_s": 9.004430762292133
+        }
+      ],
+      "pending_count": 2,
+      "sequence_final": 204,
+      "sequence_start": 20,
+      "settled_count": 182
+    },
+    "HOLD": {
+      "all_final_pending_strictly_after_horizon": true,
+      "emitted_after_root": 2,
+      "every_event_id_accounted_once": true,
+      "pending": [
+        {
+          "commodity_id": "f_hot",
+          "delta_rate_bit_s": -400000.0,
+          "edge": [
+            "X0_10",
+            "X0_9"
+          ],
+          "sequence": 22,
+          "time_s": 9.00396659521626
+        },
+        {
+          "commodity_id": "f_bg",
+          "delta_rate_bit_s": -200000.0,
+          "edge": [
+            "X0_1",
+            "X1_1"
+          ],
+          "sequence": 21,
+          "time_s": 9.004430762292133
+        }
+      ],
+      "pending_count": 2,
+      "sequence_final": 22,
+      "sequence_start": 20,
+      "settled_count": 0
+    }
+  },
+  "frozen_engine_binding": {
+    "byte_count": 39079,
+    "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\src\\dynamic_lisl\\transition_service_orchestrator.py",
+    "sha256": "9ed1ecf9b8c5cde21fd5a71113fdd45e2d69a20bb808689ccf40a9392ce172e7"
+  },
+  "full_N4_P0_engineering_pass": false,
+  "historical_failures": 1,
+  "historical_test_count": 132,
+  "inline_test_count": 1,
+  "known_failure": "test_known_witness_domain_discovers_every_registered_size_without_J",
+  "regression": {
+    "original": {
+      "N1a": {
+        "status": "PASS",
+        "tests": 25
+      },
+      "N1b": {
+        "status": "PASS",
+        "tests": 24
+      },
+      "N2": {
+        "status": "PASS",
+        "tests": 27
+      },
+      "N3": {
+        "status": "PASS",
+        "tests": 20
+      },
+      "P0": {
+        "status": "PASS",
+        "tests": 20
+      }
+    },
+    "variant": {
+      "N1a": {
+        "status": "PASS",
+        "tests": 25
+      },
+      "N1b": {
+        "status": "PASS",
+        "tests": 24
+      },
+      "N2": {
+        "status": "PASS",
+        "tests": 27
+      },
+      "N3": {
+        "status": "PASS",
+        "tests": 20
+      },
+      "P0": {
+        "status": "PASS",
+        "tests": 20
+      }
+    }
+  },
+  "scientific_gate_pass": false,
+  "status": "PASS_N4_P0F_ISOLATED_EVENT_SEMANTICS_ONLY",
+  "variant_root_replay_strict_pass": true
+}

@@ -1,0 +1,186 @@
+{
+  "ADD_stopped_at_s": 6.0,
+  "HOLD_completed_to_s": 9.0,
+  "checkpoints": [
+    {
+      "A": 3600000.0,
+      "D": 3568782.2328534434,
+      "DeltaE_0_t_J": 480.0,
+      "E_0_t_J": 10080.0,
+      "I": 31217.767146556987,
+      "J_0_t_bit_s": 186154.63115190621,
+      "K_time_series": [
+        {
+          "K_active_admissible": 1,
+          "K_draining": 0,
+          "acquiring_terminal_count": 0,
+          "retargeting_terminal_count": 0,
+          "setup_connection_count": 0,
+          "setup_reserved_terminal_count": 0,
+          "setup_terminal_count": 0,
+          "t_s": 0.0
+        },
+        {
+          "K_active_admissible": 1,
+          "K_draining": 0,
+          "acquiring_terminal_count": 0,
+          "retargeting_terminal_count": 0,
+          "setup_connection_count": 0,
+          "setup_reserved_terminal_count": 0,
+          "setup_terminal_count": 0,
+          "t_s": 6.0
+        }
+      ],
+      "M_D_bit_s": 185002.65942447068,
+      "N": 31217.767146556987,
+      "Q": 0.0,
+      "R_del": 0.9913283980148454,
+      "accepted_measurement": true,
+      "action": "HOLD",
+      "age_cursor": 47,
+      "age_time_s": "6",
+      "execution_dwell_s": {
+        "ACQUIRING": 0.0,
+        "ACTIVE": 12.0,
+        "DRAINING": 0.0,
+        "IDLE": 1908.0,
+        "RETARGETING": 0.0
+      },
+      "mean_delay_error_bound_s": null,
+      "mean_delivered_fluid_delay_s": 0.05183915614726388,
+      "note": "ENGINEERING_CHECKPOINT",
+      "time_s": 6.0
+    },
+    {
+      "A": 5400000.0,
+      "D": 5368782.232853443,
+      "DeltaE_0_t_J": 720.0,
+      "E_0_t_J": 15120.0,
+      "I": 31217.767146556987,
+      "J_0_t_bit_s": 279807.93259157613,
+      "K_time_series": [
+        {
+          "K_active_admissible": 1,
+          "K_draining": 0,
+          "acquiring_terminal_count": 0,
+          "retargeting_terminal_count": 0,
+          "setup_connection_count": 0,
+          "setup_reserved_terminal_count": 0,
+          "setup_terminal_count": 0,
+          "t_s": 0.0
+        },
+        {
+          "K_active_admissible": 1,
+          "K_draining": 0,
+          "acquiring_terminal_count": 0,
+          "retargeting_terminal_count": 0,
+          "setup_connection_count": 0,
+          "setup_reserved_terminal_count": 0,
+          "setup_terminal_count": 0,
+          "t_s": 9.0
+        }
+      ],
+      "M_D_bit_s": 278655.96086414147,
+      "N": 31217.767146556987,
+      "Q": 0.0,
+      "R_del": 0.994218932009897,
+      "accepted_measurement": true,
+      "action": "HOLD",
+      "age_cursor": 50,
+      "age_time_s": "9",
+      "execution_dwell_s": {
+        "ACQUIRING": 0.0,
+        "ACTIVE": 18.0,
+        "DRAINING": 0.0,
+        "IDLE": 2862.0,
+        "RETARGETING": 0.0
+      },
+      "mean_delay_error_bound_s": 3.827114032273576e-14,
+      "mean_delivered_fluid_delay_s": 0.0519030105484534,
+      "note": "ENGINEERING_CHECKPOINT",
+      "time_s": 9.0
+    },
+    {
+      "A": 3600000.0,
+      "D": 3598758.711573384,
+      "DeltaE_0_t_J": 710.0,
+      "E_0_t_J": 10310.0,
+      "I": 1241.2884276879486,
+      "J_0_t_bit_s": 126847.80472581435,
+      "K_time_series": [
+        {
+          "K_active_admissible": 1,
+          "K_draining": 0,
+          "acquiring_terminal_count": 0,
+          "retargeting_terminal_count": 0,
+          "setup_connection_count": 0,
+          "setup_reserved_terminal_count": 0,
+          "setup_terminal_count": 0,
+          "t_s": 0.0
+        },
+        {
+          "K_active_admissible": 1,
+          "K_draining": 0,
+          "acquiring_terminal_count": 0,
+          "retargeting_terminal_count": 2,
+          "setup_connection_count": 1,
+          "setup_reserved_terminal_count": 2,
+          "setup_terminal_count": 2,
+          "t_s": 3.0
+        },
+        {
+          "K_active_admissible": 1,
+          "K_draining": 0,
+          "acquiring_terminal_count": 2,
+          "retargeting_terminal_count": 0,
+          "setup_connection_count": 1,
+          "setup_reserved_terminal_count": 2,
+          "setup_terminal_count": 2,
+          "t_s": 3.5
+        },
+        {
+          "K_active_admissible": 2,
+          "K_draining": 0,
+          "acquiring_terminal_count": 0,
+          "retargeting_terminal_count": 0,
+          "setup_connection_count": 0,
+          "setup_reserved_terminal_count": 0,
+          "setup_terminal_count": 0,
+          "t_s": 4.0
+        },
+        {
+          "K_active_admissible": 2,
+          "K_draining": 0,
+          "acquiring_terminal_count": 0,
+          "retargeting_terminal_count": 0,
+          "setup_connection_count": 0,
+          "setup_reserved_terminal_count": 0,
+          "setup_terminal_count": 0,
+          "t_s": 6.0
+        }
+      ],
+      "M_D_bit_s": null,
+      "N": 1241.2884277067496,
+      "Q": 1.8801188161887694e-08,
+      "R_del": 0.9996551976592732,
+      "accepted_measurement": false,
+      "action": "ADD",
+      "age_cursor": 44,
+      "age_time_s": "3",
+      "execution_dwell_s": {
+        "ACQUIRING": 1.0,
+        "ACTIVE": 16.0,
+        "DRAINING": 0.0,
+        "IDLE": 1902.0,
+        "RETARGETING": 1.0
+      },
+      "mean_delay_error_bound_s": null,
+      "mean_delivered_fluid_delay_s": null,
+      "note": "ADD is rejected raw observation at t6; age ledger remains t3, final delay unavailable",
+      "time_s": 6.0
+    }
+  ],
+  "full_horizon_pair_comparison_valid": false,
+  "paper_performance_comparison_claimed": false,
+  "same_intended_horizon": true
+}

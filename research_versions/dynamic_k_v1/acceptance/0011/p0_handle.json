@@ -1,0 +1,11 @@
+{
+  "errors": [],
+  "failures": [],
+  "frozen_test_source_unmodified": true,
+  "mode": "handle",
+  "output": "test_01_idle_and_existing_ACTIVE_analytic_energy (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_02_ADD_real_setup_energy_K_and_delivery (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_03_ZERO_keeps_backlog_and_original_age (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_04_causal_twins_all_scores_and_graph (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_05_candidate_order_independence_and_root_checkpoint (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_06_prefix_multi_rate_fifo_and_inflight_preserved (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_07_pending_setup_natural_expiry_committed (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_08_DROP_keeps_TX_DRAINING_and_inflight (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_09_REPLACE_BBM_and_MBB_and_real_release (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_10_illegal_ADD_no_hidden_release (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_11_same_action_independent_true_execution_every_field (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_12_end_clip_three_second_cadence (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_13_foreign_oracle_alias_rejected (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_14_partial_delivery_conditional_age_identity (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_15_small_domain_counts_and_physical_absence (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_16_cost_parameter_and_zero_mean_validation (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_17_same_action_ADD_DROP_REPLACE_independent_fields (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_18_continuous_non_grid_events_and_multihop (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_19_future_source_deepcopy_and_reads_poisoned (p0r_frozen_tests_handle.P0Tests) ... ok\ntest_20_manual_future_rate_injection_rejected (p0r_frozen_tests_handle.P0Tests) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 59.525s\n\nOK\n",
+  "skipped": [],
+  "status": "PASS",
+  "tests_run": 20,
+  "wallclock_s": 59.524936999999994
+}

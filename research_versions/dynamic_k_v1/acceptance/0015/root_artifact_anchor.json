@@ -1,0 +1,85 @@
+{
+  "files": [
+    {
+      "byte_count": 278294,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0015\\replay_recipe.json",
+      "sha256": "dac8cc22b8bea4e303f118a1cf38170cb1ab2f96e218c9b593be0af82885e0c6"
+    },
+    {
+      "byte_count": 1368502,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0015\\ROOT_BASELINE\\LIVE_PRE_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "ef8183d6f4b46f1096af42ff3ee13d338cdf79d69ad6c546c44356cf7c802494"
+    },
+    {
+      "byte_count": 25884777,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0015\\ROOT_BASELINE\\LIVE_PRE_ACTION_FULL_STATE.json",
+      "sha256": "bce3233875f5b41c04b4127c5167b576ddde9ce344270c25ab1ff9c2ad4d80f1"
+    },
+    {
+      "byte_count": 203290,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0015\\ROOT_BASELINE\\LIVE_PRE_ACTION_SUMMARY.json",
+      "sha256": "917680344345afe8e3697c1e5ccb7384d51cde6d371cedd2cabe6c067110ed95"
+    },
+    {
+      "byte_count": 891358,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0015\\ROOT_BASELINE\\prefix_audit\\boundaries.jsonl",
+      "sha256": "1d6316fd6e77ed3400885d65c9d88dea79c64eff99149bce4a1b93e811d0ea01"
+    },
+    {
+      "byte_count": 400970,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0015\\ROOT_BASELINE\\prefix_audit\\intervals.jsonl",
+      "sha256": "a1d84254bd33e426b751977e3368f848d1008570ddfef3b1b716660eb7711343"
+    },
+    {
+      "byte_count": 16690,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0015\\ROOT_BASELINE\\prefix_audit\\next_events.jsonl",
+      "sha256": "38ca720eda33fbdc4e23c09ca420598af76f825b33552e50892d1987cbc6480c"
+    },
+    {
+      "byte_count": 2230532,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0015\\ROOT_BASELINE\\prefix_audit\\operations.jsonl",
+      "sha256": "44bc254e91c56420e9c837fbd500de5ffba12027d72d21b5a898a5932f55fe44"
+    },
+    {
+      "byte_count": 21484,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0015\\ROOT_BASELINE\\prefix_audit\\summary.json",
+      "sha256": "a4eefa430119cadf9d1e23d739cebcc6c735a4e968759d7c5bf56294c33fc277"
+    },
+    {
+      "byte_count": 462,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0015\\ROOT_BASELINE\\root_binding.json",
+      "sha256": "cef9d1cde2b47a052e082dacf79cada0e2406579fdf7b5668e36036d978f8d45"
+    },
+    {
+      "byte_count": 25762439,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0015\\ROOT_BASELINE\\ROOT_FULL_STATE.json",
+      "sha256": "378f0d77e8881dd1873f50e855526c259da5daf29d14835382ed2646db686541"
+    },
+    {
+      "byte_count": 1368502,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0015\\ROOT_BASELINE\\SANITIZED_PRE_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "ef8183d6f4b46f1096af42ff3ee13d338cdf79d69ad6c546c44356cf7c802494"
+    },
+    {
+      "byte_count": 24120661,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0015\\ROOT_BASELINE\\SANITIZED_PRE_ACTION_FULL_STATE.json",
+      "sha256": "6dadb4a04ad09ebba12127a61e7deef4d1078a906b1e28a26157f703a051cef0"
+    },
+    {
+      "byte_count": 203295,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0015\\ROOT_BASELINE\\SANITIZED_PRE_ACTION_SUMMARY.json",
+      "sha256": "4b5c1121918a8becebb3c69d8d085c2aebc4670d7b8b54eaab554220f5404d98"
+    },
+    {
+      "byte_count": 92,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0015\\VARIANT_BINDING.json",
+      "sha256": "870c02e8c53ffd697357612cc4aeb5c9407092699cc3f5c8a3b73e2d82d52a6f"
+    },
+    {
+      "byte_count": 42292,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0015\\variant_dependencies.json",
+      "sha256": "4fe35f65dfce934c2ec6ab4daadc6856ebea9f5a7c072e8aa794cf23a3e7df59"
+    }
+  ],
+  "schema": "p0f_new_root_artifact_anchor_v1"
+}

@@ -1,0 +1,37 @@
+{
+  "analytic_cases": {
+    "TX_draining_3_to_5_h6_increment_J": 160,
+    "existing_active_pair_h6_energy_J": 10080,
+    "free_pair_ADD_h6_increment_J": 470,
+    "idle_h6_energy_J": 9600,
+    "no_delivery_mean": null
+  },
+  "compared_fields": [
+    "entire_D2_business_state_except_equivalent_exogenous_cursor_and_audit_initial_hash",
+    "all_Fifo_cohort_distributions_and_state",
+    "all_energy_ledger_state",
+    "all_original_measurement_fields"
+  ],
+  "complete_real160_epoch_accepted": false,
+  "failed_initial_attempt": {
+    "byte_count": 5730,
+    "path": "research_versions/dynamic_k_v1/acceptance/0010/attempt01/p0_tests.json",
+    "sha256": "5314298d5ccd7017a1b46d360ce42313731e22b553c9c28306ffc639131aca8e"
+  },
+  "full_suite_cases": 19,
+  "initial_failure_cause": "LocalFIFO identity comparison; full value encoding repaired, no tolerances changed",
+  "midpoint_approximation_used": false,
+  "numerical_tolerances_changed": false,
+  "real160_new_scoring_integration": "ONE_COMPLETED_PERSIST_HOLD_BRANCH_ONLY",
+  "same_action_reference": [
+    "HOLD",
+    "ADD",
+    "DROP",
+    "REPLACE_BBM",
+    "REPLACE_MBB"
+  ],
+  "status": "PASS_TARGETED_ENGINEERING_CASES",
+  "targeted_reexecutions": 5,
+  "total_passed_executions": 24,
+  "unique_case_count": 20
+}

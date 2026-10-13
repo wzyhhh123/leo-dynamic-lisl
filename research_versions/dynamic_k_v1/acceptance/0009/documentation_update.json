@@ -1,0 +1,202 @@
+{
+  "baseline_modified": false,
+  "changes": [
+    {
+      "after": {
+        "byte_count": 7333,
+        "sha256": "d31ba8a5361960520c47c186a5b372dd648777fc2b6f7f799522d073953e60b9"
+      },
+      "before": {
+        "byte_count": 2251,
+        "sha256": "905a689bdfc027fd904c5cbe8f1bbd3a907232b3a9f0e47349bb3119f8a7b72d"
+      },
+      "path": "README.md"
+    },
+    {
+      "after": {
+        "byte_count": 13302,
+        "sha256": "0625e61cc010fb885de5ba3e1dfaee529f495c78c0d7bca94db23ff9aba57044"
+      },
+      "before": {
+        "byte_count": 12527,
+        "sha256": "ff378e7f3339b6ce2febf1109c73941d0c7f3ceeac65f2b49f9c1af5758db4c3"
+      },
+      "path": "research_versions/dynamic_k_v1/README_CN.md"
+    }
+  ],
+  "checked_local_links": [
+    {
+      "document": "README.md",
+      "target": "research_versions/dynamic_k_v1/README_CN.md"
+    },
+    {
+      "document": "README.md",
+      "target": "research_versions/dynamic_k_v1/acceptance/0007/RESULT_CN.md"
+    },
+    {
+      "document": "README.md",
+      "target": "research_versions/dynamic_k_v1/acceptance/0007/K_TIMELINES_CN.md"
+    },
+    {
+      "document": "README.md",
+      "target": "research_versions/dynamic_k_v1/contracts/N3_CLOSED_LOOP_BASELINES_CN.md"
+    },
+    {
+      "document": "README.md",
+      "target": "research_versions/dynamic_k_v1/configs/n3_baseline_semantics_v1.json"
+    },
+    {
+      "document": "README.md",
+      "target": "research_versions/dynamic_k_v1/runtime/n2_controller.py"
+    },
+    {
+      "document": "README.md",
+      "target": "research_versions/dynamic_k_v1/acceptance/0007/catalog_boundary_audit.json"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "configs/current.json"
+    },
+    {
+      "document": "README.md",
+      "target": "research_versions/dynamic_k_v1/contracts/ROOT_README_DOCUMENTATION_CHANGE_CN.md"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/acceptance/0007/RESULT_CN.md"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/acceptance/0007/K_TIMELINES_CN.md"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/contracts/N3_CLOSED_LOOP_BASELINES_CN.md"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/configs/n3_baseline_semantics_v1.json"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/revisions/0007/record.json"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/tools/version_control_readme_v1.py"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "README.md"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/revisions/0003/record.json"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/acceptance/0004/RESULT_CN.md"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/acceptance/0005/RESULT_CN.md"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/acceptance/0006/RESULT_CN.md"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/acceptance/0007/RESULT_CN.md"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/runtime/n1a.py"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/runtime/n1b_evaluator.py"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/runtime/n2_controller.py"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/runtime/n2_candidates.py"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/runtime/n3_baselines.py"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/acceptance/0007/catalog_boundary_audit.json"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/acceptance/0007/paired_metrics.json"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/acceptance/0007/attempt02/engineering_examples.json"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/acceptance/0007/attempt02/acceptance_summary.json"
+    },
+    {
+      "document": "research_versions/dynamic_k_v1/README_CN.md",
+      "target": "research_versions/dynamic_k_v1/contracts/ROOT_README_DOCUMENTATION_CHANGE_CN.md"
+    }
+  ],
+  "client_date_asia_shanghai": "2026-10-12",
+  "engineering_tests_rerun": false,
+  "formal_experiments_executed": false,
+  "local_links_count": 32,
+  "original_verifier_modified": false,
+  "pre_edit_full_verification": {
+    "excluded_file_count": 202,
+    "revision_id": "0008",
+    "revision_record_sha256": "0ab864c1bc8eaf8b3e746cf68df2e32f2924b91a07c316c25f3bc0d220b9bbbc",
+    "source": "actual original read-only verifier output before any 0009 files or README changes",
+    "status": "PASS",
+    "verified_file_count": 5952,
+    "version_record_sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+  },
+  "protection_tests": 32,
+  "scientific_gate_pass": false,
+  "simulation_executed": false,
+  "status": "PASS_DOCUMENTATION_AND_PROTECTION_CHECKS_ONLY",
+  "training_executed": false,
+  "unchanged_N3_implementation_bindings": {
+    "anchors": {
+      "baseline_seal": {
+        "byte_count": 656,
+        "path": "research_versions/dynamic_k_v1/baselines/legacy_baseline_20261010T030541_607456Z/seal.json",
+        "sha256": "2c4d329a9fa2839ab181115e97a75a3dabfb6472961b69909f6b789ec04a6f4f"
+      },
+      "parent_revision": {
+        "byte_count": 9504,
+        "path": "research_versions/dynamic_k_v1/revisions/0006/record.json",
+        "sha256": "417e46baf6d3d7c8846af61131952739275c9b22bd1d468cc28e649b3c82dd18"
+      },
+      "version_origin": {
+        "byte_count": 1555,
+        "path": "research_versions/dynamic_k_v1/version_record.json",
+        "sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+      }
+    },
+    "candidate_revision_id": "0007",
+    "implementation_manifest": {
+      "byte_count": 25957,
+      "path": "research_versions/dynamic_k_v1/acceptance/0007/implementation_manifest_attempt02.json",
+      "sha256": "dbc7e0d54d6d9bb864ec216a0b7c6cd1b86ec6353ed3ab41a3c3c64b471b9129"
+    },
+    "scope": "ENGINEERING_TEST_ONLY"
+  }
+}

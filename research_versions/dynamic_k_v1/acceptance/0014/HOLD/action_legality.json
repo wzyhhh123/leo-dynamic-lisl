@@ -1,0 +1,9 @@
+{
+  "accepted": true,
+  "full_catalog_enumeration": false,
+  "mode": "HOLD",
+  "reason": null,
+  "requested_action": {
+    "kind": "HOLD"
+  }
+}

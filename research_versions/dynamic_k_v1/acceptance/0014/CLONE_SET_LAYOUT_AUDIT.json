@@ -1,0 +1,30 @@
+{
+  "explanation": "Frozen deepcopy rebuilds sets and can change iteration layout. Both branch PRE_ACTION states are identical; source causal hash uses sorted sets. Supplemental offline comparison preserves every other order, value, type and alias; it is not a new primary root hash or a tolerance relaxation.",
+  "new_simulation_runs": 0,
+  "paired_HOLD_ADD_PRE_ACTION_every_field_equal": true,
+  "paired_PRE_ACTION_complete_sha256": "f32c018dc5596429415d8420cc288b816eb45fabafffd6fd997f10b69cbdb92f",
+  "primary_hashes_replaced": false,
+  "primary_source_vs_clone_first_difference": {
+    "actual": "X0_31",
+    "expected": "X1_39",
+    "path": "$.objects[8451].items[0][1]"
+  },
+  "primary_source_vs_clone_raw_state_equal": false,
+  "root_reconstruction_primary_equality_was_full_and_exact": true,
+  "root_source_complete_sha256": "42f133cb5cbf54f785caa1dab9a68e8fdb118256ad80227c844a953981262149",
+  "source_set_nodes": [
+    {
+      "index": 8450,
+      "item_count": 320,
+      "type": "builtins.frozenset"
+    },
+    {
+      "index": 18023,
+      "item_count": 320,
+      "type": "builtins.set"
+    }
+  ],
+  "state_modified": false,
+  "supplementary_first_difference": null,
+  "supplementary_set_semantic_graph_every_field_equal": true
+}

@@ -1,0 +1,76 @@
+{
+  "files": [
+    {
+      "byte_count": 277543,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\replay_recipe.json",
+      "sha256": "da5c7ddfade01045cdea1f787e3802fe75d56d16c5ca8c0b5c86c3e050551916"
+    },
+    {
+      "byte_count": 1368252,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\ROOT_BASELINE\\LIVE_PRE_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "1a6a346c324c6a9d34721ba1d049ac4ea5de62036a62d1a89d17a02255cb5fb3"
+    },
+    {
+      "byte_count": 25884170,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\ROOT_BASELINE\\LIVE_PRE_ACTION_FULL_STATE.json",
+      "sha256": "1559fdd71adbbb3e9154ce1a76032462b0320c4040e3cfde2d14f98e31d2e349"
+    },
+    {
+      "byte_count": 203472,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\ROOT_BASELINE\\LIVE_PRE_ACTION_SUMMARY.json",
+      "sha256": "271a6fb35525d278a52f3335c200a790eb17f7ce3e8be2be587115691419ba7c"
+    },
+    {
+      "byte_count": 891372,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\ROOT_BASELINE\\prefix_audit\\boundaries.jsonl",
+      "sha256": "38d46e61f8b5440fa826a7edbb3b7755956b40f2b363bb3e65f6b22b759f43e5"
+    },
+    {
+      "byte_count": 400970,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\ROOT_BASELINE\\prefix_audit\\intervals.jsonl",
+      "sha256": "a1d84254bd33e426b751977e3368f848d1008570ddfef3b1b716660eb7711343"
+    },
+    {
+      "byte_count": 16690,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\ROOT_BASELINE\\prefix_audit\\next_events.jsonl",
+      "sha256": "38ca720eda33fbdc4e23c09ca420598af76f825b33552e50892d1987cbc6480c"
+    },
+    {
+      "byte_count": 2230532,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\ROOT_BASELINE\\prefix_audit\\operations.jsonl",
+      "sha256": "44bc254e91c56420e9c837fbd500de5ffba12027d72d21b5a898a5932f55fe44"
+    },
+    {
+      "byte_count": 21498,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\ROOT_BASELINE\\prefix_audit\\summary.json",
+      "sha256": "11e2d83c5edcd86d872a7c07a23a0776d9089af30b7be8307b39c8228c2480a4"
+    },
+    {
+      "byte_count": 443159,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\ROOT_BASELINE\\root_binding.json",
+      "sha256": "e5f2ac0f041038cacd5c625b25606f3d8b3097d06114c4c1f1bbd360c0178651"
+    },
+    {
+      "byte_count": 25761556,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\ROOT_BASELINE\\ROOT_FULL_STATE.json",
+      "sha256": "6962d1ff0f2e72d696b7663479eb17644548c9168bd623aee718eec453d52bd5"
+    },
+    {
+      "byte_count": 1368252,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\ROOT_BASELINE\\SANITIZED_PRE_ACTION_CAUSAL_PREIMAGE.json",
+      "sha256": "1a6a346c324c6a9d34721ba1d049ac4ea5de62036a62d1a89d17a02255cb5fb3"
+    },
+    {
+      "byte_count": 24120054,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\ROOT_BASELINE\\SANITIZED_PRE_ACTION_FULL_STATE.json",
+      "sha256": "b2e231e8d2b753b9093e72bb7d17522e70acfd9a2e1a8c2c9506ea1643347860"
+    },
+    {
+      "byte_count": 203477,
+      "path": "D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0014\\ROOT_BASELINE\\SANITIZED_PRE_ACTION_SUMMARY.json",
+      "sha256": "8df6a873908357670e56b5792b12dbc26e7a261833666c9ecc09f339a728bbac"
+    }
+  ],
+  "schema": "p0e_independent_root_artifact_anchor_v1",
+  "scope": "New scenario root, original 0011 anchor not used or replaced"
+}

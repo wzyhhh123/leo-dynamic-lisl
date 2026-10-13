@@ -1,0 +1,144 @@
+"""Append-only P0 engineering workflow; never runs the paired pilot matrix."""
+import argparse,hashlib,importlib.util,io,json,sys,time,unittest,subprocess
+from pathlib import Path
+from datetime import datetime,timezone,timedelta
+V=Path(__file__).resolve().parents[2];P=V.parents[1];A=Path(__file__).parent
+sys.path.insert(0,str(V));sys.path.insert(0,str(P/'src'))
+ORIGIN='ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691'
+PARENT='bd54f8efb78375acca995b8ed43f5ccbfb4be80228d46eb2ca2ab5e954d86342'
+NS='research_versions/dynamic_k_v1/'
+
+def load(name,path):
+    s=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
+vc=load('p0_version',V/'tools/version_control_readme_v1.py')
+from runtime.bindings import EngineeringBinding
+from runtime.n1b_evaluator import N1bEvidenceBinding
+from runtime.n2_binding import N2EvidenceBinding
+from runtime.n3_baselines import N3EvidenceBinding
+from runtime.n4_p0 import P0EvidenceBinding
+
+def write(p,x):
+    p.parent.mkdir(parents=True,exist_ok=True)
+    with p.open('x',encoding='utf-8',newline='\n') as f:
+        if isinstance(x,str):f.write(x)
+        else:json.dump(x,f,ensure_ascii=False,sort_keys=True,indent=2,allow_nan=False);f.write('\n')
+def bind(p):return vc.binding(P,p.relative_to(P).as_posix())
+def dependencies():
+    out=[]
+    for rev,cls,name,h in [('0004',EngineeringBinding,'implementation_manifest.json','227043a6bcf318846bbc2e854130613b49082ef6a7e17f3913160f24f40456ad'),
+        ('0005',N1bEvidenceBinding,'implementation_manifest.json','c27ac2866d4bfd12a8384bd91a990f841daad45a7079230301d1aaef4436031a'),
+        ('0006',N2EvidenceBinding,'implementation_manifest.json','34e3412da99a96c58fe603af5de69777d69e0e2bc292fba4cbd3cfca8acb0b4a'),
+        ('0007',N3EvidenceBinding,'implementation_manifest_attempt02.json','dbc7e0d54d6d9bb864ec216a0b7c6cd1b86ec6353ed3ab41a3c3c64b471b9129')]:
+        b=cls(P,NS+'acceptance/'+rev+'/'+name,h);b.verify();out.append(b)
+    return out
+
+def fixtures():
+    f=load('p0_n3_fixtures',V/'tests/test_n3_baselines.py');f.N1A_BINDING,f.N1B_BINDING,f.N2_BINDING,f.N3_BINDING=dependencies();return f
+
+class Progress(unittest.TextTestResult):
+    def startTest(self,t):print('START '+str(t),flush=True);super().startTest(t)
+    def stopTest(self,t):print('DONE '+str(t),flush=True);super().stopTest(t)
+def test_module(m):
+    stream=io.StringIO();start=time.perf_counter()
+    r=unittest.TextTestRunner(stream=stream,verbosity=2,resultclass=Progress).run(unittest.defaultTestLoader.loadTestsFromModule(m))
+    return dict(status='PASS' if r.wasSuccessful() else 'FAIL',tests_run=r.testsRun,
+        failures=[dict(test=str(t),traceback=s) for t,s in r.failures],errors=[dict(test=str(t),traceback=s) for t,s in r.errors],
+        skipped=[dict(test=str(t),reason=s) for t,s in r.skipped],output=stream.getvalue(),wallclock_s=time.perf_counter()-start)
+
+def prepare(name):
+    manifest_name=name
+    deps=dependencies();assert vc.binding(P,NS+'revisions/0007/record.json')['sha256']=='f58cc5eb037eaf6ee804c9aa1c5ec54f38894d00ca0d715f8b7baae8a47e06db'
+    assert vc.binding(P,NS+'revisions/0009/record.json')['sha256']==PARENT
+    if not (A/'pre_implementation_verification.json').exists():
+        write(A/'pre_implementation_verification.json',dict(status='PASS',revision_id='0009',verified_file_count=5966,
+            baseline_file_count=5810,excluded_file_count=202,expected_version_sha256=ORIGIN,expected_revision_sha256=PARENT,
+            undeclared_changes=dict(added=[],modified=[],deleted=[],possible_renames=[]),
+            source='actual full verifier command output before creating P0 assets in this turn',
+            dependency_verifications=[b.verify() for b in deps],scientific_gate_pass=False))
+    c=V/'configs/n4_p0_pilot_semantics_v1.json'
+    if not c.exists():
+        write(c,dict(schema='dynamic_k_n4_p0_pilot_v1',status='PILOT_ONLY_NOT_SCIENCE_FROZEN',formal_experiments_authorized=False,
+            scientific_parameters={k:None for k in ('T_A_s','T_s','tau_res_s','R_min','alpha','D_ref_s','E_ref_J')},
+            formal_control_parameters=dict(decision_cadence_s=None,search_budget=None,maximum_concurrent_actions=None),
+            PILOT_ONLY=dict(T_s=30.,T_A_s=20.,H_s=6.,decision_cadence_s=3.,decision_epochs_s=list(range(0,30,3)),
+                retarget_a_s=.5,retarget_b_s=.5,acquisition_s=.5,lambda_N_s=6.,lambda_E_bit_s_per_J=1000.,
+                maximum_atomic_actions_per_epoch=1,maximum_scored_branches=7,
+                main_pilot_branch_upper_bound=840,sensitivity_extra_branch_upper_bound=1680,
+                all_branch_upper_bound=2520,main_branch_seconds_upper_bound=4788.,all_branch_seconds_upper_bound=14364.),
+            full_pilot_execution_authorized=False,gnn_training_authorized=False,current_state_greedy_implemented=False))
+    contract=V/'contracts/N4_P0_CAUSAL_ROOT_SCORING_CN.md'
+    if not contract.exists():
+        write(contract,'# N4-P0 因果动态 K 评分接缝\n\n仅工程实现。复用冻结 N1a/N1b/N2/N3，不改生产内核；旧 B4 不调用。\n'
+            '因果视图提供当前业务、终端、预约以及过去发射产生的承诺事件。观察日志构造真实历史注入前缀；deepcopy memo 在复制时替换真 trace 与边界，旧源与含旧源哈希的缓存结果不进入评分对象。\n'
+            'ZERO 仅令未来外生注入为零，PERSIST 延拓当前率。保留 Q/I/A/D、传播 agenda、setup/TX/自然到期、FIFO 与能耗游标；不重新出生 cohort。此为数据引用隔离，不是恶意 Python 的文件系统安全沙箱。\n'
+            'C=J_h+lambda_N*N_end+lambda_E*DeltaE_h；单位 bit·s，lambda_N 为 s，lambda_E 为 bit·s/J。原 320 终端积分；不重复计历史 J/E。\n'
+            'PILOT_ONLY T30/TA20/H6，决策周期3秒，epoch0,3,6,9,12,15,18,21,24,27；t27有效H3，其余H6。真实事件不对齐决策网格。每候选一次真实原子动作后保持，到原评价边界前结束。所有正式科学七参数及正式周期/预算继续null。\n'
+            '全部 N2 合法候选枚举后才保留至多7个，两个公开OD目标优先、字典序确定；REPLACE仍是N2既定生成范围。全部候选同根/同预测，按代价、HOLD平分优先、action_key选取。\n'
+            '本轮只新接缝验收及一个独立预测分支和一个完整epoch成本检查，不执行六场景24次或敏感性。\n')
+    old=Path('C:/Users/11656/.codex/visualizations/2026/10/10/01a123b2-70a3-7090-a938-138b860cbb46/pilot_preregistration_20261012T070653Z')
+    review=A/'pilot_review_3s'
+    if not review.exists():
+        hashes=[]
+        for p in sorted(old.glob('*.md')):
+            raw=p.read_bytes();target=A/'prior_pilot_drafts_1s'/p.name;target.parent.mkdir(exist_ok=True)
+            with target.open('xb') as f:f.write(raw)
+            hashes.append(dict(original_path=p.as_posix(),sha256=hashlib.sha256(raw).hexdigest(),snapshot=bind(target)))
+        write(A/'prior_pilot_draft_hashes.json',hashes)
+        common='状态：PILOT_ONLY / 未执行预实验 / 人工修订决策周期为3秒。旧1秒草案原字节及哈希保存在 ../prior_pilot_drafts_1s 和 ../prior_pilot_draft_hashes.json，原文件未覆盖。\n\n'
+        params='T=30 s，T_A=20 s，H=6 s，decision_cadence_s=3.0，epoch=(0,3,6,9,12,15,18,21,24,27)。所有四控制器共用该时间表；真实注入/传播/setup/释放仍按事件时间处理，不强行对齐。双端retarget各0.5 s，acquisition0.5 s，空闲ready=t+1 s。t0至t24的h=6 s，t27的h=3 s，预测均不越T。lambda_N=6 s，lambda_E=1000 bit·s/J。正式科学参数和正式周期/预算继续null。\n\n'
+        budgets='主计划6场景×2MPC×10epoch×最多7分支=840分支；每个候选累计h=9×6+3=57 s，主预测上限4788 branch-s。敏感性额外24个MPC运行=1680分支/9576 branch-s；全部2520分支/14364 branch-s，真实运行24或48次的T仍30 s。这里仅预算，均未执行且本轮无运行授权。\n\n'
+        names=['PILOT_PARAMETER_MANIFEST_DRAFT.md','PILOT_SCENARIO_MATRIX.md','MPC_INTERFACE_GAP_AUDIT.md','PILOT_ACCEPTANCE_CRITERIA.md']
+        for name in names:
+            extra=''
+            if name==names[0]:extra='除周期与随之改变的末端h/预算外，原功率、容差、容量C=10^6bit/s、敏感性单因素系数、因果ZERO/PERSIST及单位正确代价均不变。参考旧草案快照完整表；不读取未来TA截止来修正PERSIST。\n'
+            if name==names[1]:extra='保留六场景U-STABLE/U-SHORT/U-SUSTAIN/C-STABLE/C-SHORT/C-SUSTAIN；OD为f_bg:X0_1→X1_1，f_hot:X0_10→X1_10。背景200000bit/s，热点基础400000，短突发[8,10)为1200000，持续[8,20)为1200000。旧场景矩阵的完整2742行catalog、160固定环边、输入原字节哈希、U/C初态及小域保留规则全部不变。t8和t10突发边界不与epoch强制对齐。四臂仍为STATIC_HOLD/原N3 REACTIVE/MPC-ZERO/PERSIST，但四臂runner和预实验本轮不实现。\n'
+            if name==names[2]:extra='新版最小接口已进入独立工程实施：runtime/n4_p0.py，是否通过见../RESULT_CN.md。旧B4不调用，因果视图/前缀净化/同根同预测/N2评分接缝按原审计落实。原N3观察仍非完备预测状态；只读扩展已承诺setup/TX/传播/cohort，保留审计G29披露。计算成本本轮测量不靠旧B4推算。\n'
+            if name==names[3]:extra='原验收条目全部继续适用。单步预测误差改为t+min(3,h)的检查点，真实端取下一epoch提交新动作之前；6秒差异仍不能忽略下一次重决策。末端t27仅3秒，t30只评价不提交动作。历史/FIFO/能耗/守恒、候选顺序、净化双生、checkpoint及同动作真实推进逐字段检查不降级。本轮只工程测试、一个branch和一个epoch成本；非完整预实验PASS。\n'
+            write(review/name,'# '+name.removesuffix('.md')+' — 3秒审阅修订\n\n'+common+params+budgets+extra+'\n完整未变条目逐项继承对应旧快照，不覆盖原文；本修订只对周期、检查点、预算及本轮实施状态形成明确覆盖。\n')
+    paths=list((P/'src').rglob('*.py'))+list((V/'runtime').glob('*.py'))+list((V/'tests').glob('test_n*.py'))
+    paths += [c,contract,Path(__file__),A/'cost_measurement.py',A/'seal_revision.py']+list(review.glob('*.md'))
+    paths += [V/'acceptance'/b.manifest_path.split('/')[-2]/Path(b.manifest_path).name for b in deps]
+    paths += [P/'configs/hardware_gate_c_simplified_v1.json']+[P/'outputs/gate_c_simplified_20260922T064019_313843Z'/f for f in ('terminal_pair_intervals.jsonl','z_ref.json')]
+    paths += [P/'data/raw/sgp4_x720'/f for f in ('manifest.json','hashes.json','constellation.tle')]
+    version=vc.read_json(V/'version_record.json')
+    write(A/manifest_name,dict(schema='dynamic_k_n4_p0_candidate_v1',candidate_revision_id='0010',formal_experiments_authorized=False,
+        configuration_path=c.relative_to(P).as_posix(),files=[bind(p) for p in sorted(set(paths))],
+        anchors=dict(version_origin=bind(V/'version_record.json'),parent_revision=bind(V/'revisions/0009/record.json'),
+                     implementation_0007=bind(V/'revisions/0007/record.json'),baseline_seal=version['baseline_seal'])))
+    print(json.dumps(bind(A/manifest_name)),flush=True)
+
+def main():
+    parser=argparse.ArgumentParser();parser.add_argument('command',choices=('prepare','tests','regress','historical','cost','seal'))
+    parser.add_argument('--manifest',default='manifest_attempt01.json');parser.add_argument('--sha');parser.add_argument('--attempt',default='attempt01');args=parser.parse_args()
+    if args.command=='prepare':prepare(args.manifest);return 0
+    if args.command=='historical':
+        r=subprocess.run([sys.executable,'-B',str(V/'acceptance/0006/run_historical_regression.py'),str(A/'historical_regression.json')],
+            cwd=P,capture_output=True,text=True,encoding='utf-8')
+        write(A/'historical_execution.json',dict(command=r.args,returncode=r.returncode,stdout=r.stdout,stderr=r.stderr))
+        print(r.stdout,flush=True);return 0
+    assert args.sha,'Independent candidate hash required'
+    guard=P0EvidenceBinding(P,NS+'acceptance/0010/'+args.manifest,args.sha);guard.verify()
+    if args.command=='tests':
+        m=load('p0_tests',V/'tests/test_n4_p0.py');m.FIXTURES=fixtures();m.BINDING=guard
+        result=test_module(m);write(A/args.attempt/'p0_tests.json',result)
+        if result['status']!='PASS':
+            for p in (V/'runtime/n4_p0.py',V/'tests/test_n4_p0.py',Path(__file__)):
+                write(A/args.attempt/(p.name+'.snapshot'),p.read_text(encoding='utf-8'))
+        print(json.dumps({k:v for k,v in result.items() if k!='output'}),flush=True);return result['status']!='PASS'
+    if args.command=='regress':
+        b=dependencies();reports={}
+        for n,path,attrs in [('N1a','test_n1a.py',('EVIDENCE',)),('N1b','test_n1b_fifo.py',('N1A_BINDING','N1B_BINDING')),
+            ('N2','test_n2_actions.py',('N1A_BINDING','N1B_BINDING','N2_BINDING')),
+            ('N3','test_n3_baselines.py',('N1A_BINDING','N1B_BINDING','N2_BINDING','N3_BINDING'))]:
+            m=load('p0_regression_'+n,V/'tests'/path)
+            for a,v in zip(attrs,b):setattr(m,a,v)
+            reports[n]=test_module(m);write(A/('regression_'+n+'.json'),reports[n])
+        print(json.dumps({k:{x:y for x,y in v.items() if x!='output'} for k,v in reports.items()}),flush=True)
+        return not all(r['status']=='PASS' for r in reports.values())
+    if args.command=='cost':
+        from cost_measurement import run
+        return run(guard)
+    if args.command=='seal':
+        from seal_revision import seal
+        return seal(args.manifest,args.sha,args.attempt)
+if __name__=='__main__':sys.exit(main())

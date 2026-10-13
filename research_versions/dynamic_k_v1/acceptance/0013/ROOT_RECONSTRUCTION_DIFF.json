@@ -1,0 +1,406 @@
+{
+  "actual_sha256": "06f3803e0c74ca9ba4a45a04ac5efada773ad988e044f7323083cc3421fc2adb",
+  "age_field_differences": [
+    {
+      "current_length": null,
+      "current_type": "int",
+      "exact_multiset_equal": null,
+      "first_difference": null,
+      "original_length": null,
+      "original_type": "int",
+      "path": "$.age.cursor"
+    },
+    {
+      "current_length": 24,
+      "current_type": "str",
+      "exact_multiset_equal": null,
+      "first_difference": null,
+      "original_length": 25,
+      "original_type": "str",
+      "path": "$.age.mass_error_bound"
+    },
+    {
+      "current_length": 315,
+      "current_type": "list",
+      "exact_multiset_equal": false,
+      "first_difference": {
+        "current": [
+          [
+            "boundary",
+            "INTERVAL_END"
+          ],
+          [
+            "cohort_bits",
+            "7145582695152459375/4503599627370496"
+          ],
+          [
+            "difference_bits",
+            "401/4503599627370496"
+          ],
+          [
+            "key",
+            [
+              [
+                "X0_10",
+                "X0_9"
+              ],
+              "f_hot"
+            ]
+          ],
+          [
+            "legacy_bits",
+            "872263512591853/549755813888"
+          ],
+          [
+            "state",
+            "I"
+          ],
+          [
+            "time",
+            "2554160564200857/576460752303423488"
+          ]
+        ],
+        "index": 4,
+        "original": [
+          [
+            "boundary",
+            "INTERVAL_END"
+          ],
+          [
+            "cohort_bits",
+            "7981751763127678125/9007199254740992"
+          ],
+          [
+            "difference_bits",
+            "851/9007199254740992"
+          ],
+          [
+            "key",
+            [
+              [
+                "X0_1",
+                "X1_1"
+              ],
+              "f_bg"
+            ]
+          ],
+          [
+            "legacy_bits",
+            "3897339728089687/4398046511104"
+          ],
+          [
+            "state",
+            "I"
+          ],
+          [
+            "time",
+            "2554160564200857/576460752303423488"
+          ]
+        ]
+      },
+      "original_length": 338,
+      "original_type": "list",
+      "path": "$.age.roundoff_audit"
+    }
+  ],
+  "age_fields_exactly_equal": [
+    "MD",
+    "arrived",
+    "closure_audit",
+    "commodities",
+    "delivered",
+    "delivered_original_moment",
+    "flight",
+    "nodes",
+    "now",
+    "queue",
+    "scale",
+    "sent_mass",
+    "shift"
+  ],
+  "classifications": {
+    "A_INPUT": "REGISTERED_RAW_BYTES_UNCHANGED; PHYSICAL_AND_FORECAST_DIGESTS_EQUAL; original true-trace root checkpoint absent",
+    "B_NETWORK": "A_Q_I_D_AT_T3_AND_OBSERVATION_PREFIX_EQUAL; full native root UNVERIFIABLE",
+    "C_FIFO_ENERGY_HISTORY": "13 age fields equal; post-submit cursor/envelope differences explained; original full t3 energy UNVERIFIABLE",
+    "D_ORDER": "Real service observation prefix equal; audit ordering difference CONFIRMED; old process seed UNVERIFIABLE",
+    "E_HASH_METADATA": "roundoff_audit prefix is a permutation, order retained by original encode; confirmed fingerprint-sensitive difference, not proven exclusive cause",
+    "F_MISSING_EVIDENCE": "Original hash preimage and native checkpoint absent; 0012 actual hash absent; faithful full native recovery not established"
+  },
+  "conservation_root_cause": "UNRESOLVED",
+  "current_age_now": "3",
+  "equal_fields_do_not_establish_full_root_equivalence": true,
+  "exclusive_root_mismatch_cause": "UNVERIFIABLE",
+  "expected_sha256": "ba301c6b0d92b96b8490fe28b24322e254377aea01adffd0c368653daa3f01f6",
+  "first_localizable_difference": {
+    "current": [
+      [
+        "boundary",
+        "INTERVAL_END"
+      ],
+      [
+        "cohort_bits",
+        "7145582695152459375/4503599627370496"
+      ],
+      [
+        "difference_bits",
+        "401/4503599627370496"
+      ],
+      [
+        "key",
+        [
+          [
+            "X0_10",
+            "X0_9"
+          ],
+          "f_hot"
+        ]
+      ],
+      [
+        "legacy_bits",
+        "872263512591853/549755813888"
+      ],
+      [
+        "state",
+        "I"
+      ],
+      [
+        "time",
+        "2554160564200857/576460752303423488"
+      ]
+    ],
+    "index": 4,
+    "original": [
+      [
+        "boundary",
+        "INTERVAL_END"
+      ],
+      [
+        "cohort_bits",
+        "7981751763127678125/9007199254740992"
+      ],
+      [
+        "difference_bits",
+        "851/9007199254740992"
+      ],
+      [
+        "key",
+        [
+          [
+            "X0_1",
+            "X1_1"
+          ],
+          "f_bg"
+        ]
+      ],
+      [
+        "legacy_bits",
+        "3897339728089687/4398046511104"
+      ],
+      [
+        "state",
+        "I"
+      ],
+      [
+        "time",
+        "2554160564200857/576460752303423488"
+      ]
+    ],
+    "time_rational": "2554160564200857/576460752303423488",
+    "time_s": 0.004430762292133393
+  },
+  "first_observation_difference": null,
+  "future_forecast_not_run": true,
+  "missing_original_t3_fields": [
+    "terminal_snapshot",
+    "terminal_events",
+    "terminal_history",
+    "energy",
+    "receipts",
+    "whole_native_engine",
+    "whole_causal_view_state_json"
+  ],
+  "mixed_stage_differences_are_not_all_original_root_differences": true,
+  "native_replay_decision": "OPTION_2_ORIGINAL_NATIVE_ROOT_NOT_RECOVERABLE",
+  "new_observation_count": 43,
+  "observations_t0_t3_prefix_exactly_equal": true,
+  "original_age_now": "3",
+  "original_age_snapshot_stage": "POST_ADD_SAME_TIME_SETTLEMENT_THEN_T6_BASE_REJECTION",
+  "original_and_handle_saved_records_exactly_equal": true,
+  "original_full_hash_preimage": "NOT_SAVED_IN_INSPECTED_0011_EVIDENCE",
+  "original_native_root_recoverability": "ORIGINAL_NATIVE_ROOT_NOT_RECOVERABLE",
+  "original_observations_prefix_length": 43,
+  "stage_adjusted_audit_comparison": {
+    "bound_after_offline_stage_adjustment_exact_equal": true,
+    "energy_topology_samples_through_t3_exact_equal": false,
+    "event_prefix_comparisons": {
+      "graph_event_sequence": {
+        "exact_equal": true,
+        "new_filtered_count": 0,
+        "original_filtered_count": 0,
+        "status": "UNVERIFIABLE_TIMESTAMP_SCHEMA"
+      },
+      "route_changes": {
+        "exact_equal": true,
+        "new_filtered_count": 0,
+        "original_filtered_count": 0,
+        "status": "UNVERIFIABLE_TIMESTAMP_SCHEMA"
+      },
+      "route_state_events": {
+        "exact_equal": true,
+        "new_filtered_count": 2,
+        "original_filtered_count": 2,
+        "status": "COMPARED"
+      },
+      "terminal_event_sequence": {
+        "exact_equal": true,
+        "new_filtered_count": 0,
+        "original_filtered_count": 0,
+        "status": "UNVERIFIABLE_TIMESTAMP_SCHEMA"
+      },
+      "timeline": {
+        "exact_equal": true,
+        "new_filtered_count": 22,
+        "original_filtered_count": 22,
+        "status": "COMPARED"
+      }
+    },
+    "first_localizable_difference": {
+      "current": [
+        [
+          "boundary",
+          "INTERVAL_END"
+        ],
+        [
+          "cohort_bits",
+          "7145582695152459375/4503599627370496"
+        ],
+        [
+          "difference_bits",
+          "401/4503599627370496"
+        ],
+        [
+          "key",
+          [
+            [
+              "X0_10",
+              "X0_9"
+            ],
+            "f_hot"
+          ]
+        ],
+        [
+          "legacy_bits",
+          "872263512591853/549755813888"
+        ],
+        [
+          "state",
+          "I"
+        ],
+        [
+          "time",
+          "2554160564200857/576460752303423488"
+        ]
+      ],
+      "index": 4,
+      "original": [
+        [
+          "boundary",
+          "INTERVAL_END"
+        ],
+        [
+          "cohort_bits",
+          "7981751763127678125/9007199254740992"
+        ],
+        [
+          "difference_bits",
+          "851/9007199254740992"
+        ],
+        [
+          "key",
+          [
+            [
+              "X0_1",
+              "X1_1"
+            ],
+            "f_bg"
+          ]
+        ],
+        [
+          "legacy_bits",
+          "3897339728089687/4398046511104"
+        ],
+        [
+          "state",
+          "I"
+        ],
+        [
+          "time",
+          "2554160564200857/576460752303423488"
+        ]
+      ],
+      "time_rational": "2554160564200857/576460752303423488",
+      "time_s": 0.004430762292133393
+    },
+    "forecast_digest_exact_equal": true,
+    "historical_bound_minus_post_submit_tail": "3600151/1125899906842624",
+    "historical_pre_submit_audit_prefix_length": 315,
+    "historical_prefix_exact_multiset_equal": true,
+    "historical_prefix_exact_order_equal": false,
+    "new_bound": "3600151/1125899906842624",
+    "new_observation_count": 43,
+    "new_root_cursor": 43,
+    "new_root_roundoff_count": 315,
+    "no_old_or_new_native_state_modified": true,
+    "no_second_root_constructed": true,
+    "observation_prefix_exact_equal": true,
+    "original_0012_actual_root_hash_unverifiable": true,
+    "original_bound": "10978471/2251799813685248",
+    "original_extra_observation": {
+      "emitted_event_count": 0,
+      "index": 43,
+      "kind": "SCHEDULE",
+      "old_rates_equal_new": true,
+      "time": 3.0
+    },
+    "original_full_root_equivalence_claimed": false,
+    "original_full_roundoff_count": 338,
+    "original_snapshot_cursor": 44,
+    "original_snapshot_now": "3",
+    "physical_input_digest_exact_equal": true,
+    "prefix_extraction_basis": "Identical complete t0-t3 observation prefix; appended t3 SCHEDULE; Atomic.submit calls advance_to(now); 22 FINAL plus one REPORTED_DELIVERY item at t3",
+    "raw_A_Q_I_D_at_last_t3_interval_exact_equal": true,
+    "raw_A_Q_I_D_totals_bits": {
+      "A": 1800000.0,
+      "D": 1768782.232853443,
+      "I": 31217.767146556987,
+      "Q": 0.0
+    },
+    "root_age_scientific_fields_exact_equal": [
+      "MD",
+      "arrived",
+      "closure_audit",
+      "commodities",
+      "delivered",
+      "delivered_original_moment",
+      "flight",
+      "nodes",
+      "now",
+      "queue",
+      "scale",
+      "sent_mass",
+      "shift"
+    ],
+    "source_snapshot_stage": "POST_ADD_SAME_TIME_SETTLEMENT_THEN_T6_BASE_REJECTION",
+    "tail_absolute_bound": "3778169/2251799813685248",
+    "tail_boundary_counts": {
+      "FINAL": 22,
+      "REPORTED_DELIVERY": 1
+    },
+    "tail_count": 23,
+    "tail_times": [
+      "3",
+      "3.0"
+    ]
+  },
+  "status": "STOP_ROOT_BINDING_MISMATCH"
+}

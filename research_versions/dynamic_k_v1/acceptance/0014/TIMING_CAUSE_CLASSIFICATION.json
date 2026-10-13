@@ -1,0 +1,317 @@
+{
+  "classifications": {
+    "A": "Ordinary floating update errors measured separately; not the dominant contribution",
+    "B": "A-(D+N) cancellation changes reported residual slightly; exact signed fsum remains beyond 1e-6",
+    "C": "Different aggregate formulas measured; none cures this failure",
+    "D": "18 scheduled rate events processed before their nominal timestamp, with exact per-edge pulse-bias evidence",
+    "E": "Observed numerical mass gain from I=max(0,total), not an unexplained duplicate transfer; complete expected-transfer net is zero",
+    "F": "D2 local abs tolerance .001 vs P0 global 1e-6; original stricter P0 rejection valid"
+  },
+  "event_bias_replaces_production_state": false,
+  "evidence_level": "OBSERVED_CALLS_AND_EXACT_BINARY_RATIONAL_DECOMPOSITION",
+  "first_threshold_edge": {
+    "clip_mass_gain": {
+      "approx": 5.165643415239174e-07,
+      "rational": "1135937/2199023255552"
+    },
+    "clip_minus_event_bias": {
+      "approx": -2.2737367544323206e-13,
+      "rational": "-1/4398046511104"
+    },
+    "early_event_arrival_bias": {
+      "approx": 5.165645688975928e-07,
+      "rational": "2271875/4398046511104"
+    },
+    "edge_commodity": [
+      [
+        "X0_9",
+        "X0_10"
+      ],
+      "f_hot"
+    ]
+  },
+  "observed_early_events": 18,
+  "observed_late_events": 0,
+  "original_0011_root_replay_or_exclusive_root_cause_claimed": false,
+  "per_edge_bias_and_clip": [
+    {
+      "clip_mass_gain": {
+        "approx": 8.481038094032556e-11,
+        "rational": "373/4398046511104"
+      },
+      "clip_minus_event_bias": {
+        "approx": 8.481038094032556e-11,
+        "rational": "373/4398046511104"
+      },
+      "early_event_arrival_bias": {
+        "approx": 0.0,
+        "rational": "0"
+      },
+      "edge_commodity": [
+        [
+          "X0_4",
+          "X0_3"
+        ],
+        "f_hot"
+      ]
+    },
+    {
+      "clip_mass_gain": {
+        "approx": 3.0468072509393096e-11,
+        "rational": "67/2199023255552"
+      },
+      "clip_minus_event_bias": {
+        "approx": 3.0468072509393096e-11,
+        "rational": "67/2199023255552"
+      },
+      "early_event_arrival_bias": {
+        "approx": 0.0,
+        "rational": "0"
+      },
+      "edge_commodity": [
+        [
+          "X0_9",
+          "X0_8"
+        ],
+        "f_hot"
+      ]
+    },
+    {
+      "clip_mass_gain": {
+        "approx": 7.185008144006133e-11,
+        "rational": "79/1099511627776"
+      },
+      "clip_minus_event_bias": {
+        "approx": 7.185008144006133e-11,
+        "rational": "79/1099511627776"
+      },
+      "early_event_arrival_bias": {
+        "approx": 0.0,
+        "rational": "0"
+      },
+      "edge_commodity": [
+        [
+          "X1_1",
+          "X1_2"
+        ],
+        "f_hot"
+      ]
+    },
+    {
+      "clip_mass_gain": {
+        "approx": 7.844391802791506e-12,
+        "rational": "69/8796093022208"
+      },
+      "clip_minus_event_bias": {
+        "approx": 7.844391802791506e-12,
+        "rational": "69/8796093022208"
+      },
+      "early_event_arrival_bias": {
+        "approx": 0.0,
+        "rational": "0"
+      },
+      "edge_commodity": [
+        [
+          "X1_4",
+          "X1_5"
+        ],
+        "f_hot"
+      ]
+    },
+    {
+      "clip_mass_gain": {
+        "approx": 5.60476109967567e-11,
+        "rational": "493/8796093022208"
+      },
+      "clip_minus_event_bias": {
+        "approx": 5.60476109967567e-11,
+        "rational": "493/8796093022208"
+      },
+      "early_event_arrival_bias": {
+        "approx": 0.0,
+        "rational": "0"
+      },
+      "edge_commodity": [
+        [
+          "X1_5",
+          "X1_6"
+        ],
+        "f_hot"
+      ]
+    },
+    {
+      "clip_mass_gain": {
+        "approx": 8.424194675171748e-11,
+        "rational": "741/8796093022208"
+      },
+      "clip_minus_event_bias": {
+        "approx": 8.424194675171748e-11,
+        "rational": "741/8796093022208"
+      },
+      "early_event_arrival_bias": {
+        "approx": 0.0,
+        "rational": "0"
+      },
+      "edge_commodity": [
+        [
+          "X1_6",
+          "X1_7"
+        ],
+        "f_hot"
+      ]
+    },
+    {
+      "clip_mass_gain": {
+        "approx": 1.389253156958148e-10,
+        "rational": "611/4398046511104"
+      },
+      "clip_minus_event_bias": {
+        "approx": 1.389253156958148e-10,
+        "rational": "611/4398046511104"
+      },
+      "early_event_arrival_bias": {
+        "approx": 0.0,
+        "rational": "0"
+      },
+      "edge_commodity": [
+        [
+          "X1_7",
+          "X1_8"
+        ],
+        "f_hot"
+      ]
+    },
+    {
+      "clip_mass_gain": {
+        "approx": 5.684341886080801e-13,
+        "rational": "5/8796093022208"
+      },
+      "clip_minus_event_bias": {
+        "approx": 5.684341886080801e-13,
+        "rational": "5/8796093022208"
+      },
+      "early_event_arrival_bias": {
+        "approx": 0.0,
+        "rational": "0"
+      },
+      "edge_commodity": [
+        [
+          "X0_2",
+          "X0_3"
+        ],
+        "f_hot"
+      ]
+    },
+    {
+      "clip_mass_gain": {
+        "approx": 9.235236575477757e-09,
+        "rational": "40617/4398046511104"
+      },
+      "clip_minus_event_bias": {
+        "approx": -1.8189894035458565e-12,
+        "rational": "-1/549755813888"
+      },
+      "early_event_arrival_bias": {
+        "approx": 9.237055564881302e-09,
+        "rational": "40625/4398046511104"
+      },
+      "edge_commodity": [
+        [
+          "X0_5",
+          "X0_6"
+        ],
+        "f_hot"
+      ]
+    },
+    {
+      "clip_mass_gain": {
+        "approx": 5.684330517397029e-08,
+        "rational": "499999/8796093022208"
+      },
+      "clip_minus_event_bias": {
+        "approx": -1.1368683772161603e-13,
+        "rational": "-1/8796093022208"
+      },
+      "early_event_arrival_bias": {
+        "approx": 5.6843418860808015e-08,
+        "rational": "15625/274877906944"
+      },
+      "edge_commodity": [
+        [
+          "X0_6",
+          "X0_7"
+        ],
+        "f_hot"
+      ]
+    },
+    {
+      "clip_mass_gain": {
+        "approx": 2.117409394486458e-07,
+        "rational": "1862493/8796093022208"
+      },
+      "clip_minus_event_bias": {
+        "approx": -7.958078640513122e-13,
+        "rational": "-7/8796093022208"
+      },
+      "early_event_arrival_bias": {
+        "approx": 2.1174173525650986e-07,
+        "rational": "465625/2199023255552"
+      },
+      "edge_commodity": [
+        [
+          "X0_7",
+          "X0_8"
+        ],
+        "f_hot"
+      ]
+    },
+    {
+      "clip_mass_gain": {
+        "approx": 2.955848685814999e-07,
+        "rational": "324999/1099511627776"
+      },
+      "clip_minus_event_bias": {
+        "approx": -9.094947017729282e-13,
+        "rational": "-1/1099511627776"
+      },
+      "early_event_arrival_bias": {
+        "approx": 2.955857780762017e-07,
+        "rational": "40625/137438953472"
+      },
+      "edge_commodity": [
+        [
+          "X0_8",
+          "X0_9"
+        ],
+        "f_hot"
+      ]
+    },
+    {
+      "clip_mass_gain": {
+        "approx": 5.165643415239174e-07,
+        "rational": "1135937/2199023255552"
+      },
+      "clip_minus_event_bias": {
+        "approx": -2.2737367544323206e-13,
+        "rational": "-1/4398046511104"
+      },
+      "early_event_arrival_bias": {
+        "approx": 5.165645688975928e-07,
+        "rational": "2271875/4398046511104"
+      },
+      "edge_commodity": [
+        [
+          "X0_9",
+          "X0_10"
+        ],
+        "f_hot"
+      ]
+    }
+  ],
+  "repair_implemented": false,
+  "repair_requires_separate_kernel_authorization": true,
+  "root_cause_for_this_new_scenario": "EARLY_PROPAGATION_RATE_EVENT_COALESCING_CAUSES_ARRIVAL_OVERRUN_THEN_INFLIGHT_ZERO_CLAMP",
+  "scenario_id": "P0E_0014_NEW_160_PERSIST_T3_SEED1414",
+  "tolerance_changed": false,
+  "unchanged_core_condition": "propagation_agenda[0].time_s <= self.now + 1e-12"
+}

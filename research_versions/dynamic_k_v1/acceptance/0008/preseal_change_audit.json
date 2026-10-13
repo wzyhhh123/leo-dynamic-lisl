@@ -1,0 +1,854 @@
+{
+  "changes_before_audit_file_creation": {
+    "added": [
+      {
+        "byte_count": 3888,
+        "path": "research_versions/dynamic_k_v1/acceptance/0008/README_CN.before.md",
+        "sha256": "16459c8401df6b085c3716f5ea3a8a373fcd04262130d6a652f9d5fdf733411a"
+      },
+      {
+        "byte_count": 4901,
+        "path": "research_versions/dynamic_k_v1/acceptance/0008/documentation_update.json",
+        "sha256": "d9641ba01d389a20ad9f8b16c01de99f3a451e6460c2538b15d8f777bd21f58f"
+      },
+      {
+        "byte_count": 6742,
+        "path": "research_versions/dynamic_k_v1/acceptance/0008/seal_documentation.py",
+        "sha256": "9e1bbe0280b20939b7766feba9c915ea614ac6d91252d7924d115f4f391b22b8"
+      }
+    ],
+    "deleted": [],
+    "modified": [
+      {
+        "after": {
+          "byte_count": 12527,
+          "sha256": "ff378e7f3339b6ce2febf1109c73941d0c7f3ceeac65f2b49f9c1af5758db4c3"
+        },
+        "before": {
+          "byte_count": 3888,
+          "sha256": "16459c8401df6b085c3716f5ea3a8a373fcd04262130d6a652f9d5fdf733411a"
+        },
+        "path": "research_versions/dynamic_k_v1/README_CN.md"
+      }
+    ],
+    "possible_renames": []
+  },
+  "engineering_source_contract_configuration_and_evidence_changes": [],
+  "excluded_file_count": 202,
+  "excluded_files": [
+    {
+      "path": ".idea/.gitignore",
+      "reason": "IDE_METADATA"
+    },
+    {
+      "path": ".idea/.name",
+      "reason": "IDE_METADATA"
+    },
+    {
+      "path": ".idea/dynamic_lisl_v2.iml",
+      "reason": "IDE_METADATA"
+    },
+    {
+      "path": ".idea/inspectionProfiles/profiles_settings.xml",
+      "reason": "IDE_METADATA"
+    },
+    {
+      "path": ".idea/misc.xml",
+      "reason": "IDE_METADATA"
+    },
+    {
+      "path": ".idea/modules.xml",
+      "reason": "IDE_METADATA"
+    },
+    {
+      "path": ".idea/vcs.xml",
+      "reason": "IDE_METADATA"
+    },
+    {
+      "path": ".idea/workspace.xml",
+      "reason": "IDE_METADATA"
+    },
+    {
+      "path": "archive/twobody_20260921/src/dynamic_lisl/__pycache__/__init__.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "archive/twobody_20260921/src/dynamic_lisl/__pycache__/gate_a.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "archive/twobody_20260921/src/dynamic_lisl/__pycache__/stk_gate_a.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "archive/twobody_20260921/tests/__pycache__/test_gate_a.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/__init__.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/absolute_time_regression.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/b4_branch_multiprocessing.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/b4_runtime_seal.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/baseline_controllers.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/candidate_proposer.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/commodity.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/common.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/common_router.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/controller_runner.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/ephemeris.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/f3_drain_continuation.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/f3_progress.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/forecast.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/gate_c_reference_topology.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/gate_c_simplified_feasibility.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/gate_c_terminal_geometry.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/gate_c_transition_report.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/gate_d2_fixtures.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/gate_d_metrics.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/gate_d_scenarios.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/gate_e1_experiments.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/gate_e2_enumeration.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/gate_e2_experiments.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/gate_e2_parallel.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/gate_f1_sanity.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/gate_f1_scientific_sanity.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/gate_f2_sanity.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/gate_f3_p1_evidence.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/gate_f3_p1_execution.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/geometry_interface.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/in_flight.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/load_aware_router.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/load_normalization.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/mechanism_validation.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/network_service_engine.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/operational_policy.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/outage_metrics.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/physical_feasibility.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/production_candidate_source.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/queue_state.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/reference_topology.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/rollout_clone.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/rollout_controller.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/rollout_evaluator.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/scenario_selection.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/scientific_controllers.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/scientific_snapshot.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/service_scheduler.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/sgp4_geometry.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/sgp4_model.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/terminal_executor.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/terminal_pair_intervals.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/traffic_trace.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/transition_profiler.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/transition_service_orchestrator.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/__pycache__/z_moderate_construction.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/__init__.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/batch_executor.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/batch_rollout.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/candidate_source.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/certified_topology.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/engineering_episode.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/episode_execution.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/epoch_validation.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/evidence.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/joint_action.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/joint_proposer.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/k0_audit_runner.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/k0_fixture.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/k0_independent_review.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/k0_ledger.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/k0_snapshot.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/k0_support.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/k1.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/manifest_review.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/matrix_execution.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/natural_engine.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/paper_figures.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/physical_trial.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/preflight.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/registered_runtime.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/result_analysis.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/search_policy_probe.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/service_adapter.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/snapshot_controllers.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/source_diagnostics.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/structural.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/tiny_diagnostics.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "src/dynamic_lisl/f3_v2/__pycache__/tiny_oracle.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/runtime_phase1_overlay.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_b4_branch_multiprocessing.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_b4_checkpoint_alignment.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_b4_decision_hash_reuse.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_b4_executor_successor.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_b4_lightweight_clone.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_b4_runtime_seal.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_batch_executor.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_certified_topology.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_engineering_episode.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_epoch_validation.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_evidence_preflight.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_joint_snapshot.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_k0_independent_review.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_k0_ledger.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_k0_orchestration.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_k0_snapshot.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_manifest_review.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_matrix_execution.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_natural_input_audit.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_paper_figures.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_physical_trial.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_pipeline.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_planning_chain.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_result_analysis.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_rollout.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_search_policy_probe.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_source_diagnostics.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_structural.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_tiny_diagnostics.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_f3_v2_worker_failure.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_c.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_c_for_reasons.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_c_simplified.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_d1.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_d2.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_e0.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_e1.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_e2_enumeration.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_e2_execution.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_f1_contract.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_f1_controller.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_f1_scientific_scoring_v2.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_f2_rollout.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_f3_candidate_source_drain.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_f3_drain_continuation_adapter.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_f3_p1_evidence_persistence.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_f3_runtime_phase1.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_f3_runtime_phase2a.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_f3_runtime_phase2b1.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_f3_runtime_phase2b2.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_f3_runtime_telemetry.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_gate_k0_v1_1_revision.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_inflight_propagation_closure.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_pre_e2_absolute_time.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_runtime_successor_chain.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_sgp4.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tests/__pycache__/test_terminal_executor.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/audit_f3_v2_natural_inputs.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/build_gate_f3_v2_design_draft.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/build_z_moderate_v1.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_b4_branch_multiprocessing.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_b4_lightweight_clone.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_b4_production_multiprocessing_integration.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_f3_v2_engineering.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_f3_v2_natural_prefix.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_c_simplified.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_d2.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_e0.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_e1.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_e2.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_e2_selection.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f0.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f0_human_freeze.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f1.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f1_scoring_human_freeze.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f2_closure.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f2_rollout_human_freeze.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f3_candidate_source_drain_freeze.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f3_drain_continuation_adapter_repair.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f3_experiment_human_freeze.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f3_final_pre_p1_runtime_equivalence.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f3_p1.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f3_p1_evidence_persistence_repair.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f3_runtime_phase1.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f3_runtime_phase2a.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f3_runtime_phase2b1.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f3_runtime_phase2b2.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_f3_runtime_telemetry_profile_support.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_gate_k0_v1_1_revision.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/check_pre_e2_absolute_time.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/freeze_gate_e2_execution_code.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/freeze_pre_e2_inputs.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/prepare_gate_e2_enumeration.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/prepare_gate_e2_execution_points.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/prepare_gate_f0_human_freeze_v1.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/profile_gate_f3_b1_runtime.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/run_gate_f3_p1_execution.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/runtime_successor_chain.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    },
+    {
+      "path": "tools/__pycache__/seal_b4_production_multiprocessing.cpython-39.pyc",
+      "reason": "BYTECODE_CACHE"
+    }
+  ],
+  "legacy_asset_changes": [],
+  "origin_sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691",
+  "parent_sha256": "f58cc5eb037eaf6ee804c9aa1c5ec54f38894d00ca0d715f8b7baae8a47e06db",
+  "scientific_gate_pass": false,
+  "scope": "COMPLETE_RAW_BYTE_OLD_AND_VERSION_ASSET_AUDIT",
+  "status": "PASS_README_ONLY_CHANGE"
+}

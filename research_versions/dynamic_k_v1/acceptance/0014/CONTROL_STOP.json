@@ -1,0 +1,11 @@
+{
+  "command": "ADD",
+  "completed_commands": [
+    "rebuild",
+    "HOLD",
+    "ADD"
+  ],
+  "original_assertions_preserved": true,
+  "reruns": 0,
+  "status": "STOP_BUSINESS_CONSERVATION_MISMATCH"
+}

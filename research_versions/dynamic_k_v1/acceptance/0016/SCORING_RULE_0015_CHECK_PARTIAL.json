@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "action": "ADD",
+      "actual_cost_bit_s": 995518.0708517093,
+      "evidence": {
+        "byte_count": 2486069,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/PERSIST/01_ADD_.json",
+        "sha256": "528e07c5d8a1c86640e775968e5a5326498e84ebaa56ba7bcf645646637e2d02"
+      },
+      "exact_fields_equal": true,
+      "expected_cost_bit_s": 995518.0708517093
+    },
+    {
+      "action": "HOLD",
+      "actual_cost_bit_s": 854613.2057586825,
+      "evidence": {
+        "byte_count": 521101,
+        "path": "research_versions/dynamic_k_v1/acceptance/0016/small/PERSIST/03_HOLD_.json",
+        "sha256": "27cbb8ddacb0c7a4628e1dfb07dee054399fd637921106bef65dd84bd6c78be9"
+      },
+      "exact_fields_equal": true,
+      "expected_cost_bit_s": 854613.2057586825
+    }
+  ],
+  "formal_science_frozen": false,
+  "lambda_E_bit_s_per_J": 1000.0,
+  "lambda_N_s": 6.0,
+  "status": "PASS_HOLD_ADD_RULE_CHECK_ONLY"
+}

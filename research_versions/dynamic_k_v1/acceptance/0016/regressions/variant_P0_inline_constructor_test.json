@@ -1,0 +1,20 @@
+{
+  "constructor_seam_source": [
+    "def test_18_continuous_non_grid_events_and_multihop(self):\n    c=FIXTURES.synthetic(T=30.,connected=True,capacity=8.,\n        segments=[TrafficSegment(0.,.25,{'f':2.}),TrafficSegment(.25,1.75,{'f':4.}),TrafficSegment(1.75,20.,{'f':2.})])\n    c.engine.fixed_edges=((FIXTURES.B,FIXTURES.C),)\n    # Rebuild from zero so the frozen engine alone initializes the route.\n    ObservedD2Engine = FIXTURES.ObservedD2Engine\n    from dynamic_lisl.commodity import Commodity\n    engine=ObservedD2Engine(c.engine.nodes,((FIXTURES.B,FIXTURES.C),),8.,\n        [Commodity('f',FIXTURES.A,FIXTURES.C)],c.engine.trace,lambda edge,t:1.,c.engine.executor)\n    c=FIXTURES.wrap(engine,c.validator.physical,30.);c.advance_to(3.)\n    r=root(c,'ZERO');s=score_action(r,Hold(),COST)\n    b=s['n2_result']['n1b_result']\n    self.assertGreaterEqual(b['mean_delivered_fluid_delay_s'],2.)\n    self.assertEqual(s['n2_result']['n1b_result']['n1a_result']['offered_bits'],9.)\n    self.assertEqual(b['delivered_bits'],9.)\n"
+  ],
+  "errors": [],
+  "failures": [],
+  "frozen_test_expectations_changed": false,
+  "global_monkeypatch": false,
+  "original_source": [
+    "def test_18_continuous_non_grid_events_and_multihop(self):\n    c=FIXTURES.synthetic(T=30.,connected=True,capacity=8.,\n        segments=[TrafficSegment(0.,.25,{'f':2.}),TrafficSegment(.25,1.75,{'f':4.}),TrafficSegment(1.75,20.,{'f':2.})])\n    c.engine.fixed_edges=((FIXTURES.B,FIXTURES.C),)\n    # Rebuild from zero so the frozen engine alone initializes the route.\n    from runtime.n1b_observer import ObservedD2Engine\n    from dynamic_lisl.commodity import Commodity\n    engine=ObservedD2Engine(c.engine.nodes,((FIXTURES.B,FIXTURES.C),),8.,\n        [Commodity('f',FIXTURES.A,FIXTURES.C)],c.engine.trace,lambda edge,t:1.,c.engine.executor)\n    c=FIXTURES.wrap(engine,c.validator.physical,30.);c.advance_to(3.)\n    r=root(c,'ZERO');s=score_action(r,Hold(),COST)\n    b=s['n2_result']['n1b_result']\n    self.assertGreaterEqual(b['mean_delivered_fluid_delay_s'],2.)\n    self.assertEqual(s['n2_result']['n1b_result']['n1a_result']['offered_bits'],9.)\n    self.assertEqual(b['delivered_bits'],9.)\n"
+  ],
+  "original_test_names": [
+    "test_18_continuous_non_grid_events_and_multihop"
+  ],
+  "output": "test_18_continuous_non_grid_events_and_multihop (p0g_inline.P0InlineVariantTest) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 1.914s\n\nOK\n",
+  "skipped": [],
+  "status": "PASS",
+  "tests_run": 1,
+  "wallclock_s": 1.9140636999999856
+}

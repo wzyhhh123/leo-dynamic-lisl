@@ -1,0 +1,14 @@
+{
+  "catalog_scan": "RETAINED_FROZEN_EVIDENCE_NOT_ENUMERATED",
+  "errors": [],
+  "expectations_unmodified": true,
+  "failures": [],
+  "mode": "variant",
+  "module_local_constructor_binding_only": true,
+  "output": "test_01_STATIC_HOLD_natural_expiry_fixed_T (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_02_paired_K0_ADD_then_idle_DROP_analytic_metrics (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_03_setup_not_counted_as_admit_K (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_04_no_demand_DROP_real_DRAINING_and_energy_reduction (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_05_REPLACE_resource_constrained_BBM (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_06_REPLACE_MBB_only_real_spare_resources (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_07_partition_expiry_Q_I_reconnect_FIFO (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_08_unreachable_to_T_remaining_and_no_delivery_null (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_09_partial_delivery_age_and_remaining_age_identity (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_10_clone_checkpoint_restore_full_audit_exact (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_11_identical_real_actions_exact_N1a_N1b (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_12_future_trace_not_visible_and_does_not_affect_selection (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_13_candidate_budget_truncation_distinct_from_physical_absence (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_14_HOLD_while_demand_already_reachable (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_15_sort_reversal_and_no_candidate_or_policy_mutation (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_16_fixed_T_idle_tail_320_dwell_and_nonnegative_delta (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_17_result_validation_rejects_mismatched_metrics_and_scope (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_18_invalid_epoch_inputs_and_no_formal_default (p0f_reg_variant_N3.ClosedLoopTests) ... ok\ntest_19_complete_registered_catalog_coverage_diagnostic (p0f_reg_variant_N3.Real160Tests) ... ok\ntest_20_real160_controlled_catalog_multi_epoch_paired_loop_replay (p0f_reg_variant_N3.Real160Tests) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 128.871s\n\nOK\n",
+  "selection": "ALL_ORIGINAL_TEST_CASES",
+  "skipped": [],
+  "status": "PASS",
+  "tests_run": 20,
+  "wallclock_s": 128.87162750000002
+}

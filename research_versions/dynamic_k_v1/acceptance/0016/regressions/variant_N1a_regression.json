@@ -1,0 +1,14 @@
+{
+  "catalog_scan": "RETAINED_FROZEN_EVIDENCE_NOT_ENUMERATED",
+  "errors": [],
+  "expectations_unmodified": true,
+  "failures": [],
+  "mode": "variant",
+  "module_local_constructor_binding_only": true,
+  "output": "test_01_all_320_idle_exact_1600T (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_02_single_terminal_sequence_and_bilateral_energy_hand_check (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_03_draining_45W_excluded_from_main_K (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_04_every_terminal_and_total_time_including_fractional_events (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_05_traffic_drains_at_2_but_evaluation_reaches_10 (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_06_initial_active_no_fake_setup_energy_or_actions (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_07a_real_add_drop_and_tail_without_events (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_07b_real_BBM_draining_wait_and_asymmetric_setup (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_07c_real_MBB_overlapping_energy_and_release (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_07d_setup_abort_stale_events_not_double_charged (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_07e_natural_expiry_and_no_traffic_advance_terminal_events (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_08_same_timestamp_zero_setup_and_release_no_duplicate_dwell (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_09_unfinished_traffic_normal_T_and_analytical_J_N (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_10_clone_restore_replay_identical_and_no_double_accounting (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_11_incremental_energy_nonnegative_across_finite_horizons (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_12_numeric_and_cross_field_tampering_rejected (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_13_unweighted_J_independent_of_legacy_commodity_weights (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_14_initial_pending_setup_actual_remaining_time (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_15_log_loss_rewrite_inventory_gap_and_unlogged_state_rejected (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_16_horizon_bounds_and_input_mutation_rejected (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_17_partial_checkpoint_is_not_normal_T (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_18_rejected_command_has_no_phantom_energy (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_19_D2_draining_keeps_real_propagation_and_residual_work (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_20_initial_draining_actual_remaining_phase_no_fake_setup (p0f_reg_variant_N1a.N1aTests) ... ok\ntest_21_wrong_implementation_anchor_rejected_before_execution (p0f_reg_variant_N1a.N1aTests) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 6.858s\n\nOK\n",
+  "selection": "ALL_ORIGINAL_TEST_CASES",
+  "skipped": [],
+  "status": "PASS",
+  "tests_run": 25,
+  "wallclock_s": 6.858501200000001
+}
