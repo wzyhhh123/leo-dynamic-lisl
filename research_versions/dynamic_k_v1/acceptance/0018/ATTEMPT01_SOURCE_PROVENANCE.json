@@ -1,0 +1,11 @@
+{
+  "snapshot_path": "research_versions\\dynamic_k_v1\\acceptance\\0018\\gate_c_attempt01.py.snapshot",
+  "sha256": "c1665bc012241dacb50838d52582386dc56ac5782caca43afd82b97c9acbb49e",
+  "original_path": "research_versions\\dynamic_k_v1\\runtime\\n4_p0h_gate_c.py",
+  "old_manifest": "SEAM_SOURCE_MANIFEST.json",
+  "old_results": [
+    "CORRECTNESS_ACCEPTANCE.json",
+    "PAIRED_COST.json"
+  ],
+  "retained": true
+}

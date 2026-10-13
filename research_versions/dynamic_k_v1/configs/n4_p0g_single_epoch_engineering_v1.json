@@ -1,0 +1,83 @@
+{
+  "PILOT_ONLY": {
+    "H_s": 6.0,
+    "T_A_s": 20.0,
+    "T_s": 30.0,
+    "acquisition_s": 0.5,
+    "all_branch_seconds_upper_bound": 14364.0,
+    "all_branch_upper_bound": 2520,
+    "decision_cadence_s": 3.0,
+    "decision_epochs_s": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27
+    ],
+    "lambda_E_bit_s_per_J": 1000.0,
+    "lambda_N_s": 6.0,
+    "main_branch_seconds_upper_bound": 4788.0,
+    "main_pilot_branch_upper_bound": 840,
+    "maximum_atomic_actions_per_epoch": 1,
+    "maximum_scored_branches": 7,
+    "retarget_a_s": 0.5,
+    "retarget_b_s": 0.5,
+    "sensitivity_extra_branch_upper_bound": 1680
+  },
+  "actual_small_branches": {
+    "PERSIST": [
+      "HOLD",
+      "ADD",
+      "DROP",
+      "BBM",
+      "MBB"
+    ],
+    "ZERO": [
+      "HOLD",
+      "ADD",
+      "DROP",
+      "BBM",
+      "MBB"
+    ]
+  },
+  "catalog_executed": true,
+  "decision_epoch_executed": false,
+  "engineering_safety_limits": {
+    "catalog_wall_s": 300.0,
+    "this_PERSIST_BBM_wall_s": 1800.0
+  },
+  "explicit_variant_binding": {
+    "byte_count": 42292,
+    "path": "research_versions/dynamic_k_v1/acceptance/0015/variant_dependencies.json",
+    "sha256": "4fe35f65dfce934c2ec6ab4daadc6856ebea9f5a7c072e8aa794cf23a3e7df59"
+  },
+  "formal_control_parameters": {
+    "decision_cadence_s": null,
+    "maximum_concurrent_actions": null,
+    "search_budget": null
+  },
+  "formal_experiments_authorized": false,
+  "full_N4_P0_engineering_pass": false,
+  "full_pilot_execution_authorized": false,
+  "numerical_semantics": "P0F_EXACT_NOMINAL_V1",
+  "parent_revision_sha256": "a5c427c4225bbd4850c3979079b18d68afa92d64cdffe1f90025904537ac7318",
+  "prediction_end_s": 9.0,
+  "root_time_s": 3.0,
+  "schema": "dynamic_k_n4_p0g_single_epoch_engineering_v1",
+  "scientific_parameters": {
+    "D_ref_s": null,
+    "E_ref_J": null,
+    "R_min": null,
+    "T_A_s": null,
+    "T_s": null,
+    "alpha": null,
+    "tau_res_s": null
+  },
+  "stage": "N4_P0_SINGLE_EPOCH_RESTORE",
+  "status": "STOP_CATALOG_300S_HARD_LIMIT"
+}

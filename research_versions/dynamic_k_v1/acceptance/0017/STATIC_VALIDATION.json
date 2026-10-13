@@ -1,0 +1,35 @@
+{
+  "audit_script_imports": {
+    "audit_static.py": [
+      "ast",
+      "hashlib",
+      "json",
+      "math",
+      "statistics",
+      "collections",
+      "pathlib"
+    ],
+    "derive_event_counts.py": [
+      "json",
+      "collections",
+      "fractions",
+      "pathlib"
+    ]
+  },
+  "branch_evidence_count": 10,
+  "derived_BBM_microsteps": 236,
+  "derived_BBM_steps": 233,
+  "formal_science_and_control_null": "PASS",
+  "full_catalog_or_epoch_runs": 0,
+  "input_raw_byte_bindings": "PASS",
+  "new_helper_syntax": "PASS",
+  "new_regression_runs": 0,
+  "no_simulator_imports_in_audit_scripts": true,
+  "parent_chain": "PASS",
+  "prefix_sequential_indices_and_counts": "PASS",
+  "runtime_or_performance_acceptance_claimed": false,
+  "simulation_runs": 0,
+  "source_or_test_expectations_modified": false,
+  "status": "PASS_STATIC_EVIDENCE_AND_DESIGN_SCOPE_ONLY",
+  "structural_count_equations": "PASS"
+}

@@ -1,0 +1,15 @@
+# 0020：严格等价FIFO覆盖检索接缝
+
+前置0019独立SHA为 `d057cc197f7d5733d9523c7ce31c993b9ac722747ba7ee941b718432d128b605`，版本起点 `ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691`。全部历史资产保持原始字节。人工本轮仅授权覆盖检索优化验证，不修改论文算法或候选定义。
+
+独立 `runtime/n4_p0j_fifo_sweep.py` 的SweepDeliveredAgeLedger继承原DeliveredAgeLedger；只替换_interval内的incoming覆盖列表推导及循环取值接口。原cuts构造、业务语句和其他方法保持不变；恢复这两行后方法AST精确等于冻结源码。LocalFIFO、Stream、Cohort、Fraction、mass/moment、闭合、年龄和误差界均复用原实现。没有flight-key入边索引、持续缓存、全局monkeypatch或时间离散化。
+
+coverage_parts必须消费原始完整cuts与未修改的incoming。Fraction开始/结束端点建立局部索引；每个lo先移除end==lo，再加入start==lo，按原incoming序号的整数位集递增枚举；每个有效流片仍调用原clip。索引只存原ordinal，生命周期仅该节点该次_interval检索，不能跨业务状态复用。零长度流片不能覆盖正区间。
+
+索引及活动集合不进入业务对象字段。from_ledger深复制现存账本，无cohort清理。clone保留新接缝类型和所有可变数据独立性。现有P0因果和canonical/vars业务哈希应相同；包含Python类标识或源码绑定的完整native对象图身份当然不同，必须披露，不能把代码出处元数据悄悄规范化后声称原图哈希相同。
+
+正确性先于计时。所有独立诊断与回归子进程设60秒硬停止；超时保留部分日志，不把未返回用例判为PASS。回归可按原用例分组完成，不改源测试或预期。合成fixture每格3对墙钟及另行轻量计数/tracemalloc，仪器化数据不得作为生产墙钟收益。
+
+仅一个真实160星PERSIST/BBM受控3→3.125秒前缀；复用0015精确事件时钟和原真实N2执行，源几何全catalog仅载入/绑定，不做完整合法候选枚举。所有分支同一根、输入、动作、时钟和截止点，保持原绑定与动态验证；使用0011新鲜原始字节HandleReaderLease，不接入0018 Gate C接缝。
+
+无明确真实端到端净收益则STOP_NO_DEMONSTRATED_NET_GAIN，不继续性能尝试、0021、完整BBM或扩大优化范围。正式科学/控制参数仍null；PILOT_ONLY权重与cadence=3保持不变。完整N4-P0不授予PASS，封存后等待审核。

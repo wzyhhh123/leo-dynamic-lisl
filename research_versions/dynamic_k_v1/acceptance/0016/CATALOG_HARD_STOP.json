@@ -1,0 +1,29 @@
+{
+  "complete_legal_counts": null,
+  "completed_prefix_by_kind": {
+    "ADD": 1996,
+    "DROP": 1,
+    "HOLD": 1,
+    "REPLACE": 600
+  },
+  "completed_validation_count": 2598,
+  "elapsed_s": 300.0830554962158,
+  "full_epoch_executed": false,
+  "indivisible_call_interrupted": true,
+  "legal_in_completed_prefix": {
+    "ADD": 1965,
+    "DROP": 1,
+    "HOLD": 1,
+    "REPLACE": 599
+  },
+  "pid": 57396,
+  "reasons_in_completed_prefix": {
+    "ACCEPTED": 2566,
+    "ADD_WOULD_IMPLICITLY_RELEASE": 31,
+    "DUPLICATE_LINK": 1
+  },
+  "selected_action": null,
+  "started_unix_s": 1791865086.686067,
+  "status": "STOP_CATALOG_300S_HARD_LIMIT",
+  "stopped_unix_s": 1791865386.7691226
+}

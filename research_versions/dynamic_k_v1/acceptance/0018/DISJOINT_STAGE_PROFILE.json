@@ -1,0 +1,115 @@
+{
+  "note": "Earlier CLONE label grouped Gate C top structural clone into N2_outer; this separate observation uses disjoint labels. No new plain timings or full catalog inferred.",
+  "profiled_validate_calls": 2,
+  "rows": [
+    {
+      "exact_equal": true,
+      "group": "original",
+      "stage": {
+        "actual_wall_s": 1.119792799999999,
+        "callbacks": 991540,
+        "calls": {
+          "320_terminal_log_snapshot": 8,
+          "GateC_connect_other": 1,
+          "GateC_layer_checks": 1,
+          "GateC_physical_window_bilateral_other": 1,
+          "LOS_FOR": 2,
+          "N2_outer_structural_clone": 1,
+          "N2_validation_other": 1,
+          "SGP4": 2,
+          "current_events_copy": 1,
+          "current_links_copy": 1,
+          "current_reservations_copy": 1,
+          "current_terminals_copy": 1,
+          "executor_copy_other": 1,
+          "inner_transaction_preplay_other": 2,
+          "inner_transaction_structural_clone": 2,
+          "terminal_history_copy": 1,
+          "terminal_invariant_validation": 4,
+          "window_lookup": 2
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.5149334999999979,
+          "GateC_connect_other": 0.0004022000000034609,
+          "GateC_layer_checks": 0.0007251999999908776,
+          "GateC_physical_window_bilateral_other": 2.5700000001904755e-05,
+          "LOS_FOR": 0.0022903000000056295,
+          "N2_outer_structural_clone": 0.004656199999999444,
+          "N2_validation_other": 0.00018000000000029104,
+          "SGP4": 0.00039579999999972415,
+          "current_events_copy": 7.790000000085229e-05,
+          "current_links_copy": 0.0001428000000061047,
+          "current_reservations_copy": 6.30000000256814e-06,
+          "current_terminals_copy": 0.05677310000000091,
+          "executor_copy_other": 0.005104799999990917,
+          "inner_transaction_preplay_other": 0.0010554999999925485,
+          "inner_transaction_structural_clone": 0.009677700000004563,
+          "terminal_history_copy": 0.5216820999999996,
+          "terminal_invariant_validation": 0.0016078000000021575,
+          "window_lookup": 1.4499999998918156e-05
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 2564,
+          "deepcopy_dict_calls": 2903,
+          "deepcopy_dict_item_visits": 43597,
+          "deepcopy_list_calls": 12,
+          "deepcopy_list_item_visits": 2891,
+          "deepcopy_reconstruct_calls": 1286
+        }
+      }
+    },
+    {
+      "exact_equal": true,
+      "group": "optimized",
+      "stage": {
+        "actual_wall_s": 0.6288133999999985,
+        "callbacks": 547404,
+        "calls": {
+          "320_terminal_log_snapshot": 8,
+          "GateC_connect_other": 1,
+          "GateC_current_state_structural_clone": 1,
+          "GateC_layer_checks": 1,
+          "GateC_physical_window_bilateral_other": 1,
+          "GateC_sealed_structural_clone_other": 1,
+          "LOS_FOR": 2,
+          "N2_outer_structural_clone": 1,
+          "N2_validation_other": 1,
+          "SGP4": 2,
+          "history_JSON_encoding": 2,
+          "history_integrity_validation": 2,
+          "inner_transaction_preplay_other": 2,
+          "inner_transaction_structural_clone": 2,
+          "seam_source_validation": 1,
+          "terminal_invariant_validation": 4,
+          "window_lookup": 2
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.5809587999999977,
+          "GateC_connect_other": 0.00024459999998072135,
+          "GateC_current_state_structural_clone": 0.004284399999995969,
+          "GateC_layer_checks": 0.0004348000000007346,
+          "GateC_physical_window_bilateral_other": 3.329999999124311e-05,
+          "GateC_sealed_structural_clone_other": 5.940000000492773e-05,
+          "LOS_FOR": 0.0024269000000032293,
+          "N2_outer_structural_clone": 0.004450200000000848,
+          "N2_validation_other": 0.00019600000000252749,
+          "SGP4": 0.0004599999999967963,
+          "history_JSON_encoding": 0.01764299999999963,
+          "history_integrity_validation": 0.0003522000000089065,
+          "inner_transaction_preplay_other": 0.0012432000000117682,
+          "inner_transaction_structural_clone": 0.008975600000006523,
+          "seam_source_validation": 0.004857200000003559,
+          "terminal_invariant_validation": 0.002147299999990082,
+          "window_lookup": 1.810000000546097e-05
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 2564,
+          "deepcopy_reconstruct_calls": 1284
+        }
+      }
+    }
+  ],
+  "status": "PASS"
+}

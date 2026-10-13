@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Document\leo_routing_attitude\dynamic_lisl_v2\research_versions\dynamic_k_v1\acceptance\0020\regression.py", line 88, in <module>
+    else:run_suite(sys.argv[1],sys.argv[2])
+  File "D:\Document\leo_routing_attitude\dynamic_lisl_v2\research_versions\dynamic_k_v1\acceptance\0020\regression.py", line 46, in run_suite
+    manifest=json.loads((c.V/'revisions/0007/record.json').read_text())
+  File "D:\Program_Files\anaconda3\envs\pytorch\lib\pathlib.py", line 1267, in read_text
+    return f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0x83 in position 177: illegal multibyte sequence

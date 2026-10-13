@@ -1,0 +1,11 @@
+{
+  "child_exit_code": 0,
+  "child_launch_count": 1,
+  "child_pid": 20040,
+  "elapsed_wall_s": 1.0630000000237487,
+  "hard_deadline_relative_s": 60,
+  "measured_scope": "WHOLE_CHILD_INCLUDING_IMPORT_AND_CONTROL_AND_COUNTER_CASES",
+  "no_full_BBM_or_MPC_execution": true,
+  "status": "COMPLETED",
+  "terminate_on_deadline": true
+}

@@ -1,0 +1,689 @@
+{
+  "cases": [
+    {
+      "all_fields_exact": true,
+      "index_build_and_maintenance_in_plain_timings": true,
+      "layout": "disjoint",
+      "memory": {
+        "reference": {
+          "current_bytes": 4531,
+          "instrumented_wall_s": 0.005487099999999995,
+          "peak_bytes": 23196
+        },
+        "sweep": {
+          "current_bytes": 6520,
+          "instrumented_wall_s": 0.004946800000000001,
+          "peak_bytes": 28520
+        }
+      },
+      "memory_scope": "TRACEMALLOC_SEPARATE_RUN_ENTIRE_SYNTHETIC_FIXTURE_NOT_PRODUCTION_WALL",
+      "n": 32,
+      "paired_plain_samples": [
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.0011841999999999964,
+            "total_fixture_s": 0.0020468999999999904
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.0008211999999999942,
+            "total_fixture_s": 0.0014915000000000067
+          }
+        },
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.001280399999999987,
+            "total_fixture_s": 0.0028517999999999877
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.0008934000000000164,
+            "total_fixture_s": 0.0016140000000000043
+          }
+        },
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.0010774000000000061,
+            "total_fixture_s": 0.0017317999999999778
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.0008104000000000167,
+            "total_fixture_s": 0.0014809000000000072
+          }
+        }
+      ],
+      "sweep_light_measurements": [
+        {
+          "active_peak": 1,
+          "build_s": 8.249999999998536e-05,
+          "clips": 32,
+          "cut_intervals": 32,
+          "endpoint_references": 64,
+          "enumeration_and_clip_s": 5.060000000001175e-05,
+          "input_streams": 32,
+          "legacy_coverage_predicate_iterations": 1024,
+          "maintenance_endpoint_visits": 63,
+          "maintenance_s": 5.910000000006188e-05,
+          "optimized_coverage_predicate_iterations": 0,
+          "parts_peak": 1,
+          "peak_active_bitset_bits": 32,
+          "temporary_clip_Stream_objects": 32
+        },
+        {
+          "active_peak": 0,
+          "build_s": 1.599999999990498e-06,
+          "clips": 0,
+          "cut_intervals": 1,
+          "endpoint_references": 0,
+          "enumeration_and_clip_s": 1.0000000000287557e-07,
+          "input_streams": 0,
+          "legacy_coverage_predicate_iterations": 0,
+          "maintenance_endpoint_visits": 0,
+          "maintenance_s": 1.1000000000038757e-06,
+          "optimized_coverage_predicate_iterations": 0,
+          "parts_peak": 0,
+          "peak_active_bitset_bits": 0,
+          "temporary_clip_Stream_objects": 0
+        }
+      ]
+    },
+    {
+      "all_fields_exact": true,
+      "index_build_and_maintenance_in_plain_timings": true,
+      "layout": "disjoint",
+      "memory": {
+        "reference": {
+          "current_bytes": 6440,
+          "instrumented_wall_s": 0.019740300000000016,
+          "peak_bytes": 45084
+        },
+        "sweep": {
+          "current_bytes": 7456,
+          "instrumented_wall_s": 0.012968299999999988,
+          "peak_bytes": 56524
+        }
+      },
+      "memory_scope": "TRACEMALLOC_SEPARATE_RUN_ENTIRE_SYNTHETIC_FIXTURE_NOT_PRODUCTION_WALL",
+      "n": 64,
+      "paired_plain_samples": [
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.0033632999999999857,
+            "total_fixture_s": 0.005891800000000003
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.0015525999999999873,
+            "total_fixture_s": 0.0035335000000000227
+          }
+        },
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.0036933000000000105,
+            "total_fixture_s": 0.006233899999999987
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.0018710000000000115,
+            "total_fixture_s": 0.0043935999999999975
+          }
+        },
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.004099500000000006,
+            "total_fixture_s": 0.006564699999999979
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.001943200000000006,
+            "total_fixture_s": 0.0044470000000000065
+          }
+        }
+      ],
+      "sweep_light_measurements": [
+        {
+          "active_peak": 1,
+          "build_s": 0.00024399999999999422,
+          "clips": 64,
+          "cut_intervals": 64,
+          "endpoint_references": 128,
+          "enumeration_and_clip_s": 0.00012800000000018352,
+          "input_streams": 64,
+          "legacy_coverage_predicate_iterations": 4096,
+          "maintenance_endpoint_visits": 127,
+          "maintenance_s": 0.00015970000000009588,
+          "optimized_coverage_predicate_iterations": 0,
+          "parts_peak": 1,
+          "peak_active_bitset_bits": 64,
+          "temporary_clip_Stream_objects": 64
+        },
+        {
+          "active_peak": 0,
+          "build_s": 3.100000000005876e-06,
+          "clips": 0,
+          "cut_intervals": 1,
+          "endpoint_references": 0,
+          "enumeration_and_clip_s": 2.0000000000575113e-07,
+          "input_streams": 0,
+          "legacy_coverage_predicate_iterations": 0,
+          "maintenance_endpoint_visits": 0,
+          "maintenance_s": 2.1000000000048757e-06,
+          "optimized_coverage_predicate_iterations": 0,
+          "parts_peak": 0,
+          "peak_active_bitset_bits": 0,
+          "temporary_clip_Stream_objects": 0
+        }
+      ]
+    },
+    {
+      "all_fields_exact": true,
+      "index_build_and_maintenance_in_plain_timings": true,
+      "layout": "disjoint",
+      "memory": {
+        "reference": {
+          "current_bytes": 7168,
+          "instrumented_wall_s": 0.05855199999999999,
+          "peak_bytes": 95260
+        },
+        "sweep": {
+          "current_bytes": 8288,
+          "instrumented_wall_s": 0.03889349999999997,
+          "peak_bytes": 113616
+        }
+      },
+      "memory_scope": "TRACEMALLOC_SEPARATE_RUN_ENTIRE_SYNTHETIC_FIXTURE_NOT_PRODUCTION_WALL",
+      "n": 128,
+      "paired_plain_samples": [
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.01074360000000002,
+            "total_fixture_s": 0.019590300000000005
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.003192499999999987,
+            "total_fixture_s": 0.01110460000000002
+          }
+        },
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.01136680000000001,
+            "total_fixture_s": 0.019551099999999988
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.0037449999999999983,
+            "total_fixture_s": 0.011943800000000004
+          }
+        },
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.00990369999999996,
+            "total_fixture_s": 0.01882309999999998
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.0039053000000000004,
+            "total_fixture_s": 0.011981499999999978
+          }
+        }
+      ],
+      "sweep_light_measurements": [
+        {
+          "active_peak": 1,
+          "build_s": 0.0003773999999999722,
+          "clips": 128,
+          "cut_intervals": 128,
+          "endpoint_references": 256,
+          "enumeration_and_clip_s": 0.00022210000000011387,
+          "input_streams": 128,
+          "legacy_coverage_predicate_iterations": 16384,
+          "maintenance_endpoint_visits": 255,
+          "maintenance_s": 0.00024690000000010537,
+          "optimized_coverage_predicate_iterations": 0,
+          "parts_peak": 1,
+          "peak_active_bitset_bits": 128,
+          "temporary_clip_Stream_objects": 128
+        },
+        {
+          "active_peak": 0,
+          "build_s": 2.2000000000077513e-06,
+          "clips": 0,
+          "cut_intervals": 1,
+          "endpoint_references": 0,
+          "enumeration_and_clip_s": 2.0000000000575113e-07,
+          "input_streams": 0,
+          "legacy_coverage_predicate_iterations": 0,
+          "maintenance_endpoint_visits": 0,
+          "maintenance_s": 1.3999999999847468e-06,
+          "optimized_coverage_predicate_iterations": 0,
+          "parts_peak": 0,
+          "peak_active_bitset_bits": 0,
+          "temporary_clip_Stream_objects": 0
+        }
+      ]
+    },
+    {
+      "all_fields_exact": true,
+      "index_build_and_maintenance_in_plain_timings": true,
+      "layout": "disjoint",
+      "memory": {
+        "reference": {
+          "current_bytes": 7168,
+          "instrumented_wall_s": 0.24316549999999992,
+          "peak_bytes": 183612
+        },
+        "sweep": {
+          "current_bytes": 8420,
+          "instrumented_wall_s": 0.13939940000000006,
+          "peak_bytes": 227736
+        }
+      },
+      "memory_scope": "TRACEMALLOC_SEPARATE_RUN_ENTIRE_SYNTHETIC_FIXTURE_NOT_PRODUCTION_WALL",
+      "n": 256,
+      "paired_plain_samples": [
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.04090290000000002,
+            "total_fixture_s": 0.07156099999999999
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.009006500000000028,
+            "total_fixture_s": 0.043300899999999976
+          }
+        },
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.04668250000000007,
+            "total_fixture_s": 0.08170879999999991
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.00931930000000003,
+            "total_fixture_s": 0.04338019999999998
+          }
+        },
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.04080820000000007,
+            "total_fixture_s": 0.07657809999999998
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.008679500000000062,
+            "total_fixture_s": 0.04455869999999995
+          }
+        }
+      ],
+      "sweep_light_measurements": [
+        {
+          "active_peak": 1,
+          "build_s": 0.0010145000000000293,
+          "clips": 256,
+          "cut_intervals": 256,
+          "endpoint_references": 512,
+          "enumeration_and_clip_s": 0.0005687999999989257,
+          "input_streams": 256,
+          "legacy_coverage_predicate_iterations": 65536,
+          "maintenance_endpoint_visits": 511,
+          "maintenance_s": 0.0006754999999990519,
+          "optimized_coverage_predicate_iterations": 0,
+          "parts_peak": 1,
+          "peak_active_bitset_bits": 256,
+          "temporary_clip_Stream_objects": 256
+        },
+        {
+          "active_peak": 0,
+          "build_s": 4.699999999968618e-06,
+          "clips": 0,
+          "cut_intervals": 1,
+          "endpoint_references": 0,
+          "enumeration_and_clip_s": 2.0000000000575113e-07,
+          "input_streams": 0,
+          "legacy_coverage_predicate_iterations": 0,
+          "maintenance_endpoint_visits": 0,
+          "maintenance_s": 2.0000000000575113e-06,
+          "optimized_coverage_predicate_iterations": 0,
+          "parts_peak": 0,
+          "peak_active_bitset_bits": 0,
+          "temporary_clip_Stream_objects": 0
+        }
+      ]
+    },
+    {
+      "all_fields_exact": true,
+      "index_build_and_maintenance_in_plain_timings": true,
+      "layout": "disjoint",
+      "memory": {
+        "reference": {
+          "current_bytes": 8120,
+          "instrumented_wall_s": 0.9225254999999999,
+          "peak_bytes": 406200
+        },
+        "sweep": {
+          "current_bytes": 8368,
+          "instrumented_wall_s": 0.5429936000000004,
+          "peak_bytes": 483692
+        }
+      },
+      "memory_scope": "TRACEMALLOC_SEPARATE_RUN_ENTIRE_SYNTHETIC_FIXTURE_NOT_PRODUCTION_WALL",
+      "n": 512,
+      "paired_plain_samples": [
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.15488250000000003,
+            "total_fixture_s": 0.2891884
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.018750800000000067,
+            "total_fixture_s": 0.1533777999999999
+          }
+        },
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.1623832999999999,
+            "total_fixture_s": 0.30159999999999987
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.016315300000000033,
+            "total_fixture_s": 0.14772059999999998
+          }
+        },
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.15193520000000005,
+            "total_fixture_s": 0.2803776
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.017814899999999856,
+            "total_fixture_s": 0.14222639999999975
+          }
+        }
+      ],
+      "sweep_light_measurements": [
+        {
+          "active_peak": 1,
+          "build_s": 0.0017572000000001253,
+          "clips": 512,
+          "cut_intervals": 512,
+          "endpoint_references": 1024,
+          "enumeration_and_clip_s": 0.0012169000000046282,
+          "input_streams": 512,
+          "legacy_coverage_predicate_iterations": 262144,
+          "maintenance_endpoint_visits": 1023,
+          "maintenance_s": 0.0014202000000009818,
+          "optimized_coverage_predicate_iterations": 0,
+          "parts_peak": 1,
+          "peak_active_bitset_bits": 512,
+          "temporary_clip_Stream_objects": 512
+        },
+        {
+          "active_peak": 0,
+          "build_s": 6.400000000184036e-06,
+          "clips": 0,
+          "cut_intervals": 1,
+          "endpoint_references": 0,
+          "enumeration_and_clip_s": 2.0000000011677344e-07,
+          "input_streams": 0,
+          "legacy_coverage_predicate_iterations": 0,
+          "maintenance_endpoint_visits": 0,
+          "maintenance_s": 1.7999999997186933e-06,
+          "optimized_coverage_predicate_iterations": 0,
+          "parts_peak": 0,
+          "peak_active_bitset_bits": 0,
+          "temporary_clip_Stream_objects": 0
+        }
+      ]
+    },
+    {
+      "all_fields_exact": true,
+      "index_build_and_maintenance_in_plain_timings": true,
+      "layout": "dense",
+      "memory": {
+        "reference": {
+          "current_bytes": 2277,
+          "instrumented_wall_s": 0.02372680000000038,
+          "peak_bytes": 15362
+        },
+        "sweep": {
+          "current_bytes": 3589,
+          "instrumented_wall_s": 0.02219559999999987,
+          "peak_bytes": 18714
+        }
+      },
+      "memory_scope": "TRACEMALLOC_SEPARATE_RUN_ENTIRE_SYNTHETIC_FIXTURE_NOT_PRODUCTION_WALL",
+      "n": 16,
+      "paired_plain_samples": [
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.009017199999999725,
+            "total_fixture_s": 0.00988399999999956
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.0071315999999992385,
+            "total_fixture_s": 0.007932799999999851
+          }
+        },
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.006984200000000662,
+            "total_fixture_s": 0.007647999999999655
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.006615499999999663,
+            "total_fixture_s": 0.007299599999999629
+          }
+        },
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.007895700000000616,
+            "total_fixture_s": 0.00859450000000006
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.006455299999999831,
+            "total_fixture_s": 0.007185499999999401
+          }
+        }
+      ],
+      "sweep_light_measurements": [
+        {
+          "active_peak": 16,
+          "build_s": 7.009999999940675e-05,
+          "clips": 256,
+          "cut_intervals": 31,
+          "endpoint_references": 32,
+          "enumeration_and_clip_s": 0.0006192000000000419,
+          "input_streams": 16,
+          "legacy_coverage_predicate_iterations": 496,
+          "maintenance_endpoint_visits": 31,
+          "maintenance_s": 9.710000000318075e-05,
+          "optimized_coverage_predicate_iterations": 0,
+          "parts_peak": 16,
+          "peak_active_bitset_bits": 16,
+          "temporary_clip_Stream_objects": 256
+        },
+        {
+          "active_peak": 0,
+          "build_s": 3.9999999996709334e-06,
+          "clips": 0,
+          "cut_intervals": 1,
+          "endpoint_references": 0,
+          "enumeration_and_clip_s": 2.0000000056086265e-07,
+          "input_streams": 0,
+          "legacy_coverage_predicate_iterations": 0,
+          "maintenance_endpoint_visits": 0,
+          "maintenance_s": 1.8999999999991246e-06,
+          "optimized_coverage_predicate_iterations": 0,
+          "parts_peak": 0,
+          "peak_active_bitset_bits": 0,
+          "temporary_clip_Stream_objects": 0
+        }
+      ]
+    },
+    {
+      "all_fields_exact": true,
+      "index_build_and_maintenance_in_plain_timings": true,
+      "layout": "dense",
+      "memory": {
+        "reference": {
+          "current_bytes": 5569,
+          "instrumented_wall_s": 0.057634799999999764,
+          "peak_bytes": 30246
+        },
+        "sweep": {
+          "current_bytes": 6817,
+          "instrumented_wall_s": 0.05728289999999969,
+          "peak_bytes": 38138
+        }
+      },
+      "memory_scope": "TRACEMALLOC_SEPARATE_RUN_ENTIRE_SYNTHETIC_FIXTURE_NOT_PRODUCTION_WALL",
+      "n": 32,
+      "paired_plain_samples": [
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.018222699999999925,
+            "total_fixture_s": 0.019794300000000042
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.018089699999999986,
+            "total_fixture_s": 0.01956450000000043
+          }
+        },
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.025281800000000132,
+            "total_fixture_s": 0.02735019999999988
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.026879600000000003,
+            "total_fixture_s": 0.029447000000000223
+          }
+        },
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.029139400000000037,
+            "total_fixture_s": 0.03110189999999946
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.023545099999999763,
+            "total_fixture_s": 0.025909400000000637
+          }
+        }
+      ],
+      "sweep_light_measurements": [
+        {
+          "active_peak": 32,
+          "build_s": 9.790000000009513e-05,
+          "clips": 1024,
+          "cut_intervals": 63,
+          "endpoint_references": 64,
+          "enumeration_and_clip_s": 0.0014140000000004704,
+          "input_streams": 32,
+          "legacy_coverage_predicate_iterations": 2016,
+          "maintenance_endpoint_visits": 63,
+          "maintenance_s": 0.00010879999999691137,
+          "optimized_coverage_predicate_iterations": 0,
+          "parts_peak": 32,
+          "peak_active_bitset_bits": 32,
+          "temporary_clip_Stream_objects": 1024
+        },
+        {
+          "active_peak": 0,
+          "build_s": 3.4000000006528808e-06,
+          "clips": 0,
+          "cut_intervals": 1,
+          "endpoint_references": 0,
+          "enumeration_and_clip_s": 1.0000000028043132e-07,
+          "input_streams": 0,
+          "legacy_coverage_predicate_iterations": 0,
+          "maintenance_endpoint_visits": 0,
+          "maintenance_s": 1.4999999997655777e-06,
+          "optimized_coverage_predicate_iterations": 0,
+          "parts_peak": 0,
+          "peak_active_bitset_bits": 0,
+          "temporary_clip_Stream_objects": 0
+        }
+      ]
+    },
+    {
+      "all_fields_exact": true,
+      "index_build_and_maintenance_in_plain_timings": true,
+      "layout": "dense",
+      "memory": {
+        "reference": {
+          "current_bytes": 6790,
+          "instrumented_wall_s": 0.3030222999999994,
+          "peak_bytes": 61764
+        },
+        "sweep": {
+          "current_bytes": 8102,
+          "instrumented_wall_s": 0.29872479999999957,
+          "peak_bytes": 77492
+        }
+      },
+      "memory_scope": "TRACEMALLOC_SEPARATE_RUN_ENTIRE_SYNTHETIC_FIXTURE_NOT_PRODUCTION_WALL",
+      "n": 64,
+      "paired_plain_samples": [
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.1000962000000003,
+            "total_fixture_s": 0.10801190000000016
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.09647709999999954,
+            "total_fixture_s": 0.10444969999999998
+          }
+        },
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.09919630000000002,
+            "total_fixture_s": 0.10659119999999955
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.10013659999999991,
+            "total_fixture_s": 0.10904019999999992
+          }
+        },
+        {
+          "reference": {
+            "interval_including_index_cold_build_s": 0.1047798000000002,
+            "total_fixture_s": 0.11223889999999948
+          },
+          "sweep": {
+            "interval_including_index_cold_build_s": 0.08808210000000027,
+            "total_fixture_s": 0.09405869999999972
+          }
+        }
+      ],
+      "sweep_light_measurements": [
+        {
+          "active_peak": 64,
+          "build_s": 0.0004435999999996554,
+          "clips": 4096,
+          "cut_intervals": 127,
+          "endpoint_references": 128,
+          "enumeration_and_clip_s": 0.009417999999993931,
+          "input_streams": 64,
+          "legacy_coverage_predicate_iterations": 8128,
+          "maintenance_endpoint_visits": 127,
+          "maintenance_s": 0.0004770000000053898,
+          "optimized_coverage_predicate_iterations": 0,
+          "parts_peak": 64,
+          "peak_active_bitset_bits": 64,
+          "temporary_clip_Stream_objects": 4096
+        },
+        {
+          "active_peak": 0,
+          "build_s": 6.200000000511352e-06,
+          "clips": 0,
+          "cut_intervals": 1,
+          "endpoint_references": 0,
+          "enumeration_and_clip_s": 2.0000000056086265e-07,
+          "input_streams": 0,
+          "legacy_coverage_predicate_iterations": 0,
+          "maintenance_endpoint_visits": 0,
+          "maintenance_s": 2.099999999671809e-06,
+          "optimized_coverage_predicate_iterations": 0,
+          "parts_peak": 0,
+          "peak_active_bitset_bits": 0,
+          "temporary_clip_Stream_objects": 0
+        }
+      ]
+    }
+  ],
+  "full_BBM_speedup_claim": false,
+  "plain_order": "REFERENCE_THEN_SWEEP_FIXED_ORDER_3_REPEATS",
+  "profiler_callbacks": 0,
+  "statistical_claim": false,
+  "status": "PASS_PAIRED_EQUIVALENCE_AND_MEASURED_COST"
+}

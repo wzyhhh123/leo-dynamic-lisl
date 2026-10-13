@@ -1,0 +1,12 @@
+--- frozen/n1b_fifo.py::_interval
++++ isolated/n4_p0j_fifo_sweep.py::_interval
+@@ -27,8 +27,7 @@
+                                 keep.append(stream)
+                         self.flight[(edge, fk)] = keep
+                 cuts = sorted({start, end} | {t for s in incoming for t in (s.start, s.end)})
+-                for lo, hi in zip(cuts, cuts[1:]):
+-                    parts = [s.clip(lo, hi) for s in incoming if s.start <= lo and s.end >= hi]
++                for lo, hi, parts in self._coverage(incoming, cuts):
+                     if node == commodity.destination:
+                         for stream in parts:
+                             self._deliver(key, stream)

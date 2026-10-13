@@ -1,0 +1,19 @@
+{
+  "audit": [
+    {
+      "adapted_source": "def verify(self):\n    tool = Path(__file__).resolve().parents[1] / 'tools/version_control_readme_v1.py'\n    vc = reader\n    p = vc.safe_path(self.project_root, self.manifest_path)\n    if vc.file_info(p)['sha256'] != self.expected_manifest_sha256:\n        raise ValueError('P0H_MANIFEST_DRIFT')\n    doc = vc.read_json(p)\n    if doc['schema'] != 'dynamic_k_p0h_structural_seam_sources_v1':\n        raise ValueError('P0H_MANIFEST_SCOPE')\n    for row in doc['files']:\n        if vc.binding(self.project_root, row['path']) != row:\n            raise ValueError('P0H_SOURCE_DRIFT:' + row['path'])\n    return {'status': 'PASS', 'scope': 'P0H_STRUCTURAL_COPY_ONLY'}",
+      "changes": "Only verifier module lookup and checked path traversal; all raw hash and semantic clauses retained",
+      "guard": "SourceBinding",
+      "original_source": "def verify(self):\n    tool=Path(__file__).resolve().parents[1]/'tools/version_control_readme_v1.py'\n    spec=importlib.util.spec_from_file_location('p0h_bound_vc',tool)\n    vc=importlib.util.module_from_spec(spec);spec.loader.exec_module(vc)\n    p=vc.safe_path(self.project_root,self.manifest_path)\n    if vc.file_info(p)['sha256']!=self.expected_manifest_sha256:raise ValueError('P0H_MANIFEST_DRIFT')\n    doc=vc.read_json(p)\n    if doc['schema']!='dynamic_k_p0h_structural_seam_sources_v1':raise ValueError('P0H_MANIFEST_SCOPE')\n    for row in doc['files']:\n        if vc.binding(self.project_root,row['path'])!=row:raise ValueError('P0H_SOURCE_DRIFT:'+row['path'])\n    return {'status':'PASS','scope':'P0H_STRUCTURAL_COPY_ONLY'}\n"
+    },
+    {
+      "adapted_source": "def verify(self):\n    tool = Path(__file__).resolve().parents[1] / 'tools/version_control_readme_v1.py'\n    vc = reader\n    p = vc.safe_path(self.project_root, self.manifest_path)\n    if vc.file_info(p)['sha256'] != self.expected_manifest_sha256:\n        raise ValueError('P0H_MANIFEST_DRIFT')\n    doc = vc.read_json(p)\n    if doc['schema'] != 'dynamic_k_p0h_structural_seam_sources_v1':\n        raise ValueError('P0H_MANIFEST_SCOPE')\n    for row in doc['files']:\n        if vc.binding(self.project_root, row['path']) != row:\n            raise ValueError('P0H_SOURCE_DRIFT:' + row['path'])\n    return {'status': 'PASS', 'scope': 'P0H_STRUCTURAL_COPY_ONLY'}",
+      "changes": "Raw I/O uses pinned handle, before/after metadata and complete fresh SHA-256; semantic clauses unchanged",
+      "guard": "SourceBinding_FRESH_HANDLE",
+      "original_source": "    def verify(self):\n        tool=Path(__file__).resolve().parents[1]/'tools/version_control_readme_v1.py'\n        spec=importlib.util.spec_from_file_location('p0h_bound_vc',tool)\n        vc=importlib.util.module_from_spec(spec);spec.loader.exec_module(vc)\n        p=vc.safe_path(self.project_root,self.manifest_path)\n        if vc.file_info(p)['sha256']!=self.expected_manifest_sha256:raise ValueError('P0H_MANIFEST_DRIFT')\n        doc=vc.read_json(p)\n        if doc['schema']!='dynamic_k_p0h_structural_seam_sources_v1':raise ValueError('P0H_MANIFEST_SCOPE')\n        for row in doc['files']:\n            if vc.binding(self.project_root,row['path'])!=row:raise ValueError('P0H_SOURCE_DRIFT:'+row['path'])\n        return {'status':'PASS','scope':'P0H_STRUCTURAL_COPY_ONLY'}\n"
+    }
+  ],
+  "bytes_hashed": 1880200,
+  "fresh_raw_reads": 221,
+  "positive_hash_results_cached": false
+}

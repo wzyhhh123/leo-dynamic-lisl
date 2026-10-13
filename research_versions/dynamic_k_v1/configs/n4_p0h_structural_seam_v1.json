@@ -1,0 +1,55 @@
+{
+  "FIFO_modified": false,
+  "MPC_weights_modified": false,
+  "formal_control_parameters": {
+    "decision_cadence_s": null,
+    "maximum_concurrent_actions": null,
+    "search_budget": null
+  },
+  "formal_experiments_authorized": false,
+  "full_catalog_authorized": false,
+  "historical_PILOT_ONLY_background": {
+    "H_s": 6.0,
+    "T_A_s": 20.0,
+    "T_s": 30.0,
+    "acquisition_s": 0.5,
+    "all_branch_seconds_upper_bound": 14364.0,
+    "all_branch_upper_bound": 2520,
+    "decision_cadence_s": 3.0,
+    "decision_epochs_s": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27
+    ],
+    "lambda_E_bit_s_per_J": 1000.0,
+    "lambda_N_s": 6.0,
+    "main_branch_seconds_upper_bound": 4788.0,
+    "main_pilot_branch_upper_bound": 840,
+    "maximum_atomic_actions_per_epoch": 1,
+    "maximum_scored_branches": 7,
+    "retarget_a_s": 0.5,
+    "retarget_b_s": 0.5,
+    "sensitivity_extra_branch_upper_bound": 1680
+  },
+  "history_scope": "ONE_ROOT_EXPLICIT_REBIND",
+  "max_sample_actions_test_only": 7,
+  "paired_repetitions_test_only": 3,
+  "schema": "dynamic_k_p0h_structural_seam_v1",
+  "scientific_parameters": {
+    "D_ref_s": null,
+    "E_ref_J": null,
+    "R_min": null,
+    "T_A_s": null,
+    "T_s": null,
+    "alpha": null,
+    "tau_res_s": null
+  },
+  "status": "LIMITED_ENGINEERING_ONLY"
+}

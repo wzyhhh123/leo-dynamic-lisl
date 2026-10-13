@@ -1,0 +1,1 @@
+{"status":"PRE_EXECUTION_HELPER_SYNTAX_ERROR_RETAINED","file":"negative_and_lifecycle.py","line":61,"error":"SyntaxError: invalid syntax","reason":"s.write indentation outside try body","simulation_or_transaction_started":false,"fixed_only_new_unsealed_helper":true}

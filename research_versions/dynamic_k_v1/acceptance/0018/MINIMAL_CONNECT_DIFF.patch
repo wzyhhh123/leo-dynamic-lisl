@@ -1,0 +1,49 @@
+--- FROZEN_TerminalPairCatalog.connect_command
++++ NEW_StructuralCatalog.connect_command
+@@ -1,28 +1,20 @@
+-def connect_command(self, executor, a, b, retarget_a, retarget_b, acquisition,
+-                        orientation_a=(0.0, 1.0, 0.0),
+-                        orientation_b=(0.0, 1.0, 0.0), release_after=(),
+-                        numerical_epsilon_s=1e-9):
+-        a, b = tuple(a), tuple(b)
+-        window = self.current_window(a, b, executor.now)
+-        if window is None:
+-            raise ValueError(self.diagnose(a, b, executor.now) or "NOT_VISIBLE")
+-        command = Connect(a, b, window.end_s, retarget_a, retarget_b, acquisition,
+-                          orientation_a, orientation_b, tuple(release_after))
+-        trial = deepcopy(executor)
++def connect_command(self,executor,a,b,retarget_a,retarget_b,acquisition,
++                        orientation_a=(0.0,1.0,0.0),orientation_b=(0.0,1.0,0.0),
++                        release_after=(),numerical_epsilon_s=1e-9):
++        self.binding.verify();a,b=tuple(a),tuple(b)
++        window=self.current_window(a,b,executor.now)
++        if window is None:raise ValueError(self.diagnose(a,b,executor.now) or 'NOT_VISIBLE')
++        command=Connect(a,b,window.end_s,retarget_a,retarget_b,acquisition,
++                        orientation_a,orientation_b,tuple(release_after))
++        trial=self.history.clone(executor)
+         try:
+-            trial.submit([command])
+-        except ValueError as error:
+-            if "strictly precede" in str(error):
+-                raise ValueError("INSUFFICIENT_LIFETIME") from error
+-            raise
+-        ready = next(item["details"]["predicted_ready"] for item in reversed(trial.log)
+-                     if item["event"] == "RESERVE_BOTH")
+-        usable = window.end_s-ready
+-        if usable <= numerical_epsilon_s:
+-            raise ValueError("INSUFFICIENT_LIFETIME")
+-        return command, {
+-            "window": window.to_dict(), "ready_time": ready,
+-            "remaining_lifetime_s": window.end_s-executor.now,
+-            "usable_lifetime_s": usable,
+-            "end_semantics": "prediction_horizon" if window.right_censored else "terminal_pair_for_expiry",
+-        }+            try:trial.submit([command])
++            except ValueError as error:
++                if 'strictly precede' in str(error):raise ValueError('INSUFFICIENT_LIFETIME') from error
++                raise
++            ready=next(item['details']['predicted_ready'] for item in reversed(trial.log) if item['event']=='RESERVE_BOTH')
++            usable=window.end_s-ready
++            if usable<=numerical_epsilon_s:raise ValueError('INSUFFICIENT_LIFETIME')
++            return command,dict(window=window.to_dict(),ready_time=ready,remaining_lifetime_s=window.end_s-executor.now,
++                usable_lifetime_s=usable,end_semantics='prediction_horizon' if window.right_censored else 'terminal_pair_for_expiry')
++        finally:self.history.verify(executor)

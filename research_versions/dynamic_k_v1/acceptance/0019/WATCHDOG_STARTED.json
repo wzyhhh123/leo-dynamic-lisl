@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-10-13T09:26:03.113044+00:00",
+  "executable": "D:\\Program_Files\\anaconda3\\envs\\pytorch\\python.exe",
+  "hard_limit_s": 60,
+  "kind": "NEW_SYNTHETIC_READ_ONLY_DIAGNOSTIC_NOT_BBM_REPLAY",
+  "maximum_child_launches": 1,
+  "profiler_used": false
+}

@@ -1,0 +1,35 @@
+{
+  "files": [
+    {
+      "byte_count": 23062,
+      "path": "research_versions/dynamic_k_v1/tests/test_n3_baselines.py",
+      "sha256": "d0fd21ea7a3e4c6b7db0f2ac858aba5b40097ee60e1e31e865e6761997a251a3"
+    },
+    {
+      "byte_count": 2054,
+      "path": "research_versions/dynamic_k_v1/configs/n4_p0g_single_epoch_engineering_v1.json",
+      "sha256": "174cede01d1228a05ec658b0fdbd4b1e69b0ee940bbda44a633d9958734008c8"
+    },
+    {
+      "byte_count": 11466004,
+      "path": "research_versions/dynamic_k_v1/acceptance/0016/SMALL_PERSIST_SUMMARY.json",
+      "sha256": "cb6f1eab8175680fa7f54a472429986ebaa0b59c528838a2f6facdb1bed8b27e"
+    },
+    {
+      "byte_count": 4849451,
+      "path": "research_versions/dynamic_k_v1/acceptance/0016/SMALL_ZERO_SUMMARY.json",
+      "sha256": "b27b5d22c8f7cf8f6ae65d17c09f0ba9077535fa7ca9e61eab2aed5cd12229b4"
+    },
+    {
+      "byte_count": 625,
+      "path": "research_versions/dynamic_k_v1/acceptance/0016/SCORING_RULE_0015_CHECK.json",
+      "sha256": "6ef428316db5cdff797dd472bdb33888f3eb96b49264c2e4675221b249560f56"
+    },
+    {
+      "byte_count": 2011,
+      "path": "research_versions/dynamic_k_v1/acceptance/0016/complete_saved_timing.py",
+      "sha256": "2900bebb80ac8edd46138db00dd1e135cf8686093760a5896c32407ad45bdd1e"
+    }
+  ],
+  "schema": "dynamic_k_0017_supplemental_audit_inputs_v1"
+}

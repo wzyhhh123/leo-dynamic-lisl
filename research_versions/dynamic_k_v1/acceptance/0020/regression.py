@@ -1,0 +1,103 @@
+"""Frozen tests, explicit fixture-local seam injection, no global patch."""
+import io,inspect,json,sys,unittest
+import common as c
+from runtime.n1b_evaluator import DeliveredFluidEvaluator
+from runtime.n4_p0r_handle_reader import HandleReaderLease
+from runtime.n4_p0f_events import ExactObservedD2Engine,ExactBareD2Engine
+from runtime.n1b_observer import ObservedD2Engine
+
+def swept_evaluator(*a,**k):
+    result=DeliveredFluidEvaluator(*a,**k)
+    result.age=c.SweepDeliveredAgeLedger.from_ledger(result.age)
+    return result
+swept_evaluator.restore=DeliveredFluidEvaluator.restore
+
+def bind_clock(m):
+    class BoundObserved(ExactObservedD2Engine):
+        def __init__(self,*a,**k):super().__init__(*a,variant_binding=c.variant_binding(),**k)
+    if hasattr(m,'ObservedD2Engine'):
+        m.ObservedD2Engine=BoundObserved
+        if hasattr(m,'engine') and m.engine.__defaults__:m.engine.__defaults__=(BoundObserved,)
+    if hasattr(m,'TransitionAwareNetworkServiceEngine'):
+        def bare(*a,**k):return ExactBareD2Engine(*a,variant_binding=c.variant_binding(),**k)
+        m.TransitionAwareNetworkServiceEngine=bare
+
+def bind_sweep(m):
+    if hasattr(m,'DeliveredAgeLedger'):m.DeliveredAgeLedger=c.SweepDeliveredAgeLedger
+    if hasattr(m,'DeliveredFluidEvaluator'):m.DeliveredFluidEvaluator=swept_evaluator
+
+def run_suite(mode,name,selection=None):
+    c.source_verify();w=c.old_context();deps=w.old.dependencies();g=w.guard()
+    with HandleReaderLease(deps+[g],w.vc) as lease:
+        bindings=[lease.guard(x) for x in deps]
+        f=w.old.load('fifo20_fixtures_'+mode,c.V/'tests/test_n3_baselines.py')
+        f.N1A_BINDING,f.N1B_BINDING,f.N2_BINDING,f.N3_BINDING=bindings
+        if mode!='original':bind_clock(f)
+        if mode=='sweep':bind_sweep(f)
+        filenames=dict(N1a='test_n1a.py',N1b='test_n1b_fifo.py',N2='test_n2_actions.py',N3='test_n3_baselines.py',P0='test_n4_p0.py')
+        attrs=dict(N1a=['EVIDENCE'],N1b=['N1A_BINDING','N1B_BINDING'],N2=['N1A_BINDING','N1B_BINDING','N2_BINDING'],N3=['N1A_BINDING','N1B_BINDING','N2_BINDING','N3_BINDING'],P0=[])
+        m=w.old.load('fifo20_'+mode+'_'+name,c.V/'tests'/filenames[name])
+        for attr,value in zip(attrs[name],bindings):setattr(m,attr,value)
+        if mode!='original':bind_clock(m)
+        if mode=='sweep':bind_sweep(m)
+        if name=='N3':
+            p=c.V/'acceptance/0007/attempt01/catalog_coverage.json'
+            # Previously full raw-byte chain verification, recheck exact source binding here.
+            manifest=json.loads((c.V/'revisions/0007/record.json').read_text(encoding='utf-8'))
+            row=next(r for r in manifest['changes']['added'] if r['path']==p.relative_to(c.P).as_posix())
+            assert w.vc.file_info(p)=={k:row[k] for k in ('byte_count','sha256')}
+            m.PRIOR_CATALOG_EVIDENCE=(p,row['sha256'])
+        if name=='P0':m.FIXTURES=f;m.BINDING=lease.guard(g)
+        if selection is None:
+            result=w.old.test_module(m)
+        else:
+            suite=unittest.defaultTestLoader.loadTestsFromModule(m)
+            def flatten(s):
+                for case in s:
+                    if isinstance(case,unittest.TestSuite):yield from flatten(case)
+                    else:yield case
+            cases=list(flatten(suite));selected=cases[selection[0]:selection[1]]
+            assert selected
+            stream=io.StringIO();r=unittest.TextTestRunner(stream=stream,verbosity=2).run(unittest.TestSuite(selected))
+            result=dict(status='PASS' if r.wasSuccessful() else 'FAIL',tests_run=r.testsRun,
+                failures=[dict(test=str(t),traceback=s) for t,s in r.failures],errors=[dict(test=str(t),traceback=s) for t,s in r.errors],
+                output=stream.getvalue(),selected_test_ids=[t.id() for t in selected],full_suite_count=len(cases),
+                selection=list(selection),original_assertions_unchanged=True)
+        result.update(mode=mode,source_expectations_unmodified=True,global_monkeypatch=False,
+            explicit_test_module_bindings=True,full_catalog='REVALIDATE_SEALED_0007_MAPPING_ONLY')
+        suffix='' if selection is None else '_%d_%d'%selection
+        c.write('regressions/'+mode+'_'+name+suffix+'.json',result)
+        print(mode,name,result['status'],result['tests_run'],flush=True)
+        assert result['status']=='PASS','UPSTREAM_REGRESSION_FAILURE'
+
+def history(index):
+    ref=json.loads((c.V/'acceptance/0011/historical_regression.json').read_text(encoding='utf-8'));groups=[]
+    def find(d):
+        if isinstance(d,dict):
+            if 'patterns' in d:groups.append(d)
+            else:
+                for v in d.values():find(v)
+    find(ref);group=groups[index]
+    sys.path.insert(0,str(c.P/'tests'));suite=unittest.TestSuite()
+    for pattern in group['patterns']:suite.addTests(unittest.defaultTestLoader.discover(str(c.P/'tests'),pattern=pattern))
+    out=io.StringIO();r=unittest.TextTestRunner(stream=out,verbosity=2).run(suite)
+    failures=[dict(test=str(t),traceback=s) for t,s in r.failures]
+    errors=[dict(test=str(t),traceback=s) for t,s in r.errors]
+    assert r.testsRun==group['tests_run']
+    assert [x['test'] for x in failures]==[x['test'] for x in group['failures']] and not errors,'NEW_HISTORICAL_FAILURE'
+    c.write('regressions/history_%d.json'%index,dict(status='PASS_NO_NEW_FAILURES',tests_run=r.testsRun,
+        patterns=group['patterns'],failures=failures,errors=errors,output=out.getvalue(),frozen_original_kernel_only=True))
+    print('HISTORY',index,r.testsRun,len(failures),flush=True)
+
+def events():
+    sys.path.insert(0,str(c.V/'acceptance/0015'))
+    m=c.load('fifo20_event_clock',c.V/'acceptance/0015/test_event_clock.py')
+    # Only locally imported names in this separate test module.
+    m.DeliveredAgeLedger=c.SweepDeliveredAgeLedger;m.DeliveredFluidEvaluator=swept_evaluator
+    result=m.w.old.old.test_module(m);c.write('regressions/events.json',result)
+    assert result['status']=='PASS'
+
+if __name__=='__main__':
+    if sys.argv[1]=='history':history(int(sys.argv[2]))
+    elif sys.argv[1]=='events':events()
+    else:run_suite(sys.argv[1],sys.argv[2],tuple(map(int,sys.argv[3:5])) if len(sys.argv)>3 else None)

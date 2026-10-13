@@ -1,0 +1,873 @@
+{
+  "complete_catalog_under_300s_claimed": false,
+  "engineering_measurement_stop_s": 120.0,
+  "forecast_branches": 0,
+  "full_catalog_enumerated": false,
+  "install_and_clone_s": 0.3172428000000025,
+  "paired_repetitions_per_action": 3,
+  "plain_optimized_plus_cold_install_total_s": 2.4525116999999526,
+  "plain_optimized_total_s": 2.13526889999995,
+  "plain_original_total_s": 1.0604411000000056,
+  "plain_total_speed_ratio": 0.4966311737130768,
+  "plain_validate_calls": 42,
+  "profiled_validate_calls": 14,
+  "profiler_warning": "All classified stage times include thread observer overhead; production effect uses unprofiled pairs only",
+  "reader_startup_s": 8.818151299999997,
+  "rows": [
+    {
+      "action": {
+        "kind": "HOLD"
+      },
+      "exact_equal": true,
+      "identical_verdict_sha256": "176ab03b05f6c56e6d9675f2e53439249397ac3d06f89e5673eaef4e99fb5e72",
+      "median_ratio_original_over_optimized": 1.1578947372357578,
+      "name": "HOLD",
+      "optimized_median_s": 9.499999997331088e-06,
+      "optimized_wall_s": [
+        9.499999997331088e-06,
+        8.600000001024455e-06,
+        1.3299999999105694e-05
+      ],
+      "original_median_s": 1.100000000064938e-05,
+      "original_wall_s": [
+        1.1299999997049781e-05,
+        1.0400000000743148e-05,
+        1.100000000064938e-05
+      ]
+    },
+    {
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "ADD",
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "exact_equal": true,
+      "identical_verdict_sha256": "508e034af2591842e59b8aefbb578aa9c7a9526199e47d3e183a7e949b691f3d",
+      "median_ratio_original_over_optimized": 0.5102202709233544,
+      "name": "ADD_hot",
+      "optimized_median_s": 0.15870909999999583,
+      "optimized_wall_s": [
+        0.1554933000000034,
+        0.20450329999999894,
+        0.15870909999999583
+      ],
+      "original_median_s": 0.08097659999999962,
+      "original_wall_s": [
+        0.09554829999999725,
+        0.08097659999999962,
+        0.07721779999999967
+      ]
+    },
+    {
+      "action": {
+        "a": [
+          "X0_10",
+          "D1"
+        ],
+        "b": [
+          "X1_11",
+          "D1"
+        ],
+        "kind": "ADD",
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "exact_equal": true,
+      "identical_verdict_sha256": "8a939ee5f217f8b89206d87033ce567938e4f6c3d069528ebeb89c8cc3143bb5",
+      "median_ratio_original_over_optimized": 0.5131368255616906,
+      "name": "ADD_other",
+      "optimized_median_s": 0.1519430999999969,
+      "optimized_wall_s": [
+        0.13278499999999838,
+        0.19748249999999956,
+        0.1519430999999969
+      ],
+      "original_median_s": 0.07796760000000091,
+      "original_wall_s": [
+        0.07796760000000091,
+        0.08828250000000537,
+        0.074827599999999
+      ]
+    },
+    {
+      "action": {
+        "kind": "DROP",
+        "old": {
+          "endpoints": [
+            [
+              "X0_1",
+              "D2"
+            ],
+            [
+              "X1_1",
+              "D1"
+            ]
+          ],
+          "link_id": "L1"
+        }
+      },
+      "exact_equal": true,
+      "identical_verdict_sha256": "b2710eb4e97e2f1d952f36eb7c01d0e2dd63076d0b066d8b15fce8c33370d069",
+      "median_ratio_original_over_optimized": 1.0277480726192143,
+      "name": "DROP",
+      "optimized_median_s": 0.016083999999992216,
+      "optimized_wall_s": [
+        0.01367270000000076,
+        0.016083999999992216,
+        0.01722440000000347
+      ],
+      "original_median_s": 0.016530299999999443,
+      "original_wall_s": [
+        0.0247322999999966,
+        0.013848400000000538,
+        0.016530299999999443
+      ]
+    },
+    {
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "BBM",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "exact_equal": true,
+      "identical_verdict_sha256": "6874d34dbdae7fa4150738dbae75160bdfd981fec8d801771ad9ab3df7890cb1",
+      "median_ratio_original_over_optimized": 0.4757472351547386,
+      "name": "BBM_hot",
+      "optimized_median_s": 0.1795218000000034,
+      "optimized_wall_s": [
+        0.1795218000000034,
+        0.17402869999999382,
+        0.21489199999999187
+      ],
+      "original_median_s": 0.08540700000000356,
+      "original_wall_s": [
+        0.06824590000000796,
+        0.08540700000000356,
+        0.09851279999999463
+      ]
+    },
+    {
+      "action": {
+        "a": [
+          "X0_10",
+          "D2"
+        ],
+        "b": [
+          "X1_10",
+          "D1"
+        ],
+        "kind": "REPLACE",
+        "mode": "MBB",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D2"
+              ],
+              [
+                "X1_1",
+                "D1"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "exact_equal": true,
+      "identical_verdict_sha256": "bfdc3a88d51804c39631f0efb73d3462ee67acfa9f31733e5cdde566fa213e47",
+      "median_ratio_original_over_optimized": 0.5350707443601589,
+      "name": "MBB_hot",
+      "optimized_median_s": 0.16122839999999883,
+      "optimized_wall_s": [
+        0.16122839999999883,
+        0.15915880000000016,
+        0.19821789999998884
+      ],
+      "original_median_s": 0.08626859999999681,
+      "original_wall_s": [
+        0.0970688000000024,
+        0.08626859999999681,
+        0.07438019999999312
+      ]
+    },
+    {
+      "action": {
+        "a": [
+          "X0_1",
+          "D2"
+        ],
+        "b": [
+          "X1_1",
+          "D1"
+        ],
+        "kind": "ADD",
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "exact_equal": true,
+      "identical_verdict_sha256": "4cc3228667bb6438147ae9c58290b40c65e310124262bad33b86aea53eeb6779",
+      "median_ratio_original_over_optimized": 0.8922091784022267,
+      "name": "ADD_occupied",
+      "optimized_median_s": 9.369999999364609e-05,
+      "optimized_wall_s": [
+        0.00010759999999265801,
+        9.369999999364609e-05,
+        9.119999999995798e-05
+      ],
+      "original_median_s": 8.360000001061962e-05,
+      "original_wall_s": [
+        0.000431399999996529,
+        7.870000000309574e-05,
+        8.360000001061962e-05
+      ]
+    }
+  ],
+  "scientific_gate_pass": false,
+  "specified_actions": 7,
+  "stage_profiles": [
+    {
+      "comparator_median_s": 1.100000000064938e-05,
+      "exact_equal": true,
+      "group": "original",
+      "instrumentation_excess_over_median_s": 4.510000000124137e-05,
+      "name": "HOLD",
+      "parts": {
+        "actual_wall_s": 5.610000000189075e-05,
+        "callbacks": 4,
+        "calls": {
+          "N2_validation_other": 1
+        },
+        "exclusive_s": {
+          "N2_validation_other": 1.4000000000180535e-05
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {}
+      }
+    },
+    {
+      "comparator_median_s": 9.499999997331088e-06,
+      "exact_equal": true,
+      "group": "optimized",
+      "instrumentation_excess_over_median_s": 7.199999998874773e-06,
+      "name": "HOLD",
+      "parts": {
+        "actual_wall_s": 1.669999999620586e-05,
+        "callbacks": 4,
+        "calls": {
+          "N2_validation_other": 1
+        },
+        "exclusive_s": {
+          "N2_validation_other": 6.000000006167738e-06
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {}
+      }
+    },
+    {
+      "comparator_median_s": 0.08097659999999962,
+      "exact_equal": true,
+      "group": "original",
+      "instrumentation_excess_over_median_s": 1.0050291000000016,
+      "name": "ADD_hot",
+      "parts": {
+        "actual_wall_s": 1.0860057000000012,
+        "callbacks": 991538,
+        "calls": {
+          "320_terminal_log_snapshot": 8,
+          "GateC_connect_other": 1,
+          "GateC_layer_checks": 1,
+          "GateC_physical_window_bilateral_other": 1,
+          "LOS_FOR": 2,
+          "N2_outer_structural_clone": 1,
+          "N2_validation_other": 1,
+          "SGP4": 2,
+          "current_events_copy": 1,
+          "current_links_copy": 1,
+          "current_reservations_copy": 1,
+          "current_terminals_copy": 1,
+          "executor_copy_other": 1,
+          "inner_transaction_preplay_other": 2,
+          "inner_transaction_structural_clone": 2,
+          "terminal_history_copy": 1,
+          "terminal_invariant_validation": 4,
+          "window_lookup": 2
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.5246025999999944,
+          "GateC_connect_other": 0.00031539999999807833,
+          "GateC_layer_checks": 0.0008564999999975953,
+          "GateC_physical_window_bilateral_other": 3.229999999376787e-05,
+          "LOS_FOR": 0.0023910000000029186,
+          "N2_outer_structural_clone": 0.0035601000000013983,
+          "N2_validation_other": 0.0002455999999995129,
+          "SGP4": 0.00037790000000370583,
+          "current_events_copy": 0.00011049999999812599,
+          "current_links_copy": 0.00019499999999794682,
+          "current_reservations_copy": 9.200000000930686e-06,
+          "current_terminals_copy": 0.08335590000000082,
+          "executor_copy_other": 0.006721900000002279,
+          "inner_transaction_preplay_other": 0.0012217000000021017,
+          "inner_transaction_structural_clone": 0.03927340000000612,
+          "terminal_history_copy": 0.4206393000000048,
+          "terminal_invariant_validation": 0.0020430999999945243,
+          "window_lookup": 1.9500000000505224e-05
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 2564,
+          "deepcopy_dict_calls": 2903,
+          "deepcopy_dict_item_visits": 43597,
+          "deepcopy_list_calls": 12,
+          "deepcopy_list_item_visits": 2891,
+          "deepcopy_reconstruct_calls": 1286
+        }
+      }
+    },
+    {
+      "comparator_median_s": 0.15870909999999583,
+      "exact_equal": true,
+      "group": "optimized",
+      "instrumentation_excess_over_median_s": 0.5423435000000012,
+      "name": "ADD_hot",
+      "parts": {
+        "actual_wall_s": 0.701052599999997,
+        "callbacks": 549550,
+        "calls": {
+          "320_terminal_log_snapshot": 8,
+          "GateC_connect_other": 1,
+          "GateC_layer_checks": 1,
+          "GateC_physical_window_bilateral_other": 1,
+          "GateC_sealed_structural_clone_other": 1,
+          "LOS_FOR": 2,
+          "N2_outer_structural_clone": 2,
+          "N2_validation_other": 1,
+          "SGP4": 2,
+          "history_JSON_encoding": 6,
+          "history_integrity_validation": 3,
+          "inner_transaction_preplay_other": 2,
+          "inner_transaction_structural_clone": 2,
+          "seam_source_validation": 1,
+          "terminal_invariant_validation": 4,
+          "window_lookup": 2
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.5492838999999776,
+          "GateC_connect_other": 0.0002482999999955382,
+          "GateC_layer_checks": 0.0003096999999954164,
+          "GateC_physical_window_bilateral_other": 2.6700000013590852e-05,
+          "GateC_sealed_structural_clone_other": 2.13999999942871e-05,
+          "LOS_FOR": 0.0024428999999983603,
+          "N2_outer_structural_clone": 0.008488900000010347,
+          "N2_validation_other": 0.00021939999998465964,
+          "SGP4": 0.00038479999999907477,
+          "history_JSON_encoding": 0.05006709999999259,
+          "history_integrity_validation": 0.00035110000001026265,
+          "inner_transaction_preplay_other": 0.0010840000000271743,
+          "inner_transaction_structural_clone": 0.007916699999995558,
+          "seam_source_validation": 0.07779949999999758,
+          "terminal_invariant_validation": 0.002343200000005652,
+          "window_lookup": 2.4799999998492694e-05
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 2564,
+          "deepcopy_reconstruct_calls": 1284
+        }
+      }
+    },
+    {
+      "comparator_median_s": 0.07796760000000091,
+      "exact_equal": true,
+      "group": "original",
+      "instrumentation_excess_over_median_s": 1.0047142000000022,
+      "name": "ADD_other",
+      "parts": {
+        "actual_wall_s": 1.0826818000000031,
+        "callbacks": 991538,
+        "calls": {
+          "320_terminal_log_snapshot": 8,
+          "GateC_connect_other": 1,
+          "GateC_layer_checks": 1,
+          "GateC_physical_window_bilateral_other": 1,
+          "LOS_FOR": 2,
+          "N2_outer_structural_clone": 1,
+          "N2_validation_other": 1,
+          "SGP4": 2,
+          "current_events_copy": 1,
+          "current_links_copy": 1,
+          "current_reservations_copy": 1,
+          "current_terminals_copy": 1,
+          "executor_copy_other": 1,
+          "inner_transaction_preplay_other": 2,
+          "inner_transaction_structural_clone": 2,
+          "terminal_history_copy": 1,
+          "terminal_invariant_validation": 4,
+          "window_lookup": 2
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.5145882000000199,
+          "GateC_connect_other": 0.00029059999999958563,
+          "GateC_layer_checks": 0.0008085000000050968,
+          "GateC_physical_window_bilateral_other": 2.6699999978063715e-05,
+          "LOS_FOR": 0.0018451999999911095,
+          "N2_outer_structural_clone": 0.0031217000000083317,
+          "N2_validation_other": 0.0001981999999998152,
+          "SGP4": 0.000342800000012744,
+          "current_events_copy": 0.00010890000000074451,
+          "current_links_copy": 0.0001888000000036527,
+          "current_reservations_copy": 9.000000005698894e-06,
+          "current_terminals_copy": 0.07209600000000194,
+          "executor_copy_other": 0.0060246999999975515,
+          "inner_transaction_preplay_other": 0.0009802999999806161,
+          "inner_transaction_structural_clone": 0.007227800000009665,
+          "terminal_history_copy": 0.47333089999999345,
+          "terminal_invariant_validation": 0.0014518999999921789,
+          "window_lookup": 1.170000000172422e-05
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 2564,
+          "deepcopy_dict_calls": 2903,
+          "deepcopy_dict_item_visits": 43597,
+          "deepcopy_list_calls": 12,
+          "deepcopy_list_item_visits": 2891,
+          "deepcopy_reconstruct_calls": 1286
+        }
+      }
+    },
+    {
+      "comparator_median_s": 0.1519430999999969,
+      "exact_equal": true,
+      "group": "optimized",
+      "instrumentation_excess_over_median_s": 0.5396670000000086,
+      "name": "ADD_other",
+      "parts": {
+        "actual_wall_s": 0.6916101000000054,
+        "callbacks": 549550,
+        "calls": {
+          "320_terminal_log_snapshot": 8,
+          "GateC_connect_other": 1,
+          "GateC_layer_checks": 1,
+          "GateC_physical_window_bilateral_other": 1,
+          "GateC_sealed_structural_clone_other": 1,
+          "LOS_FOR": 2,
+          "N2_outer_structural_clone": 2,
+          "N2_validation_other": 1,
+          "SGP4": 2,
+          "history_JSON_encoding": 6,
+          "history_integrity_validation": 3,
+          "inner_transaction_preplay_other": 2,
+          "inner_transaction_structural_clone": 2,
+          "seam_source_validation": 1,
+          "terminal_invariant_validation": 4,
+          "window_lookup": 2
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.5409247999999991,
+          "GateC_connect_other": 0.0002449000000126489,
+          "GateC_layer_checks": 0.0004291000000051781,
+          "GateC_physical_window_bilateral_other": 4.1499999994698555e-05,
+          "GateC_sealed_structural_clone_other": 1.9999999992137418e-05,
+          "LOS_FOR": 0.002655799999999431,
+          "N2_outer_structural_clone": 0.00819899999999052,
+          "N2_validation_other": 0.00025570000001096105,
+          "SGP4": 0.0004190000000079408,
+          "history_JSON_encoding": 0.05108610000002045,
+          "history_integrity_validation": 0.0005122999999827016,
+          "inner_transaction_preplay_other": 0.0011196999999896207,
+          "inner_transaction_structural_clone": 0.008391000000003146,
+          "seam_source_validation": 0.07545959999998786,
+          "terminal_invariant_validation": 0.0017945000000025857,
+          "window_lookup": 2.6399999995874168e-05
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 2564,
+          "deepcopy_reconstruct_calls": 1284
+        }
+      }
+    },
+    {
+      "comparator_median_s": 0.016530299999999443,
+      "exact_equal": true,
+      "group": "original",
+      "instrumentation_excess_over_median_s": 0.23366800000000865,
+      "name": "DROP",
+      "parts": {
+        "actual_wall_s": 0.2501983000000081,
+        "callbacks": 205662,
+        "calls": {
+          "320_terminal_log_snapshot": 3,
+          "N2_outer_structural_clone": 1,
+          "N2_validation_other": 1,
+          "inner_transaction_preplay_other": 1,
+          "inner_transaction_structural_clone": 1,
+          "terminal_invariant_validation": 3
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.23764420000001962,
+          "N2_outer_structural_clone": 0.004967800000002853,
+          "N2_validation_other": 9.629999999560823e-05,
+          "inner_transaction_preplay_other": 0.00032749999996894985,
+          "inner_transaction_structural_clone": 0.00577970000000505,
+          "terminal_invariant_validation": 0.0013504000000068572
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 961,
+          "deepcopy_reconstruct_calls": 642
+        }
+      }
+    },
+    {
+      "comparator_median_s": 0.016083999999992216,
+      "exact_equal": true,
+      "group": "optimized",
+      "instrumentation_excess_over_median_s": 0.17138600000001247,
+      "name": "DROP",
+      "parts": {
+        "actual_wall_s": 0.1874700000000047,
+        "callbacks": 205662,
+        "calls": {
+          "320_terminal_log_snapshot": 3,
+          "N2_outer_structural_clone": 1,
+          "N2_validation_other": 1,
+          "inner_transaction_preplay_other": 1,
+          "inner_transaction_structural_clone": 1,
+          "terminal_invariant_validation": 3
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.1778993000000071,
+          "N2_outer_structural_clone": 0.0038279999999986103,
+          "N2_validation_other": 7.499999999538431e-05,
+          "inner_transaction_preplay_other": 0.00029950000001122135,
+          "inner_transaction_structural_clone": 0.004133199999998283,
+          "terminal_invariant_validation": 0.0012118999999870539
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 961,
+          "deepcopy_reconstruct_calls": 642
+        }
+      }
+    },
+    {
+      "comparator_median_s": 0.08540700000000356,
+      "exact_equal": true,
+      "group": "original",
+      "instrumentation_excess_over_median_s": 1.3869274999999845,
+      "name": "BBM_hot",
+      "parts": {
+        "actual_wall_s": 1.4723344999999881,
+        "callbacks": 1126106,
+        "calls": {
+          "320_terminal_log_snapshot": 10,
+          "GateC_connect_other": 1,
+          "GateC_layer_checks": 1,
+          "GateC_physical_window_bilateral_other": 1,
+          "LOS_FOR": 2,
+          "N2_outer_structural_clone": 1,
+          "N2_validation_other": 1,
+          "SGP4": 2,
+          "current_events_copy": 1,
+          "current_links_copy": 1,
+          "current_reservations_copy": 1,
+          "current_terminals_copy": 1,
+          "executor_copy_other": 1,
+          "inner_transaction_preplay_other": 2,
+          "inner_transaction_structural_clone": 2,
+          "terminal_history_copy": 1,
+          "terminal_invariant_validation": 6,
+          "window_lookup": 2
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.7579371000000066,
+          "GateC_connect_other": 0.0006553000000195652,
+          "GateC_layer_checks": 0.000990300000012212,
+          "GateC_physical_window_bilateral_other": 4.020000000082291e-05,
+          "LOS_FOR": 0.0030301999999835516,
+          "N2_outer_structural_clone": 0.004446799999996642,
+          "N2_validation_other": 0.00026640000001521,
+          "SGP4": 0.00044160000000204036,
+          "current_events_copy": 0.00011530000000448126,
+          "current_links_copy": 0.00020860000000766377,
+          "current_reservations_copy": 9.49999999022566e-06,
+          "current_terminals_copy": 0.08843009999999651,
+          "executor_copy_other": 0.00802269999999794,
+          "inner_transaction_preplay_other": 0.0014195999999770947,
+          "inner_transaction_structural_clone": 0.009500799999997867,
+          "terminal_history_copy": 0.5938307999999921,
+          "terminal_invariant_validation": 0.0029359000000113156,
+          "window_lookup": 1.7399999990175274e-05
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 3205,
+          "deepcopy_dict_calls": 2903,
+          "deepcopy_dict_item_visits": 43597,
+          "deepcopy_list_calls": 12,
+          "deepcopy_list_item_visits": 2891,
+          "deepcopy_reconstruct_calls": 1286
+        }
+      }
+    },
+    {
+      "comparator_median_s": 0.1795218000000034,
+      "exact_equal": true,
+      "group": "optimized",
+      "instrumentation_excess_over_median_s": 0.7870849999999905,
+      "name": "BBM_hot",
+      "parts": {
+        "actual_wall_s": 0.9666067999999939,
+        "callbacks": 684118,
+        "calls": {
+          "320_terminal_log_snapshot": 10,
+          "GateC_connect_other": 1,
+          "GateC_layer_checks": 1,
+          "GateC_physical_window_bilateral_other": 1,
+          "GateC_sealed_structural_clone_other": 1,
+          "LOS_FOR": 2,
+          "N2_outer_structural_clone": 2,
+          "N2_validation_other": 1,
+          "SGP4": 2,
+          "history_JSON_encoding": 6,
+          "history_integrity_validation": 3,
+          "inner_transaction_preplay_other": 2,
+          "inner_transaction_structural_clone": 2,
+          "seam_source_validation": 1,
+          "terminal_invariant_validation": 6,
+          "window_lookup": 2
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.7861101999999818,
+          "GateC_connect_other": 0.00029409999997653813,
+          "GateC_layer_checks": 0.0005695000000116579,
+          "GateC_physical_window_bilateral_other": 3.239999999493648e-05,
+          "GateC_sealed_structural_clone_other": 3.020000001185963e-05,
+          "LOS_FOR": 0.0024851999999953023,
+          "N2_outer_structural_clone": 0.009712899999982483,
+          "N2_validation_other": 0.00023449999999058946,
+          "SGP4": 0.00041240000000186683,
+          "history_JSON_encoding": 0.06028029999997386,
+          "history_integrity_validation": 0.0011660000000404125,
+          "inner_transaction_preplay_other": 0.0034514000000740452,
+          "inner_transaction_structural_clone": 0.009481299999990256,
+          "seam_source_validation": 0.08555450000000064,
+          "terminal_invariant_validation": 0.006734099999974319,
+          "window_lookup": 2.619999999353695e-05
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 3205,
+          "deepcopy_reconstruct_calls": 1284
+        }
+      }
+    },
+    {
+      "comparator_median_s": 0.08626859999999681,
+      "exact_equal": true,
+      "group": "original",
+      "instrumentation_excess_over_median_s": 1.0472586000000064,
+      "name": "MBB_hot",
+      "parts": {
+        "actual_wall_s": 1.1335272000000032,
+        "callbacks": 991730,
+        "calls": {
+          "320_terminal_log_snapshot": 8,
+          "GateC_connect_other": 1,
+          "GateC_layer_checks": 1,
+          "GateC_physical_window_bilateral_other": 1,
+          "LOS_FOR": 2,
+          "N2_outer_structural_clone": 1,
+          "N2_validation_other": 1,
+          "SGP4": 2,
+          "current_events_copy": 1,
+          "current_links_copy": 1,
+          "current_reservations_copy": 1,
+          "current_terminals_copy": 1,
+          "executor_copy_other": 1,
+          "inner_transaction_preplay_other": 2,
+          "inner_transaction_structural_clone": 2,
+          "terminal_history_copy": 1,
+          "terminal_invariant_validation": 4,
+          "window_lookup": 2
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.5392531000000105,
+          "GateC_connect_other": 0.00040440000000785403,
+          "GateC_layer_checks": 0.0009497000000209255,
+          "GateC_physical_window_bilateral_other": 3.209999999853608e-05,
+          "LOS_FOR": 0.0025602999999989606,
+          "N2_outer_structural_clone": 0.005023399999998901,
+          "N2_validation_other": 0.00024129999999900065,
+          "SGP4": 0.00045910000000048967,
+          "current_events_copy": 0.00010840000000200689,
+          "current_links_copy": 0.0001916999999878044,
+          "current_reservations_copy": 8.79999998915082e-06,
+          "current_terminals_copy": 0.08888629999999864,
+          "executor_copy_other": 0.007338200000020834,
+          "inner_transaction_preplay_other": 0.0012905999999759388,
+          "inner_transaction_structural_clone": 0.009306100000017636,
+          "terminal_history_copy": 0.47568909999999676,
+          "terminal_invariant_validation": 0.001739499999985128,
+          "window_lookup": 1.3799999990737888e-05
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 2564,
+          "deepcopy_dict_calls": 2903,
+          "deepcopy_dict_item_visits": 43597,
+          "deepcopy_list_calls": 12,
+          "deepcopy_list_item_visits": 2891,
+          "deepcopy_reconstruct_calls": 1286
+        }
+      }
+    },
+    {
+      "comparator_median_s": 0.16122839999999883,
+      "exact_equal": true,
+      "group": "optimized",
+      "instrumentation_excess_over_median_s": 0.521723300000005,
+      "name": "MBB_hot",
+      "parts": {
+        "actual_wall_s": 0.6829517000000038,
+        "callbacks": 549742,
+        "calls": {
+          "320_terminal_log_snapshot": 8,
+          "GateC_connect_other": 1,
+          "GateC_layer_checks": 1,
+          "GateC_physical_window_bilateral_other": 1,
+          "GateC_sealed_structural_clone_other": 1,
+          "LOS_FOR": 2,
+          "N2_outer_structural_clone": 2,
+          "N2_validation_other": 1,
+          "SGP4": 2,
+          "history_JSON_encoding": 6,
+          "history_integrity_validation": 3,
+          "inner_transaction_preplay_other": 2,
+          "inner_transaction_structural_clone": 2,
+          "seam_source_validation": 1,
+          "terminal_invariant_validation": 4,
+          "window_lookup": 2
+        },
+        "exclusive_s": {
+          "320_terminal_log_snapshot": 0.5550563999999838,
+          "GateC_connect_other": 0.0002598000000233469,
+          "GateC_layer_checks": 0.0002835999999888372,
+          "GateC_physical_window_bilateral_other": 2.4399999986712828e-05,
+          "GateC_sealed_structural_clone_other": 2.119999999194988e-05,
+          "LOS_FOR": 0.0019451999999944292,
+          "N2_outer_structural_clone": 0.006866200000004596,
+          "N2_validation_other": 0.00019520000000738946,
+          "SGP4": 0.0009643000000068014,
+          "history_JSON_encoding": 0.04276140000000339,
+          "history_integrity_validation": 0.0005393999999938615,
+          "inner_transaction_preplay_other": 0.0013316000000145323,
+          "inner_transaction_structural_clone": 0.006644100000002595,
+          "seam_source_validation": 0.0639121999999901,
+          "terminal_invariant_validation": 0.002095499999995809,
+          "window_lookup": 2.290000000471082e-05
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 2564,
+          "deepcopy_reconstruct_calls": 1284
+        }
+      }
+    },
+    {
+      "comparator_median_s": 8.360000001061962e-05,
+      "exact_equal": true,
+      "group": "original",
+      "instrumentation_excess_over_median_s": 0.0001188999999897078,
+      "name": "ADD_occupied",
+      "parts": {
+        "actual_wall_s": 0.00020250000000032742,
+        "callbacks": 100,
+        "calls": {
+          "N2_validation_other": 1
+        },
+        "exclusive_s": {
+          "N2_validation_other": 0.00017800000000534055
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 1
+        }
+      }
+    },
+    {
+      "comparator_median_s": 9.369999999364609e-05,
+      "exact_equal": true,
+      "group": "optimized",
+      "instrumentation_excess_over_median_s": 5.780000000754626e-05,
+      "name": "ADD_occupied",
+      "parts": {
+        "actual_wall_s": 0.00015150000000119235,
+        "callbacks": 100,
+        "calls": {
+          "N2_validation_other": 1
+        },
+        "exclusive_s": {
+          "N2_validation_other": 0.00014049999998633211
+        },
+        "instrumentation": "pre-resolved code-object thread profiler, no method replacements; classified stages include observer overhead",
+        "object_operations": {
+          "dataclass_asdict_calls": 1
+        }
+      }
+    }
+  ],
+  "status": "PASS_BOUNDED_PAIRED_MEASUREMENT",
+  "wall_s": 19.721154300000002
+}

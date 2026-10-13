@@ -1,0 +1,31 @@
+{
+  "actual_wall_s": 0.2784093000000212,
+  "clone_s": 0.15594640000017534,
+  "error": {
+    "message": "cannot assign to field 'verify'",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\Program_Files\\anaconda3\\envs\\pytorch\\lib\\unittest\\mock.py\", line 1501, in __enter__\n    setattr(self.target, self.attribute, new_attr)\n  File \"<string>\", line 4, in __setattr__\ndataclasses.FrozenInstanceError: cannot assign to field 'verify'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0016\\epoch_workflow.py\", line 84, in score\n    finally:\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\runtime\\n4_p0.py\", line 198, in score_action\n    timings={};start=perf_counter();branch=root.atomic.clone();timings['branch_clone_s']=perf_counter()-start\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0016\\epoch_workflow.py\", line 80, in clone\n    start=time.perf_counter();result=None;error=None;guard_original=root.atomic.clone\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0016\\epoch_workflow.py\", line 72, in context\n    def score(root,action,instrumented=False):\n  File \"D:\\Document\\leo_routing_attitude\\dynamic_lisl_v2\\research_versions\\dynamic_k_v1\\acceptance\\0016\\epoch_workflow.py\", line 62, in install\n    context.enter_context(patch.object(obj,name,lambda *a,**k:self.invoke(category,fn,*a,**k)))\n  File \"D:\\Program_Files\\anaconda3\\envs\\pytorch\\lib\\contextlib.py\", line 448, in enter_context\n    result = _cm_type.__enter__(cm)\n  File \"D:\\Program_Files\\anaconda3\\envs\\pytorch\\lib\\unittest\\mock.py\", line 1514, in __enter__\n    if not self.__exit__(*sys.exc_info()):\n  File \"D:\\Program_Files\\anaconda3\\envs\\pytorch\\lib\\unittest\\mock.py\", line 1520, in __exit__\n    setattr(self.target, self.attribute, self.temp_original)\n  File \"<string>\", line 4, in __setattr__\ndataclasses.FrozenInstanceError: cannot assign to field 'verify'\n",
+    "type": "FrozenInstanceError"
+  },
+  "instrumentation": {
+    "description": "instance-local Python timers; exclusive totals include wrapper overhead",
+    "enabled": true,
+    "exclusive_s": {},
+    "method_calls": {},
+    "wrapper_callbacks": 0
+  },
+  "memory": {
+    "private_bytes": 131051520,
+    "process_peak_commit_bytes": 342118400,
+    "process_peak_working_set_bytes": 353099776,
+    "scope": "WINDOWS_PROCESS_LIFETIME_HIGH_WATER_INCLUDES_FIXTURE_BUILD_NO_RESET",
+    "working_set_bytes": 143216640
+  },
+  "result": null,
+  "state_checks": {
+    "age_clock_s": "3",
+    "causal_final_sha256": "14873037a48cb6e221d52a403f88f0f3f6f541690de5253e68ee34f688bf3269",
+    "clock_s": 3.0,
+    "energy_clock_s": 3.0,
+    "terminal_clock_s": 3.0
+  }
+}

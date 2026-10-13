@@ -1,0 +1,13 @@
+{
+  "captured_utc": "2026-10-13T04:20:22.098195+00:00",
+  "exit_code": 0,
+  "windows_process": {
+    "Id": 57396,
+    "CPU": 208.71875,
+    "WorkingSet64": 133042176,
+    "PeakWorkingSet64": 352481280,
+    "PrivateMemorySize64": 122011648,
+    "PeakPagedMemorySize64": 341590016
+  },
+  "scope": "PROCESS_LIFETIME_HIGH_WATER_INCLUDES_ROOT_BUILD_NOT_RESET"
+}

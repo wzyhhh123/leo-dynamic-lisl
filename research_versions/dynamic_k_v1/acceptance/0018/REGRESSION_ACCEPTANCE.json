@@ -1,0 +1,14 @@
+{
+  "event_clock_and_1bit_loss": 7,
+  "forecast_performance_runs": 0,
+  "full_catalog_enumerated": false,
+  "historical_passed": 131,
+  "historical_tests": 132,
+  "inline_variant": 1,
+  "known_F3_failed": 1,
+  "new_seam_scope": "Separately tested bounded root-scoped cases, not auto-injected into frozen N3 multi-epoch controllers",
+  "original_targeted": 116,
+  "source_tests_or_expectations_modified": false,
+  "status": "PASS_NO_NEW_FAILURES",
+  "variant_targeted": 116
+}

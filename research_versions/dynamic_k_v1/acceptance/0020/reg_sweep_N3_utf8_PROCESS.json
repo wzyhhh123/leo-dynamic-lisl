@@ -1,0 +1,10 @@
+{
+  "status": "STOP_60S_HARD_LIMIT",
+  "pid": 38968,
+  "exit_code": 1,
+  "wall_s": 60.03200000000652,
+  "hard_limit_s": 60,
+  "child_launches": 1,
+  "process_scope": "INCLUDES_IMPORT_SETUP_VALIDATION_AND_OUTPUT",
+  "kill_at_deadline": true
+}

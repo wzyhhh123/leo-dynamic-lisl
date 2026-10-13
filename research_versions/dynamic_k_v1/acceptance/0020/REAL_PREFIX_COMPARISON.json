@@ -1,0 +1,28 @@
+{
+  "existing_causal_and_business_state_hashes_exact": true,
+  "full_BBM_speedup_claim": false,
+  "ledger_fields_exact": true,
+  "measured_prefix_seconds": 0.125,
+  "outputs_exact": true,
+  "plain_order": "REFERENCE_THEN_SWEEP_ONE_PAIR",
+  "process_elapsed_s": 18.389456,
+  "start_s": 3.0,
+  "status": "PASS_SHORT_PREFIX_EXACT",
+  "stop_s": 3.125,
+  "timings": {
+    "reference": {
+      "advance_network_FIFO_energy_validation_s": 0.4702693999999994,
+      "clone_s": 0.08392140000000126,
+      "seam_install_s": 3.9999999934536845e-07,
+      "submit_s": 0.4570515999999998,
+      "total_from_clone_s": 1.0112427999999998
+    },
+    "sweep": {
+      "advance_network_FIFO_energy_validation_s": 0.5422617999999986,
+      "clone_s": 0.11119569999999968,
+      "seam_install_s": 0.003604000000002827,
+      "submit_s": 0.5445267000000023,
+      "total_from_clone_s": 1.2015882000000033
+    }
+  }
+}

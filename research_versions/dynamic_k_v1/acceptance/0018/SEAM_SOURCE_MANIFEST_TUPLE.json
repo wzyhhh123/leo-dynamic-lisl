@@ -1,0 +1,70 @@
+{
+  "anchors": {},
+  "configuration_path": "research_versions/dynamic_k_v1/configs/n4_p0h_structural_seam_v1.json",
+  "files": [
+    {
+      "byte_count": 6733,
+      "path": "research_versions/dynamic_k_v1/runtime/n4_p0h_gate_c.py",
+      "sha256": "fbafb12e0f4d41d2e1af02062181194113fdf7c6579fd0439db8126b666a2129"
+    },
+    {
+      "byte_count": 24881,
+      "path": "src/dynamic_lisl/terminal_executor.py",
+      "sha256": "80634fd278655ca6c50a758afe5344f025154879ac71ba5b7dc455a210782583"
+    },
+    {
+      "byte_count": 9763,
+      "path": "src/dynamic_lisl/terminal_pair_intervals.py",
+      "sha256": "8647a9ecf8ce1d2aa4ab4d67d00fb1ebfd93398531f3248012026427f776db33"
+    },
+    {
+      "byte_count": 2798,
+      "path": "src/dynamic_lisl/gate_c_simplified_feasibility.py",
+      "sha256": "a194dc87ab8b6df15d15574f95a68588897f59dcd8779860e2bf652436311eac"
+    },
+    {
+      "byte_count": 5820,
+      "path": "research_versions/dynamic_k_v1/runtime/n2_actions.py",
+      "sha256": "cf5766703299ef359145e611931eb8342ba95f9e9fb6705fd400cce0b012bfbb"
+    },
+    {
+      "byte_count": 7947,
+      "path": "research_versions/dynamic_k_v1/runtime/n2_controller.py",
+      "sha256": "0051daeb9ce50e9e1395fa10f52b67a5f880830bbee28152cd365bd166a3a2a8"
+    },
+    {
+      "byte_count": 25158,
+      "path": "research_versions/dynamic_k_v1/tools/version_control_readme_v1.py",
+      "sha256": "33fae3b852d3bda75802c8743101c68ed69d7a462886481bceb3b8bd7626c0fd"
+    },
+    {
+      "byte_count": 1555,
+      "path": "research_versions/dynamic_k_v1/version_record.json",
+      "sha256": "ce3fe1dfd2291714508c5a0f907b83711675a01079bca8a7229d99cb75fce691"
+    },
+    {
+      "byte_count": 9066,
+      "path": "research_versions/dynamic_k_v1/revisions/0017/record.json",
+      "sha256": "e9554ecfd9a256dc766ac65ea1757e07d4eab00d6addb4b9a896d09154b5b22c"
+    },
+    {
+      "byte_count": 1347,
+      "path": "research_versions/dynamic_k_v1/configs/n4_p0h_structural_seam_v1.json",
+      "sha256": "9568518a5d7f6448a68c844774b065b57730bbebc3f4cdb59b7db577c24188b9"
+    },
+    {
+      "byte_count": 6763,
+      "path": "research_versions/dynamic_k_v1/acceptance/0018/gate_c_attempt01.py.snapshot",
+      "sha256": "c1665bc012241dacb50838d52582386dc56ac5782caca43afd82b97c9acbb49e"
+    },
+    {
+      "byte_count": 6066,
+      "path": "research_versions/dynamic_k_v1/runtime/n4_p0h_gate_c_final.py",
+      "sha256": "3031c8f0fbfe328ac3d9b37a7af30fcad9932ab200b1c230c3e9df37f87fbdb9"
+    }
+  ],
+  "fresh_reader": "0011_HANDLE_SHA_NO_RESULT_CACHE",
+  "history_pre_and_post_verified": true,
+  "immutable_history": "NATIVE_TUPLE_TREE_SHARED_VIEWS_INDEPENDENT",
+  "schema": "dynamic_k_p0h_structural_seam_sources_v1"
+}

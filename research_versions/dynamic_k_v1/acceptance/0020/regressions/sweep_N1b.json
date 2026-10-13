@@ -1,0 +1,14 @@
+{
+  "errors": [],
+  "explicit_test_module_bindings": true,
+  "failures": [],
+  "full_catalog": "REVALIDATE_SEALED_0007_MAPPING_ONLY",
+  "global_monkeypatch": false,
+  "mode": "sweep",
+  "output": "test_all_real_D2_transition_fixtures_unchanged_and_age_conserved (fifo20_sweep_N1b.D2AgeIntegrationTests) ... ok\ntest_clone_checkpoint_restore_replay (fifo20_sweep_N1b.D2AgeIntegrationTests) ... ok\ntest_multicommodity_intermediate_queue_old_allocation_unchanged (fifo20_sweep_N1b.D2AgeIntegrationTests) ... ok\ntest_no_route_no_delivery_null (fifo20_sweep_N1b.D2AgeIntegrationTests) ... ok\ntest_nonbinary_continuous_trace_not_falsely_exact (fifo20_sweep_N1b.D2AgeIntegrationTests) ... ok\ntest_observer_all_legacy_state_exactly_unchanged (fifo20_sweep_N1b.D2AgeIntegrationTests) ... ok\ntest_partial_T_remaining_identity (fifo20_sweep_N1b.D2AgeIntegrationTests) ... ok\ntest_read_only_observer_does_not_repeat_delay_queries (fifo20_sweep_N1b.D2AgeIntegrationTests) ... ok\ntest_real_D2_simultaneous_two_incoming_edges_merge (fifo20_sweep_N1b.D2AgeIntegrationTests) ... ok\ntest_real_D2_two_batch_exact_MD24_J39 (fifo20_sweep_N1b.D2AgeIntegrationTests) ... ok\ntest_real_natural_expiry_numerical_closure_no_synthetic_birth (fifo20_sweep_N1b.D2AgeIntegrationTests) ... ok\ntest_restore_after_wait_and_J_identity (fifo20_sweep_N1b.D2AgeIntegrationTests) ... ok\ntest_single_link_all_delivered (fifo20_sweep_N1b.D2AgeIntegrationTests) ... ok\ntest_two_hop_queue_and_propagation (fifo20_sweep_N1b.D2AgeIntegrationTests) ... ok\ntest_unknown_closure_rejected_even_if_tiny (fifo20_sweep_N1b.D2AgeIntegrationTests) ... ok\ntest_closure_impulse_retains_distribution_and_mixes_ties (fifo20_sweep_N1b.LocalFIFOExactTests) ... ok\ntest_continuous_partial_service_keeps_distribution (fifo20_sweep_N1b.LocalFIFOExactTests) ... ok\ntest_local_order_not_global_injection_order (fifo20_sweep_N1b.LocalFIFOExactTests) ... ok\ntest_proportional_merge_not_edge_order_exact_partial_MD23 (fifo20_sweep_N1b.LocalFIFOExactTests) ... ok\ntest_two_batch_continuous_exact_MD24_J39 (fifo20_sweep_N1b.LocalFIFOExactTests) ... ok\ntest_fixed_T_all_N1a_fields_exactly_unchanged (fifo20_sweep_N1b.N1bEvaluationTests) ... ok\ntest_measured_range_and_cross_field_rejection (fifo20_sweep_N1b.N1bEvaluationTests) ... ok\ntest_wrapper_checkpoint_clone_restore_and_replay (fifo20_sweep_N1b.N1bEvaluationTests) ... ok\ntest_zero_delivery_null_and_remaining (fifo20_sweep_N1b.N1bEvaluationTests) ... ok\n\n----------------------------------------------------------------------\nRan 24 tests in 4.610s\n\nOK\n",
+  "skipped": [],
+  "source_expectations_unmodified": true,
+  "status": "PASS",
+  "tests_run": 24,
+  "wallclock_s": 4.6100197000000005
+}

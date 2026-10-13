@@ -1,0 +1,25 @@
+{
+  "errors": [],
+  "explicit_test_module_bindings": true,
+  "failures": [],
+  "full_catalog": "REVALIDATE_SEALED_0007_MAPPING_ONLY",
+  "full_suite_count": 20,
+  "global_monkeypatch": false,
+  "mode": "sweep",
+  "original_assertions_unchanged": true,
+  "output": "test_01_STATIC_HOLD_natural_expiry_fixed_T (fifo20_sweep_N3.ClosedLoopTests) ... ok\ntest_02_paired_K0_ADD_then_idle_DROP_analytic_metrics (fifo20_sweep_N3.ClosedLoopTests) ... ok\ntest_03_setup_not_counted_as_admit_K (fifo20_sweep_N3.ClosedLoopTests) ... ok\ntest_04_no_demand_DROP_real_DRAINING_and_energy_reduction (fifo20_sweep_N3.ClosedLoopTests) ... ok\ntest_05_REPLACE_resource_constrained_BBM (fifo20_sweep_N3.ClosedLoopTests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 22.807s\n\nOK\n",
+  "selected_test_ids": [
+    "fifo20_sweep_N3.ClosedLoopTests.test_01_STATIC_HOLD_natural_expiry_fixed_T",
+    "fifo20_sweep_N3.ClosedLoopTests.test_02_paired_K0_ADD_then_idle_DROP_analytic_metrics",
+    "fifo20_sweep_N3.ClosedLoopTests.test_03_setup_not_counted_as_admit_K",
+    "fifo20_sweep_N3.ClosedLoopTests.test_04_no_demand_DROP_real_DRAINING_and_energy_reduction",
+    "fifo20_sweep_N3.ClosedLoopTests.test_05_REPLACE_resource_constrained_BBM"
+  ],
+  "selection": [
+    0,
+    5
+  ],
+  "source_expectations_unmodified": true,
+  "status": "PASS",
+  "tests_run": 5
+}

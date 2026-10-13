@@ -1,0 +1,434 @@
+{
+  "cases": [
+    {
+      "action": {
+        "a": [
+          "X0_1",
+          "D1"
+        ],
+        "b": [
+          "X1_1",
+          "D2"
+        ],
+        "kind": "REPLACE",
+        "mode": "BBM",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_2",
+                "D1"
+              ],
+              [
+                "X1_2",
+                "D2"
+              ]
+            ],
+            "link_id": "L2"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "actual_sha256": "8889c9e8d7bb5e066b5e89d25393d5e8a5ac746f21be1762c6b8f7173044705c",
+      "error": null,
+      "exact_equal": true,
+      "expected_sha256": "8889c9e8d7bb5e066b5e89d25393d5e8a5ac746f21be1762c6b8f7173044705c",
+      "name": "undeclared_third_party_release",
+      "source_unchanged": true,
+      "verdict": [
+        [
+          "accepted",
+          false
+        ],
+        [
+          "implicit_release_refs",
+          [
+            [
+              [
+                "endpoints",
+                [
+                  [
+                    "X0_1",
+                    "D1"
+                  ],
+                  [
+                    "X1_1",
+                    "D2"
+                  ]
+                ]
+              ],
+              [
+                "link_id",
+                "L1"
+              ]
+            ]
+          ]
+        ],
+        [
+          "reason",
+          "UNDECLARED_THIRD_PARTY_RELEASE"
+        ]
+      ]
+    },
+    {
+      "action": {
+        "a": [
+          "X0_2",
+          "D1"
+        ],
+        "b": [
+          "X1_2",
+          "D2"
+        ],
+        "kind": "REPLACE",
+        "mode": "BBM",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D1"
+              ],
+              [
+                "X1_1",
+                "D2"
+              ]
+            ],
+            "link_id": "L1"
+          },
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D1"
+              ],
+              [
+                "X1_1",
+                "D2"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "actual_sha256": "2c7cb3f7abc786891f62f5113c160b0fef2805fc8c7e08aa193b3db941eb1a94",
+      "error": null,
+      "exact_equal": true,
+      "expected_sha256": "2c7cb3f7abc786891f62f5113c160b0fef2805fc8c7e08aa193b3db941eb1a94",
+      "name": "duplicate_release_ref",
+      "source_unchanged": true,
+      "verdict": [
+        [
+          "accepted",
+          false
+        ],
+        [
+          "reason",
+          "DUPLICATE_RELEASE_REFERENCE"
+        ]
+      ]
+    },
+    {
+      "action": {
+        "a": [
+          "X0_2",
+          "D1"
+        ],
+        "b": [
+          "X1_2",
+          "D2"
+        ],
+        "kind": "REPLACE",
+        "mode": "INVALID",
+        "old": [
+          {
+            "endpoints": [
+              [
+                "X0_1",
+                "D1"
+              ],
+              [
+                "X1_1",
+                "D2"
+              ]
+            ],
+            "link_id": "L1"
+          }
+        ],
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "actual_sha256": "caa77f280d240cc6038af79f625595fab9b6114d0373d34fc541af31decdf65d",
+      "error": null,
+      "exact_equal": true,
+      "expected_sha256": "caa77f280d240cc6038af79f625595fab9b6114d0373d34fc541af31decdf65d",
+      "name": "unknown_replace_mode",
+      "source_unchanged": true,
+      "verdict": [
+        [
+          "accepted",
+          false
+        ],
+        [
+          "reason",
+          "UNKNOWN_REPLACE_MODE"
+        ]
+      ]
+    },
+    {
+      "action": {
+        "a": [
+          "X0_1",
+          "D1"
+        ],
+        "b": [
+          "X1_1",
+          "D2"
+        ],
+        "kind": "ADD",
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "actual_sha256": "523f254569883a275ee57a428dd714337a5270d33d6acc077d82161cd2f393c4",
+      "error": null,
+      "exact_equal": true,
+      "expected_sha256": "523f254569883a275ee57a428dd714337a5270d33d6acc077d82161cd2f393c4",
+      "name": "physics_LOS_BLOCKED",
+      "source_unchanged": true,
+      "verdict": [
+        [
+          "accepted",
+          false
+        ],
+        [
+          "physical",
+          [
+            [
+              "accepted",
+              false
+            ],
+            [
+              "live_geometry",
+              [
+                [
+                  "accepted",
+                  false
+                ],
+                [
+                  "reason",
+                  "LOS_BLOCKED"
+                ]
+              ]
+            ],
+            [
+              "reason",
+              "LOS_BLOCKED"
+            ]
+          ]
+        ],
+        [
+          "reason",
+          "LOS_BLOCKED"
+        ]
+      ]
+    },
+    {
+      "action": {
+        "a": [
+          "X0_1",
+          "D1"
+        ],
+        "b": [
+          "X1_1",
+          "D2"
+        ],
+        "kind": "ADD",
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "actual_sha256": "5296877a2c69307d49344e475534bfe711e4df74ef7ff14e856f17f87cefb399",
+      "error": null,
+      "exact_equal": true,
+      "expected_sha256": "5296877a2c69307d49344e475534bfe711e4df74ef7ff14e856f17f87cefb399",
+      "name": "physics_FOR_FAIL_LOCAL",
+      "source_unchanged": true,
+      "verdict": [
+        [
+          "accepted",
+          false
+        ],
+        [
+          "physical",
+          [
+            [
+              "accepted",
+              false
+            ],
+            [
+              "live_geometry",
+              [
+                [
+                  "accepted",
+                  false
+                ],
+                [
+                  "reason",
+                  "FOR_FAIL_LOCAL"
+                ]
+              ]
+            ],
+            [
+              "reason",
+              "FOR_FAIL_LOCAL"
+            ]
+          ]
+        ],
+        [
+          "reason",
+          "FOR_FAIL_LOCAL"
+        ]
+      ]
+    },
+    {
+      "action": {
+        "a": [
+          "X0_1",
+          "D1"
+        ],
+        "b": [
+          "X1_1",
+          "D2"
+        ],
+        "kind": "ADD",
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "actual_sha256": "2d3f2376fb1f33ec114431d93d149424f0b30eec6621c59dcdad3e190c794cb6",
+      "error": null,
+      "exact_equal": true,
+      "expected_sha256": "2d3f2376fb1f33ec114431d93d149424f0b30eec6621c59dcdad3e190c794cb6",
+      "name": "physics_FOR_FAIL_REMOTE",
+      "source_unchanged": true,
+      "verdict": [
+        [
+          "accepted",
+          false
+        ],
+        [
+          "physical",
+          [
+            [
+              "accepted",
+              false
+            ],
+            [
+              "live_geometry",
+              [
+                [
+                  "accepted",
+                  false
+                ],
+                [
+                  "reason",
+                  "FOR_FAIL_REMOTE"
+                ]
+              ]
+            ],
+            [
+              "reason",
+              "FOR_FAIL_REMOTE"
+            ]
+          ]
+        ],
+        [
+          "reason",
+          "FOR_FAIL_REMOTE"
+        ]
+      ]
+    },
+    {
+      "action": {
+        "a": [
+          "X0_1",
+          "D1"
+        ],
+        "b": [
+          "X1_1",
+          "D2"
+        ],
+        "kind": "ADD",
+        "setup": {
+          "acquisition_s": 0.5,
+          "retarget_a_s": 0.5,
+          "retarget_b_s": 0.5
+        }
+      },
+      "actual_sha256": "fe3e7978f4a3fe9c3d0a7e77332a78d17182d22e8d61cff16d2985f2447cf958",
+      "error": null,
+      "exact_equal": true,
+      "expected_sha256": "fe3e7978f4a3fe9c3d0a7e77332a78d17182d22e8d61cff16d2985f2447cf958",
+      "name": "physics_FOR_FAIL_BILATERAL",
+      "source_unchanged": true,
+      "verdict": [
+        [
+          "accepted",
+          false
+        ],
+        [
+          "physical",
+          [
+            [
+              "accepted",
+              false
+            ],
+            [
+              "live_geometry",
+              [
+                [
+                  "accepted",
+                  false
+                ],
+                [
+                  "reason",
+                  "FOR_FAIL_BILATERAL"
+                ]
+              ]
+            ],
+            [
+              "reason",
+              "FOR_FAIL_BILATERAL"
+            ]
+          ]
+        ],
+        [
+          "reason",
+          "FOR_FAIL_BILATERAL"
+        ]
+      ]
+    }
+  ],
+  "full_catalog": false,
+  "status": "PASS",
+  "synthetic_fixed_rejection_guards": true
+}
