@@ -1,6 +1,6 @@
 # Dynamic K v1：当前研究版本
 
-文档更新：2026-10-12（北京时间）。当前工程阶段为 **N3 Engineering PASS**，实现与验收封存在修订 **0007**；修订 **0008** 仅更新本 README 及文档完整性记录。N4 尚未实施，等待审核及新的授权。
+文档更新：2026-10-12（北京时间）。当前工程阶段为 **N3 Engineering PASS**，实现与验收封存在修订 **0007**；修订 **0008** 更新本 README，**0009** 更新项目入口及其精确路径文档保护条款。两次修订只涉及文档和完整性机制。N4 尚未实施，等待审核及新的授权。
 
 本版本独立于旧 Gate 研究资产，复用冻结的 Gate B/C/D2 内核。当前结果均为 `ENGINEERING_TEST_ONLY`，不构成科学 Gate PASS、性能优越性或统计显著性结论。正式科学合同/参数尚未冻结，未开展主性能实验或训练。
 
@@ -10,9 +10,9 @@
 2. [配对 K 状态时间线](acceptance/0007/K_TIMELINES_CN.md)：K_admit、DRAINING、SETUP 和真实动作时序。
 3. [N3 闭环合同](contracts/N3_CLOSED_LOOP_BASELINES_CN.md)与[工程语义配置](configs/n3_baseline_semantics_v1.json)。
 4. [修订 0007](revisions/0007/record.json)：实现、输入、验收证据、父修订与全部新增文件的哈希绑定。
-5. [完整性工具](tools/version_control.py)：只读验证完整文件集合、原始字节哈希及修订父链。
+5. [当前完整性工具](tools/version_control_readme_v1.py)：只读验证完整文件集合、原始字节哈希及修订父链。
 
-旧 `dynamic_lisl_v2/README.md`、`configs/current.json` 和历史 Gate 文档属于原研究资产，不代表这个独立版本的最新状态。版本起点与各阶段报告保留其形成时的内容，当前导航以本 README 为准。
+[项目入口 README](../../README.md) 在 0009 中更新为当前主线导航，其旧字节快照保留。旧 `configs/current.json` 和历史 Gate 文档属于原研究资产，不代表这个独立版本的最新状态。版本起点与各阶段报告保留其形成时的内容，当前研究细节以本 README 为准。
 
 ## 阶段状态
 
@@ -27,7 +27,7 @@
 | N4 | 未实施 | RL 问题定义：观测、动作、奖励、约束及未决科学参数，需另行授权 |
 | N5 | 未实施 | 获选算法与正式实验，需科学冻结及运行授权 |
 
-旧 F3 的完整 K* 选择不是新方向的前置条件；其历史失败仍保留。文档修订 0008 不开展新阶段，不改变已有工程验收或科学语义。
+旧 F3 的完整 K* 选择不是新方向的前置条件；其历史失败仍保留。文档修订 0008/0009 不开展新阶段，不改变已有工程验收或科学语义。
 
 ## 当前接口与语义
 
@@ -79,6 +79,7 @@ N3 专项 20/20，N1a/N1b/N2 原测试 25/25、24/24、27/27；16 份 N3 结果�
 - `version_record.json`：绑定 baseline seal、首份修订、初始合同与配置。
 - `revisions/0001/record.json`：版本起点授权、原因、初始新增文件列表与合同/配置绑定；不把自身哈希递归写入自身。
 - `revisions/0008/record.json`：本次文档更新的父记录、授权与 README 修改前后哈希；合同和配置继续绑定 0007 的原文件。
+- `revisions/0009/record.json`：项目入口 README 和本导航的前后哈希，以及精确路径文档条款、新校验入口与保护测试；科学合同/配置保持原绑定。
 - `acceptance/0001/`：N0 完整性控制测试的原始输出；后续阶段证据在各自编号目录中。
 
 起点与历史修订记录保留其形成时的描述，不是可覆盖的当前配置索引。当前源码和验收仍绑定 0007 的实现 manifest，README 更新没有修改这些文件。
@@ -94,11 +95,12 @@ N3 专项 20/20，N1a/N1b/N2 原测试 25/25、24/24、27/27；16 份 N3 结果�
 ```powershell
 $OriginSha256 = '<独立保存的 version_record.json SHA-256>'
 $RevisionSha256 = '<独立保存的最新 revision record SHA-256>'
-& 'D:/Program_Files/anaconda3/envs/pytorch/python.exe' -B research_versions/dynamic_k_v1/tools/version_control.py verify --project-root 'D:/Document/leo_routing_attitude/dynamic_lisl_v2' --expected-version-sha256 $OriginSha256 --expected-revision-sha256 $RevisionSha256
+& 'D:/Program_Files/anaconda3/envs/pytorch/python.exe' -B research_versions/dynamic_k_v1/tools/version_control_readme_v1.py verify --project-root 'D:/Document/leo_routing_attitude/dynamic_lisl_v2' --expected-version-sha256 $OriginSha256 --expected-revision-sha256 $RevisionSha256
 ```
 
 运行位置为 dynamic_lisl_v2；也可传 `--project-root`。验证不写报告或修改文件。
 验证清单/seal/版本记录/修订父链、合同配置绑定、全部现存文件集合与哈希。
+从 0009 起使用上述新入口。[文档保护补充](contracts/ROOT_README_DOCUMENTATION_CHANGE_CN.md)仅允许 0009 对精确路径 `README.md` 的显式登记修改，未排除该文件，也不允许其它旧文档变更。原 `tools/version_control.py` 完全保留；它不支持该条款，会拒绝包含 0009 的历史，不能把原工具的拒绝宣称为原工具 PASS。
 未登记新增、删除、内容/换行修改均失败；内容相同的删除/新增另列 POSSIBLE_RENAME，不把重复内容猜成唯一重命名。
 读取失败、路径越界、符号链接/重解析点、重复 JSON key、扫描期间变化均拒绝。
 
